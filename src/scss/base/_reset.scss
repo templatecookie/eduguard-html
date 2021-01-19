@@ -14,15 +14,24 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (min-width: 1200px) {
+
+	.container,
+	.container-sm,
+	.container-md,
+	.container-lg,
+	.container-xl {
+		max-width: 1170px;
+	}
+}
+
 body {
-    background-color: $bgColor;
     font-family: $font;
     user-select: none;
 }
 
 a {
     display: inline-block;
-    color: $lightBlack;
     @include animate(.3s);
 }
 
@@ -30,11 +39,3 @@ li {
     list-style-type: none;
 }
 
-p {
-    color: $black;
-    line-height: 24px;
-}
-
-.color {
-    color: $color;
-}
