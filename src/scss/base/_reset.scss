@@ -30,12 +30,26 @@ body {
     user-select: none;
 }
 
-a {
-    display: inline-block;
-    @include animate(.3s);
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a,
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
 }
 
 li {
-    list-style-type: none;
+	list-style: none
 }
 

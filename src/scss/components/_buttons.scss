@@ -1,0 +1,29 @@
+.btn{
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 5px;
+    text-transform: capitalize;
+    &.bg-primary{
+        color: white;
+        background-color: color(lightBlack) !important;
+        transition: .3s;
+        &:hover{
+            background-color: color(primary) !important;
+            color: white;
+        }
+    }
+    &.bg-light{
+        color: white;
+        background-color: color(ash) !important;
+    }
+    &.text-primary{
+        border: 0;
+        color: color(lightBlack) !important;
+        &:hover{
+            color: color(primary) !important;
+        }
+    }
+}
