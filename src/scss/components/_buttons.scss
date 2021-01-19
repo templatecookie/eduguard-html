@@ -1,11 +1,12 @@
 .btn{
     padding: 12px 24px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     border-radius: 5px;
     text-transform: capitalize;
+    transition: .3s;
     &.bg-primary{
         color: white;
         background-color: color(lightBlack) !important;
@@ -13,6 +14,15 @@
         &:hover{
             background-color: color(primary) !important;
             color: white;
+        }
+    }
+    &.btn-outline-primary{
+        border-color: color(lightBlack) !important;
+        background-color: transparent !important;
+        color: color(lightBlack) !important;
+        &:hover{
+            color: white !important;
+            background-color: color(lightBlack) !important;
         }
     }
     &.bg-light{

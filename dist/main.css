@@ -9245,12 +9245,14 @@ li {
 
 .btn {
   padding: 12px 24px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   border-radius: 5px;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  -webkit-transition: .3s;
+  transition: .3s; }
   .btn.bg-primary {
     color: white;
     background-color: #35343E !important;
@@ -9259,6 +9261,13 @@ li {
     .btn.bg-primary:hover {
       background-color: #1089FF !important;
       color: white; }
+  .btn.btn-outline-primary {
+    border-color: #35343E !important;
+    background-color: transparent !important;
+    color: #35343E !important; }
+    .btn.btn-outline-primary:hover {
+      color: white !important;
+      background-color: #35343E !important; }
   .btn.bg-light {
     color: white;
     background-color: #EBEBF2 !important; }
@@ -9268,8 +9277,16 @@ li {
     .btn.text-primary:hover {
       color: #1089FF !important; }
 
-.backround-button {
+.backround-button,
+.backround-button-outline,
+.backround-button-shadow,
+.light-button,
+.text-button {
   display: inline-grid; }
-  .backround-button a {
+  .backround-button a,
+  .backround-button-outline a,
+  .backround-button-shadow a,
+  .light-button a,
+  .text-button a {
     margin-bottom: 30px; }
 
