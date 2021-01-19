@@ -14,27 +14,42 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (min-width: 1200px) {
+
+	.container,
+	.container-sm,
+	.container-md,
+	.container-lg,
+	.container-xl {
+		max-width: 1170px;
+	}
+}
+
 body {
-    background-color: $bgColor;
     font-family: $font;
     user-select: none;
 }
 
-a {
-    display: inline-block;
-    color: $lightBlack;
-    @include animate(.3s);
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a,
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
 }
 
 li {
-    list-style-type: none;
+	list-style: none
 }
 
-p {
-    color: $black;
-    line-height: 24px;
-}
-
-.color {
-    color: $color;
-}
