@@ -1,0 +1,22 @@
+// abstracts
+@import "abstracts/functions";
+@import "abstracts/variables";
+
+// vendors
+@import "~bootstrap/scss/bootstrap";
+
+@import "base/typography";
+@import "base/reset";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/breadcrumb";
+
+@import "components/buttons";
+@import "components/form";
+
+@import "pages/home";
+@import "pages/contact";
+
+@import 'themes/theme';
