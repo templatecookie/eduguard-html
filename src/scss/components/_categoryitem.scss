@@ -1,0 +1,20 @@
+.category{
+    &__tittle{
+        background-color: white;
+        margin: 0 20px;
+        margin-top: -50px;
+        text-align: center;
+        position: relative;
+        padding: 20px 0;
+        border-radius: 4px;
+        h6{
+            font-size: 20px;
+            color: color(primary);
+        }
+        span{
+            font-size: 14px;
+            line-height: 1.5;
+            color: color(lowBlack);
+        }
+    }
+}
