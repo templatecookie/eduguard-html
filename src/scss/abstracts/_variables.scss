@@ -2,6 +2,7 @@
 $colors:(
    black: #191922,
    lightBlack:#35343E,
+   light:#C4C4C4,
    gray:#666575,
    lowBlack:#908FA5,
    ash: #EBEBF2,
@@ -11,11 +12,10 @@ $colors:(
    warning:#FFC91B,
    danger:#F15C4C,
    success:#00AF91,
-   light:#C4C4C4,
 );
 
 @function color($color-name) {
-  @return map-get($map: $colors , $key: $color-name );
+  @return map-get($map: $colors , $key: $color-name);
 }
 
 // .section-title {

@@ -11,6 +11,7 @@
 :root {
   --bs-black: #191922;
   --bs-lightBlack: #35343E;
+  --bs-light: #C4C4C4;
   --bs-gray: #666575;
   --bs-lowBlack: #908FA5;
   --bs-ash: #EBEBF2;
@@ -20,7 +21,6 @@
   --bs-warning: #FFC91B;
   --bs-danger: #F15C4C;
   --bs-success: #00AF91;
-  --bs-light: #C4C4C4;
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
@@ -9121,7 +9121,9 @@ body {
 a:focus,
 .button:focus {
   text-decoration: none;
-  outline: none; }
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
 
 a,
 a:focus,
@@ -9244,7 +9246,7 @@ li {
       border-radius: 100%; }
 
 .btn {
-  padding: 12px 24px;
+  padding: 10px 24px;
   border: 2px solid transparent;
   font-size: 16px;
   font-weight: 500;
@@ -9253,6 +9255,10 @@ li {
   text-transform: capitalize;
   -webkit-transition: .3s;
   transition: .3s; }
+  .btn.btn-md {
+    padding: 12px 24px !important; }
+  .btn.btn-lg, .btn-group-lg > .btn {
+    padding: 14px 32px !important; }
   .btn.bg-primary {
     color: white;
     background-color: #35343E !important;
@@ -9261,6 +9267,14 @@ li {
     .btn.bg-primary:hover {
       background-color: #1089FF !important;
       color: white; }
+  .btn.bg-primary2 {
+    color: white;
+    background-color: #1089FF !important;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .btn.bg-primary2:hover {
+      background-color: #0264ED !important;
+      color: white; }
   .btn.btn-outline-primary {
     border-color: #35343E !important;
     background-color: transparent !important;
@@ -9268,25 +9282,132 @@ li {
     .btn.btn-outline-primary:hover {
       color: white !important;
       background-color: #35343E !important; }
+  .btn.btn-outline-primary2 {
+    border-color: #1089FF !important;
+    background-color: transparent !important;
+    color: #1089FF !important; }
+    .btn.btn-outline-primary2:hover {
+      color: white !important;
+      background-color: #0264ED !important;
+      border-color: #0264ED !important; }
   .btn.bg-light {
-    color: white;
+    color: #C4C4C4;
     background-color: #EBEBF2 !important; }
+  .btn.btn-outline-light {
+    border-color: #EBEBF2 !important;
+    background-color: transparent !important;
+    color: #908FA5 !important; }
+  .btn.btn-shadow {
+    color: #35343E;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 3px; }
+    .btn.btn-shadow:hover {
+      -webkit-box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
+              box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25); }
+  .btn.btn-shadow2 {
+    color: #35343E;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 3px; }
+    .btn.btn-shadow2:hover {
+      color: #1089FF;
+      -webkit-box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
+              box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25); }
+  .btn.btn-shadow-light {
+    color: #908FA5;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 3px; }
+  .btn.bg-transparent {
+    color: #1089FF;
+    background-color: transparent !important; }
+    .btn.bg-transparent:hover {
+      color: #1089FF !important;
+      background-color: rgba(16, 137, 255, 0.1) !important; }
+  .btn.bg-transparent-light {
+    color: #908FA5; }
   .btn.text-primary {
     border: 0;
     color: #35343E !important; }
     .btn.text-primary:hover {
-      color: #1089FF !important; }
+      color: #1089FF !important;
+      text-decoration: underline; }
+  .btn.btn-text-light {
+    color: #908FA5; }
 
-.backround-button,
-.backround-button-outline,
-.backround-button-shadow,
-.light-button,
-.text-button {
-  display: inline-grid; }
-  .backround-button a,
-  .backround-button-outline a,
-  .backround-button-shadow a,
-  .light-button a,
-  .text-button a {
-    margin-bottom: 30px; }
+.checkbox-primary[type="checkbox"] {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #908FA5; }
+
+.course__img {
+  border-radius: 5px; }
+
+.course__content {
+  background: white; }
+  .course__content_title {
+    padding-top: 26px;
+    margin-bottom: 14px; }
+    .course__content_title h6, .course__content_title .h6 {
+      font-size: 20px;
+      font-weight: 500; }
+  .course__content_author {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #EBEBF2; }
+    .course__content_author .info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .course__content_author .info_img {
+        width: 34px;
+        height: 34px;
+        margin-right: 9px; }
+        .course__content_author .info_img img {
+          width: 34px;
+          height: 34px;
+          -o-object-fit: cover;
+             object-fit: cover;
+          border-radius: 2px; }
+        .course__content_author .info_img span {
+          font-size: 14px;
+          line-height: 1.5;
+          color: #35343E; }
+    .course__content_author .price del {
+      font-size: 14px;
+      color: #908FA5;
+      font-weight: 500; }
+    .course__content_author .price span {
+      color: #35343E;
+      font-size: 14px;
+      font-weight: 500; }
+  .course__content_time {
+    padding: 10px 0; }
+
+.backround-button a,
+.backround-button-outline a,
+.backround-button-shadow a,
+.transparent-button a,
+.text-button a {
+  margin-bottom: 30px; }
 
