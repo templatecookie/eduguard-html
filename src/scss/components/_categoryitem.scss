@@ -1,4 +1,9 @@
 .category{
+    &__img{
+        img{
+            border-radius: 6px;
+        }
+    }
     &__tittle{
         background-color: white;
         margin: 0 20px;

@@ -1,6 +1,9 @@
 .course{
     &__img{
-        border-radius: 5px;
+        img{
+            border-top-left-radius: 5px ;
+            border-top-right-radius:5px ;
+        }
     }
     &__content{
         background: white;
@@ -29,7 +32,7 @@
                         width: 34px;
                         height: 34px;
                         object-fit: cover;
-                        border-radius: 2px;
+                        border-radius: 4px;
                     }
                     span{
                         font-size: 14px;
@@ -53,6 +56,15 @@
         }
         &_time{
             padding: 10px 0;
+            .star,
+            .eay,
+            .book,
+            .clock{
+                span{
+                    font-size: 14px;
+                    color: color(lightBlack);
+                }
+            }
         }
     }
 }

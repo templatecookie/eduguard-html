@@ -9666,8 +9666,9 @@ li {
   height: 28px;
   border: 2px solid #908FA5; }
 
-.course__img {
-  border-radius: 5px; }
+.course__img img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
 
 .course__content {
   background: white; }
@@ -9710,7 +9711,7 @@ li {
           height: 34px;
           -o-object-fit: cover;
              object-fit: cover;
-          border-radius: 2px; }
+          border-radius: 4px; }
         .course__content_author .info_img span {
           font-size: 14px;
           line-height: 1.5;
@@ -9725,6 +9726,15 @@ li {
       font-weight: 500; }
   .course__content_time {
     padding: 10px 0; }
+    .course__content_time .star span,
+    .course__content_time .eay span,
+    .course__content_time .book span,
+    .course__content_time .clock span {
+      font-size: 14px;
+      color: #35343E; }
+
+.category__img img {
+  border-radius: 6px; }
 
 .category__tittle {
   background-color: white;
@@ -9786,7 +9796,7 @@ li {
   .features:hover {
     -webkit-box-shadow: 0px 24px 50px rgba(9, 8, 78, 0.1);
             box-shadow: 0px 24px 50px rgba(9, 8, 78, 0.1);
-    border: transparent; }
+    border-color: transparent; }
     .features:hover .bg-warning {
       background-color: #FFC91B !important; }
       .features:hover .bg-warning svg path {
@@ -9958,6 +9968,45 @@ li {
       background-color: #1089FF;
       border-color: #1089FF;
       color: white; }
+
+.watchcoures__content_author .done span {
+  color: #908FA5;
+  font-size: 12px;
+  line-height: 1.25; }
+
+.watchcoures__progress {
+  margin-top: 20px; }
+  .watchcoures__progress .progress {
+    height: 6px;
+    background-color: rgba(255, 122, 26, 0.3);
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+    .watchcoures__progress .progress-bar {
+      background-color: #FF7A1A;
+      border-radius: 5px;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0; }
+
+.event__img {
+  margin-bottom: 12px; }
+  .event__img img {
+    border-radius: 6px; }
+
+.event__content_title {
+  border-bottom: 1px solid #EBEBF2; }
+  .event__content_title h6, .event__content_title .h6 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #35343E;
+    line-height: 1.5;
+    margin-bottom: 20px; }
+
+.event__content_detail {
+  padding: 10px 0; }
+  .event__content_detail .loction span, .event__content_detail .date span {
+    color: #35343E;
+    font-size: 14px; }
 
 .backround-button a,
 .backround-button-outline a,
