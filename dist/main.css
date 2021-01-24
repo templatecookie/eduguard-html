@@ -9872,10 +9872,92 @@ li {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .breadcrumb__item a,
     .breadcrumb__item span {
       font-size: 14px;
       line-height: 1.5;
       color: #666575; }
+
+.pagination {
+  padding-bottom: 100px; }
+  .pagination-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .pagination .p_prev,
+  .pagination .p_next {
+    border: 1px solid transparent;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 12px;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .pagination .p_prev:first-child,
+    .pagination .p_next:first-child {
+      margin-left: 0; }
+    .pagination .p_prev:last-child,
+    .pagination .p_next:last-child {
+      margin-right: 0; }
+    .pagination .p_prev:hover,
+    .pagination .p_next:hover {
+      background-color: rgba(144, 143, 165, 0.08);
+      border: 1px solid rgba(144, 143, 165, 0.25); }
+      .pagination .p_prev:hover svg path,
+      .pagination .p_next:hover svg path {
+        stroke: #908FA5; }
+  .pagination .cdp_i {
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #666575;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin: 0 6px;
+    border-radius: 100%;
+    padding: 8px 0; }
+    .pagination .cdp_i.active {
+      background-color: #1089FF;
+      border-color: #1089FF;
+      color: white; }
+    .pagination .cdp_i:hover {
+      background-color: #1089FF;
+      border-color: #1089FF;
+      color: white; }
 
 .backround-button a,
 .backround-button-outline a,

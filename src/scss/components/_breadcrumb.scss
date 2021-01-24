@@ -5,7 +5,8 @@
     &__item{
         display: flex;
         align-items: center;
-        span{
+        a,
+        span{ 
             font-size: 14px;
             line-height: 1.5;
             color: #666575;
