@@ -7,14 +7,26 @@
         position: relative;
         padding: 20px 0;
         border-radius: 4px;
+        transition: .3s;
         h6{
             font-size: 20px;
-            color: color(primary);
+            color: color(lightBlack);
+            font-weight: 600;
         }
         span{
             font-size: 14px;
             line-height: 1.5;
             color: color(lowBlack);
+        }
+    }
+    &:hover{
+        .category{
+            &__tittle{
+                box-shadow: 0px 24px 50px rgba(9, 8, 78, 0.1);
+                h6{
+                    color: color(primary);
+                }
+            }
         }
     }
 }

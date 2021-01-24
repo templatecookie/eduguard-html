@@ -53,3 +53,13 @@ h6 a{
         color: inherit;
     }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: color(lightBlack);
+    transition: .3s;
+    margin: 0;
+}
