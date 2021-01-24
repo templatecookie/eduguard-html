@@ -24,5 +24,29 @@
     &:hover{
         box-shadow: 0px 24px 50px rgba(9, 8, 78, 0.1);
         border: transparent;
+        .bg-warning{
+            background-color: color(warning) !important;
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
+        .bg-success{
+            background-color: color(success) !important;
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
+        .bg-denger{
+            background-color: color(danger) !important;
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
     }
 }

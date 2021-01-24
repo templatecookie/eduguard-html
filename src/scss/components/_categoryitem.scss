@@ -8,6 +8,7 @@
         padding: 20px 0;
         border-radius: 4px;
         transition: .3s;
+        border: 1px solid #EBEBF2;
         h6{
             font-size: 20px;
             color: color(lightBlack);
@@ -22,6 +23,7 @@
     &:hover{
         .category{
             &__tittle{
+                border: transparent;
                 box-shadow: 0px 24px 50px rgba(9, 8, 78, 0.1);
                 h6{
                     color: color(primary);

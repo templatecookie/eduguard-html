@@ -4,6 +4,8 @@
 
 // vendors
 @import "~bootstrap/scss/bootstrap";
+@import "vendors/plugin/css/slick.css";
+@import "vendors/plugin/css/nice-select.css";
 
 @import "base/typography";
 @import "base/reset";
@@ -18,6 +20,8 @@
 @import "components/coureseitem";
 @import "components/categoryitem";
 @import "components/featuresitem";
+@import "components/search";
+@import "components/breadcrumb";
 
 @import "pages/home";
 @import "pages/contact";
