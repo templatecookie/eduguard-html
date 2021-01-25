@@ -37,7 +37,9 @@ a:focus,
 	outline: none;
 	box-shadow: none !important;
 }
-
+a{
+	transition: .3s;
+}
 a,
 a:focus,
 a:hover,
