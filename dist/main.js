@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(document).ready(function () {\n  $('select').niceSelect();\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("function openNav() {\n  document.getElementById(\"mySidenav\").style.width = \"300px\";\n  $('#overlayy').addClass(\"active\");\n}\n\nfunction closeNav() {\n  document.getElementById(\"mySidenav\").style.width = \"0\";\n  $('#overlayy').removeClass(\"active\");\n} // init Isotope\n\n\nvar $grid = $('.populercoures-item').isotope({// options\n}); // filter items on button click\n\n$('.populercoures-ist').on('click', 'li', function () {\n  var filterValue = $(this).attr('data-filter');\n  $grid.isotope({\n    filter: filterValue\n  });\n});\n$(document).ready(function () {\n  $('select').niceSelect();\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 

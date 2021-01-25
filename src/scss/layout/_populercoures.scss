@@ -1,0 +1,55 @@
+.populercoures{
+padding: 100px 0;
+    background: #EBEBF2;
+    &__wrapper{
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &_list{
+            display: flex;
+            align-items: center;
+            a{
+                margin-left: 40px;
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #FFFFFF;
+                li{
+                    color: #666575;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin-right: 24px;
+                    cursor: pointer;
+                    padding: 10px 0;
+                    position: relative;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.active{
+                        color: color(lightBlack);
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            border-radius: 100px;
+                            height: 3px;
+                            background-color: color(lightBlack);
+                            left: 0;
+                            bottom: -1px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .populercoures-item{
+        .coures{
+            margin-bottom: 50px;
+        }
+    }
+}

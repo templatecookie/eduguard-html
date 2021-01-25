@@ -42,16 +42,17 @@
                 height: 8px;
                 border-color: color(lightBlack);
             }
-            &::before{
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                height: 24px;
-                background: #dddddd;
-                width: 1px;
-            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 24px;
+            background: #dddddd;
+            width: 1px;
+            z-index: 99;
         }
     }
 }
