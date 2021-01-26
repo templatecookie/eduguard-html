@@ -10597,10 +10597,10 @@ li {
           -o-object-fit: cover;
              object-fit: cover;
           border-radius: 4px; }
-        .course__content_author .info_img span {
-          font-size: 14px;
-          line-height: 1.5;
-          color: #35343E; }
+      .course__content_author .info a {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #35343E; }
     .course__content_author .price del {
       font-size: 14px;
       color: #908FA5;
