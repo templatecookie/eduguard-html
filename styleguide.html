@@ -9,6 +9,17 @@
 </head>
 
 <body>
+    <section class="section">
+        <div class="container">
+            <h1>Table Of Contents</h1>
+            <hr>
+            <ul>
+                <li><a href="#form">Form Components</a></li>
+                <li><a href="#alert">Alert Components</a></li>
+            </ul>
+        </div>
+    </section>
+    
     <h2 class="text-center pt-3">Nav Bar</h2>
     <!-- NavBar -->
     <header class="header py-3">
@@ -578,6 +589,165 @@
                 <img class="avatar02" src="/dist/images/ellipse/2.png" alt="">
                 <img class="avatar03" src="/dist/images/ellipse/3.png" alt="">
                 <img class="avatar04" src="/dist/images/ellipse/4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Form Component  -->
+    <section id="form" class=" py-5">
+        <div class="container">
+            <h2>Form Component</h2>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-element">
+                        <label for="">Full Name</label>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-element">
+                        <label for="">Email Address</label>
+                        <input type="email" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-element error">
+                        <div class="form-alert">
+                            <label for="">Password</label>
+                            <span>*please enter a valid email</span>
+                        </div>
+                        <div class="form-alert-input">
+                            <input type="password" placeholder="Your password">
+                            <div class="form-alert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-element success">
+                        <div class="form-alert">
+                            <label for="">Password</label>
+                            <span>*please enter a valid email</span>
+                        </div>
+                        <div class="form-alert-input">
+                            <input type="password" placeholder="Your password">
+                            <div class="form-alert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-element">
+                        <label for="">Confirm password</label>
+                        <div class="form-alert-input">
+                            <input type="password" placeholder="Confirm password">
+                            <div class="form-alert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Alert Component  -->
+    <section id="alert" class=" py-5">
+        <div class="container">
+            <h2>Alert Component</h2>
+            <hr>
+            <div class="row">
+                <div class="col-8">
+                    <div class="z-alert">
+                        <span> One course is successfully added to your cart. </span>
+                        <div class="action">
+                            <a href="#">Go to cart</a>
+                            <a href="#" class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="z-alert success">
+                        <span> One course is successfully added to your cart. </span>
+                        <div class="action">
+                            <a href="#">Go to cart</a>
+                            <a href="#" class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-8">
+                    <div class="z-alert error">
+                        <span> One course is successfully added to your cart. </span>
+                        <div class="action">
+                            <a href="#">Go to cart</a>
+                            <a href="#" class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="z-alert warning">
+                        <span> One course is successfully added to your cart. </span>
+                        <div class="action">
+                            <a href="#">Go to cart</a>
+                            <a href="#" class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="z-alert">
+                        <span> One course is successfully added to your cart. </span>
+                        <div class="action">
+                            <a href="#" class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="z-alert success">
+                        <span> One course is successfully added to your cart. </span>
+                        <div class="action">
+                            <a href="#" class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-8">
+                    <div class="z-alert error">
+                        <span> One course is successfully added to your cart. </span>
+                        <div class="action">
+                            <a href="#" class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="z-alert warning">
+                        <span> One course is successfully added to your cart. </span>
+                        <div class="action">
+                            <a href="#" class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
