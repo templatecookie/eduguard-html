@@ -6,6 +6,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "vendors/plugin/css/slick.css";
 @import "vendors/plugin/css/nice-select.css";
+@import "vendors/plugin/css/magnific-popup.css";
 
 @import "base/typography";
 @import "base/reset";
@@ -15,6 +16,9 @@
 @import "layout/banner";
 @import "layout/breadcrumb";
 @import "layout/populercoures";
+@import "layout/testimonial";
+@import "layout/ourinstructor";
+@import "layout/cta";
 
 @import "components/buttons";
 @import "components/form";
@@ -26,6 +30,8 @@
 @import "components/pagination";
 @import "components/watchcourse";
 @import "components/eventitem";
+@import "components/playbutton";
+@import "components/mentor";
 
 @import "pages/home";
 @import "pages/contact";
