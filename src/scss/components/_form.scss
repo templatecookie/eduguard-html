@@ -16,7 +16,7 @@
         padding: 16px 20px;
         border: 1px solid rgba($black50, 0.4);
     }
-    .z-alert {
+    .form-alert {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,9 +31,9 @@
             transform: translateX(-50%);
         }
     }
-    .z-alert-input {
+    .form-alert-input {
         position: relative;
-        .z-alert-icon {
+        .form-alert-icon {
             position: absolute;
             top: 50%;
             right: 20px;
@@ -51,18 +51,18 @@
         background-color: rgba($danger, .02);
     }
     &.error {
-        .z-alert span {
+        .form-alert span {
             color: $danger;
         }
-        .z-alert-icon {
+        .form-alert-icon {
             color: $danger;
         }
     }
     &.success {
-        .z-alert span {
+        .form-alert span {
             color: $success;
         }
-        .z-alert-icon {
+        .form-alert-icon {
             color: $success;
         }
     }

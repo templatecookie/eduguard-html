@@ -10617,7 +10617,7 @@ li {
     font-size: 16px;
     padding: 16px 20px;
     border: 1px solid rgba(144, 143, 165, 0.4); }
-  .form-element .z-alert {
+  .form-element .form-alert {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -10630,18 +10630,18 @@ li {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .form-element .z-alert span {
+    .form-element .form-alert span {
       font-size: 12px;
       font-weight: 400; }
-    .form-element .z-alert-icon {
+    .form-element .form-alert-icon {
       position: absolute;
       right: 0px;
       top: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
-  .form-element .z-alert-input {
+  .form-element .form-alert-input {
     position: relative; }
-    .form-element .z-alert-input .z-alert-icon {
+    .form-element .form-alert-input .form-alert-icon {
       position: absolute;
       top: 50%;
       right: 20px;
@@ -10654,13 +10654,13 @@ li {
   .form-element.error input, .form-element input.error {
     border-color: rgba(241, 92, 76, 0.4);
     background-color: rgba(241, 92, 76, 0.02); }
-  .form-element.error .z-alert span {
+  .form-element.error .form-alert span {
     color: #F15C4C; }
-  .form-element.error .z-alert-icon {
+  .form-element.error .form-alert-icon {
     color: #F15C4C; }
-  .form-element.success .z-alert span {
+  .form-element.success .form-alert span {
     color: #00AF91; }
-  .form-element.success .z-alert-icon {
+  .form-element.success .form-alert-icon {
     color: #00AF91; }
 
 .course__img img {
