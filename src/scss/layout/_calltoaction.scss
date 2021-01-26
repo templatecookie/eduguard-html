@@ -1,0 +1,29 @@
+.calltoaction{
+    background-color: rgba(235, 235, 242, 0.7);
+    padding: 100px 0;
+    &__wrapper{
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_item{
+            width: 530px;
+            text-align: center;
+            margin-bottom: 70px;
+            p{
+                padding-top: 10px;
+            }
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            background-color: rgba(144, 143, 165, 0.5);
+            height: 150px;
+            width: 1px;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
