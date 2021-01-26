@@ -10438,6 +10438,7 @@ li {
       margin: 0 -15px; }
 
 .scta {
+  position: relative;
   background-color: rgba(235, 235, 242, 0.5);
   padding: 220px 0; }
   .scta__section {
@@ -10447,6 +10448,46 @@ li {
       padding-top: 10px;
       font-size: 18px;
       line-height: 1.5; }
+  .scta__student img {
+    position: absolute; }
+    .scta__student img.avatar1 {
+      top: 11%;
+      left: 7%;
+      z-index: 2; }
+    .scta__student img.avatar2 {
+      top: 15%;
+      right: 16%;
+      z-index: 2; }
+    .scta__student img.avatar3 {
+      top: 40%;
+      left: 20%;
+      z-index: 2; }
+    .scta__student img.avatar4 {
+      bottom: 8%;
+      left: 9%;
+      z-index: 2; }
+    .scta__student img.avatar5 {
+      bottom: 7%;
+      left: 42%;
+      z-index: 2; }
+    .scta__student img.avatar6 {
+      bottom: 2%;
+      right: 8%;
+      z-index: 2; }
+  .scta__shape img {
+    position: absolute; }
+    .scta__shape img.shape1 {
+      bottom: 12%;
+      left: 7%; }
+    .scta__shape img.shape2 {
+      top: 10%;
+      left: 30%; }
+    .scta__shape img.shape3 {
+      right: 8%;
+      top: 36%; }
+    .scta__shape img.shape4 {
+      bottom: 15%;
+      right: 27%; }
 
 .calltoaction {
   background-color: rgba(235, 235, 242, 0.7);
@@ -10991,6 +11032,34 @@ li {
       color: #908FA5;
       font-size: 14px;
       line-height: 1.5; }
+
+.avatar01 {
+  width: 122px;
+  height: 122px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%; }
+
+.avatar02 {
+  width: 105px;
+  height: 105px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%; }
+
+.avatar03 {
+  width: 89px;
+  height: 89px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%; }
+
+.avatar04 {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%; }
 
 .backround-button a,
 .backround-button-outline a,
