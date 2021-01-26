@@ -120,7 +120,8 @@
       }
     ]
   });
-  
+
+  //Mentor _Slider
   $('.ourinstructor-active').slick({
     infinite: true,
     slidesToShow: 4,
@@ -134,6 +135,33 @@
         breakpoint: 1025,
         settings: {
           slidesToShow: 4,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        },
+      },
+    ],
+  });
+
+  //Event _Slider
+  $('.ourevent-active').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    autoplaySpeed: 2000,
+    prevArrow: '.ourinstructor__wrapper .prev-arrow',
+    nextArrow: '.ourinstructor__wrapper .next-arrow',
+    responsive: [{
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
           dots: true,
         },
       },
