@@ -1,1 +1,122 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){n(1),e.exports=n(2)},function(e,t){},function(e,t,n){}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/js/main.js":
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// $('.hamburger-menu a').on('click', function(){\n//   $(\"#mySidenav\").css('left', '0');\n//   toggleOverlay();\n// });\n// function hideNav(){\n//   $(\"#mySidenav\").css('left', '-300px');\n//   toggleOverlay();\n// }\n// $('#overlayy').on('click', function(){\n//   hideNav();\n// });\n// $('.closebtn').on('click', function() {\n//   hideNav();\n// });\n// function toggleOverlay(){\n//   $('#overlayy').toggleClass(\"active\");\n// }\n//   //testimonial_slider\n//   $('.testimonial__active').slick({\n//     infinite: true,\n//     slidesToShow: 1,\n//     slidesToScroll: 1,\n//     autoplay: true,\n//     arrows: true,\n//     autoplaySpeed: 2000,\n//     prevArrow: '.testimonial__wrapper .prev-arrow',\n//     nextArrow: '.testimonial__wrapper .next-arrow',\n//   });\n// // init Isotope\n// var $grid = $('.populercoures-item').isotope({\n//   // options\n// });\n// // filter items on button click\n// $('.populercoures-ist').on('click', 'li', function () {\n//   var filterValue = $(this).attr('data-filter');\n//   $grid.isotope({\n//     filter: filterValue\n//   });\n// });\n// $(document).ready(function () {\n//   $('select').niceSelect();\n// });\n(function ($) {\n  \"use strict\";\n\n  $('.hamburger-menu a').on('click', function () {\n    $(\"#mySidenav\").css('left', '0');\n    toggleOverlay();\n  });\n\n  function hideNav() {\n    $(\"#mySidenav\").css('left', '-300px');\n    toggleOverlay();\n  }\n\n  $('#overlayy').on('click', function () {\n    hideNav();\n  });\n  $('.closebtn').on('click', function () {\n    hideNav();\n  });\n\n  function toggleOverlay() {\n    $('#overlayy').toggleClass(\"active\");\n  } //testimonial_slider\n\n\n  $('.testimonial__active').slick({\n    infinite: true,\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    autoplay: true,\n    arrows: true,\n    autoplaySpeed: 2000,\n    prevArrow: '.testimonial__wrapper .prev-arrow',\n    nextArrow: '.testimonial__wrapper .next-arrow'\n  }); //Brand_slider\n\n  $('.brand-area').slick({\n    infinite: true,\n    slidesToShow: 5,\n    slidesToScroll: 1,\n    arrows: false,\n    responsive: [{\n      breakpoint: 1024,\n      settings: {\n        slidesToShow: 3,\n        slidesToScroll: 1\n      }\n    }, {\n      breakpoint: 600,\n      settings: {\n        slidesToShow: 2,\n        slidesToScroll: 1\n      }\n    }, {\n      breakpoint: 480,\n      settings: {\n        slidesToShow: 1,\n        slidesToScroll: 1\n      }\n    }]\n  }); //Mentor _Slider\n\n  $('.ourinstructor-active').slick({\n    infinite: true,\n    slidesToShow: 4,\n    slidesToScroll: 1,\n    autoplay: true,\n    arrows: true,\n    autoplaySpeed: 2000,\n    prevArrow: '.ourinstructor__wrapper .prev-arrow',\n    nextArrow: '.ourinstructor__wrapper .next-arrow',\n    responsive: [{\n      breakpoint: 1025,\n      settings: {\n        slidesToShow: 4,\n        dots: true\n      }\n    }, {\n      breakpoint: 480,\n      settings: {\n        slidesToShow: 1,\n        dots: true\n      }\n    }]\n  }); //Event _Slider\n\n  $('.ourevent-active').slick({\n    infinite: true,\n    slidesToShow: 3,\n    slidesToScroll: 1,\n    autoplay: true,\n    arrows: true,\n    autoplaySpeed: 2000,\n    prevArrow: '.ourinstructor__wrapper .prev-arrow',\n    nextArrow: '.ourinstructor__wrapper .next-arrow',\n    responsive: [{\n      breakpoint: 1025,\n      settings: {\n        slidesToShow: 3,\n        dots: true\n      }\n    }, {\n      breakpoint: 480,\n      settings: {\n        slidesToShow: 1,\n        dots: true\n      }\n    }]\n  }); // init Isotope\n\n  var $grid = $('.populercoures-item').isotope({// options\n  }); // filter items on button click\n\n  $('.populercoures-ist').on('click', 'li', function () {\n    var filterValue = $(this).attr('data-filter');\n    $grid.isotope({\n      filter: filterValue\n    }); // filter items on button click\n\n    $('.populercoures-ist').on('click', 'li', function () {\n      var filterValue = $(this).attr('data-filter');\n      $grid.isotope({\n        filter: filterValue\n      });\n    });\n  });\n  /* magnificPopup video view */\n\n  $('.popup-video').magnificPopup({\n    type: 'iframe'\n  }); //nice-select\n\n  $(document).ready(function () {\n    $('select').niceSelect();\n  });\n})(jQuery);\n\n//# sourceURL=webpack:///./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/scss/main.scss":
+/*!****************************!*\
+  !*** ./src/scss/main.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/scss/main.scss?");
+
+/***/ }),
+
+/***/ 0:
+/*!***************************************************!*\
+  !*** multi ./src/js/main.js ./src/scss/main.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./src/js/main.js */\"./src/js/main.js\");\nmodule.exports = __webpack_require__(/*! ./src/scss/main.scss */\"./src/scss/main.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/js/main.js_./src/scss/main.scss?");
+
+/***/ })
+
+/******/ });

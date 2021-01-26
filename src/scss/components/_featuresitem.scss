@@ -1,0 +1,57 @@
+
+.featuresitem{
+    margin-top: -130px;
+}
+//Features item
+.features{
+    background: #FFFFFF;
+    border: 1px solid #EBEBF2;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
+    transition: .3s;
+    &__icon{
+        width: 72px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    &__title{
+        margin-top: 22px;
+        h6{
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    }
+    &:hover{
+        box-shadow: 0px 24px 50px rgba(9, 8, 78, 0.1);
+        border-color: transparent;
+        .bg-warning{
+            background-color: color(warning) !important;
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
+        .bg-success{
+            background-color: color(success) !important;
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
+        .bg-denger{
+            background-color: color(danger) !important;
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
+    }
+}

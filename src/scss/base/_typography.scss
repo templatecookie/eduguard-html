@@ -1,8 +1,66 @@
 // Font Import
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-$font: 'Open Sans', sans-serif;
+$font: 'Poppins', sans-serif;
 
-h1, h2, h3 {
+h1 {
+    font-size: 80px;
+    line-height: 1.25;
     font-weight: 700;
+}
+h2 {
+    font-size: 56px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+h3 {
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+h4 {
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+h5 {
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+h6 {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+p{
+    color: color(lowBlack);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+    color: inherit;
+    &:hover{
+        color: inherit;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: color(lightBlack);
+    transition: .3s;
+    margin: 0;
 }

@@ -1,0 +1,28 @@
+.watchcoures{
+    &__content_author{
+        .done{
+            span{
+                color: color(lowBlack);
+                font-size: 12px;
+                line-height: 1.25;
+            }
+        }
+    }
+    &__progress{
+        margin-top: 20px;
+        .progress{
+            height: 6px;
+            background-color: rgba(255, 122, 26, 0.3);
+            border-radius: 5px;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            &-bar{
+                background-color: color(tertiary);
+                border-radius: 5px;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+            }
+        }
+    }
+
+}

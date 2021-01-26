@@ -1,0 +1,68 @@
+.banner{
+    min-height: 1117px;
+    &__wrapper{
+        padding-top: 180px;
+        h1{
+            color: color(lightBlack);
+            max-width: 85%;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #666575;
+            font-size: 20px;
+            line-height: 1.25;
+            max-width: 70%;
+
+        }
+        &_search{
+            max-width: 743px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 9;
+        }
+    }
+    &__img{
+        margin-top: 148px;
+        width: 470px;
+        height: 540px;
+        margin-left: -80px;
+        position: relative;
+        z-index: 5;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 10px;
+        }
+        .dots{
+            position: absolute;
+            top: -110px;
+            left: -40px;
+            z-index: -1;
+        }
+        &::after{
+            width: 349px;
+            height: 208px;
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            z-index: -1;
+            background-color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%);
+            border-radius: 12px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -55px;
+            right: -35px;
+            width: 410px;
+            height: 377px;
+            border-radius: 10px;
+            border: 4px solid #1089FF;
+            z-index: -1;
+        }
+
+    }
+}

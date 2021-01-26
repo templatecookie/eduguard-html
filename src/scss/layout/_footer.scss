@@ -1,0 +1,89 @@
+.footer{
+    background-color: color(lightBlack);
+    padding-top: 100px;
+    &__wrapper{
+        margin-bottom: 50px;
+        &_logo{
+            margin-bottom: 6px;
+        }
+        max-width: 65%;
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            color: color(lowBlack);
+        }
+        &_social{
+            margin-top: 18px;
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    margin-right: 24px;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 4px;
+                        transition: .3s;
+                        background: rgba(102, 101, 117, 0.2);
+                        &:hover{
+                            background-color: #FFC91B;
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__list{
+        margin-bottom: 46px;
+        h6{
+            font-size: 20px;
+            line-height: 1.5;
+            color: white;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        ul{
+            li{
+                a{
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: color(lowBlack);
+                    padding: 4px 0;
+                    display: block;
+                    transition: .3s;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom{
+        border-top: 1px solid #4B4B57;
+        padding: 20px 0;
+        &_copyright{
+            p{
+                color: color(lowBlack);
+                line-height: 1.5;
+                font-size: 16px;
+            }
+        }
+        &_topbutton{
+            a{
+                display: flex;
+                align-items: center;
+                color: color(lowBlack);
+                font-size: 16px;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}

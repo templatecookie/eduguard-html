@@ -1,0 +1,167 @@
+.testimonial {
+    padding: 130px 0;
+    &__img {
+        margin-left: 25px;
+        width: 433px;
+        height: 495px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .dot {
+            position: absolute;
+            left: -46%;
+            top: 60%;
+            z-index: -1;
+        }
+
+        .rectangle {
+            position: absolute;
+            bottom: -65px;
+            left: -78px;
+            z-index: -2;
+        }
+        .play-video {
+            position: absolute;
+            top: 50%;
+            right: -40px;
+        }
+    }
+
+    &__wrapper {
+        margin-left: 65px;
+        &_item {
+            h4 {
+                margin-bottom: 50px;
+            }
+
+            p {
+                color: #666575;
+                font-size: 20px;
+                line-height: 1.5;
+                font-style: italic;
+            }
+
+            &-author {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+                margin-bottom: 50px;
+
+                .author {
+                    &__img {
+                        margin-right: 16px;
+                        width: 64px;
+                        height: 64px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    &__name {
+                        h6 {
+                            color: color(lightBlack);
+                            font-size: 20px;
+                            line-height: 1.5;
+                            font-weight: 500;
+                        }
+
+                        span {
+                            color: color(lowBlack);
+                            line-height: 1.5;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .review {
+                    .star {
+                        padding-left: 3px;
+                    }
+                }
+            }
+        }
+
+        .slider-arrows {
+            display: flex;
+            align-items: center;
+
+            .prev-arrow {
+                margin-right: 20px;
+            }
+
+            .prev-arrow,
+            .next-arrow {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #EBEBF2;
+                background: transparent;
+                border-radius: 100%;
+                cursor: pointer;
+                transition: .3s;
+
+                svg {
+                    path {
+                        stroke: color(black);
+                    }
+                }
+
+                &:hover {
+                    background: color(primary);
+                    border-color: color(primary);
+                    box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
+
+                    svg {
+                        path {
+                            stroke: white;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        /* the slides */
+        .slick-slide {
+            margin: 0 30px;
+        }
+
+        .slick-list {
+            margin: 0 -30px;
+        }
+    }
+    &__brand{
+        margin-top: 130px;
+        &_title{
+            text-align: center;
+            h5{
+                margin: 0 30px;
+                margin-bottom: 15px;
+            }
+            p{
+                margin: 0 5px;
+            }
+        }
+        .brand-area{
+            margin-top: 50px;
+            &-image{
+                img{
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.cta{
+    background-color: rgba(235, 235, 242, 0.5);
+    padding: 220px 0;
+    &__section{
+        margin: 0 55px;
+        text-align: center;
+        p{
+            padding-top: 10px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+}

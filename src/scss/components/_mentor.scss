@@ -1,0 +1,22 @@
+.mentor{
+    text-align: center;
+    &__img{
+        img{
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    }
+&__title{
+    margin-top: 20px;
+    h6{
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    p{
+        color: color(lowBlack);
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+}

@@ -1,0 +1,77 @@
+.ourinstructor{
+    background-color: rgba(16, 137, 255, 0.05);
+    padding: 100px 0;
+    &__wrapper{
+        position: relative;
+        .slick-dots{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: color(lowBlack);
+                margin: 0 10px;
+                button{
+                    font-size: 0;
+                    border: 0;
+                }
+                &.slick-active{
+                    background-color: color(lightBlack);
+                }
+            }
+        }
+       .slider-arrows{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           .prev-arrow,
+           .next-arrow{
+               width: 52px;
+               height: 52px;
+               background-color: transparent;
+               border-radius: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               border: 1px solid #EBEBF2;
+               cursor: pointer;
+               transition: .3s;
+               svg {
+                path {
+                    stroke: #666575;
+                }
+            }
+               &:hover{
+                   border-color: color(primary);
+                   background-color: color(primary);
+                   svg {
+                    path {
+                        stroke: white;
+                    }
+                }
+               }
+           }
+           .prev-arrow{
+            position: absolute;
+            top: 50%;
+            left: -90px;
+            transform: translateY(-50%);
+           }
+           .next-arrow{
+            position: absolute;
+            top: 50%;
+            right: -90px;
+            transform: translateY(-50%);
+           }
+       } 
+        .slick-slide {
+            margin: 0 15px;
+        }
+        .slick-list {
+            margin: 0 -15px;
+        }
+    }
+}

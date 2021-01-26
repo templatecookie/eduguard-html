@@ -1,40 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
+	margin: 0;
+	padding: 0;
+	outline: 0;
 }
 
 img {
-    border: 0;
-    outline: 0;
-    max-width: 100%;
+	border: 0;
+	outline: 0;
+	max-width: 100%;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+}
+
+@media (min-width: 1200px) {
+
+	.container,
+	.container-sm,
+	.container-md,
+	.container-lg,
+	.container-xl {
+		max-width: 1170px;
+	}
 }
 
 body {
-    background-color: $bgColor;
-    font-family: $font;
-    user-select: none;
+	font-family: $font;
+	transition: .3s;
 }
 
-a {
-    display: inline-block;
-    color: $lightBlack;
-    @include animate(.3s);
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+	box-shadow: none !important;
+}
+a{
+	transition: .3s;
+}
+a,
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
 }
 
 li {
-    list-style-type: none;
+	list-style: none
 }
 
-p {
-    color: $black;
-    line-height: 24px;
+.bg-warning {
+	transition: .3s;
+	background-color: rgba(255, 201, 27, 0.1) !important;
+	svg {
+		transition: .3s;
+		path {
+			stroke: #FFC91B;
+		}
+	}
+
 }
 
-.color {
-    color: $color;
+.bg-success {
+	transition: .3s;
+	background-color: rgba(0, 175, 145, 0.1) !important;
+	svg {
+		transition: .3s;
+		path {
+			stroke: #00AF91;
+		}
+	}
+
+}
+
+.bg-denger {
+	transition: .3s;
+	background-color: rgba(241, 92, 76, 0.1) !important;
+	svg {
+		transition: .3s;
+		path {
+			stroke: #F15C4C;
+		}
+	}
+}
+.section-title{
+	margin-bottom: 50px;
+}
+
+.mb-30{
+	margin-bottom: 30px;
 }

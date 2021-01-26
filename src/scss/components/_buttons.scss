@@ -1,0 +1,126 @@
+.btn {
+    padding: 10px 24px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 3px;
+    text-transform: capitalize;
+    transition: .3s;
+    &.btn-md{
+        padding: 12px 24px !important;
+    }
+    &.btn-lg{
+        padding: 14px 32px !important;
+    }
+    &.bg-primary {
+        color: white;
+        background-color: color(lightBlack) !important;
+        transition: .3s;
+
+        &:hover {
+            background-color: color(primary) !important;
+            color: white;
+        }
+    }
+    &.bg-primary2{
+        color: white;
+        background-color: color(primary) !important;
+        transition: .3s;
+
+        &:hover {
+            background-color: color(secondary) !important;
+            color: white;
+        }
+    }
+    &.btn-outline-primary {
+        border-color: color(lightBlack) !important;
+        background-color: transparent !important;
+        color: color(lightBlack) !important;
+
+        &:hover {
+            color: white !important;
+            background-color: color(lightBlack) !important;
+        }
+    }
+    &.btn-outline-primary2 {
+        border-color: color(primary) !important;
+        background-color: transparent !important;
+        color: color(primary) !important;
+
+        &:hover {
+            color: white !important;
+            background-color: color(secondary) !important;
+            border-color: color(secondary) !important;
+        }
+    }
+
+    &.bg-light {
+        color: color(light);
+        background-color: color(ash) !important;
+    }
+
+    &.btn-outline-light {
+        border-color: color(ash) !important;
+        background-color: transparent !important;
+        color: color(lowBlack) !important;
+    }
+
+    &.btn-shadow {
+        color: color(lightBlack);
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        border-radius: 3px;
+        &:hover{
+            box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
+        }
+    }
+    &.btn-shadow2 {
+        color: color(lightBlack);
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        border-radius: 3px;
+        &:hover{
+            color: color(primary);
+            box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
+        }
+    }
+    &.btn-shadow-light{
+        color: color(lowBlack);
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        border-radius: 3px;
+    }
+    &.bg-transparent{
+        color: color(primary);
+        background-color: transparent !important;
+        &:hover{
+            color: color(primary) !important;
+            background-color:rgba(16, 137, 255, 0.1) !important;
+        }
+    }
+    &.bg-transparent-light{
+        color: color(lowBlack);
+    }
+    &.text-primary {
+        border: 0;
+        color: color(lightBlack) !important;
+
+        &:hover {
+            color: color(primary) !important;
+            text-decoration: underline;
+        }
+    }
+    &.btn-text-light{
+        color: color(lowBlack);
+    }
+}
+
+
+// Checkbox
+
+.checkbox-primary[type="checkbox"]{
+    width: 28px;
+    height: 28px;
+    border: 2px solid color(lowBlack);
+}

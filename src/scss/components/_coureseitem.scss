@@ -1,0 +1,73 @@
+.course{
+    &__img{
+        img{
+            border-top-left-radius: 5px ;
+            border-top-right-radius:5px ;
+        }
+    }
+    &__content{
+        background: white;
+        padding: 0 12px;
+        border-bottom-left-radius: 5px ;
+        border-bottom-right-radius:5px ;
+        &_title{
+            padding-top: 26px;
+            margin-bottom: 14px;
+           h6{
+               font-size: 20px;
+               font-weight: 500;
+           } 
+        }
+        &_author{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 14px;
+            border-bottom: 1px solid color(ash);
+            .info{
+                display: flex;
+                align-items: center;
+                &_img{
+                    width: 34px;
+                    height: 34px;
+                    margin-right: 9px;
+                    img{
+                        width: 34px;
+                        height: 34px;
+                        object-fit: cover;
+                        border-radius: 4px;
+                    }
+                    span{
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: color(lightBlack);
+                    }
+                }
+            }
+            .price{
+                del{
+                    font-size: 14px;
+                    color: color(lowBlack);
+                    font-weight: 500;
+                }
+                span{
+                    color: color(lightBlack);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        &_time{
+            padding: 10px 0;
+            .star,
+            .eay,
+            .book,
+            .clock{
+                span{
+                    font-size: 14px;
+                    color: color(lightBlack);
+                }
+            }
+        }
+    }
+}

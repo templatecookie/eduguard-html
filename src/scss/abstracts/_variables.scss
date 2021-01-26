@@ -1,9 +1,63 @@
-$color: #00C99C;
-$black: #333;
-$white: white;
-// $bgColor: #ebf0f0;
-$bgColor: #F6F8FA;
-$lightBlack: #777;
-$orange: #FD6179;
-$blue: #1f7ae2;
-$purple: #4E5BDE;
+// color
+$colors:(
+   black: #191922,
+   lightBlack:#35343E,
+   light:#C4C4C4,
+   gray:#666575,
+   lowBlack:#908FA5,
+   ash: #EBEBF2,
+   primary:#1089FF,
+   secondary:#0264ED,
+   tertiary:#FF7A1A,
+   warning:#FFC91B,
+   danger:#F15C4C,
+   success:#00AF91,
+);
+
+@function color($color-name) {
+  @return map-get($map: $colors , $key: $color-name);
+}
+
+// .section-title {
+//     @include font(15px, bold, 30px, color(black));
+// }
+
+// @mixin  font($size,$type,$height,$color) {
+//     font-size: $size;
+//     font-weight: $type;
+//     line-height: $height;
+//     color: $color;
+// }
+/*---------------------------*/
+/* RESPONSIVE*/
+/*----------------------------*/
+
+// Extra large devices 1200px - 1399px
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+}
+
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+
+}
+
+// extra Small devices 420px
+@media (max-width: 420px) {
+
+}
