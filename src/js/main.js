@@ -121,19 +121,19 @@
     ]
   });
   
-  $('.features-active').slick({
+  $('.ourinstructor-active').slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: '.features-wrapper .prev-arrow',
-    nextArrow: '.features-wrapper .next-arrow',
+    prevArrow: '.ourinstructor__wrapper .prev-arrow',
+    nextArrow: '.ourinstructor__wrapper .next-arrow',
     responsive: [{
         breakpoint: 1025,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           dots: true,
         },
       },
@@ -146,7 +146,7 @@
       },
     ],
   });
-  
+
   // init Isotope
   var $grid = $('.populercoures-item').isotope({
     // options
