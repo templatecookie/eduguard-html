@@ -92,11 +92,11 @@
         padding: 15px 0;
         .sidenav {
             height: 100%;
-            width: 0;
+            width: 300px;
             position: fixed;
             z-index: 1;
             top: 0;
-            left: 0;
+            left: -300px;
             background-color: #FCFCFC;
             overflow-x: hidden;
             transition: 0.5s;
@@ -111,7 +111,7 @@
                         color: color(primary);
                         padding: 0px 10px;
                         padding: 0px 10px;
-    padding-bottom: 5px;
+                        padding-bottom: 5px;
                         &:hover{
                             text-decoration: underline;
                         }
