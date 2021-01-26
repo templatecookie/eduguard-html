@@ -20,8 +20,13 @@
             font-size: 14px;
             text-transform: uppercase;
             font-weight: 600;
-            margin-right: 36px;
+            margin-right: 10px;
             color: $white;
+            padding: 15px 24px;
+            border-radius: 5px;
+            &:hover {
+                background-color: rgba($white, .1);
+            }
         }
         .close {
             width: 45px;
@@ -33,6 +38,11 @@
             position: relative;
             margin-left: 15;
             margin-right: 0;
+            border-radius: 5px;
+            padding: 0;
+            &:hover {
+                background-color: rgba($white, .1);
+            }
             &::after {
                 content: '';
                 width: 1px;
