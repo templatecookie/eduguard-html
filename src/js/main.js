@@ -156,8 +156,8 @@
     autoplay: true,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: '.ourinstructor__wrapper .prev-arrow',
-    nextArrow: '.ourinstructor__wrapper .next-arrow',
+    prevArrow: '.ourevent__wrapper .prev-arrow',
+    nextArrow: '.ourevent__wrapper .next-arrow',
     responsive: [{
         breakpoint: 1025,
         settings: {

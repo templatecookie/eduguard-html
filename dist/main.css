@@ -9688,7 +9688,7 @@ h4, .h4 {
 h5, .h5 {
   font-size: 32px;
   line-height: 1.25;
-  font-weight: 700; }
+  font-weight: 600; }
 
 h6, .h6 {
   font-size: 24px;
@@ -9819,6 +9819,9 @@ li {
 
 .mb-30 {
   margin-bottom: 30px; }
+
+.footer-ex-p {
+  padding-top: 220px !important; }
 
 .footer {
   background-color: #35343E;
@@ -10434,16 +10437,70 @@ li {
     .ourinstructor__wrapper .slick-list {
       margin: 0 -15px; }
 
-.cta {
+.scta {
   background-color: rgba(235, 235, 242, 0.5);
   padding: 220px 0; }
-  .cta__section {
+  .scta__section {
     margin: 0 55px;
     text-align: center; }
-    .cta__section p {
+    .scta__section p {
       padding-top: 10px;
       font-size: 18px;
       line-height: 1.5; }
+
+.calltoaction {
+  background-color: rgba(235, 235, 242, 0.7);
+  padding: 100px 0; }
+  .calltoaction__wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .calltoaction__wrapper_item {
+      width: 530px;
+      text-align: center;
+      margin-bottom: 70px; }
+      .calltoaction__wrapper_item p {
+        padding-top: 10px; }
+    .calltoaction__wrapper::before {
+      position: absolute;
+      content: "";
+      background-color: rgba(144, 143, 165, 0.5);
+      height: 150px;
+      width: 1px;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+
+.newsletter {
+  background-color: rgba(235, 235, 242, 0.7); }
+  .newsletter__wrapper {
+    background-color: white;
+    text-align: center;
+    padding: 40px 50px;
+    border-radius: 10px;
+    margin-bottom: -125px; }
+    .newsletter__wrapper p {
+      padding-top: 10px; }
+    .newsletter__wrapper_search {
+      margin-top: 24px; }
+      .newsletter__wrapper_search .search__item input {
+        border: 1px solid rgba(144, 143, 165, 0.4) !important;
+        -webkit-box-shadow: inherit !important;
+                box-shadow: inherit !important; }
 
 .btn {
   padding: 10px 24px;
@@ -10655,10 +10712,10 @@ li {
           -o-object-fit: cover;
              object-fit: cover;
           border-radius: 4px; }
-        .course__content_author .info_img span {
-          font-size: 14px;
-          line-height: 1.5;
-          color: #35343E; }
+      .course__content_author .info a {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #35343E; }
     .course__content_author .price del {
       font-size: 14px;
       color: #908FA5;
