@@ -1,0 +1,22 @@
+.newsletter{
+    background-color: rgba(235, 235, 242, 0.7);
+    &__wrapper{
+        background-color: white;
+        text-align: center;
+        padding: 40px 50px;
+        border-radius: 10px;
+        margin-bottom: -125px;
+        p{
+            padding-top: 10px;
+        }
+        &_search{
+            margin-top: 24px;
+            .search__item{
+                input{
+                    border: 1px solid rgba(144, 143, 165, 0.4) !important;
+                    box-shadow: inherit !important;
+                }
+            }
+        }
+    }
+}
