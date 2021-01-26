@@ -1,0 +1,69 @@
+.form-element {
+    margin-bottom: 20px;
+    position: relative;
+    label {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #000;
+        text-transform: capitalize;
+    }
+    input {
+        width: 100%;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 16px 20px;
+        border: 1px solid rgba($black50, 0.4);
+    }
+    .z-alert {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &-icon {
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .z-alert-input {
+        position: relative;
+        .z-alert-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translate(0, -50%);
+            color: $black50;
+        }
+    }
+
+    &.success input, input.success {
+        border-color: rgba($success, .4);
+        background-color: rgba($success, .02);
+    }
+    &.error input, input.error {
+        border-color: rgba($danger, .4);
+        background-color: rgba($danger, .02);
+    }
+    &.error {
+        .z-alert span {
+            color: $danger;
+        }
+        .z-alert-icon {
+            color: $danger;
+        }
+    }
+    &.success {
+        .z-alert span {
+            color: $success;
+        }
+        .z-alert-icon {
+            color: $success;
+        }
+    }
+}
