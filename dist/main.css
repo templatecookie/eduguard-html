@@ -9756,10 +9756,6 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   -webkit-transition: .3s;
   transition: .3s; }
 
