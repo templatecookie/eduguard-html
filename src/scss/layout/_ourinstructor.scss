@@ -105,7 +105,22 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
+    .ourinstructor{
+        padding: 50px 0;
+        &__wrapper{
+           .slider-arrows{
+               display: none;
+           }
+        }
+        .mentor{
+            &__title{
+                h6{
+                    font-size: 18px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 
 // Small devices 420px - 574px

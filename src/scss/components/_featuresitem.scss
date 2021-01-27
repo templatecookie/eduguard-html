@@ -79,7 +79,30 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
+    .featuresitem{
+        margin-top: 0px;
+        padding-top: 50px;
+        .features{
+            margin: 0 78px;
+            margin-bottom: 30px;
+        }
+        .features{
+            &__icon{
+                width: 70px;
+                height: 70px;
+            }
+            &__title{
+                margin-top: 18px;
+                h6{
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 // Small devices 420px - 574px

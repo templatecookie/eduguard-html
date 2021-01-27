@@ -35,11 +35,12 @@
 
     &__wrapper {
         margin-left: 65px;
-        &_item {
+        &_title{
             h4 {
                 margin-bottom: 50px;
             }
-
+        }
+        &_item {
             p {
                 color: #666575;
                 font-size: 20px;
@@ -227,7 +228,52 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
+    .testimonial {
+        padding: 50px 0;
+        &__img {
+            margin: auto;
+            margin-bottom: 120px;
+            .dot{
+                display: none;
+            }
+            .rectangle{
+                left: -37px;
+            }
+        }
+    
+        &__wrapper {
+            margin-left: 0px;
+            &_title{
+                h4 {
+                    margin-bottom: 20px;
+                }
+            }
+            &_item{
+                p{
+                    font-size: 16px;
+                }
+                &-author{
+                    margin-bottom: 30px;
+                }
+            }
+            .slider-arrows{
+                justify-content: center;
+            }
+        }
+        &__brand{
+            margin-top: 50px;
+            &_title{
+                h5{
+                    margin: 0;
+                    font-size: 26px;
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 
 // Small devices 420px - 574px

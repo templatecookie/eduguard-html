@@ -21,3 +21,56 @@
         }
     }
 }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .newsletter{
+        &__wrapper{
+            padding: 30px 20px;
+            h5{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+                
+            }
+            &_search{
+                margin-top: 24px;
+                .search__item{
+                    input{
+                        border: 1px solid rgba(144, 143, 165, 0.4) !important;
+                        box-shadow: inherit !important;
+                        padding-right: 143px;
+                        &::placeholder{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+
+}
+
+// extra Small devices 420px
+@media (max-width: 420px) {
+
+}

@@ -50,10 +50,25 @@
         width: 40px;
         height: 40px;
     }
-
+}
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
+    .avatar01{
+        width: 50px;
+        height: 50px;
+    }
+    .avatar02{
+        width: 40px;
+        height: 40px;
+    }
+    .avatar03{
+        width: 30px;
+        height: 30px;
+    }
+    .avatar04{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 // Small devices 420px - 574px
@@ -65,4 +80,4 @@
 @media (max-width: 420px) {
 
 }
-}
+

@@ -136,41 +136,6 @@
         &__img{
             margin: auto;
             margin-top: 160px;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px 10px 0 10px;
-            }
-            .dots{
-                position: absolute;
-                top: -110px;
-                left: -40px;
-                z-index: -1;
-            }
-            &::after{
-                width: 349px;
-                height: 208px;
-                content: "";
-                position: absolute;
-                top: -60px;
-                right: -60px;
-                z-index: -1;
-                background-color: white;
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%);
-                border-radius: 12px;
-            }
-            &::before{
-                content: "";
-                position: absolute;
-                bottom: -55px;
-                right: -35px;
-                width: 410px;
-                height: 377px;
-                border-radius: 10px;
-                border: 4px solid #1089FF;
-                z-index: -1;
-            }
     
         }
     }
@@ -178,7 +143,41 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
+    .banner{
+        min-height: 1030px;
+        background-image: none !important;
+        background-color: rgba(235, 235, 242, 0.5);
+         &__wrapper{
+             padding-top: 100px;
+             h1{
+                 max-width: 100%;
+                 margin-bottom: 15px;
+                 font-size: 45px;
+             }
+             p{
+                 font-size: 16px;
+                 min-width: 100%;
+     
+             }
+             &_search{
+                 margin-top: 30px;
+                 .search__item{
+                     input{
+                         &::placeholder{
+                             font-size: 12px;
+                         }
+                     }
+                 }
+             }
+         }
+         &__img{
+             margin: auto;
+             margin-top: 160px;
+             width: 400px;
+             height: 452px;
+     
+         }
+     }
 }
 
 // Small devices 420px - 574px

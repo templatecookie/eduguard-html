@@ -88,15 +88,21 @@ h6{
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
+    h4{
+        font-size: 32px;
+    }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-
+    h4{
+        font-size: 28px;
+    }
 }
 
 // extra Small devices 420px
 @media (max-width: 420px) {
-
+    h4{
+        font-size: 24px;
+    }
 }

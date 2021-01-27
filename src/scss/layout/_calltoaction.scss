@@ -48,7 +48,7 @@
             &_item{
                 margin-bottom: 50px;
                 h5{
-                    flex: 28px;
+                    font-size: 28px;
                 }
                 p{
                     font-size: 18px;
@@ -63,7 +63,25 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
+    .calltoaction{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        &__wrapper{
+            justify-content: center;
+            &_item{
+                margin-bottom: 50px;
+                h5{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            &::before{
+                display: none;
+            }
+        }
+    }
 }
 
 // Small devices 420px - 574px

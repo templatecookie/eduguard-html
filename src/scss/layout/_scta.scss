@@ -130,7 +130,35 @@
 }
 
 // Small devices 575px - 767px
-@media (min-width: 575px) and (max-width: 767px) {}
+@media (min-width: 575px) and (max-width: 767px) {
+    .scta {
+        padding: 130px 0;
+    
+        &__section {
+            margin: 0 24px;
+            text-align: center;
+    
+            p {
+                font-size: 16px;
+            }
+            a{
+                margin-top: 10px !important;
+            }
+        }
+        &__student{
+            img{
+               &.avatar3 {
+                   top: 18%;
+               }
+            }
+        }
+        &__shape {
+            img {
+                display: none;
+            }
+        }
+    }
+}
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {}

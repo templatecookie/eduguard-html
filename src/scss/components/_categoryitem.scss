@@ -64,7 +64,21 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
+    .categoryitem{
+        padding: 50px 0;
 
+        .category{
+            margin-bottom: 30px;
+            &__tittle{
+                h6{
+                    font-size: 18px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 
 // Small devices 420px - 574px

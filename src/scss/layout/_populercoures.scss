@@ -106,6 +106,7 @@ padding: 100px 0;
                     margin-bottom: 20px;
                 }
             }
+            
         }
         .course__content_title h6 {
             font-size: 16px;
@@ -116,7 +117,36 @@ padding: 100px 0;
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
+    .populercoures{
+        padding: 50px 0;
+        &__wrapper{
+            justify-content: center;
+            .section-title{
+                h4{
+                    margin-bottom: 20px;
+                }
+            }
+            &_list{
+                a{
+                    margin-left: 30px;
+                }
+                ul{
+                    li{
+                        margin-right: 15px;
+    
+                    }
+                }
+            }
+        }
+        .course__content_title h6 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .coures{
+            margin: 0 75px;
+            margin-bottom: 30px !important;
+        }
+}
 }
 
 // Small devices 420px - 574px
