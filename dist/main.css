@@ -9781,6 +9781,9 @@ a:hover,
 .footer -menu li a:hover {
   text-decoration: none; }
 
+.fix {
+  overflow: hidden; }
+
 ul {
   margin: 0px;
   padding: 0px; }
@@ -10505,6 +10508,13 @@ li {
     .ourinstructor__wrapper .slick-list {
       margin: 0 -15px; }
 
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ourinstructor__wrapper .slider-arrows {
+    display: none; } }
+
 .scta {
   position: relative;
   background-color: rgba(235, 235, 242, 0.5);
@@ -10557,6 +10567,14 @@ li {
       bottom: 15%;
       right: 27%; }
 
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .scta__student img.avatar3 {
+    top: 61%;
+    left: 21%; } }
+
 .calltoaction {
   background-color: rgba(235, 235, 242, 0.7);
   padding: 100px 0; }
@@ -10593,6 +10611,13 @@ li {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .calltoaction__wrapper_item {
+    width: 435px; } }
 
 .newsletter {
   background-color: rgba(235, 235, 242, 0.7); }
@@ -11211,6 +11236,13 @@ li {
   .event__content_detail .loction span, .event__content_detail .date span {
     color: #35343E;
     font-size: 14px; }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .event__content_detail .loction span, .event__content_detail .date span {
+    font-size: 12px; } }
 
 .play-button {
   width: 79px;

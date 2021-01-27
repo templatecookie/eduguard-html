@@ -46,7 +46,9 @@ a:hover,
 .footer -menu li a:hover {
 	text-decoration: none;
 }
-
+.fix{
+	overflow: hidden;
+}
 ul {
 	margin: 0px;
 	padding: 0px;
