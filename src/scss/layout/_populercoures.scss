@@ -53,3 +53,63 @@ padding: 100px 0;
         }
     }
 }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1199px) {
+    .populercoures{
+            &__wrapper{
+                .section-title{
+                    h4{
+                        font-size: 35px;
+                    }
+                }
+                &_list{
+                    a{
+                        margin-left: 15px;
+                    }
+                    ul{
+                        li{
+                            margin-right: 15px;
+        
+                        }
+                    }
+                }
+            }
+            .course__content_title h6{
+                font-size: 18px;}
+            .course__content_time{
+             .clock,
+             .star,
+             .eay,
+             .book{
+                span {
+                font-size: 12px !important;
+            }   
+             }   
+            }
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+
+}
+
+// extra Small devices 420px
+@media (max-width: 420px) {
+
+}

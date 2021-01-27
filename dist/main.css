@@ -10244,6 +10244,24 @@ li {
   .populercoures .populercoures-item .coures {
     margin-bottom: 50px; }
 
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .populercoures__wrapper .section-title h4, .populercoures__wrapper .section-title .h4 {
+    font-size: 35px; }
+  .populercoures__wrapper_list a {
+    margin-left: 15px; }
+  .populercoures__wrapper_list ul li {
+    margin-right: 15px; }
+  .populercoures .course__content_title h6, .populercoures .course__content_title .h6 {
+    font-size: 18px; }
+  .populercoures .course__content_time .clock span,
+  .populercoures .course__content_time .star span,
+  .populercoures .course__content_time .eay span,
+  .populercoures .course__content_time .book span {
+    font-size: 12px !important; } }
+
 .testimonial {
   padding: 130px 0; }
   .testimonial__img {
