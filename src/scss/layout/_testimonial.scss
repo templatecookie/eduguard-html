@@ -278,7 +278,79 @@
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-
+    .testimonial {
+        padding: 50px 0;
+        &__img {
+            margin: auto;
+            width: 412px;
+    height: 453px;
+            margin-bottom: 50px;
+            .dot{
+                display: none;
+            }
+            .rectangle{
+                display: none;
+            }
+        }
+    
+        &__wrapper {
+            margin-left: 0px;
+            &_title{
+                h4 {
+                    margin-bottom: 15px;
+                }
+            }
+            &_item{
+                p{
+                    font-size: 16px;
+                }
+                &-author {
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+    
+                    .author {
+                        &__img {
+                            margin-right: 15px;
+                            width: 50px;
+                            height: 50px;
+                        }
+    
+                        &__name {
+                            h6 {
+                                font-size: 18px;
+                            }
+    
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .slider-arrows{
+                justify-content: center;
+            }
+        }
+        &__brand{
+            margin-top: 50px;
+            &_title{
+                h5{
+                    margin: 0;
+                    font-size: 26px;
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .testimonial__img .play-video {
+        top: 50%;
+        right: 50%;
+        transform: translateX(50%);
+    
+    }
 }
 
 // extra Small devices 420px

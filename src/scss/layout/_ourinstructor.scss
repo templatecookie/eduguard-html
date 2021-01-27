@@ -125,7 +125,19 @@
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-
+    .ourinstructor{
+        padding: 50px 0;
+        &__wrapper{
+           .slider-arrows{
+               display: none;
+           }
+        }
+        .mentor{
+            &__title{
+                
+            }
+        }
+    }
 }
 
 // extra Small devices 420px

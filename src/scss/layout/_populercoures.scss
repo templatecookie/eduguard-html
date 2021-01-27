@@ -151,7 +151,42 @@ padding: 100px 0;
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-
+    .populercoures{
+        padding: 50px 0;
+        &__wrapper{
+            justify-content: center;
+            margin-bottom: 40px;
+            .section-title{
+                h4{
+                    margin-bottom: 20px;
+                }
+            }
+            &_list{
+                flex-wrap: wrap;
+                justify-content: center;
+                a{
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
+                ul{
+                    li{
+                        margin-right: 10px;
+    
+                    }
+                }
+            }
+        }
+        .course__content_title h6 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .coures{
+            margin-bottom: 30px !important;
+        }
+        .course__img img{
+            width: 100%;
+        }
+}
 }
 
 // extra Small devices 420px

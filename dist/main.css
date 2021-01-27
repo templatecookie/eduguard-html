@@ -10249,6 +10249,50 @@ li {
       width: 400px;
       height: 452px; } }
 
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .banner {
+    min-height: 880px;
+    background-image: none !important;
+    background-color: rgba(235, 235, 242, 0.5); }
+    .banner__wrapper {
+      padding-top: 100px; }
+      .banner__wrapper_title {
+        min-width: 100%; }
+      .banner__wrapper h1, .banner__wrapper .h1 {
+        max-width: 100%;
+        margin-bottom: 15px;
+        font-size: 28px; }
+      .banner__wrapper p {
+        font-size: 14px;
+        min-width: 100%; }
+      .banner__wrapper_search {
+        margin-top: 30px; }
+        .banner__wrapper_search .search__item input::-webkit-input-placeholder {
+          font-size: 12px; }
+        .banner__wrapper_search .search__item input::-moz-placeholder {
+          font-size: 12px; }
+        .banner__wrapper_search .search__item input:-ms-input-placeholder {
+          font-size: 12px; }
+        .banner__wrapper_search .search__item input::-ms-input-placeholder {
+          font-size: 12px; }
+        .banner__wrapper_search .search__item input::placeholder {
+          font-size: 12px; }
+        .banner__wrapper_search .search__select .nice-select {
+          font-size: 12px; }
+      .banner__wrapper_title {
+        max-width: 70%; }
+    .banner__img {
+      margin: auto;
+      margin-top: 100px;
+      width: 385px;
+      height: 417px; }
+      .banner__img .dots {
+        display: none; }
+      .banner__img::after {
+        display: none; }
+      .banner__img::before {
+        display: none; } }
+
 .populercoures {
   padding: 100px 0;
   background: #EBEBF2; }
@@ -10367,6 +10411,38 @@ li {
     .populercoures .coures {
       margin: 0 75px;
       margin-bottom: 30px !important; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .populercoures {
+    padding: 50px 0; }
+    .populercoures__wrapper {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 40px; }
+      .populercoures__wrapper .section-title h4, .populercoures__wrapper .section-title .h4 {
+        margin-bottom: 20px; }
+      .populercoures__wrapper_list {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .populercoures__wrapper_list a {
+          margin-left: 0px;
+          margin-top: 10px; }
+        .populercoures__wrapper_list ul li {
+          margin-right: 10px; }
+    .populercoures .course__content_title h6, .populercoures .course__content_title .h6 {
+      font-size: 16px;
+      font-weight: 500; }
+    .populercoures .coures {
+      margin-bottom: 30px !important; }
+    .populercoures .course__img img {
+      width: 100%; } }
 
 .testimonial {
   padding: 130px 0; }
@@ -10574,6 +10650,54 @@ li {
       .testimonial__brand_title p {
         font-size: 16px; } }
 
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .testimonial {
+    padding: 50px 0; }
+    .testimonial__img {
+      margin: auto;
+      width: 412px;
+      height: 453px;
+      margin-bottom: 50px; }
+      .testimonial__img .dot {
+        display: none; }
+      .testimonial__img .rectangle {
+        display: none; }
+    .testimonial__wrapper {
+      margin-left: 0px; }
+      .testimonial__wrapper_title h4, .testimonial__wrapper_title .h4 {
+        margin-bottom: 15px; }
+      .testimonial__wrapper_item p {
+        font-size: 16px; }
+      .testimonial__wrapper_item-author {
+        margin-top: 20px;
+        margin-bottom: 30px; }
+        .testimonial__wrapper_item-author .author__img {
+          margin-right: 15px;
+          width: 50px;
+          height: 50px; }
+        .testimonial__wrapper_item-author .author__name h6, .testimonial__wrapper_item-author .author__name .h6 {
+          font-size: 18px; }
+        .testimonial__wrapper_item-author .author__name span {
+          font-size: 12px; }
+      .testimonial__wrapper .slider-arrows {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+    .testimonial__brand {
+      margin-top: 50px; }
+      .testimonial__brand_title h5, .testimonial__brand_title .h5 {
+        margin: 0;
+        font-size: 26px;
+        margin-bottom: 15px; }
+      .testimonial__brand_title p {
+        font-size: 16px; }
+  .testimonial__img .play-video {
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%); } }
+
 .ourinstructor {
   background-color: rgba(16, 137, 255, 0.05);
   padding: 100px 0; }
@@ -10687,6 +10811,12 @@ li {
     .ourinstructor .mentor__title h6, .ourinstructor .mentor__title .h6 {
       font-size: 18px;
       font-size: 12px; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .ourinstructor {
+    padding: 50px 0; }
+    .ourinstructor__wrapper .slider-arrows {
+      display: none; } }
 
 .scta {
   position: relative;
@@ -11014,7 +11144,8 @@ li {
 
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   .btn {
-    font-size: 14px; } }
+    font-size: 14px;
+    padding: 10px 20px; } }
 
 @media (max-width: 420px) {
   .btn {
@@ -11288,6 +11419,18 @@ li {
       .categoryitem .category__tittle span {
         font-size: 12px; } }
 
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .categoryitem {
+    padding: 50px 0; }
+    .categoryitem .category {
+      margin-bottom: 30px; }
+      .categoryitem .category__tittle {
+        padding: 25px 0; }
+        .categoryitem .category__tittle h6, .categoryitem .category__tittle .h6 {
+          font-size: 20px; }
+        .categoryitem .category__tittle span {
+          font-size: 14px; } }
+
 .featuresitem {
   margin-top: -130px; }
 
@@ -11362,6 +11505,23 @@ li {
       margin-top: 18px; }
       .featuresitem .features__title h6, .featuresitem .features__title .h6 {
         font-size: 22px;
+        margin-bottom: 10px; }
+      .featuresitem .features__title p {
+        font-size: 14px; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .featuresitem {
+    margin-top: 0px;
+    padding-top: 50px; }
+    .featuresitem .features {
+      margin-bottom: 30px; }
+    .featuresitem .features__icon {
+      width: 70px;
+      height: 70px; }
+    .featuresitem .features__title {
+      margin-top: 18px; }
+      .featuresitem .features__title h6, .featuresitem .features__title .h6 {
+        font-size: 20px;
         margin-bottom: 10px; }
       .featuresitem .features__title p {
         font-size: 14px; } }

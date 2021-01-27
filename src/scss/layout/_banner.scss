@@ -182,7 +182,60 @@
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-
+    .banner{
+        min-height: 880px;
+        background-image: none !important;
+        background-color: rgba(235, 235, 242, 0.5);
+        &__wrapper{
+            padding-top: 100px;
+            &_title{
+                min-width: 100%;
+            }
+            h1{
+                max-width: 100%;
+                margin-bottom: 15px;
+                font-size: 28px;
+            }
+            p{
+                font-size: 14px;
+                min-width: 100%;
+    
+            }
+            &_search{
+                margin-top: 30px;
+                .search__item{
+                    input{
+                        &::placeholder{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .search__select .nice-select{
+                    font-size: 12px;
+                }
+            }
+            &_title{
+                max-width: 70%;
+            }
+        }
+        &__img{
+            margin: auto;
+            margin-top: 100px;
+            width: 385px;
+            height: 417px;
+            .dots{
+                display: none;
+            }
+            &::after{
+                display: none;
+            }
+            &::before{
+                display: none;
+            }
+    
+        }
+        
+    }
 }
 
 // extra Small devices 420px

@@ -90,6 +90,14 @@
         },
       },
       {
+        breakpoint: 574,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
@@ -123,6 +131,14 @@
           slidesToShow: 2,
           dots: true,
         },
+      },
+      {
+        breakpoint: 574,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
       },
       {
         breakpoint: 480,

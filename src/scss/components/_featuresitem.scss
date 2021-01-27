@@ -107,7 +107,29 @@
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-
+        .featuresitem{
+        margin-top: 0px;
+        padding-top: 50px;
+        .features{
+            margin-bottom: 30px;
+        }
+        .features{
+            &__icon{
+                width: 70px;
+                height: 70px;
+            }
+            &__title{
+                margin-top: 18px;
+                h6{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 // extra Small devices 420px
