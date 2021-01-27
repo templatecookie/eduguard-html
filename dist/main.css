@@ -10398,6 +10398,21 @@ li {
       .testimonial__brand .brand-area-image img {
         margin: auto; }
 
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .testimonial__img {
+    margin-left: 0;
+    width: 400px;
+    height: 490px; }
+    .testimonial__img .dot {
+      display: none; }
+    .testimonial__img .rectangle {
+      display: none; }
+  .testimonial__wrapper {
+    margin-left: 0px; } }
+
 .ourinstructor {
   background-color: rgba(16, 137, 255, 0.05);
   padding: 100px 0; }
