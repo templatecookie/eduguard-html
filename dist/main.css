@@ -610,9 +610,9 @@ img.mfp-img {
     padding-left: 6px;
     padding-right: 6px; } }
 
-/*---------------------------*/
-/* RESPONSIVE*/
-/*----------------------------*/
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -9733,6 +9733,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   transition: .3s;
   margin: 0; }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1, .h1 {
+    font-size: 52px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -10086,7 +10090,9 @@ li {
     margin: 0 10px; } }
 
 .banner {
-  min-height: 1117px; }
+  min-height: 1117px;
+  background-position: bottom center;
+  background-repeat: no-repeat; }
   .banner__wrapper {
     padding-top: 180px; }
     .banner__wrapper h1, .banner__wrapper .h1 {
@@ -10143,6 +10149,35 @@ li {
       border-radius: 10px;
       border: 4px solid #1089FF;
       z-index: -1; }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner {
+    min-height: 891px; }
+    .banner__wrapper {
+      padding-top: 150px; }
+      .banner__wrapper h1, .banner__wrapper .h1 {
+        max-width: 100%;
+        margin-bottom: 20px; }
+      .banner__wrapper p {
+        font-size: 18px;
+        max-width: 100%; }
+      .banner__wrapper_search {
+        margin-top: 30px; }
+      .banner__wrapper_title {
+        max-width: 70%; }
+    .banner__img {
+      margin-top: 100px;
+      width: 390px;
+      height: 480px; }
+      .banner__img .dots {
+        display: none; }
+      .banner__img::after {
+        display: none; }
+      .banner__img::before {
+        display: none; } }
 
 .populercoures {
   padding: 100px 0;
@@ -10541,7 +10576,8 @@ li {
       .newsletter__wrapper_search .search__item input {
         border: 1px solid rgba(144, 143, 165, 0.4) !important;
         -webkit-box-shadow: inherit !important;
-                box-shadow: inherit !important; }
+                box-shadow: inherit !important;
+        padding-right: 143px; }
 
 .btn {
   padding: 10px 24px;
@@ -10876,7 +10912,9 @@ li {
   .category__tittle h6, .category__tittle .h6 {
     font-size: 20px;
     color: #35343E;
-    font-weight: 600; }
+    font-weight: 600;
+    -webkit-transition: none;
+    transition: none; }
   .category__tittle span {
     font-size: 14px;
     line-height: 1.5;
