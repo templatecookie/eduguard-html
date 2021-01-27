@@ -22,3 +22,47 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .avatar01{
+        width: 90px;
+        height: 90px;
+    }
+    .avatar02{
+        width: 70px;
+        height: 70px;
+    }
+    .avatar03{
+        width: 50px;
+        height: 50px;
+    }
+    .avatar04{
+        width: 40px;
+        height: 40px;
+    }
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+
+}
+
+// extra Small devices 420px
+@media (max-width: 420px) {
+
+}
+}

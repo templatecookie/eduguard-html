@@ -83,6 +83,13 @@
         },
       },
       {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+        },
+      },
+      {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
@@ -107,6 +114,13 @@
         breakpoint: 1199,
         settings: {
           slidesToShow: 3,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
           dots: true,
         },
       },

@@ -40,7 +40,25 @@
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .calltoaction{
+        padding-top: 70px;
+        padding-bottom: 20px;
+        &__wrapper{
+            justify-content: center;
+            &_item{
+                margin-bottom: 50px;
+                h5{
+                    flex: 28px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            &::before{
+                display: none;
+            }
+        }
+    }
 }
 
 // Small devices 575px - 767px

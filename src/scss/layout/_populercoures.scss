@@ -96,7 +96,22 @@ padding: 100px 0;
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .populercoures{
+        padding: 70px 0;
+        &__wrapper{
+            justify-content: center;
+            .section-title{
+                h4{
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .course__content_title h6 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+}
 }
 
 // Small devices 575px - 767px
