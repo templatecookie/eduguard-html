@@ -14,28 +14,27 @@ $colors:(
    success:#00AF91,
 );
 
+// colors
+$success: #00AF91;
+$danger: #F15C4C;
+$black50: #908FA5;
+$black90: #35343E;
+$white: #fff;
+$warning: #FFC91B;
+
 @function color($color-name) {
   @return map-get($map: $colors , $key: $color-name);
 }
 
-// .section-title {
-//     @include font(15px, bold, 30px, color(black));
-// }
 
-// @mixin  font($size,$type,$height,$color) {
-//     font-size: $size;
-//     font-weight: $type;
-//     line-height: $height;
-//     color: $color;
-// }
-/*---------------------------*/
-/* RESPONSIVE*/
-/*----------------------------*/
-
-// Extra large devices 1200px - 1399px
-@media (min-width: 1200px) and (max-width: 1399px) {
+// extra Small devices 420px
+@media (max-width: 420px) {
 
 }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
 
 // large devices 992px - 1169px
 @media (min-width: 992px) and (max-width: 1199px) {

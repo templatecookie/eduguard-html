@@ -21,6 +21,7 @@
             font-size: 20px;
             color: color(lightBlack);
             font-weight: 600;
+            transition: none;
         }
         span{
             font-size: 14px;
@@ -39,4 +40,68 @@
             }
         }
     }
+}
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .categoryitem{
+        padding: 50px 0;
+
+        .category{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .categoryitem{
+        padding: 50px 0;
+
+        .category{
+            margin-bottom: 30px;
+            &__tittle{
+                h6{
+                    font-size: 18px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .categoryitem{
+        padding: 50px 0;
+
+        .category{
+            margin-bottom: 30px;
+            &__tittle{
+                padding: 25px 0;
+                h6{
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// extra Small devices 420px
+@media (max-width: 420px) {
+
 }

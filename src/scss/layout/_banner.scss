@@ -1,5 +1,7 @@
 .banner{
     min-height: 1117px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
     &__wrapper{
         padding-top: 180px;
         h1{
@@ -65,4 +67,178 @@
         }
 
     }
+}
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1199px) {
+    .banner{
+        min-height: 891px;
+        &__wrapper{
+            padding-top: 150px;
+            h1{
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+                max-width: 100%;
+    
+            }
+            &_search{
+                margin-top: 30px;
+
+            }
+            &_title{
+                max-width: 70%;
+            }
+        }
+        &__img{
+            margin-top: 100px;
+            width: 390px;
+            height: 480px;
+            .dots{
+                display: none;
+            }
+            &::after{
+                display: none;
+            }
+            &::before{
+                display: none;
+            }
+    
+        }
+    }
+
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner{
+       background-image: none !important;
+       background-color: rgba(235, 235, 242, 0.5);
+       padding-bottom: 70px;
+        &__wrapper{
+            padding-top: 120px;
+            h1{
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+                min-width: 100%;
+    
+            }
+        }
+        &__img{
+            margin: auto;
+            margin-top: 160px;
+    
+        }
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .banner{
+        min-height: 1030px;
+        background-image: none !important;
+        background-color: rgba(235, 235, 242, 0.5);
+         &__wrapper{
+             padding-top: 100px;
+             h1{
+                 max-width: 100%;
+                 margin-bottom: 15px;
+                 font-size: 45px;
+             }
+             p{
+                 font-size: 16px;
+                 min-width: 100%;
+     
+             }
+             &_search{
+                 margin-top: 30px;
+                 .search__item{
+                     input{
+                         &::placeholder{
+                             font-size: 12px;
+                         }
+                     }
+                 }
+             }
+         }
+         &__img{
+             margin: auto;
+             margin-top: 160px;
+             width: 400px;
+             height: 452px;
+     
+         }
+     }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .banner{
+        min-height: 880px;
+        background-image: none !important;
+        background-color: rgba(235, 235, 242, 0.5);
+        &__wrapper{
+            padding-top: 100px;
+            &_title{
+                min-width: 100%;
+            }
+            h1{
+                max-width: 100%;
+                margin-bottom: 15px;
+                font-size: 28px;
+            }
+            p{
+                font-size: 14px;
+                min-width: 100%;
+    
+            }
+            &_search{
+                margin-top: 30px;
+                .search__item{
+                    input{
+                        &::placeholder{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .search__select .nice-select{
+                    font-size: 12px;
+                }
+            }
+            &_title{
+                max-width: 70%;
+            }
+        }
+        &__img{
+            margin: auto;
+            margin-top: 100px;
+            width: 385px;
+            height: 417px;
+            .dots{
+                display: none;
+            }
+            &::after{
+                display: none;
+            }
+            &::before{
+                display: none;
+            }
+    
+        }
+        
+    }
+}
+
+// extra Small devices 420px
+@media (max-width: 420px) {
+
 }

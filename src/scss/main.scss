@@ -18,10 +18,13 @@
 @import "layout/populercoures";
 @import "layout/testimonial";
 @import "layout/ourinstructor";
-@import "layout/cta";
+@import "layout/scta";
+@import "layout/calltoaction";
+@import "layout/newsletter";
 
 @import "components/buttons";
 @import "components/form";
+@import "components/alert";
 @import "components/coureseitem";
 @import "components/categoryitem";
 @import "components/featuresitem";
@@ -32,6 +35,7 @@
 @import "components/eventitem";
 @import "components/playbutton";
 @import "components/mentor";
+@import "components/avatar";
 
 @import "pages/home";
 @import "pages/contact";

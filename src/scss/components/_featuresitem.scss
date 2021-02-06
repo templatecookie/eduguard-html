@@ -55,3 +55,84 @@
         }
     }
 }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
+
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .featuresitem{
+        margin-top: 0px;
+        padding-top: 70px;
+        .features{
+            margin-bottom: 40px;
+        }
+    }
+
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .featuresitem{
+        margin-top: 0px;
+        padding-top: 50px;
+        .features{
+            margin: 0 78px;
+            margin-bottom: 30px;
+        }
+        .features{
+            &__icon{
+                width: 70px;
+                height: 70px;
+            }
+            &__title{
+                margin-top: 18px;
+                h6{
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+        .featuresitem{
+        margin-top: 0px;
+        padding-top: 50px;
+        .features{
+            margin-bottom: 30px;
+        }
+        .features{
+            &__icon{
+                width: 70px;
+                height: 70px;
+            }
+            &__title{
+                margin-top: 18px;
+                h6{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// extra Small devices 420px
+@media (max-width: 420px) {
+
+}
