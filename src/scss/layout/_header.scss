@@ -63,6 +63,9 @@ header{
        .navbar-nav{
            .nav-item{
                margin: 0;
+               .nav-link{
+                padding: 15px 0 !important;
+               }
            }
        } 
     }

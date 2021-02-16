@@ -9989,7 +9989,9 @@ header .user-image {
 
 @media screen and (max-width: 991px) {
   header .navbar-nav .nav-item {
-    margin: 0; } }
+    margin: 0; }
+    header .navbar-nav .nav-item .nav-link {
+      padding: 15px 0 !important; } }
 
 .banner {
   min-height: 1117px;
