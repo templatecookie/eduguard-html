@@ -9849,6 +9849,9 @@ li {
 .footer-ex-p {
   padding-top: 220px !important; }
 
+button:focus {
+  outline: none; }
+
 .footer {
   background-color: #35343E;
   padding-top: 100px; }
@@ -9968,6 +9971,21 @@ header .navbar-nav .nav-item {
 header .navbar-light .navbar-toggler {
   color: transparent !important;
   border-color: #1089FF !important; }
+
+header #cart-nav {
+  position: relative; }
+  header #cart-nav .badge {
+    position: absolute;
+    top: -5px;
+    right: -7px; }
+
+header .user-image {
+  width: 48px;
+  height: 48px; }
+  header .user-image img {
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 @media screen and (max-width: 991px) {
   header .navbar-nav .nav-item {
@@ -10911,6 +10929,8 @@ header .navbar-light .navbar-toggler {
   text-transform: capitalize;
   -webkit-transition: .3s;
   transition: .3s; }
+  .btn:focus {
+    border: none !important; }
   .btn.btn-dark {
     background-color: #42414B !important; }
     .btn.btn-dark:hover {
@@ -11722,6 +11742,28 @@ header .navbar-light .navbar-toggler {
   .avatar04 {
     width: 30px;
     height: 30px; } }
+
+.bg-primary {
+  background-color: #1089FF !important; }
+
+.badge {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .backround-button a,
 .backround-button-outline a,

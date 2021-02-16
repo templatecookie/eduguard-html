@@ -7,6 +7,9 @@
     border-radius: 4px;
     text-transform: capitalize;
     transition: .3s;
+   &:focus{
+       border: none !important;
+   }
     &.btn-dark{
         background-color: color(dark) !important;
         &:hover{

@@ -39,6 +39,22 @@ header{
         color: transparent !important;
         border-color: color(primary)  !important;
     }
+    #cart-nav{
+        position: relative;
+        .badge{
+            position: absolute;
+            top: -5px;
+            right: -7px;
+        }
+    }
+    .user-image{
+        width: 48px;
+        height: 48px;
+        img{
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
 }
 
 // Responsive

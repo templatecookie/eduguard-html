@@ -100,3 +100,8 @@ li {
 .footer-ex-p{
     padding-top: 220px !important;
 }
+button{
+	&:focus{
+		outline: none;
+	}
+}

@@ -1,1 +1,17 @@
-// Common Class
+// Common Class ==> Bootstrap Class Customization
+// Background color
+.bg-primary{
+    background-color: color(primary) !important;
+}
+
+// Badge
+.badge{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
