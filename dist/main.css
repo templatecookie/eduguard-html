@@ -11762,6 +11762,60 @@ header .user-image {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.checkout-tab .nav {
+  border-bottom: 1px solid #EBEBF2;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px; }
+  .checkout-tab .nav .nav-item .nav-link.active {
+    position: relative; }
+    .checkout-tab .nav .nav-item .nav-link.active::after {
+      position: absolute;
+      content: '';
+      bottom: -22px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #25252E; }
+    .checkout-tab .nav .nav-item .nav-link.active h6, .checkout-tab .nav .nav-item .nav-link.active .h6 {
+      color: #25252E; }
+    .checkout-tab .nav .nav-item .nav-link.active svg path {
+      stroke: #25252E; }
+  .checkout-tab .nav .nav-item .nav-link {
+    border: none;
+    background-color: transparent;
+    padding: 0px 140px;
+    margin-right: 5px; }
+    .checkout-tab .nav .nav-item .nav-link h6, .checkout-tab .nav .nav-item .nav-link .h6 {
+      margin-top: 10px;
+      color: #908FA5;
+      font-size: 14px;
+      font-weight: 500; }
+
+.checkout-tab .tab-pane form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500; }
+
+.checkout-tab .tab-pane form input {
+  padding: 12px 0px 12px 20px; }
+  .checkout-tab .tab-pane form input:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.checkout-tab .tab-pane form .form-check-input {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #666575; }
+
+.checkout-tab .tab-pane form .form-check-label {
+  color: #666575; }
+
+.checkout-tab .tab-pane form .btn {
+  width: 100%; }
+
 .backround-button a,
 .backround-button-outline a,
 .backround-button-shadow a,
