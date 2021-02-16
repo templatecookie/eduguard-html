@@ -23,14 +23,16 @@
         align-items: center;
         padding-bottom: 20px;
         .nav-item{
+            width: 50%;
             .nav-link.active{
                 position: relative;
                 &::after{
                     position: absolute;
                     content: '';
                     bottom: -22px;
-                    left: 0;
-                    width: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 270px;
                     height: 2px;
                     background-color: #25252E;
                 }
@@ -40,7 +42,6 @@
                 svg{
                     path{
                         stroke:#25252E ;
-                        // fill: #25252E;
                     }
                 }
             }
@@ -53,11 +54,7 @@
                 }
                 border: none;
                 background-color: transparent;
-                padding: 0px 140px;
-                margin-right: 5px;
-                h6{
-
-                }
+                margin: auto;
             }
         }
     }
@@ -66,17 +63,19 @@
             label{
                 margin-bottom: 10px;
                 font-size: 14px;
-                font-weight: 500;
+                font-weight: 400;
             }
             input{
-                padding: 12px 0px 12px 20px;
+                border-color: color(lowBlack);
+                padding: 15px 0px 15px 20px;
                 &:focus{
                     box-shadow: none;
                 }
             }
-            .form-check-input{
+            input[type="checkbox"]{
                 width: 24px;
                 height: 24px;
+                border-radius: 3px;
                 border: 3px solid color(gray);
             }
             .form-check-label{
@@ -84,6 +83,7 @@
             }
             .btn{
                 width: 100%;
+                text-transform: uppercase;
             }
         }
     }

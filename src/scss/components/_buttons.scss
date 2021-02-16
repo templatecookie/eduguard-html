@@ -9,6 +9,14 @@
     transition: .3s;
    &:focus{
        border: none !important;
+       box-shadow: none !important;
+   }
+   &.btn-primary{
+       background-color: color(primary) !important;
+       &:hover{
+        background-color: color(secondary) !important;
+        border: 2px solid transparent;
+    }
    }
     &.btn-dark{
         background-color: color(dark) !important;
