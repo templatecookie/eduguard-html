@@ -1,12 +1,27 @@
 .btn {
-    padding: 10px 24px;
+    padding: 12px 24px;
     border: 2px solid transparent;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    border-radius: 3px;
+    border-radius: 4px;
     text-transform: capitalize;
     transition: .3s;
+    &.btn-dark{
+        background-color: color(dark) !important;
+        &:hover{
+            background-color: color(primary) !important;
+            border: 2px solid transparent;
+        }
+    }
+    &.btn-link{
+        color: color(dark) !important;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline color(primary);
+            color: color(primary) !important;
+        }
+    }
     &.btn-md{
         padding: 12px 24px !important;
     }
