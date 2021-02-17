@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SignUp-Eduguard</title>
+    <title>SigIn-Eduguard</title>
     <link rel="stylesheet" href="dist/main.css">
 </head>
 
@@ -73,63 +73,23 @@
 
 
     <!-- SignUp Area Starts Here -->
-    <section class="signup-area section-padding overflow-hidden">
+    <section class="signup-area signin-area section-padding overflow-hidden">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <h3>Sign Up</h3>
-                    <p class="mt-2 mb-lg-4 mb-3">Already have account? <a href="signin.html" class="text-black-50">Sign In</a></p>
+                    <h3>Sign In</h3>
+                    <p class="mt-2 mb-lg-4 mb-3">Don’t have account? <a href="signup.html" class="text-black-50">Sign Up</a></p>
                     <form action="#">
-
-                        <div class="form-element success">
-                            <div class="form-alert">
-                                <label for="name">Full Name</label>
-                            </div>
-                            <div class="form-alert-input">
-                                <input type="text" placeholder="Arif Ahmed" id="name">
-                                <div class="form-alert-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-check">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-element error">
-                            <div class="form-alert">
-                                <label for="email">Email</label>
-                                <span>*please enter a valid email</span>
-                            </div>
-                            <div class="form-alert-input">
-                                <input type="email" placeholder="arifAhmed@gmail.com" id="email">
-                                <div class="form-alert-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-alert-circle">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
-                                </div>
-                            </div>
+                        <div class="form-element">
+                            <label for="email">Email</label>
+                            <input type="text" placeholder="Type here..." id="email">
                         </div>
                         <div class="form-element">
-                            <label for="password">password</label>
-                            <div class="form-alert-input">
-                                <input type="password" placeholder="........." id="password">
-                                <div class="form-alert-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-eye">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>
-                                </div>
+                            <div class="d-flex justify-content-between">
+                                <label for="confirm-password">Password</label>
+                                <a href="#" class="text-primary fs-6 fw-normal">Forget Password</a>
                             </div>
-                        </div>
-                        <div class="form-element">
-                            <label for="confirm-password">Confirm password</label>
+                            
                             <div class="form-alert-input">
                                 <input type="password" placeholder="Type here..." id="confirm-password">
                                 <div class="form-alert-icon">
@@ -144,13 +104,12 @@
                         </div>
                         <div class="form-element d-flex align-items-center">
                             <input class="checkbox-primary me-1" type="checkbox" id="agree">
-                            <label for="agree" class="text-secondary mb-0 fs-6 fw-normal">Accept the Terms and Privacy
-                                Policy</label>
+                            <label for="agree" class="text-secondary mb-0 fs-6 fw-normal">Remember me</label>
                         </div>
                         <div class="form-element">
-                            <button type="submit" class="btn btn-primary w-100 text-uppercase">Sign UP</button>
+                            <button type="submit" class="btn btn-primary w-100 text-uppercase">Sign in</button>
                         </div>
-                        <span class="d-block text-center text-secondary">or sign up with</span>
+                        <span class="d-block text-center text-secondary">or sign in with</span>
                         <div class="d-flex justify-content-between align-items-center flex-wrap mt-3">
                             <a href="#"
                                 class="d-flex text-secondary align-items-center justify-content-center signup-with border border-primary rounded-1">
@@ -218,24 +177,6 @@
         <img src="dist/images/shape/dotshape01.svg" alt="shape" class="img-fluid second-dotimage">
     </section>
     <!-- Dot Images Ends Here -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/bootstrap.bundle.min.js"></script>

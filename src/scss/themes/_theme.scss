@@ -1,5 +1,8 @@
 // Common Class ==> Bootstrap Class Customization
 // Text Color
+.text-primary {
+    color: color(primary) !important;
+}
 .text-secondary {
     color: color(gray) !important;
 }

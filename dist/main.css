@@ -11759,6 +11759,9 @@ header {
   -webkit-box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
           box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05); }
 
+.signin-area form label {
+  font-weight: 500; }
+
 .signup-area {
   position: relative;
   background: -webkit-gradient(linear, left top, right top, color-stop(55%, #FFF), color-stop(45%, rgba(236, 236, 243, 0.6)));
@@ -11858,6 +11861,9 @@ header {
     margin-bottom: 10px; }
     .signup-with.border-secondary-primary {
       margin-top: 10px; } }
+
+.text-primary {
+  color: #1089FF !important; }
 
 .text-secondary {
   color: #666575 !important; }

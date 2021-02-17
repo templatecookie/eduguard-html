@@ -7,6 +7,14 @@ header {
 .nav-shadow {
     box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
 }
+// Signin Area
+.signin-area{
+    form{
+        label{
+            font-weight: 500;
+        }
+    }
+}
 
 // SignUp Area
 .signup-area {
