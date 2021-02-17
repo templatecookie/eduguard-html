@@ -11749,6 +11749,10 @@ header .user-image {
     width: 30px;
     height: 30px; } }
 
+.nav-shadow {
+  -webkit-box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
+          box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05); }
+
 .bg-primary {
   background-color: #1089FF !important; }
 
