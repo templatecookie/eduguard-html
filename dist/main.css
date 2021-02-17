@@ -9677,7 +9677,7 @@ h2, .h2 {
   font-weight: 700; }
 
 h3, .h3 {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.25;
   font-weight: 700; }
 
@@ -9739,24 +9739,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 /*-------------------------*/
 @media (min-width: 992px) and (max-width: 1199px) {
   h1, .h1 {
-    font-size: 52px; } }
+    font-size: 52px; }
+  h3, .h3 {
+    font-size: 40px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   h1, .h1 {
     font-size: 55px; }
-  h4, .h4 {
+  h3, .h3 {
     font-size: 35px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
-  h4, .h4 {
+  h3, .h3 {
     font-size: 32px; } }
 
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  h4, .h4 {
+  h3, .h3 {
     font-size: 28px; } }
 
 @media (max-width: 420px) {
-  h4, .h4 {
+  h3, .h3 {
     font-size: 24px; } }
 
 * {
@@ -10929,7 +10931,7 @@ header .user-image {
   -webkit-transition: .3s;
   transition: .3s; }
   .btn:focus {
-    border: none !important;
+    border: 2px solid transparent;
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
   .btn.btn-primary {
@@ -11034,8 +11036,8 @@ header .user-image {
     color: #908FA5; }
 
 .checkbox-primary[type="checkbox"] {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   border: 2px solid #908FA5; }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -11062,8 +11064,8 @@ header .user-image {
     font-size: 14px;
     line-height: 150%;
     margin-bottom: 8px;
-    font-weight: 500;
-    color: #000;
+    font-weight: 400;
+    color: #25252E;
     text-transform: capitalize; }
   .form-element input {
     width: 100%;
@@ -11749,12 +11751,137 @@ header .user-image {
     width: 30px;
     height: 30px; } }
 
+header {
+  position: relative;
+  z-index: 1; }
+
 .nav-shadow {
   -webkit-box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
           box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05); }
 
+.signup-area {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, color-stop(55%, #FFF), color-stop(45%, rgba(236, 236, 243, 0.6)));
+  background: linear-gradient(90deg, #FFF 55%, rgba(236, 236, 243, 0.6) 45%); }
+  .signup-area-image {
+    margin-right: -140px;
+    margin-left: 60px; }
+
+.dot-images .first-dotimage {
+  position: absolute;
+  top: 85px;
+  left: 0; }
+
+.dot-images .second-dotimage {
+  position: absolute;
+  bottom: 200px;
+  right: 0; }
+
+@media (max-width: 420px) {
+  .signup-area {
+    background: #FFF; }
+    .signup-area-image {
+      margin: 0;
+      margin-top: 30px; }
+  .dot-images {
+    display: none; }
+  .form-element input {
+    padding: 10px 15px; }
+  .checkbox-primary[type="checkbox"] {
+    width: 20px;
+    height: 20px; }
+  .signup-with {
+    width: 100% !important; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .signup-area {
+    background: #FFF; }
+    .signup-area-image {
+      margin: 0;
+      margin-top: 30px; }
+  .dot-images {
+    display: none; }
+  .form-element input {
+    padding: 10px 15px; }
+  .checkbox-primary[type="checkbox"] {
+    width: 20px;
+    height: 20px; }
+  .signup-with {
+    height: 45px;
+    width: 100% !important; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .signup-area {
+    background: #FFF; }
+    .signup-area-image {
+      margin: 0;
+      margin-top: 30px; }
+  .dot-images {
+    display: none; }
+  .form-element input {
+    padding: 10px 15px; }
+  .checkbox-primary[type="checkbox"] {
+    width: 20px;
+    height: 20px; }
+  .signup-with {
+    height: 45px;
+    width: 100% !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .signup-area {
+    background: #FFF; }
+    .signup-area-image {
+      display: none; }
+  .dot-images {
+    display: none; }
+  .checkbox-primary[type="checkbox"] {
+    width: 22px;
+    height: 22px; }
+  .form-element input {
+    padding: 12px 15px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .signup-area {
+    background: #FFF; }
+    .signup-area-image {
+      margin: 0; }
+  .dot-images {
+    display: none; }
+  .checkbox-primary[type="checkbox"] {
+    width: 22px;
+    height: 22px; }
+  .form-element input {
+    padding: 12px 15px; }
+  .signup-with {
+    height: 45px;
+    width: 100% !important;
+    margin-bottom: 10px; }
+    .signup-with.border-secondary-primary {
+      margin-top: 10px; } }
+
+.text-secondary {
+  color: #666575 !important; }
+
+.text-black-50 {
+  color: #25252E !important; }
+
+.fs-6 {
+  font-size: 14px !important; }
+
 .bg-primary {
   background-color: #1089FF !important; }
+
+.border-primary {
+  border-color: #1089FF !important; }
+
+.border-danger {
+  border-color: rgba(241, 67, 54, 0.2) !important; }
+
+.border-secondary-primary {
+  border-color: rgba(3, 169, 244, 0.2) !important; }
+
+.rounded-1 {
+  border-radius: 5px !important; }
 
 .badge {
   height: 16px;
@@ -11834,6 +11961,33 @@ header .user-image {
 .checkout-tab .tab-pane form .btn {
   width: 100%;
   text-transform: uppercase; }
+
+.section-padding {
+  padding: 120px 0px; }
+
+.signup-with {
+  height: 50px;
+  width: 145px; }
+
+@media (max-width: 420px) {
+  .section-padding {
+    padding: 30px 0px; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .section-padding {
+    padding: 30px 0px; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .section-padding {
+    padding: 40px 0px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-padding {
+    padding: 50px 0px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .section-padding {
+    padding: 80px 0px; } }
 
 .backround-button a,
 .backround-button-outline a,

@@ -14,7 +14,7 @@ h2 {
     font-weight: 700;
 }
 h3 {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.25;
     font-weight: 700;
 }
@@ -74,6 +74,9 @@ h6{
     h1{
         font-size: 52px;
     }
+    h3{
+        font-size: 40px;
+    }
 }
 
 // Medium devices 768px - 991px
@@ -81,28 +84,28 @@ h6{
     h1{
         font-size: 55px;
     }
-    h4{
+    h3{
         font-size: 35px;
     }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-    h4{
+    h3{
         font-size: 32px;
     }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-    h4{
+    h3{
         font-size: 28px;
     }
 }
 
 // extra Small devices 420px
 @media (max-width: 420px) {
-    h4{
+    h3{
         font-size: 24px;
     }
 }
