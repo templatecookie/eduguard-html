@@ -9,7 +9,12 @@
 .mb-40{
     margin-bottom: 40px;
 }
-
+.mb-100{
+    margin-bottom: 100px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
 // Text Color
 .text-primary {
     color: color(primary) !important;
@@ -175,6 +180,9 @@
 // Section Padding
 .section-padding {
     padding: 120px 0px;
+}
+.section-padding-m {
+    padding: 100px 0px;
 }
 .section-padding-sm {
     padding: 60px 0px;

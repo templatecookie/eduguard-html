@@ -1,0 +1,104 @@
+.become-instructor-image{
+    margin-left: 65px;
+    position: relative;
+    z-index: 1;
+}
+.become-instructor-shape{
+    .first-instructor-shape{
+        position: absolute;
+        bottom: -8%;
+        left: 5%;
+        z-index: -1;
+    }
+    .second-instructor-shape{
+        position: absolute;
+        bottom: -25%;
+        right: 3%;
+        z-index: -1;
+    }
+}
+.instructor-rules-image{
+    margin-left: 65px;
+    position: relative;
+    z-index: 1;
+}
+.instructor-ruls-image-shape{
+    .first-rules-shape{
+        position: absolute;
+        top: -10%;
+        left: 6%;
+    }
+    .second-rules-shape{
+        position: absolute;
+        bottom: -15%;
+        right: -20%;
+    }
+}
+.rules-bullet{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #0264ED;
+    display: inline-block;
+    margin-right: 5px;
+}
+.instructor-rules{
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+}
+.successful-instructor-feature{
+    padding: 30px 20px;
+    border: 1px solid #EBEBF2;
+    border-radius: 5px;
+    background: #FFFFFF;    
+    box-shadow: 0px 30px 80px rgba(10, 9, 86, 0.14);
+    &-image{
+        &.second-bg{
+            background-color: #00AF91;
+        }
+        &.third-bg{
+            background-color: rgba(16, 137, 255, 0.10);
+        }
+        background-color: rgba(255, 122, 26, 0.10);
+        height: 72px;
+        width: 72px;
+        border-radius: 5px;
+    }
+}
+.instructor-feature-shape{
+    position: absolute;
+    bottom: 160px;
+    right: 100px;
+}
+.section-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+}
+.info-desk-image{
+    position: relative;
+    z-index: 1;
+}
+.info-desk-shape{
+    .info-desk-shape{
+        &-one{
+            position: absolute;
+            top: -5%;
+            left: -5%;
+            z-index: -1;
+        }
+        &-two{
+            position: absolute;
+            bottom: 32%;
+            left: 0;
+            z-index: 2;
+        }
+        &-three{
+            position: absolute;
+            bottom: -30%;
+            right: -10%;
+            z-index: -1;
+        }
+    }
+}
