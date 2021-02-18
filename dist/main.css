@@ -11862,6 +11862,9 @@ header {
     .signup-with.border-secondary-primary {
       margin-top: 10px; } }
 
+.mt-35 {
+  margin-top: 35px; }
+
 .text-primary {
   color: #1089FF !important; }
 
@@ -11885,6 +11888,9 @@ header {
 
 .border-secondary-primary {
   border-color: rgba(3, 169, 244, 0.2) !important; }
+
+.border-lowBlack {
+  border-color: rgba(144, 143, 165, 0.4) !important; }
 
 .rounded-1 {
   border-radius: 5px !important; }

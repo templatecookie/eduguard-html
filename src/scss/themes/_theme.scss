@@ -1,4 +1,8 @@
 // Common Class ==> Bootstrap Class Customization
+// Margin & Padding
+.mt-35{
+    margin-top: 35px;
+}
 // Text Color
 .text-primary {
     color: color(primary) !important;
@@ -32,6 +36,9 @@
 
 .border-secondary-primary {
     border-color: rgba(3, 169, 244, 0.20) !important;
+}
+.border-lowBlack{
+    border-color: rgba(144, 143, 165, 0.40) !important;
 }
 
 // Border Radious
