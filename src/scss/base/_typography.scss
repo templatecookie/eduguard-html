@@ -17,11 +17,13 @@ h3 {
     font-size: 40px;
     line-height: 1.25;
     font-weight: 700;
+    color: #25252E !important;
 }
 h4 {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 700;
+    color: #25252E !important;
 }
 h5 {
     font-size: 32px;
@@ -29,7 +31,7 @@ h5 {
     font-weight: 600;
 }
 h6 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.25;
     font-weight: 700;
 }
@@ -77,6 +79,9 @@ h6{
     h3{
         font-size: 40px;
     }
+    h4{
+        font-size: 32px;
+    }
 }
 
 // Medium devices 768px - 991px
@@ -87,12 +92,21 @@ h6{
     h3{
         font-size: 35px;
     }
+    h4{
+        font-size: 32px;
+    }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
     h3{
         font-size: 32px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    h6{
+        font-size: 20px;
     }
 }
 
@@ -101,11 +115,26 @@ h6{
     h3{
         font-size: 28px;
     }
+    h4{
+        font-size: 24px;
+    }
+    h6{
+        font-size: 18px;
+    }
 }
 
 // extra Small devices 420px
 @media (max-width: 420px) {
     h3{
-        font-size: 24px;
+        font-size: 23px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
     }
 }

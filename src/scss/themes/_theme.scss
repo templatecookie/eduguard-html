@@ -3,6 +3,13 @@
 .mt-35{
     margin-top: 35px;
 }
+.py-80{
+    padding: 80px 0px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
 // Text Color
 .text-primary {
     color: color(primary) !important;
@@ -14,8 +21,20 @@
 .text-black-50 {
     color: #25252E !important;
 }
+.text-lowblack {
+    color: color(lowBlack) !important;
+}
+.dark-text{
+    color: color(dark) !important;
+}
 
 // Font Size
+.fs-4 {
+    font-size: 16px !important;
+}
+.fs-5 {
+    font-size: 18px !important;
+}
 .fs-6 {
     font-size: 14px !important;
 }
@@ -24,8 +43,14 @@
 .bg-primary {
     background-color: color(primary) !important;
 }
+.bg-secondary {
+    background-color: color(ash) !important;
+}
 
 // Border
+.border-default{
+    border: 2px solid #EBEBF2 !important;
+}
 .border-primary {
     border-color: color(primary) !important;
 }
@@ -44,6 +69,9 @@
 // Border Radious
 .rounded-1 {
     border-radius: 5px !important;
+}
+.rounded-2 {
+    border-radius: 10px !important;
 }
 
 // Badge
@@ -148,6 +176,16 @@
 .section-padding {
     padding: 120px 0px;
 }
+.section-padding-sm {
+    padding: 60px 0px;
+}
+.section-padding-bottom {
+    padding-bottom: 100px;
+}
+.section-pb-sm {
+    padding-bottom: 80px;
+}
+
 
 // Signup With
 .signup-with {
@@ -158,15 +196,35 @@
 // Responsive
 // extra Small devices 420px
 @media (max-width: 420px) {
+    .section-padding-bottom,
     .section-padding {
         padding: 30px 0px;
+    }
+    .section-pb-sm{
+        padding-bottom: 30px;
+    }
+    .py-80{
+        padding: 40px 0px;
+    }
+    .mb-40{
+        margin-bottom: 20px;
     }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+    .section-padding-bottom,
     .section-padding {
         padding: 30px 0px;
+    }
+    .section-pb-sm{
+        padding-bottom: 30px;
+    }
+    .py-80{
+        padding: 40px 0px;
+    }
+    .mb-40{
+        margin-bottom: 20px;
     }
 }
 
@@ -175,12 +233,36 @@
     .section-padding {
         padding: 40px 0px;
     }
+    .section-padding-bottom{
+        padding: 35px 0px; 
+    }
+    .section-pb-sm{
+        padding-bottom: 40px;
+    }
+    .py-80{
+        padding: 50px 0px;
+    }
+    .mb-40{
+        margin-bottom: 25px;
+    }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
     .section-padding {
         padding: 50px 0px;
+    }
+    .section-padding-bottom{
+        padding: 40px 0px; 
+    }
+    .section-pb-sm{
+        padding-bottom: 40px;
+    }
+    .py-80{
+        padding: 50px 0px;
+    }
+    .mb-40{
+        margin-bottom: 30px;
     }
 }
 
