@@ -205,6 +205,7 @@
 // Responsive
 // extra Small devices 420px
 @media (max-width: 420px) {
+    .section-padding-m,
     .section-padding-bottom,
     .section-padding {
         padding: 30px 0px;
@@ -217,11 +218,18 @@
     }
     .mb-40{
         margin-bottom: 20px;
+    }
+    .mb-100{
+        margin-bottom: 0;
+    }
+    .fs-5{
+        font-size: 14px !important;
     }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+    .section-padding-m,
     .section-padding-bottom,
     .section-padding {
         padding: 30px 0px;
@@ -235,10 +243,17 @@
     .mb-40{
         margin-bottom: 20px;
     }
+    .mb-100{
+        margin-bottom: 0;
+    }
+    .fs-5{
+        font-size: 14px !important;
+    }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
+    .section-padding-m,
     .section-padding {
         padding: 40px 0px;
     }
@@ -254,10 +269,17 @@
     .mb-40{
         margin-bottom: 25px;
     }
+    .mb-100{
+        margin-bottom: 0;
+    }
+    .fs-5{
+        font-size: 14px !important;
+    }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
+    .section-padding-m,
     .section-padding {
         padding: 50px 0px;
     }
@@ -273,11 +295,24 @@
     .mb-40{
         margin-bottom: 30px;
     }
+    .mb-100{
+        margin-bottom: 0;
+    }
+    .fs-5{
+        font-size: 14px !important;
+    }
 }
 
 // large devices 992px - 1169px
 @media (min-width: 992px) and (max-width: 1200px) {
+    .section-padding-m,
     .section-padding {
         padding: 80px 0px;
+    }
+    .mb-100{
+        margin-bottom: 0;
+    }
+    .fs-5{
+        font-size: 16px !important;
     }
 }
