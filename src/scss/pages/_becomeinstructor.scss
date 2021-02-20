@@ -4,17 +4,17 @@
     z-index: 1;
 }
 .become-instructor-shape{
-    .first-instructor-shape{
+    img{
         position: absolute;
-        bottom: -8%;
-        left: 5%;
         z-index: -1;
     }
-    .second-instructor-shape{
-        position: absolute;
+    .shape-01{
+        bottom: -8%;
+        left: 5%;
+    }
+    .shape-02{
         bottom: -25%;
         right: 3%;
-        z-index: -1;
     }
 }
 .instructor-rules-image{
@@ -23,15 +23,17 @@
     z-index: 1;
 }
 .instructor-ruls-image-shape{
-    .first-rules-shape{
+    img{
         position: absolute;
+        z-index: -1;
+    }
+    .shape-01{
         top: -10%;
         left: 6%;
     }
-    .second-rules-shape{
-        position: absolute;
-        bottom: -15%;
-        right: -20%;
+    .shape-02{
+        bottom: -16%;
+        right: -10%;
     }
 }
 .rules-bullet{
@@ -50,16 +52,46 @@
     padding: 30px 20px;
     border: 1px solid #EBEBF2;
     border-radius: 5px;
-    background: #FFFFFF;    
-    box-shadow: 0px 30px 80px rgba(10, 9, 86, 0.14);
+    background: #FFFFFF; 
+    transition: 0.3s all linear;
+    &:hover{
+        box-shadow: 0px 30px 80px rgba(10, 9, 86, 0.14);
+        .successful-instructor-feature-image{
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+            &.first-bg{
+                background: #FF7A1A;
+            }
+            &.second-bg{
+                background: #00AF91;
+            }
+            &.third-bg{
+                background: #1089FF;
+            }
+        }
+    }
+     
     &-image{
+        svg{
+            path{
+                transition: 0.3s all linear;
+            }
+        }
+        &.first-bg{
+            transition: 0.3s all linear;
+            background-color: rgba(255, 122, 26, 0.10);
+        }
         &.second-bg{
-            background-color: #00AF91;
+            transition: 0.3s all linear;
+            background-color: rgba(0, 175, 145, 0.40);
         }
         &.third-bg{
+            transition: 0.3s all linear;
             background-color: rgba(16, 137, 255, 0.10);
         }
-        background-color: rgba(255, 122, 26, 0.10);
         height: 72px;
         width: 72px;
         border-radius: 5px;
@@ -69,6 +101,7 @@
     position: absolute;
     bottom: 160px;
     right: 100px;
+    animation: circle 3s linear infinite;
 }
 .section-bg{
     background-repeat: no-repeat;
@@ -97,20 +130,20 @@
         z-index: 2;
         bottom: -50px;
         left: 0;
-        animation: circle 6s linear infinite;
+        animation: circle 3s linear infinite;
     }
 }
 
 @keyframes circle{
   0%{
     transform:rotate(0deg)
-              translate(-5px)
+              translate(-10px)
               rotate(0deg);
   
   }
   100%{
     transform:rotate(360deg)
-              translate(-5px)
+              translate(-10px)
               rotate(-360deg);
   }
 }

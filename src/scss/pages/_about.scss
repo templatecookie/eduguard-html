@@ -15,14 +15,15 @@
     object-fit: cover !important;
 }
 .intro-shape{
-    z-index: -1;
-    .first-intro-shape{
+    img{
         position: absolute;
+        z-index: -1;
+    }
+    .shape-01{
         top: -30px;
         left: 5px;
     }
-    .second-intro-shape{
-        position: absolute;
+    .shape-02{
         bottom: -85px;
         right: 30px;
     }
