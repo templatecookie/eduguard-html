@@ -75,37 +75,29 @@
     autoplaySpeed: 2000,
     prevArrow: '.ourinstructor__wrapper .prev-arrow',
     nextArrow: '.ourinstructor__wrapper .next-arrow',
-    responsive: [{
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 4,
-          dots: true,
-        },
-      },
+    responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          dots: true,
-        },
+          slidesToScroll: 1,
+        }
       },
       {
-        breakpoint: 574,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
+          slidesToScroll: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          dots: true,
-        },
-      },
-    ],
-    
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   //Event _Slider

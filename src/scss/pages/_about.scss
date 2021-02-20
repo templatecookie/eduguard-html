@@ -48,6 +48,13 @@
             visibility: visible;
         }
     }
+    &__img{  
+        img{
+            object-fit: cover;
+            height: 300px;
+            width: 300px;
+        }
+    }
     &__title{
       h6{
           color: #25252E;
@@ -128,6 +135,9 @@
             text-align: left;
         }
     }
+    .mentor__img img{
+        height: auto;
+    }
 }
 
 // Small devices 420px - 574px
@@ -169,8 +179,8 @@
     .mentor__title h6{
         font-size: 18px;
     }
-    .instructor-overlay{
-        display: none;
+    .mentor__img img{
+        height: auto;
     }
 }
 
@@ -213,8 +223,8 @@
     .mentor__title h6{
         font-size: 18px;
     }
-    .instructor-overlay{
-        display: none;
+    .mentor__img img{
+        height: auto;
     }
 }
 
@@ -257,8 +267,8 @@
     .mentor__title h6{
         font-size: 16px;
     }
-    .instructor-overlay{
-        display: none;
+    .mentor__img img{
+        height: auto;
     }
 }
 
@@ -276,10 +286,14 @@
     .slick-slide img{
         margin: auto;
     }
-    .instructor-overlay{
-        display: none;
-    }
     .about-intro{
         margin-bottom: 0;
+    }
+    .instructor-overlay{
+        bottom: 40%;
+        transform: translateY(-60%);
+    }
+    .mentor__img img{
+        height: auto;
     }
 }
