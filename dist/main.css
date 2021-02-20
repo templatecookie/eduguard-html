@@ -12310,7 +12310,8 @@ header {
   .checkout-tab .nav .nav-item {
     width: 50%; }
     .checkout-tab .nav .nav-item .nav-link.active {
-      position: relative; }
+      position: relative;
+      width: 100%; }
       .checkout-tab .nav .nav-item .nav-link.active::after {
         position: absolute;
         content: '';
@@ -12318,7 +12319,7 @@ header {
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
-        width: 270px;
+        width: 100%;
         height: 2px;
         background-color: #25252E; }
       .checkout-tab .nav .nav-item .nav-link.active h6, .checkout-tab .nav .nav-item .nav-link.active .h6 {
