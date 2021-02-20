@@ -11797,8 +11797,14 @@ header .user-image {
 .intro-image {
   z-index: 1; }
 
+.brand-area img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important; }
+
 .slick-slide img {
-  margin: auto; }
+  margin: auto;
+  -o-object-fit: cover !important;
+     object-fit: cover !important; }
 
 .intro-shape {
   z-index: -1; }

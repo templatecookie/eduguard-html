@@ -5,8 +5,14 @@
 .intro-image{
     z-index: 1;
 }
+.brand-area{
+    img{
+        object-fit: cover !important;
+    }
+}
 .slick-slide img{
     margin: auto;
+    object-fit: cover !important;
 }
 .intro-shape{
     z-index: -1;
