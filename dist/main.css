@@ -9744,9 +9744,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   h1, .h1 {
     font-size: 52px; }
   h3, .h3 {
-    font-size: 40px; }
+    font-size: 38px; }
   h4, .h4 {
-    font-size: 32px; } }
+    font-size: 32px; }
+  h5, .h5 {
+    font-size: 24px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   h1, .h1 {
@@ -9754,29 +9756,43 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   h3, .h3 {
     font-size: 35px; }
   h4, .h4 {
-    font-size: 32px; } }
+    font-size: 32px; }
+  h5, .h5 {
+    font-size: 24px; }
+  p {
+    font-size: 14px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   h3, .h3 {
     font-size: 32px; }
   h4, .h4 {
     font-size: 30px; }
+  h5, .h5 {
+    font-size: 22px; }
   h6, .h6 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  p {
+    font-size: 14px; } }
 
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   h3, .h3 {
-    font-size: 28px; }
+    font-size: 24px; }
   h4, .h4 {
     font-size: 24px; }
+  h5, .h5 {
+    font-size: 18px; }
   h6, .h6 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  p {
+    font-size: 14px; } }
 
 @media (max-width: 420px) {
   h3, .h3 {
     font-size: 23px; }
   h4, .h4 {
     font-size: 20px; }
+  h5, .h5 {
+    font-size: 18px; }
   h6, .h6 {
     font-size: 18px; }
   p {
@@ -12176,6 +12192,118 @@ header .user-image {
     -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
             transform: rotate(360deg) translate(-10px) rotate(-360deg); } }
 
+@media (max-width: 420px) {
+  .info-desk-image,
+  .instructor-rules-image,
+  .become-instructor-image {
+    margin: 0 !important; }
+  .info-desk-shape,
+  .instructor-ruls-image-shape,
+  .become-instructor-shape {
+    display: none; }
+  .instructor-rules {
+    padding: 0;
+    margin-bottom: 0px; }
+  .top-bg::after {
+    display: none; }
+  .instructor-feature-shape {
+    display: none; }
+  .section-bg {
+    padding-bottom: 30px; }
+  .successful-instructor-feature-image {
+    height: 55px;
+    width: 55px; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .info-desk-image,
+  .instructor-rules-image,
+  .become-instructor-image {
+    margin: 0 !important;
+    width: 100%; }
+  .info-desk-shape,
+  .instructor-ruls-image-shape,
+  .become-instructor-shape {
+    display: none; }
+  .instructor-rules {
+    padding: 0;
+    margin-bottom: 0px; }
+  .top-bg::after {
+    display: none; }
+  .instructor-feature-shape {
+    display: none; }
+  .section-bg {
+    padding-bottom: 30px; }
+  .successful-instructor-feature-image {
+    height: 55px;
+    width: 55px; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .info-desk-image,
+  .instructor-rules-image,
+  .become-instructor-image {
+    margin: 0 !important;
+    width: 100%; }
+  .info-desk-shape,
+  .instructor-ruls-image-shape,
+  .become-instructor-shape {
+    display: none; }
+  .instructor-rules {
+    padding: 0;
+    margin-bottom: 0px; }
+  .top-bg::after {
+    display: none; }
+  .instructor-feature-shape {
+    display: none; }
+  .section-bg {
+    padding-bottom: 30px; }
+  .successful-instructor-feature-image {
+    height: 55px;
+    width: 55px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .info-desk-image,
+  .instructor-rules-image,
+  .become-instructor-image {
+    margin: 0 !important; }
+  .info-desk-shape,
+  .instructor-ruls-image-shape,
+  .become-instructor-shape {
+    display: none; }
+  .instructor-rules {
+    padding: 0;
+    margin-bottom: 30px; }
+  .top-bg::after {
+    display: none; }
+  .instructor-feature-shape {
+    display: none; }
+  .section-bg {
+    padding-bottom: 30px; }
+  .successful-instructor-feature-image {
+    height: 55px;
+    width: 55px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .info-desk-image,
+  .instructor-rules-image,
+  .become-instructor-image {
+    margin: 0 !important; }
+  .info-desk-shape,
+  .instructor-ruls-image-shape,
+  .become-instructor-shape {
+    display: none; }
+  .instructor-rules {
+    padding: 0;
+    margin-bottom: 80px; }
+  .top-bg::after {
+    display: none; }
+  .instructor-feature-shape {
+    display: none; }
+  .section-bg {
+    padding: 80px 0px; }
+  .successful-instructor-feature-image {
+    height: 55px;
+    width: 55px; } }
+
 header {
   position: relative;
   z-index: 1; }
@@ -12454,6 +12582,7 @@ header {
   width: 145px; }
 
 @media (max-width: 420px) {
+  .section-padding-m,
   .section-padding-bottom,
   .section-padding {
     padding: 30px 0px; }
@@ -12462,9 +12591,14 @@ header {
   .py-80 {
     padding: 40px 0px; }
   .mb-40 {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .mb-100 {
+    margin-bottom: 0; }
+  .fs-5 {
+    font-size: 14px !important; } }
 
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+  .section-padding-m,
   .section-padding-bottom,
   .section-padding {
     padding: 30px 0px; }
@@ -12473,9 +12607,14 @@ header {
   .py-80 {
     padding: 40px 0px; }
   .mb-40 {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .mb-100 {
+    margin-bottom: 0; }
+  .fs-5 {
+    font-size: 14px !important; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
+  .section-padding-m,
   .section-padding {
     padding: 40px 0px; }
   .section-padding-bottom {
@@ -12485,9 +12624,14 @@ header {
   .py-80 {
     padding: 50px 0px; }
   .mb-40 {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .mb-100 {
+    margin-bottom: 0; }
+  .fs-5 {
+    font-size: 14px !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .section-padding-m,
   .section-padding {
     padding: 50px 0px; }
   .section-padding-bottom {
@@ -12497,11 +12641,20 @@ header {
   .py-80 {
     padding: 50px 0px; }
   .mb-40 {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .mb-100 {
+    margin-bottom: 0; }
+  .fs-5 {
+    font-size: 14px !important; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+  .section-padding-m,
   .section-padding {
-    padding: 80px 0px; } }
+    padding: 80px 0px; }
+  .mb-100 {
+    margin-bottom: 0; }
+  .fs-5 {
+    font-size: 16px !important; } }
 
 .backround-button a,
 .backround-button-outline a,
