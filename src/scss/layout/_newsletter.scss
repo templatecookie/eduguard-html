@@ -1,22 +1,13 @@
-.newsletter{
-    background-color: rgba(235, 235, 242, 0.7);
-    &__wrapper{
-        background-color: white;
-        text-align: center;
-        padding: 40px 50px;
-        border-radius: 10px;
-        margin-bottom: -125px;
-        p{
-            padding-top: 10px;
-        }
-        &_search{
-            margin-top: 24px;
-            .search__item{
-                input{
-                    border: 1px solid rgba(144, 143, 165, 0.4) !important;
-                    box-shadow: inherit !important;
-                    padding-right: 143px;
-                }
+.newsletter-area{
+    padding: 40px 50px;
+    background: #FFFFFF;
+    border: 2px solid #EBEBF2;
+    border-radius: 10px;
+    margin-bottom: -125px;
+    form{
+        input{
+            &:focus{
+                box-shadow: none;
             }
         }
     }
@@ -28,49 +19,49 @@
 
 // large devices 992px - 1169px
 @media (min-width: 992px) and (max-width: 1199px) {
-
+    .newsletter-area{
+        padding: 30px;
+    }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .newsletter-area{
+        padding: 30px;
+    }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-    .newsletter{
-        &__wrapper{
-            padding: 30px 20px;
-            h5{
-                font-size: 24px;
-            }
-            p{
-                font-size: 14px;
-                
-            }
-            &_search{
-                margin-top: 24px;
-                .search__item{
-                    input{
-                        border: 1px solid rgba(144, 143, 165, 0.4) !important;
-                        box-shadow: inherit !important;
-                        padding-right: 143px;
-                        &::placeholder{
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
+    .newsletter-area{
+        padding: 30px;
     }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-
+    .newsletter-area{
+        padding: 20px;
+    }
 }
 
 // extra Small devices 420px
 @media (max-width: 420px) {
-
+    .newsletter-area{
+        padding: 20px;
+        form{
+            .input-group{
+                flex-direction: column;
+                input{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    border-radius: 5px !important;
+                    height: 45px;
+                }
+                button{
+                    border-radius: 5px !important;
+                }
+            }
+        }
+    }
 }

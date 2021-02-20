@@ -9780,7 +9780,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   h6, .h6 {
     font-size: 18px; }
   p {
-    font-size: 16px; } }
+    font-size: 14px; } }
 
 * {
   margin: 0;
@@ -9961,6 +9961,26 @@ button:focus {
       font-size: 16px; }
       .footer__bottom_topbutton a:hover {
         color: white; }
+
+@media (max-width: 420px) {
+  .footer__wrapper {
+    max-width: 100%; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .footer__wrapper {
+    max-width: 100%; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .footer__wrapper {
+    max-width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer__wrapper {
+    max-width: 100%; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .footer__wrapper {
+    max-width: 80%; } }
 
 header .navbar-nav .nav-item {
   margin-left: 16px;
@@ -10893,51 +10913,51 @@ header .user-image {
       .calltoaction__wrapper::before {
         display: none; } }
 
-.newsletter {
-  background-color: rgba(235, 235, 242, 0.7); }
-  .newsletter__wrapper {
-    background-color: white;
-    text-align: center;
-    padding: 40px 50px;
-    border-radius: 10px;
-    margin-bottom: -125px; }
-    .newsletter__wrapper p {
-      padding-top: 10px; }
-    .newsletter__wrapper_search {
-      margin-top: 24px; }
-      .newsletter__wrapper_search .search__item input {
-        border: 1px solid rgba(144, 143, 165, 0.4) !important;
-        -webkit-box-shadow: inherit !important;
-                box-shadow: inherit !important;
-        padding-right: 143px; }
+.newsletter-area {
+  padding: 40px 50px;
+  background: #FFFFFF;
+  border: 2px solid #EBEBF2;
+  border-radius: 10px;
+  margin-bottom: -125px; }
+  .newsletter-area form input:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 /*------------------------*/
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .newsletter-area {
+    padding: 30px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .newsletter-area {
+    padding: 30px; } }
+
 @media (min-width: 575px) and (max-width: 767px) {
-  .newsletter__wrapper {
-    padding: 30px 20px; }
-    .newsletter__wrapper h5, .newsletter__wrapper .h5 {
-      font-size: 24px; }
-    .newsletter__wrapper p {
-      font-size: 14px; }
-    .newsletter__wrapper_search {
-      margin-top: 24px; }
-      .newsletter__wrapper_search .search__item input {
-        border: 1px solid rgba(144, 143, 165, 0.4) !important;
-        -webkit-box-shadow: inherit !important;
-                box-shadow: inherit !important;
-        padding-right: 143px; }
-        .newsletter__wrapper_search .search__item input::-webkit-input-placeholder {
-          font-size: 14px; }
-        .newsletter__wrapper_search .search__item input::-moz-placeholder {
-          font-size: 14px; }
-        .newsletter__wrapper_search .search__item input:-ms-input-placeholder {
-          font-size: 14px; }
-        .newsletter__wrapper_search .search__item input::-ms-input-placeholder {
-          font-size: 14px; }
-        .newsletter__wrapper_search .search__item input::placeholder {
-          font-size: 14px; } }
+  .newsletter-area {
+    padding: 30px; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .newsletter-area {
+    padding: 20px; } }
+
+@media (max-width: 420px) {
+  .newsletter-area {
+    padding: 20px; }
+    .newsletter-area form .input-group {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .newsletter-area form .input-group input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px !important;
+        height: 45px; }
+      .newsletter-area form .input-group button {
+        border-radius: 5px !important; } }
 
 .btn {
   padding: 12px 24px;
