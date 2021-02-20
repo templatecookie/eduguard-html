@@ -1,5 +1,5 @@
 .footer{
-    background-color: color(lightBlack);
+    background-color: #25252E;
     padding-top: 100px;
     &__wrapper{
         margin-bottom: 50px;
@@ -29,7 +29,7 @@
                         transition: .3s;
                         background: rgba(102, 101, 117, 0.2);
                         &:hover{
-                            background-color: #FFC91B;
+                            background-color: color(primary);
                         }
                     }
                     &:last-child{

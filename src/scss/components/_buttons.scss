@@ -8,7 +8,7 @@
     text-transform: capitalize;
     transition: .3s;
    &:focus{
-       border: none !important;
+       border: 2px solid transparent;
        box-shadow: none !important;
    }
    &.btn-primary{
@@ -146,8 +146,8 @@
 // Checkbox
 
 .checkbox-primary[type="checkbox"]{
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     border: 2px solid color(lowBlack);
 }
 

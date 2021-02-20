@@ -1,11 +1,86 @@
 // Common Class ==> Bootstrap Class Customization
+// Margin & Padding
+.mt-35{
+    margin-top: 35px;
+}
+.py-80{
+    padding: 80px 0px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+// Text Color
+.text-primary {
+    color: color(primary) !important;
+}
+.text-secondary {
+    color: color(gray) !important;
+}
+
+.text-black-50 {
+    color: #25252E !important;
+}
+.text-lowblack {
+    color: color(lowBlack) !important;
+}
+.dark-text{
+    color: color(dark) !important;
+}
+
+// Font Size
+.fs-4 {
+    font-size: 16px !important;
+}
+.fs-5 {
+    font-size: 18px !important;
+}
+.fs-6 {
+    font-size: 14px !important;
+}
+
 // Background color
-.bg-primary{
+.bg-primary {
     background-color: color(primary) !important;
+}
+.bg-secondary {
+    background-color: color(ash) !important;
+}
+
+// Border
+.border-default{
+    border: 2px solid #EBEBF2 !important;
+}
+.border-primary {
+    border-color: color(primary) !important;
+}
+
+.border-danger {
+    border-color: rgba(241, 67, 54, 0.20) !important;
+}
+
+.border-secondary-primary {
+    border-color: rgba(3, 169, 244, 0.20) !important;
+}
+.border-lowBlack{
+    border-color: rgba(144, 143, 165, 0.40) !important;
+}
+
+// Border Radious
+.rounded-1 {
+    border-radius: 5px !important;
+}
+.rounded-2 {
+    border-radius: 10px !important;
 }
 
 // Badge
-.badge{
+.badge {
     height: 16px;
     width: 16px;
     border-radius: 50%;
@@ -17,16 +92,19 @@
 }
 
 // Checkout Tab
-.checkout-tab{
-    .nav{
+.checkout-tab {
+    .nav {
         border-bottom: 1px solid color(ash);
         align-items: center;
         padding-bottom: 20px;
-        .nav-item{
+
+        .nav-item {
             width: 50%;
-            .nav-link.active{
+
+            .nav-link.active {
                 position: relative;
-                &::after{
+
+                &::after {
                     position: absolute;
                     content: '';
                     bottom: -22px;
@@ -36,55 +114,169 @@
                     height: 2px;
                     background-color: #25252E;
                 }
-                h6{
+
+                h6 {
                     color: #25252E;
                 }
-                svg{
-                    path{
-                        stroke:#25252E ;
+
+                svg {
+                    path {
+                        stroke: #25252E;
                     }
                 }
             }
-            .nav-link{
-                h6{
+
+            .nav-link {
+                h6 {
                     margin-top: 10px;
                     color: #908FA5;
                     font-size: 14px;
                     font-weight: 500;
                 }
+
                 border: none;
                 background-color: transparent;
                 margin: auto;
             }
         }
     }
-    .tab-pane{
-        form{
-            label{
+
+    .tab-pane {
+        form {
+            label {
                 margin-bottom: 10px;
                 font-size: 14px;
                 font-weight: 400;
             }
-            input{
+
+            input {
                 border-color: color(lowBlack);
                 padding: 15px 0px 15px 20px;
-                &:focus{
+
+                &:focus {
                     box-shadow: none;
                 }
             }
-            input[type="checkbox"]{
+
+            input[type="checkbox"] {
                 width: 24px;
                 height: 24px;
                 border-radius: 3px;
                 border: 3px solid color(gray);
             }
-            .form-check-label{
+
+            .form-check-label {
                 color: color(gray);
             }
-            .btn{
+
+            .btn {
                 width: 100%;
                 text-transform: uppercase;
             }
         }
+    }
+}
+
+// Section Padding
+.section-padding {
+    padding: 120px 0px;
+}
+.section-padding-m {
+    padding: 100px 0px;
+}
+.section-padding-sm {
+    padding: 60px 0px;
+}
+.section-padding-bottom {
+    padding-bottom: 100px;
+}
+.section-pb-sm {
+    padding-bottom: 80px;
+}
+
+
+// Signup With
+.signup-with {
+    height: 50px;
+    width: 145px;
+}
+
+// Responsive
+// extra Small devices 420px
+@media (max-width: 420px) {
+    .section-padding-bottom,
+    .section-padding {
+        padding: 30px 0px;
+    }
+    .section-pb-sm{
+        padding-bottom: 30px;
+    }
+    .py-80{
+        padding: 40px 0px;
+    }
+    .mb-40{
+        margin-bottom: 20px;
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .section-padding-bottom,
+    .section-padding {
+        padding: 30px 0px;
+    }
+    .section-pb-sm{
+        padding-bottom: 30px;
+    }
+    .py-80{
+        padding: 40px 0px;
+    }
+    .mb-40{
+        margin-bottom: 20px;
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .section-padding {
+        padding: 40px 0px;
+    }
+    .section-padding-bottom{
+        padding: 35px 0px; 
+    }
+    .section-pb-sm{
+        padding-bottom: 40px;
+    }
+    .py-80{
+        padding: 50px 0px;
+    }
+    .mb-40{
+        margin-bottom: 25px;
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding: 50px 0px;
+    }
+    .section-padding-bottom{
+        padding: 40px 0px; 
+    }
+    .section-pb-sm{
+        padding-bottom: 40px;
+    }
+    .py-80{
+        padding: 50px 0px;
+    }
+    .mb-40{
+        margin-bottom: 30px;
+    }
+}
+
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1200px) {
+    .section-padding {
+        padding: 80px 0px;
     }
 }
