@@ -11807,6 +11807,125 @@ header .user-image {
     width: 30px;
     height: 30px; } }
 
+.pricing-area {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .pricing-area .content-text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px; }
+    .pricing-area .content-text .left-text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .pricing-area .content-text .left-text h4, .pricing-area .content-text .left-text .h4 {
+        font-weight: 400;
+        margin-right: 6px; }
+      .pricing-area .content-text .left-text del {
+        font-size: 18px;
+        font-weight: 400;
+        color: #908FA5;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+    .pricing-area .content-text .right-text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .pricing-area .content-text .right-text span {
+        font-size: 14px;
+        font-weight: 400;
+        color: #FF7A1A; }
+  .pricing-area .p-text {
+    margin-bottom: 8px; }
+    .pricing-area .p-text p {
+      font-size: 12px;
+      color: #908FA5;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .pricing-area .buy-btn {
+    margin-top: 16px; }
+  .pricing-area .course-content h6, .pricing-area .course-content .h6 {
+    margin-top: 48px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #25252E; }
+  .pricing-area .course-content .icon li {
+    margin: 10px 0 0 0; }
+    .pricing-area .course-content .icon li a {
+      margin-top: 19px;
+      margin: 0 15px 0 0; }
+    .pricing-area .course-content .icon li span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #42414B; }
+  .pricing-area .share-content h6, .pricing-area .share-content .h6 {
+    margin-top: 40px;
+    margin-bottom: 14px;
+    color: #25252E; }
+  .pricing-area .share-content .social-link .social li {
+    margin-right: 12px;
+    background: rgba(235, 235, 242, 0.7);
+    border-radius: 3px; }
+    .pricing-area .share-content .social-link .social li a {
+      width: 36px;
+      height: 36px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .pricing-area .share-content .social-link .social li:hover {
+      background-color: #0264ED;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+
 .about-intro {
   padding-bottom: 80px;
   margin-bottom: 100px; }
