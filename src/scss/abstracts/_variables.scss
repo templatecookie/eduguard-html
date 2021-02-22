@@ -22,6 +22,9 @@ $black50: #908FA5;
 $black90: #35343E;
 $white: #fff;
 $warning: #FFC91B;
+$primary: #1089FF;
+$black:  #191922;
+$tertiary:#FF7A1A;
 
 @function color($color-name) {
   @return map-get($map: $colors , $key: $color-name);

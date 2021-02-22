@@ -12,6 +12,7 @@
        box-shadow: none !important;
    }
    &.btn-primary{
+       color: white;
        background-color: color(primary) !important;
        &:hover{
         background-color: color(secondary) !important;

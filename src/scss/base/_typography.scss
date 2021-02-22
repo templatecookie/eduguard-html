@@ -78,10 +78,13 @@ h6{
         font-size: 52px;
     }
     h3{
-        font-size: 40px;
+        font-size: 38px;
     }
     h4{
         font-size: 32px;
+    }
+    h5{
+        font-size: 24px;
     }
 }
 
@@ -96,6 +99,12 @@ h6{
     h4{
         font-size: 32px;
     }
+    h5{
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
 }
 
 // Small devices 575px - 767px
@@ -106,21 +115,33 @@ h6{
     h4{
         font-size: 30px;
     }
+    h5{
+        font-size: 22px;
+    }
     h6{
         font-size: 20px;
+    }
+    p{
+        font-size: 14px;
     }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
     h3{
-        font-size: 28px;
+        font-size: 24px;
     }
     h4{
         font-size: 24px;
     }
+    h5{
+        font-size: 18px;
+    }
     h6{
         font-size: 18px;
+    }
+    p{
+        font-size: 14px;
     }
 }
 
@@ -132,10 +153,13 @@ h6{
     h4{
         font-size: 20px;
     }
+    h5{
+        font-size: 18px;
+    }
     h6{
         font-size: 18px;
     }
     p{
-        font-size: 16px;
+        font-size: 14px;
     }
 }

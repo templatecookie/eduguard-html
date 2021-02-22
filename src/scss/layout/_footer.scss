@@ -87,3 +87,39 @@
         }
     }
 }
+
+// Responsive
+// extra Small devices 420px
+@media (max-width: 420px) {
+    .footer__wrapper{
+        max-width: 100%;
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .footer__wrapper{
+        max-width: 100%;
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .footer__wrapper{
+        max-width: 100%;
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer__wrapper{
+        max-width: 100%;
+    }
+}
+
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+    .footer__wrapper{
+        max-width: 80%;
+    }
+}
