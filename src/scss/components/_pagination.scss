@@ -8,7 +8,9 @@
 
     .p_prev,
     .p_next {
-        border: 1px solid transparent;
+        border: 1px solid rgba($color: #908FA5, $alpha: 0.25);
+        background-color: rgba($color: #908FA5, $alpha: 0.08);
+        color: #8F8FA3;
         border-radius: 100%;
         width: 50px;
         height: 50px;
@@ -25,14 +27,9 @@
         }
 
         &:hover {
-            background-color: rgba(144, 143, 165, 0.08);
-            border: 1px solid rgba(144, 143, 165, 0.25);
-
-            svg {
-                path {
-                    stroke: #908FA5;
-                }
-            }
+            background-color: transparent;
+            border-color: white;
+            color: #202029;
         }
     }
     .cdp_i{
