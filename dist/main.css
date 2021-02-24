@@ -13759,6 +13759,103 @@ header .user-image {
     .faq-area .accordion-item .accordion-button {
       font-size: 16px; } }
 
+.checkout-area {
+  padding-bottom: 100px; }
+  .checkout-area-checkout .checkout-tab {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 6px; }
+    .checkout-area-checkout .checkout-tab .nav-link h6, .checkout-area-checkout .checkout-tab .nav-link .h6 {
+      color: #8F8FA3 !important; }
+    .checkout-area-checkout .checkout-tab .nav-link.active h6, .checkout-area-checkout .checkout-tab .nav-link.active .h6 {
+      color: #202029 !important;
+      font-size: 14px !important; }
+  .checkout-area-summery .summery-area {
+    padding: 25px;
+    background-color: white;
+    border-radius: 6px; }
+    .checkout-area-summery .summery-area-content {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #EBEBF2; }
+      .checkout-area-summery .summery-area-content-item {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #EBEBF2; }
+        .checkout-area-summery .summery-area-content-item .image {
+          width: 130px;
+          height: 100px; }
+          .checkout-area-summery .summery-area-content-item .image img {
+            max-width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+            border-radius: 3px; }
+        .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5 {
+          font-size: 16px !important; }
+        .checkout-area-summery .summery-area-content-item .text p {
+          font-size: 12px !important; }
+        .checkout-area-summery .summery-area-content-item .text h6, .checkout-area-summery .summery-area-content-item .text .h6 {
+          font-weight: 400 !important;
+          font-size: 14px !important; }
+          .checkout-area-summery .summery-area-content-item .text h6 span, .checkout-area-summery .summery-area-content-item .text .h6 span {
+            font-size: 12px !important;
+            color: #8F8FA3 !important; }
+    .checkout-area-summery .summery-area-text .summery-text {
+      border-bottom: 1px solid #EBEBF2;
+      padding: 10px 0px; }
+      .checkout-area-summery .summery-area-text .summery-text .row {
+        margin-bottom: 0 !important; }
+      .checkout-area-summery .summery-area-text .summery-text h6, .checkout-area-summery .summery-area-text .summery-text .h6 {
+        color: #666575 !important;
+        font-size: 14px !important;
+        font-weight: 500 !important; }
+      .checkout-area-summery .summery-area-text .summery-text p {
+        font-size: 14px !important; }
+      .checkout-area-summery .summery-area-text .summery-text .total-cost h6, .checkout-area-summery .summery-area-text .summery-text .total-cost .h6 {
+        color: #202029 !important;
+        font-size: 20px !important;
+        font-weight: 600 !important; }
+      .checkout-area-summery .summery-area-text .summery-text .total-cost p {
+        font-size: 20px !important;
+        color: #202029 !important; }
+
+@media (max-width: 420px) {
+  .checkout-area {
+    padding: 30px 0px; }
+  .checkout-tab .tab-pane form input {
+    padding: 10px 0px 10px 15px !important; }
+  .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5,
+  .checkout-area-summery .summery-area-content-item .text .h5 {
+    font-size: 18px !important; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .checkout-area {
+    padding: 30px 0px; }
+  .checkout-tab .tab-pane form input {
+    padding: 10px 0px 10px 15px !important; }
+  .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5,
+  .checkout-area-summery .summery-area-content-item .text .h5 {
+    font-size: 18px !important; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .checkout-area {
+    padding: 30px 0px; }
+  .checkout-tab .tab-pane form input {
+    padding: 10px 0px 10px 15px !important; }
+  .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5,
+  .checkout-area-summery .summery-area-content-item .text .h5 {
+    font-size: 18px !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .checkout-area {
+    padding: 30px 0px; }
+  .checkout-tab .tab-pane form input {
+    padding: 10px 0px 10px 15px !important; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .checkout-area {
+    padding-bottom: 30px; } }
+
 .contact-hero-shape img {
   position: absolute; }
 
