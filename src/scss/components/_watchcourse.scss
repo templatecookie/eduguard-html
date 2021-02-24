@@ -1,8 +1,13 @@
 .watchcoures{
     &__content_author{
+        .info{
+            a{
+                color: #202029 !important;
+            }
+        }
         .done{
             span{
-                color: color(lowBlack);
+                color: #8F8FA3 !important;
                 font-size: 12px;
                 line-height: 1.25;
             }
@@ -25,4 +30,15 @@
         }
     }
 
+}
+.course__content{
+    padding-bottom: 20px;
+}
+.watchcoures__progress{
+    margin-top: 0 !important;
+}
+.completed-courses{
+    .watchcoures__progress .progress-bar{
+        width: 100% !important;
+    }
 }
