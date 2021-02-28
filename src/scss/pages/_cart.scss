@@ -5,11 +5,9 @@
         margin-bottom: 30px;
 
         .image {
-            width: 200px;
-            height: 170px;
-
             img {
-                max-width: 100%;
+                width: 200px;
+                height: 170px;
                 object-fit: cover;
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
@@ -21,8 +19,8 @@
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
             padding: 20px;
+            padding-bottom: 0 !important;
             max-width: 480px;
-
             h6 {
                 font-weight: 500;
                 font-size: 20px;
@@ -168,8 +166,6 @@
 
         .cart-wizard-area {
             .text {
-                height: 175px;
-
                 h6 {
                     font-size: 18px !important;
                 }
