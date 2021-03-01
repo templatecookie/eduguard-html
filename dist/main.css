@@ -13366,6 +13366,38 @@ header .user-image {
   .similar-events .ourinstructor__wrapper .slick-dots {
     display: none !important; } }
 
+.event-speaker {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .event-speaker-image {
+    height: 175px;
+    width: 175px;
+    margin-bottom: 12px; }
+    .event-speaker-image img {
+      max-width: 100%;
+      border-radius: 50%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .event-speaker-info h6, .event-speaker-info .h6 {
+    text-align: center; }
+    .event-speaker-info h6 a, .event-speaker-info .h6 a {
+      display: block; }
+  .event-speaker-info p {
+    font-size: 14px;
+    text-align: center; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .watchcoures__progress {
     width: 75%; } }
