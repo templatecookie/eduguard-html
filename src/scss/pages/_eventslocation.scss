@@ -1,0 +1,130 @@
+.events-location {
+    &-map {
+        iframe {
+            width: 378px;
+            height: 378px;
+            border-radius: 5px;
+        }
+    }
+
+    &-text {
+        padding-left: 10px;
+        margin-bottom: 24px;
+
+        .text-item {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+
+            &-start {
+                margin-right: 12px;
+
+                .icon-image {
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba($color: #1089FF, $alpha: 0.1);
+                    border-radius: 5px;
+                    color: #1089FF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .email-bg {
+                    background-color: rgba($color: #FF7A1A, $alpha: 0.1);
+                    color: #FF7A1A;
+                }
+
+                .phone-bg {
+                    background-color: rgba($color: #00AF91, $alpha: 0.1);
+                    color: #00AF91;
+                }
+            }
+
+            &-end {
+                p {
+                    font-weight: 500;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    margin-bottom: 5px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+// extra Small devices 420px
+@media (max-width: 420px) {
+    .event-info-cart p.ticket-cost {
+        text-align: center;
+    }
+
+    .events-location-map iframe {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .events-location-text {
+        padding-left: 0;
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .events-location-map iframe {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .events-location-text {
+        padding-left: 0;
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .events-location-map iframe {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .events-location-text {
+        padding-left: 0;
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .events-location-map iframe {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .events-location-text {
+        padding-left: 0;
+    }
+}
+
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+    .events-location-map iframe {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .events-location-text {
+        padding-left: 0;
+    }
+}
