@@ -13547,6 +13547,282 @@ header .user-image {
       font-size: 14px;
       margin-bottom: 20px; } }
 
+.comingsoon-header {
+  padding: 22px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .comingsoon-header .footer__wrapper_social a {
+    color: #42414B;
+    border: 1px solid white;
+    -webkit-transition: 0.3s all linear;
+    transition: 0.3s all linear; }
+    .comingsoon-header .footer__wrapper_social a:hover {
+      color: white;
+      border: 1px solid transparent; }
+
+.comingsoon-area {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .comingsoon-area-start p {
+    color: #202029 !important;
+    margin-top: 10px;
+    margin-bottom: 25px; }
+  .comingsoon-area-start form {
+    max-width: 660px;
+    margin: auto; }
+    .comingsoon-area-start form input {
+      height: 54px;
+      border-radius: 4px;
+      padding-left: 20px;
+      width: 495px;
+      border: none;
+      margin-right: 10px; }
+    .comingsoon-area-start form .btn {
+      height: 54px; }
+  .comingsoon-area-shape img {
+    position: absolute; }
+  .comingsoon-area-shape .shape-01 {
+    top: 100px;
+    left: 0; }
+  .comingsoon-area-shape .shape-02 {
+    top: 100px;
+    right: 150px; }
+  .comingsoon-area-shape .shape-03 {
+    bottom: 0;
+    left: 50px; }
+  .comingsoon-area-shape .shape-04 {
+    bottom: 0;
+    right: 0; }
+
+.count-down {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .count-down-item {
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 5px;
+    margin-right: 15px; }
+    .count-down-item h6, .count-down-item .h6 {
+      font-size: 40px;
+      font-weight: 400 !important; }
+    .count-down-item p {
+      margin: 0;
+      color: #8F8FA3 !important;
+      letter-spacing: 1px;
+      font-size: 12px !important; }
+
+@media (max-width: 420px) {
+  .comingsoon-header {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .comingsoon-header .logo {
+      margin-right: 30px; }
+    .comingsoon-header .footer__wrapper_social ul li {
+      margin-right: 0;
+      margin-left: 8px; }
+      .comingsoon-header .footer__wrapper_social ul li a {
+        width: 30px;
+        height: 30px; }
+  .comingsoon-area-shape {
+    display: none; }
+  .comingsoon-area-start h1, .comingsoon-area-start .h1 {
+    font-size: 40px; }
+  .comingsoon-area-start p {
+    font-size: 14px !important;
+    margin-bottom: 10px; }
+  .comingsoon-area-start form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .comingsoon-area-start form .form-group input {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0; }
+  .comingsoon-area-start .count-down {
+    margin-top: 20px; }
+    .comingsoon-area-start .count-down p {
+      margin-bottom: 0; }
+    .comingsoon-area-start .count-down h6, .comingsoon-area-start .count-down .h6 {
+      font-size: 26px; }
+    .comingsoon-area-start .count-down-item {
+      height: 70px; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .comingsoon-header {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .comingsoon-header .logo {
+      margin-right: 30px; }
+    .comingsoon-header .footer__wrapper_social ul li {
+      margin-right: 0;
+      margin-left: 8px; }
+      .comingsoon-header .footer__wrapper_social ul li a {
+        width: 36px;
+        height: 36px; }
+  .comingsoon-area-shape {
+    display: none; }
+  .comingsoon-area-start h1, .comingsoon-area-start .h1 {
+    font-size: 46px; }
+  .comingsoon-area-start p {
+    font-size: 14px !important;
+    margin-bottom: 10px; }
+  .comingsoon-area-start form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .comingsoon-area-start form .form-group input {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0; }
+  .comingsoon-area-start .count-down {
+    margin-top: 40px; }
+    .comingsoon-area-start .count-down p {
+      margin-bottom: 0; }
+    .comingsoon-area-start .count-down h6, .comingsoon-area-start .count-down .h6 {
+      font-size: 26px; }
+    .comingsoon-area-start .count-down-item {
+      height: 70px; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .comingsoon-header {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .comingsoon-header .logo {
+      margin-right: 30px; }
+    .comingsoon-header .footer__wrapper_social ul li {
+      margin-right: 0;
+      margin-left: 8px; }
+      .comingsoon-header .footer__wrapper_social ul li a {
+        width: 36px;
+        height: 36px; }
+  .comingsoon-area-shape {
+    display: none; }
+  .comingsoon-area-start h1, .comingsoon-area-start .h1 {
+    font-size: 46px; }
+  .comingsoon-area-start p {
+    font-size: 14px !important;
+    margin-bottom: 10px; }
+  .comingsoon-area-start form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .comingsoon-area-start form .form-group input {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0; }
+  .comingsoon-area-start .count-down {
+    margin-top: 40px; }
+    .comingsoon-area-start .count-down p {
+      margin-bottom: 0; }
+    .comingsoon-area-start .count-down h6, .comingsoon-area-start .count-down .h6 {
+      font-size: 26px; }
+    .comingsoon-area-start .count-down-item {
+      height: 70px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .comingsoon-header {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .comingsoon-header .logo {
+      margin-right: 30px; }
+    .comingsoon-header .footer__wrapper_social ul li {
+      margin-right: 0;
+      margin-left: 8px; }
+      .comingsoon-header .footer__wrapper_social ul li a {
+        width: 36px;
+        height: 36px; }
+  .comingsoon-area-shape {
+    display: none; }
+  .comingsoon-area-start h1, .comingsoon-area-start .h1 {
+    font-size: 46px; }
+  .comingsoon-area-start p {
+    font-size: 14px !important;
+    margin-bottom: 10px; }
+  .comingsoon-area-start form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .comingsoon-area-start form .form-group input {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0; }
+  .comingsoon-area-start .count-down {
+    margin-top: 40px; }
+    .comingsoon-area-start .count-down p {
+      margin-bottom: 0; }
+    .comingsoon-area-start .count-down h6, .comingsoon-area-start .count-down .h6 {
+      font-size: 26px; }
+    .comingsoon-area-start .count-down-item {
+      height: 70px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .comingsoon-area-shape .shape-02 {
+    right: 0px; }
+  form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    form .form-group input {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .watchcoures__progress {
     width: 75%; } }
