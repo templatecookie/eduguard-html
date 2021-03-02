@@ -13494,6 +13494,59 @@ header .user-image {
   .events-location-text {
     padding-left: 0; } }
 
+.error-area {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .error-area-start p {
+    color: #666575 !important;
+    margin-top: 15px;
+    margin-bottom: 30px; }
+  .error-area .image {
+    margin-right: -80px; }
+  .error-area-shape img {
+    position: absolute; }
+  .error-area-shape .shape-01 {
+    top: 0;
+    left: 0; }
+  .error-area-shape .shape-02 {
+    bottom: 0;
+    right: 50px; }
+
+@media (max-width: 991px) {
+  .error-area {
+    height: auto; }
+    .error-area-shape {
+      display: none; }
+    .error-area .image {
+      margin-right: 0;
+      margin-bottom: 30px;
+      margin-top: 30px; }
+    .error-area-start {
+      margin-top: 30px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .error-area {
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+    .error-area-shape {
+      display: none; }
+    .error-area .image {
+      margin-right: 0; }
+    .error-area-start h3, .error-area-start .h3 {
+      font-size: 36px; }
+    .error-area-start p {
+      font-size: 14px;
+      margin-bottom: 20px; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .watchcoures__progress {
     width: 75%; } }
