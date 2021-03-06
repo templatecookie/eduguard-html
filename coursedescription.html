@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Course Description-Eduguard</title>
+    <link rel="stylesheet" href="src/scss/vendors/plugin/css/video-js.css">
     <link rel="stylesheet" href="dist/main.css">
 </head>
 
@@ -75,8 +76,9 @@
             <div class="col-lg-8">
                 <div class="course-description-start">
                     <div class="video-area">
-                        <video src="dist/images/courses/video.mp4" controls poster="dist/images/courses/vthumb.jpg"
-                            class="w-100"></video>
+                        <video controls id="my-video" class="video-js w-100" poster="dist/images/courses/vthumb.jpg" data-setup="{}">
+                            <source src="dist/images/courses/video.mp4" class="w-100"> 
+                        </video>
                     </div>
                     <div class="course-description-start-content">
                         <h4>3. What is UI vs UX - User Interface vs User Experience</h4>
@@ -385,6 +387,7 @@
 
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/video.min.js"></script>
     <script src="src/scss/vendors/plugin/js/isotope.pkgd.min.js"></script>
     <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
     <script src="src/scss/vendors/plugin/js/slick.min.js"></script>

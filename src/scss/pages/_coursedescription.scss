@@ -83,7 +83,36 @@
         }
     }
 }
-
+.video-js{
+    min-height: 720px;
+}
+.vjs-poster{
+    width: 100%;
+    background-size: cover;
+}
+.video-js .vjs-big-play-button{
+    display: none;
+}
+.video-js .vjs-slider{
+    background-color: rgba($color: #fff, $alpha: 0.4);
+}
+.video-js .vjs-play-progress:before{
+    color: #1089FF;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #1089FF;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.video-js .vjs-play-progress{
+    background-color:#1089FF;
+}
+.video-js .vjs-control-bar{
+    background-color: transparent;
+}
+.video-js .vjs-picture-in-picture-control{
+    display: none;
+}
 // Course Description Header Ends Here
 
 // Course Description Starts Here
@@ -100,6 +129,7 @@
             border-radius: 0px 0px 8px 8px;
 
             h4 {
+                font-weight: 500 !important;
                 color: #202029 !important;
                 margin-bottom: 20px;
             }
@@ -296,6 +326,10 @@
 // Responsive
 // extra Small devices 420px
 @media (max-width: 420px) {
+    .video-js{
+        min-height: auto;
+    }
+
     .coursedescription-header {
         padding: 0;
         padding-top: 20px;
@@ -396,6 +430,9 @@
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+    .video-js{
+        min-height: auto;
+    }
     .coursedescription-header {
         padding: 0;
         padding-top: 20px;
@@ -498,6 +535,9 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
+    .video-js{
+        min-height: auto;
+    }
     .coursedescription-header {
         padding: 0;
         padding-top: 20px;
@@ -587,6 +627,9 @@
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
+    .video-js{
+        min-height: auto;
+    }
     .coursedescription-header {
         padding: 0;
         padding-top: 20px;
@@ -676,6 +719,9 @@
 
 // large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
+    .video-js{
+        min-height: auto;
+    }
     .coursedescription-header {
         padding: 0;
         padding-top: 20px;
