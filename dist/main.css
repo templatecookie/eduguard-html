@@ -14592,6 +14592,29 @@ header .user-image {
         .course-description-end .coursecontents-wizard-content-end {
           margin-top: 5px; } }
 
+.course-notes {
+  margin-bottom: 20px; }
+  .course-notes-area {
+    max-width: 815px; }
+  .course-notes h6, .course-notes .h6 {
+    color: #666575 !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    margin-bottom: 5px; }
+  .course-notes-item {
+    position: relative; }
+    .course-notes-item .dot {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      background-color: #8F8FA3;
+      border-radius: 50%;
+      margin-right: 10px; }
+    .course-notes-item p {
+      margin-left: 10px; }
+
 .lesson-comments {
   max-width: 800px; }
   .lesson-comments .feedback-comment form {
