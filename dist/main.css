@@ -14771,6 +14771,60 @@ header .user-image {
   .fullcourse-instructor .course-instructor-description {
     font-size: 16px !important; }
 
+.modal-backdrop.show {
+  opacity: 0.9; }
+
+.modal-backdrop {
+  z-index: 0;
+  background-color: #202029; }
+
+#ratingModal,
+body {
+  padding-right: 0 !important; }
+
+.modal-open {
+  overflow: hidden;
+  width: calc(100% - 17px);
+  /* for chrome/safari*/
+  width: -moz-calc(100% - 16px);
+  /*for firefox*/
+  /*width: -ms-calc(100% - XXpx)  */ }
+
+.modal-header h5, .modal-header .h5 {
+  color: #202029 !important;
+  font-size: 24px !important; }
+
+.modal form textarea {
+  height: 110px;
+  border: 1.2px solid rgba(143, 143, 163, 0.4);
+  resize: none;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  border-radius: 4px;
+  padding-left: 20px; }
+
+.modal form label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #202029;
+  margin-bottom: 6px; }
+
+.modal-body-rating p {
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  color: #42414B !important; }
+  .modal-body-rating p span {
+    color: #8F8FA3 !important;
+    font-weight: 400 !important; }
+
+.modal-body-rating .rating-icon {
+  margin-top: 8px; }
+  .modal-body-rating .rating-icon svg {
+    color: #FF7A1A;
+    height: 40px;
+    width: 40px;
+    fill: #FF7A1A; }
+
 .error-area {
   height: 100vh;
   display: -webkit-box;
