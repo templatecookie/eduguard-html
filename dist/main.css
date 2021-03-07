@@ -14762,6 +14762,15 @@ header .user-image {
       .coursefull-overview-area-wizard-list .list-text p {
         color: #666575 !important; }
 
+.fullcourse-instructor .course-instructor {
+  padding: 0;
+  max-width: 800px; }
+  .fullcourse-instructor .course-instructor .lead-p {
+    color: #42414B !important;
+    font-size: 18px !important; }
+  .fullcourse-instructor .course-instructor-description {
+    font-size: 16px !important; }
+
 .error-area {
   height: 100vh;
   display: -webkit-box;
