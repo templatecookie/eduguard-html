@@ -14742,6 +14742,26 @@ header .user-image {
         -ms-flex-align: start !important;
             align-items: flex-start !important; } }
 
+.coursefull-overview-area-wizard {
+  max-width: 815px;
+  margin-bottom: 20px; }
+  .coursefull-overview-area-wizard h6, .coursefull-overview-area-wizard .h6 {
+    color: #42414B !important;
+    margin-bottom: 10px; }
+  .coursefull-overview-area-wizard-list {
+    margin-top: 8px; }
+    .coursefull-overview-area-wizard-list .list-icon svg {
+      stroke: #202029; }
+    .coursefull-overview-area-wizard-list .list-icon-dot {
+      width: 5px;
+      height: 5px;
+      background-color: #666575;
+      border-radius: 50%; }
+    .coursefull-overview-area-wizard-list .list-text {
+      margin-left: 10px; }
+      .coursefull-overview-area-wizard-list .list-text p {
+        color: #666575 !important; }
+
 .error-area {
   height: 100vh;
   display: -webkit-box;
