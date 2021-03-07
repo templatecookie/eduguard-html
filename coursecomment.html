@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Course Comment-Eduguard</title>
+    <link rel="stylesheet" href="src/scss/vendors/plugin/css/video-js.css">
     <link rel="stylesheet" href="dist/main.css">
 </head>
 
@@ -75,8 +76,9 @@
             <div class="col-lg-8">
                 <div class="course-description-start">
                     <div class="video-area">
-                        <video src="dist/images/courses/video.mp4" controls poster="dist/images/courses/vthumb.jpg"
-                            class="w-100"></video>
+                        <video controls id="my-video" class="video-js w-100" poster="dist/images/courses/vthumb.jpg" data-setup="{}">
+                            <source src="dist/images/courses/video.mp4" class="w-100"> 
+                        </video>
                     </div>
                     <div class="course-description-start-content">
                         <h4>3. What is UI vs UX - User Interface vs User Experience</h4>
@@ -231,242 +233,193 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="course-description-end">
-                    <div class="coursecontents-heading">
+                <div class="videolist-area">
+                    <div class="videolist-area-heading">
                         <h6>Course Contents</h6>
-                        <span>5% Completed</span>
+                        <p>5% Completed</p>
                     </div>
-                    <div class="completed-bar">
+                    <div class="videolist-area-bar">
                     </div>
-                    <div class="coursecontents-wizard">
-                        <div class="coursecontents-wizard-heading">
-                            <h6>Get Started</h6>
+                    <div class="videolist-area-wizard">
+                        <div class="wizard-heading">
+                            <h6 class="fs-4">Get Started</h6>
                         </div>
-                        <div class="coursecontents-wizard-content">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-play-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        <div class="main-wizard">
+                            <a href="#">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>1. Introduction to Adobe XD</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">1. Introduction to Adobe XD</a></p>
+                                <div class="main-wizard-end">
+                                    <span>12:34</span>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>12:34</span>
-                            </div>
+                            </a>
                         </div>
-                        <div class="coursecontents-wizard-content border-0">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-play-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        <div class="main-wizard">
+                            <a href="#" class="border-0">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>2. Getting started with your Adobe XD project</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">2. Getting started with your Adobe XD project</a></p>
+                                <div class="main-wizard-end">
+                                    <span>12:34</span>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>12:34</span>
-                            </div>
+                            </a>
                         </div>
-                        <div class="coursecontents-wizard-content active">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-play-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        <div class="main-wizard">
+                            <a href="#" class="active">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>3. What is UI vs UX - User Interface vs User Experie...</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">3. What is UI vs UX - User Interface vs User Experie...</a></p>
+                                <div class="main-wizard-end">
+                                    <span>12:34</span>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>12:34</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="coursecontents-wizard">
-                        <div class="coursecontents-wizard-heading">
-                            <h6>The Project Brief</h6>
+                    <div class="videolist-area-wizard">
+                        <div class="wizard-heading">
+                            <h6 class="fs-4">The Project Brief</h6>
                         </div>
-                        <div class="coursecontents-wizard-content border-0">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-play-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        <div class="main-wizard">
+                            <a href="#" class="border-0">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>4. The brief & persona for our real life project</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">4. The brief & persona for our real life project</a></p>
+                                <div class="main-wizard-end">
+                                    <span>9:18</span>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>9:18</span>
-                            </div>
+                            </a>
                         </div>
-                        <div class="coursecontents-wizard-content download-active">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
-                                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                            <polyline points="13 2 13 9 20 9"></polyline>
+                        <div class="main-wizard">
+                            <a href="#" class="download-wizard">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">                                      
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>4. Project Brief</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">4. Project Brief</a></p>
+                                <div class="main-wizard-end">
+                                    <span>2.5 MB</span>
+                                    <small>Downlaod</small>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>2.5 MB</span>
-                                <h6><a href="#" class="d-inline-block">Downlaod</a></h6>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="coursecontents-wizard">
-                        <div class="coursecontents-wizard-heading">
-                            <h6>Low Fidelity Wireframing </h6>
+                    <div class="videolist-area-wizard">
+                        <div class="wizard-heading">
+                            <h6 class="fs-4">Low Fidelity Wireframing</h6>
                         </div>
-                        <div class="coursecontents-wizard-content">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-play-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        <div class="main-wizard">
+                            <a href="#">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>5. Wireframing (low fidelity) in Adobe XD</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">5. Wireframing (low fidelity) in Adobe XD</a></p>
+                                <div class="main-wizard-end">
+                                    <span>18:58</span>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>18:58</span>
-                            </div>
+                            </a>
                         </div>
-                        <div class="coursecontents-wizard-content">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-play-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        <div class="main-wizard">
+                            <a href="#">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>6. How wide should my website or app be in Ado...</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">6. How wide should my website or app be in Ado...</a></p>
+                                <div class="main-wizard-end">
+                                    <span>7:28</span>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>7:28</span>
-                            </div>
+                            </a>
                         </div>
-                        <div class="coursecontents-wizard-content">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-play-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        <div class="main-wizard">
+                            <a href="#" class="border-0">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>7. Working with existing UI kits in Adobe XD</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">7. Working with existing UI kits in Adobe XD</a></p>
+                                <div class="main-wizard-end">
+                                    <span>6:37</span>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>7:28</span>
-                            </div>
+                            </a>
                         </div>
-                        <div class="coursecontents-wizard-content download-active download-active-outline border-0">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
-                                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                            <polyline points="13 2 13 9 20 9"></polyline>
+                        <div class="main-wizard">
+                            <a href="#" class="download-wizard">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">                                      
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>7. Low Fidelity Wireframes</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">7. Low Fidelity Wireframes</a></p>
+                                <div class="main-wizard-end">
+                                    <span>2.5 MB</span>
+                                    <small>Downlaod</small>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>2.5 MB</span>
-                                <h6 style="color: #666575 !important;"><a href="#"
-                                        class="d-inline-block text-decoration-underline">Downlaod</a></h6>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="coursecontents-wizard mb-0">
-                        <div class="coursecontents-wizard-heading">
-                            <h6>Type, Color & Icon Introduction</h6>
+                    <div class="videolist-area-wizard">
+                        <div class="wizard-heading">
+                            <h6 class="fs-4">Type, Color & Icon Introduction</h6>
                         </div>
-                        <div class="coursecontents-wizard-content">
-                            <div class="coursecontents-wizard-content-start">
-                                <div class="playicon">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-play-circle">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        <div class="main-wizard">
+                            <a href="#">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>8. Working with type in your XD wireframes</p>
+                                    </div>
                                 </div>
-                                <div class="contentname">
-                                    <p><a href="#">8. Working with type in your XD wireframes</a></p>
+                                <div class="main-wizard-end">
+                                    <span>18:58</span>
                                 </div>
-                            </div>
-                            <div class="coursecontents-wizard-content-end">
-                                <span>18:58</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -477,6 +430,7 @@
 
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/video.min.js"></script>
     <script src="src/scss/vendors/plugin/js/isotope.pkgd.min.js"></script>
     <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
     <script src="src/scss/vendors/plugin/js/slick.min.js"></script>

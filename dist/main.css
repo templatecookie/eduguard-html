@@ -11189,6 +11189,144 @@ header .user-image {
   .form-element.success .form-alert-icon {
     color: #00AF91; }
 
+.videolist-area {
+  background-color: white;
+  padding: 12px 0px;
+  border-radius: 8px; }
+  .videolist-area-heading {
+    padding: 0px 24px 12px 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .videolist-area-heading h6, .videolist-area-heading .h6 {
+      font-size: 18px; }
+    .videolist-area-heading p {
+      font-size: 14px; }
+  .videolist-area-bar {
+    margin-bottom: 24px;
+    width: 100%;
+    height: 3px;
+    background-color: #EBEBF2;
+    position: relative; }
+    .videolist-area-bar::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 3px;
+      background-color: #1089FF;
+      border-radius: 0px 20px 20px 0px; }
+  .videolist-area-wizard {
+    padding: 0px 24px;
+    margin-top: 16px; }
+    .videolist-area-wizard .wizard-heading {
+      margin-bottom: 8px; }
+      .videolist-area-wizard .wizard-heading h6, .videolist-area-wizard .wizard-heading .h6 {
+        font-weight: 500 !important; }
+    .videolist-area-wizard .main-wizard .active {
+      background: #1089FF;
+      border-radius: 4px;
+      border-bottom: none;
+      border: 1px solid #1089FF; }
+      .videolist-area-wizard .main-wizard .active .main-wizard-icon svg {
+        color: #FFFFFF; }
+      .videolist-area-wizard .main-wizard .active .main-wizard-title p {
+        color: rgba(255, 255, 255, 0.8) !important; }
+      .videolist-area-wizard .main-wizard .active .main-wizard-end span {
+        color: rgba(255, 255, 255, 0.8) !important; }
+    .videolist-area-wizard .main-wizard .download-wizard {
+      border: 1px solid transparent;
+      -webkit-transition: 0.3s all linear;
+      transition: 0.3s all linear; }
+      .videolist-area-wizard .main-wizard .download-wizard .main-wizard-icon svg {
+        color: #00AF91; }
+      .videolist-area-wizard .main-wizard .download-wizard .main-wizard-end small, .videolist-area-wizard .main-wizard .download-wizard .main-wizard-end .small {
+        color: #666575;
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 30px;
+        -webkit-transition: 0.3s all linear;
+        transition: 0.3s all linear; }
+      .videolist-area-wizard .main-wizard .download-wizard:hover {
+        border: 1px solid rgba(0, 175, 145, 0.4);
+        border-radius: 4px; }
+        .videolist-area-wizard .main-wizard .download-wizard:hover .main-wizard-end small, .videolist-area-wizard .main-wizard .download-wizard:hover .main-wizard-end .small {
+          color: #202029;
+          text-decoration: none; }
+    .videolist-area-wizard .main-wizard a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 12px;
+      background-color: transparent;
+      border-bottom: 1px solid #EBEBF2; }
+    .videolist-area-wizard .main-wizard-start {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .videolist-area-wizard .main-wizard-icon {
+      margin-right: 8px; }
+      .videolist-area-wizard .main-wizard-icon svg {
+        color: #1089FF; }
+    .videolist-area-wizard .main-wizard-title p {
+      font-size: 14px; }
+    .videolist-area-wizard .main-wizard-end span {
+      color: #8F8FA3;
+      font-size: 14px; }
+
+@media (max-width: 420px) {
+  .videolist-area-wizard {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .videolist-area-wizard .main-wizard a {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .videolist-area-wizard .main-wizard-end {
+      margin-top: 8px; }
+  .videolist-area-heading {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .videolist-area-wizard .main-wizard a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .videolist-area-wizard .main-wizard-end {
+    margin-top: 8px; } }
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .videolist-area-wizard .main-wizard a {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+
 .z-alert {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14094,7 +14232,7 @@ header .user-image {
       -ms-flex-align: start;
           align-items: flex-start; }
   .course-description-start {
-    padding-right: 30px; }
+    padding-right: 5px; }
     .course-description-start-content {
       padding: 18px 30px 26px 30px;
       background: #FFFFFF;
@@ -14130,114 +14268,6 @@ header .user-image {
           max-width: 800px; }
           .course-description-start-content-tabitem .lesson-description p a {
             color: #1089FF; }
-  .course-description-end {
-    padding: 12px 0px;
-    background: #FFFFFF;
-    border-radius: 8px; }
-    .course-description-end .coursecontents-heading {
-      padding: 0px 24px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .course-description-end .coursecontents-heading h6, .course-description-end .coursecontents-heading .h6 {
-        font-size: 18px; }
-      .course-description-end .coursecontents-heading span {
-        color: #8F8FA3;
-        font-size: 14px; }
-    .course-description-end .completed-bar {
-      margin-top: 12px;
-      margin-bottom: 24px;
-      width: 100%;
-      height: 3px;
-      background-color: #EBEBF2;
-      position: relative; }
-      .course-description-end .completed-bar::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        height: 3px;
-        width: 24px;
-        background-color: #1089FF;
-        border-radius: 0px 20px 20px 0px; }
-    .course-description-end .coursecontents-wizard {
-      padding: 0px 24px;
-      margin-bottom: 16px; }
-      .course-description-end .coursecontents-wizard .download-active {
-        border-radius: 4px;
-        border: 1px solid rgba(0, 175, 145, 0.4); }
-        .course-description-end .coursecontents-wizard .download-active .playicon a {
-          color: #00AF91 !important; }
-        .course-description-end .coursecontents-wizard .download-active .coursecontents-wizard-content-end {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          .course-description-end .coursecontents-wizard .download-active .coursecontents-wizard-content-end h6, .course-description-end .coursecontents-wizard .download-active .coursecontents-wizard-content-end .h6 {
-            font-weight: 500 !important;
-            font-size: 14px !important;
-            margin-left: 30px; }
-      .course-description-end .coursecontents-wizard .active {
-        background: #1089FF;
-        border-radius: 4px;
-        border: none !important; }
-        .course-description-end .coursecontents-wizard .active .playicon a {
-          color: rgba(255, 255, 255, 0.8) !important; }
-        .course-description-end .coursecontents-wizard .active .contentname a {
-          color: rgba(255, 255, 255, 0.8) !important; }
-        .course-description-end .coursecontents-wizard .active .coursecontents-wizard-content-end span {
-          color: rgba(255, 255, 255, 0.8) !important; }
-      .course-description-end .coursecontents-wizard-content {
-        padding: 12px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        border-bottom: 1px solid #EBEBF2; }
-        .course-description-end .coursecontents-wizard-content-start {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          .course-description-end .coursecontents-wizard-content-start .playicon a {
-            color: #1089FF; }
-            .course-description-end .coursecontents-wizard-content-start .playicon a svg {
-              width: 14px;
-              height: 14px; }
-          .course-description-end .coursecontents-wizard-content-start .contentname {
-            margin-left: 8px; }
-            .course-description-end .coursecontents-wizard-content-start .contentname p {
-              font-size: 14px !important; }
-              .course-description-end .coursecontents-wizard-content-start .contentname p a {
-                color: inherit; }
-        .course-description-end .coursecontents-wizard-content-end span {
-          font-size: 14px;
-          color: #8F8FA3; }
 
 @media (max-width: 420px) {
   .video-js {
