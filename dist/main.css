@@ -13336,6 +13336,7 @@ header .user-image {
       margin-top: 5px; }
   .event-search-content {
     margin-top: 0px; }
+    .event-search-content .coures,
     .event-search-content .event {
       margin-bottom: 20px; }
   .event-search {
@@ -13355,6 +13356,7 @@ header .user-image {
     width: 100%; }
   .event-search-content {
     margin-top: 0px; }
+    .event-search-content .coures,
     .event-search-content .event {
       margin-bottom: 20px; }
   .event-search-pagination {
@@ -13372,6 +13374,7 @@ header .user-image {
     width: 100%; }
   .event-search-content {
     margin-top: 0px; }
+    .event-search-content .coures,
     .event-search-content .event {
       margin-bottom: 20px; }
   .event-search-pagination {
@@ -13389,6 +13392,7 @@ header .user-image {
     width: 100%; }
   .event-search-content {
     margin-top: 0px; }
+    .event-search-content .coures,
     .event-search-content .event {
       margin-bottom: 20px; }
   .event-search-pagination {
@@ -13400,7 +13404,7 @@ header .user-image {
   .eventsearch-sub-section {
     padding-bottom: 70px !important; }
   .event-search-pagination {
-    margin-top: 10px; }
+    margin-top: 50px; }
   .event-search-wizard-item-start .price-inputs-one {
     width: 55px; }
   .event-search-wizard-item-start .price-inputs-two {
