@@ -1,0 +1,495 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Notes-Eduguard</title>
+    <link rel="stylesheet" href="src/scss/vendors/plugin/css/video-js.css">
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+
+<body style="background-color: #EBEBF2;">
+    <!-- Header Starts Here -->
+    <header>
+        <div class="container-fluid">
+            <div class="coursedescription-header">
+                <div class="coursedescription-header-start">
+                    <div class="logo-image">
+                        <a href="index.html"><img src="dist/images/logo/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="topic-info">
+                        <div class="topic-info-arrow">
+                            <a href="#">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 19.5L8.5 12.5L15.5 5.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="topic-info-text">
+                            <h6><a href="#">User Experience Design Essentials - Adobe XD UI UX Design</a></h6>
+                            <div class="lesson-hours">
+                                <div class="book-lesson">
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 2.75H6C6.79565 2.75 7.55871 3.06607 8.12132 3.62868C8.68393 4.19129 9 4.95435 9 5.75V16.25C9 15.6533 8.76295 15.081 8.34099 14.659C7.91903 14.2371 7.34674 14 6.75 14H1.5V2.75Z"
+                                            stroke="#00AF91" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M16.5 2.75H12C11.2044 2.75 10.4413 3.06607 9.87868 3.62868C9.31607 4.19129 9 4.95435 9 5.75V16.25C9 15.6533 9.23705 15.081 9.65901 14.659C10.081 14.2371 10.6533 14 11.25 14H16.5V2.75Z"
+                                            stroke="#00AF91" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span>93 Lesson</span>
+                                </div>
+                                <div class="totoal-hours">
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 17C13.1421 17 16.5 13.6421 16.5 9.5C16.5 5.35786 13.1421 2 9 2C4.85786 2 1.5 5.35786 1.5 9.5C1.5 13.6421 4.85786 17 9 17Z"
+                                            stroke="#FF7A1A" stroke-width="1.8" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M9 5V9.5L12 11" stroke="#FF7A1A" stroke-width="1.8"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>11.5 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coursedescription-header-end">
+                    <a href="#" class="rating-link">Leave a Rating</a>
+                    <a href="#" class="btn btn-primary regular-fill-btn">Next Lession</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!-- Course Description Starts Here -->
+    <div class="container-fluid">
+        <div class="row course-description">
+            <div class="col-lg-8">
+                <div class="course-description-start">
+                    <div class="video-area">
+                        <video controls id="my-video" class="video-js w-100" poster="dist/images/courses/vthumb.jpg" data-setup="{}">
+                            <source src="dist/images/courses/video.mp4" class="w-100"> 
+                        </video>
+                    </div>
+                    <div class="course-description-start-content">
+                        <h4>3. What is UI vs UX - User Interface vs User Experience</h4>
+                        <nav class="course-description-start-content-tab">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link" id="nav-ldescrip-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ldescrip" type="button" role="tab" aria-controls="nav-ldescrip"
+                                    aria-selected="true">Lesson Description</button>
+                                <button class="nav-link active" id="nav-lnotes-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-lnotes" type="button" role="tab" aria-controls="nav-lnotes"
+                                    aria-selected="false">Lesson Notes</button>
+                                <button class="nav-link" id="nav-lcomments-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-lcomments" type="button" role="tab"
+                                    aria-controls="nav-lcomments" aria-selected="false">Comments</button>
+                                <button class="nav-link" id="nav-loverview-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-loverview" type="button" role="tab"
+                                    aria-controls="nav-loverview" aria-selected="false">Course Overview</button>
+                                <button class="nav-link" id="nav-linstruc-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-linstruc" type="button" role="tab" aria-controls="nav-linstruc"
+                                    aria-selected="false">Instructor</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content course-description-start-content-tabitem" id="nav-tabContent">
+                            <div class="tab-pane fade" id="nav-ldescrip" role="tabpanel"
+                                aria-labelledby="nav-ldescrip-tab">
+                                <!-- Lesson Description Starts Here -->
+                                <div class="lesson-description">
+                                    <p>
+                                        Donec imperdiet erat tortor, nec consectetur odio fermentum et. Mauris vehicula
+                                        faucibus viverra. Vestibulum varius ante enim.
+                                        eu posuere ligula eleifend non. Praesent sapien nisi, luctus a tellus a, porta
+                                        dapibus massa. Cras non mattis mauris. Etiam convallis purus a ante mattis, id
+                                        tincidunt sapien hendrerit. Sed laoreet
+                                        Check out my portfolio: <a href="#">https://bit.ly/2OZkYCo</a>
+                                    </p>
+                                </div>
+                                <!-- Lesson Description Ends Here -->
+                            </div>
+                            <div class="tab-pane fade show active" id="nav-lnotes" role="tabpanel"
+                                aria-labelledby="nav-lnotes-tab">
+                                <!-- Course Notes Starts Here -->
+                                <div class="course-notes-area">
+                                    <div class="course-notes">
+                                        <h6>Steps 1: Understand what we're trying to solve.</h6>
+                                        <div class="course-notes-item">
+                                            <div class="dot">
+                                            </div>
+                                            <p>
+                                                You have to take a minute to understand what is the goal, what is the
+                                                problem, what they're trying to achieve with it who is the target
+                                                audience, who is the competition, and understand what are you trying to
+                                                do here and how will success will look like of the project. the way to
+                                                do that is basically by doing two things
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="course-notes">
+                                        <h6>Steps 2: ID8 (brainstorming and coming up with lots of ideas)</h6>
+                                        <div class="course-notes-item">
+                                            <div class="dot">
+                                            </div>
+                                            <p>
+                                                The way to get the idea is by removing your barriers about I only need
+                                                to come up with good ideas and just bring a lot of ideas and it's very
+                                                important to come up with a lot's of ideas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="course-notes">
+                                        <h6>Steps 3: take the kind of rough idea that you have been trying to validate
+                                            it</h6>
+                                        <div class="course-notes-item">
+                                            <div class="dot">
+                                            </div>
+                                            <p>
+                                                By validating I mean you present it. so you do a present it's a client
+                                                work you do a presentation you show them the work. and you're saying
+                                                here it is here's why I did this here's the process that I went through.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="course-notes mb-0">
+                                        <h6>Steps 4: Refine Your Design</h6>
+                                        <div class="course-notes-item">
+                                            <div class="dot">
+                                            </div>
+                                            <p>
+                                                After you've listened and documented that feedback is actually to refine
+                                                your design and improve it and make it better then it's ready after
+                                                you've to go feedback that it's well ready to release it or finalize it
+                                                or lunch it or whatever you're doing.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Course Notes Ends Here -->
+                            </div>
+                            <div class="tab-pane fade" id="nav-lcomments" role="tabpanel"
+                                aria-labelledby="nav-lcomments-tab">
+                                <!-- Lesson Comments Starts Here -->
+                                <div class="lesson-comments">
+                                    <div class="feedback-comment pt-0 ps-0 pe-0">
+                                        <h5>Add a Public Comment</h5>
+                                        <form action="#">
+                                            <label for="comment">Comment</label>
+                                            <textarea class="form-control" id="comment"
+                                                placeholder="how is your feeling about the instructor"></textarea>
+                                            <button type="submit"
+                                                class="btn text-uppercase regular-fill-btn btn-primary float-end">Post
+                                                Review</button>
+                                        </form>
+                                    </div>
+                                    <div class="students-feedback pt-0 ps-0 pe-0 pb-0 mb-0">
+                                        <div class="students-feedback-heading">
+                                            <h5>Comments <span>(57,685)</span></h5>
+                                        </div>
+                                        <div class="students-feedback-item">
+                                            <div class="feedback-rating">
+                                                <div class="feedback-rating-start">
+                                                    <div class="image">
+                                                        <img src="dist/images/ellipse/user.jpg" alt="Image">
+                                                    </div>
+                                                    <div class="text">
+                                                        <h6><a href="#">Harry Pinsky</a></h6>
+                                                        <p>1 hour ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Aliquam eget leo quis neque molestie dictum. Etiam ut tortor tempor,
+                                                vestibulum ante non, vulputate nibh. Cras non molestie diam. Great
+                                                Course for Beginner 😀
+                                            </p>
+                                        </div>
+                                        <div class="students-feedback-item">
+                                            <div class="feedback-rating">
+                                                <div class="feedback-rating-start">
+                                                    <div class="image">
+                                                        <img src="dist/images/ellipse/1.png" alt="Image">
+                                                    </div>
+                                                    <div class="text">
+                                                        <h6><a href="#">Harry Pinsky</a></h6>
+                                                        <p>2 hour ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Aliquam eget leo quis neque molestie dictum. Etiam ut tortor tempor,
+                                                vestibulum ante non, vulputate nibh.
+                                            </p>
+                                        </div>
+                                        <div class="students-feedback-item">
+                                            <div class="feedback-rating">
+                                                <div class="feedback-rating-start">
+                                                    <div class="image">
+                                                        <img src="dist/images/ellipse/2.png" alt="Image">
+                                                    </div>
+                                                    <div class="text">
+                                                        <h6><a href="#">Watcraz Eggsy</a></h6>
+                                                        <p>1 day ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Aenean vulputate nisi ligula. Quisque in tempus sapien. Quisque
+                                                vestibulum massa eget consequat scelerisque. Phasellus varius risus
+                                                nec maximus auctor.
+                                            </p>
+                                        </div>
+                                        <div class="students-feedback-item border-0">
+                                            <div class="feedback-rating">
+                                                <div class="feedback-rating-start">
+                                                    <div class="image">
+                                                        <img src="dist/images/ellipse/3.png" alt="Image">
+                                                    </div>
+                                                    <div class="text">
+                                                        <h6><a href="#">Watcraz Eggsy</a></h6>
+                                                        <p>1 day ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Cras non molestie diam. Aenean vulputate nisi ligula. Quisque in
+                                                tempus sapien. Quisque vestibulum massa eget consequat scelerisque.
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="#" class="btn btn-outline-info text-uppercase">Load More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Lesson Comments Ends Here -->
+                            </div>
+                            <div class="tab-pane fade" id="nav-loverview" role="tabpanel"
+                                aria-labelledby="nav-loverview-tab">
+
+                            </div>
+                            <div class="tab-pane fade" id="nav-linstruc" role="tabpanel"
+                                aria-labelledby="nav-linstruc-tab">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat voluptas earum!
+                                    Tempore, asperiores nulla minus illo iure impedit et itaque sed maiores molestias
+                                    voluptatum est id magnam. Illo praesentium doloremque, voluptate minima quam quasi
+                                    exercitationem est rem neque, fuga nostrum quod quas! Nesciunt labore repellendus
+                                    consequatur cupiditate perspiciatis soluta?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="videolist-area">
+                    <div class="videolist-area-heading">
+                        <h6>Course Contents</h6>
+                        <p>5% Completed</p>
+                    </div>
+                    <div class="videolist-area-bar">
+                    </div>
+                    <div class="videolist-area-wizard">
+                        <div class="wizard-heading">
+                            <h6 class="fs-4">Get Started</h6>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>1. Introduction to Adobe XD</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>12:34</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#" class="border-0">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>2. Getting started with your Adobe XD project</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>12:34</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#" class="active">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>3. What is UI vs UX - User Interface vs User Experie...</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>12:34</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videolist-area-wizard">
+                        <div class="wizard-heading">
+                            <h6 class="fs-4">The Project Brief</h6>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#" class="border-0">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>4. The brief & persona for our real life project</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>9:18</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#" class="download-wizard">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">                                      
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>4. Project Brief</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>2.5 MB</span>
+                                    <small>Downlaod</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videolist-area-wizard">
+                        <div class="wizard-heading">
+                            <h6 class="fs-4">Low Fidelity Wireframing</h6>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>5. Wireframing (low fidelity) in Adobe XD</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>18:58</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>6. How wide should my website or app be in Ado...</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>7:28</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#" class="border-0">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>7. Working with existing UI kits in Adobe XD</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>6:37</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#" class="download-wizard">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">                                      
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>7. Low Fidelity Wireframes</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>2.5 MB</span>
+                                    <small>Downlaod</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videolist-area-wizard">
+                        <div class="wizard-heading">
+                            <h6 class="fs-4">Type, Color & Icon Introduction</h6>
+                        </div>
+                        <div class="main-wizard">
+                            <a href="#">
+                                <div class="main-wizard-start">
+                                    <div class="main-wizard-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="main-wizard-title">
+                                        <p>8. Working with type in your XD wireframes</p>
+                                    </div>
+                                </div>
+                                <div class="main-wizard-end">
+                                    <span>18:58</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Course Description Ends Here -->
+
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/video.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/isotope.pkgd.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
+    <script src="dist/main.js"></script>
+</body>

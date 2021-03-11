@@ -1,0 +1,33 @@
+.event-speaker {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-image {
+        height: 175px;
+        width: 175px;
+        margin-bottom: 12px;
+
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    &-info {
+        h6 {
+            text-align: center;
+
+            a {
+                display: block;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
