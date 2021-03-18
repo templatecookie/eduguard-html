@@ -1,0 +1,71 @@
+// Intro Featured Starts Here
+.intro-featured {
+    .successful-instructor-feature {
+        &:hover {
+            .successful-instructor-feature-image {
+                &.first-bg {
+                    background-color: #00AF91 !important;
+                }
+
+                &.second-bg {
+                    background-color: #1089FF !important;
+                }
+
+                &.third-bg {
+                    background-color: #FF7A1A !important;
+                    color: white !important;
+                }
+            }
+        }
+    }
+
+    .successful-instructor-feature-image {
+        &.first-bg {
+            background-color: rgba(0, 175, 145, 0.1);
+            color: #00AF91;
+        }
+
+        &.second-bg {
+            background-color: rgba(16, 137, 255, 0.1);
+            color: #1089FF;
+        }
+
+        &.third-bg {
+            background-color: rgba(255, 122, 26, 0.1);
+            color: #FF7A1A;
+        }
+    }
+
+}
+
+// Intro Featured Ends Here 
+
+// Banner Starts Here
+.banner-two{
+    background-color: rgba($color: #EBEBF2, $alpha: 0.6);
+    padding: 200px 0px;
+    &-end{
+        position: relative;
+        &-image{
+             z-index: 1;
+            border: 5px solid #FFFFFF;
+            border-radius: 10px;
+            filter: drop-shadow(0px 36px 70px rgba(10, 9, 86, 0.1));
+        }
+        &-shape{
+            img{
+                position: absolute;
+                z-index: -1;
+            }
+            .shape-01{
+                top: -100px;
+                left: -65px;
+            }
+            .shape-02{
+                bottom: -55px;
+                right: -35px;
+            }
+        }
+    }
+}
+// Banner Ends Here
