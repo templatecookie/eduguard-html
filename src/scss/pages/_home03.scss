@@ -1,32 +1,39 @@
 // Banner Startrs Here 
-.banner-three{
+.banner-three {
     background-repeat: no-repeat !important;
     background-position: center !important;
     clip-path: ellipse(100% 100% at 50% 0%);
     position: relative;
-    .playbtn-area{
+
+    .playbtn-area {
         position: absolute;
         bottom: 330px;
         left: 55%;
+
         .pulse {
             animation: pulse-animation 2s infinite;
         }
     }
+
     @keyframes pulse-animation {
         0% {
-          box-shadow: 0 0 0 0px rgba(253, 251, 251, 0.2);
+            box-shadow: 0 0 0 0px rgba(253, 251, 251, 0.2);
         }
+
         100% {
-        box-shadow: 0 0 0 20px rgba(253, 253, 253, 0);
+            box-shadow: 0 0 0 20px rgba(253, 253, 253, 0);
         }
-    }      
-    &-content{
+    }
+
+    &-content {
         height: 1037px;
     }
-    h1{
+
+    h1 {
         color: white !important;
     }
-    p{
+
+    p {
         padding: 15px 0px 30px 0px;
         max-width: 525px;
         font-size: 20px !important;
@@ -34,100 +41,118 @@
         font-weight: 400 !important;
     }
 }
-.btn-white{
+
+.btn-white {
     display: inline-block;
     padding: 19px 32px;
     background-color: white;
+    color: #202029;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 16px;
-    color: #1089FF;
     letter-spacing: 0.04em;
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     transition: 0.3s all linear;
-    &:hover{
+
+    &:hover {
         box-shadow: none !important;
         color: #1089FF !important;
     }
 }
+
 // Banner Ends Here 
 
 // New Course Feature Starts Here
-.new-course-feature{
+.new-course-feature {
     padding: 100px 0px;
-    h3{
+
+    h3 {
         text-align: center;
         color: #202029 !important;
         margin-bottom: 50px;
     }
-    .btn-primary{
+
+    .btn-primary {
         margin-top: 50px;
     }
 }
+
 // Featured Course Starts Here
-.featured-course{
-    &-image{
-        a{
+.featured-course {
+    &-image {
+        a {
             display: block;
-            img{
+
+            img {
                 border-radius: 5px 5px 0px 0px;
             }
         }
     }
-    &-info{
+
+    &-info {
         padding: 12px 0px;
         border-top: 1px solid #EBEBF2;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .course-view{
+
+        .course-view {
             padding-left: 12px;
-            svg{
+
+            svg {
                 color: #1089FF;
                 width: 18px;
                 height: 18px;
                 margin-right: 5px;
             }
-            span{
+
+            span {
                 font-size: 14px;
                 color: #42414B;
                 font-weight: 400;
             }
         }
-        .course-lesson{
-            svg{
+
+        .course-lesson {
+            svg {
                 color: #00AF91;
                 width: 18px;
                 height: 18px;
                 margin-right: 5px;
             }
-            span{
+
+            span {
                 font-size: 14px;
                 color: #42414B;
                 font-weight: 400;
             }
         }
-        .course-hours{
+
+        .course-hours {
             padding-right: 12px;
-            svg{
+
+            svg {
                 color: #FFC91B;
                 width: 18px;
-                height: 18px;  
+                height: 18px;
                 margin-right: 5px;
             }
-            span{
+
+            span {
                 font-size: 14px;
                 color: #42414B;
                 font-weight: 400;
             }
         }
     }
-    .featured-course-text{
+
+    .featured-course-text {
         border-radius: 0px 0px 5px 5px;
         background-color: white;
         padding-top: 20px;
-        small.category-name{
+
+        small.category-name {
             display: block;
             margin-bottom: 3px;
             padding-left: 12px;
@@ -137,52 +162,61 @@
             text-transform: uppercase;
             color: #8F8FA3;
         }
-        h6{
+
+        h6 {
             padding: 0px 12px;
             margin-bottom: 12px;
-            a{
+
+            a {
                 display: block;
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 28px;
                 color: #202029;
                 transition: 0.3s all linear;
-                &:hover{
+
+                &:hover {
                     color: $primary;
                 }
             }
         }
-        .course-card{
+
+        .course-card {
             margin-bottom: 12px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0px 12px;
-            &-start{
-                h6{
+
+            &-start {
+                h6 {
                     padding: 0;
                     margin-bottom: 0;
                     font-weight: 500 !important;
                     font-size: 18px !important;
                     color: #42414B !important;
-                    span{
+
+                    span {
                         font-weight: 400 !important;
                         font-size: 14px !important;
                         color: #8F8FA3 !important;
                     }
                 }
             }
-            &-end{
-                svg{
+
+            &-end {
+                svg {
                     color: #FF7A1A;
                     width: 18px;
                     height: 18px;
                     margin-right: 2px;
                 }
-                small{
+
+                small {
                     font-size: 16px;
                     color: #42414B;
-                    span{
+
+                    span {
                         font-size: 14px;
                         color: #8F8FA3;
                     }
@@ -191,94 +225,117 @@
         }
     }
 }
+
 // Featured Course Ends Here
 
 // Featured Instructor Starts Here
-.featured-instructor{
+.featured-instructor {
     padding: 100px 0px;
     background-color: white;
-    &-image{
-        img{
+
+    &-image {
+        img {
             z-index: 1;
             position: relative;
             border-radius: 8px;
         }
     }
-    .image-shape{
+
+    .image-shape {
         z-index: -1;
-        img{
+
+        img {
             position: absolute;
         }
-        .shape01{
+
+        .shape01 {
             top: 25px;
             left: -90px;
         }
-        .shape02{
+
+        .shape02 {
             right: 20px;
             top: -60px;
         }
-        .shape03{
+
+        .shape03 {
             bottom: -30px;
             left: -20px;
         }
     }
-    &-text{
+
+    &-text {
         padding-left: 25px;
-        h3{
+
+        h3 {
             color: #202029 !important;
         }
-        h5{
+
+        h5 {
             font-weight: 300 !important;
             font-size: 30px !important;
             color: #202029 !important;
         }
-        p{
+
+        p {
             font-size: 18px !important;
             margin-top: 20px;
             font-weight: 400 !important;
         }
     }
 }
+
 // Featured Instructor Ends Here
 
 // Chose Course Starts Here
-.chose-course{
+.chose-course {
     padding: 100px;
-    h3{
+
+    h3 {
         margin-bottom: 50px;
     }
-    &-item{
+
+    &-item {
+        cursor: pointer;
         padding: 30px 20px;
         background-color: white;
         border-radius: 5px;
         border: 1px solid #EBEBF2;
         transition: 0.3s all linear;
-        &:hover{
+
+        &:hover {
             box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
-            svg{
+
+            svg {
                 color: white;
             }
-            .hours-icon{
+
+            .hours-icon {
                 background-color: #00AF91;
             }
-            .user-icon{
+
+            .user-icon {
                 background-color: #1089FF !important;
             }
-            .book-icon{
+
+            .book-icon {
                 background-color: #F15C4C !important;
             }
         }
-        .book-icon{
+
+        .book-icon {
             background-color: rgba($color: #F15C4C, $alpha: 0.1) !important;
             color: #F15C4C !important;
         }
-        .user-icon{
+
+        .user-icon {
             background-color: rgba($color: #1089FF, $alpha: 0.1) !important;
             color: #1089FF !important;
         }
+
         .book-icon,
         .user-icon,
-        .hours-icon{
+        .hours-icon {
             transition: 0.3s all linear;
             background: rgba($color: #00AF91, $alpha: 0.1);
             border-radius: 5px;
@@ -289,160 +346,270 @@
             justify-content: center;
             color: #00AF91;
             margin-bottom: 20px;
-            svg{
+
+            svg {
                 transition: 0.3s all linear;
             }
         }
-        h5{
+
+        h5 {
             text-align: center;
             font-weight: 500 !important;
             margin-bottom: 12px;
         }
-        p{
+
+        p {
             text-align: center;
         }
     }
 }
+
 // Chose Course Ends Here
 
 // Testimonial Area Starts Here
-.testimonial-area{
+.testimonial-area {
     padding: 100px 0px;
     background-color: white;
-    h3{
+
+    h3 {
         color: #202029 !important;
         margin-bottom: 50px;
     }
-    &-item{
+
+    &-item {
         transition: 0.3s all linear;
         padding: 24px 20px;
         border: 2px solid #EBEBF2;
         border-radius: 5px;
-        &:hover{
+
+        &:hover {
             border-color: $primary;
         }
-        .testimonial-rating{
+
+        .testimonial-rating {
             margin-bottom: 10px;
-            ul{
+
+            ul {
                 display: flex;
                 align-items: center;
-                li{
+
+                li {
                     margin-right: 5px;
-                    svg{
+
+                    svg {
                         color: #FF7A1A;
                         fill: #FF7A1A;
                     }
                 }
             }
         }
-        p{
+
+        p {
             font-size: 15px !important;
         }
-        .testimonial-client{
+
+        .testimonial-client {
             margin-top: 12px;
             display: flex;
             align-items: center;
-            &-image{
+
+            &-image {
                 width: 42px;
                 height: 42px;
                 margin-right: 8px;
-                img{
+
+                img {
                     max-width: 100%;
                     object-fit: cover;
                     border-radius: 50%;
                 }
             }
-            &-info{
-                h6{
+
+            &-info {
+                h6 {
                     color: #42414B !important;
                     font-weight: 500 !important;
                     font-size: 18px !important;
                 }
-                p{
+
+                p {
                     font-size: 14px !important;
                 }
             }
         }
     }
 }
+
 // Testimonial Area Ends Here
 
 // Join Area Starts Here
-.join-area{
+.join-area {
     padding: 200px 0px;
     position: relative;
-    &-image{
-        img{
+
+    &-image {
+        img {
             position: absolute;
+            z-index: 1;
         }
-        .img-01{
+
+        .img-01 {
             top: 100px;
             left: 130px;
         }
-        .img-02{
+
+        .img-02 {
             top: 52px;
             left: 375px;
         }
-        .img-03{
+
+        .img-03 {
             top: 268px;
             left: 227px;
         }
-        .img-04{
+
+        .img-04 {
             top: 278px;
             left: 404px;
         }
-        .img-05{
+
+        .img-05 {
             top: 393px;
             left: 65px;
         }
-        .img-06{
+
+        .img-06 {
             bottom: 80px;
             left: 235px;
         }
-        .img-07{
+
+        .img-07 {
             bottom: 94px;
             left: 474px;
         }
-        .img-08{
+
+        .img-08 {
             bottom: 58px;
             left: 737px;
         }
-        .img-09{
+
+        .img-09 {
             top: 118px;
             right: 358px;
         }
-        .img-10{
+
+        .img-10 {
             bottom: 194px;
             right: 371px;
         }
-        .img-11{
+
+        .img-11 {
             bottom: 300px;
             right: 236px;
         }
-        .img-12{
+
+        .img-12 {
             top: 90px;
             right: 80px;
         }
-        .img-13{
+
+        .img-13 {
             bottom: 175px;
             right: 85px;
         }
-        .img-14{
+
+        .img-14 {
             bottom: 60px;
             right: 140px;
         }
     }
-    &-text{
-        h3{
+
+    &-shape {
+        img {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .shape-02 {
+            top: 78px;
+            left: 700px;
+        }
+
+        .shape-03 {
+            bottom: 88px;
+            right: 510px;
+        }
+
+        .shape-04 {
+            left: 214px;
+            top: 238px;
+        }
+
+        .shape-05 {
+            bottom: 88px;
+            left: 283px;
+        }
+
+        .shape-06 {
+            top: 247px;
+            right: 111px;
+        }
+
+        .shape-07 {
+            top: 67px;
+            right: 243px;
+        }
+    }
+
+    &-text {
+        h3 {
             color: #202029 !important;
         }
-        p{
+
+        p {
             font-size: 18px !important;
             margin-top: 15px;
             margin-bottom: 30px;
         }
     }
 }
+
 // Join Area Ends Here
+
+// Newsletter Area Starts Here
+.newsletterarea-norlam {
+    padding: 100px 0px;
+    background-color: white;
+
+    &-start {
+        h4 {
+            color: #202029 !important;
+            margin-bottom: 10px;
+            font-weight: 600 !important;
+        }
+    }
+
+    &-end {
+        padding-left: 25px;
+
+        form {
+            input {
+                padding-left: 20px;
+                border-radius: 4px;
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: $primary;
+                }
+            }
+
+            button {
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+// Newsletter Area Ends Here
 
 // New Course Feature Ends Here

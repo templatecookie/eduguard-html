@@ -12413,10 +12413,10 @@ header .user-image {
   display: inline-block;
   padding: 19px 32px;
   background-color: white;
+  color: #202029;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
-  color: #1089FF;
   letter-spacing: 0.04em;
   -webkit-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
@@ -12590,6 +12590,7 @@ header .user-image {
   .chose-course h3, .chose-course .h3 {
     margin-bottom: 50px; }
   .chose-course-item {
+    cursor: pointer;
     padding: 30px 20px;
     background-color: white;
     border-radius: 5px;
@@ -12710,7 +12711,8 @@ header .user-image {
   padding: 200px 0px;
   position: relative; }
   .join-area-image img {
-    position: absolute; }
+    position: absolute;
+    z-index: 1; }
   .join-area-image .img-01 {
     top: 100px;
     left: 130px; }
@@ -12753,12 +12755,52 @@ header .user-image {
   .join-area-image .img-14 {
     bottom: 60px;
     right: 140px; }
+  .join-area-shape img {
+    position: absolute;
+    z-index: -1; }
+  .join-area-shape .shape-02 {
+    top: 78px;
+    left: 700px; }
+  .join-area-shape .shape-03 {
+    bottom: 88px;
+    right: 510px; }
+  .join-area-shape .shape-04 {
+    left: 214px;
+    top: 238px; }
+  .join-area-shape .shape-05 {
+    bottom: 88px;
+    left: 283px; }
+  .join-area-shape .shape-06 {
+    top: 247px;
+    right: 111px; }
+  .join-area-shape .shape-07 {
+    top: 67px;
+    right: 243px; }
   .join-area-text h3, .join-area-text .h3 {
     color: #202029 !important; }
   .join-area-text p {
     font-size: 18px !important;
     margin-top: 15px;
     margin-bottom: 30px; }
+
+.newsletterarea-norlam {
+  padding: 100px 0px;
+  background-color: white; }
+  .newsletterarea-norlam-start h4, .newsletterarea-norlam-start .h4 {
+    color: #202029 !important;
+    margin-bottom: 10px;
+    font-weight: 600 !important; }
+  .newsletterarea-norlam-end {
+    padding-left: 25px; }
+    .newsletterarea-norlam-end form input {
+      padding-left: 20px;
+      border-radius: 4px; }
+      .newsletterarea-norlam-end form input:focus {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border-color: #1089FF; }
+    .newsletterarea-norlam-end form button {
+      border-radius: 4px; }
 
 .students-info {
   padding-bottom: 70px; }
