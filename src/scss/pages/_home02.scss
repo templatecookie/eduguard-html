@@ -1,6 +1,111 @@
+// Banner Starts Here
+.banner-two{
+    padding-top: 150px;
+    padding-bottom: 350px;
+    background-color: rgba($color: #EBEBF2, $alpha: 0.55);
+    clip-path: ellipse(100% 100% at 50% 0%);
+    &-start{
+        h1{
+            color: #202029 !important;
+            margin-bottom: 20px;
+        }
+        p{
+            max-width: 525px;
+            color: #666575;
+            font-size: 20px !important;
+            line-height: 28px !important;
+            margin-bottom: 30px;
+        }
+        
+    }
+    &-end{
+        position: relative;
+        .image{
+            img{
+                border: 5px solid #FFFFFF;
+                filter: drop-shadow(0px 36px 70px rgba(10, 9, 86, 0.14));
+                border-radius: 10px;
+                position: relative;
+                z-index: 5;
+            }
+        }
+        .image-shapes{
+            img{
+                position: absolute;
+                z-index: 1;
+            }
+            .shape01{
+                top: -110px;
+                left: -65px;
+            }
+            .shape02{
+                top: -60px;
+                right: -60px;
+            }
+            .shape03{
+                bottom: -60px;
+                right: -40px;
+            }
+        }
+    }
+}
+.banner-input{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    width: 745px;
+    height: 65px;
+    position: relative;
+    z-index: 555;
+    background: #FFFFFF;
+    box-shadow: 0px 32px 60px rgba(2, 100, 237, 0.08);
+    border-radius: 9px;
+    .main-input{
+        svg{
+            color: #42414B;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        input{
+            padding-left: 5px;
+            width: 400px;
+            border: none;
+            color: #8F8FA3;
+            border-right: 1px solid #DDDDDD;
+        }
+    }
+    .select-button{
+        padding-left: 25px;
+        button{
+            background-color: transparent !important;
+            border: none !important;
+            outline: none !important;
+            color: #666575;
+            svg{
+                color: #202029;
+            }
+        }
+
+    }
+    .search-button{
+        padding-left: 30px;
+        .btn-primary{
+            width: 130px;
+        }
+    }
+}
+// Banner Ends Here
+
 // Intro Featured Starts Here
 .intro-featured {
+    padding-bottom: 100px; 
+    margin-top: -150px;
+    z-index: 999;
+    position: relative;
     .successful-instructor-feature {
+        cursor: pointer;
         &:hover {
             .successful-instructor-feature-image {
                 &.first-bg {
@@ -37,35 +142,32 @@
     }
 
 }
-
 // Intro Featured Ends Here 
 
-// Banner Starts Here
-.banner-two{
-    background-color: rgba($color: #EBEBF2, $alpha: 0.6);
-    padding: 200px 0px;
-    &-end{
-        position: relative;
-        &-image{
-             z-index: 1;
-            border: 5px solid #FFFFFF;
-            border-radius: 10px;
-            filter: drop-shadow(0px 36px 70px rgba(10, 9, 86, 0.1));
+// Featured Categories Starts Here
+.featured-categories{
+    padding-bottom: 100px;
+    h3{
+        color: #202029 !important;
+        margin-bottom: 50px;
+    }
+    .category{
+        transition: 0.3s all linear;
+        &:hover{
+            .category__tittle{
+                a{
+                    color: #0264ED;
+                }
+            }
         }
-        &-shape{
-            img{
-                position: absolute;
-                z-index: -1;
-            }
-            .shape-01{
-                top: -100px;
-                left: -65px;
-            }
-            .shape-02{
-                bottom: -55px;
-                right: -35px;
+        &__img{
+            a{
+                display: block;
             }
         }
     }
+    .btn-primary{
+        margin-top: 50px;
+    }
 }
-// Banner Ends Here
+// Featured Categories Ends Here
