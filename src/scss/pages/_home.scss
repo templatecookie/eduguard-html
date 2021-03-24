@@ -1,0 +1,1272 @@
+// Banner Starts Here
+.main-banner {
+    padding-top: 180px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-end {
+        margin-right: -50px;
+    }
+}
+
+// Banner Ends Here
+
+// Browse Categories Starts Here
+.browse-categories {
+    position: relative;
+    padding: 100px 0px;
+
+    h3 {
+        margin-bottom: 50px;
+        color: #202029 !important;
+    }
+
+    &-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .default-item-one {
+        transition: 0.3s all linear;
+
+        &:hover {
+            border-color: rgba($color: #F15C4C, $alpha: 0.3) !important;
+        }
+    }
+
+    .default-item-two {
+        transition: 0.3s all linear;
+
+        &:hover {
+            border-color: rgba($color: #1089FF, $alpha: 0.3) !important;
+        }
+    }
+
+    .default-item-three {
+        transition: 0.3s all linear;
+
+        &:hover {
+            border-color: rgba($color: #FFC91B, $alpha: 0.3) !important;
+        }
+    }
+
+    .default-item-four {
+        transition: 0.3s all linear;
+
+        &:hover {
+            border-color: rgba($color: #00AF91, $alpha: 0.3) !important;
+        }
+    }
+
+    .default-item-five {
+        transition: 0.3s all linear;
+
+        &:hover {
+            border-color: rgba($color: #FF7A1A, $alpha: 0.3) !important;
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: 20px;
+        width: 218px;
+        height: 205px;
+        border: 1.5px solid #EBEBF2;
+        border-radius: 5px;
+        transition: 0.3s all linear;
+
+        &:hover {
+            .categories-one {
+                color: white;
+                background-color: #F15C4C;
+            }
+
+            .categories-two {
+                color: white;
+                background-color: #1089FF;
+            }
+
+            .categories-three {
+                color: white;
+                background-color: #FFC91B;
+            }
+
+            .categories-four {
+                color: white;
+                background-color: #00AF91;
+            }
+
+            .categories-five {
+                color: white;
+                background-color: #FF7A1A;
+            }
+        }
+
+        &-icon {
+            margin-bottom: 16px;
+
+            .default-categories {
+                height: 78px;
+                width: 78px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1.5px solid transparent;
+                margin: auto;
+            }
+
+            .categories-one {
+                border-color: rgba($color: #F15C4C, $alpha: 0.2);
+                color: #F15C4C;
+                transition: 0.3s all linear;
+            }
+
+            .categories-two {
+                border-color: rgba($color: #1089FF, $alpha: 0.2);
+                color: #1089FF;
+                transition: 0.3s all linear;
+            }
+
+            .categories-three {
+                border-color: rgba($color: #FFC91B, $alpha: 0.2);
+                color: #FFC91B;
+                transition: 0.3s all linear;
+            }
+
+            .categories-four {
+                border-color: rgba($color: #00AF91, $alpha: 0.2);
+                color: #00AF91;
+                transition: 0.3s all linear;
+            }
+
+            .categories-five {
+                border-color: rgba($color: #FF7A1A, $alpha: 0.2);
+                color: #FF7A1A;
+                transition: 0.3s all linear;
+            }
+        }
+
+        &-text {
+            text-align: center;
+
+            h6 {
+                color: #202029 !important;
+                font-size: 20px !important;
+                font-weight: 600 !important;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    .btn-primary {
+        margin-top: 50px;
+    }
+
+    &-shape {
+        img {
+            position: absolute;
+        }
+
+        .shape-01 {
+            top: -50px;
+            left: 0px;
+        }
+
+        .shape-02 {
+            right: 0px;
+            bottom: 100px;
+        }
+    }
+}
+
+// Browse Categories Ends Here
+
+// Popular Courses Starts Here
+.main-popular-course {
+    .course__content {
+        padding-bottom: 0 !important;
+    }
+}
+
+.featured-popular-courses-shape .dot-06 {
+    bottom: 100px;
+    left: 0px;
+    z-index: -1;
+}
+
+// Popular Courses Ends Here
+
+// Learn With Starts Here
+.learn-with {
+    background-color: rgba($color: #EBEBF2, $alpha: 0.7);
+    position: relative;
+
+    &-shape {
+        img {
+            position: absolute;
+        }
+
+        .circle-06 {
+            top: 60px;
+            right: 65px;
+        }
+    }
+}
+
+// Learn With Ends Here
+
+// Learning Rules Starts Here
+.learning-rules {
+    padding: 100px 0px;
+    position: relative;
+
+    &-item {
+        margin-bottom: 8px;
+        display: flex;
+        flex-basis: 65px;
+        align-items: center;
+
+        .item-number {
+            margin-right: 15px;
+            flex-basis: 100px !important;
+
+            span {
+                font-weight: 700;
+                font-size: 96px;
+                color: rgba($color: #00AF91, $alpha: 0.1);
+            }
+        }
+
+        .item-text {
+            h6 {
+                color: #42414B !important;
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 6px;
+            }
+
+            p {
+                max-width: 376px;
+            }
+        }
+    }
+
+    &-starts {
+        h2 {
+            font-size: 48px !important;
+            color: #202029 !important;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-ends {
+        padding-left: 80px;
+        margin-right: -80px;
+        position: relative;
+        z-index: 2;
+
+        &-circle {
+            img {
+                position: absolute;
+                left: 250px;
+                top: -48px;
+            }
+        }
+
+        .earning-rules-ends-shape {
+            img {
+                position: absolute;
+                z-index: -2;
+            }
+
+            .shape-1 {
+                top: 330px;
+                right: 40%;
+                transform: translateX(-60%);
+            }
+
+            .shape-2 {
+                top: -110px;
+                right: -70px;
+            }
+        }
+    }
+
+    &-shape {
+        img {
+            position: absolute;
+        }
+
+        .shape-01 {
+            top: 200px;
+            left: 185px;
+        }
+
+        .shape-02 {
+            bottom: 55px;
+            left: 40px;
+        }
+    }
+}
+
+// Learning Rules Ends Here
+
+//  About Services Starts Here
+.about-services {
+    padding: 100px 0px;
+    background: rgba($color: #EBEBF2, $alpha: 0.6);
+    position: relative;
+
+    &-shape {
+        img {
+            position: absolute;
+        }
+
+        .img-shape-01 {
+            top: 415px;
+            left: -20px;
+        }
+
+        .img-shape-02 {
+            top: 110px;
+            right: 0px;
+        }
+
+        .img-shape-03 {
+            right: 65px;
+            bottom: 36px;
+        }
+    }
+
+    &-area {
+        margin-bottom: 70px;
+    }
+
+    h3 {
+        margin-bottom: 50px;
+    }
+
+    .testimonial__wrapper_item {
+        p {
+            font-style: normal !important;
+            color: #666575 !important;
+        }
+
+        max-width: 570px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding: 24px;
+
+        &-author {
+            margin-bottom: 0 !important;
+        }
+
+        .author__img {
+            width: 64px;
+            height: 64px;
+
+            img {
+                max-width: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+//  About Services Ends Here
+
+//  Best Instructors Starts Here
+.main-instructor-featured {
+    background-color: white !important;
+    position: relative;
+
+    .instructor-overlay {
+        bottom: 90px;
+    }
+
+    &-shape {
+        img {
+            position: absolute;
+        }
+
+        .shape01 {
+            top: 0;
+            left: 80px;
+        }
+
+        .shape02 {
+            top: 157px;
+            right: 67px;
+        }
+    }
+}
+
+//  Best Instructors Ends Here
+
+// Latest Events Featured Starts Here
+.main-events-featured {
+    background-color: rgba($color: #EBEBF2, $alpha: 0.55);
+    position: relative;
+    z-index: 88;
+
+    .event__img {
+        margin-bottom: 0 !important;
+
+        img {
+            border-radius: 5px 5px 0px 0px !important;
+        }
+    }
+
+    .event__content {
+        padding-top: 12px;
+        background-color: white;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 5px;
+    }
+
+    .btn-primary {
+        margin-top: 50px;
+    }
+
+    &-shape {
+        img {
+            position: absolute;
+        }
+
+        .shape01 {
+            bottom: -66px;
+            left: 18px;
+        }
+    }
+}
+
+// Latest Events Featured Ends Here
+
+// Main Become Instructor Starts Here
+.ms-12 {
+    margin-left: 12px;
+}
+
+.me-12 {
+    margin-right: 12px;
+}
+
+.main-become-instructor {
+    padding: 100px 0px;
+    padding-top: 200px;
+    background-color: #EBEBF2;
+    position: relative;
+
+    &-item {
+        background: rgba($color: #FFFFFF, $alpha: 0.6);
+        border: 1px solid rgba($color: #EBEBF2, $alpha: 0.6);
+        border-radius: 12px;
+        padding: 30px;
+        padding-top: 0;
+
+        .main-image {
+            margin-top: -100px;
+            text-align: center;
+
+            img {
+                border-radius: 8px;
+            }
+        }
+
+        .main-text {
+            text-align: center;
+            margin-top: 30px;
+
+            h6 {
+                color: #42414B !important;
+                font-size: 32px !important;
+                font-weight: 600 !important;
+                margin-bottom: 10px !important;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            .green-btn {
+                display: inline-block;
+            }
+        }
+    }
+
+    &-shape {
+        img {
+            position: absolute;
+            top: 310px;
+            right: 0px;
+        }
+    }
+}
+
+// Main Become Instructor Ends Here
+
+
+// Responsive
+// extra Small devices 420px
+@media (max-width: 420px) {
+    .best-instructor-featured .mentor__img img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .main-banner {
+        padding: 30px 0px;
+
+        &-end {
+            margin-right: 0;
+        }
+    }
+
+    .browse-categories {
+        padding: 30px 0px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        &-item {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        &-area {
+            flex-direction: column;
+
+        }
+    }
+
+    .learn-with {
+        &-shape {
+            display: none;
+        }
+    }
+
+    .learning-rules {
+        padding: 30px 0px;
+
+        &-item {
+            flex-direction: column;
+
+            .item-number {
+                margin-right: 0;
+            }
+
+            .item-text {
+                text-align: center;
+
+                h6 {
+                    font-size: 20px !important;
+                }
+            }
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        &-starts {
+            text-align: center;
+
+            h2 {
+                font-size: 26px !important;
+            }
+
+            .btn-primary {
+                margin-top: 20px;
+            }
+        }
+
+        &-ends {
+            margin-right: 0;
+            padding-left: 0;
+            margin-top: 30px;
+
+            .learning-rules-ends-circle,
+            .earning-rules-ends-shape {
+                display: none;
+            }
+        }
+    }
+
+    .about-services {
+        padding: 30px 0px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        &-area {
+            margin-bottom: 30px;
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        .testimonial__wrapper_item-author,
+        .author {
+            flex-direction: column;
+            text-align: center;
+
+            .author__img {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .main-instructor-featured {
+        &-shape {
+            display: none;
+        }
+
+        .instructor-overlay ul {
+            justify-content: space-around !important;
+
+            li {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .main-become-instructor-shape img,
+    .main-events-featured-shape .shape01 {
+        display: none;
+    }
+
+    .main-events-featured .btn-primary {
+        margin-top: 20px;
+    }
+
+    .main-become-instructor {
+        padding: 30px 0px !important;
+        padding-top: 150px !important;
+
+        &-item {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 135px;
+
+            .main-text {
+                h6 {
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 14px !important;
+                }
+
+                .green-btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .best-instructor-featured .mentor__img img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .main-banner {
+        padding: 30px 0px;
+
+        &-end {
+            margin-right: 0;
+        }
+    }
+
+    .browse-categories {
+        padding: 30px 0px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        &-item {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        &-area {
+            flex-direction: column;
+
+        }
+    }
+
+    .learn-with {
+        &-shape {
+            display: none;
+        }
+    }
+
+    .learning-rules {
+        padding: 30px 0px;
+
+        &-item {
+            flex-direction: column;
+
+            .item-number {
+                margin-right: 0;
+            }
+
+            .item-text {
+                text-align: center;
+
+                h6 {
+                    font-size: 20px !important;
+                }
+            }
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        &-starts {
+            text-align: center;
+
+            h2 {
+                font-size: 26px !important;
+            }
+
+            .btn-primary {
+                margin-top: 20px;
+            }
+        }
+
+        &-ends {
+            margin-right: 0;
+            padding-left: 0;
+            margin-top: 30px;
+
+            .learning-rules-ends-circle,
+            .earning-rules-ends-shape {
+                display: none;
+            }
+        }
+    }
+
+    .about-services {
+        padding: 30px 0px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        &-area {
+            margin-bottom: 30px;
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        .testimonial__wrapper_item-author,
+        .author {
+            flex-direction: column;
+            text-align: center;
+
+            .author__img {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .main-instructor-featured {
+        &-shape {
+            display: none;
+        }
+
+        .instructor-overlay ul {
+            justify-content: space-around !important;
+
+            li {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .main-become-instructor-shape img,
+    .main-events-featured-shape .shape01 {
+        display: none;
+    }
+
+    .main-events-featured .btn-primary {
+        margin-top: 20px;
+    }
+
+    .main-become-instructor {
+        padding: 30px 0px !important;
+        padding-top: 150px !important;
+
+        &-item {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 135px;
+
+            .main-text {
+                h6 {
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 14px !important;
+                }
+
+                .green-btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .best-instructor-featured .mentor__img img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .main-banner {
+        padding: 30px 0px;
+
+        &-end {
+            margin-right: 0;
+        }
+    }
+
+    .browse-categories {
+        padding: 30px 0px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        &-item {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        &-area {
+            flex-wrap: wrap;
+
+        }
+    }
+
+    .learn-with {
+        &-shape {
+            display: none;
+        }
+    }
+
+    .learning-rules {
+        padding: 30px 0px;
+
+        &-item {
+            flex-direction: column;
+
+            .item-number {
+                margin-right: 0;
+            }
+
+            .item-text {
+                text-align: center;
+
+                h6 {
+                    font-size: 20px !important;
+                }
+            }
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        &-starts {
+            text-align: center;
+
+            h2 {
+                font-size: 26px !important;
+            }
+
+            .btn-primary {
+                margin-top: 20px;
+            }
+        }
+
+        &-ends {
+            margin-right: 0;
+            padding-left: 0;
+            margin-top: 30px;
+
+            .learning-rules-ends-circle,
+            .earning-rules-ends-shape {
+                display: none;
+            }
+        }
+    }
+
+    .about-services {
+        padding: 30px 0px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        &-area {
+            margin-bottom: 30px;
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        .testimonial__wrapper_item-author,
+        .author {
+            flex-direction: column;
+            text-align: center;
+
+            .author__img {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .main-instructor-featured {
+        &-shape {
+            display: none;
+        }
+
+        .instructor-overlay ul {
+            justify-content: space-around !important;
+
+            li {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .main-become-instructor-shape img,
+    .main-events-featured-shape .shape01 {
+        display: none;
+    }
+
+    .main-events-featured .btn-primary {
+        margin-top: 20px;
+    }
+
+    .main-become-instructor {
+        padding: 30px 0px !important;
+        padding-top: 150px !important;
+
+        &-item {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 135px;
+
+            .main-text {
+                h6 {
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 14px !important;
+                }
+
+                .green-btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .best-instructor-featured .mentor__img img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .main-banner {
+        padding: 30px 0px;
+
+        &-end {
+            margin-right: 0;
+        }
+    }
+
+    .browse-categories {
+        padding: 30px 0px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        &-item {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        &-area {
+            flex-wrap: wrap;
+
+        }
+    }
+
+    .learn-with {
+        &-shape {
+            display: none;
+        }
+    }
+
+    .learning-rules {
+        padding: 30px 0px;
+
+        &-item {
+            flex-direction: column;
+
+            .item-number {
+                margin-right: 0;
+            }
+
+            .item-text {
+                text-align: center;
+
+                h6 {
+                    font-size: 20px !important;
+                }
+            }
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        &-starts {
+            text-align: center;
+
+            h2 {
+                font-size: 26px !important;
+            }
+
+            .btn-primary {
+                margin-top: 20px;
+            }
+        }
+
+        &-ends {
+            margin-right: 0;
+            padding-left: 0;
+            margin-top: 30px;
+
+            .learning-rules-ends-circle,
+            .earning-rules-ends-shape {
+                display: none;
+            }
+        }
+    }
+
+    .about-services {
+        padding: 30px 0px;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        &-area {
+            margin-bottom: 30px;
+        }
+
+        &-shape {
+            display: none;
+        }
+
+        .testimonial__wrapper_item-author,
+        .author {
+            flex-direction: column;
+            text-align: center;
+
+            .author__img {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .main-instructor-featured {
+        &-shape {
+            display: none;
+        }
+
+        .instructor-overlay ul {
+            justify-content: space-around !important;
+
+            li {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .main-become-instructor-shape img,
+    .main-events-featured-shape .shape01 {
+        display: none;
+    }
+
+    .main-events-featured .btn-primary {
+        margin-top: 20px;
+    }
+
+    .main-become-instructor {
+        padding: 30px 0px !important;
+        padding-top: 150px !important;
+
+        &-item {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 135px;
+
+            .main-text {
+                h6 {
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 14px !important;
+                }
+
+                .green-btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .about-services .testimonial__wrapper_item {
+        max-width: 100%;
+    }
+}
+
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .learning-rules-ends,
+    .main-banner-end {
+        margin-right: 0;
+    }
+
+    .main-become-instructor-shape,
+    .main-events-featured-shape,
+    .main-instructor-featured-shape,
+    .about-services-shape,
+    .learning-rules-shape,
+    .featured-popular-courses-shape,
+    .learning-rules-ends-circle,
+    .earning-rules-ends-shape,
+    .browse-categories-shape {
+        display: none;
+    }
+
+    .learning-rules-starts {
+        text-align: center;
+
+        h2 {
+            font-size: 30px !important;
+        }
+
+    }
+
+    .learning-rules-item {
+        display: block !important;
+    }
+
+    .learning-rules-starts {
+        .btn-primary {
+            margin-top: 35px;
+        }
+    }
+
+    .about-services {
+        h3 {
+            font-size: 36px !important;
+        }
+    }
+
+    .main-become-instructor-item .main-text h6 {
+        font-size: 28px !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1499px) {
+
+    .main-become-instructor-shape,
+    .main-events-featured-shape,
+    .main-instructor-featured-shape,
+    .about-services-shape,
+    .learning-rules-shape,
+    .featured-popular-courses-shape,
+    .learning-rules-ends-circle,
+    .earning-rules-ends-shape,
+    .browse-categories-shape {
+        display: none;
+    }
+
+    .main-banner,
+    .learning-rules {
+        overflow: hidden !important;
+    }
+}
