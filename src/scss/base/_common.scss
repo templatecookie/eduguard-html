@@ -1,0 +1,20 @@
+// Responsive
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  %space {
+    padding: 60px 0px;
+  }
+  .browse-categories,
+  .featured-popular-courses,
+  .chose-course,
+  .get-started,
+  .latest-events-featured,
+  .best-instructor-featured,
+  .main-become-instructor {
+    @extend %space;
+  }
+}

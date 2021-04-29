@@ -19556,3 +19556,13 @@ header {
 .text-button a {
   margin-bottom: 30px; }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .browse-categories,
+  .featured-popular-courses,
+  .chose-course,
+  .get-started,
+  .latest-events-featured,
+  .best-instructor-featured,
+  .main-become-instructor {
+    padding: 60px 0px; } }
+
