@@ -11553,13 +11553,13 @@ header .user-image {
   margin-top: -130px; }
 
 .features {
-  background: #FFFFFF;
-  border: 1px solid #EBEBF2;
+  background: #ffffff;
+  border: 1px solid #ebebf2;
   border-radius: 5px;
   text-align: center;
   padding: 30px 20px;
-  -webkit-transition: .3s;
-  transition: .3s; }
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .features__icon {
     width: 72px;
     height: 72px;
@@ -11643,6 +11643,15 @@ header .user-image {
         margin-bottom: 10px; }
       .featuresitem .features__title p {
         font-size: 14px; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .featured-popular-courses-heading .nav-button .nav-link {
+    margin-right: 15px !important; }
+  .featured-popular-courses-tabs {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 .search {
   width: 100%;
@@ -19555,6 +19564,16 @@ header {
 .transparent-button a,
 .text-button a {
   margin-bottom: 30px; }
+
+@media (max-width: 991px) {
+  .browse-categories,
+  .featured-popular-courses,
+  .chose-course,
+  .get-started,
+  .latest-events-featured,
+  .best-instructor-featured,
+  .main-become-instructor {
+    padding: 90px 0px; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .browse-categories,
