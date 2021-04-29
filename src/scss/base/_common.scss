@@ -3,6 +3,16 @@
   %space-1 {
     padding: 90px 0px;
   }
+
+  %fonts-md {
+    font-size: 38px;
+    line-height: 52px;
+  }
+  .error-area-start h3,
+  .error-area-start .h3 {
+    @extend %fonts-md;
+  }
+  // Section spacing
   .browse-categories,
   .featured-popular-courses,
   .chose-course,
@@ -15,6 +25,7 @@
     @extend %space-1;
   }
 }
+
 @media (max-width: 767px) {
 }
 
@@ -22,6 +33,11 @@
   %space {
     padding: 60px 0px;
   }
+  %fonts-sm {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
   .browse-categories,
   .featured-popular-courses,
   .chose-course,
@@ -31,11 +47,17 @@
   .main-become-instructor,
   .featured-popular-courses,
   .learning-rules,
-  .about-services {
+  .about-services,
+  .error-area {
     @extend %space;
   }
   // img height auto
   .learning-rules-ends img {
     height: auto;
+  }
+  // Fonts size title
+  .error-area-start h3,
+  .error-area-start .h3 {
+    @extend %fonts-sm;
   }
 }

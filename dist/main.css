@@ -17299,7 +17299,7 @@ body {
     fill: #FF7A1A; }
 
 .error-area {
-  height: 100vh;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17308,8 +17308,15 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  padding-top: 195px;
+  padding-bottom: 232px; }
+  .error-area-start h3, .error-area-start .h3 {
+    font-size: 48px;
+    line-height: 60px;
+    color: #202029; }
   .error-area-start p {
+    font-size: 16px;
+    line-height: 24px;
     color: #666575 !important;
     margin-top: 15px;
     margin-bottom: 30px; }
@@ -17324,32 +17331,49 @@ body {
     bottom: 0;
     right: 50px; }
 
+@media (max-width: 1200px) {
+  .error-area {
+    margin: 0px;
+    padding: 90px 0px; } }
+
 @media (max-width: 991px) {
   .error-area {
     height: auto; }
     .error-area-shape {
       display: none; }
     .error-area .image {
-      margin-right: 0;
-      margin-bottom: 30px;
-      margin-top: 30px; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-right: 0px; }
+      .error-area .image img {
+        height: 350px; }
     .error-area-start {
-      margin-top: 30px; } }
+      margin-top: 15px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .error-area {
-    height: auto;
-    margin-bottom: 50px;
-    margin-top: 50px; }
-    .error-area-shape {
-      display: none; }
-    .error-area .image {
-      margin-right: 0; }
-    .error-area-start h3, .error-area-start .h3 {
-      font-size: 36px; }
-    .error-area-start p {
-      font-size: 14px;
-      margin-bottom: 20px; } }
+  .error-area-shape {
+    display: none; }
+  .error-area .image {
+    margin-right: 0; }
+  .error-area-start h3, .error-area-start .h3 {
+    font-size: 36px; }
+  .error-area-start p {
+    font-size: 14px;
+    margin-bottom: 20px; } }
+
+@media (max-width: 767px) {
+  .error-area .image {
+    margin-right: 0px; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .error-area .image img {
+    height: auto; } }
 
 .course-instructor {
   padding: 24px;
@@ -19595,7 +19619,10 @@ header {
   .best-instructor-featured,
   .main-become-instructor,
   .learning-rules {
-    padding: 90px 0px; } }
+    padding: 90px 0px; }
+  .error-area-start h3, .error-area-start .h3 {
+    font-size: 38px;
+    line-height: 52px; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .browse-categories,
@@ -19606,8 +19633,12 @@ header {
   .best-instructor-featured,
   .main-become-instructor,
   .learning-rules,
-  .about-services {
+  .about-services,
+  .error-area {
     padding: 60px 0px; }
+  .error-area-start h3, .error-area-start .h3 {
+    font-size: 24px;
+    line-height: 36px; }
   .learning-rules-ends img {
     height: auto; } }
 
