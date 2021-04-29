@@ -10,7 +10,8 @@
   .latest-events-featured,
   .best-instructor-featured,
   .main-become-instructor,
-  .featured-popular-courses {
+  .featured-popular-courses,
+  .learning-rules {
     @extend %space-1;
   }
 }
@@ -28,7 +29,13 @@
   .latest-events-featured,
   .best-instructor-featured,
   .main-become-instructor,
-  .featured-popular-courses {
+  .featured-popular-courses,
+  .learning-rules,
+  .about-services {
     @extend %space;
+  }
+  // img height auto
+  .learning-rules-ends img {
+    height: auto;
   }
 }

@@ -1,13 +1,5 @@
 'use strict';
 
-// UI variables
-const categoryBtn = document.querySelector('#categoryBtn');
-const dropBox = document.querySelector('.categoryDrop');
-categoryBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  dropBox.classList.toggle('appear');
-});
-
 (function ($) {
   $('.hamburger-menu a').on('click', function () {
     $('#mySidenav').css('left', '0');
@@ -30,6 +22,72 @@ categoryBtn.addEventListener('click', (e) => {
   function toggleOverlay() {
     $('#overlayy').toggleClass('active');
   }
+
+  //Events Slider
+  $('.eventsSlider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    dots: false,
+    autoplaySpeed: 2000,
+    prevArrow: '.event__wrap .prev-arrow',
+    nextArrow: '.event__wrap .next-arrow',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          autoplay: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
+  $('.about__slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    dots: true,
+    autoplaySpeed: 2000,
+    prevArrow: '.about__slider-wrap .prev-arrow',
+    nextArrow: '.about__slider-wrap .next-arrow',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          autoplay: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
   //testimonial_slider
   $('.testimonial__active').slick({
@@ -89,6 +147,7 @@ categoryBtn.addEventListener('click', (e) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          dots: true,
         },
       },
       {
@@ -96,13 +155,15 @@ categoryBtn.addEventListener('click', (e) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          dots: true,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],

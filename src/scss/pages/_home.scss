@@ -1,3 +1,33 @@
+// common
+%slickdots {
+  position: relative;
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    li {
+      button {
+        background-color: transparent;
+        border: 0px;
+        font-size: 0px;
+        width: 8px;
+        height: 8px;
+        background-color: #8f8fa3;
+        margin: 0px 8px;
+        border-radius: 50%;
+        transition: all 0.2s linear;
+      }
+      &.slick-active {
+        button {
+          width: 24px;
+          border-radius: 50px;
+          background-color: #202029;
+        }
+      }
+    }
+  }
+}
 // Banner Starts Here
 .main-banner {
   padding-top: 180px;
@@ -383,6 +413,11 @@
       }
     }
   }
+
+  // Slick dots
+  .about__slider {
+    @extend %slickdots;
+  }
 }
 
 //  About Services Ends Here
@@ -411,6 +446,10 @@
       right: 67px;
     }
   }
+  // slick dots
+  .ourinstructor-active {
+    @extend %slickdots;
+  }
 }
 
 //  Best Instructors Ends Here
@@ -420,7 +459,9 @@
   background-color: rgba($color: #ebebf2, $alpha: 0.55);
   position: relative;
   z-index: 88;
-
+  .event {
+    margin: 0px 15px;
+  }
   .event__img {
     margin-bottom: 0 !important;
 
@@ -450,6 +491,11 @@
       bottom: -66px;
       left: 18px;
     }
+  }
+
+  // Slick dots
+  .eventsSlider {
+    @extend %slickdots;
   }
 }
 
@@ -539,6 +585,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  // .event {
+  //   margin: 0px 15px;
+  // }
+}
+
 // large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .learning-rules-ends,
@@ -591,6 +643,23 @@
   .main-banner {
     padding-top: 90px;
   }
+
+  // learning section
+  .learning-rules-ends {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    img {
+      height: 450px;
+      object-fit: contain;
+    }
+  }
+
+  .about-services .testimonial__wrapper_item p {
+    text-align: center;
+  }
+
+  // Latest featured
 }
 
 // Medium devices 768px - 991px
@@ -766,6 +835,12 @@
 @media (max-width: 767px) {
   .banner-input .main-input input {
     width: 195px;
+  }
+  // Slick dots
+  .about-services .about__slider .slick-dots,
+  .main-events-featured .eventsSlider .slick-dots,
+  .main-instructor-featured .ourinstructor-active .slick-dots {
+    margin-top: 15px;
   }
 }
 
@@ -1283,8 +1358,5 @@
   }
   .banner-two-start .banner-input {
     padding-left: 20px;
-  }
-  .banner-two-start .banner-input .search-button {
-    // padding-right: 0px !important;
   }
 }
