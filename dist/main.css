@@ -9936,9 +9936,13 @@ button:focus {
             border-radius: 4px;
             -webkit-transition: 0.3s;
             transition: 0.3s;
-            background: rgba(102, 101, 117, 0.2); }
+            border: 1px solid #42414b;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            background-color: transparent; }
             .footer__wrapper_social ul li a:hover {
-              background-color: #1089FF; }
+              background-color: #1089FF;
+              border: 1px solid transparent; }
           .footer__wrapper_social ul li:last-child {
             margin-right: 0; }
   .footer__list {

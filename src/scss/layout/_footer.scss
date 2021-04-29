@@ -27,9 +27,12 @@
             height: 36px;
             border-radius: 4px;
             transition: 0.3s;
-            background: rgba(102, 101, 117, 0.2);
+            border: 1px solid #42414b;
+            box-sizing: border-box;
+            background-color: transparent;
             &:hover {
               background-color: color(primary);
+              border: 1px solid transparent;
             }
           }
           &:last-child {
