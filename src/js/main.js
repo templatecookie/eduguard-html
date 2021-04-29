@@ -1,5 +1,13 @@
 'use strict';
 
+// // UI variables
+// const categoryBtn = document.querySelector('#categoryBtn');
+// const dropBox = document.querySelector('.categoryDrop');
+// categoryBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   dropBox.classList.toggle('appear');
+// });
+
 (function ($) {
   $('.hamburger-menu a').on('click', function () {
     $('#mySidenav').css('left', '0');
