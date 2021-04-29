@@ -76,7 +76,7 @@
     <section class="main-banner" style="background-image:url(dist/images/banner/banner.jpg);">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="col-lg-7 mb-4 mb-lg-0 order-2 order-lg-0">
                     <div class="banner-two-start">
                         <h1>Learn with Expert Anytime Anywhere.</h1>
                         <p>Our mision is to help people to find the best course online and learn with expert anytime,
@@ -93,7 +93,7 @@
                                     </svg>
                                 </div>
                                 <div class="select-button">
-                                    <button type="button">Category
+                                    <button type="button" id="categoryBtn">Category
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
@@ -101,6 +101,11 @@
                                             <polyline points="6 9 12 15 18 9"></polyline>
                                         </svg>
                                     </button>
+                                    <div name="category" class="categoryDrop">
+                                        <div value="0">Physices</div>
+                                        <div value="1">Math</div>
+                                        <div value="2">chemistry</div>
+                                    </div>
                                 </div>
                                 <div class="search-button">
                                     <button class="btn btn-primary regular-fill-btn text-uppercase"
@@ -110,7 +115,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 order-1 order-lg-0">
                     <div class="main-banner-end">
                         <img src="dist/images/banner/heroimage.png" alt="image" class="img-fluid">
                     </div>

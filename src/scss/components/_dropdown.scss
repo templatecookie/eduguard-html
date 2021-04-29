@@ -1,0 +1,33 @@
+.select-button {
+  position: relative;
+}
+
+.categoryDrop {
+  border-top: 2px solid #00af92;
+  border-bottom: 2px solid #00af92;
+  background-color: #fff;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.2s linear;
+  transform: translateY(-15px);
+  pointer-events: none;
+
+  &.appear {
+    // display: block;
+    width: 100%;
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
+  }
+  & > div {
+    padding: 15px 0px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background-color: #f5f4f9;
+    }
+  }
+}

@@ -1,13 +1,21 @@
-(function ($) {
-  "use strict";
+'use strict';
 
+// UI variables
+const categoryBtn = document.querySelector('#categoryBtn');
+const dropBox = document.querySelector('.categoryDrop');
+categoryBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  dropBox.classList.toggle('appear');
+});
+
+(function ($) {
   $('.hamburger-menu a').on('click', function () {
-    $("#mySidenav").css('left', '0');
+    $('#mySidenav').css('left', '0');
     toggleOverlay();
   });
 
   function hideNav() {
-    $("#mySidenav").css('left', '-300px');
+    $('#mySidenav').css('left', '-300px');
     toggleOverlay();
   }
 
@@ -20,7 +28,7 @@
   });
 
   function toggleOverlay() {
-    $('#overlayy').toggleClass("active");
+    $('#overlayy').toggleClass('active');
   }
 
   //testimonial_slider
@@ -47,23 +55,23 @@
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   //Mentor _Slider
@@ -81,23 +89,23 @@
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   //Event _Slider
@@ -110,7 +118,8 @@
     autoplaySpeed: 2000,
     prevArrow: '.ourevent__wrapper .prev-arrow',
     nextArrow: '.ourevent__wrapper .next-arrow',
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1199,
         settings: {
           slidesToShow: 3,
@@ -130,7 +139,7 @@
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
-        }
+        },
       },
       {
         breakpoint: 480,
@@ -150,29 +159,25 @@
   $('.populercoures-ist').on('click', 'li', function () {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({
-      filter: filterValue
+      filter: filterValue,
     });
 
     // filter items on button click
     $('.populercoures-ist').on('click', 'li', function () {
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({
-        filter: filterValue
+        filter: filterValue,
       });
     });
   });
 
   /* magnificPopup video view */
   $('.popup-video').magnificPopup({
-    type: 'iframe'
+    type: 'iframe',
   });
-
 
   //nice-select
   $(document).ready(function () {
     $('select').niceSelect();
   });
-
-
-
 })(jQuery);
