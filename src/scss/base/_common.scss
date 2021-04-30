@@ -1,41 +1,105 @@
 // Responsive
 @media (max-width: 991px) {
   %space-1 {
-    padding: 90px 0px;
+    padding: 90px 0px !important;
   }
 
   %fonts-md {
-    font-size: 38px;
-    line-height: 52px;
+    font-size: 38px !important;
+    line-height: 52px !important;
   }
   .error-area-start h3,
   .error-area-start .h3 {
     @extend %fonts-md;
   }
   // Section spacing
-  .browse-categories,
-  .featured-popular-courses,
-  .chose-course,
-  .get-started,
-  .latest-events-featured,
-  .best-instructor-featured,
-  .main-become-instructor,
-  .featured-popular-courses,
-  .learning-rules {
+  section {
     @extend %space-1;
   }
+  // .browse-categories,
+  // .featured-popular-courses,
+  // .chose-course,
+  // .get-started,
+  // .latest-events-featured,
+  // .best-instructor-featured,
+  // .main-become-instructor,
+  // .featured-popular-courses,
+  // .learning-rules,
+  // .about-intro,
+  // .aboutFeature,
+  // .brands,
+  // .bestInstructor,
+  // .becomeInstructor,
+  // .instructor-rules,
+  // .sucessfullInstructor,
+  // .callToAction,
+  // .footer,
+  // .cart-area,
+  // .checkout-area {
+  //   @extend %space-1;
+  // }
+
+  // Fonts Title
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %fonts-md;
+  }
+  // .about-feature h4,
+  // .about-feature .h4,
+  // .bestInstructor__title h3 {
+  //   @extend %fonts-md;
+  // }
 }
 
 @media (max-width: 767px) {
+  %space-2 {
+    padding: 60px 0px !important;
+  }
+  %fonts-sm-1 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  // Section spacing
+  section {
+    @extend %space-2;
+  }
+  // .aboutFeature,
+  // .brands,
+  // .bestInstructor {
+  //   @extend %space-2;
+  // }
+
+  // Fonts Title
+  .about-intro__textContent h3,
+  .about-intro__textContent .h3,
+  .about-feature h4,
+  .about-feature .h4,
+  .bestInstructor__title h3 {
+    @extend %fonts-sm-1;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
   %space {
-    padding: 60px 0px;
+    padding: 30px 0px !important;
   }
-  %fonts-sm {
+  %fonts-sm-2 {
     font-size: 24px;
     line-height: 36px;
+  }
+  %brief {
+    font-size: 14px !important;
+    line-height: 26px !important;
+  }
+
+  // Section spacing
+  section {
+    @extend %space;
   }
 
   .browse-categories,
@@ -48,16 +112,36 @@
   .featured-popular-courses,
   .learning-rules,
   .about-services,
-  .error-area {
+  .error-area,
+  .about-intro,
+  .aboutFeature,
+  .brands,
+  .aboutFeature,
+  .brands,
+  .bestInstructor {
     @extend %space;
   }
   // img height auto
   .learning-rules-ends img {
     height: auto;
   }
-  // Fonts size title
+
+  // Fonts  title
   .error-area-start h3,
-  .error-area-start .h3 {
-    @extend %fonts-sm;
+  .error-area-start .h3,
+  .about-intro__textContent h3,
+  .about-intro__textContent .h3,
+  .about-feature h4,
+  .about-feature .h4,
+  .bestInstructor__title h3 {
+    @extend %fonts-sm-2;
+  }
+
+  // para
+  p,
+  .about-intro__textContent p,
+  .about-feature.dark-feature p,
+  .about-feature p {
+    @extend %brief;
   }
 }
