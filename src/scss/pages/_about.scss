@@ -184,6 +184,7 @@
   // about intro
   .about-intro {
     margin-top: 0px;
+
     &__img-wrapper {
       display: flex;
       justify-content: center;
@@ -204,9 +205,35 @@
   .bestInstructor {
     .ourinstructor-active {
       .slick-dots {
-        bottom: 20px;
+        bottom: 45px;
       }
     }
+  }
+
+  // section padding
+  .aboutFeature {
+    padding: 30px 0px !important;
+  }
+
+  // mentor section
+  .mentor {
+    &__title {
+      h6 {
+        font-size: 24px !important;
+        line-height: 36px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-intro {
+    padding-top: 0px !important;
+    padding-bottom: 30px !important;
+  }
+  // best instructor
+  .bestInstructor {
+    padding-top: 30px !important;
   }
 }
 
@@ -225,7 +252,7 @@
 
   // Best instructor
   .bestInstructor .ourinstructor-active .slick-dots {
-    bottom: 50px;
+    bottom: 25px;
   }
 
   // brands section
@@ -281,9 +308,9 @@
   .intro-shape {
     display: none;
   }
-  p.fs-5 {
-    font-size: 16px !important;
-  }
+  // p. {
+  //   font-size: 16px !important;
+  // }
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0;
@@ -322,9 +349,9 @@
   .intro-shape {
     display: none;
   }
-  p.fs-5 {
-    font-size: 16px !important;
-  }
+  // p. {
+  //   font-size: 16px !important;
+  // }
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0;
@@ -341,9 +368,6 @@
   .slider-arrows {
     display: none !important;
   }
-  //   .slick-dots {
-  //     display: none !important;
-  //   }
   .newsletter__wrapper {
     padding: 20px 10px;
     p {
@@ -366,9 +390,9 @@
   .intro-shape {
     display: none;
   }
-  p.fs-5 {
-    font-size: 16px !important;
-  }
+  // p. {
+  //   font-size: 16px !important;
+  // }
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0;
