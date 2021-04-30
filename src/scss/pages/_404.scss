@@ -52,8 +52,12 @@
 
 // extra Small devices 991px
 @media (max-width: 991px) {
+  .newsletter {
+    padding-top: 0px !important;
+  }
   .error-area {
     height: auto;
+    padding: 30px !important;
 
     &-shape {
       display: none;

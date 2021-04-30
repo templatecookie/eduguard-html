@@ -1,15 +1,15 @@
-.breadcrumb{
-    padding-top: 24px;
-    padding-bottom: 72px;
-    background-color: rgba(255, 255, 255, 0.4);
-    &__item{
-        display: flex;
-        align-items: center;
-        a,
-        span{ 
-            font-size: 14px;
-            line-height: 1.5;
-            color: #666575;
-        }
+.breadcrumb {
+  padding-top: 20px;
+  padding-bottom: 72px;
+  background-color: rgba(255, 255, 255, 0.4);
+  &__item {
+    display: flex;
+    align-items: center;
+    a,
+    span {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #666575;
     }
+  }
 }

@@ -1,16 +1,16 @@
-.newsletter-area{
-    padding: 40px 50px;
-    background: #FFFFFF;
-    border: 2px solid #EBEBF2;
-    border-radius: 10px;
-    margin-bottom: -125px;
-    form{
-        input{
-            &:focus{
-                box-shadow: none;
-            }
-        }
+.newsletter-area {
+  padding: 40px 50px;
+  background: #ffffff;
+  border: 2px solid #ebebf2;
+  border-radius: 10px;
+  margin-bottom: -125px;
+  form {
+    input {
+      &:focus {
+        box-shadow: none;
+      }
     }
+  }
 }
 
 /*------------------------*/
@@ -19,49 +19,55 @@
 
 // large devices 992px - 1169px
 @media (min-width: 992px) and (max-width: 1199px) {
-    .newsletter-area{
-        padding: 30px;
-    }
+  .newsletter-area {
+    padding: 30px;
+  }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-    .newsletter-area{
-        padding: 30px;
-    }
+  .newsletter-area {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .newsletter-area {
+    margin-bottom: -215px;
+  }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-    .newsletter-area{
-        padding: 30px;
-    }
+  .newsletter-area {
+    padding: 30px;
+  }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-    .newsletter-area{
-        padding: 20px;
-    }
+  .newsletter-area {
+    padding: 20px;
+  }
 }
 
 // extra Small devices 420px
 @media (max-width: 420px) {
-    .newsletter-area{
-        padding: 20px;
-        form{
-            .input-group{
-                flex-direction: column;
-                input{
-                    width: 100%;
-                    margin-bottom: 10px;
-                    border-radius: 5px !important;
-                    height: 45px;
-                }
-                button{
-                    border-radius: 5px !important;
-                }
-            }
+  .newsletter-area {
+    padding: 20px;
+    form {
+      .input-group {
+        flex-direction: column;
+        input {
+          width: 100%;
+          margin-bottom: 10px;
+          border-radius: 5px !important;
+          height: 45px;
         }
+        button {
+          border-radius: 5px !important;
+        }
+      }
     }
+  }
 }

@@ -1,6 +1,38 @@
+// common
+%slickdots {
+  position: relative;
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    li {
+      button {
+        background-color: transparent;
+        border: 0px;
+        font-size: 0px;
+        width: 8px;
+        height: 8px;
+        background-color: #8f8fa3;
+        margin: 0px 8px;
+        border-radius: 50%;
+        transition: all 0.2s linear;
+      }
+      &.slick-active {
+        button {
+          width: 24px;
+          border-radius: 50px;
+          background-color: #202029;
+        }
+      }
+    }
+  }
+}
+
 .about-intro {
   padding-bottom: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 45px;
+  margin-top: 65px;
 }
 .intro-image {
   z-index: 1;
@@ -20,11 +52,11 @@
     z-index: -1;
   }
   .shape-01 {
-    top: -30px;
+    top: -75px;
     left: 5px;
   }
   .shape-02 {
-    bottom: -85px;
+    bottom: -20px;
     right: 30px;
   }
 }
@@ -35,10 +67,18 @@
   &.dark-feature {
     border: 2px solid #25252e;
     background-color: #25252e;
+    h3 {
+      color: #202029 !important;
+    }
+    p {
+      color: #8f8fa3 !important;
+    }
   }
   h4 {
     margin-bottom: 15px;
-    color: #25252e;
+  }
+  p {
+    color: #666575;
   }
 }
 .mentor {
@@ -47,6 +87,11 @@
     .instructor-overlay {
       opacity: 1;
       visibility: visible;
+    }
+    h6 {
+      a {
+        color: #0264ed;
+      }
     }
   }
   &__img {
@@ -99,7 +144,99 @@
   }
 }
 
+// Best Instructor Section
+.bestInstructor {
+  .ourinstructor-active {
+    @extend %slickdots;
+  }
+}
+
 // Responsive
+
+@media (max-width: 1200px) {
+  // Best instructor section
+  .section-pb-sm {
+    padding-bottom: 90px !important;
+  }
+  .bestInstructor {
+    .ourinstructor-active {
+      .slick-dots {
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .bestInstructor {
+    .ourinstructor-active {
+      .slick-dots {
+        bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  // about intro
+  .about-intro {
+    margin-top: 0px;
+    &__img-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      img {
+        height: 290px;
+      }
+    }
+    &__textContent {
+      h3 {
+        font-size: 38px;
+        line-height: 52px;
+      }
+    }
+  }
+
+  // best instructor section
+  .bestInstructor {
+    .ourinstructor-active {
+      .slick-dots {
+        bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  // about intro section
+  .about-intro {
+    margin-top: 0px;
+    padding-top: 0px !important;
+    &__img-wrapper {
+      margin-bottom: 15px;
+      img {
+        height: auto;
+      }
+    }
+  }
+
+  // Best instructor
+  .bestInstructor .ourinstructor-active .slick-dots {
+    bottom: 50px;
+  }
+
+  // brands section
+  .brands {
+    background-color: #ebebf2 !important;
+    .py-80 {
+      padding: 0px !important;
+    }
+  }
+}
+
 // extra Small devices 420px
 @media (max-width: 420px) {
   .breadcrumb {
@@ -107,9 +244,6 @@
   }
   .intro-shape {
     display: none;
-  }
-  p.fs-5 {
-    font-size: 16px !important;
   }
   .about-intro {
     padding-bottom: 30px;
@@ -127,9 +261,7 @@
   .slider-arrows {
     display: none !important;
   }
-  // .slick-dots{
-  //     display: none !important;
-  // }
+
   .newsletter__wrapper {
     padding: 20px 10px;
     p {
@@ -168,9 +300,6 @@
   .slider-arrows {
     display: none !important;
   }
-  //   .slick-dots {
-  //     display: none !important;
-  //   }
   .newsletter__wrapper {
     padding: 20px 10px;
     p {
@@ -256,9 +385,6 @@
   .slider-arrows {
     display: none !important;
   }
-  //   .slick-dots {
-  //     display: none !important;
-  //   }
   .newsletter__wrapper {
     padding: 20px 10px;
     p {
@@ -286,9 +412,6 @@
   }
   .slick-slide img {
     margin: auto;
-  }
-  .about-intro {
-    margin-bottom: 0;
   }
   .instructor-overlay {
     bottom: 40%;
