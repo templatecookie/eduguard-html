@@ -1,4 +1,41 @@
+// slic-dots
+%slickdots {
+  position: relative;
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    li {
+      button {
+        background-color: transparent;
+        border: 0px;
+        font-size: 0px;
+        width: 8px;
+        height: 8px;
+        background-color: #8f8fa3;
+        margin: 0px 8px;
+        border-radius: 50%;
+        transition: all 0.2s linear;
+      }
+      &.slick-active {
+        button {
+          width: 24px;
+          border-radius: 50px;
+          background-color: #202029;
+        }
+      }
+    }
+  }
+}
+.ourevent-active {
+  @extend %slickdots;
+}
+.slick-slide img {
+  width: 100%;
+}
 // Responsive
+
 @media (max-width: 991px) {
   %space-1 {
     padding: 90px 0px !important;
@@ -47,6 +84,18 @@
   .cart-area .cart-wizard-area .text .h6 {
     font-size: 24px !important;
     line-height: 36px !important;
+  }
+
+  // Testimonial  slider
+  .course__content_title h6,
+  .course__content_title .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+  .ourevent-active {
+    .slick-dots {
+      margin-top: 0px;
+    }
   }
 }
 
