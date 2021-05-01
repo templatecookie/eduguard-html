@@ -31,13 +31,6 @@
     $('#overlayy').toggleClass('active');
   }
 
-  $('#countdown').syotimer({
-    year: 2021,
-    month: 5,
-    day: 15,
-    hour: 20,
-    minute: 30,
-  });
   //Events Slider
   $('.eventsSlider').slick({
     infinite: true,

@@ -32,7 +32,7 @@
   @extend %slickdots;
 }
 .slick-slide img {
-  width: 100%;
+  // width: 100%;
 }
 // Responsive
 
@@ -52,8 +52,11 @@
   }
 
   // banner img
-  .signup-area-image {
+  .signup-area-image,
+  .banner-two-end .image {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
     img {
       height: 350px;
       object-fit: contain;
@@ -172,6 +175,15 @@
     font-size: 18px !important;
     line-height: 26px !important;
   }
+
+  // slider dots
+  .bestInstructor .ourinstructor-active .slick-dots,
+  .about-services .about__slider .slick-dots,
+  .main-instructor-featured .ourinstructor-active .slick-dots,
+  .main-events-featured .eventsSlider .slick-dots,
+  .ourevent-active .slick-dots {
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
@@ -228,7 +240,8 @@
 
   // para
   p,
-  .events-location-text .text-item-end h6 {
+  .events-location-text .text-item-end h6,
+  .banner-two-start p {
     @extend %brief;
   }
 }

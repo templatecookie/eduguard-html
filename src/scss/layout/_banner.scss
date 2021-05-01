@@ -71,6 +71,25 @@
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
 
+@media (max-width: 1200px) {
+  .banner-two-start {
+    h1 {
+      font-size: 58px;
+      line-height: 72px;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .banner {
+    &-two-start {
+      h1 {
+        font-size: 48px;
+        line-height: 62px;
+      }
+    }
+  }
+}
 // large devices 992px - 1169px
 @media (min-width: 992px) and (max-width: 1199px) {
   .banner {
@@ -105,6 +124,14 @@
       &::before {
         display: none;
       }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .banner {
+    &-two-start {
+      text-align: center;
     }
   }
 }
@@ -226,5 +253,19 @@
 }
 
 // extra Small devices 420px
-@media (max-width: 420px) {
+@media (min-width: 320px) and (max-width: 574px) {
+  .banner {
+    &-two-start {
+      p {
+        margin-right: 0px;
+      }
+    }
+  }
+  .banner-two-start h1,
+  .banner-two-start .h1 {
+    margin-bottom: 0px !important;
+  }
+  .banner-two-start .banner-input .main-input input {
+    padding-left: 0px;
+  }
 }
