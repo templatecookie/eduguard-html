@@ -3817,4 +3817,13 @@
     <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
     <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
     <script src="dist/main.js"></script>
+    <script>
+        // UI variables
+        const categoryBtn = document.querySelector('#categoryBtn');
+        const dropBox = document.querySelector('.categoryDrop');
+        categoryBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropBox.classList.toggle('appear');
+        });
+    </script>
 </body>

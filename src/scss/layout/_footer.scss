@@ -148,6 +148,9 @@
 
 @media (min-width: 320px) and (max-width: 574px) {
   .footer {
+    &__wrapper {
+      margin-bottom: 15px;
+    }
     &__list {
       margin-bottom: 15px;
       h6 {
