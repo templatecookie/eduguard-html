@@ -14119,8 +14119,6 @@ header .user-image {
             justify-content: center; } }
 
 .banner-three {
-  background-repeat: no-repeat !important;
-  background-position: center !important;
   -webkit-clip-path: ellipse(100% 100% at 50% 0%);
           clip-path: ellipse(100% 100% at 50% 0%);
   position: relative; }
@@ -14175,7 +14173,7 @@ header .user-image {
   .btn-white:hover {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    color: #1089FF !important; }
+    color: #1089ff !important; }
 
 .new-course-feature {
   padding: 100px 0px; }
@@ -14193,7 +14191,7 @@ header .user-image {
 
 .featured-course-info {
   padding: 12px 0px;
-  border-top: 1px solid #EBEBF2;
+  border-top: 1px solid #ebebf2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14209,33 +14207,33 @@ header .user-image {
   .featured-course-info .course-view {
     padding-left: 12px; }
     .featured-course-info .course-view svg {
-      color: #1089FF;
+      color: #1089ff;
       width: 18px;
       height: 18px;
       margin-right: 5px; }
     .featured-course-info .course-view span {
       font-size: 14px;
-      color: #42414B;
+      color: #42414b;
       font-weight: 400; }
   .featured-course-info .course-lesson svg {
-    color: #00AF91;
+    color: #00af91;
     width: 18px;
     height: 18px;
     margin-right: 5px; }
   .featured-course-info .course-lesson span {
     font-size: 14px;
-    color: #42414B;
+    color: #42414b;
     font-weight: 400; }
   .featured-course-info .course-hours {
     padding-right: 12px; }
     .featured-course-info .course-hours svg {
-      color: #FFC91B;
+      color: #ffc91b;
       width: 18px;
       height: 18px;
       margin-right: 5px; }
     .featured-course-info .course-hours span {
       font-size: 14px;
-      color: #42414B;
+      color: #42414b;
       font-weight: 400; }
 
 .featured-course .featured-course-text {
@@ -14250,7 +14248,7 @@ header .user-image {
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #8F8FA3; }
+    color: #8f8fa3; }
   .featured-course .featured-course-text h6, .featured-course .featured-course-text .h6 {
     padding: 0px 12px;
     margin-bottom: 12px; }
@@ -14284,22 +14282,22 @@ header .user-image {
       margin-bottom: 0;
       font-weight: 500 !important;
       font-size: 18px !important;
-      color: #42414B !important; }
+      color: #42414b !important; }
       .featured-course .featured-course-text .course-card-start h6 span, .featured-course .featured-course-text .course-card-start .h6 span {
         font-weight: 400 !important;
         font-size: 14px !important;
-        color: #8F8FA3 !important; }
+        color: #8f8fa3 !important; }
     .featured-course .featured-course-text .course-card-end svg {
-      color: #FF7A1A;
+      color: #ff7a1a;
       width: 18px;
       height: 18px;
       margin-right: 2px; }
     .featured-course .featured-course-text .course-card-end small, .featured-course .featured-course-text .course-card-end .small {
       font-size: 16px;
-      color: #42414B; }
+      color: #42414b; }
       .featured-course .featured-course-text .course-card-end small span, .featured-course .featured-course-text .course-card-end .small span {
         font-size: 14px;
-        color: #8F8FA3; }
+        color: #8f8fa3; }
 
 .featured-instructor {
   padding: 100px 0px;
@@ -14343,7 +14341,7 @@ header .user-image {
     padding: 30px 20px;
     background-color: white;
     border-radius: 5px;
-    border: 1px solid #EBEBF2;
+    border: 1px solid #ebebf2;
     -webkit-transition: 0.3s all linear;
     transition: 0.3s all linear; }
     .chose-course-item:hover {
@@ -14352,17 +14350,17 @@ header .user-image {
       .chose-course-item:hover svg {
         color: white; }
       .chose-course-item:hover .hours-icon {
-        background-color: #00AF91; }
+        background-color: #00af91; }
       .chose-course-item:hover .user-icon {
-        background-color: #1089FF !important; }
+        background-color: #1089ff !important; }
       .chose-course-item:hover .book-icon {
-        background-color: #F15C4C !important; }
+        background-color: #f15c4c !important; }
     .chose-course-item .book-icon {
       background-color: rgba(241, 92, 76, 0.1) !important;
-      color: #F15C4C !important; }
+      color: #f15c4c !important; }
     .chose-course-item .user-icon {
       background-color: rgba(16, 137, 255, 0.1) !important;
-      color: #1089FF !important; }
+      color: #1089ff !important; }
     .chose-course-item .book-icon,
     .chose-course-item .user-icon,
     .chose-course-item .hours-icon {
@@ -14384,7 +14382,7 @@ header .user-image {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      color: #00AF91;
+      color: #00af91;
       margin-bottom: 20px; }
       .chose-course-item .book-icon svg,
       .chose-course-item .user-icon svg,
@@ -14408,7 +14406,7 @@ header .user-image {
     -webkit-transition: 0.3s all linear;
     transition: 0.3s all linear;
     padding: 24px 20px;
-    border: 2px solid #EBEBF2;
+    border: 2px solid #ebebf2;
     border-radius: 5px; }
     .testimonial-area-item:hover {
       border-color: #1089FF; }
@@ -14426,8 +14424,8 @@ header .user-image {
         .testimonial-area-item .testimonial-rating ul li {
           margin-right: 5px; }
           .testimonial-area-item .testimonial-rating ul li svg {
-            color: #FF7A1A;
-            fill: #FF7A1A; }
+            color: #ff7a1a;
+            fill: #ff7a1a; }
     .testimonial-area-item p {
       font-size: 15px !important; }
     .testimonial-area-item .testimonial-client {
@@ -14450,7 +14448,7 @@ header .user-image {
              object-fit: cover;
           border-radius: 50%; }
       .testimonial-area-item .testimonial-client-info h6, .testimonial-area-item .testimonial-client-info .h6 {
-        color: #42414B !important;
+        color: #42414b !important;
         font-weight: 500 !important;
         font-size: 18px !important; }
       .testimonial-area-item .testimonial-client-info p {
@@ -14555,23 +14553,20 @@ header .user-image {
   .banner-three {
     padding: 200px 0px;
     -webkit-clip-path: none !important;
-            clip-path: none !important; }
+            clip-path: none !important;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative; }
     .banner-three h1, .banner-three .h1 {
       font-size: 36px !important; }
     .banner-three-content {
       height: auto; }
     .banner-three p {
-      padding: 30px 0px 40px 0px;
+      padding: 0px 0px 40px 0px;
       max-width: 100%;
       font-size: 16px !important; }
     .banner-three .btn-white {
       padding: 15px 32px; }
-    .banner-three .playbtn-area {
-      bottom: 195px !important;
-      left: 65% !important; }
-      .banner-three .playbtn-area .play-button {
-        width: 65px;
-        height: 65px; }
   .new-course-feature {
     padding: 30px 0px; }
     .new-course-feature h3, .new-course-feature .h3 {
@@ -14620,6 +14615,15 @@ header .user-image {
       padding-left: 0;
       margin-top: 20px; } }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .playbtn-area {
+    bottom: 0;
+    bottom: 85px !important;
+    left: 255px !important; }
+    .playbtn-area .play-button {
+      width: 65px;
+      height: 65px; } }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .banner-three .playbtn-area {
     bottom: 370px; }
@@ -14663,6 +14667,22 @@ header .user-image {
   .join-area-shape .shape-03 {
     bottom: 90px;
     right: 475px; } }
+
+@media (max-width: 767px) {
+  .play-button {
+    width: 50px;
+    height: 50px; }
+  .banner-three .playbtn-area {
+    bottom: 60px;
+    left: 220px; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .banner-three {
+    padding: 120px 0px !important; }
+    .banner-three .playbtn-area {
+      bottom: 120px; }
+  .banner-three p {
+    padding: 15px 0px; } }
 
 .students-info {
   padding-bottom: 70px; }
@@ -20127,7 +20147,8 @@ header {
   section {
     padding: 45px 0px !important; }
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
-  .event-sub-section-main h4, .event-sub-section-main .h4 {
+  .banner-three h1, .banner-three .h1,
+  .banner-three .h1 .event-sub-section-main h4, .banner-three .h1 .event-sub-section-main .h4 {
     font-size: 24px !important;
     line-height: 36px !important; }
   p,
