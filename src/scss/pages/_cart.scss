@@ -135,6 +135,11 @@
 @media (max-width: 991px) {
   .cart-area {
     padding-top: 30px !important;
+    .cart-wizard-area {
+      .text h6 {
+        margin-left: 0px;
+      }
+    }
   }
 }
 
@@ -145,7 +150,7 @@
 
     .cart-wizard-area {
       flex-direction: column;
-
+      align-items: center;
       .image {
         display: none;
       }
@@ -157,6 +162,9 @@
           font-size: 18px !important;
         }
       }
+    }
+    h6 {
+      margin-left: 15px;
     }
 
     form label {
@@ -171,17 +179,17 @@
   .cart-area {
     padding: 30px 0px;
 
-    .cart-wizard-area {
-      .text {
-        h6 {
-          font-size: 18px !important;
-        }
-      }
-    }
-
     form label {
       margin-top: 10px;
       margin-bottom: 10px !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .cart-area {
+    h6 {
+      margin-left: 0px;
     }
   }
 }

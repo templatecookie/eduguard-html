@@ -41,6 +41,14 @@
   h6 {
     @extend %fonts-md;
   }
+
+  // subtitle fonts size
+  .cart-area .cart-wizard-area .text h6,
+  .cart-area .cart-wizard-area .text .h6 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+
   // .about-feature h4,
   // .about-feature .h4,
   // .bestInstructor__title h3 {
@@ -95,26 +103,6 @@
     @extend %space;
   }
 
-  // .browse-categories,
-  // .featured-popular-courses,
-  // .chose-course,
-  // .get-started,
-  // .latest-events-featured,
-  // .best-instructor-featured,
-  // .main-become-instructor,
-  // .featured-popular-courses,
-  // .learning-rules,
-  // .about-services,
-  // .error-area,
-  // .about-intro,
-  // .aboutFeature,
-  // .brands,
-  // .aboutFeature,
-  // .brands,
-  // .bestInstructor {
-  //   @extend %space;
-  // }
-
   // img height auto
   .learning-rules-ends img {
     height: auto;
@@ -129,23 +117,16 @@
   h6 {
     @extend %fonts-sm-2;
   }
-  // .error-area-start h3,
-  // .error-area-start .h3,
-  // .about-intro__textContent h3,
-  // .about-intro__textContent .h3,
-  // .about-feature h4,
-  // .about-feature .h4,
-  // .bestInstructor__title h3 {
-  //   @extend %fonts-sm-2;
-  // }
+  // subtitle
+  .cart-area .cart-wizard-area .text h6,
+  .cart-area .cart-wizard-area .text .h6,
+  .cart-area .cart-wizard-area .text .h6 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
 
   // para
   p {
     @extend %brief;
   }
-  // .about-intro__textContent p,
-  // .about-feature.dark-feature p,
-  // .about-feature p {
-  //   @extend %brief;
-  // }
 }

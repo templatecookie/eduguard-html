@@ -15384,7 +15384,9 @@ header .user-image {
 
 @media (max-width: 991px) {
   .cart-area {
-    padding-top: 30px !important; } }
+    padding-top: 30px !important; }
+    .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
+      margin-left: 0px; } }
 
 @media (max-width: 767px) {
   .cart-area {
@@ -15394,13 +15396,19 @@ header .user-image {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .cart-area .cart-wizard-area .image {
         display: none; }
       .cart-area .cart-wizard-area .text {
         border-radius: 5px !important; }
         .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
           font-size: 18px !important; }
+    .cart-area h6, .cart-area .h6 {
+      margin-left: 15px; }
     .cart-area form label {
       margin-top: 10px;
       margin-bottom: 10px !important; } }
@@ -15408,11 +15416,13 @@ header .user-image {
 @media (min-width: 768px) and (max-width: 991px) {
   .cart-area {
     padding: 30px 0px; }
-    .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
-      font-size: 18px !important; }
     .cart-area form label {
       margin-top: 10px;
       margin-bottom: 10px !important; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .cart-area h6, .cart-area .h6 {
+    margin-left: 0px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .cart-area {
@@ -19784,7 +19794,11 @@ header {
   .verify {
     padding-top: 30px !important; }
   .get-started {
-    padding-bottom: 30px !important; } }
+    padding-bottom: 30px !important; }
+  .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6,
+  .cart-area .cart-wizard-area .text .h6 {
+    font-size: 24px !important;
+    line-height: 36px !important; } }
 
 @media (max-width: 767px) {
   section {
@@ -19805,5 +19819,10 @@ header {
     font-size: 14px !important;
     line-height: 26px !important; }
   .learning-rules-ends img {
-    height: auto; } }
+    height: auto; }
+  .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6,
+  .cart-area .cart-wizard-area .text .h6,
+  .cart-area .cart-wizard-area .text .h6 {
+    font-size: 18px !important;
+    line-height: 26px !important; } }
 
