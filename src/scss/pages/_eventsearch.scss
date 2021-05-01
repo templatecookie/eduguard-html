@@ -409,3 +409,15 @@
     padding-bottom: 30px !important;
   }
 }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .eventCount {
+    flex-direction: column;
+  }
+  .event-sub-section-main .icon-with-date {
+    flex-direction: column !important;
+  }
+  .event-info-tab .nav-tabs {
+    justify-content: center;
+  }
+}

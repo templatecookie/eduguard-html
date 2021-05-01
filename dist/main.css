@@ -15740,6 +15740,25 @@ header .user-image {
   .event-sub-section {
     padding-bottom: 30px !important; } }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .eventCount {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .event-sub-section-main .icon-with-date {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; }
+  .event-info-tab .nav-tabs {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
 .event-sub-section {
   padding-top: 25px;
   padding-bottom: 35px;
@@ -16283,10 +16302,10 @@ header .user-image {
   border-radius: 8px;
   padding: 30px; }
   .feedback-area h6, .feedback-area .h6 {
-    color: #42414B !important; }
+    color: #42414b !important; }
     .feedback-area h6 span, .feedback-area .h6 span {
       font-weight: 400;
-      color: #8F8FA3 !important; }
+      color: #8f8fa3 !important; }
   .feedback-area-item {
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(143, 143, 163, 0.3);
@@ -16324,7 +16343,7 @@ header .user-image {
   background-color: #fff;
   border-radius: 8px; }
   .writereview-area h6, .writereview-area .h6 {
-    color: #42414B !important; }
+    color: #42414b !important; }
   .writereview-area form label {
     margin-top: 5px;
     margin-bottom: 5px; }
@@ -20020,11 +20039,22 @@ header {
     padding-bottom: 30px !important; }
   .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6,
   .cart-area .cart-wizard-area .text .h6, .event-search-wizard-header h6, .event-search-wizard-header .h6,
-  .event-search-wizard-header .h6 {
+  .event-search-wizard-header .h6,
+  .nav-overview h6,
+  .nav-overview .h6, .feedback-area h6, .feedback-area .h6,
+  .feedback-area .h6, .writereview-area h6, .writereview-area .h6,
+  .writereview-area .h6 {
     font-size: 24px !important;
     line-height: 36px !important; }
+  .events-location-text .text-item-end h6, .events-location-text .text-item-end .h6,
+  .events-location-text .text-item-end .h6, .feedback-area-item .commentator-info h6, .feedback-area-item .commentator-info .h6,
+  .feedback-area-item .commentator-info .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important; }
   .course__content_title h6, .course__content_title .h6,
-  .course__content_title .h6 {
+  .course__content_title .h6, .event__content_title h6, .event__content_title .h6,
+  .event__content_title .h6, .event-info-cart h6, .event-info-cart .h6, .event-speaker-info h6, .event-speaker-info .h6,
+  .event-speaker-info .h6 {
     font-size: 18px !important;
     line-height: 28px !important; }
   .ourevent-active .slick-dots {
@@ -20035,9 +20065,10 @@ header {
     padding: 60px 0px !important; }
   .about-intro__textContent h3, .about-intro__textContent .h3,
   .about-feature h4, .about-feature .h4,
-  .bestInstructor__title h3, .bestInstructor__title .h3 {
-    font-size: 32px;
-    line-height: 46px; }
+  .bestInstructor__title h3, .bestInstructor__title .h3,
+  .event-sub-section-main h4, .event-sub-section-main .h4 {
+    font-size: 32px !important;
+    line-height: 46px !important; }
   .checkout-tab .nav .nav-item .nav-link h6, .checkout-tab .nav .nav-item .nav-link .h6, .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5, .event-search-wizard-header h6, .event-search-wizard-header .h6,
   .event-search-wizard-header .h6 {
     font-size: 18px !important;
@@ -20046,12 +20077,17 @@ header {
 @media (min-width: 320px) and (max-width: 574px) {
   section {
     padding: 45px 0px !important; }
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+  .event-sub-section-main h4, .event-sub-section-main .h4 {
     font-size: 24px !important;
     line-height: 36px !important; }
-  p {
+  p,
+  .events-location-text .text-item-end h6, .events-location-text .text-item-end .h6 {
     font-size: 14px !important;
     line-height: 26px !important; }
   .learning-rules-ends img {
-    height: auto; } }
+    height: auto; }
+  .feedback-area h6, .feedback-area .h6 {
+    font-size: 16px !important;
+    line-height: 26px !important; } }
 
