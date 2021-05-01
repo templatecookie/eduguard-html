@@ -19707,7 +19707,8 @@ header {
         -o-object-fit: contain;
            object-fit: contain; }
   .dot-images {
-    padding: 0px !important; }
+    padding: 0px !important;
+    display: none !important; }
   .verify__image {
     margin: 0px;
     margin-bottom: 30px; } }
@@ -20016,6 +20017,14 @@ header {
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-size: 38px !important;
     line-height: 52px !important; }
+  .signup-area {
+    overflow-y: auto !important; }
+  .signup-area-image {
+    margin-bottom: 30px; }
+    .signup-area-image img {
+      height: 350px;
+      -o-object-fit: contain;
+         object-fit: contain; }
   .checkout-area,
   .contactHero,
   .event-sub-section,
@@ -20060,9 +20069,12 @@ header {
   .about-intro__textContent h3, .about-intro__textContent .h3,
   .about-feature h4, .about-feature .h4,
   .bestInstructor__title h3, .bestInstructor__title .h3,
-  .event-sub-section-main h4, .event-sub-section-main .h4 {
+  .event-sub-section-main h4, .event-sub-section-main .h4,
+  .signup-area h3, .signup-area .h3 {
     font-size: 32px !important;
     line-height: 46px !important; }
+  .signup-area {
+    padding-top: 0px !important; }
   .checkout-tab .nav .nav-item .nav-link h6, .checkout-tab .nav .nav-item .nav-link .h6, .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5, .event-search-wizard-header h6, .event-search-wizard-header .h6,
   .event-search-wizard-header .h6 {
     font-size: 18px !important;
@@ -20079,6 +20091,12 @@ header {
   .events-location-text .text-item-end h6, .events-location-text .text-item-end .h6 {
     font-size: 14px !important;
     line-height: 26px !important; }
+  .signup-area {
+    height: auto !important; }
+  .signup-area-image {
+    margin-bottom: 15px; }
+    .signup-area-image img {
+      height: auto; }
   .learning-rules-ends img {
     height: auto; }
   .feedback-area h6, .feedback-area .h6 {

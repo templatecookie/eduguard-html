@@ -45,6 +45,21 @@
     font-size: 38px !important;
     line-height: 52px !important;
   }
+
+  // overflow
+  .signup-area {
+    overflow-y: auto !important;
+  }
+
+  // banner img
+  .signup-area-image {
+    margin-bottom: 30px;
+    img {
+      height: 350px;
+      object-fit: contain;
+    }
+  }
+
   // Section spacing
   section {
     @extend %space-1;
@@ -133,6 +148,9 @@
   section {
     @extend %space-2;
   }
+  .signup-area {
+    padding-top: 0px !important;
+  }
 
   // Fonts Title
   .about-intro__textContent h3,
@@ -141,7 +159,8 @@
   .about-feature .h4,
   .bestInstructor__title h3,
   .event-sub-section-main h4,
-  .event-sub-section-main .h4 {
+  .event-sub-section-main .h4,
+  .signup-area h3 {
     @extend %fonts-sm-1;
   }
 
@@ -168,11 +187,23 @@
     line-height: 26px !important;
   }
 
+  // overflow
+  .signup-area {
+    height: auto !important;
+  }
+
   // Section spacing
   section {
     @extend %space;
   }
 
+  // banner img
+  .signup-area-image {
+    margin-bottom: 15px;
+    img {
+      height: auto;
+    }
+  }
   // img height auto
   .learning-rules-ends img {
     height: auto;
