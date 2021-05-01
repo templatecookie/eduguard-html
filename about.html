@@ -77,7 +77,7 @@
     <!-- Header Ends Here -->
 
     <!-- Breadcrumb Starts Here -->
-    <section>
+    <section class="py-0">
         <div class="container">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -93,24 +93,28 @@
     <section class="about-intro">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 position-relative order-2 order-lg-1 mt-4 mt-lg-0">
-                    <img src="dist/images/about/intro.jpg" alt="Intro Image"
+                <div class="col-lg-6 position-relative  mt-4 mt-lg-0">
+                    <div class="about-intro__img-wrapper">
+                        <img src="dist/images/about/intro.jpg" alt="Intro Image"
                         class="img-fluid rounded-2 ms-lg-5 position-relative intro-image">
+                    </div>
                     <div class="intro-shape">
                         <img src="dist/images/shape/rec04.png" alt="Shape" class="img-fluid shape-01">
                         <img src="dist/images/shape/dot03.png" alt="Shape" class="img-fluid shape-02">
                     </div>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2">
-                    <h3>A Great Place to Grow.</h3>
-                    <p class="mt-2 mt-lg-1 mb-2 mb-lg-3 text-secondary fs-5 fw-normal">
-                        Vestibulum efficitur accumsan sapien ut lacinia. Sed euismod ullamcorper rhoncus. Phasellus
-                        interdum rutrum nisi ut lacinia. Nulla et sapien at turpis viverra. Cras odio ex, posuere id est
-                        et, viverra condimentum felis
-                    </p>
-                    <p class="text-secondary fs-5 fw-normal">
-                        congue quis non odio. Aliquam sem ligula, commodo quis ipsum mattis, lacinia cursus magna.
-                    </p>
+                <div class="col-lg-6 ">
+                    <div class="about-intro__textContent">
+                        <h3>A Great Place to Grow.</h3>
+                        <p class="mt-2 mt-lg-1 mb-2 mb-lg-3 text-secondary  fw-normal">
+                            Vestibulum efficitur accumsan sapien ut lacinia. Sed euismod ullamcorper rhoncus. Phasellus
+                            interdum rutrum nisi ut lacinia. Nulla et sapien at turpis viverra. Cras odio ex, posuere id est
+                            et, viverra condimentum felis
+                        </p>
+                        <p class="text-secondary  fw-normal">
+                            congue quis non odio. Aliquam sem ligula, commodo quis ipsum mattis, lacinia cursus magna.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,13 +122,13 @@
     <!-- About Intro Ends Here -->
 
     <!-- About Feature Starts Here -->
-    <section class="section-padding-bottom">
+    <section class="section-padding-bottom aboutFeature">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-feature dark-feature">
                         <h4 class="text-white">Who We Are</h4>
-                        <p class="text-lowblack fs-4">
+                        <p class="text-lowblack ">
                             Suspendisse potenti. Pellentesque augue ligula, dictum at pretium eu, fermentum sit amet
                             risus. Maecenas congue feugiat libero, sed euismod urna congue eleifend. Maecenas et gravida
                             felis. Vivamus iaculis tellus sit amet egestas luctus. Phasellus urna eros.
@@ -134,7 +138,7 @@
                 <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="about-feature">
                         <h4>Our Mission</h4>
-                        <p class="text-secondary fs-4">
+                        <p class="text-secondary ">
                             Maecenas consectetur ultrices tortor, eget efficitur tortor finibus at. Sed convallis
                             efficitur turpis, eget dapibus magna. Nam euismod lacus ac nulla vehicula aliquam.Curabitur
                             efficitur vehicula sagittis. Cras convallis tellus ac quam efficitur viverra. Maecenas
@@ -148,7 +152,7 @@
     <!-- About Feature Ends Here -->
 
     <!-- Brands Starts Here -->
-    <section class="section-padding-bottom overflow-hidden">
+    <section class="section-padding-bottom overflow-hidden brands">
         <div class="bg-secondary py-80">
             <div class="container">
                 <div class="row mb-40">
@@ -192,11 +196,13 @@
     <!-- Brands Ends Here -->
 
     <!-- Best Instructors Starts Here -->
-    <section class="section-pb-sm overflow-hidden">
+    <section class="section-pb-sm overflow-hidden bestInstructor">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 position-relative">
+                   <div class="bestInstructor__title">
                     <h3 class="text-center mb-40">Meet Our Best Instructor</h3>
+                   </div>
                     <div class="ourinstructor__wrapper mt-lg-5 mt-0">
                         <div class="ourinstructor-active">
                             <div class="mentor">
@@ -597,34 +603,12 @@
     </section>
     <!-- Best Instructors Ends Here -->
 
-       <!-- News Letter Starts Here -->
-       <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="newsletter-area text-center">
-                        <h4>Subscribe our Newsletter</h4>
-                        <p class="mt-2 mb-lg-4 mb-3">
-                            Duis posuere maximus arcu eu tincidunt. Nam rutrum, nibh vitae tempus venenatis, ex tortor ultricies magna, et faucibus magna eros quis arcu.
-                        </p>
-                        <form action="#">
-                            <div class="input-group">
-                                <input type="email" class="form-control border-lowBlack" placeholder="Your email" aria-describedby="button-addon">
-                                <button class="btn btn-primary text-uppercase" type="submit" id="button-addon">Subscribe</button>
-                              </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </section>
-    <!-- News Letter Ends Here -->
 
-    <!-- Footer Starts Here -->
-    <footer class="footer footer-ex-p">
+    <!-- Footer Area Start -->
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-sm-12 order-4 order-lg-0 ">
                     <div class="footer__wrapper">
                         <div class="footer__wrapper_logo">
                             <img src="dist/images/logo/footerlogo.png" alt="logo" class="img-fluid">
@@ -696,7 +680,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4">
+                <div class="col-lg-2 col-sm-4 col-6 order-1 order-lg-0">
                     <div class="footer__list">
                         <h6>Company</h6>
                         <ul>
@@ -707,7 +691,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4">
+                <div class="col-lg-2 col-sm-4 col-6 order-2 order-lg-0">
                     <div class="footer__list">
                         <h6>Support</h6>
                         <ul>
@@ -719,7 +703,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4">
+                <div class="col-lg-2 col-sm-4  order-3 order-lg-0">
                     <div class="footer__list">
                         <h6>Quick Links</h6>
                         <ul>
@@ -733,9 +717,9 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="footer__bottom d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="footer__bottom">
                         <div class="footer__bottom_copyright">
-                            <p>© 2021 - Edubd. All rights reserved</p>
+                            <p>&#169; 2021 - Edubd. All rights reserved</p>
                         </div>
                         <div class="footer__bottom_topbutton">
                             <a href="#">
@@ -744,7 +728,7 @@
                                     <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9 5L5 1L1 5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </div>
                             </a>
@@ -754,7 +738,7 @@
             </div>
         </div>
     </footer>
-    <!-- Footer Ends Here -->
+    <!-- Footer Area End -->
 
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/bootstrap.bundle.min.js"></script>

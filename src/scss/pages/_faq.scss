@@ -1,105 +1,95 @@
 .faq-area {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 
-    .accordion-item {
-        margin-bottom: 20px;
-        background-color: white;
-        border-radius: 5px !important;
-        border: none !important;
+  .accordion-item {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px !important;
+    border: none !important;
 
-        .accordion-button {
-            border: none !important;
-            border-radius: 5px !important;
-            border-bottom-left-radius: 0 !important;
-            border-bottom-right-radius: 0 !important;
-            font-size: 18px;
-            color: #42414B;
-            text-align: left;
+    .accordion-button {
+      border: none !important;
+      border-radius: 5px !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      font-size: 18px;
+      color: #42414b;
+      text-align: left;
 
-            &:focus {
-                box-shadow: none !important;
-            }
-        }
+      &:focus {
+        box-shadow: none !important;
+      }
     }
+  }
 }
 
 .accordion-button:not(.collapsed) {
-    color: #0264ED !important;
-    background-color: white !important;
+  color: #0264ed !important;
+  background-color: white !important;
 }
 
 .accordion-body {
-    border-top: 1px solid #E5E5EE;
-    border-radius: 5px !important;
-    border-top-left-radius: 0px !important;
-    border-top-right-radius: 0px !important;
+  border-top: 1px solid #e5e5ee;
+  border-radius: 5px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
 
-    p {
-        color: #8F8FA3;
-    }
+  p {
+    color: #8f8fa3;
+  }
 }
 
 .accordion-collapse {
-    border: none !important;
+  border: none !important;
 }
 
 // Responsive
-// extra Small devices 420px
-@media (max-width: 420px) {
-    .faq-area {
-        padding-bottom: 30px;
-        padding-top: 30px;
 
-        .accordion-item .accordion-button {
-            font-size: 14px;
-        }
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+  .faq-area {
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    .accordion-item .accordion-button {
+      font-size: 16px;
     }
+  }
 }
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+  .faq-area {
+    padding-bottom: 30px;
+    padding-top: 30px;
 
-// Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-    .faq-area {
-        padding-bottom: 30px;
-        padding-top: 30px;
-
-        .accordion-item .accordion-button {
-            font-size: 14px;
-        }
+    .accordion-item .accordion-button {
+      font-size: 16px;
     }
+  }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-    .faq-area {
-        padding-bottom: 30px;
-        padding-top: 30px;
+  .faq-area {
+    padding-bottom: 30px;
+    padding-top: 30px;
 
-        .accordion-item .accordion-button {
-            font-size: 16px;
-        }
+    .accordion-item .accordion-button {
+      font-size: 16px;
     }
+  }
 }
 
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
-    .faq-area {
-        padding-bottom: 30px;
-        padding-top: 30px;
-
-        .accordion-item .accordion-button {
-            font-size: 16px;
-        }
+// Small devices 420px - 574px
+@media only screen and (min-width: 320px) and (max-width: 574px) {
+  .faq-area {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    .accordion-item {
+      .accordion-button {
+        font-size: 14px;
+        line-height: 26px;
+      }
     }
-}
-
-// large devices 992px - 1200px
-@media (min-width: 992px) and (max-width: 1200px) {
-    .faq-area {
-        padding-bottom: 50px;
-        padding-top: 50px;
-
-        .accordion-item .accordion-button {
-            font-size: 16px;
-        }
-    }
+  }
 }

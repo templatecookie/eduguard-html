@@ -1,192 +1,232 @@
 // Header Shadow
 header {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-shadow {
-    box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
+  box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
 }
 // Signin Area
-.signin-area{
-    form{
-        label{
-            font-weight: 500;
-        }
+.signin-area {
+  form {
+    label {
+      font-weight: 500;
     }
+  }
 }
 
 // SignUp Area
 .signup-area {
-    position: relative;
-    background: linear-gradient(90deg, #FFF 55%, rgba(236, 236, 243, 0.60) 45%);
+  position: relative;
+  background: linear-gradient(90deg, #fff 55%, rgba(236, 236, 243, 0.6) 45%);
 
-    &-image {
-        margin-right: -140px;
-        margin-left: 60px;
-    }
+  &-image {
+    margin-right: -140px;
+    margin-left: 60px;
+  }
 }
 
 // Dot Image
 .dot-images {
-    .first-dotimage {
-        position: absolute;
-        top: 85px;
-        left: 0;
-    }
+  .first-dotimage {
+    position: absolute;
+    top: 85px;
+    left: 0;
+  }
 
-    .second-dotimage {
-        position: absolute;
-        bottom: 200px;
-        right: 0;
-    }
+  .second-dotimage {
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+  }
 }
 
 // Responsive
+
+@media (max-width: 1200px) {
+  .verify {
+    display: flex;
+    align-items: center;
+    overflow-y: auto !important;
+    position: relative;
+    z-index: 1;
+  }
+}
+
 // extra Small devices 420px
 @media (max-width: 420px) {
-    .signup-area {
-        background: #FFF;
+  .signup-area {
+    background: #fff;
 
-        &-image {
-            margin: 0;
-            margin-top: 30px;
-        }
+    &-image {
+      margin: 0;
+      margin-top: 30px;
     }
+  }
 
-    .dot-images {
-        display: none;
-    }
+  .dot-images {
+    display: none;
+  }
 
-    .form-element input {
-        padding: 10px 15px;
-    }
+  .form-element input {
+    padding: 10px 15px;
+  }
 
-    .checkbox-primary[type="checkbox"] {
-        width: 20px;
-        height: 20px;
-    }
+  .checkbox-primary[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+  }
 
-    .signup-with {
-        width: 100% !important;
-    }
+  .signup-with {
+    width: 100% !important;
+  }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-    .signup-area {
-        background: #FFF;
+  .signup-area {
+    background: #fff;
 
-        &-image {
-            margin: 0;
-            margin-top: 30px;
-        }
+    &-image {
+      margin: 0;
+      margin-top: 30px;
     }
+  }
 
-    .dot-images {
-        display: none;
-    }
+  .dot-images {
+    display: none;
+  }
 
-    .form-element input {
-        padding: 10px 15px;
-    }
+  .form-element input {
+    padding: 10px 15px;
+  }
 
-    .checkbox-primary[type="checkbox"] {
-        width: 20px;
-        height: 20px;
-    }
+  .checkbox-primary[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+  }
 
-    .signup-with {
-        height: 45px;
-        width: 100% !important;
-    }
+  .signup-with {
+    height: 45px;
+    width: 100% !important;
+  }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-    .signup-area {
-        background: #FFF;
+  .signup-area {
+    background: #fff;
 
-        &-image {
-            margin: 0;
-            margin-top: 30px;
-        }
+    &-image {
+      margin: 0;
+      margin-top: 30px;
     }
+  }
 
-    .dot-images {
-        display: none;
-    }
+  .dot-images {
+    display: none;
+  }
 
-    .form-element input {
-        padding: 10px 15px;
-    }
+  .form-element input {
+    padding: 10px 15px;
+  }
 
-    .checkbox-primary[type="checkbox"] {
-        width: 20px;
-        height: 20px;
-    }
+  .checkbox-primary[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+  }
 
-    .signup-with {
-        height: 45px;
-        width: 100% !important;
+  .signup-with {
+    height: 45px;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .verify {
+    height: auto !important;
+    &__image {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 350px;
+        object-fit: contain;
+      }
     }
+  }
+  .dot-images {
+    padding: 0px !important;
+    display: none !important;
+  }
+  .verify__image {
+    margin: 0px;
+    margin-bottom: 30px;
+  }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-    .signup-area {
-        background: #FFF;
+  .signup-area {
+    background: #fff;
 
-        &-image {
-            display: none;
-        }
-    }
+    // &-image {
+    //   display: none;
+    // }
+  }
 
-    .dot-images {
-        display: none;
-    }
+  //   .dot-images {
+  //     display: none;
+  //   }
 
-    .checkbox-primary[type="checkbox"] {
-        width: 22px;
-        height: 22px;
-    }
+  .checkbox-primary[type='checkbox'] {
+    width: 22px;
+    height: 22px;
+  }
 
-    .form-element input {
-        padding: 12px 15px;
-    }
+  .form-element input {
+    padding: 12px 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  // verify image
+  .verify__image img {
+    height: auto;
+  }
 }
 
 // large devices 992px - 1169px
 @media (min-width: 992px) and (max-width: 1200px) {
-    .signup-area {
-        background: #FFF;
+  .signup-area {
+    background: #fff;
 
-        &-image {
-            margin: 0;
-        }
+    &-image {
+      margin: 0;
+    }
+  }
+
+  .dot-images {
+    display: none;
+  }
+
+  .checkbox-primary[type='checkbox'] {
+    width: 22px;
+    height: 22px;
+  }
+
+  .form-element input {
+    padding: 12px 15px;
+  }
+
+  .signup-with {
+    height: 45px;
+    width: 100% !important;
+
+    &.border-secondary-primary {
+      margin-top: 10px;
     }
 
-    .dot-images {
-        display: none;
-    }
-
-    .checkbox-primary[type="checkbox"] {
-        width: 22px;
-        height: 22px;
-    }
-
-    .form-element input {
-        padding: 12px 15px;
-    }
-
-    .signup-with {
-        height: 45px;
-        width: 100% !important;
-
-        &.border-secondary-primary {
-            margin-top: 10px;
-        }
-
-        margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
+  }
 }

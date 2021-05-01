@@ -1,0 +1,7 @@
+.backround-button a,
+.backround-button-outline a,
+.backround-button-shadow a,
+.transparent-button a,
+.text-button a {
+  margin-bottom: 30px;
+}

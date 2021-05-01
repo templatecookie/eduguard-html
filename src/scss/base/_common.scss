@@ -1,0 +1,248 @@
+// slic-dots
+%slickdots {
+  position: relative;
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    li {
+      button {
+        background-color: transparent;
+        border: 0px;
+        font-size: 0px;
+        width: 8px;
+        height: 8px;
+        background-color: #8f8fa3;
+        margin: 0px 8px;
+        border-radius: 50%;
+        transition: all 0.2s linear;
+      }
+      &.slick-active {
+        button {
+          width: 24px;
+          border-radius: 50px;
+          background-color: #202029;
+        }
+      }
+    }
+  }
+}
+.ourevent-active {
+  @extend %slickdots;
+}
+.slick-slide img {
+  // width: 100%;
+}
+// Responsive
+
+@media (max-width: 991px) {
+  %space-1 {
+    padding: 90px 0px !important;
+  }
+
+  %fonts-md {
+    font-size: 38px !important;
+    line-height: 52px !important;
+  }
+
+  // overflow
+  .signup-area {
+    overflow-y: auto !important;
+  }
+
+  // banner img
+  .signup-area-image,
+  .banner-two-end .image {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 350px;
+      object-fit: contain;
+    }
+  }
+
+  // Section spacing
+  section {
+    @extend %space-1;
+  }
+  // extra space remove(top)
+  .checkout-area,
+  .contactHero,
+  .event-sub-section,
+  .event-info,
+  .faq-area,
+  .banner-two,
+  .featured-categories,
+  .brands-area-two,
+  .browse-categories,
+  .instructor-courses,
+  .students-info,
+  .verify {
+    padding-top: 30px !important;
+  }
+  // extra space remove(bottom)
+  .get-started {
+    padding-bottom: 30px !important;
+  }
+
+  // Fonts Title
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %fonts-md;
+  }
+
+  // subtitle fonts size
+  .cart-area .cart-wizard-area .text h6,
+  .cart-area .cart-wizard-area .text .h6,
+  .event-search-wizard-header h6,
+  .event-search-wizard-header .h6,
+  .nav-overview h6,
+  .feedback-area h6,
+  .feedback-area .h6,
+  .writereview-area h6,
+  .writereview-area .h6 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+
+  // brief
+  .events-location-text .text-item-end h6,
+  .events-location-text .text-item-end .h6,
+  .feedback-area-item .commentator-info h6,
+  .feedback-area-item .commentator-info .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  // Testimonial  slider
+  .course__content_title h6,
+  .course__content_title .h6,
+  .event__content_title h6,
+  .event__content_title .h6,
+  .event-info-cart h6,
+  .event-speaker-info h6,
+  .event-speaker-info .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+  .ourevent-active {
+    .slick-dots {
+      margin-top: 0px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  %space-2 {
+    padding: 60px 0px !important;
+  }
+  %fonts-sm-1 {
+    font-size: 32px !important;
+    line-height: 46px !important;
+  }
+
+  // Section spacing
+  section {
+    @extend %space-2;
+  }
+  .signup-area {
+    padding-top: 0px !important;
+  }
+
+  // Fonts Title
+  .about-intro__textContent h3,
+  .about-intro__textContent .h3,
+  .about-feature h4,
+  .about-feature .h4,
+  .bestInstructor__title h3,
+  .event-sub-section-main h4,
+  .event-sub-section-main .h4,
+  .signup-area h3 {
+    @extend %fonts-sm-1;
+  }
+
+  // subtitle
+  .checkout-tab .nav .nav-item .nav-link h6,
+  .checkout-area-summery .summery-area-content-item .text h5,
+  .event-search-wizard-header h6,
+  .event-search-wizard-header .h6 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  // slider dots
+  .bestInstructor .ourinstructor-active .slick-dots,
+  .about-services .about__slider .slick-dots,
+  .main-instructor-featured .ourinstructor-active .slick-dots,
+  .main-events-featured .eventsSlider .slick-dots,
+  .ourevent-active .slick-dots {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  %space {
+    padding: 45px 0px !important;
+  }
+  %fonts-sm-2 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+  %brief {
+    font-size: 14px !important;
+    line-height: 26px !important;
+  }
+
+  // overflow
+  .signup-area {
+    height: auto !important;
+  }
+
+  // Section spacing
+  section {
+    @extend %space;
+  }
+
+  // banner img
+  .signup-area-image {
+    margin-bottom: 15px;
+    img {
+      height: auto;
+    }
+  }
+  // img height auto
+  .learning-rules-ends img {
+    height: auto;
+  }
+
+  // Fonts  title
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .banner-three h1,
+  .banner-three .h1 .event-sub-section-main h4 {
+    @extend %fonts-sm-2;
+  }
+
+  // sub title
+  .feedback-area h6 {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  // para
+  p,
+  .events-location-text .text-item-end h6,
+  .banner-two-start p {
+    @extend %brief;
+  }
+}

@@ -101,8 +101,8 @@
                                 <button type="submit" class="btn btn-primary regular-fill-btn">Notify Me</button>
                             </div>
                         </form>
-                        <div class="count-down mt-lg-5">
-                            <div class="count-down-item">
+                        <div class="count-down mt-lg-5" id="countdown">
+                            <!-- <div class="count-down-item">
                                 <h6>14</h6>
                                 <p>Days</p>
                             </div>
@@ -117,7 +117,7 @@
                             <div class="count-down-item me-0">
                                 <h6>43</h6>
                                 <p>Secs</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -138,5 +138,16 @@
     <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
     <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
     <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/jquery.syotimer.min.js"></script>
     <script src="dist/main.js"></script>
+    <script>
+        
+        $('#countdown').syotimer({
+            year: 2021,
+            month: 5,
+            day: 15,
+            hour: 20,
+            minute: 30,
+        });
+    </script>
 </body>
