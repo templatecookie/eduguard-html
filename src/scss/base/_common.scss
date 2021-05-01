@@ -81,7 +81,9 @@
 
   // subtitle fonts size
   .cart-area .cart-wizard-area .text h6,
-  .cart-area .cart-wizard-area .text .h6 {
+  .cart-area .cart-wizard-area .text .h6,
+  .event-search-wizard-header h6,
+  .event-search-wizard-header .h6 {
     font-size: 24px !important;
     line-height: 36px !important;
   }
@@ -124,7 +126,9 @@
 
   // subtitle
   .checkout-tab .nav .nav-item .nav-link h6,
-  .checkout-area-summery .summery-area-content-item .text h5 {
+  .checkout-area-summery .summery-area-content-item .text h5,
+  .event-search-wizard-header h6,
+  .event-search-wizard-header .h6 {
     font-size: 18px !important;
     line-height: 26px !important;
   }
