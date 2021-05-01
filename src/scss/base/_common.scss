@@ -69,11 +69,6 @@
   section {
     @extend %space-2;
   }
-  // .aboutFeature,
-  // .brands,
-  // .bestInstructor {
-  //   @extend %space-2;
-  // }
 
   // Fonts Title
   .about-intro__textContent h3,
@@ -82,6 +77,13 @@
   .about-feature .h4,
   .bestInstructor__title h3 {
     @extend %fonts-sm-1;
+  }
+
+  // subtitle
+  .checkout-tab .nav .nav-item .nav-link h6,
+  .checkout-area-summery .summery-area-content-item .text h5 {
+    font-size: 18px !important;
+    line-height: 26px !important;
   }
 }
 
@@ -116,13 +118,6 @@
   h5,
   h6 {
     @extend %fonts-sm-2;
-  }
-  // subtitle
-  .cart-area .cart-wizard-area .text h6,
-  .cart-area .cart-wizard-area .text .h6,
-  .cart-area .cart-wizard-area .text .h6 {
-    font-size: 18px !important;
-    line-height: 26px !important;
   }
 
   // para

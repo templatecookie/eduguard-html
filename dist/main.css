@@ -18980,7 +18980,7 @@ body {
     padding: 30px 25px;
     border-radius: 6px; }
     .checkout-area-checkout .checkout-tab .nav-link h6, .checkout-area-checkout .checkout-tab .nav-link .h6 {
-      color: #8F8FA3 !important; }
+      color: #8f8fa3 !important; }
     .checkout-area-checkout .checkout-tab .nav-link.active h6, .checkout-area-checkout .checkout-tab .nav-link.active .h6 {
       color: #202029 !important;
       font-size: 14px !important; }
@@ -18991,11 +18991,11 @@ body {
     .checkout-area-summery .summery-area-content {
       margin-bottom: 25px;
       padding-bottom: 25px;
-      border-bottom: 1px solid #EBEBF2; }
+      border-bottom: 1px solid #ebebf2; }
       .checkout-area-summery .summery-area-content-item {
         margin-bottom: 15px;
         padding-bottom: 15px;
-        border-bottom: 1px solid #EBEBF2; }
+        border-bottom: 1px solid #ebebf2; }
         .checkout-area-summery .summery-area-content-item .image {
           width: 130px;
           height: 100px; }
@@ -19013,9 +19013,9 @@ body {
           font-size: 14px !important; }
           .checkout-area-summery .summery-area-content-item .text h6 span, .checkout-area-summery .summery-area-content-item .text .h6 span {
             font-size: 12px !important;
-            color: #8F8FA3 !important; }
+            color: #8f8fa3 !important; }
     .checkout-area-summery .summery-area-text .summery-text {
-      border-bottom: 1px solid #EBEBF2;
+      border-bottom: 1px solid #ebebf2;
       padding: 10px 0px; }
       .checkout-area-summery .summery-area-text .summery-text .row {
         margin-bottom: 0 !important; }
@@ -19032,6 +19032,23 @@ body {
       .checkout-area-summery .summery-area-text .summery-text .total-cost p {
         font-size: 20px !important;
         color: #202029 !important; }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .checkout-tab .nav .nav-item .nav-link h6, .checkout-tab .nav .nav-item .nav-link .h6 {
+    font-size: 14px !important;
+    line-height: 26px !important; }
+  .checkout-area-summery .summery-area-content-item .image {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .checkout-area-summery .summery-area-content-item .text h6, .checkout-area-summery .summery-area-content-item .text .h6 {
+    margin-top: 0px !important; } }
 
 @media (max-width: 420px) {
   .checkout-area {
@@ -19807,7 +19824,10 @@ header {
   .about-feature h4, .about-feature .h4,
   .bestInstructor__title h3, .bestInstructor__title .h3 {
     font-size: 32px;
-    line-height: 46px; } }
+    line-height: 46px; }
+  .checkout-tab .nav .nav-item .nav-link h6, .checkout-tab .nav .nav-item .nav-link .h6, .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5 {
+    font-size: 18px !important;
+    line-height: 26px !important; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   section {
@@ -19819,10 +19839,5 @@ header {
     font-size: 14px !important;
     line-height: 26px !important; }
   .learning-rules-ends img {
-    height: auto; }
-  .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6,
-  .cart-area .cart-wizard-area .text .h6,
-  .cart-area .cart-wizard-area .text .h6 {
-    font-size: 18px !important;
-    line-height: 26px !important; } }
+    height: auto; } }
 
