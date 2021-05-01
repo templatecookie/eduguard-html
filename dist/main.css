@@ -17599,7 +17599,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .comingsoon-header .footer__wrapper_social a {
-    color: #42414B;
+    color: #42414b;
     border: 1px solid white;
     -webkit-transition: 0.3s all linear;
     transition: 0.3s all linear; }
@@ -17690,7 +17690,7 @@ body {
       font-weight: 400 !important; }
     .count-down-item p {
       margin: 0;
-      color: #8F8FA3 !important;
+      color: #8f8fa3 !important;
       letter-spacing: 1px;
       font-size: 12px !important; }
 
@@ -17804,9 +17804,7 @@ body {
     .comingsoon-area-start .count-down p {
       margin-bottom: 0; }
     .comingsoon-area-start .count-down h6, .comingsoon-area-start .count-down .h6 {
-      font-size: 26px; }
-    .comingsoon-area-start .count-down-item {
-      height: 70px; } }
+      font-size: 26px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .comingsoon-header {
