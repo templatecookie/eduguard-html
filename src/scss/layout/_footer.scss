@@ -126,6 +126,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .footer {
+    &__list {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
   .footer {
@@ -141,6 +149,7 @@
 @media (min-width: 320px) and (max-width: 574px) {
   .footer {
     &__list {
+      margin-bottom: 15px;
       h6 {
         font-size: 18px !important ;
       }

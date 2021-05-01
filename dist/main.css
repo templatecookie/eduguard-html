@@ -10008,6 +10008,10 @@ button:focus {
   .footer__wrapper {
     max-width: 100%; } }
 
+@media (max-width: 767px) {
+  .footer__list {
+    margin-bottom: 30px; } }
+
 @media (min-width: 575px) and (max-width: 767px) {
   .footer.footer-ex-p {
     padding-top: 200px !important; }
@@ -10015,11 +10019,13 @@ button:focus {
     max-width: 100%; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .footer__list h6, .footer__list .h6 {
-    font-size: 18px !important; }
-  .footer__list ul li a {
-    font-size: 14px;
-    line-height: 26px; }
+  .footer__list {
+    margin-bottom: 15px; }
+    .footer__list h6, .footer__list .h6 {
+      font-size: 18px !important; }
+    .footer__list ul li a {
+      font-size: 14px;
+      line-height: 26px; }
   .footer__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
