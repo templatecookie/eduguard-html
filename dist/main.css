@@ -15274,13 +15274,13 @@ header .user-image {
     margin-bottom: 30px; }
     .cart-area .cart-wizard-area .image img {
       width: 200px;
-      height: 170px;
+      height: 100%;
       -o-object-fit: cover;
          object-fit: cover;
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px; }
     .cart-area .cart-wizard-area .text {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       padding: 20px;
@@ -15295,17 +15295,17 @@ header .user-image {
         margin-top: 7px;
         margin-bottom: 10px; }
         .cart-area .cart-wizard-area .text p a {
-          color: #8F8FA3; }
+          color: #8f8fa3; }
       .cart-area .cart-wizard-area .text .bottom-wizard p {
         color: #202029 !important;
         font-weight: 500;
         font-size: 18px !important; }
         .cart-area .cart-wizard-area .text .bottom-wizard p span {
-          color: #8F8FA3 !important;
+          color: #8f8fa3 !important;
           font-weight: 400 !important;
           font-size: 14px; }
   .cart-area .summery-wizard {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 40px 30px;
     border-radius: 5px; }
     .cart-area .summery-wizard-text {
@@ -15349,7 +15349,7 @@ header .user-image {
         right: 5px;
         height: 43px;
         width: 85px;
-        background-color: #00AF91;
+        background-color: #00af91;
         border: 1px solid transparent;
         border-radius: 4px;
         color: white; }
@@ -15375,6 +15375,10 @@ header .user-image {
   .total-wizard p {
     color: #202029 !important;
     font-size: 20px; }
+
+@media (max-width: 991px) {
+  .cart-area {
+    padding-top: 30px !important; } }
 
 @media (max-width: 767px) {
   .cart-area {
@@ -17886,7 +17890,7 @@ body {
   height: 8px;
   width: 8px;
   border-radius: 50%;
-  background-color: #0264ED;
+  background-color: #0264ed;
   display: inline-block;
   margin-right: 5px; }
 
@@ -17896,9 +17900,9 @@ body {
 
 .successful-instructor-feature {
   padding: 30px 20px;
-  border: 1px solid #EBEBF2;
+  border: 1px solid #ebebf2;
   border-radius: 5px;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear; }
   .successful-instructor-feature:hover {
@@ -17908,11 +17912,11 @@ body {
     .successful-instructor-feature:hover .successful-instructor-feature-image svg path {
       stroke: white; }
     .successful-instructor-feature:hover .successful-instructor-feature-image.first-bg {
-      background: #FF7A1A; }
+      background: #ff7a1a; }
     .successful-instructor-feature:hover .successful-instructor-feature-image.second-bg {
-      background: #00AF91; }
+      background: #00af91; }
     .successful-instructor-feature:hover .successful-instructor-feature-image.third-bg {
-      background: #1089FF; }
+      background: #1089ff; }
   .successful-instructor-feature-image {
     height: 72px;
     width: 72px;
@@ -17997,6 +18001,11 @@ body {
   100% {
     -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
             transform: rotate(360deg) translate(-10px) rotate(-360deg); } }
+
+@media (max-width: 991px) {
+  .becomeInstructor,
+  .instructor-rules {
+    padding-top: 30px !important; } }
 
 @media (max-width: 420px) {
   .info-desk-image,
@@ -19718,7 +19727,21 @@ header {
     padding: 90px 0px !important; }
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-size: 38px !important;
-    line-height: 52px !important; } }
+    line-height: 52px !important; }
+  .checkout-area,
+  .contactHero,
+  .event-sub-section,
+  .event-info,
+  .faq-area,
+  .banner-two,
+  .featured-categories,
+  .brands-area-two,
+  .browse-categories,
+  .instructor-courses,
+  .students-info {
+    padding-top: 30px !important; }
+  .get-started {
+    padding-bottom: 30px !important; } }
 
 @media (max-width: 767px) {
   section {

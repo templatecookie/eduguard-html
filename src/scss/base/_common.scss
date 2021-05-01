@@ -12,28 +12,24 @@
   section {
     @extend %space-1;
   }
-  // .browse-categories,
-  // .featured-popular-courses,
-  // .chose-course,
-  // .get-started,
-  // .latest-events-featured,
-  // .best-instructor-featured,
-  // .main-become-instructor,
-  // .featured-popular-courses,
-  // .learning-rules,
-  // .about-intro,
-  // .aboutFeature,
-  // .brands,
-  // .bestInstructor,
-  // .becomeInstructor,
-  // .instructor-rules,
-  // .sucessfullInstructor,
-  // .callToAction,
-  // .footer,
-  // .cart-area,
-  // .checkout-area {
-  //   @extend %space-1;
-  // }
+  // extra space remove(top)
+  .checkout-area,
+  .contactHero,
+  .event-sub-section,
+  .event-info,
+  .faq-area,
+  .banner-two,
+  .featured-categories,
+  .brands-area-two,
+  .browse-categories,
+  .instructor-courses,
+  .students-info {
+    padding-top: 30px !important;
+  }
+  // extra space remove(bottom)
+  .get-started {
+    padding-bottom: 30px !important;
+  }
 
   // Fonts Title
   h1,

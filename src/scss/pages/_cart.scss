@@ -1,207 +1,214 @@
 .cart-area {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 
-    .cart-wizard-area {
-        margin-bottom: 30px;
+  .cart-wizard-area {
+    margin-bottom: 30px;
 
-        .image {
-            img {
-                width: 200px;
-                height: 170px;
-                object-fit: cover;
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 5px;
-            }
-        }
-
-        .text {
-            background-color: #FFFFFF;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            padding: 20px;
-            padding-bottom: 0 !important;
-            max-width: 480px;
-            h6 {
-                font-weight: 500;
-                font-size: 20px;
-
-                a {
-                    display: block;
-                }
-            }
-
-            p {
-                margin-top: 7px;
-                margin-bottom: 10px;
-
-                a {
-                    color: #8F8FA3;
-                }
-            }
-
-            .bottom-wizard {
-                p {
-                    color: #202029 !important;
-                    font-weight: 500;
-                    font-size: 18px !important;
-
-                    span {
-                        color: #8F8FA3 !important;
-                        font-weight: 400 !important;
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
+    .image {
+      img {
+        width: 200px;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
     }
 
-    .summery-wizard {
-        background-color: #FFFFFF;
-        padding: 40px 30px;
-        border-radius: 5px;
+    .text {
+      background-color: #ffffff;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 20px;
+      padding-bottom: 0 !important;
+      max-width: 480px;
+      h6 {
+        font-weight: 500;
+        font-size: 20px;
 
-        &-text {
-            padding: 12px 0px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid rgba($color: #8F8FA3, $alpha: 0.30);
-
-            h6 {
-                color: #666575 !important;
-                font-weight: 500 !important;
-                font-size: 16px !important;
-            }
+        a {
+          display: block;
         }
+      }
 
-        form {
-            label {
-                color: #202029;
-                font-weight: 500;
-                font-size: 14px;
-                margin-bottom: 5px;
-            }
+      p {
+        margin-top: 7px;
+        margin-bottom: 10px;
 
-            .cart-input {
-                position: relative;
-
-                input {
-                    height: 56px;
-                    border-radius: 4px;
-                    border-color: rgba($color: #8F8FA3, $alpha: 0.30);
-
-                    &:focus {
-                        box-shadow: none !important;
-                    }
-                }
-
-                .sm-button {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 5px;
-                    height: 43px;
-                    width: 85px;
-                    background-color: #00AF91;
-                    border: 1px solid transparent;
-                    border-radius: 4px;
-                    color: white;
-                }
-            }
+        a {
+          color: #8f8fa3;
         }
+      }
+
+      .bottom-wizard {
+        p {
+          color: #202029 !important;
+          font-weight: 500;
+          font-size: 18px !important;
+
+          span {
+            color: #8f8fa3 !important;
+            font-weight: 400 !important;
+            font-size: 14px;
+          }
+        }
+      }
     }
+  }
+
+  .summery-wizard {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 5px;
+
+    &-text {
+      padding: 12px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
+
+      h6 {
+        color: #666575 !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+      }
+    }
+
+    form {
+      label {
+        color: #202029;
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      .cart-input {
+        position: relative;
+
+        input {
+          height: 56px;
+          border-radius: 4px;
+          border-color: rgba($color: #8f8fa3, $alpha: 0.3);
+
+          &:focus {
+            box-shadow: none !important;
+          }
+        }
+
+        .sm-button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 5px;
+          height: 43px;
+          width: 85px;
+          background-color: #00af91;
+          border: 1px solid transparent;
+          border-radius: 4px;
+          color: white;
+        }
+      }
+    }
+  }
 }
 
 .total-wizard {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 12px;
-    margin-bottom: 30px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  margin-bottom: 30px !important;
 
-    h6 {
-        font-weight: 600 !important;
-        font-size: 20px !important;
-    }
+  h6 {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+  }
 
-    p {
-        color: #202029 !important;
-        font-size: 20px;
-    }
+  p {
+    color: #202029 !important;
+    font-size: 20px;
+  }
 }
 
 // Responsive
+
+@media (max-width: 991px) {
+  .cart-area {
+    padding-top: 30px !important;
+  }
+}
+
 // extra Small devices 420px
 @media (max-width: 767px) {
-    .cart-area {
-        padding: 30px 0px;
+  .cart-area {
+    padding: 30px 0px;
 
-        .cart-wizard-area {
-            flex-direction: column;
+    .cart-wizard-area {
+      flex-direction: column;
 
-            .image {
-                display: none;
-            }
+      .image {
+        display: none;
+      }
 
-            .text {
-                border-radius: 5px !important;
+      .text {
+        border-radius: 5px !important;
 
-                h6 {
-                    font-size: 18px !important;
-                }
-            }
+        h6 {
+          font-size: 18px !important;
         }
-
-        form label {
-            margin-top: 10px;
-            margin-bottom: 10px !important;
-        }
+      }
     }
+
+    form label {
+      margin-top: 10px;
+      margin-bottom: 10px !important;
+    }
+  }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-    .cart-area {
-        padding: 30px 0px;
+  .cart-area {
+    padding: 30px 0px;
 
-        .cart-wizard-area {
-            .text {
-                h6 {
-                    font-size: 18px !important;
-                }
-            }
+    .cart-wizard-area {
+      .text {
+        h6 {
+          font-size: 18px !important;
         }
-
-        form label {
-            margin-top: 10px;
-            margin-bottom: 10px !important;
-        }
+      }
     }
+
+    form label {
+      margin-top: 10px;
+      margin-bottom: 10px !important;
+    }
+  }
 }
 
 // large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
-    .cart-area {
-        padding: 50px 0px;
+  .cart-area {
+    padding: 50px 0px;
 
-        .cart-wizard-area {
-            .image {
-                display: none;
-            }
+    .cart-wizard-area {
+      .image {
+        display: none;
+      }
 
-            .text {
-                max-width: 100%;
-                border-radius: 5px !important;
+      .text {
+        max-width: 100%;
+        border-radius: 5px !important;
 
-                h6 {
-                    font-size: 18px !important;
-                }
-            }
+        h6 {
+          font-size: 18px !important;
         }
-
-        form label {
-            margin-top: 10px;
-            margin-bottom: 10px !important;
-        }
+      }
     }
+
+    form label {
+      margin-top: 10px;
+      margin-bottom: 10px !important;
+    }
+  }
 }
