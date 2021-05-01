@@ -11239,7 +11239,7 @@ header .user-image {
     margin-bottom: 24px;
     width: 100%;
     height: 3px;
-    background-color: #EBEBF2;
+    background-color: #ebebf2;
     position: relative; }
     .videolist-area-bar::before {
       position: absolute;
@@ -11248,7 +11248,7 @@ header .user-image {
       left: 0;
       width: 24px;
       height: 3px;
-      background-color: #1089FF;
+      background-color: #1089ff;
       border-radius: 0px 20px 20px 0px; }
   .videolist-area-wizard {
     padding: 0px 24px;
@@ -11256,14 +11256,16 @@ header .user-image {
     .videolist-area-wizard .wizard-heading {
       margin-bottom: 8px; }
       .videolist-area-wizard .wizard-heading h6, .videolist-area-wizard .wizard-heading .h6 {
+        font-size: 16px;
+        line-height: 24px;
         font-weight: 500 !important; }
     .videolist-area-wizard .main-wizard .active {
-      background: #1089FF;
+      background: #1089ff;
       border-radius: 4px;
       border-bottom: none;
-      border: 1px solid #1089FF; }
+      border: 1px solid #1089ff; }
       .videolist-area-wizard .main-wizard .active .main-wizard-icon svg {
-        color: #FFFFFF; }
+        color: #ffffff; }
       .videolist-area-wizard .main-wizard .active .main-wizard-title p {
         color: rgba(255, 255, 255, 0.8) !important; }
       .videolist-area-wizard .main-wizard .active .main-wizard-end span {
@@ -11273,7 +11275,7 @@ header .user-image {
       -webkit-transition: 0.3s all linear;
       transition: 0.3s all linear; }
       .videolist-area-wizard .main-wizard .download-wizard .main-wizard-icon svg {
-        color: #00AF91; }
+        color: #00af91; }
       .videolist-area-wizard .main-wizard .download-wizard .main-wizard-end small, .videolist-area-wizard .main-wizard .download-wizard .main-wizard-end .small {
         color: #666575;
         text-decoration: underline;
@@ -11299,7 +11301,7 @@ header .user-image {
               justify-content: space-between;
       padding: 12px;
       background-color: transparent;
-      border-bottom: 1px solid #EBEBF2; }
+      border-bottom: 1px solid #ebebf2; }
     .videolist-area-wizard .main-wizard-start {
       display: -webkit-box;
       display: -webkit-flex;
@@ -11312,11 +11314,11 @@ header .user-image {
     .videolist-area-wizard .main-wizard-icon {
       margin-right: 8px; }
       .videolist-area-wizard .main-wizard-icon svg {
-        color: #1089FF; }
+        color: #1089ff; }
     .videolist-area-wizard .main-wizard-title p {
       font-size: 14px; }
     .videolist-area-wizard .main-wizard-end span {
-      color: #8F8FA3;
+      color: #8f8fa3;
       font-size: 14px; }
 
 @media (max-width: 420px) {
@@ -16321,13 +16323,13 @@ header .user-image {
   font-size: 14px !important; }
 
 .created-by-text h6, .created-by-text .h6 {
-  color: #42414B !important;
+  color: #42414b !important;
   font-size: 18px !important; }
   .created-by-text h6 a, .created-by-text .h6 a {
     display: block; }
 
 .another-color {
-  color: #8F8FA3 !important; }
+  color: #8f8fa3 !important; }
 
 .related-course .shape .img-01 {
   top: 50%;
@@ -16369,7 +16371,7 @@ header .user-image {
       position: absolute;
       bottom: -1px;
       left: 0;
-      background-color: #0264ED;
+      background-color: #0264ed;
       width: 100%;
       height: 3px; }
   .course-overview-nav .nav-item .nav-link {
@@ -16385,7 +16387,7 @@ header .user-image {
 .course-overview-main-item {
   margin-bottom: 30px; }
   .course-overview-main-item h6, .course-overview-main-item .h6 {
-    color: #42414B !important;
+    color: #42414b !important;
     margin-bottom: 16px; }
 
 .course-overview-main .bullets-line {
@@ -16412,6 +16414,10 @@ header .user-image {
 
 .course-overview-content {
   padding-bottom: 100px; }
+
+.course-overview__point li {
+  list-style: disc;
+  margin-left: 20px; }
 
 @media (max-width: 420px) {
   .course-overview-image {
@@ -16820,16 +16826,16 @@ header .user-image {
   background-color: rgba(255, 255, 255, 0.4); }
 
 .video-js .vjs-play-progress:before {
-  color: #1089FF;
+  color: #1089ff;
   border: 2px solid white;
   border-radius: 50%;
-  background: #1089FF;
+  background: #1089ff;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
 
 .video-js .vjs-play-progress {
-  background-color: #1089FF; }
+  background-color: #1089ff; }
 
 .video-js .vjs-control-bar {
   background-color: transparent; }
@@ -16847,7 +16853,7 @@ header .user-image {
     padding-right: 5px; }
     .course-description-start-content {
       padding: 18px 30px 26px 30px;
-      background: #FFFFFF;
+      background: #ffffff;
       border-radius: 0px 0px 8px 8px; }
       .course-description-start-content h4, .course-description-start-content .h4 {
         font-weight: 500 !important;
@@ -16863,7 +16869,7 @@ header .user-image {
           left: 0;
           height: 3px;
           width: 100%;
-          background-color: #0264ED;
+          background-color: #0264ed;
           border-radius: 20px; }
       .course-description-start-content-tab .nav-link {
         padding-left: 0;
@@ -16879,7 +16885,35 @@ header .user-image {
         .course-description-start-content-tabitem .lesson-description {
           max-width: 800px; }
           .course-description-start-content-tabitem .lesson-description p a {
-            color: #1089FF; }
+            color: #1089ff; }
+
+@media (max-width: 1200px) {
+  .coursedescription-header-start {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important; }
+    .coursedescription-header-start .topic-info {
+      margin-left: 30px; }
+  .coursedescription-header-end {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
 
 @media (max-width: 420px) {
   .video-js {
@@ -17047,6 +17081,22 @@ header .user-image {
         .course-description-end .coursecontents-wizard-content-end {
           margin-top: 5px; } }
 
+@media (max-width: 767px) {
+  .course-description-start-content h4, .course-description-start-content .h4,
+  .course-description-start-content .h4 {
+    font-size: 28px !important;
+    line-height: 42px !important; }
+  .course-description-start-content-tab .nav-tabs {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .course-overview-main-item h6, .course-overview-main-item .h6,
+  .course-overview-main-item .h6 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    margin-bottom: 0px; } }
+
 @media (min-width: 575px) and (max-width: 767px) {
   .video-js {
     min-height: auto; }
@@ -17119,21 +17169,20 @@ header .user-image {
         .course-description-end .coursecontents-wizard-content-end {
           margin-top: 5px; } }
 
+@media (max-width: 991px) {
+  .videolist-area-heading h6, .videolist-area-heading .h6 {
+    font-size: 24px !important;
+    line-height: 36px !important; }
+  .wizard-heading h6, .wizard-heading .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .video-js {
     min-height: auto; }
   .coursedescription-header {
     padding: 0;
-    padding-top: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    padding-top: 20px; }
     .coursedescription-header-start {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -17196,16 +17245,7 @@ header .user-image {
     min-height: auto; }
   .coursedescription-header {
     padding: 0;
-    padding-top: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    padding-top: 20px; }
     .coursedescription-header-start {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -17275,6 +17315,42 @@ header .user-image {
           margin-left: 0; }
         .course-description-end .coursecontents-wizard-content-end {
           margin-top: 5px; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .coursedescription-header-start {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; }
+  .coursedescription-header-start .topic-info {
+    margin-left: 0px; }
+  .coursedescription-header-end {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .course-description-start-content h4, .course-description-start-content .h4 {
+    font-size: 18px !important;
+    line-height: 28px !important; }
+  .course-description-start-content-tab .nav-link {
+    margin-right: 15px; }
+  .videolist-area-heading h6, .videolist-area-heading .h6,
+  .videolist-area-heading .h6 {
+    font-size: 16px !important;
+    line-height: 26px !important; }
+  .videolist-area-wizard .main-wizard a {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .course-instructor {
+    padding: 24px 0px !important; } }
 
 .course-notes {
   margin-bottom: 20px; }
