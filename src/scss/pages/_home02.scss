@@ -115,9 +115,6 @@
     }
   }
 }
-
-// Banner Ends Here
-
 // Intro Featured Starts Here
 .intro-featured {
   padding-bottom: 100px;
@@ -164,8 +161,6 @@
   }
 }
 
-// Intro Featured Ends Here
-
 // Featured Categories Starts Here
 .featured-categories {
   padding-bottom: 100px;
@@ -197,9 +192,6 @@
     margin-top: 50px;
   }
 }
-
-// Featured Categories Ends Here
-
 // Popular Courses Starts Here
 .featured-popular-courses {
   padding: 100px 0px;
@@ -276,8 +268,6 @@
   }
 }
 
-// Popular Courses Ends Here
-
 // Students Says Starts Here
 .students-says {
   padding-top: 100px;
@@ -312,12 +302,10 @@
   }
 }
 
-// Students Says Ends Here
-
 // Brands Area Starts Here
 .brands-area-two {
   padding-top: 40px;
-
+  padding-bottom: 100px;
   &-heading {
     max-width: 430px;
 
@@ -331,14 +319,9 @@
     }
   }
 }
-
-// Brands Area Ends Here
-
 // Instructor Featured Area Starts Here
 .best-instructor-featured {
   padding: 100px 0px;
-  background-color: rgba($color: #ebebf2, $alpha: 0.4);
-
   h3 {
     color: #202029 !important;
   }
@@ -348,9 +331,6 @@
     height: 290px;
   }
 }
-
-// Instructor Featured Area Ends Here
-
 // Latest Events Featured Starts Here
 .latest-events-featured {
   padding: 100px 0px;
@@ -362,14 +342,22 @@
   }
 }
 
-// Latest Events Featured Ends Here
-
 // Join Area Starts Here
 .join-area-02 {
-  background-color: rgba($color: #ebebf2, $alpha: 0.6);
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00af91;
+    opacity: 0.1;
+    z-index: -1;
+  }
 }
-
-// Join Area Ends Here
 
 // Get Started Starts Here
 .get-started {

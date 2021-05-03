@@ -10478,7 +10478,7 @@ header .user-image {
       z-index: -1; }
     .testimonial__img .rectangle {
       position: absolute;
-      bottom: -65px;
+      bottom: -40px;
       left: -78px;
       z-index: -2; }
     .testimonial__img .play-video {
@@ -10541,7 +10541,8 @@ header .user-image {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      margin-top: -10px; }
       .testimonial__wrapper .slider-arrows .prev-arrow {
         margin-right: 20px; }
       .testimonial__wrapper .slider-arrows .prev-arrow,
@@ -12806,7 +12807,7 @@ header .user-image {
            object-fit: cover; }
 
 .main-instructor-featured {
-  background-color: white !important;
+  background: #ebebf2;
   position: relative; }
   .main-instructor-featured .instructor-overlay {
     bottom: 90px; }
@@ -13558,7 +13559,8 @@ header .user-image {
     color: #202029 !important; }
 
 .brands-area-two {
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 100px; }
   .brands-area-two-heading {
     max-width: 430px; }
     .brands-area-two-heading h4, .brands-area-two-heading .h4 {
@@ -13568,8 +13570,7 @@ header .user-image {
       font-size: 14px !important; }
 
 .best-instructor-featured {
-  padding: 100px 0px;
-  background-color: rgba(235, 235, 242, 0.4); }
+  padding: 100px 0px; }
   .best-instructor-featured h3, .best-instructor-featured .h3 {
     color: #202029 !important; }
   .best-instructor-featured .mentor__img img {
@@ -13584,7 +13585,18 @@ header .user-image {
     margin-bottom: 50px; }
 
 .join-area-02 {
-  background-color: rgba(235, 235, 242, 0.6); }
+  position: relative;
+  z-index: 1; }
+  .join-area-02::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00af91;
+    opacity: 0.1;
+    z-index: -1; }
 
 .get-started {
   padding: 100px 0px;

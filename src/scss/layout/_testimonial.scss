@@ -22,7 +22,7 @@
 
     .rectangle {
       position: absolute;
-      bottom: -65px;
+      bottom: -40px;
       left: -78px;
       z-index: -2;
     }
@@ -97,7 +97,7 @@
     .slider-arrows {
       display: flex;
       align-items: center;
-
+      margin-top: -10px;
       .prev-arrow {
         margin-right: 20px;
       }
@@ -350,8 +350,4 @@
     right: 50%;
     transform: translateX(50%);
   }
-}
-
-// extra Small devices 420px
-@media (max-width: 420px) {
 }
