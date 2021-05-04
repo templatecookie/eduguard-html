@@ -1,0 +1,45 @@
+%arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .prev-arrow,
+  .next-arrow {
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ebebf2;
+    cursor: pointer;
+    transition: 0.3s;
+    svg {
+      path {
+        stroke: #666575;
+      }
+    }
+    &:hover {
+      border-color: color(primary);
+      background-color: color(primary);
+      svg {
+        path {
+          stroke: white;
+        }
+      }
+    }
+  }
+  .prev-arrow {
+    position: absolute;
+    top: 50%;
+    left: -90px;
+    transform: translateY(-50%);
+  }
+  .next-arrow {
+    position: absolute;
+    top: 50%;
+    right: -90px;
+    transform: translateY(-50%);
+  }
+}

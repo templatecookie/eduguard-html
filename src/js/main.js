@@ -36,12 +36,12 @@
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
+    autoplay: true,
     dots: false,
+    arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: '.event__wrap .prev-arrow',
-    nextArrow: '.event__wrap .next-arrow',
+    prevArrow: ' .prev-arrow',
+    nextArrow: ' .next-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -51,6 +51,7 @@
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          arrows: true,
         },
       },
       {
@@ -60,6 +61,7 @@
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: true,
         },
       },
     ],
