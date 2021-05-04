@@ -207,18 +207,18 @@
   });
 
   // init Isotope
-  var $grid = $('.populercoures-item').isotope({
+  var $grid = $('.populercourse-item').isotope({
     // options
   });
   // filter items on button click
-  $('.populercoures-ist').on('click', 'li', function () {
+  $('.populercourse-ist').on('click', 'li', function () {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({
       filter: filterValue,
     });
 
     // filter items on button click
-    $('.populercoures-ist').on('click', 'li', function () {
+    $('.populercourse-ist').on('click', 'li', function () {
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({
         filter: filterValue,

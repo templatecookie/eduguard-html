@@ -296,6 +296,10 @@
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
+  .course {
+    width: 65%;
+    margin: auto;
+  }
   .students-info {
     padding-bottom: 30px;
   }
