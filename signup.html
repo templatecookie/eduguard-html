@@ -118,7 +118,7 @@
                             <label for="password">password</label>
                             <div class="form-alert-input">
                                 <input type="password" placeholder="........." id="password">
-                                <div class="form-alert-icon">
+                                <div class="form-alert-icon" onclick="showPassword('password',this)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="feather feather-eye">
@@ -132,7 +132,7 @@
                             <label for="confirm-password">Confirm password</label>
                             <div class="form-alert-input">
                                 <input type="password" placeholder="Type here..." id="confirm-password">
-                                <div class="form-alert-icon">
+                                <div class="form-alert-icon"  onclick="showPassword('confirm-password',this)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="feather feather-eye">
@@ -218,30 +218,12 @@
         <img src="dist/images/shape/dotshape01.svg" alt="shape" class="img-fluid second-dotimage">
     </section>
     <!-- Dot Images Ends Here -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/bootstrap.bundle.min.js"></script>
     <script src="src/scss/vendors/plugin/js/isotope.pkgd.min.js"></script>
     <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
     <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
     <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
+    <script src="src/js/app.js"></script>
     <script src="dist/main.js"></script>
 </body>
