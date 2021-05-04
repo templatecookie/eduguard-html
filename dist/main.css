@@ -14743,7 +14743,7 @@ header .user-image {
     background-color: white;
     border-radius: 6px; }
     .students-info-intro-start {
-      border-right: 1px solid #EBEBF2;
+      border-right: 1px solid #ebebf2;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -14780,7 +14780,7 @@ header .user-image {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        border-right: 1px solid #EBEBF2;
+        border-right: 1px solid #ebebf2;
         padding-right: 30px; }
         .students-info-intro-end .enrolled-courses-icon {
           margin-right: 12px;
@@ -14800,7 +14800,7 @@ header .user-image {
           -webkit-justify-content: center;
               -ms-flex-pack: center;
                   justify-content: center;
-          color: #1089FF; }
+          color: #1089ff; }
       .students-info-intro-end .completed-courses {
         display: -webkit-box;
         display: -webkit-flex;
@@ -14829,7 +14829,7 @@ header .user-image {
           -webkit-justify-content: center;
               -ms-flex-pack: center;
                   justify-content: center;
-          color: #00AF91; }
+          color: #00af91; }
   .students-info-main .nav-tabs {
     padding: 12px 100px;
     padding-top: 0;
@@ -14854,7 +14854,7 @@ header .user-image {
           left: 0;
           height: 3px;
           width: 100%;
-          background-color: #0264ED;
+          background-color: #0264ed;
           border-radius: 10px !important; }
   .students-info-main .tab-content {
     padding-top: 30px; }
@@ -14869,270 +14869,6 @@ header .user-image {
       color: #666575 !important; }
     .students-info-main .tab-content .info-student-topic p {
       font-size: 14px !important; }
-
-@media (max-width: 420px) {
-  .students-info {
-    padding-bottom: 30px; }
-  .students-info-intro {
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  .students-info-intro-start {
-    margin-bottom: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-right: 0;
-    border-bottom: 1px solid #EBEBF2;
-    padding-bottom: 10px; }
-    .students-info-intro-start .image {
-      margin-right: 0;
-      margin-bottom: 20px; }
-    .students-info-intro-start .text p {
-      text-align: center; }
-  .students-info-intro-end {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0; }
-    .students-info-intro-end .enrolled-courses {
-      padding: 0;
-      border-right: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .enrolled-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .enrolled-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-    .students-info-intro-end .completed-courses {
-      margin-top: 15px;
-      padding: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .completed-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .completed-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-  .students-info-main .nav-tabs {
-    padding: 0; }
-    .students-info-main .nav-tabs .nav-link {
-      margin-bottom: 10px;
-      padding-top: 0; }
-      .students-info-main .nav-tabs .nav-link.active::after {
-        bottom: -3px; }
-  .info-student {
-    margin-top: 30px;
-    padding-bottom: 10px !important; }
-    .info-student dl {
-      margin-bottom: 10px !important; } }
-
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  .students-info {
-    padding-bottom: 30px; }
-  .students-info-intro {
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  .students-info-intro-start {
-    margin-bottom: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-right: 0;
-    border-bottom: 1px solid #EBEBF2;
-    padding-bottom: 10px; }
-    .students-info-intro-start .image {
-      margin-right: 0;
-      margin-bottom: 20px; }
-    .students-info-intro-start .text p {
-      text-align: center; }
-  .students-info-intro-end {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0; }
-    .students-info-intro-end .enrolled-courses {
-      padding: 0;
-      border-right: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .enrolled-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .enrolled-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-    .students-info-intro-end .completed-courses {
-      margin-top: 15px;
-      padding: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .completed-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .completed-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-  .students-info-main .nav-tabs {
-    padding: 0; }
-    .students-info-main .nav-tabs .nav-link {
-      margin-bottom: 10px;
-      padding-top: 0; }
-      .students-info-main .nav-tabs .nav-link.active::after {
-        bottom: -3px; }
-  .info-student {
-    margin-top: 30px;
-    padding-bottom: 10px !important; }
-    .info-student dl {
-      margin-bottom: 10px !important; } }
-
-@media (min-width: 575px) and (max-width: 767px) {
-  .students-info {
-    padding-bottom: 30px; }
-  .students-info-intro {
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  .students-info-intro-start {
-    margin-bottom: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-right: 0;
-    border-bottom: 1px solid #EBEBF2;
-    padding-bottom: 10px; }
-    .students-info-intro-start .image {
-      margin-right: 0;
-      margin-bottom: 20px; }
-    .students-info-intro-start .text p {
-      text-align: center; }
-  .students-info-intro-end {
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    padding: 0; }
-    .students-info-intro-end .enrolled-courses {
-      padding: 0;
-      border-right: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .enrolled-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .enrolled-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-    .students-info-intro-end .completed-courses {
-      padding: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .completed-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .completed-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-  .students-info-main .nav-tabs {
-    padding: 0; }
-    .students-info-main .nav-tabs .nav-link {
-      margin-bottom: 10px;
-      padding-top: 0;
-      margin-left: 0 !important; }
-      .students-info-main .nav-tabs .nav-link.active::after {
-        bottom: -3px; }
-  .info-student {
-    margin-top: 30px;
-    padding-bottom: 10px !important; }
-    .info-student dl {
-      margin-bottom: 10px !important; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .students-info {
-    padding-bottom: 30px; }
-  .students-info-intro {
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  .students-info-intro-start {
-    margin-bottom: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-right: 0;
-    border-bottom: 1px solid #EBEBF2;
-    padding-bottom: 10px; }
-    .students-info-intro-start .image {
-      margin-right: 0;
-      margin-bottom: 20px; }
-    .students-info-intro-start .text p {
-      text-align: center; }
-  .students-info-intro-end {
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    padding: 0; }
-    .students-info-intro-end .enrolled-courses {
-      padding: 0;
-      border-right: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .enrolled-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .enrolled-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-    .students-info-intro-end .completed-courses {
-      padding: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .completed-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .completed-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-  .students-info-main .nav-tabs {
-    padding: 0; }
-    .students-info-main .nav-tabs .nav-link {
-      margin-bottom: 10px;
-      padding-top: 0;
-      margin-left: 0 !important; }
-      .students-info-main .nav-tabs .nav-link.active::after {
-        bottom: -3px; }
-  .info-student {
-    margin-top: 30px;
-    padding-bottom: 10px !important; }
-    .info-student dl {
-      margin-bottom: 10px !important; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .students-info {
@@ -15191,6 +14927,277 @@ header .user-image {
       margin-left: 0 !important; }
   .info-student {
     padding-bottom: 20px !important; }
+    .info-student dl {
+      margin-bottom: 10px !important; } }
+
+@media (max-width: 991px) {
+  .students-info .nav.nav-tabs {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .students-info {
+    padding-bottom: 30px; }
+  .students-info-intro {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .students-info-intro-start {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 0;
+    border-bottom: 1px solid #ebebf2;
+    padding-bottom: 10px; }
+    .students-info-intro-start .image {
+      margin-right: 0;
+      margin-bottom: 20px; }
+    .students-info-intro-start .text p {
+      text-align: center; }
+  .students-info-intro-end {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 0; }
+    .students-info-intro-end .enrolled-courses {
+      padding: 0;
+      border-right: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .students-info-intro-end .enrolled-courses-icon {
+        margin-right: 0; }
+      .students-info-intro-end .enrolled-courses-text {
+        margin-top: 10px;
+        text-align: center; }
+    .students-info-intro-end .completed-courses {
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .students-info-intro-end .completed-courses-icon {
+        margin-right: 0; }
+      .students-info-intro-end .completed-courses-text {
+        margin-top: 10px;
+        text-align: center; }
+  .students-info-main .nav-tabs {
+    padding: 0; }
+    .students-info-main .nav-tabs .nav-link {
+      margin-bottom: 10px;
+      padding-top: 0;
+      margin-left: 0 !important; }
+      .students-info-main .nav-tabs .nav-link.active::after {
+        bottom: -3px; }
+  .info-student {
+    margin-top: 30px;
+    padding-bottom: 10px !important; }
+    .info-student dl {
+      margin-bottom: 10px !important; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .students-info {
+    padding-bottom: 30px; }
+  .students-info-intro {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .students-info-intro-start {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 0;
+    border-bottom: 1px solid #ebebf2;
+    padding-bottom: 10px; }
+    .students-info-intro-start .image {
+      margin-right: 0;
+      margin-bottom: 20px; }
+    .students-info-intro-start .text p {
+      text-align: center; }
+  .students-info-intro-end {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 0; }
+    .students-info-intro-end .enrolled-courses {
+      padding: 0;
+      border-right: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .students-info-intro-end .enrolled-courses-icon {
+        margin-right: 0; }
+      .students-info-intro-end .enrolled-courses-text {
+        margin-top: 10px;
+        text-align: center; }
+    .students-info-intro-end .completed-courses {
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .students-info-intro-end .completed-courses-icon {
+        margin-right: 0; }
+      .students-info-intro-end .completed-courses-text {
+        margin-top: 10px;
+        text-align: center; }
+  .students-info-main .nav-tabs {
+    padding: 0; }
+    .students-info-main .nav-tabs .nav-link {
+      margin-bottom: 10px;
+      padding-top: 0;
+      margin-left: 0 !important; }
+      .students-info-main .nav-tabs .nav-link.active::after {
+        bottom: -3px; }
+  .info-student {
+    margin-top: 30px;
+    padding-bottom: 10px !important; }
+    .info-student dl {
+      margin-bottom: 10px !important; } }
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .students-info {
+    padding-bottom: 30px; }
+  .students-info-intro {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .students-info-intro-start {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 0;
+    border-bottom: 1px solid #ebebf2;
+    padding-bottom: 10px; }
+    .students-info-intro-start .image {
+      margin-right: 0;
+      margin-bottom: 20px; }
+    .students-info-intro-start .text p {
+      text-align: center; }
+  .students-info-intro-end {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0; }
+    .students-info-intro-end .enrolled-courses {
+      padding: 0;
+      border-right: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .students-info-intro-end .enrolled-courses-icon {
+        margin-right: 0; }
+      .students-info-intro-end .enrolled-courses-text {
+        margin-top: 10px;
+        text-align: center; }
+    .students-info-intro-end .completed-courses {
+      margin-top: 15px;
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .students-info-intro-end .completed-courses-icon {
+        margin-right: 0; }
+      .students-info-intro-end .completed-courses-text {
+        margin-top: 10px;
+        text-align: center; }
+  .students-info-main .nav-tabs {
+    padding: 0; }
+    .students-info-main .nav-tabs .nav-link {
+      margin-bottom: 10px;
+      padding-top: 0; }
+      .students-info-main .nav-tabs .nav-link.active::after {
+        bottom: -3px; }
+  .info-student {
+    margin-top: 30px;
+    padding-bottom: 10px !important; }
+    .info-student dl {
+      margin-bottom: 10px !important; } }
+
+@media (max-width: 420px) {
+  .students-info {
+    padding-bottom: 30px; }
+  .students-info-intro {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .students-info-intro-start {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 0;
+    border-bottom: 1px solid #ebebf2;
+    padding-bottom: 10px; }
+    .students-info-intro-start .image {
+      margin-right: 0;
+      margin-bottom: 20px; }
+    .students-info-intro-start .text p {
+      text-align: center; }
+  .students-info-intro-end {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0; }
+    .students-info-intro-end .enrolled-courses {
+      padding: 0;
+      border-right: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .students-info-intro-end .enrolled-courses-icon {
+        margin-right: 0; }
+      .students-info-intro-end .enrolled-courses-text {
+        margin-top: 10px;
+        text-align: center; }
+    .students-info-intro-end .completed-courses {
+      margin-top: 15px;
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .students-info-intro-end .completed-courses-icon {
+        margin-right: 0; }
+      .students-info-intro-end .completed-courses-text {
+        margin-top: 10px;
+        text-align: center; }
+  .students-info-main .nav-tabs {
+    padding: 0; }
+    .students-info-main .nav-tabs .nav-link {
+      margin-bottom: 10px;
+      padding-top: 0; }
+      .students-info-main .nav-tabs .nav-link.active::after {
+        bottom: -3px; }
+  .info-student {
+    margin-top: 30px;
+    padding-bottom: 10px !important; }
     .info-student dl {
       margin-bottom: 10px !important; } }
 
