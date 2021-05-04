@@ -15461,6 +15461,10 @@ header .user-image {
   text-align: center;
   margin-top: 10px; }
 
+@media (max-width: 991px) {
+  .white-bg {
+    margin-bottom: 30px; } }
+
 @media (max-width: 767px) {
   .students-info-form form .row .col-lg-6:nth-child(2) {
     margin-top: 0px; }
