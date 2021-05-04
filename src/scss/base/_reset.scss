@@ -1,107 +1,116 @@
 * {
-	margin: 0;
-	padding: 0;
-	outline: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
 }
 
 img {
-	border: 0;
-	outline: 0;
-	max-width: 100%;
+  border: 0;
+  outline: 0;
+  max-width: 100%;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 1200px) {
-
-	.container,
-	.container-sm,
-	.container-md,
-	.container-lg,
-	.container-xl {
-		max-width: 1170px;
-	}
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1170px;
+  }
 }
 
 body {
-	font-family: $font;
-	transition: .3s;
+  font-family: $font;
+  transition: 0.3s;
 }
 
 a:focus,
 .button:focus {
-	text-decoration: none;
-	outline: none;
-	box-shadow: none !important;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none !important;
 }
-a{
-	transition: .3s;
+a {
+  transition: 0.3s;
 }
 a,
 a:focus,
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 ul {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 li {
-	list-style: none
+  list-style: none;
 }
 
 .bg-warning {
-	transition: .3s;
-	background-color: rgba(255, 201, 27, 0.1) !important;
-	svg {
-		transition: .3s;
-		path {
-			stroke: #FFC91B;
-		}
-	}
-
+  transition: 0.3s;
+  background-color: rgba(255, 201, 27, 0.1) !important;
+  svg {
+    transition: 0.3s;
+    path {
+      stroke: #ffc91b;
+    }
+  }
 }
 
 .bg-success {
-	transition: .3s;
-	background-color: rgba(0, 175, 145, 0.1) !important;
-	svg {
-		transition: .3s;
-		path {
-			stroke: #00AF91;
-		}
-	}
-
+  transition: 0.3s;
+  background-color: rgba(0, 175, 145, 0.1) !important;
+  svg {
+    transition: 0.3s;
+    path {
+      stroke: #00af91;
+    }
+  }
 }
 
 .bg-denger {
-	transition: .3s;
-	background-color: rgba(241, 92, 76, 0.1) !important;
-	svg {
-		transition: .3s;
-		path {
-			stroke: #F15C4C;
-		}
-	}
+  transition: 0.3s;
+  background-color: rgba(241, 92, 76, 0.1) !important;
+  svg {
+    transition: 0.3s;
+    path {
+      stroke: #f15c4c;
+    }
+  }
 }
-.section-title{
-	margin-bottom: 50px;
+.section-title {
+  margin-bottom: 50px;
 }
 
-.mb-30{
-	margin-bottom: 30px;
+.mb-30 {
+  margin-bottom: 30px;
 }
-.footer-ex-p{
-    padding-top: 220px !important;
+.footer-ex-p {
+  padding-top: 220px !important;
 }
-button{
-	&:focus{
-		outline: none;
-	}
+button {
+  &:focus {
+    outline: none;
+  }
 }

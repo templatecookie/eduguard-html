@@ -9823,8 +9823,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  -webkit-transition: .3s;
-  transition: .3s; }
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 a:focus,
 .button:focus {
@@ -9834,8 +9834,8 @@ a:focus,
           box-shadow: none !important; }
 
 a {
-  -webkit-transition: .3s;
-  transition: .3s; }
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 a,
 a:focus,
@@ -9843,6 +9843,16 @@ a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
   text-decoration: none; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield; }
 
 ul {
   margin: 0px;
@@ -9852,34 +9862,34 @@ li {
   list-style: none; }
 
 .bg-warning {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: rgba(255, 201, 27, 0.1) !important; }
   .bg-warning svg {
-    -webkit-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .bg-warning svg path {
-      stroke: #FFC91B; }
+      stroke: #ffc91b; }
 
 .bg-success {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: rgba(0, 175, 145, 0.1) !important; }
   .bg-success svg {
-    -webkit-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .bg-success svg path {
-      stroke: #00AF91; }
+      stroke: #00af91; }
 
 .bg-denger {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: rgba(241, 92, 76, 0.1) !important; }
   .bg-denger svg {
-    -webkit-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .bg-denger svg path {
-      stroke: #F15C4C; }
+      stroke: #f15c4c; }
 
 .section-title {
   margin-bottom: 50px; }
@@ -19702,6 +19712,23 @@ header {
   .signup-area-image {
     margin-right: -140px;
     margin-left: 60px; }
+  .signup-area .verification input {
+    font-size: 32px;
+    line-height: 40px;
+    color: #202029;
+    border: 1px solid transparent; }
+    .signup-area .verification input:focus {
+      border: 1px solid #1089ff !important; }
+    .signup-area .verification input::-webkit-input-placeholder {
+      color: #8f8fa3; }
+    .signup-area .verification input::-moz-placeholder {
+      color: #8f8fa3; }
+    .signup-area .verification input:-ms-input-placeholder {
+      color: #8f8fa3; }
+    .signup-area .verification input::-ms-input-placeholder {
+      color: #8f8fa3; }
+    .signup-area .verification input::placeholder {
+      color: #8f8fa3; }
 
 .dot-images .first-dotimage {
   position: absolute;
