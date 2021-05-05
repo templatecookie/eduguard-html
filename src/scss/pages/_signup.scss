@@ -69,6 +69,15 @@ header {
   }
 }
 
+@media (max-width: 1199px) {
+  .signup-area-image {
+    display: flex;
+    justify-content: center;
+    margin: auto !important;
+    margin-bottom: 30px !important;
+  }
+}
+
 // extra Small devices 420px
 @media (max-width: 420px) {
   .signup-area {
@@ -178,6 +187,10 @@ header {
     margin: 0px;
     margin-bottom: 30px;
   }
+
+  .signup-area {
+    padding-top: 30px !important;
+  }
 }
 
 // Medium devices 768px - 991px
@@ -193,6 +206,13 @@ header {
 
   .form-element input {
     padding: 12px 15px;
+  }
+
+  .signinButtons {
+    justify-content: center !important;
+    a {
+      margin: 0px 15px;
+    }
   }
 }
 
