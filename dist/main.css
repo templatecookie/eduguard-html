@@ -18516,7 +18516,7 @@ body {
   .instructor-rules {
     padding-top: 30px !important; } }
 
-@media (max-width: 420px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .info-desk-image,
   .instructor-rules-image,
   .become-instructor-image {
@@ -18527,30 +18527,29 @@ body {
     display: none; }
   .instructor-rules {
     padding: 0;
-    margin-bottom: 0px; }
+    margin-bottom: 80px; }
   .top-bg::after {
     display: none; }
   .instructor-feature-shape {
     display: none; }
   .section-bg {
-    padding-bottom: 30px; }
+    padding: 80px 0px; }
   .successful-instructor-feature-image {
     height: 55px;
     width: 55px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .info-desk-image,
   .instructor-rules-image,
   .become-instructor-image {
-    margin: 0 !important;
-    width: 100%; }
+    margin: 0 !important; }
   .info-desk-shape,
   .instructor-ruls-image-shape,
   .become-instructor-shape {
     display: none; }
   .instructor-rules {
     padding: 0;
-    margin-bottom: 0px; }
+    margin-bottom: 30px; }
   .top-bg::after {
     display: none; }
   .instructor-feature-shape {
@@ -18584,18 +18583,18 @@ body {
     height: 55px;
     width: 55px; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .info-desk-image,
+@media only screen and (min-width: 420px) and (max-width: 574px) {
   .instructor-rules-image,
   .become-instructor-image {
-    margin: 0 !important; }
+    margin: 0 !important;
+    width: 100%; }
   .info-desk-shape,
   .instructor-ruls-image-shape,
   .become-instructor-shape {
     display: none; }
   .instructor-rules {
     padding: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 0px; }
   .top-bg::after {
     display: none; }
   .instructor-feature-shape {
@@ -18606,7 +18605,7 @@ body {
     height: 55px;
     width: 55px; } }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 420px) {
   .info-desk-image,
   .instructor-rules-image,
   .become-instructor-image {
@@ -18617,16 +18616,28 @@ body {
     display: none; }
   .instructor-rules {
     padding: 0;
-    margin-bottom: 80px; }
+    margin-bottom: 0px; }
   .top-bg::after {
     display: none; }
   .instructor-feature-shape {
     display: none; }
   .section-bg {
-    padding: 80px 0px; }
+    padding-bottom: 30px; }
   .successful-instructor-feature-image {
     height: 55px;
     width: 55px; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .instructor-rules .list-unstyled li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-left: 15px; }
+  .becomeInstructor__wrapper,
+  .instructor-rules__wrapper {
+    margin-bottom: 15px; }
+  .info-desk-image {
+    margin: 0 !important;
+    margin-bottom: 15px !important; } }
 
 .instructor-courses {
   padding-bottom: 70px; }
