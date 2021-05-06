@@ -18608,7 +18608,7 @@ body {
 .instructor-courses {
   padding-bottom: 70px; }
   .instructor-courses-instructor {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 6px;
     padding: 30px; }
     .instructor-courses-instructor .instructor-image {
@@ -18653,7 +18653,7 @@ body {
               justify-content: center;
       width: 36px;
       height: 36px;
-      border: 1px solid #EBEBF2;
+      border: 1px solid #ebebf2;
       border-radius: 4px;
       -webkit-transition: 0.3s all linear;
       transition: 0.3s all linear; }
@@ -18668,8 +18668,8 @@ body {
 .instructor-course-info {
   margin: 30px 0px;
   padding: 30px 0px;
-  border-top: 1px solid #EBEBF2;
-  border-bottom: 1px solid #EBEBF2;
+  border-top: 1px solid #ebebf2;
+  border-bottom: 1px solid #ebebf2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18701,15 +18701,15 @@ body {
       height: 70px;
       background-color: rgba(255, 122, 26, 0.1);
       border-radius: 50%;
-      color: #FF7A1A; }
+      color: #ff7a1a; }
     .instructor-course-info-rating .text {
       margin-top: 10px; }
       .instructor-course-info-rating .text h6, .instructor-course-info-rating .text .h6 {
-        color: #42414B !important;
+        color: #42414b !important;
         font-weight: 500;
         font-size: 18px; }
       .instructor-course-info-rating .text p {
-        color: #8F8FA3 !important;
+        color: #8f8fa3 !important;
         font-size: 12px !important; }
   .instructor-course-info-students {
     display: -webkit-box;
@@ -18730,15 +18730,15 @@ body {
       height: 70px;
       background-color: rgba(0, 175, 145, 0.1);
       border-radius: 50%;
-      color: #00AF91; }
+      color: #00af91; }
     .instructor-course-info-students .text {
       margin-top: 10px; }
       .instructor-course-info-students .text h6, .instructor-course-info-students .text .h6 {
-        color: #42414B !important;
+        color: #42414b !important;
         font-weight: 500;
         font-size: 18px; }
       .instructor-course-info-students .text p {
-        color: #8F8FA3 !important;
+        color: #8f8fa3 !important;
         font-size: 12px !important; }
   .instructor-course-info-courses {
     display: -webkit-box;
@@ -18759,23 +18759,23 @@ body {
       height: 70px;
       background-color: rgba(16, 137, 255, 0.1);
       border-radius: 50%;
-      color: #1089FF; }
+      color: #1089ff; }
     .instructor-course-info-courses .text {
       margin-top: 10px; }
       .instructor-course-info-courses .text h6, .instructor-course-info-courses .text .h6 {
-        color: #42414B !important;
+        color: #42414b !important;
         font-weight: 500;
         font-size: 18px; }
       .instructor-course-info-courses .text p {
-        color: #8F8FA3 !important;
+        color: #8f8fa3 !important;
         font-size: 12px !important; }
 
 .about-instructor {
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #EBEBF2; }
+  border-bottom: 1px solid #ebebf2; }
   .about-instructor h6, .about-instructor .h6 {
-    color: #42414B !important;
+    color: #42414b !important;
     font-size: 18px !important;
     font-weight: 600 !important;
     margin-bottom: 15px; }
@@ -18786,18 +18786,18 @@ body {
 .instructor-qualification {
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #EBEBF2; }
+  border-bottom: 1px solid #ebebf2; }
   .instructor-qualification h6, .instructor-qualification .h6 {
-    color: #42414B !important;
+    color: #42414b !important;
     font-size: 18px !important;
     font-weight: 600 !important;
     margin-bottom: 15px; }
   .instructor-qualification .qualification-info {
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #EBEBF2; }
+    border-bottom: 1px solid #ebebf2; }
     .instructor-qualification .qualification-info p {
-      color: #8F8FA3 !important;
+      color: #8f8fa3 !important;
       font-size: 14px !important; }
     .instructor-qualification .qualification-info-title {
       margin-bottom: 5px;
@@ -18823,7 +18823,7 @@ body {
         font-size: 14px !important; }
 
 .instructor-tabs-pills .nav-item {
-  border-bottom: 1px solid #FFFFFF; }
+  border-bottom: 1px solid #ffffff; }
   .instructor-tabs-pills .nav-item .active {
     color: #202029 !important;
     font-weight: 500;
@@ -18834,7 +18834,7 @@ body {
       content: '';
       bottom: -1px;
       left: 0;
-      background-color: #0264ED;
+      background-color: #0264ed;
       width: 100%;
       height: 3px;
       border-radius: 15px; }
@@ -18876,14 +18876,14 @@ body {
   border-radius: 5px;
   text-align: center; }
   .rating-number h6, .rating-number .h6 {
-    color: #42414B !important; }
+    color: #42414b !important; }
   .rating-number .rating-icon {
     margin-bottom: 10px; }
     .rating-number .rating-icon svg {
       width: 20px;
       height: 20px;
-      color: #FF7A1A;
-      fill: #FF7A1A; }
+      color: #ff7a1a;
+      fill: #ff7a1a; }
   .rating-number p {
     color: #666575 !important;
     font-size: 14px !important; }
@@ -18901,7 +18901,7 @@ body {
   width: 8px !important; }
 
 .rating-range .fill-star {
-  color: #8F8FA3;
+  color: #8f8fa3;
   fill: transparent; }
 
 .rating-range-item {
@@ -18909,8 +18909,8 @@ body {
   .rating-range-item-ratings svg {
     width: 11px;
     height: 11px;
-    color: #FF7A1A;
-    fill: #FF7A1A; }
+    color: #ff7a1a;
+    fill: #ff7a1a; }
   .rating-range-item-bar {
     margin: 0px 15px;
     width: 300px;
@@ -18925,7 +18925,7 @@ body {
       left: 0;
       width: 190px;
       height: 5px;
-      background: #1089FF;
+      background: #1089ff;
       border-radius: 5px; }
   .rating-range-item-percent p {
     color: #666575 !important;
@@ -18934,7 +18934,7 @@ body {
 .students-feedback {
   margin-bottom: 30px;
   padding: 30px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px; }
   .students-feedback-heading {
     display: -webkit-box;
@@ -18955,7 +18955,7 @@ body {
       font-weight: 600 !important;
       font-size: 20px !important; }
       .students-feedback-heading h5 span, .students-feedback-heading .h5 span {
-        color: #8F8FA3 !important;
+        color: #8f8fa3 !important;
         font-weight: 400 !important; }
     .students-feedback-heading .right {
       display: -webkit-box;
@@ -18969,7 +18969,7 @@ body {
       .students-feedback-heading .right h6, .students-feedback-heading .right .h6 {
         font-size: 14px !important;
         font-weight: 500 !important;
-        color: #42414B !important; }
+        color: #42414b !important; }
       .students-feedback-heading .right .dropdown .btn {
         padding-left: 10px !important;
         color: #666575 !important;
@@ -19012,24 +19012,24 @@ body {
         .students-feedback-item .feedback-rating-start .text {
           margin-left: 12px; }
           .students-feedback-item .feedback-rating-start .text h6, .students-feedback-item .feedback-rating-start .text .h6 {
-            color: #42414B !important;
+            color: #42414b !important;
             font-size: 14px !important;
             font-weight: 600 !important; }
           .students-feedback-item .feedback-rating-start .text p {
             margin-top: 5px;
-            color: #8F8FA3 !important;
+            color: #8f8fa3 !important;
             font-size: 12px !important; }
     .students-feedback-item p {
       margin-top: 12px;
-      color: #8F8FA3 !important;
+      color: #8f8fa3 !important;
       font-size: 14px !important; }
 
 .rating-icons svg {
-  color: #FF7A1A;
-  fill: #FF7A1A; }
+  color: #ff7a1a;
+  fill: #ff7a1a; }
 
 .rating-icons .fill-star {
-  color: #8F8FA3;
+  color: #8f8fa3;
   fill: transparent; }
 
 .feedback-comment {
@@ -19043,19 +19043,19 @@ body {
   .feedback-comment h6, .feedback-comment .h6 {
     font-size: 14px;
     font-weight: 500;
-    color: #42414B;
+    color: #42414b;
     margin: 12px 0px 5px 0px; }
   .feedback-comment .rating-icon {
     margin-bottom: 10px; }
     .feedback-comment .rating-icon svg {
       width: 27px;
       height: 27px;
-      color: #FF7A1A;
-      fill: #FF7A1A; }
+      color: #ff7a1a;
+      fill: #ff7a1a; }
   .feedback-comment form {
     padding-bottom: 50px; }
     .feedback-comment form label {
-      color: #42414B;
+      color: #42414b;
       font-weight: 500;
       font-size: 14px;
       margin-bottom: 5px; }
@@ -19250,6 +19250,13 @@ body {
     padding: 25px; }
     .feedback-comment form .btn {
       float: left !important; } }
+
+@media (max-width: 767px) {
+  .instructor-rating-area {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .breadcrumb {
