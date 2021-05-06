@@ -19852,10 +19852,8 @@ body {
     .contact-feature-icon {
       margin-right: 0;
       margin-bottom: 20px; }
-    .contact-feature-text {
-      text-align: left; }
-      .contact-feature-text h5, .contact-feature-text .h5 {
-        font-size: 18px !important; }
+    .contact-feature-text h5, .contact-feature-text .h5 {
+      font-size: 18px !important; }
   .form-area {
     padding: 16px; }
     .form-area form input {
