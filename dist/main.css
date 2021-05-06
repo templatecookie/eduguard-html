@@ -14865,7 +14865,9 @@ header #search-nav.appear {
     .banner-three .playbtn-area {
       bottom: 120px; }
   .banner-three p {
-    padding: 15px 0px; } }
+    padding: 15px 0px; }
+  .playbtn-area svg {
+    height: 15px; } }
 
 .students-info {
   padding-bottom: 70px; }
@@ -20502,7 +20504,7 @@ header {
     font-size: 32px !important;
     line-height: 46px !important; }
   .about-intro {
-    padding-top: 0px !important; }
+    padding: 0px !important; }
   .signup-area {
     padding-top: 0px !important; }
   .checkout-tab .nav .nav-item .nav-link h6, .checkout-tab .nav .nav-item .nav-link .h6, .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5, .event-search-wizard-header h6, .event-search-wizard-header .h6,
