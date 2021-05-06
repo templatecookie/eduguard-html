@@ -15715,11 +15715,32 @@ header #search-nav.appear {
     color: #202029 !important;
     font-size: 20px; }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cart-area {
+    padding: 50px 0px; }
+    .cart-area .cart-wizard-area .image {
+      display: none; }
+    .cart-area .cart-wizard-area .text {
+      max-width: 100%;
+      border-radius: 5px !important; }
+      .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
+        font-size: 18px !important; }
+    .cart-area form label {
+      margin-top: 10px;
+      margin-bottom: 10px !important; } }
+
 @media (max-width: 991px) {
   .cart-area {
     padding-top: 30px !important; }
     .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
       margin-left: 0px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cart-area {
+    padding: 30px 0px; }
+    .cart-area form label {
+      margin-top: 10px;
+      margin-bottom: 10px !important; } }
 
 @media (max-width: 767px) {
   .cart-area {
@@ -15740,36 +15761,27 @@ header #search-nav.appear {
         border-radius: 5px !important; }
         .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
           font-size: 18px !important; }
-    .cart-area h6, .cart-area .h6 {
-      margin-left: 15px; }
     .cart-area form label {
       margin-top: 10px;
-      margin-bottom: 10px !important; } }
+      margin-bottom: 10px !important; }
+  .cart-area .summery-wizard {
+    padding: 20px 15px; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .cart-area {
-    padding: 30px 0px; }
-    .cart-area form label {
-      margin-top: 10px;
-      margin-bottom: 10px !important; } }
+@media (min-width: 575px) and (max-width: 767px) {
+  .cart-area h6, .cart-area .h6 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    margin-bottom: 8px !important; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .cart-area h6, .cart-area .h6 {
-    margin-left: 0px; } }
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .cart-area {
-    padding: 50px 0px; }
-    .cart-area .cart-wizard-area .image {
-      display: none; }
-    .cart-area .cart-wizard-area .text {
-      max-width: 100%;
-      border-radius: 5px !important; }
-      .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
-        font-size: 18px !important; }
-    .cart-area form label {
-      margin-top: 10px;
-      margin-bottom: 10px !important; } }
+    font-size: 18px !important;
+    line-height: 28px !important;
+    margin-bottom: 8px !important;
+    margin-left: 0px; }
+  .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
+    font-size: 16px !important;
+    line-height: 26px !important; } }
 
 .eventsearch-sub-section {
   padding-bottom: 90px !important; }
@@ -19802,39 +19814,16 @@ body {
     font-size: 14px !important;
     line-height: 20px !important; } }
 
-@media (max-width: 420px) {
-  .form-area-shape,
+@media (min-width: 992px) and (max-width: 1200px) {
   .contact-feature-shape,
   .contact-hero-shape {
     display: none; }
-  .getin-touch {
-    padding: 30px 0px;
-    background-image: none !important;
-    background-color: rgba(235, 235, 242, 0.75) !important; }
-  .contact-feature {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .contact-feature-icon {
-      margin-right: 0;
-      margin-bottom: 20px; }
-  .form-area {
-    padding: 16px; }
-    .form-area form input {
-      padding: 12px 20px; }
-  .map-area {
-    margin-top: 0px;
-    padding-bottom: 30px;
-    padding-top: 30px; }
-    .map-area-frame {
-      padding: 0;
-      border: none; }
-      .map-area-frame iframe {
-        height: auto; } }
+  .contact-location-area .contact-location {
+    margin-bottom: 10px !important; }
+  .contact-feature-text h5, .contact-feature-text .h5 {
+    font-size: 20px !important; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .form-area-shape,
   .contact-feature-shape,
   .contact-hero-shape {
@@ -19902,7 +19891,7 @@ body {
       .map-area-frame iframe {
         height: auto; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 420px) and (max-width: 574px) {
   .form-area-shape,
   .contact-feature-shape,
   .contact-hero-shape {
@@ -19936,14 +19925,37 @@ body {
       .map-area-frame iframe {
         height: auto; } }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 420px) {
+  .form-area-shape,
   .contact-feature-shape,
   .contact-hero-shape {
     display: none; }
-  .contact-location-area .contact-location {
-    margin-bottom: 10px !important; }
-  .contact-feature-text h5, .contact-feature-text .h5 {
-    font-size: 20px !important; } }
+  .getin-touch {
+    padding: 30px 0px;
+    background-image: none !important;
+    background-color: rgba(235, 235, 242, 0.75) !important; }
+  .contact-feature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .contact-feature-icon {
+      margin-right: 0;
+      margin-bottom: 20px; }
+  .form-area {
+    padding: 16px; }
+    .form-area form input {
+      padding: 12px 20px; }
+  .map-area {
+    margin-top: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px; }
+    .map-area-frame {
+      padding: 0;
+      border: none; }
+      .map-area-frame iframe {
+        height: auto; } }
 
 header {
   position: relative;
@@ -20494,12 +20506,17 @@ header {
     line-height: 26px !important; }
   .signup-area {
     height: auto !important; }
+  .contactHero {
+    padding-top: 0px !important; }
   .signup-area-image {
     margin-bottom: 15px; }
     .signup-area-image img {
       height: auto; }
   .learning-rules-ends img {
     height: auto; }
+  .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
+    font-size: 16px !important;
+    line-height: 26px !important; }
   .feedback-area h6, .feedback-area .h6 {
     font-size: 16px !important;
     line-height: 26px !important; }
