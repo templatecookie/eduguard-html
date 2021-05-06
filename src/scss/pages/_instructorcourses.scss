@@ -372,6 +372,22 @@
   }
 }
 
+// Rating Stars
+.rating-icons {
+  &.rating-icons-modal {
+    margin-top: 10px;
+    .jq-star {
+      margin-right: 20px;
+    }
+    .jq-star-svg {
+      width: 40px;
+    }
+  }
+  .jq-star {
+    margin-right: 6px;
+  }
+}
+
 .students-feedback {
   margin-bottom: 30px;
   padding: 30px;
@@ -467,16 +483,8 @@
   }
 }
 
-.rating-icons {
-  svg {
-    color: #ff7a1a;
-    fill: #ff7a1a;
-  }
-
-  .fill-star {
-    color: #8f8fa3;
-    fill: transparent;
-  }
+.my-rating {
+  margin-bottom: 18px;
 }
 
 .feedback-comment {
@@ -495,17 +503,6 @@
     font-weight: 500;
     color: #42414b;
     margin: 12px 0px 5px 0px;
-  }
-
-  .rating-icon {
-    margin-bottom: 10px;
-
-    svg {
-      width: 27px;
-      height: 27px;
-      color: #ff7a1a;
-      fill: #ff7a1a;
-    }
   }
 
   form {
@@ -535,8 +532,103 @@
 }
 
 // Responsive
-// extra Small devices 420px
-@media (max-width: 420px) {
+
+@media (max-width: 1200px) {
+  .instructor-rating-area {
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .rating-icons {
+    .jq-star {
+      margin-right: 0px;
+      &-svg {
+        width: 24px;
+      }
+    }
+  }
+}
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+  .instructor-course-info {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    flex-wrap: wrap;
+
+    &-rating,
+    &-students,
+    &-courses {
+      margin-bottom: 20px;
+    }
+  }
+
+  .course__content_time {
+    flex-wrap: wrap;
+
+    .clock,
+    .book,
+    .eay,
+    .star {
+      margin-bottom: 15px;
+    }
+  }
+
+  .course__content_title h6,
+  .course__content_title .h6 {
+    font-size: 16px;
+  }
+
+  // Review
+  .instructor-rating-area {
+    flex-direction: column;
+  }
+
+  .rating-range {
+    margin-left: 0 !important;
+  }
+
+  .rating-number {
+    margin-bottom: 20px;
+  }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb {
+    align-items: center;
+  }
+
+  .instructor-courses {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .course__img,
+  .course__content {
+    width: 75%;
+  }
+
+  .course__img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .pagination {
+    justify-content: flex-start !important;
+  }
+
+  // Review
+  .instructor-rating-area {
+    justify-content: space-between;
+  }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
   .breadcrumb {
     align-items: center;
   }
@@ -584,11 +676,8 @@
     }
   }
 
-  .pagination .cdp_i,
-  .pagination .p_prev,
-  .pagination .p_next {
-    width: 40px;
-    height: 40px;
+  .course__img img {
+    width: 100%;
   }
 
   // Review
@@ -597,21 +686,11 @@
   }
 
   .rating-number {
-    margin: 15px auto;
+    margin: 15px 0;
   }
 
   .rating-range-item {
     margin-bottom: 10px;
-    flex-direction: column;
-    align-items: flex-start !important;
-
-    &-percent {
-      display: none;
-    }
-  }
-
-  .rating-range-item-bar {
-    margin: 10px 0px 0px 0px !important;
   }
 
   .students-feedback {
@@ -623,17 +702,6 @@
 
       h5 {
         font-size: 16px !important;
-      }
-    }
-
-    &-item {
-      .feedback-rating {
-        flex-direction: column;
-        align-items: flex-start !important;
-
-        .rating-icons {
-          margin-top: 15px;
-        }
       }
     }
   }
@@ -741,10 +809,6 @@
       .feedback-rating {
         flex-direction: column;
         align-items: flex-start !important;
-
-        .rating-icons {
-          margin-top: 15px;
-        }
       }
     }
   }
@@ -760,14 +824,8 @@
   }
 }
 
-@media (max-width: 767px) {
-  .instructor-rating-area {
-    align-items: center;
-  }
-}
-
-// Small devices 575px - 767px
-@media (min-width: 575px) and (max-width: 767px) {
+// extra Small devices 420px
+@media (max-width: 420px) {
   .breadcrumb {
     align-items: center;
   }
@@ -815,8 +873,11 @@
     }
   }
 
-  .course__img img {
-    width: 100%;
+  .pagination .cdp_i,
+  .pagination .p_prev,
+  .pagination .p_next {
+    width: 40px;
+    height: 40px;
   }
 
   // Review
@@ -825,11 +886,21 @@
   }
 
   .rating-number {
-    margin: 15px 0;
+    margin: 15px auto;
   }
 
   .rating-range-item {
     margin-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    &-percent {
+      display: none;
+    }
+  }
+
+  .rating-range-item-bar {
+    margin: 10px 0px 0px 0px !important;
   }
 
   .students-feedback {
@@ -843,6 +914,14 @@
         font-size: 16px !important;
       }
     }
+
+    &-item {
+      .feedback-rating {
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin-top: 15px;
+      }
+    }
   }
 
   .feedback-comment {
@@ -853,83 +932,5 @@
         float: left !important;
       }
     }
-  }
-}
-
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
-  .breadcrumb {
-    align-items: center;
-  }
-
-  .instructor-courses {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .course__img,
-  .course__content {
-    width: 75%;
-  }
-
-  .course__img {
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .pagination {
-    justify-content: flex-start !important;
-  }
-
-  // Review
-  .instructor-rating-area {
-    justify-content: space-between;
-  }
-}
-
-// large devices 992px - 1200px
-@media (min-width: 992px) and (max-width: 1200px) {
-  .instructor-course-info {
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    padding-top: 25px;
-    flex-wrap: wrap;
-
-    &-rating,
-    &-students,
-    &-courses {
-      margin-bottom: 20px;
-    }
-  }
-
-  .course__content_time {
-    flex-wrap: wrap;
-
-    .clock,
-    .book,
-    .eay,
-    .star {
-      margin-bottom: 15px;
-    }
-  }
-
-  .course__content_title h6,
-  .course__content_title .h6 {
-    font-size: 16px;
-  }
-
-  // Review
-  .instructor-rating-area {
-    flex-direction: column;
-  }
-
-  .rating-range {
-    margin-left: 0 !important;
-  }
-
-  .rating-number {
-    margin-bottom: 20px;
   }
 }

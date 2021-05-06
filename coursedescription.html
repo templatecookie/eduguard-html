@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Course Description-Eduguard</title>
         <link rel="stylesheet" href="src/scss/vendors/plugin/css/video-js.css" />
+        <link rel="stylesheet" href="src/scss/vendors/plugin/css/star-rating-svg.css">
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
@@ -78,7 +79,8 @@
                                     <div class="modal-body text-center pt-0 pb-0">
                                         <div class="modal-body-rating">
                                             <p>4.5 <span>(Good/Amazing)</span></p>
-                                            <div class="rating-icon">
+                                            <div class="my-rating rating-icons rating-icons-modal"></div>
+                                            <!-- <div class="rating-icon">
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
                                                         <svg
@@ -152,7 +154,7 @@
                                                         </svg>
                                                     </li>
                                                 </ul>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="modal-footer border-0">
@@ -842,6 +844,17 @@
         <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
         <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
         <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
+        <script src="src/scss/vendors/plugin/js/jquery.star-rating-svg.js"></script>
         <script src="dist/main.js"></script>
+        <script>
+            // Leave a Rating
+            $(".my-rating").starRating({
+                starSize: 30,
+                    activeColor: '#FF7A1A',
+                    hoverColor: '#FF7A1A',
+                    ratedColors: ['#FF7A1A', '#FF7A1A', '#FF7A1A', '#FF7A1A', '#FF7A1A'],
+                    starShape: 'rounded',
+            });
+        </script>
     </body>
 </html>
