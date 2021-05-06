@@ -278,12 +278,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
-  }
 }
 
 // Small devices 420px - 574px
@@ -365,13 +359,10 @@
 }
 
 @media (max-width: 767px) {
-  //   .event-sub-section-main h4 {
-  //     font-size: 24px !important;
-  //     line-height: 36px !important;
-  //   }
-  //   .created-by-text h6 {
-  //     line-height: 28px !important;
-  //   }
+  .similar-events {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 // Small devices 575px - 767px
@@ -585,6 +576,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  // Testimonial slider
+  .event__content_title h6 {
+    font-size: 16px !important;
+  }
+
   .event-sub-section-main h4,
   .event-sub-section-main .h4,
   .course-includes h6,

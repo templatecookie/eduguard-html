@@ -16277,9 +16277,7 @@ header #search-nav.appear {
     display: none; }
   .similar-events {
     padding-top: 30px;
-    padding-bottom: 30px; }
-  .event__content_detail .loction {
-    margin-bottom: 5px; } }
+    padding-bottom: 30px; } }
 
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   .event-sub-section-main {
@@ -16332,6 +16330,11 @@ header #search-nav.appear {
             align-items: flex-start !important; }
   .event__content_detail .loction {
     margin-bottom: 5px; } }
+
+@media (max-width: 767px) {
+  .similar-events {
+    position: relative;
+    overflow: hidden; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .event-sub-section-main {
@@ -16479,6 +16482,8 @@ header #search-nav.appear {
     display: none !important; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  .event__content_title h6, .event__content_title .h6 {
+    font-size: 16px !important; }
   .event-sub-section-main h4, .event-sub-section-main .h4,
   .event-sub-section-main .h4, .course-includes h6, .course-includes .h6,
   .course-includes .h6, .event-info-cart h6, .event-info-cart .h6 {
@@ -20499,5 +20504,10 @@ header {
     height: auto; }
   .feedback-area h6, .feedback-area .h6 {
     font-size: 16px !important;
-    line-height: 26px !important; } }
+    line-height: 26px !important; }
+  .course__content_title h6, .course__content_title .h6,
+  .course__content_title .h6, .event__content_title h6, .event__content_title .h6,
+  .event__content_title .h6, .event-info-cart h6, .event-info-cart .h6, .event-speaker-info h6, .event-speaker-info .h6,
+  .event-speaker-info .h6 {
+    font-size: 16px !important; } }
 

@@ -241,4 +241,15 @@
   .banner-two-start p {
     @extend %brief;
   }
+
+  // Testimonial  slider
+  .course__content_title h6,
+  .course__content_title .h6,
+  .event__content_title h6,
+  .event__content_title .h6,
+  .event-info-cart h6,
+  .event-speaker-info h6,
+  .event-speaker-info .h6 {
+    font-size: 16px !important;
+  }
 }
