@@ -147,6 +147,10 @@
   section {
     @extend %space-2;
   }
+
+  .about-intro {
+    padding-top: 0px !important;
+  }
   .signup-area {
     padding-top: 0px !important;
   }

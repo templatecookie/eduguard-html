@@ -12176,6 +12176,16 @@ header #search-nav.appear {
       .newsletter-area form .input-group button {
         border-radius: 5px !important; } }
 
+@media (max-width: 767px) {
+  .brands__titleContent h4, .brands__titleContent .h4 {
+    font-size: 28px !important;
+    line-height: 38px !important; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .brands__titleContent h4, .brands__titleContent .h4 {
+    font-size: 18px !important;
+    line-height: 28px !important; } }
+
 .footer {
   background-color: #25252e;
   padding-top: 75px; }
@@ -12599,7 +12609,9 @@ header #search-nav.appear {
   .mentor__title h6, .mentor__title .h6 {
     font-size: 18px; }
   .mentor__img img {
-    height: auto; } }
+    height: auto; }
+  .about-intro__textContent {
+    text-align: center; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .breadcrumb {
@@ -20489,6 +20501,8 @@ header {
   .signup-area h3, .signup-area .h3 {
     font-size: 32px !important;
     line-height: 46px !important; }
+  .about-intro {
+    padding-top: 0px !important; }
   .signup-area {
     padding-top: 0px !important; }
   .checkout-tab .nav .nav-item .nav-link h6, .checkout-tab .nav .nav-item .nav-link .h6, .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5, .event-search-wizard-header h6, .event-search-wizard-header .h6,
