@@ -15261,9 +15261,6 @@ header #search-nav.appear {
     margin-left: 0px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .course {
-    width: 65%;
-    margin: auto; }
   .students-info {
     padding-bottom: 30px; }
   .students-info-intro {
