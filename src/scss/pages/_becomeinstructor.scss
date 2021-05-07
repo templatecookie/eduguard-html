@@ -169,6 +169,16 @@
   .instructor-rules {
     padding-top: 30px !important;
   }
+  // become instrcutor
+  .becomeInstructor,
+  .instructor-rules {
+    padding-bottom: 30px !important;
+  }
+  .becomeInstructor__wrapper,
+  .instructor-rules__wrapper,
+  .info-desk-image {
+    margin-bottom: 15px !important;
+  }
 }
 
 // large devices 992px - 1200px
@@ -239,11 +249,16 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .info-desk-image,
   .instructor-rules-image,
   .become-instructor-image {
     margin: 0 !important;
     width: 100%;
+  }
+  .info-desk-image {
+    width: 100%;
+    object-fit: contain;
+    margin: 0 !important;
+    margin-bottom: 15px !important;
   }
   .info-desk-shape,
   .instructor-ruls-image-shape,

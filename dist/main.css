@@ -18641,7 +18641,14 @@ body {
 @media (max-width: 991px) {
   .becomeInstructor,
   .instructor-rules {
-    padding-top: 30px !important; } }
+    padding-top: 30px !important; }
+  .becomeInstructor,
+  .instructor-rules {
+    padding-bottom: 30px !important; }
+  .becomeInstructor__wrapper,
+  .instructor-rules__wrapper,
+  .info-desk-image {
+    margin-bottom: 15px !important; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .info-desk-image,
@@ -18688,11 +18695,16 @@ body {
     width: 55px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
-  .info-desk-image,
   .instructor-rules-image,
   .become-instructor-image {
     margin: 0 !important;
     width: 100%; }
+  .info-desk-image {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 !important;
+    margin-bottom: 15px !important; }
   .info-desk-shape,
   .instructor-ruls-image-shape,
   .become-instructor-shape {
