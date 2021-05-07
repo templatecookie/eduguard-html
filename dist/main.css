@@ -11103,7 +11103,7 @@ button:focus {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 2px solid #ebebf2;
+    border: 2px solid #fff;
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -20610,6 +20610,10 @@ header {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
+
+@media (max-width: 1199px) {
+  .slider-arrows {
+    display: none; } }
 
 @media (max-width: 991px) {
   section {

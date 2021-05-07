@@ -92,7 +92,7 @@
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-          arrows: true,
+          arrows: false,
         },
       },
       {
@@ -102,7 +102,7 @@
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: true,
+          arrows: false,
         },
       },
     ],

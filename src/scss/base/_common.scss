@@ -34,6 +34,12 @@
 }
 // Responsive
 
+@media (max-width: 1199px) {
+  .slider-arrows {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
   %space-1 {
     padding: 90px 0px !important;
