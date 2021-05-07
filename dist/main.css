@@ -19273,7 +19273,11 @@ body {
   .rating-icons .jq-star {
     margin-right: 0px; }
     .rating-icons .jq-star-svg {
-      width: 24px; } }
+      width: 24px; }
+  .feedback-comment h6, .feedback-comment .h6,
+  .feedback-comment .h6 {
+    font-size: 14px !important;
+    line-height: 24px !important; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .instructor-course-info {

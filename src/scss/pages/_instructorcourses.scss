@@ -548,6 +548,13 @@
       }
     }
   }
+
+  // feedback comments
+  .feedback-comment h6,
+  .feedback-comment .h6 {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
 }
 // large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
