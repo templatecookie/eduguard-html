@@ -16127,6 +16127,26 @@ header #search-nav.appear {
   .event-search-pagination {
     margin-top: 50px; }
 
+.event-search-wizard .event-search-wizard-header button svg {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.event-search-wizard.active .event-search-wizard-header button svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.event-search-wizard.active .event-search-wizard-body {
+  max-height: 0px;
+  width: 0px; }
+  .event-search-wizard.active .event-search-wizard-body .event-search-wizard-item {
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    pointer-events: none; }
+
+.event-search-wizard .event-search-wizard-body {
+  max-height: 350px; }
+
 @media (max-width: 420px) {
   .event-search-wizard-item-start .price-inputs-one {
     width: 55px; }

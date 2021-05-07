@@ -2,6 +2,7 @@
 // Input field password type show/hide
 function showPassword(id, el) {
   let x = document.getElementById(id);
+  console.log(x);
   if (x.type === 'password') {
     x.type = 'text';
     el.innerHTML =
