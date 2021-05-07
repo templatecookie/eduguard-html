@@ -611,6 +611,14 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .latest-events-featured {
+    .slider-arrows {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .main-banner {
     padding-top: 90px;

@@ -44,6 +44,12 @@
     nextArrow: ' .next-arrow',
     responsive: [
       {
+        breakpoint: 1025,
+        settings: {
+          arrows: false,
+        },
+      },
+      {
         breakpoint: 992,
         settings: {
           autoplay: true,

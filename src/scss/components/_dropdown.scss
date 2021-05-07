@@ -1,5 +1,13 @@
 .select-button {
   position: relative;
+  button {
+    svg {
+      transition: all 0.2s linear;
+      &.appear {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
 
 .categoryDrop {

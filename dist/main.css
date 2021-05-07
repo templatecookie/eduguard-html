@@ -11035,6 +11035,12 @@ button:focus {
 
 .select-button {
   position: relative; }
+  .select-button button svg {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    .select-button button svg.appear {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
 
 .categoryDrop {
   border-top: 2px solid #1089ff;
@@ -13213,6 +13219,10 @@ header #search-nav.appear {
     font-size: 36px !important; }
   .main-become-instructor-item .main-text h6, .main-become-instructor-item .main-text .h6 {
     font-size: 28px !important; } }
+
+@media (max-width: 1199px) {
+  .latest-events-featured .slider-arrows {
+    display: none; } }
 
 @media (max-width: 991px) {
   .main-banner {
