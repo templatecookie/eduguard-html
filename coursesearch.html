@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Course Search-Eduguard</title>
+        <link rel="stylesheet" href="src/scss/vendors/plugin/css/jquery-ui.css">
         <link rel="stylesheet" href="dist/main.css" />
+        
     </head>
 
     <body style="background-color: #ebebf2;">
@@ -288,20 +290,21 @@
                                     <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <div class="event-search-wizard-item">
-                                <div class="event-search-wizard-item-start">
-                                    <form action="#" class="price-inputs">
-                                        <input type="text" class="price-inputs-one" placeholder="$25" />
-                                        <span>to</span>
-                                        <input type="text" class="price-inputs-two" placeholder="$500" />
-                                        <button class="angle-btn">
-                                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.5 1L8.5 8L1.5 15" stroke="#EBEBF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </button>
-                                    </form>
-                                    <div class="range-bar">
-                                        <div class="range-bar-main"></div>
+                            <div class="event-search-wizard-item price-range">
+                                <div class="event-search-wizard-item-start ">
+                                    <div class="price-range-block">
+                                        <form class="d-flex price-range-block__inputWrapper" action="#">
+                                          <input type="number" min="$0" max="5000" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" style="width: 105px; height: 50px;  border-radius: 4px; padding: 15px; " />
+                                          <span>to</span>
+                                          <input type="number" min="0" max="$5000" oninput="validity.valid||(value='5000');" id="max_price" class="price-range-field" style="width: 125px; height: 50px; padding: 15px; border-radius: 4px; "/>
+                                          <button class="angle-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                          </button>
+                                        </form>
+                                        <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                                        <!-- <button class="price-range-search" id="price-range-submit">Search</button> -->
+                                    
+                                        <!-- <div id="searchResults" class="search-results-block"></div> -->
                                     </div>
                                 </div>
                             </div>
@@ -1560,6 +1563,8 @@
         <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
         <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
         <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
+        <script src="src/scss/vendors/plugin/js/price_range_script.js"></script>
+        <script src="src/scss/vendors/plugin/js/jquery-ui.min.js"></script>
         <script src="src/js/app.js"></script>
         <script src="dist/main.js"></script>
     </body>
