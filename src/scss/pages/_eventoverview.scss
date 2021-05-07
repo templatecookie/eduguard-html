@@ -573,6 +573,20 @@
       display: none !important;
     }
   }
+
+  // slider
+  .ourevent-active {
+    .slick-slide {
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .event__content_title h6,
+  .event__content_title .h6 {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {

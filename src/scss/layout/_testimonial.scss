@@ -167,6 +167,25 @@
   }
 }
 
+// homepage-03 students testimonial
+.testimonial-area {
+  .students {
+    &__item {
+      margin: 0px 15px;
+    }
+  }
+  .slick {
+    &-current {
+      .testimonial-area-item {
+        border-color: #1089ff;
+      }
+    }
+  }
+  .slider-arrows {
+    @extend %arrows;
+  }
+}
+
 /*------------------------*/
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
@@ -189,6 +208,19 @@
 
     &__wrapper {
       margin-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonial {
+    &.students-says {
+      .testimonial__img {
+        img {
+          height: 390px;
+          object-fit: contain;
+        }
+      }
     }
   }
 }
@@ -344,10 +376,5 @@
         }
       }
     }
-  }
-  .testimonial__img .play-video {
-    top: 50%;
-    right: 50%;
-    transform: translateX(50%);
   }
 }

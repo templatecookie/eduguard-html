@@ -66,6 +66,78 @@
       },
     ],
   });
+  // newCourse
+  $('.newCourse').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: false,
+    arrows: true,
+    autoplaySpeed: 2000,
+    prevArrow: ' .prev-arrow',
+    nextArrow: ' .next-arrow',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          autoplay: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+    ],
+  });
+  // our students
+  $('.students').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: true,
+    centerMode: true,
+    centerPadding: '0px',
+    prevArrow: ' .prev-arrow',
+    nextArrow: ' .next-arrow',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          autoplay: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+    ],
+  });
 
   $('.about__slider').slick({
     infinite: true,
@@ -182,7 +254,7 @@
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
     autoplaySpeed: 2000,
     prevArrow: '.ourevent__wrapper .prev-arrow',

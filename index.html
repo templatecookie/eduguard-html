@@ -99,7 +99,7 @@
                                         </svg>
                                     </div>
                                     <div class="select-button">
-                                        <button type="button" id="categoryBtn">
+                                        <button type="button" onclick="drop();">
                                             Category
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -4330,5 +4330,11 @@
         <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
         <script src="src/js/app.js"></script>
         <script src="src/js/main.js"></script>
+        <script>
+            function drop() {
+                const dropBox = document.querySelector(".categoryDrop");
+                dropBox.classList.toggle("appear");
+            }
+        </script>
     </body>
 </html>

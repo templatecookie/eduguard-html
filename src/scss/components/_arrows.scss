@@ -15,6 +15,7 @@
     border: 2px solid #ebebf2;
     cursor: pointer;
     transition: 0.3s;
+
     svg {
       path {
         stroke: #666575;
@@ -23,6 +24,7 @@
     &:hover {
       border-color: color(primary);
       background-color: color(primary);
+      box-shadow: 0px 10px 20px 0px #0264ed40;
       svg {
         path {
           stroke: white;

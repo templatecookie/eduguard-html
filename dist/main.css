@@ -11037,8 +11037,8 @@ button:focus {
   position: relative; }
 
 .categoryDrop {
-  border-top: 2px solid #00af92;
-  border-bottom: 2px solid #00af92;
+  border-top: 2px solid #1089ff;
+  border-bottom: 2px solid #1089ff;
   background-color: #fff;
   position: absolute;
   top: 45px;
@@ -11063,7 +11063,7 @@ button:focus {
     .categoryDrop > div:hover {
       background-color: #f5f4f9; }
 
-.ourinstructor__wrapper .slider-arrows, .latest-events-featured .slider-arrows {
+.testimonial-area .slider-arrows, .ourinstructor__wrapper .slider-arrows, .latest-events-featured .slider-arrows, .new-course-feature .slider-arrows {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11076,9 +11076,11 @@ button:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .ourinstructor__wrapper .slider-arrows .prev-arrow, .latest-events-featured .slider-arrows .prev-arrow,
+  .testimonial-area .slider-arrows .prev-arrow, .ourinstructor__wrapper .slider-arrows .prev-arrow, .latest-events-featured .slider-arrows .prev-arrow, .new-course-feature .slider-arrows .prev-arrow,
+  .testimonial-area .slider-arrows .next-arrow,
   .ourinstructor__wrapper .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow {
+  .latest-events-featured .slider-arrows .next-arrow,
+  .new-course-feature .slider-arrows .next-arrow {
     width: 52px;
     height: 52px;
     background-color: transparent;
@@ -11099,28 +11101,38 @@ button:focus {
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-    .ourinstructor__wrapper .slider-arrows .prev-arrow svg path, .latest-events-featured .slider-arrows .prev-arrow svg path,
+    .testimonial-area .slider-arrows .prev-arrow svg path, .ourinstructor__wrapper .slider-arrows .prev-arrow svg path, .latest-events-featured .slider-arrows .prev-arrow svg path, .new-course-feature .slider-arrows .prev-arrow svg path,
+    .testimonial-area .slider-arrows .next-arrow svg path,
     .ourinstructor__wrapper .slider-arrows .next-arrow svg path,
-    .latest-events-featured .slider-arrows .next-arrow svg path {
+    .latest-events-featured .slider-arrows .next-arrow svg path,
+    .new-course-feature .slider-arrows .next-arrow svg path {
       stroke: #666575; }
-    .ourinstructor__wrapper .slider-arrows .prev-arrow:hover, .latest-events-featured .slider-arrows .prev-arrow:hover,
+    .testimonial-area .slider-arrows .prev-arrow:hover, .ourinstructor__wrapper .slider-arrows .prev-arrow:hover, .latest-events-featured .slider-arrows .prev-arrow:hover, .new-course-feature .slider-arrows .prev-arrow:hover,
+    .testimonial-area .slider-arrows .next-arrow:hover,
     .ourinstructor__wrapper .slider-arrows .next-arrow:hover,
-    .latest-events-featured .slider-arrows .next-arrow:hover {
+    .latest-events-featured .slider-arrows .next-arrow:hover,
+    .new-course-feature .slider-arrows .next-arrow:hover {
       border-color: #1089FF;
-      background-color: #1089FF; }
-      .ourinstructor__wrapper .slider-arrows .prev-arrow:hover svg path, .latest-events-featured .slider-arrows .prev-arrow:hover svg path,
+      background-color: #1089FF;
+      -webkit-box-shadow: 0px 10px 20px 0px #0264ed40;
+              box-shadow: 0px 10px 20px 0px #0264ed40; }
+      .testimonial-area .slider-arrows .prev-arrow:hover svg path, .ourinstructor__wrapper .slider-arrows .prev-arrow:hover svg path, .latest-events-featured .slider-arrows .prev-arrow:hover svg path, .new-course-feature .slider-arrows .prev-arrow:hover svg path,
+      .testimonial-area .slider-arrows .next-arrow:hover svg path,
       .ourinstructor__wrapper .slider-arrows .next-arrow:hover svg path,
-      .latest-events-featured .slider-arrows .next-arrow:hover svg path {
+      .latest-events-featured .slider-arrows .next-arrow:hover svg path,
+      .new-course-feature .slider-arrows .next-arrow:hover svg path {
         stroke: white; }
-  .ourinstructor__wrapper .slider-arrows .prev-arrow, .latest-events-featured .slider-arrows .prev-arrow {
+  .testimonial-area .slider-arrows .prev-arrow, .ourinstructor__wrapper .slider-arrows .prev-arrow, .latest-events-featured .slider-arrows .prev-arrow, .new-course-feature .slider-arrows .prev-arrow {
     position: absolute;
     top: 50%;
     left: -90px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
   
+  .testimonial-area .slider-arrows .next-arrow,
   .ourinstructor__wrapper .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow {
+  .latest-events-featured .slider-arrows .next-arrow,
+  .new-course-feature .slider-arrows .next-arrow {
     position: absolute;
     top: 50%;
     right: -90px;
@@ -11914,6 +11926,12 @@ header #search-nav.appear {
       .testimonial__brand .brand-area-image img {
         margin: auto; }
 
+.testimonial-area .students__item {
+  margin: 0px 15px; }
+
+.testimonial-area .slick-current .testimonial-area-item {
+  border-color: #1089ff; }
+
 /*------------------------*/
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
@@ -11928,6 +11946,12 @@ header #search-nav.appear {
       display: none; }
   .testimonial__wrapper {
     margin-left: 0px; } }
+
+@media (max-width: 991px) {
+  .testimonial.students-says .testimonial__img img {
+    height: 390px;
+    -o-object-fit: contain;
+       object-fit: contain; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .testimonial {
@@ -12025,12 +12049,7 @@ header #search-nav.appear {
         font-size: 26px;
         margin-bottom: 15px; }
       .testimonial__brand_title p {
-        font-size: 16px; }
-  .testimonial__img .play-video {
-    top: 50%;
-    right: 50%;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%); } }
+        font-size: 16px; } }
 
 .ourinstructor {
   background-color: rgba(16, 137, 255, 0.05);
@@ -12453,9 +12472,10 @@ header #search-nav.appear {
   .footer__wrapper {
     max-width: 100%; } }
 
-.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active {
+.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active,
+.students {
   position: relative; }
-  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots {
+  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -12465,7 +12485,7 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button {
+    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -12476,7 +12496,7 @@ header #search-nav.appear {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button {
+    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -12767,9 +12787,10 @@ header #search-nav.appear {
   .mentor__img img {
     height: auto; } }
 
-.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active {
+.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active,
+.students {
   position: relative; }
-  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots {
+  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -12779,7 +12800,7 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button {
+    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -12790,7 +12811,7 @@ header #search-nav.appear {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button {
+    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -14100,7 +14121,13 @@ header #search-nav.appear {
   .banner-input .main-input input::-ms-input-placeholder {
     font-size: 12px; }
   .banner-input .main-input input::placeholder {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .testimonial__img .play-video {
+    right: 50%;
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%); }
+    .testimonial__img .play-video a svg {
+      height: 18px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .banner-two {
@@ -14162,10 +14189,6 @@ header #search-nav.appear {
       .students-says .testimonial__img .rectangle,
       .students-says .testimonial__img .dot {
         display: none; }
-      .students-says .testimonial__img .play-video {
-        right: 200px;
-        -webkit-transform: translateX(-50%) !important;
-                transform: translateX(-50%) !important; }
     .students-says .testimonial__wrapper {
       margin-left: 0; }
     .students-says .testimonial__wrapper_title {
@@ -14263,15 +14286,11 @@ header #search-nav.appear {
       .students-says .testimonial__img .rectangle,
       .students-says .testimonial__img .dot {
         display: none; }
-      .students-says .testimonial__img .play-video {
-        right: 60px;
-        -webkit-transform: translateX(-50%) !important;
-                transform: translateX(-50%) !important; }
     .students-says .testimonial__wrapper {
       margin-left: 0; }
     .students-says .testimonial__wrapper_title {
       margin-bottom: 15px;
-      margin-top: 20px; }
+      margin-top: 0px; }
     .students-says .testimonial__wrapper_item-author .author__img img {
       width: auto !important;
       height: auto !important; }
@@ -14368,10 +14387,6 @@ header #search-nav.appear {
       .students-says .testimonial__img .rectangle,
       .students-says .testimonial__img .dot {
         display: none; }
-      .students-says .testimonial__img .play-video {
-        right: 200px;
-        -webkit-transform: translateX(-50%) !important;
-                transform: translateX(-50%) !important; }
     .students-says .testimonial__wrapper {
       margin-left: 0; }
     .students-says .testimonial__wrapper_title {
@@ -14480,86 +14495,15 @@ header #search-nav.appear {
   .new-course-feature .btn-primary {
     margin-top: 50px; }
 
-.featured-course-image a {
-  display: block; }
-  .featured-course-image a img {
-    border-radius: 5px 5px 0px 0px; }
-
-.featured-course-info {
-  padding: 12px 0px;
-  border-top: 1px solid #ebebf2;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .featured-course-info .course-view {
-    padding-left: 12px; }
-    .featured-course-info .course-view svg {
-      color: #1089ff;
-      width: 18px;
-      height: 18px;
-      margin-right: 5px; }
-    .featured-course-info .course-view span {
-      font-size: 14px;
-      color: #42414b;
-      font-weight: 400; }
-  .featured-course-info .course-lesson svg {
-    color: #00af91;
-    width: 18px;
-    height: 18px;
-    margin-right: 5px; }
-  .featured-course-info .course-lesson span {
-    font-size: 14px;
-    color: #42414b;
-    font-weight: 400; }
-  .featured-course-info .course-hours {
-    padding-right: 12px; }
-    .featured-course-info .course-hours svg {
-      color: #ffc91b;
-      width: 18px;
-      height: 18px;
-      margin-right: 5px; }
-    .featured-course-info .course-hours span {
-      font-size: 14px;
-      color: #42414b;
-      font-weight: 400; }
-
-.featured-course .featured-course-text {
-  border-radius: 0px 0px 5px 5px;
-  background-color: white;
-  padding-top: 20px; }
-  .featured-course .featured-course-text small.category-name, .featured-course .featured-course-text .category-name.small {
-    display: block;
-    margin-bottom: 3px;
-    padding-left: 12px;
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #8f8fa3; }
-  .featured-course .featured-course-text h6, .featured-course .featured-course-text .h6 {
-    padding: 0px 12px;
-    margin-bottom: 12px; }
-    .featured-course .featured-course-text h6 a, .featured-course .featured-course-text .h6 a {
-      display: block;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 28px;
-      color: #202029;
-      -webkit-transition: 0.3s all linear;
-      transition: 0.3s all linear; }
-      .featured-course .featured-course-text h6 a:hover, .featured-course .featured-course-text .h6 a:hover {
-        color: #1089FF; }
-  .featured-course .featured-course-text .course-card {
-    margin-bottom: 12px;
+.featured-course {
+  margin: 0px 15px; }
+  .featured-course-image a {
+    display: block; }
+    .featured-course-image a img {
+      border-radius: 5px 5px 0px 0px; }
+  .featured-course-info {
+    padding: 12px 0px;
+    border-top: 1px solid #ebebf2;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -14571,29 +14515,100 @@ header #search-nav.appear {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0px 12px; }
-    .featured-course .featured-course-text .course-card-start h6, .featured-course .featured-course-text .course-card-start .h6 {
-      padding: 0;
-      margin-bottom: 0;
-      font-weight: 500 !important;
-      font-size: 18px !important;
-      color: #42414b !important; }
-      .featured-course .featured-course-text .course-card-start h6 span, .featured-course .featured-course-text .course-card-start .h6 span {
-        font-weight: 400 !important;
-        font-size: 14px !important;
-        color: #8f8fa3 !important; }
-    .featured-course .featured-course-text .course-card-end svg {
-      color: #ff7a1a;
+            justify-content: space-between; }
+    .featured-course-info .course-view {
+      padding-left: 12px; }
+      .featured-course-info .course-view svg {
+        color: #1089ff;
+        width: 18px;
+        height: 18px;
+        margin-right: 5px; }
+      .featured-course-info .course-view span {
+        font-size: 14px;
+        color: #42414b;
+        font-weight: 400; }
+    .featured-course-info .course-lesson svg {
+      color: #00af91;
       width: 18px;
       height: 18px;
-      margin-right: 2px; }
-    .featured-course .featured-course-text .course-card-end small, .featured-course .featured-course-text .course-card-end .small {
-      font-size: 16px;
-      color: #42414b; }
-      .featured-course .featured-course-text .course-card-end small span, .featured-course .featured-course-text .course-card-end .small span {
+      margin-right: 5px; }
+    .featured-course-info .course-lesson span {
+      font-size: 14px;
+      color: #42414b;
+      font-weight: 400; }
+    .featured-course-info .course-hours {
+      padding-right: 12px; }
+      .featured-course-info .course-hours svg {
+        color: #ffc91b;
+        width: 18px;
+        height: 18px;
+        margin-right: 5px; }
+      .featured-course-info .course-hours span {
         font-size: 14px;
-        color: #8f8fa3; }
+        color: #42414b;
+        font-weight: 400; }
+  .featured-course .featured-course-text {
+    border-radius: 0px 0px 5px 5px;
+    background-color: white;
+    padding-top: 20px; }
+    .featured-course .featured-course-text small.category-name, .featured-course .featured-course-text .category-name.small {
+      display: block;
+      margin-bottom: 3px;
+      padding-left: 12px;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8f8fa3; }
+    .featured-course .featured-course-text h6, .featured-course .featured-course-text .h6 {
+      padding: 0px 12px;
+      margin-bottom: 12px; }
+      .featured-course .featured-course-text h6 a, .featured-course .featured-course-text .h6 a {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #202029;
+        -webkit-transition: 0.3s all linear;
+        transition: 0.3s all linear; }
+        .featured-course .featured-course-text h6 a:hover, .featured-course .featured-course-text .h6 a:hover {
+          color: #1089FF; }
+    .featured-course .featured-course-text .course-card {
+      margin-bottom: 12px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0px 12px; }
+      .featured-course .featured-course-text .course-card-start h6, .featured-course .featured-course-text .course-card-start .h6 {
+        padding: 0;
+        margin-bottom: 0;
+        font-weight: 500 !important;
+        font-size: 18px !important;
+        color: #42414b !important; }
+        .featured-course .featured-course-text .course-card-start h6 span, .featured-course .featured-course-text .course-card-start .h6 span {
+          font-weight: 400 !important;
+          font-size: 14px !important;
+          color: #8f8fa3 !important; }
+      .featured-course .featured-course-text .course-card-end svg {
+        color: #ff7a1a;
+        width: 18px;
+        height: 18px;
+        margin-right: 2px; }
+      .featured-course .featured-course-text .course-card-end small, .featured-course .featured-course-text .course-card-end .small {
+        font-size: 16px;
+        color: #42414b; }
+        .featured-course .featured-course-text .course-card-end small span, .featured-course .featured-course-text .course-card-end .small span {
+          font-size: 14px;
+          color: #8f8fa3; }
 
 .featured-instructor {
   padding: 100px 0px;
@@ -16618,7 +16633,14 @@ header #search-nav.appear {
       margin-right: 0 !important;
       margin-bottom: 5px; }
   .similar-events .ourinstructor__wrapper .slick-dots {
-    display: none !important; } }
+    display: none !important; }
+  .ourevent-active .slick-slide img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .event__content_title h6, .event__content_title .h6,
+  .event__content_title .h6 {
+    margin-bottom: 15px; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .event__content_title h6, .event__content_title .h6 {
@@ -20529,9 +20551,10 @@ header {
 .text-button a {
   margin-bottom: 30px; }
 
-.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active {
+.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active,
+.students {
   position: relative; }
-  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots {
+  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -20541,7 +20564,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button {
+    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -20552,7 +20575,7 @@ header {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button {
+    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
