@@ -232,6 +232,39 @@
   }
 }
 
+// Accordion
+.event-search-wizard {
+  .event-search-wizard-header {
+    button {
+      svg {
+        transition: all 0.2s linear;
+      }
+    }
+  }
+  &.active {
+    .event-search-wizard-header {
+      button {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .event-search-wizard-body {
+      max-height: 0px;
+      width: 0px;
+      .event-search-wizard-item {
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+        pointer-events: none;
+      }
+    }
+  }
+  .event-search-wizard-body {
+    max-height: 350px;
+  }
+}
+
 // Responsive
 // extra Small devices 420px
 @media (max-width: 420px) {
@@ -261,7 +294,7 @@
   .event-search-content {
     margin-top: 0px;
 
-    .coures,
+    .course,
     .event {
       margin-bottom: 20px;
     }
@@ -298,7 +331,7 @@
   .event-search-content {
     margin-top: 0px;
 
-    .coures,
+    .course,
     .event {
       margin-bottom: 20px;
     }
@@ -331,7 +364,7 @@
   .event-search-content {
     margin-top: 0px;
 
-    .coures,
+    .course,
     .event {
       margin-bottom: 20px;
     }
@@ -364,7 +397,7 @@
   .event-search-content {
     margin-top: 0px;
 
-    .coures,
+    .course,
     .event {
       margin-bottom: 20px;
     }

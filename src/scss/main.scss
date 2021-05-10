@@ -11,17 +11,7 @@
 @import 'base/typography';
 @import 'base/reset';
 
-@import 'layout/footer';
-@import 'layout/header';
-@import 'layout/banner';
-@import 'layout/breadcrumb';
-@import 'layout/populercoures';
-@import 'layout/testimonial';
-@import 'layout/ourinstructor';
-@import 'layout/scta';
-@import 'layout/calltoaction';
-@import 'layout/newsletter';
-
+// components
 @import 'components/buttons';
 @import 'components/form';
 @import 'components/videolist';
@@ -39,6 +29,21 @@
 @import 'components/avatar';
 @import 'components/pricing';
 @import 'components/dropdown';
+@import 'components/arrows';
+@import 'components/range';
+
+// layout
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/breadcrumb';
+@import 'layout/populercoures';
+@import 'layout/testimonial';
+@import 'layout/ourinstructor';
+@import 'layout/scta';
+@import 'layout/calltoaction';
+@import 'layout/newsletter';
+@import 'layout/brands';
+@import 'layout/footer';
 
 // Pages
 @import 'pages/about';

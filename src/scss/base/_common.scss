@@ -28,13 +28,17 @@
     }
   }
 }
-.ourevent-active {
+.ourevent-active,
+.students {
   @extend %slickdots;
 }
-.slick-slide img {
-  // width: 100%;
-}
 // Responsive
+
+@media (max-width: 1199px) {
+  .slider-arrows {
+    display: none;
+  }
+}
 
 @media (max-width: 991px) {
   %space-1 {
@@ -78,7 +82,6 @@
   .brands-area-two,
   .browse-categories,
   .instructor-courses,
-  .students-info,
   .verify {
     padding-top: 30px !important;
   }
@@ -151,6 +154,10 @@
   section {
     @extend %space-2;
   }
+
+  .about-intro {
+    padding: 0px !important;
+  }
   .signup-area {
     padding-top: 0px !important;
   }
@@ -208,6 +215,9 @@
   section {
     @extend %space;
   }
+  .contactHero {
+    padding-top: 0px !important;
+  }
 
   // banner img
   .signup-area-image {
@@ -232,6 +242,10 @@
   .banner-three .h1 .event-sub-section-main h4 {
     @extend %fonts-sm-2;
   }
+  .cart-area .cart-wizard-area .text h6 {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
 
   // sub title
   .feedback-area h6 {
@@ -245,4 +259,21 @@
   .banner-two-start p {
     @extend %brief;
   }
+
+  // Testimonial  slider
+  .course__content_title h6,
+  .course__content_title .h6,
+  .event__content_title h6,
+  .event__content_title .h6,
+  .event-info-cart h6,
+  .event-speaker-info h6,
+  .event-speaker-info .h6 {
+    font-size: 16px !important;
+  }
+}
+
+// Responsive breakpoints
+@media (min-width: 575px) and (max-width: 767px) {
+}
+@media (min-width: 320px) and (max-width: 574px) {
 }

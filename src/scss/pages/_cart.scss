@@ -131,69 +131,6 @@
 }
 
 // Responsive
-
-@media (max-width: 991px) {
-  .cart-area {
-    padding-top: 30px !important;
-    .cart-wizard-area {
-      .text h6 {
-        margin-left: 0px;
-      }
-    }
-  }
-}
-
-// extra Small devices 420px
-@media (max-width: 767px) {
-  .cart-area {
-    padding: 30px 0px;
-
-    .cart-wizard-area {
-      flex-direction: column;
-      align-items: center;
-      .image {
-        display: none;
-      }
-
-      .text {
-        border-radius: 5px !important;
-
-        h6 {
-          font-size: 18px !important;
-        }
-      }
-    }
-    h6 {
-      margin-left: 15px;
-    }
-
-    form label {
-      margin-top: 10px;
-      margin-bottom: 10px !important;
-    }
-  }
-}
-
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
-  .cart-area {
-    padding: 30px 0px;
-
-    form label {
-      margin-top: 10px;
-      margin-bottom: 10px !important;
-    }
-  }
-}
-
-@media (min-width: 320px) and (max-width: 574px) {
-  .cart-area {
-    h6 {
-      margin-left: 0px;
-    }
-  }
-}
-
 // large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .cart-area {
@@ -218,5 +155,85 @@
       margin-top: 10px;
       margin-bottom: 10px !important;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .cart-area {
+    padding-top: 30px !important;
+    .cart-wizard-area {
+      .text h6 {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+  .cart-area {
+    padding: 30px 0px;
+
+    form label {
+      margin-top: 10px;
+      margin-bottom: 10px !important;
+    }
+  }
+}
+
+// extra Small devices 420px
+@media (max-width: 767px) {
+  .cart-area {
+    padding: 30px 0px;
+
+    .cart-wizard-area {
+      flex-direction: column;
+      align-items: center;
+      .image {
+        display: none;
+      }
+
+      .text {
+        border-radius: 5px !important;
+
+        h6 {
+          font-size: 18px !important;
+        }
+      }
+    }
+
+    form label {
+      margin-top: 10px;
+      margin-bottom: 10px !important;
+    }
+  }
+
+  .cart-area .summery-wizard {
+    padding: 20px 15px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .cart-area {
+    h6 {
+      font-size: 24px !important;
+      line-height: 36px !important;
+      margin-bottom: 8px !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .cart-area {
+    h6 {
+      font-size: 18px !important;
+      line-height: 28px !important;
+      margin-bottom: 8px !important;
+      margin-left: 0px;
+    }
+  }
+  .cart-area .cart-wizard-area .text h6 {
+    font-size: 16px !important;
+    line-height: 26px !important;
   }
 }

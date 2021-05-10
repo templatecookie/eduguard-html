@@ -1,212 +1,253 @@
 .purchase-area {
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 25px;
-    position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 25px;
+  position: relative;
 
-    &-close {
-        position: absolute;
-        top: 25px;
-        right: 25px;
+  &-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  &-items {
+    padding-right: 45px;
+    border-right: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
+
+    &-start {
+      margin-bottom: 35px;
+
+      .image {
+        margin-right: 15px;
+        width: 150px;
+        height: 100px;
+
+        img {
+          max-width: 100%;
+          border-radius: 3px;
+          object-fit: cover;
+        }
+      }
+
+      .text {
+        &-main {
+          max-width: 370px;
+
+          h6 {
+            font-weight: 500;
+            font-size: 18px;
+          }
+
+          p {
+            margin-top: 10px;
+            font-size: 14px;
+
+            a {
+              color: #8f8fa3;
+            }
+          }
+        }
+      }
     }
 
-    &-items {
-        padding-right: 45px;
-        border-right: 1px solid rgba($color: #8F8FA3, $alpha: 0.30);
+    &-end {
+      padding-left: 45px;
 
-        &-start {
-            margin-bottom: 35px;
+      p {
+        font-size: 20px !important;
+        color: #202029 !important;
+        margin-bottom: 10px;
+      }
 
-            .image {
-                margin-right: 15px;
-                width: 150px;
-                height: 100px;
+      dt {
+        color: #666575;
+        font-weight: 500;
+        font-size: 14px;
+      }
 
-                img {
-                    max-width: 100%;
-                    border-radius: 3px;
-                    object-fit: cover;
-                }
-            }
-
-            .text {
-                &-main {
-                    max-width: 370px;
-
-                    h6 {
-                        font-weight: 500;
-                        font-size: 18px;
-                    }
-
-                    p {
-                        margin-top: 10px;
-                        font-size: 14px;
-
-                        a {
-                            color: #8F8FA3;
-                        }
-                    }
-                }
-            }
-        }
-
-        &-end {
-            padding-left: 45px;
-
-            p {
-                font-size: 20px !important;
-                color: #202029 !important;
-                margin-bottom: 10px;
-            }
-
-            dt {
-                color: #666575;
-                font-weight: 500;
-                font-size: 14px;
-            }
-
-            dd {
-                color: #8F8FA3;
-                font-size: 14px;
-            }
-        }
+      dd {
+        color: #8f8fa3;
+        font-size: 14px;
+      }
     }
+  }
 }
 
 // Responsive
-// extra Small devices 420px
-@media (max-width: 420px) {
-    .purchase-area {
-        padding: 20px;
-        padding-bottom: 10px;
-    }
 
-    .purchase-area-items {
-        padding-right: 0;
-        border: none;
-
-        h6 {
-            margin-top: 25px;
-        }
-
-        .text-main {
-            max-width: 100%;
-
-            p {
-                margin-bottom: 5px;
-            }
-        }
-
-        &-end {
-            padding-left: 0;
-            margin-top: 10px;
-
-            dl {
-                margin-bottom: 0 !important;
-            }
-        }
-    }
-}
-
-// Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-    .purchase-area {
-        padding: 20px;
-        padding-bottom: 10px;
-    }
-
-    .purchase-area-items {
-        padding-right: 0;
-        border: none;
-
-        h6 {
-            margin-top: 25px;
-        }
-
-        .text-main {
-            max-width: 100%;
-
-            p {
-                margin-bottom: 5px;
-            }
-        }
-
-        &-end {
-            padding-left: 0;
-            margin-top: 10px;
-
-            dl {
-                margin-bottom: 0 !important;
-            }
-        }
-    }
-
-}
-
-// Small devices 575px - 767px
-@media (min-width: 575px) and (max-width: 767px) {
-    .purchase-area {
-        padding: 20px;
-        padding-bottom: 10px;
-    }
-
-    .purchase-area-items {
-        padding-right: 0;
-        border: none;
-
-        h6 {
-            margin-top: 25px;
-        }
-
-        .text-main {
-            max-width: 100%;
-
-            p {
-                margin-bottom: 5px;
-            }
-        }
-
-        &-end {
-            padding-left: 0;
-            margin-top: 10px;
-
-            dl {
-                margin-bottom: 0 !important;
-            }
-        }
-    }
+@media (max-width: 991px) {
+  .purchase-area-items-start .text-main h6 {
+    font-size: 26px !important;
+    line-height: 36px !important;
+  }
+  .purchase-area-items-start {
+    margin-bottom: 15px;
+  }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-    .purchase-area {
-        padding: 20px;
-        padding-bottom: 10px;
+  .purchase-area {
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  .purchase-area-items {
+    padding-right: 0;
+    border: none;
+
+    h6 {
+      margin-top: 25px;
     }
 
-    .purchase-area-items {
-        padding-right: 0;
-        border: none;
+    .text-main {
+      max-width: 100%;
 
-        h6 {
-            margin-top: 25px;
-        }
-
-        .text-main {
-            max-width: 100%;
-
-            p {
-                margin-bottom: 5px;
-            }
-        }
-
-        &-end {
-            padding-left: 0;
-            margin-top: 10px;
-
-            dl {
-                margin-bottom: 0 !important;
-            }
-        }
+      p {
+        margin-bottom: 5px;
+      }
     }
+
+    &-end {
+      padding-left: 0;
+      margin-top: 10px;
+
+      dl {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .purchase-area-items-start .text-main h6,
+  .purchase-area-items-start .text-main .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+  .purchase-area {
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  .purchase-area-items {
+    padding-right: 0;
+    border: none;
+
+    h6 {
+      margin-top: 25px;
+    }
+
+    .text-main {
+      max-width: 100%;
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-end {
+      padding-left: 0;
+      margin-top: 10px;
+
+      dl {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .purchase-area {
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  .purchase-area-items {
+    padding-right: 0;
+    border: none;
+
+    h6 {
+      margin-top: 25px;
+    }
+
+    .text-main {
+      max-width: 100%;
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-end {
+      padding-left: 0;
+      margin-top: 10px;
+
+      dl {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+// extra Small devices 420px
+@media (max-width: 420px) {
+  .purchase-area {
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  .purchase-area-items {
+    padding-right: 0;
+    border: none;
+
+    .text-main {
+      max-width: 100%;
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-end {
+      padding-left: 0;
+      margin-top: 10px;
+
+      dl {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .purchase-area-items-start .text-main p {
+    margin-top: 0px;
+  }
+  .purchase-area-items-end p {
+    font-size: 18px !important;
+    margin-bottom: 0px;
+  }
+
+  .purchase-area-items .text-main p {
+    margin-bottom: 0px;
+  }
+
+  .purchase-area-items-start .image {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .purchase-area-items-start .text-main h6 {
+    margin-top: 15px;
+  }
+  .purchase-area-items-start {
+    margin-bottom: 0px;
+  }
 }

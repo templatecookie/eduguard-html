@@ -349,9 +349,6 @@
   .intro-shape {
     display: none;
   }
-  // p. {
-  //   font-size: 16px !important;
-  // }
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0;
@@ -380,6 +377,12 @@
   .mentor__img img {
     height: auto;
   }
+
+  // about -centered
+
+  .about-intro__textContent {
+    text-align: center;
+  }
 }
 
 // Medium devices 768px - 991px
@@ -390,9 +393,6 @@
   .intro-shape {
     display: none;
   }
-  // p. {
-  //   font-size: 16px !important;
-  // }
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0;

@@ -39,9 +39,6 @@
     margin-right: -50px;
   }
 }
-
-// Banner Ends Here
-
 // Browse Categories Starts Here
 .browse-categories {
   position: relative;
@@ -219,9 +216,6 @@
     }
   }
 }
-
-// Browse Categories Ends Here
-
 // Popular Courses Starts Here
 .main-popular-course {
   .course__content {
@@ -234,9 +228,6 @@
   left: 0px;
   z-index: -1;
 }
-
-// Popular Courses Ends Here
-
 // Learn With Starts Here
 .learn-with {
   background-color: rgba($color: #ebebf2, $alpha: 0.7);
@@ -253,8 +244,6 @@
     }
   }
 }
-
-// Learn With Ends Here
 
 // Learning Rules Starts Here
 .learning-rules {
@@ -350,8 +339,6 @@
   }
 }
 
-// Learning Rules Ends Here
-
 //  About Services Starts Here
 .about-services {
   padding: 100px 0px;
@@ -420,11 +407,9 @@
   }
 }
 
-//  About Services Ends Here
-
 //  Best Instructors Starts Here
 .main-instructor-featured {
-  background-color: white !important;
+  background: #fff;
   position: relative;
 
   .instructor-overlay {
@@ -451,9 +436,6 @@
     @extend %slickdots;
   }
 }
-
-//  Best Instructors Ends Here
-
 // Latest Events Featured Starts Here
 .main-events-featured {
   background-color: rgba($color: #ebebf2, $alpha: 0.55);
@@ -498,8 +480,6 @@
     @extend %slickdots;
   }
 }
-
-// Latest Events Featured Ends Here
 
 // Main Become Instructor Starts Here
 .ms-12 {
@@ -562,8 +542,6 @@
   }
 }
 
-// Main Become Instructor Ends Here
-
 // Responsive
 
 @media (min-width: 1201px) and (max-width: 1499px) {
@@ -583,12 +561,6 @@
   .learning-rules {
     overflow: hidden !important;
   }
-}
-
-@media (max-width: 1200px) {
-  // .event {
-  //   margin: 0px 15px;
-  // }
 }
 
 // large devices 992px - 1200px
@@ -639,6 +611,14 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .latest-events-featured {
+    .slider-arrows {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .main-banner {
     padding-top: 90px;
@@ -658,8 +638,6 @@
   .about-services .testimonial__wrapper_item p {
     text-align: center;
   }
-
-  // Latest featured
 }
 
 // Medium devices 768px - 991px

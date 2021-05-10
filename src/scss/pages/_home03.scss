@@ -74,10 +74,14 @@
   .btn-primary {
     margin-top: 50px;
   }
+  .slider-arrows {
+    @extend %arrows;
+  }
 }
 
 // Featured Course Starts Here
 .featured-course {
+  margin: 0px 15px;
   &-image {
     a {
       display: block;
@@ -802,5 +806,9 @@
   }
   .banner-three p {
     padding: 15px 0px;
+  }
+  // popup
+  .playbtn-area svg {
+    height: 15px;
   }
 }

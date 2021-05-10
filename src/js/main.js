@@ -36,13 +36,19 @@
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
+    autoplay: true,
     dots: false,
+    arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: '.event__wrap .prev-arrow',
-    nextArrow: '.event__wrap .next-arrow',
+    prevArrow: ' .prev-arrow',
+    nextArrow: ' .next-arrow',
     responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          arrows: false,
+        },
+      },
       {
         breakpoint: 992,
         settings: {
@@ -51,6 +57,7 @@
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          arrows: true,
         },
       },
       {
@@ -60,6 +67,79 @@
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+    ],
+  });
+  // newCourse
+  $('.newCourse').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: false,
+    arrows: true,
+    autoplaySpeed: 2000,
+    prevArrow: ' .prev-arrow',
+    nextArrow: ' .next-arrow',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          autoplay: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  });
+  // our students
+  $('.students').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: true,
+    centerMode: true,
+    centerPadding: '0px',
+    prevArrow: ' .prev-arrow',
+    nextArrow: ' .next-arrow',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          autoplay: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
         },
       },
     ],
@@ -79,7 +159,6 @@
       {
         breakpoint: 992,
         settings: {
-          autoplay: true,
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
@@ -89,7 +168,6 @@
       {
         breakpoint: 768,
         settings: {
-          autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -182,7 +260,7 @@
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
     autoplaySpeed: 2000,
     prevArrow: '.ourevent__wrapper .prev-arrow',
@@ -207,18 +285,18 @@
   });
 
   // init Isotope
-  var $grid = $('.populercoures-item').isotope({
+  var $grid = $('.populercourse-item').isotope({
     // options
   });
   // filter items on button click
-  $('.populercoures-ist').on('click', 'li', function () {
+  $('.populercourse-ist').on('click', 'li', function () {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({
       filter: filterValue,
     });
 
     // filter items on button click
-    $('.populercoures-ist').on('click', 'li', function () {
+    $('.populercourse-ist').on('click', 'li', function () {
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({
         filter: filterValue,

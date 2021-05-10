@@ -273,55 +273,29 @@
   }
 }
 
-// extra Small devices 420px
-@media (max-width: 420px) {
-  .form-area-shape,
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
   .contact-feature-shape,
   .contact-hero-shape {
     display: none;
   }
 
-  .getin-touch {
-    padding: 30px 0px;
-    background-image: none !important;
-    background-color: rgba($color: #ebebf2, $alpha: 0.75) !important;
-  }
+  .contact-location-area {
+    // flex-direction: column !important;
+    // align-items: flex-start !important;
 
-  .contact-feature {
-    flex-direction: column;
-
-    &-icon {
-      margin-right: 0;
-      margin-bottom: 20px;
+    .contact-location {
+      margin-bottom: 10px !important;
     }
   }
 
-  .form-area {
-    padding: 16px;
-
-    form input {
-      padding: 12px 20px;
-    }
-  }
-
-  .map-area {
-    margin-top: 0px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-
-    &-frame {
-      padding: 0;
-      border: none;
-
-      iframe {
-        height: auto;
-      }
-    }
+  .contact-feature-text h5 {
+    font-size: 20px !important;
   }
 }
 
-// Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
   .form-area-shape,
   .contact-feature-shape,
   .contact-hero-shape {
@@ -343,8 +317,6 @@
     }
 
     &-text {
-      text-align: left;
-
       h5 {
         font-size: 18px !important;
       }
@@ -428,8 +400,8 @@
   }
 }
 
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
   .form-area-shape,
   .contact-feature-shape,
   .contact-hero-shape {
@@ -481,24 +453,49 @@
   }
 }
 
-// large devices 992px - 1200px
-@media (min-width: 992px) and (max-width: 1200px) {
+// extra Small devices 420px
+@media (max-width: 420px) {
+  .form-area-shape,
   .contact-feature-shape,
   .contact-hero-shape {
     display: none;
   }
 
-  .contact-location-area {
-    // flex-direction: column !important;
-    // align-items: flex-start !important;
+  .getin-touch {
+    padding: 30px 0px;
+    background-image: none !important;
+    background-color: rgba($color: #ebebf2, $alpha: 0.75) !important;
+  }
 
-    .contact-location {
-      margin-bottom: 10px !important;
+  .contact-feature {
+    flex-direction: column;
+
+    &-icon {
+      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 
-  .contact-feature-text h5 {
-    font-size: 20px !important;
+  .form-area {
+    padding: 16px;
+
+    form input {
+      padding: 12px 20px;
+    }
+  }
+
+  .map-area {
+    margin-top: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    &-frame {
+      padding: 0;
+      border: none;
+
+      iframe {
+        height: auto;
+      }
+    }
   }
 }
-// Responsive Ends Here

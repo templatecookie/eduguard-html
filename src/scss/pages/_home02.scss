@@ -17,7 +17,7 @@
 
     p {
       max-width: 525px;
-      color: #666575;
+      color: #666575 !important;
       font-size: 20px !important;
       line-height: 28px !important;
       margin-bottom: 30px;
@@ -115,9 +115,6 @@
     }
   }
 }
-
-// Banner Ends Here
-
 // Intro Featured Starts Here
 .intro-featured {
   padding-bottom: 100px;
@@ -164,8 +161,6 @@
   }
 }
 
-// Intro Featured Ends Here
-
 // Featured Categories Starts Here
 .featured-categories {
   padding-bottom: 100px;
@@ -197,9 +192,6 @@
     margin-top: 50px;
   }
 }
-
-// Featured Categories Ends Here
-
 // Popular Courses Starts Here
 .featured-popular-courses {
   padding: 100px 0px;
@@ -276,8 +268,6 @@
   }
 }
 
-// Popular Courses Ends Here
-
 // Students Says Starts Here
 .students-says {
   padding-top: 100px;
@@ -312,12 +302,10 @@
   }
 }
 
-// Students Says Ends Here
-
 // Brands Area Starts Here
 .brands-area-two {
   padding-top: 40px;
-
+  padding-bottom: 100px;
   &-heading {
     max-width: 430px;
 
@@ -331,14 +319,9 @@
     }
   }
 }
-
-// Brands Area Ends Here
-
 // Instructor Featured Area Starts Here
 .best-instructor-featured {
   padding: 100px 0px;
-  background-color: rgba($color: #ebebf2, $alpha: 0.4);
-
   h3 {
     color: #202029 !important;
   }
@@ -348,28 +331,48 @@
     height: 290px;
   }
 }
-
-// Instructor Featured Area Ends Here
-
 // Latest Events Featured Starts Here
 .latest-events-featured {
   padding: 100px 0px;
-
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #ebebf2;
+    opacity: 0.55;
+  }
   h3 {
     color: #202029 !important;
     text-align: center;
     margin-bottom: 50px;
   }
+  .slider-arrows {
+    @extend %arrows;
+  }
 }
-
-// Latest Events Featured Ends Here
 
 // Join Area Starts Here
 .join-area-02 {
-  background-color: rgba($color: #ebebf2, $alpha: 0.6);
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00af91;
+    opacity: 0.1;
+    z-index: -1;
+  }
 }
-
-// Join Area Ends Here
 
 // Get Started Starts Here
 .get-started {
@@ -673,6 +676,16 @@
   .banner-input .main-input input::placeholder {
     font-size: 12px;
   }
+
+  .testimonial__img .play-video {
+    right: 50%;
+    transform: translateX(30%);
+    a {
+      svg {
+        height: 18px;
+      }
+    }
+  }
 }
 
 // Small devices 575px - 767px
@@ -773,11 +786,6 @@
       .rectangle,
       .dot {
         display: none;
-      }
-
-      .play-video {
-        right: 200px;
-        transform: translateX(-50%) !important;
       }
     }
 
@@ -940,11 +948,6 @@
       .dot {
         display: none;
       }
-
-      .play-video {
-        right: 60px;
-        transform: translateX(-50%) !important;
-      }
     }
 
     .testimonial__wrapper {
@@ -953,7 +956,7 @@
 
     .testimonial__wrapper_title {
       margin-bottom: 15px;
-      margin-top: 20px;
+      margin-top: 0px;
     }
 
     .testimonial__wrapper_item-author .author__img img {
@@ -1032,10 +1035,6 @@
             border-right: 0px;
           }
         }
-
-        // .select-button {
-        //   display: none !important;
-        // }
       }
     }
 
@@ -1106,11 +1105,6 @@
       .rectangle,
       .dot {
         display: none;
-      }
-
-      .play-video {
-        right: 200px;
-        transform: translateX(-50%) !important;
       }
     }
 

@@ -278,12 +278,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
-  }
 }
 
 // Small devices 420px - 574px
@@ -365,13 +359,10 @@
 }
 
 @media (max-width: 767px) {
-  //   .event-sub-section-main h4 {
-  //     font-size: 24px !important;
-  //     line-height: 36px !important;
-  //   }
-  //   .created-by-text h6 {
-  //     line-height: 28px !important;
-  //   }
+  .similar-events {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 // Small devices 575px - 767px
@@ -582,9 +573,28 @@
       display: none !important;
     }
   }
+
+  // slider
+  .ourevent-active {
+    .slick-slide {
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .event__content_title h6,
+  .event__content_title .h6 {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  // Testimonial slider
+  .event__content_title h6 {
+    font-size: 16px !important;
+  }
+
   .event-sub-section-main h4,
   .event-sub-section-main .h4,
   .course-includes h6,
@@ -602,5 +612,26 @@
     &-nav {
       justify-content: center;
     }
+  }
+  .icon-with-date-start,
+  .icon-with-date-end {
+    svg {
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
+    }
+  }
+  .event-sub-section-main .icon-with-date-start,
+  .icon-with-date-end {
+    margin-bottom: 15px;
+  }
+  .event-sub-section-main .icon-with-date {
+    margin-bottom: 0px;
+  }
+  .event-sub-section-main .icon-with-date-end span {
+    margin-left: 0px;
+  }
+  .icon-with-date-end {
+    text-align: center;
   }
 }
