@@ -9,33 +9,16 @@
     }
   }
 }
-
-.categoryDrop {
-  border-top: 2px solid #1089ff;
-  border-bottom: 2px solid #1089ff;
-  background-color: #fff;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.2s linear;
-  transform: translateY(-15px);
-  pointer-events: none;
-
-  &.appear {
-    // display: block;
-    width: 100%;
-    opacity: 1;
-    transform: translateY(0px);
-    pointer-events: all;
+.dropSelect {
+  width: 100px;
+  .nice-select {
+    border: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #42414b;
   }
-  & > div {
-    padding: 15px 0px;
-    text-align: center;
-    cursor: pointer;
-    &:hover {
-      background-color: #f5f4f9;
-    }
+  .nice-select:after {
+    width: 8px;
+    height: 8px;
   }
 }

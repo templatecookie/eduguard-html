@@ -11042,32 +11042,16 @@ button:focus {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
 
-.categoryDrop {
-  border-top: 2px solid #1089ff;
-  border-bottom: 2px solid #1089ff;
-  background-color: #fff;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-  pointer-events: none; }
-  .categoryDrop.appear {
-    width: 100%;
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    pointer-events: all; }
-  .categoryDrop > div {
-    padding: 15px 0px;
-    text-align: center;
-    cursor: pointer; }
-    .categoryDrop > div:hover {
-      background-color: #f5f4f9; }
+.dropSelect {
+  width: 100px; }
+  .dropSelect .nice-select {
+    border: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #42414b; }
+  .dropSelect .nice-select:after {
+    width: 8px;
+    height: 8px; }
 
 .testimonial-area .slider-arrows, .ourinstructor__wrapper .slider-arrows, .latest-events-featured .slider-arrows, .new-course-feature .slider-arrows {
   display: -webkit-box;
