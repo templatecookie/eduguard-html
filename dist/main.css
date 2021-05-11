@@ -15936,7 +15936,9 @@ header #search-nav.appear {
     margin-bottom: 30px;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.5);
-    padding: 15px 24px 30px 24px; }
+    padding: 15px 24px 0px 24px; }
+    .event-search-wizard.active .event-search-wizard-body {
+      padding-bottom: 0px; }
     .event-search-wizard-header {
       margin-bottom: 30px;
       display: -webkit-box;
@@ -15955,6 +15957,8 @@ header #search-nav.appear {
       border-bottom: 1px solid rgba(143, 143, 163, 0.25); }
       .event-search-wizard-header h6, .event-search-wizard-header .h6 {
         color: #42414b !important; }
+    .event-search-wizard-body {
+      padding-bottom: 30px; }
     .event-search-wizard-item {
       margin-bottom: 15px;
       display: -webkit-box;
@@ -17107,7 +17111,9 @@ header #search-nav.appear {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; }
     .course-curriculum-area .curriculum-area-top-start {
       display: -webkit-box;
       display: -webkit-flex;
@@ -17116,7 +17122,7 @@ header #search-nav.appear {
       .course-curriculum-area .curriculum-area-top-start h6, .course-curriculum-area .curriculum-area-top-start .h6 {
         font-weight: 500 !important;
         font-size: 16px !important;
-        color: #42414B !important;
+        color: #42414b !important;
         margin-left: 10px; }
     .course-curriculum-area .curriculum-area-top-end {
       display: -webkit-box;
@@ -17134,7 +17140,7 @@ header #search-nav.appear {
             -ms-flex-align: center;
                 align-items: center; }
         .course-curriculum-area .curriculum-area-top-end .total-lesson p {
-          color: #42414B !important;
+          color: #42414b !important;
           font-size: 14px !important;
           margin-left: 5px; }
       .course-curriculum-area .curriculum-area-top-end .total-hours {
@@ -17147,16 +17153,18 @@ header #search-nav.appear {
             -ms-flex-align: center;
                 align-items: center; }
         .course-curriculum-area .curriculum-area-top-end .total-hours p {
-          color: #42414B !important;
+          color: #42414b !important;
           font-size: 14px !important;
           margin-left: 5px; }
   .course-curriculum-area .curriculum-area-bottom {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
     background-color: white;
     padding: 12px 24px;
     padding-bottom: 24px;
-    border-top: 1px solid #EBEBF2; }
+    border-top: 1px solid #ebebf2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
     .course-curriculum-area .curriculum-area-bottom .active {
       border: none !important;
       border: 1px solid rgba(16, 137, 255, 0.4) !important;
@@ -17175,7 +17183,8 @@ header #search-nav.appear {
           -ms-flex-pack: justify;
               justify-content: space-between;
       padding: 12px 24px;
-      border-bottom: 1px solid #EBEBF2; }
+      border-bottom: 1px solid #ebebf2;
+      border: 0px; }
       .course-curriculum-area .curriculum-area-bottom .curriculum-description-start p {
         display: -webkit-box;
         display: -webkit-flex;
@@ -17188,9 +17197,9 @@ header #search-nav.appear {
         .course-curriculum-area .curriculum-area-bottom .curriculum-description-start p a {
           margin-right: 8px;
           font-size: 14px !important;
-          color: #8F8FA3; }
+          color: #8f8fa3; }
           .course-curriculum-area .curriculum-area-bottom .curriculum-description-start p a svg {
-            color: #1089FF; }
+            color: #1089ff; }
       .course-curriculum-area .curriculum-area-bottom .curriculum-description-end {
         display: -webkit-box;
         display: -webkit-flex;

@@ -9,8 +9,12 @@
     margin-bottom: 30px;
     border-radius: 5px;
     background: rgba($color: #ffffff, $alpha: 0.5);
-    padding: 15px 24px 30px 24px;
-
+    padding: 15px 24px 0px 24px;
+    &.active {
+      .event-search-wizard-body {
+        padding-bottom: 0px;
+      }
+    }
     &-header {
       margin-bottom: 30px;
       display: flex;
@@ -22,6 +26,9 @@
       h6 {
         color: #42414b !important;
       }
+    }
+    &-body {
+      padding-bottom: 30px;
     }
 
     &-item {
