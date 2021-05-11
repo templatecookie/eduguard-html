@@ -10224,6 +10224,15 @@ button:focus {
     .videolist-area-wizard .main-wizard-end span {
       color: #8f8fa3;
       font-size: 14px; }
+    .videolist-area-wizard .main-wizard a .main-wizard-check .form-check-input:focus {
+      border: 0;
+      outline: 0; }
+    .videolist-area-wizard .main-wizard a .main-wizard-check label {
+      font-size: 14px;
+      line-height: 24px;
+      color: #8f8fa3; }
+    .videolist-area-wizard .main-wizard a.active .form-check-input:checked {
+      background-color: #d1cbcb; }
 
 @media (max-width: 420px) {
   .videolist-area-wizard {
