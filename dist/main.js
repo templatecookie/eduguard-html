@@ -1,1 +1,123 @@
-!function(e){var o={};function r(t){if(o[t])return o[t].exports;var s=o[t]={i:t,l:!1,exports:{}};return e[t].call(s.exports,s,s.exports,r),s.l=!0,s.exports}r.m=e,r.c=o,r.d=function(e,o,t){r.o(e,o)||Object.defineProperty(e,o,{enumerable:!0,get:t})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,o){if(1&o&&(e=r(e)),8&o)return e;if(4&o&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(r.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&o&&"string"!=typeof e)for(var s in e)r.d(t,s,function(o){return e[o]}.bind(null,s));return t},r.n=function(e){var o=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(o,"a",o),o},r.o=function(e,o){return Object.prototype.hasOwnProperty.call(e,o)},r.p="",r(r.s=0)}([function(e,o,r){r(1),e.exports=r(2)},function(e,o,r){"use strict";!function(e){function o(){e("#mySidenav").css("left","-300px"),r()}function r(){e("#overlayy").toggleClass("active")}e(".hamburger-menu a").on("click",(function(){e("#mySidenav").css("left","0"),r()})),e("#overlayy").on("click",(function(){o()})),e(".closebtn").on("click",(function(){o()})),e(".eventsSlider").slick({infinite:!0,slidesToShow:3,slidesToScroll:1,autoplay:!0,dots:!1,arrows:!0,autoplaySpeed:2e3,prevArrow:" .prev-arrow",nextArrow:" .next-arrow",responsive:[{breakpoint:1025,settings:{arrows:!1}},{breakpoint:992,settings:{autoplay:!0,slidesToShow:2,slidesToScroll:1,infinite:!0,dots:!0,arrows:!0}},{breakpoint:768,settings:{dots:!0,autoplay:!0,slidesToShow:1,slidesToScroll:1,arrows:!0}}]}),e(".newCourse").slick({infinite:!0,slidesToShow:3,slidesToScroll:1,autoplay:!0,dots:!1,arrows:!0,autoplaySpeed:2e3,prevArrow:" .prev-arrow",nextArrow:" .next-arrow",responsive:[{breakpoint:992,settings:{autoplay:!0,slidesToShow:2,slidesToScroll:1,infinite:!0,dots:!0,arrows:!1}},{breakpoint:768,settings:{dots:!0,autoplay:!0,slidesToShow:1,slidesToScroll:1,arrows:!1}}]}),e(".students").slick({infinite:!0,slidesToShow:3,slidesToScroll:1,autoplay:!1,autoplaySpeed:2e3,dots:!1,arrows:!0,centerMode:!0,centerPadding:"0px",prevArrow:" .prev-arrow",nextArrow:" .next-arrow",responsive:[{breakpoint:992,settings:{autoplay:!0,slidesToShow:2,slidesToScroll:1,infinite:!0,dots:!0,arrows:!0}},{breakpoint:768,settings:{dots:!0,autoplay:!0,slidesToShow:1,slidesToScroll:1,arrows:!0}}]}),e(".about__slider").slick({infinite:!0,slidesToShow:2,slidesToScroll:1,autoplay:!0,arrows:!0,dots:!0,autoplaySpeed:2e3,prevArrow:".about__slider-wrap .prev-arrow",nextArrow:".about__slider-wrap .next-arrow",responsive:[{breakpoint:992,settings:{slidesToShow:2,slidesToScroll:1,infinite:!0,dots:!0}},{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1}}]}),e(".testimonial__active").slick({infinite:!0,slidesToShow:1,slidesToScroll:1,autoplay:!0,arrows:!0,autoplaySpeed:2e3,prevArrow:".testimonial__wrapper .prev-arrow",nextArrow:".testimonial__wrapper .next-arrow"}),e(".brand-area").slick({infinite:!0,slidesToShow:5,slidesToScroll:1,arrows:!1,responsive:[{breakpoint:1024,settings:{slidesToShow:4,slidesToScroll:1}},{breakpoint:600,settings:{slidesToShow:2,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:2,slidesToScroll:1}}]}),e(".ourinstructor-active").slick({infinite:!0,slidesToShow:4,slidesToScroll:1,autoplay:!0,autoplaySpeed:2e3,prevArrow:".ourinstructor__wrapper .prev-arrow",nextArrow:".ourinstructor__wrapper .next-arrow",responsive:[{breakpoint:1200,settings:{slidesToShow:3,slidesToScroll:1,dots:!0}},{breakpoint:993,settings:{slidesToShow:2,slidesToScroll:1,dots:!0}},{breakpoint:767,settings:{slidesToShow:1,slidesToScroll:1,dots:!0}}]}),e(".ourevent-active").slick({infinite:!0,slidesToShow:3,slidesToScroll:1,autoplay:!1,arrows:!0,autoplaySpeed:2e3,prevArrow:".ourevent__wrapper .prev-arrow",nextArrow:".ourevent__wrapper .next-arrow",responsive:[{breakpoint:1199,settings:{slidesToShow:2,dots:!0}},{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1,dots:!0}}]});var t=e(".populercourse-item").isotope({});e(".populercourse-ist").on("click","li",(function(){var o=e(this).attr("data-filter");t.isotope({filter:o}),e(".populercourse-ist").on("click","li",(function(){var o=e(this).attr("data-filter");t.isotope({filter:o})}))})),e(".popup-video").magnificPopup({type:"iframe"}),e(document).ready((function(){e("select").niceSelect()}))}(jQuery)},function(e,o,r){}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/js/main.js":
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval(" // // UI variables\n// const categoryBtn = document.querySelector('#categoryBtn');\n// const dropBox = document.querySelector('.categoryDrop');\n// categoryBtn.addEventListener('click', (e) => {\n//   e.preventDefault();\n//   dropBox.classList.toggle('appear');\n// });\n\n(function ($) {\n  $('.hamburger-menu a').on('click', function () {\n    $('#mySidenav').css('left', '0');\n    toggleOverlay();\n  });\n\n  function hideNav() {\n    $('#mySidenav').css('left', '-300px');\n    toggleOverlay();\n  }\n\n  $('#overlayy').on('click', function () {\n    hideNav();\n  });\n  $('.closebtn').on('click', function () {\n    hideNav();\n  });\n\n  function toggleOverlay() {\n    $('#overlayy').toggleClass('active');\n  } //Events Slider\n\n\n  $('.eventsSlider').slick({\n    infinite: true,\n    slidesToShow: 3,\n    slidesToScroll: 1,\n    autoplay: true,\n    dots: false,\n    arrows: true,\n    autoplaySpeed: 2000,\n    prevArrow: ' .prev-arrow',\n    nextArrow: ' .next-arrow',\n    responsive: [{\n      breakpoint: 1025,\n      settings: {\n        arrows: false\n      }\n    }, {\n      breakpoint: 992,\n      settings: {\n        autoplay: true,\n        slidesToShow: 2,\n        slidesToScroll: 1,\n        infinite: true,\n        dots: true,\n        arrows: true\n      }\n    }, {\n      breakpoint: 768,\n      settings: {\n        dots: true,\n        autoplay: true,\n        slidesToShow: 1,\n        slidesToScroll: 1,\n        arrows: true\n      }\n    }]\n  }); // newCourse\n\n  $('.newCourse').slick({\n    infinite: true,\n    slidesToShow: 3,\n    slidesToScroll: 1,\n    autoplay: true,\n    dots: false,\n    arrows: true,\n    autoplaySpeed: 2000,\n    prevArrow: ' .prev-arrow',\n    nextArrow: ' .next-arrow',\n    responsive: [{\n      breakpoint: 992,\n      settings: {\n        autoplay: true,\n        slidesToShow: 2,\n        slidesToScroll: 1,\n        infinite: true,\n        dots: true,\n        arrows: false\n      }\n    }, {\n      breakpoint: 768,\n      settings: {\n        dots: true,\n        autoplay: true,\n        slidesToShow: 1,\n        slidesToScroll: 1,\n        arrows: false\n      }\n    }]\n  }); // our students\n\n  $('.students').slick({\n    infinite: true,\n    slidesToShow: 3,\n    slidesToScroll: 1,\n    autoplay: false,\n    autoplaySpeed: 2000,\n    dots: false,\n    arrows: true,\n    centerMode: true,\n    centerPadding: '0px',\n    prevArrow: ' .prev-arrow',\n    nextArrow: ' .next-arrow',\n    responsive: [{\n      breakpoint: 992,\n      settings: {\n        autoplay: true,\n        slidesToShow: 2,\n        slidesToScroll: 1,\n        infinite: true,\n        dots: true,\n        arrows: true\n      }\n    }, {\n      breakpoint: 768,\n      settings: {\n        dots: true,\n        autoplay: true,\n        slidesToShow: 1,\n        slidesToScroll: 1,\n        arrows: true\n      }\n    }]\n  });\n  $('.about__slider').slick({\n    infinite: true,\n    slidesToShow: 2,\n    slidesToScroll: 1,\n    autoplay: true,\n    arrows: true,\n    dots: true,\n    autoplaySpeed: 2000,\n    prevArrow: '.about__slider-wrap .prev-arrow',\n    nextArrow: '.about__slider-wrap .next-arrow',\n    responsive: [{\n      breakpoint: 992,\n      settings: {\n        slidesToShow: 2,\n        slidesToScroll: 1,\n        infinite: true,\n        dots: true\n      }\n    }, {\n      breakpoint: 768,\n      settings: {\n        slidesToShow: 1,\n        slidesToScroll: 1\n      }\n    }]\n  }); //testimonial_slider\n\n  $('.testimonial__active').slick({\n    infinite: true,\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    autoplay: true,\n    arrows: true,\n    autoplaySpeed: 2000,\n    prevArrow: '.testimonial__wrapper .prev-arrow',\n    nextArrow: '.testimonial__wrapper .next-arrow'\n  }); //Brand_slider\n\n  $('.brand-area').slick({\n    infinite: true,\n    slidesToShow: 5,\n    slidesToScroll: 1,\n    arrows: false,\n    responsive: [{\n      breakpoint: 1024,\n      settings: {\n        slidesToShow: 4,\n        slidesToScroll: 1\n      }\n    }, {\n      breakpoint: 600,\n      settings: {\n        slidesToShow: 2,\n        slidesToScroll: 1\n      }\n    }, {\n      breakpoint: 480,\n      settings: {\n        slidesToShow: 2,\n        slidesToScroll: 1\n      }\n    }]\n  }); //Mentor _Slider\n\n  $('.ourinstructor-active').slick({\n    infinite: true,\n    slidesToShow: 4,\n    slidesToScroll: 1,\n    autoplay: true,\n    autoplaySpeed: 2000,\n    prevArrow: '.ourinstructor__wrapper .prev-arrow',\n    nextArrow: '.ourinstructor__wrapper .next-arrow',\n    responsive: [{\n      breakpoint: 1200,\n      settings: {\n        slidesToShow: 3,\n        slidesToScroll: 1,\n        dots: true\n      }\n    }, {\n      breakpoint: 993,\n      settings: {\n        slidesToShow: 2,\n        slidesToScroll: 1,\n        dots: true\n      }\n    }, {\n      breakpoint: 767,\n      settings: {\n        slidesToShow: 1,\n        slidesToScroll: 1,\n        dots: true\n      }\n    }]\n  }); //Event _Slider\n\n  $('.ourevent-active').slick({\n    infinite: true,\n    slidesToShow: 3,\n    slidesToScroll: 1,\n    autoplay: false,\n    arrows: true,\n    autoplaySpeed: 2000,\n    prevArrow: '.ourevent__wrapper .prev-arrow',\n    nextArrow: '.ourevent__wrapper .next-arrow',\n    responsive: [{\n      breakpoint: 1199,\n      settings: {\n        slidesToShow: 2,\n        dots: true\n      }\n    }, {\n      breakpoint: 768,\n      settings: {\n        slidesToShow: 1,\n        slidesToScroll: 1,\n        dots: true\n      }\n    }]\n  }); // init Isotope\n\n  var $grid = $('.populercourse-item').isotope({// options\n  }); // filter items on button click\n\n  $('.populercourse-ist').on('click', 'li', function () {\n    var filterValue = $(this).attr('data-filter');\n    $grid.isotope({\n      filter: filterValue\n    }); // filter items on button click\n\n    $('.populercourse-ist').on('click', 'li', function () {\n      var filterValue = $(this).attr('data-filter');\n      $grid.isotope({\n        filter: filterValue\n      });\n    });\n  });\n  /* magnificPopup video view */\n\n  $('.popup-video').magnificPopup({\n    type: 'iframe'\n  }); //nice-select\n\n  $(document).ready(function () {\n    $('select').niceSelect();\n  });\n})(jQuery);\n\n//# sourceURL=webpack:///./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/scss/main.scss":
+/*!****************************!*\
+  !*** ./src/scss/main.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/scss/main.scss?");
+
+/***/ }),
+
+/***/ 0:
+/*!***************************************************!*\
+  !*** multi ./src/js/main.js ./src/scss/main.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./src/js/main.js */\"./src/js/main.js\");\nmodule.exports = __webpack_require__(/*! ./src/scss/main.scss */\"./src/scss/main.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/js/main.js_./src/scss/main.scss?");
+
+/***/ })
+
+/******/ });
