@@ -11052,12 +11052,23 @@ button:focus {
               transform: rotate(180deg); }
 
 .dropSelect {
-  width: 100px; }
+  width: 100px;
+  position: relative; }
+  .dropSelect-icon {
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    z-index: 999; }
   .dropSelect .nice-select {
     border: 0;
     font-size: 16px;
     font-weight: 400;
     color: #42414b; }
+    .dropSelect .nice-select span.current {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #666575; }
   .dropSelect .nice-select:after {
     width: 8px;
     height: 8px; }
@@ -13733,7 +13744,7 @@ header #search-nav.appear {
     width: 400px;
     border: none;
     color: #8f8fa3;
-    border-right: 1px solid #dddddd; }
+    border-right: 1px solid #ebebf2; }
   .banner-input .select-button {
     padding-left: 25px; }
     .banner-input .select-button button {
