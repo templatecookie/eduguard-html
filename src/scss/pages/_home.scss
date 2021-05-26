@@ -198,6 +198,8 @@
 
   .btn-primary {
     margin-top: 50px;
+    padding: 19px 32px;
+    font-weight: 600;
   }
 
   &-shape {
@@ -285,6 +287,10 @@
       font-size: 48px !important;
       color: #202029 !important;
       margin-bottom: 20px;
+    }
+    .btn-primary{
+      padding: 19px 32px;
+      font-weight: 600;
     }
   }
 
@@ -493,6 +499,7 @@
 
   .btn-primary {
     margin-top: 50px;
+    padding: 19px 32px;
   }
 
   &-shape {

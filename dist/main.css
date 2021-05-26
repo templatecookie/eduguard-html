@@ -13138,7 +13138,9 @@ header #search-nav.appear {
       .browse-categories-item-text p {
         font-size: 14px !important; }
   .browse-categories .btn-primary {
-    margin-top: 50px; }
+    margin-top: 50px;
+    padding: 19px 32px;
+    font-weight: 600; }
   .browse-categories-shape img {
     position: absolute; }
   .browse-categories-shape .shape-01 {
@@ -13200,6 +13202,9 @@ header #search-nav.appear {
     font-size: 48px !important;
     color: #202029 !important;
     margin-bottom: 20px; }
+  .learning-rules-starts .btn-primary {
+    padding: 19px 32px;
+    font-weight: 600; }
   .learning-rules-ends {
     padding-left: 80px;
     margin-right: -80px;
@@ -13318,7 +13323,8 @@ header #search-nav.appear {
     padding-right: 12px;
     border-radius: 5px; }
   .main-events-featured .btn-primary {
-    margin-top: 50px; }
+    margin-top: 50px;
+    padding: 19px 32px; }
   .main-events-featured-shape img {
     position: absolute; }
   .main-events-featured-shape .shape01 {
@@ -14020,7 +14026,8 @@ header #search-nav.appear {
     bottom: 175px;
     right: 85px; }
   .featured-popular-courses .tab-content .btn-primary {
-    margin-top: 50px; }
+    margin-top: 50px;
+    padding: 19px 32px; }
 
 .students-says {
   padding-top: 100px;
