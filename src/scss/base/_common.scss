@@ -32,7 +32,58 @@
 .students {
   @extend %slickdots;
 }
+
+.bg-w {
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.3;
+    z-index: -1;
+  }
+}
+
 // Responsive
+
+@media (max-width: 1200px) {
+  // slick-arrows
+  .new-course-feature .slider-arrows .prev-arrow,
+  .new-course-feature .slider-arrows .next-arrow,
+  .latest-events-featured .slider-arrows .prev-arrow,
+  .latest-events-featured .slider-arrows .next-arrow {
+    top: auto;
+    bottom: -95px;
+  }
+  .new-course-feature .slider-arrows .prev-arrow,
+  .latest-events-featured .slider-arrows .prev-arrow {
+    left: 0;
+  }
+  .new-course-feature .slider-arrows .next-arrow,
+  .latest-events-featured .slider-arrows .next-arrow {
+    right: 0;
+  }
+  .new-course-feature .slider-arrows .slick-arrow,
+  .latest-events-featured .slider-arrows .slick-arrow {
+    left: 50%;
+  }
+  .new-course-feature .slider-arrows .next-arrow,
+  .latest-events-featured .slider-arrows .next-arrow {
+    left: 55%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .new-course-feature .slider-arrows .next-arrow,
+  .latest-events-featured .slider-arrows .next-arrow {
+    left: 60%;
+  }
+}
 
 @media (max-width: 1199px) {
   .slider-arrows {

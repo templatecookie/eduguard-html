@@ -353,17 +353,6 @@
       }
     }
   }
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: -1;
-  //   background: #ebebf2;
-  //   opacity: 0.55;
-  // }
   h3 {
     color: #202029 !important;
     text-align: center;
@@ -371,6 +360,22 @@
   }
   .slider-arrows {
     @extend %arrows;
+  }
+  .latest-events-shape {
+    img {
+      position: absolute;
+      user-select: none;
+      pointer-events: none;
+      &.shape-01 {
+        top: 0px;
+        left: 0px;
+      }
+
+      &.shape-02 {
+        bottom: 30px;
+        right: 0px;
+      }
+    }
   }
 }
 
@@ -467,6 +472,15 @@
   }
   .banner-input .main-input input {
     width: 320px;
+  }
+
+  .latest-events-featured .latest-events-shape img.shape-02 {
+    bottom: 0px;
+  }
+
+  .latest-events-featured .slider-arrows .slick-arrow {
+    top: auto;
+    bottom: -90px;
   }
 }
 // large devices 992px - 1200px
@@ -1181,5 +1195,8 @@
 @media (min-width: 320px) and (max-width: 574px) {
   .featured-popular-courses-heading .nav-button .nav-pills {
     justify-content: center;
+  }
+  .latest-events-shape {
+    display: none;
   }
 }

@@ -64,7 +64,8 @@
 // New Course Feature Starts Here
 .new-course-feature {
   padding: 100px 0px;
-
+  position: relative;
+  z-index: 1;
   h3 {
     text-align: center;
     color: #202029 !important;
@@ -77,6 +78,28 @@
   .slider-arrows {
     @extend %arrows;
   }
+}
+
+.new-course-overlay {
+  img {
+    position: absolute;
+    top: 0;
+    user-select: none;
+    pointer-events: none;
+    &.shape01 {
+      top: -35px;
+      right: 0px;
+    }
+    &.shape02 {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+}
+
+.newCourse {
+  @extend %slickdots;
 }
 
 // Featured Course Starts Here
@@ -795,6 +818,11 @@
     bottom: 60px;
     left: 220px;
   }
+  .newCourse {
+    .slick-dots {
+      margin-top: 0px !important;
+    }
+  }
 }
 @media (min-width: 320px) and (max-width: 574px) {
   // banner three
@@ -810,5 +838,10 @@
   // popup
   .playbtn-area svg {
     height: 15px;
+  }
+  .new-course-feature {
+    .new-course-overlay {
+      display: none;
+    }
   }
 }
