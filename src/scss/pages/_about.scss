@@ -81,61 +81,109 @@
     color: #666575;
   }
 }
+// .mentor {
+//   position: relative;
+//   &:hover {
+//     .instructor-overlay {
+//       opacity: 0.6;
+//       visibility: visible;
+//       ul {
+//         opacity: 1;
+//       }
+//     }
+//     h6 {
+//       a {
+//         color: #0264ed;
+//       }
+//     }
+//   }
+//   &__img {
+//     img {
+//       object-fit: cover;
+//       height: 300px;
+//       width: 300px;
+//     }
+//   }
+//   &__title {
+//     h6 {
+//       color: #25252e;
+//     }
+//   }
+// }
+// .instructor-overlay {
+//   transition: 0.3s all linear;
+
+//   visibility: hidden;
+//   position: absolute;
+//   bottom: 180px;
+//   left: 0;
+//   right: 0px;
+//   background: linear-gradient(
+//       180deg,
+//       rgba(0, 0, 0, 0) 55.21%,
+//       rgba(0, 0, 0, 0.8) 100%
+//     ),
+//     #c4c4c4;
+//   border-radius: 6px;
+// }
+
 .mentor {
-  position: relative;
   &:hover {
-    .instructor-overlay {
-      opacity: 1;
-      visibility: visible;
+    .mentor__img {
+      .list-inline {
+        opacity: 1;
+        visibility: visible;
+      }
     }
-    h6 {
-      a {
-        color: #0264ed;
+    .mentor__title {
+      h6 {
+        a {
+          color: rgba(2, 100, 237, 1);
+        }
       }
     }
   }
-  &__img {
-    img {
-      object-fit: cover;
-      height: 300px;
-      width: 300px;
-    }
-  }
-  &__title {
-    h6 {
-      color: #25252e;
-    }
-  }
-}
-.instructor-overlay {
-  transition: 0.3s all linear;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  bottom: 180px;
-  left: 0;
-  right: 0;
-  ul {
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    li {
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 36px;
-        width: 36px;
-        border-radius: 3px;
-        background-color: white;
-        transition: 0.3s all linear;
-        &:hover {
-          background-color: color(primary);
-          svg {
-            path {
-              transition: 0.3s all linear;
-              fill: white;
+  .mentor__img {
+    position: relative;
+
+    .list-inline {
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      transform: translate(-50%);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 15px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 55.21%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+      border-radius: 6px;
+      transition: all 0.2s linear;
+      opacity: 0;
+      visibility: hidden;
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 36px;
+          width: 36px;
+          border-radius: 3px;
+          background-color: white;
+          transition: 0.3s all linear;
+          &:hover {
+            background-color: color(primary);
+            svg {
+              path {
+                transition: 0.3s all linear;
+                fill: white;
+              }
             }
           }
         }
@@ -143,7 +191,6 @@
     }
   }
 }
-
 // Best Instructor Section
 .bestInstructor {
   .ourinstructor-active {

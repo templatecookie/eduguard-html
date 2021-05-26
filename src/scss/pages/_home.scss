@@ -257,7 +257,6 @@
     align-items: center;
 
     .item-number {
-      margin-right: 15px;
       flex-basis: 100px !important;
 
       span {
@@ -400,6 +399,12 @@
       }
     }
   }
+  &__wrapper {
+    position: relative;
+    .slider-arrows {
+      @extend %arrows;
+    }
+  }
 
   // Slick dots
   .about__slider {
@@ -411,9 +416,35 @@
 .main-instructor-featured {
   background: #fff;
   position: relative;
-
+  z-index: 1;
+  &.it-2 {
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #ebebf2;
+      opacity: 0.4;
+      z-index: -1;
+    }
+    .ourinstructor__wrapper {
+      .slider-arrows {
+        .prev-arrow,
+        .next-arrow {
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
   .instructor-overlay {
-    bottom: 90px;
+    bottom: 70px;
+    opacity: 0.3;
+    ul {
+      padding-top: 60px;
+      padding-bottom: 15px;
+    }
   }
 
   &-shape {

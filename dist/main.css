@@ -9903,28 +9903,33 @@ li {
 button:focus {
   outline: none; }
 
+.slick-slider {
+  position: relative;
+  z-index: 1; }
+
 .btn {
   padding: 12px 24px;
-  border: 2px solid transparent;
+  border: 0px;
+  outline: 0px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   border-radius: 4px;
   text-transform: capitalize;
-  -webkit-transition: .3s;
-  transition: .3s; }
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .btn:focus {
     border: 2px solid transparent;
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
   .btn.btn-outline-info {
-    border: 2px solid #1089FF;
-    color: #1089FF;
+    border: 2px solid #1089ff;
+    color: #1089ff;
     border-radius: 3px;
     font-weight: 600;
     font-size: 14px; }
     .btn.btn-outline-info:hover {
-      background: #0264ED;
+      background: #0264ed;
       -webkit-box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
               box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
       color: white;
@@ -9933,20 +9938,12 @@ button:focus {
     color: white;
     background-color: #1089FF !important; }
     .btn.btn-primary:hover {
-      background-color: #0264ED !important;
-      border: 2px solid transparent; }
+      background-color: #0264ED !important; }
   .btn.btn-dark {
     background-color: #42414B !important; }
-    .btn.btn-dark:hover {
-      background-color: #1089FF !important;
-      border: 2px solid transparent; }
   .btn.btn-link {
     color: #42414B !important;
     text-decoration: none; }
-    .btn.btn-link:hover {
-      -webkit-text-decoration: underline #1089FF;
-              text-decoration: underline #1089FF;
-      color: #1089FF !important; }
   .btn.btn-md {
     padding: 12px 24px !important; }
   .btn.btn-lg, .btn-group-lg > .btn {
@@ -9954,16 +9951,16 @@ button:focus {
   .btn.bg-primary {
     color: white;
     background-color: #35343E !important;
-    -webkit-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .btn.bg-primary:hover {
       background-color: #1089FF !important;
       color: white; }
   .btn.bg-primary2 {
     color: white;
     background-color: #1089FF !important;
-    -webkit-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .btn.bg-primary2:hover {
       background-color: #0264ED !important;
       color: white; }
@@ -9991,7 +9988,7 @@ button:focus {
     color: #908FA5 !important; }
   .btn.btn-shadow {
     color: #35343E;
-    background: #FFFFFF;
+    background: #ffffff;
     -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     border-radius: 3px; }
@@ -10000,7 +9997,7 @@ button:focus {
               box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25); }
   .btn.btn-shadow2 {
     color: #35343E;
-    background: #FFFFFF;
+    background: #ffffff;
     -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     border-radius: 3px; }
@@ -10010,7 +10007,7 @@ button:focus {
               box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25); }
   .btn.btn-shadow-light {
     color: #908FA5;
-    background: #FFFFFF;
+    background: #ffffff;
     -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     border-radius: 3px; }
@@ -10031,7 +10028,7 @@ button:focus {
   .btn.btn-text-light {
     color: #908FA5; }
 
-.checkbox-primary[type="checkbox"] {
+.checkbox-primary[type='checkbox'] {
   width: 24px;
   height: 24px;
   border: 2px solid #908FA5; }
@@ -10407,12 +10404,15 @@ button:focus {
         color: #35343E; }
     .course__content_author .price del {
       font-size: 14px;
-      color: #908FA5;
-      font-weight: 500; }
+      line-height: 21px;
+      font-weight: 400;
+      color: #8f8fa3; }
     .course__content_author .price span {
-      color: #35343E;
-      font-size: 14px;
-      font-weight: 500; }
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 500;
+      font-weight: 500;
+      color: #42414b; }
   .course__content_time {
     padding: 10px 0; }
     .course__content_time .star span,
@@ -10671,25 +10671,23 @@ button:focus {
       line-height: 1.5;
       color: #666575; }
 
-.pagination {
-  padding-bottom: 100px; }
-  .pagination-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-  .pagination .p_prev,
-  .pagination .p_next {
+.pagination-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .pagination-group .p_prev,
+  .pagination-group .p_next {
     border: 1px solid rgba(144, 143, 165, 0.25);
     background-color: rgba(144, 143, 165, 0.08);
-    color: #8F8FA3;
+    color: #8f8fa3;
     border-radius: 100%;
     width: 50px;
     height: 50px;
@@ -10706,20 +10704,20 @@ button:focus {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 12px;
-    -webkit-transition: .3s;
-    transition: .3s; }
-    .pagination .p_prev:first-child,
-    .pagination .p_next:first-child {
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .pagination-group .p_prev:first-child,
+    .pagination-group .p_next:first-child {
       margin-left: 0; }
-    .pagination .p_prev:last-child,
-    .pagination .p_next:last-child {
+    .pagination-group .p_prev:last-child,
+    .pagination-group .p_next:last-child {
       margin-right: 0; }
-    .pagination .p_prev:hover,
-    .pagination .p_next:hover {
+    .pagination-group .p_prev:hover,
+    .pagination-group .p_next:hover {
       background-color: transparent;
       border-color: white;
       color: #202029; }
-  .pagination .cdp_i {
+  .pagination-group .cdp_i {
     width: 50px;
     height: 50px;
     display: -webkit-box;
@@ -10738,18 +10736,18 @@ button:focus {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     margin: 0 6px;
     border-radius: 100%;
     padding: 8px 0; }
-    .pagination .cdp_i.active {
-      background-color: #1089FF;
-      border-color: #1089FF;
+    .pagination-group .cdp_i.active {
+      background-color: #1089ff;
+      border-color: #1089ff;
       color: white; }
-    .pagination .cdp_i:hover {
-      background-color: #1089FF;
-      border-color: #1089FF;
+    .pagination-group .cdp_i:hover {
+      background-color: #1089ff;
+      border-color: #1089ff;
       color: white; }
 
 .watchcourse__content_author .info a {
@@ -11052,17 +11050,28 @@ button:focus {
               transform: rotate(180deg); }
 
 .dropSelect {
-  width: 100px; }
+  width: 100px;
+  position: relative; }
+  .dropSelect-icon {
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    z-index: 999; }
   .dropSelect .nice-select {
     border: 0;
     font-size: 16px;
     font-weight: 400;
     color: #42414b; }
+    .dropSelect .nice-select span.current {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #666575; }
   .dropSelect .nice-select:after {
     width: 8px;
     height: 8px; }
 
-.testimonial-area .slider-arrows, .ourinstructor__wrapper .slider-arrows, .latest-events-featured .slider-arrows, .new-course-feature .slider-arrows {
+.browse-categories__wrapper .slider-arrows, .testimonial-area .slider-arrows, .ourinstructor__wrapper .slider-arrows, .about-services__wrapper .slider-arrows, .latest-events-featured .slider-arrows, .new-course-feature .slider-arrows {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11075,9 +11084,11 @@ button:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .testimonial-area .slider-arrows .prev-arrow, .ourinstructor__wrapper .slider-arrows .prev-arrow, .latest-events-featured .slider-arrows .prev-arrow, .new-course-feature .slider-arrows .prev-arrow,
+  .browse-categories__wrapper .slider-arrows .prev-arrow, .testimonial-area .slider-arrows .prev-arrow, .ourinstructor__wrapper .slider-arrows .prev-arrow, .about-services__wrapper .slider-arrows .prev-arrow, .latest-events-featured .slider-arrows .prev-arrow, .new-course-feature .slider-arrows .prev-arrow,
+  .browse-categories__wrapper .slider-arrows .next-arrow,
   .testimonial-area .slider-arrows .next-arrow,
   .ourinstructor__wrapper .slider-arrows .next-arrow,
+  .about-services__wrapper .slider-arrows .next-arrow,
   .latest-events-featured .slider-arrows .next-arrow,
   .new-course-feature .slider-arrows .next-arrow {
     width: 52px;
@@ -11100,36 +11111,42 @@ button:focus {
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-    .testimonial-area .slider-arrows .prev-arrow svg path, .ourinstructor__wrapper .slider-arrows .prev-arrow svg path, .latest-events-featured .slider-arrows .prev-arrow svg path, .new-course-feature .slider-arrows .prev-arrow svg path,
+    .browse-categories__wrapper .slider-arrows .prev-arrow svg path, .testimonial-area .slider-arrows .prev-arrow svg path, .ourinstructor__wrapper .slider-arrows .prev-arrow svg path, .about-services__wrapper .slider-arrows .prev-arrow svg path, .latest-events-featured .slider-arrows .prev-arrow svg path, .new-course-feature .slider-arrows .prev-arrow svg path,
+    .browse-categories__wrapper .slider-arrows .next-arrow svg path,
     .testimonial-area .slider-arrows .next-arrow svg path,
     .ourinstructor__wrapper .slider-arrows .next-arrow svg path,
+    .about-services__wrapper .slider-arrows .next-arrow svg path,
     .latest-events-featured .slider-arrows .next-arrow svg path,
     .new-course-feature .slider-arrows .next-arrow svg path {
       stroke: #666575; }
-    .testimonial-area .slider-arrows .prev-arrow:hover, .ourinstructor__wrapper .slider-arrows .prev-arrow:hover, .latest-events-featured .slider-arrows .prev-arrow:hover, .new-course-feature .slider-arrows .prev-arrow:hover,
+    .browse-categories__wrapper .slider-arrows .prev-arrow:hover, .testimonial-area .slider-arrows .prev-arrow:hover, .ourinstructor__wrapper .slider-arrows .prev-arrow:hover, .about-services__wrapper .slider-arrows .prev-arrow:hover, .latest-events-featured .slider-arrows .prev-arrow:hover, .new-course-feature .slider-arrows .prev-arrow:hover,
+    .browse-categories__wrapper .slider-arrows .next-arrow:hover,
     .testimonial-area .slider-arrows .next-arrow:hover,
     .ourinstructor__wrapper .slider-arrows .next-arrow:hover,
+    .about-services__wrapper .slider-arrows .next-arrow:hover,
     .latest-events-featured .slider-arrows .next-arrow:hover,
     .new-course-feature .slider-arrows .next-arrow:hover {
-      border-color: #1089FF;
-      background-color: #1089FF;
-      -webkit-box-shadow: 0px 10px 20px 0px #0264ed40;
-              box-shadow: 0px 10px 20px 0px #0264ed40; }
-      .testimonial-area .slider-arrows .prev-arrow:hover svg path, .ourinstructor__wrapper .slider-arrows .prev-arrow:hover svg path, .latest-events-featured .slider-arrows .prev-arrow:hover svg path, .new-course-feature .slider-arrows .prev-arrow:hover svg path,
+      border-color: none;
+      background-color: #1089FF; }
+      .browse-categories__wrapper .slider-arrows .prev-arrow:hover svg path, .testimonial-area .slider-arrows .prev-arrow:hover svg path, .ourinstructor__wrapper .slider-arrows .prev-arrow:hover svg path, .about-services__wrapper .slider-arrows .prev-arrow:hover svg path, .latest-events-featured .slider-arrows .prev-arrow:hover svg path, .new-course-feature .slider-arrows .prev-arrow:hover svg path,
+      .browse-categories__wrapper .slider-arrows .next-arrow:hover svg path,
       .testimonial-area .slider-arrows .next-arrow:hover svg path,
       .ourinstructor__wrapper .slider-arrows .next-arrow:hover svg path,
+      .about-services__wrapper .slider-arrows .next-arrow:hover svg path,
       .latest-events-featured .slider-arrows .next-arrow:hover svg path,
       .new-course-feature .slider-arrows .next-arrow:hover svg path {
         stroke: white; }
-  .testimonial-area .slider-arrows .prev-arrow, .ourinstructor__wrapper .slider-arrows .prev-arrow, .latest-events-featured .slider-arrows .prev-arrow, .new-course-feature .slider-arrows .prev-arrow {
+  .browse-categories__wrapper .slider-arrows .prev-arrow, .testimonial-area .slider-arrows .prev-arrow, .ourinstructor__wrapper .slider-arrows .prev-arrow, .about-services__wrapper .slider-arrows .prev-arrow, .latest-events-featured .slider-arrows .prev-arrow, .new-course-feature .slider-arrows .prev-arrow {
     position: absolute;
     top: 50%;
     left: -90px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
   
+  .browse-categories__wrapper .slider-arrows .next-arrow,
   .testimonial-area .slider-arrows .next-arrow,
   .ourinstructor__wrapper .slider-arrows .next-arrow,
+  .about-services__wrapper .slider-arrows .next-arrow,
   .latest-events-featured .slider-arrows .next-arrow,
   .new-course-feature .slider-arrows .next-arrow {
     position: absolute;
@@ -11250,6 +11267,21 @@ button:focus {
 @media (min-width: 575px) and (max-width: 767px) {
   .price-range-block__inputWrapper input {
     width: 165px !important; } }
+
+.browse-categories__wrapper {
+  position: relative; }
+  .browse-categories__wrapper .slider-arrows .prev-arrow,
+  .browse-categories__wrapper .slider-arrows .next-arrow {
+    border: 1px solid #ebebf2; }
+
+.browse-categories-shape img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.browse-categories-item {
+  padding: 30px 0px; }
 
 header .navbar-nav {
   -webkit-transition: all 0.2s ease-in-out;
@@ -11380,7 +11412,7 @@ header form {
       background-color: #2493ff !important; }
 
 header #search-nav.appear {
-  background-color: #2493ff !important; }
+  background-color: #42414b !important; }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   header .rightContent.appear a:nth-child(3), header .rightContent.appear a:nth-child(4) {
@@ -12473,10 +12505,10 @@ header #search-nav.appear {
   .footer__wrapper {
     max-width: 100%; } }
 
-.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active,
+.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .ourevent-active,
 .students {
   position: relative; }
-  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -12486,7 +12518,7 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -12497,7 +12529,7 @@ header #search-nav.appear {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -12547,44 +12579,45 @@ header #search-nav.appear {
   .about-feature p {
     color: #666575; }
 
-.mentor {
-  position: relative; }
-  .mentor:hover .instructor-overlay {
-    opacity: 1;
-    visibility: visible; }
-  .mentor:hover h6 a, .mentor:hover .h6 a {
-    color: #0264ed; }
-  .mentor__img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 300px;
-    width: 300px; }
-  .mentor__title h6, .mentor__title .h6 {
-    color: #25252e; }
+.mentor:hover .mentor__img .list-inline {
+  opacity: 1;
+  visibility: visible; }
 
-.instructor-overlay {
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  bottom: 180px;
-  left: 0;
-  right: 0; }
-  .instructor-overlay ul {
-    padding: 0 10px;
+.mentor:hover .mentor__title h6 a, .mentor:hover .mentor__title .h6 a {
+  color: #0264ed; }
+
+.mentor .mentor__img {
+  position: relative; }
+  .mentor .mentor__img .list-inline {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 100%;
+    height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-    .instructor-overlay ul li a {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 15px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(55.21%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.21%, rgba(0, 0, 0, 0.8) 100%);
+    border-radius: 6px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    opacity: 0;
+    visibility: hidden; }
+    .mentor .mentor__img .list-inline li a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -12603,9 +12636,9 @@ header #search-nav.appear {
       background-color: white;
       -webkit-transition: 0.3s all linear;
       transition: 0.3s all linear; }
-      .instructor-overlay ul li a:hover {
+      .mentor .mentor__img .list-inline li a:hover {
         background-color: #1089FF; }
-        .instructor-overlay ul li a:hover svg path {
+        .mentor .mentor__img .list-inline li a:hover svg path {
           -webkit-transition: 0.3s all linear;
           transition: 0.3s all linear;
           fill: white; }
@@ -12788,10 +12821,10 @@ header #search-nav.appear {
   .mentor__img img {
     height: auto; } }
 
-.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active,
+.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .ourevent-active,
 .students {
   position: relative; }
-  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -12801,7 +12834,7 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -12812,7 +12845,7 @@ header #search-nav.appear {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -13010,7 +13043,6 @@ header #search-nav.appear {
         -ms-flex-align: center;
             align-items: center; }
     .learning-rules-item .item-number {
-      margin-right: 15px;
       -webkit-flex-basis: 100px !important;
           -ms-flex-preferred-size: 100px !important;
               flex-basis: 100px !important; }
@@ -13095,12 +13127,32 @@ header #search-nav.appear {
         border-radius: 50%;
         -o-object-fit: cover;
            object-fit: cover; }
+  .about-services__wrapper {
+    position: relative; }
 
 .main-instructor-featured {
   background: #fff;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
+  .main-instructor-featured.it-2::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ebebf2;
+    opacity: 0.4;
+    z-index: -1; }
+  .main-instructor-featured.it-2 .ourinstructor__wrapper .slider-arrows .prev-arrow,
+  .main-instructor-featured.it-2 .ourinstructor__wrapper .slider-arrows .next-arrow {
+    border: 1px solid #fff; }
   .main-instructor-featured .instructor-overlay {
-    bottom: 90px; }
+    bottom: 70px;
+    opacity: 0.3; }
+    .main-instructor-featured .instructor-overlay ul {
+      padding-top: 60px;
+      padding-bottom: 15px; }
   .main-instructor-featured-shape img {
     position: absolute; }
   .main-instructor-featured-shape .shape01 {
@@ -13667,7 +13719,7 @@ header #search-nav.appear {
 
 .banner-two {
   padding-top: 150px;
-  padding-bottom: 350px;
+  padding-bottom: 380px;
   background-color: rgba(235, 235, 242, 0.55);
   -webkit-clip-path: ellipse(100% 100% at 50% 0%);
           clip-path: ellipse(100% 100% at 50% 0%); }
@@ -13733,7 +13785,7 @@ header #search-nav.appear {
     width: 400px;
     border: none;
     color: #8f8fa3;
-    border-right: 1px solid #dddddd; }
+    border-right: 1px solid #ebebf2; }
   .banner-input .select-button {
     padding-left: 25px; }
     .banner-input .select-button button {
@@ -13870,25 +13922,36 @@ header #search-nav.appear {
   .best-instructor-featured .mentor__img img {
     width: 270px;
     height: 290px; }
+  .best-instructor-featured .ourinstructor__wrapper .slider-arrows .prev-arrow,
+  .best-instructor-featured .ourinstructor__wrapper .slider-arrows .next-arrow {
+    border-color: #ebebf2; }
 
 .latest-events-featured {
   padding: 100px 0px;
   position: relative;
   z-index: 1; }
-  .latest-events-featured::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: #ebebf2;
-    opacity: 0.55; }
+  .latest-events-featured.le-2 {
+    background-color: #fff; }
+    .latest-events-featured.le-2 .slider-arrows .prev-arrow,
+    .latest-events-featured.le-2 .slider-arrows .next-arrow {
+      border: 1px solid #ebebf2; }
   .latest-events-featured h3, .latest-events-featured .h3 {
     color: #202029 !important;
     text-align: center;
     margin-bottom: 50px; }
+  .latest-events-featured .latest-events-shape img {
+    position: absolute;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none; }
+    .latest-events-featured .latest-events-shape img.shape-01 {
+      top: 0px;
+      left: 0px; }
+    .latest-events-featured .latest-events-shape img.shape-02 {
+      bottom: 30px;
+      right: 0px; }
 
 .join-area-02 {
   position: relative;
@@ -13900,8 +13963,8 @@ header #search-nav.appear {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00af91;
-    opacity: 0.1;
+    background: #ebebf2;
+    opacity: 0.6;
     z-index: -1; }
 
 .get-started {
@@ -13968,7 +14031,12 @@ header #search-nav.appear {
   .banner-input {
     width: 680px; }
   .banner-input .main-input input {
-    width: 320px; } }
+    width: 320px; }
+  .latest-events-featured .latest-events-shape img.shape-02 {
+    bottom: 0px; }
+  .latest-events-featured .slider-arrows .slick-arrow {
+    top: auto;
+    bottom: -90px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .featured-popular-courses-shape .shape-02,
@@ -14432,7 +14500,9 @@ header #search-nav.appear {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .latest-events-shape {
+    display: none; } }
 
 .banner-three {
   -webkit-clip-path: ellipse(100% 100% at 50% 0%);
@@ -14492,13 +14562,32 @@ header #search-nav.appear {
     color: #1089ff !important; }
 
 .new-course-feature {
-  padding: 100px 0px; }
+  padding: 100px 0px;
+  position: relative;
+  z-index: 1; }
   .new-course-feature h3, .new-course-feature .h3 {
     text-align: center;
     color: #202029 !important;
     margin-bottom: 50px; }
   .new-course-feature .btn-primary {
     margin-top: 50px; }
+
+.new-course-overlay img {
+  position: absolute;
+  top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none; }
+  .new-course-overlay img.shape01 {
+    top: -35px;
+    right: 0px; }
+  .new-course-overlay img.shape02 {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0; }
 
 .featured-course {
   margin: 0px 15px; }
@@ -14990,7 +15079,9 @@ header #search-nav.appear {
     height: 50px; }
   .banner-three .playbtn-area {
     bottom: 60px;
-    left: 220px; } }
+    left: 220px; }
+  .newCourse .slick-dots {
+    margin-top: 0px !important; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .banner-three {
@@ -15000,7 +15091,9 @@ header #search-nav.appear {
   .banner-three p {
     padding: 15px 0px; }
   .playbtn-area svg {
-    height: 15px; } }
+    height: 15px; }
+  .new-course-feature .new-course-overlay {
+    display: none; } }
 
 .students-info {
   padding-bottom: 70px; }
@@ -16354,7 +16447,7 @@ header #search-nav.appear {
     font-size: 16px; }
 
 .event-info-cart {
-  margin-top: -105px;
+  margin-top: -60px;
   padding: 30px 25px;
   background-color: white;
   border-radius: 8px; }
@@ -18606,6 +18699,8 @@ body {
       background: #00af91; }
     .successful-instructor-feature:hover .successful-instructor-feature-image.third-bg {
       background: #1089ff; }
+  .successful-instructor-feature h5, .successful-instructor-feature .h5 {
+    line-height: 24px; }
   .successful-instructor-feature-image {
     height: 72px;
     width: 72px;
@@ -20200,6 +20295,9 @@ header {
     .signup-area .verification input::placeholder {
       color: #8f8fa3; }
 
+.dot-images img {
+  z-index: -1; }
+
 .dot-images .first-dotimage {
   position: absolute;
   top: 85px;
@@ -20247,7 +20345,7 @@ header {
     display: none; }
   .form-element input {
     padding: 10px 15px; }
-  .checkbox-primary[type="checkbox"] {
+  .checkbox-primary[type='checkbox'] {
     width: 20px;
     height: 20px; }
   .signup-with {
@@ -20263,7 +20361,7 @@ header {
     display: none; }
   .form-element input {
     padding: 10px 15px; }
-  .checkbox-primary[type="checkbox"] {
+  .checkbox-primary[type='checkbox'] {
     width: 20px;
     height: 20px; }
   .signup-with {
@@ -20280,7 +20378,7 @@ header {
     display: none; }
   .form-element input {
     padding: 10px 15px; }
-  .checkbox-primary[type="checkbox"] {
+  .checkbox-primary[type='checkbox'] {
     width: 20px;
     height: 20px; }
   .signup-with {
@@ -20315,7 +20413,7 @@ header {
 @media (min-width: 768px) and (max-width: 991px) {
   .signup-area {
     background: #fff; }
-  .checkbox-primary[type="checkbox"] {
+  .checkbox-primary[type='checkbox'] {
     width: 22px;
     height: 22px; }
   .form-element input {
@@ -20339,7 +20437,7 @@ header {
       margin: 0; }
   .dot-images {
     display: none; }
-  .checkbox-primary[type="checkbox"] {
+  .checkbox-primary[type='checkbox'] {
     width: 22px;
     height: 22px; }
   .form-element input {
@@ -20586,10 +20684,10 @@ header {
 .text-button a {
   margin-bottom: 30px; }
 
-.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .ourevent-active,
+.bestInstructor .ourinstructor-active, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .ourevent-active,
 .students {
   position: relative; }
-  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .bestInstructor .ourinstructor-active .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -20599,7 +20697,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .bestInstructor .ourinstructor-active .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -20610,10 +20708,49 @@ header {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
+
+.bg-w {
+  position: relative;
+  z-index: 1; }
+  .bg-w::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.3;
+    z-index: -1; }
+
+@media (max-width: 1200px) {
+  .new-course-feature .slider-arrows .prev-arrow,
+  .new-course-feature .slider-arrows .next-arrow,
+  .latest-events-featured .slider-arrows .prev-arrow,
+  .latest-events-featured .slider-arrows .next-arrow {
+    top: auto;
+    bottom: -95px; }
+  .new-course-feature .slider-arrows .prev-arrow,
+  .latest-events-featured .slider-arrows .prev-arrow {
+    left: 0; }
+  .new-course-feature .slider-arrows .next-arrow,
+  .latest-events-featured .slider-arrows .next-arrow {
+    right: 0; }
+  .new-course-feature .slider-arrows .slick-arrow,
+  .latest-events-featured .slider-arrows .slick-arrow {
+    left: 50%; }
+  .new-course-feature .slider-arrows .next-arrow,
+  .latest-events-featured .slider-arrows .next-arrow {
+    left: 55%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .new-course-feature .slider-arrows .next-arrow,
+  .latest-events-featured .slider-arrows .next-arrow {
+    left: 60%; } }
 
 @media (max-width: 1199px) {
   .slider-arrows {
@@ -20739,4 +20876,22 @@ header {
   .event__content_title .h6, .event-info-cart h6, .event-info-cart .h6, .event-speaker-info h6, .event-speaker-info .h6,
   .event-speaker-info .h6 {
     font-size: 16px !important; } }
+
+.main-instructor-featured-shape img, .banner-two-start h1, .banner-two-start .h1, .browse-categories h3, .browse-categories .h3,
+.main-heading h3,
+.main-heading .h3, .chose-course h3, .chose-course .h3,
+.learning-rules-starts h3,
+.learning-rules-starts .h3,
+.about-services-shape img,
+.featured-popular-courses-shape img,
+.about-services-shape img,
+.learning-rules-shape img,
+.main-events-featured-shape img,
+.testimonial__img img,
+.testimonial__img .dot img,
+.testimonial__img .rectangle img, .testimonial__wrapper_title h3, .testimonial__wrapper_title .h3 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
