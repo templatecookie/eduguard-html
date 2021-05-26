@@ -1,13 +1,5 @@
 'use strict';
 
-// // UI variables
-// const categoryBtn = document.querySelector('#categoryBtn');
-// const dropBox = document.querySelector('.categoryDrop');
-// categoryBtn.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   dropBox.classList.toggle('appear');
-// });
-
 (function ($) {
   $('.hamburger-menu a').on('click', function () {
     $('#mySidenav').css('left', '0');
@@ -72,6 +64,7 @@
       },
     ],
   });
+
   // newCourse
   $('.newCourse').slick({
     infinite: true,
@@ -107,6 +100,7 @@
       },
     ],
   });
+
   // our students
   $('.students').slick({
     infinite: true,
@@ -153,8 +147,8 @@
     arrows: true,
     dots: true,
     autoplaySpeed: 2000,
-    prevArrow: '.about__slider-wrap .prev-arrow',
-    nextArrow: '.about__slider-wrap .next-arrow',
+    nextArrow: '.next-arrow',
+    prevArrow: '.prev-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -223,7 +217,7 @@
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: '.ourinstructor__wrapper .prev-arrow',
     nextArrow: '.ourinstructor__wrapper .next-arrow',
@@ -265,6 +259,35 @@
     autoplaySpeed: 2000,
     prevArrow: '.ourevent__wrapper .prev-arrow',
     nextArrow: '.ourevent__wrapper .next-arrow',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
+  });
+
+  //Event _Slider
+  $('.browse-categories-area').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    autoplaySpeed: 2000,
+    nextArrow: '.next-arrow',
+    prevArrow: '.prev-arrow',
     responsive: [
       {
         breakpoint: 1199,

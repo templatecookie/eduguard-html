@@ -1,0 +1,22 @@
+.browse-categories {
+  &__wrapper {
+    position: relative;
+    .slider-arrows {
+      @extend %arrows;
+      // border: 1px solid #ebebf2;
+      .prev-arrow,
+      .next-arrow {
+        border: 1px solid #ebebf2;
+      }
+    }
+  }
+  &-shape {
+    img {
+      user-select: none;
+    }
+  }
+}
+
+.browse-categories-item {
+  padding: 30px 0px;
+}

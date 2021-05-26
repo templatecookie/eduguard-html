@@ -272,6 +272,25 @@
   }
 }
 
+// overlay select issues fixed
+.main-instructor-featured-shape img,
+.banner-two-start h1,
+.browse-categories h3,
+.main-heading h3,
+.chose-course h3,
+.learning-rules-starts h3,
+.about-services-shape img,
+.featured-popular-courses-shape img,
+.about-services-shape img,
+.learning-rules-shape img,
+.main-events-featured-shape img,
+.testimonial__img img,
+.testimonial__img .dot img,
+.testimonial__img .rectangle img,
+.testimonial__wrapper_title h3 {
+  user-select: none;
+}
+
 // Responsive breakpoints
 @media (min-width: 575px) and (max-width: 767px) {
 }

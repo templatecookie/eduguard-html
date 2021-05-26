@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #fff;
+    // border: 1px solid #ebebf2;
     cursor: pointer;
     transition: 0.3s;
 
@@ -22,9 +23,9 @@
       }
     }
     &:hover {
-      border-color: color(primary);
+      border-color: none;
       background-color: color(primary);
-      box-shadow: 0px 10px 20px 0px #0264ed40;
+      // box-shadow: 0px 10px 20px 0px #0264ed40;
       svg {
         path {
           stroke: white;

@@ -5,7 +5,7 @@
 
 .banner-two {
   padding-top: 150px;
-  padding-bottom: 350px;
+  padding-bottom: 380px;
   background-color: rgba($color: #ebebf2, $alpha: 0.55);
   clip-path: ellipse(100% 100% at 50% 0%);
 
@@ -330,23 +330,40 @@
     width: 270px;
     height: 290px;
   }
+  .ourinstructor__wrapper {
+    .slider-arrows {
+      .prev-arrow,
+      .next-arrow {
+        border-color: #ebebf2;
+      }
+    }
+  }
 }
 // Latest Events Featured Starts Here
 .latest-events-featured {
   padding: 100px 0px;
   position: relative;
   z-index: 1;
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: #ebebf2;
-    opacity: 0.55;
+  &.le-2 {
+    background-color: #fff;
+    .slider-arrows {
+      .prev-arrow,
+      .next-arrow {
+        border: 1px solid #ebebf2;
+      }
+    }
   }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -1;
+  //   background: #ebebf2;
+  //   opacity: 0.55;
+  // }
   h3 {
     color: #202029 !important;
     text-align: center;
@@ -368,8 +385,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00af91;
-    opacity: 0.1;
+    background: #ebebf2;
+    opacity: 0.6;
     z-index: -1;
   }
 }

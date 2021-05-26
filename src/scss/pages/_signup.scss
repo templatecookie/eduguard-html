@@ -44,6 +44,9 @@ header {
 
 // Dot Image
 .dot-images {
+  img {
+    z-index: -1;
+  }
   .first-dotimage {
     position: absolute;
     top: 85px;
