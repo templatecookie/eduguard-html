@@ -7,6 +7,7 @@ header {
     .nav-item {
       margin-left: 16px;
       margin-right: 16px;
+      position: relative;
       .active {
         color: color(primary) !important;
       }
@@ -36,6 +37,144 @@ header {
         &:hover::after {
           width: 100%;
         }
+        span {
+          display: inline-block;
+          transform: rotate(90deg);
+          transition: all 0.2s linear;
+        }
+      }
+      // after hover dropdown menu
+      &:hover {
+        .nav-link {
+          span {
+            transform: rotate(-90deg);
+          }
+        }
+        .nav-item--dropdown {
+          visibility: visible;
+          pointer-events: all;
+          user-select: all;
+          transform: translateY(-2px);
+          ul {
+            display: block;
+          }
+        }
+      }
+      // Dropdown menu
+      &--dropdown {
+        visibility: hidden;
+        pointer-events: none;
+        user-select: none;
+        width: 230px;
+        position: absolute;
+        top: 92px;
+        left: 0%;
+        background-color: #fff;
+        box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
+        border-radius: 14px;
+        z-index: 999;
+        transition: all 0.2s linear;
+        ul {
+          padding: 15px 0px;
+          display: none;
+          li {
+            padding: 15px;
+            text-align: left;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+              background-color: #1089ff;
+
+              a {
+                color: #fff;
+              }
+            }
+            a {
+              font-size: 16px;
+              line-height: 24px;
+              font-weight: 400;
+              color: #202029;
+              text-transform: capitalize;
+              span {
+                display: inline-block;
+                transform: rotate(90deg);
+                transition: all 0.2s linear;
+              }
+            }
+
+            &.submenu {
+              position: relative;
+              &:hover {
+                .nav-item--subDropdown {
+                  visibility: visible;
+                  pointer-events: all;
+                  user-select: all;
+                  transform: translateY(-2px);
+                  ul {
+                    display: block;
+                    li {
+                      display: block;
+                    }
+                  }
+                }
+                a {
+                  span {
+                    transform: rotate(0deg);
+                  }
+                }
+              }
+            }
+            // subdropdown menu
+            .nav-item--subDropdown {
+              visibility: hidden;
+              pointer-events: none;
+              user-select: none;
+              width: 230px;
+              position: absolute;
+              top: 2px;
+              right: -235px;
+              background-color: #fff;
+              box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
+              border-radius: 0px;
+              z-index: 999;
+              // transition: all 0.2s linear;
+              ul {
+                padding: 0px;
+                display: none;
+                li {
+                  display: none;
+                  padding: 15px;
+                  text-align: left;
+                  // transition: all 0.3s ease-in-out;
+                  cursor: pointer;
+                  &:hover {
+                    background-color: #1089ff;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  a {
+                    color: #202029;
+                  }
+                }
+              }
+            }
+          }
+        }
+        // test purpose
+        // &.active {
+        //   .nav-item--dropdown {
+        //     visibility: visible;
+        //     pointer-events: all;
+        //     user-select: all;
+        //     transform: translateY(0px);
+        //     ul {
+        //       display: block;
+        //     }
+        //   }
+        // }
       }
     }
   }
