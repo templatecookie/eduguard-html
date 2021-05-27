@@ -28,6 +28,7 @@
     }
   }
 }
+
 .ourevent-active,
 .students {
   @extend %slickdots;
@@ -56,24 +57,30 @@
   .new-course-feature .slider-arrows .prev-arrow,
   .new-course-feature .slider-arrows .next-arrow,
   .latest-events-featured .slider-arrows .prev-arrow,
-  .latest-events-featured .slider-arrows .next-arrow {
+  .latest-events-featured .slider-arrows .next-arrow,
+  .browse-categories__wrapper .slider-arrows .next-arrow,
+  .browse-categories__wrapper .slider-arrows .prev-arrow {
     top: auto;
     bottom: -95px;
   }
   .new-course-feature .slider-arrows .prev-arrow,
-  .latest-events-featured .slider-arrows .prev-arrow {
+  .latest-events-featured .slider-arrows .prev-arrow,
+  .browse-categories__wrapper .slider-arrows .prev-arrow {
     left: 0;
   }
   .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow {
+  .latest-events-featured .slider-arrows .next-arrow,
+  .browse-categories__wrapper .slider-arrows .next-arrow {
     right: 0;
   }
   .new-course-feature .slider-arrows .slick-arrow,
-  .latest-events-featured .slider-arrows .slick-arrow {
+  .latest-events-featured .slider-arrows .slick-arrow,
+  .browse-categories__wrapper .slider-arrows .slick-arrow {
     left: 50%;
   }
   .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow {
+  .latest-events-featured .slider-arrows .next-arrow,
+  .browse-categories__wrapper .slider-arrows .next-arrow {
     left: 55%;
   }
 }
