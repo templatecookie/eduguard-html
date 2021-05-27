@@ -59,10 +59,13 @@
   .latest-events-featured .slider-arrows .prev-arrow,
   .latest-events-featured .slider-arrows .next-arrow,
   .browse-categories__wrapper .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .prev-arrow {
+  .browse-categories__wrapper .slider-arrows .prev-arrow,
+  .about-services__wrapper .slider-arrows .prev-arrow,
+  .about-services__wrapper .slider-arrows .next-arrow {
     top: auto;
     bottom: -95px;
   }
+
   .new-course-feature .slider-arrows .prev-arrow,
   .latest-events-featured .slider-arrows .prev-arrow,
   .browse-categories__wrapper .slider-arrows .prev-arrow {
