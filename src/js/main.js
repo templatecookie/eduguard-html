@@ -279,38 +279,32 @@
   });
 
   //Event _Slider
-  $('.browse-categories-area').slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
-    autoplaySpeed: 2000,
-    nextArrow: '.next-arrow',
-    prevArrow: '.prev-arrow',
-    responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
-    ],
-  });
+  // $('.browse-categories-area').slick({
+  //   infinite: true,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: false,
+  //   arrows: true,
+  //   autoplaySpeed: 2000,
+  //   nextArrow: '.next-arrow',
+  //   prevArrow: '.prev-arrow',
+  //   responsive: [
+  //     {
+  //       breakpoint: 1199,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // });
 
-  // init Isotope
-  var $grid = $('.populercourse-item').isotope({
-    // options
-  });
   // filter items on button click
   $('.populercourse-ist').on('click', 'li', function () {
     var filterValue = $(this).attr('data-filter');
@@ -335,5 +329,10 @@
   //nice-select
   $(document).ready(function () {
     $('select').niceSelect();
+  });
+
+  // init Isotope
+  var $grid = $('.populercourse-item').isotope({
+    // options
   });
 })(jQuery);
