@@ -11207,6 +11207,10 @@ button:focus {
     width: 8px;
     height: 8px; }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .dropSelect {
+    display: none; } }
+
 .browse-categories__wrapper .slider-arrows, .testimonial-area .slider-arrows, .ourinstructor__wrapper .slider-arrows, .about-services__wrapper .slider-arrows, .latest-events-featured .slider-arrows, .new-course-feature .slider-arrows {
   display: -webkit-box;
   display: -webkit-flex;
