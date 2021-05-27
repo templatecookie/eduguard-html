@@ -5,7 +5,6 @@ header {
       margin-right: 220px !important;
     }
     .nav-item {
-      margin-left: 16px;
       margin-right: 16px;
       position: relative;
       .active {
@@ -285,6 +284,32 @@ header {
 }
 
 // Responsive
+
+@media (max-width: 1199px) {
+  // Navbar
+  header {
+    .navbar-collapse {
+      padding-bottom: 30px;
+    }
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: center;
+      .nav-item {
+        margin-right: 30px;
+        a {
+          &::after {
+            bottom: auto;
+            top: 0px;
+          }
+        }
+      }
+    }
+  }
+  header .navbar-nav .nav-item--dropdown {
+    top: 75px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   header {
     .rightContent {
@@ -308,7 +333,7 @@ header {
     position: relative;
     .navbar-nav {
       .nav-item {
-        margin: 0;
+        // margin: 0;
         .nav-link {
           padding: 15px 0 !important;
         }
@@ -344,11 +369,21 @@ header {
 @media (max-width: 767px) {
   header {
     position: relative;
-    #cart-nav {
-      position: absolute;
-      top: -315px;
-      right: 85px;
-    }
+    // #cart-nav {
+    //   position: absolute;
+    //   top: -315px;
+    //   right: 85px;
+    // }
+  }
+  header .navbar-nav {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  header .navbar-nav .nav-item {
+    margin-right: 0px;
+  }
+  header .navbar-nav .nav-item--dropdown {
+    top: 60px;
   }
 }
 
@@ -377,5 +412,9 @@ header {
         margin-left: 255px;
       }
     }
+  }
+
+  header .rightContent .btn {
+    padding: 12px 15px;
   }
 }
