@@ -11425,7 +11425,6 @@ header .navbar-nav {
   header .navbar-nav.menuList {
     margin-right: 220px !important; }
   header .navbar-nav .nav-item {
-    margin-left: 16px;
     margin-right: 16px;
     position: relative; }
     header .navbar-nav .nav-item .active {
@@ -11651,6 +11650,27 @@ header form {
 header #search-nav.appear {
   background-color: #42414b !important; }
 
+@media (max-width: 1199px) {
+  header .navbar-collapse {
+    padding-bottom: 30px; }
+  header .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    header .navbar-nav .nav-item {
+      margin-right: 30px; }
+      header .navbar-nav .nav-item a::after {
+        bottom: auto;
+        top: 0px; }
+  header .navbar-nav .nav-item--dropdown {
+    top: 75px; } }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   header .rightContent.appear a:nth-child(3), header .rightContent.appear a:nth-child(4) {
     display: none; }
@@ -11660,10 +11680,8 @@ header #search-nav.appear {
 @media screen and (max-width: 991px) {
   header {
     position: relative; }
-    header .navbar-nav .nav-item {
-      margin: 0; }
-      header .navbar-nav .nav-item .nav-link {
-        padding: 15px 0 !important; }
+    header .navbar-nav .nav-item .nav-link {
+      padding: 15px 0 !important; }
   header .navbar-nav.menuList {
     margin-right: 0px !important; }
   header form .header__Search-input {
@@ -11678,10 +11696,17 @@ header #search-nav.appear {
 @media (max-width: 767px) {
   header {
     position: relative; }
-    header #cart-nav {
-      position: absolute;
-      top: -315px;
-      right: 85px; } }
+  header .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15px; }
+  header .navbar-nav .nav-item {
+    margin-right: 0px; }
+  header .navbar-nav .nav-item--dropdown {
+    top: 60px; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   header form .header__Search-input {
@@ -11698,7 +11723,9 @@ header #search-nav.appear {
     header .rightContent.rightContent-2.appear {
       margin-left: 275px; }
     header .rightContent.appear {
-      margin-left: 255px; } }
+      margin-left: 255px; }
+  header .rightContent .btn {
+    padding: 12px 15px; } }
 
 .banner {
   min-height: 1117px;
