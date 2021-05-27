@@ -11326,10 +11326,6 @@ header .navbar-nav {
     header .navbar-nav .nav-item:hover .nav-item--dropdown {
       visibility: visible;
       pointer-events: all;
-      -webkit-user-select: all;
-         -moz-user-select: all;
-          -ms-user-select: all;
-              user-select: all;
       -webkit-transform: translateY(-2px);
               transform: translateY(-2px); }
       header .navbar-nav .nav-item:hover .nav-item--dropdown ul {
@@ -11337,10 +11333,6 @@ header .navbar-nav {
     header .navbar-nav .nav-item--dropdown {
       visibility: hidden;
       pointer-events: none;
-      -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
       width: 230px;
       position: absolute;
       top: 92px;
@@ -11383,10 +11375,6 @@ header .navbar-nav {
             header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown {
               visibility: visible;
               pointer-events: all;
-              -webkit-user-select: all;
-                 -moz-user-select: all;
-                  -ms-user-select: all;
-                      user-select: all;
               -webkit-transform: translateY(-2px);
                       transform: translateY(-2px); }
               header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown ul {
