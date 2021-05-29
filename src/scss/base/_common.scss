@@ -79,12 +79,12 @@
   .new-course-feature .slider-arrows .slick-arrow,
   .latest-events-featured .slider-arrows .slick-arrow,
   .browse-categories__wrapper .slider-arrows .slick-arrow {
-    left: 50%;
+    left: 45%;
   }
   .new-course-feature .slider-arrows .next-arrow,
   .latest-events-featured .slider-arrows .next-arrow,
   .browse-categories__wrapper .slider-arrows .next-arrow {
-    left: 55%;
+    left: 50%;
   }
 }
 
@@ -207,8 +207,8 @@
     padding: 60px 0px !important;
   }
   %fonts-sm-1 {
-    font-size: 32px !important;
-    line-height: 46px !important;
+    font-size: 22px !important;
+    line-height: 32px !important;
   }
 
   // Section spacing

@@ -21031,11 +21031,11 @@ header {
   .new-course-feature .slider-arrows .slick-arrow,
   .latest-events-featured .slider-arrows .slick-arrow,
   .browse-categories__wrapper .slider-arrows .slick-arrow {
-    left: 50%; }
+    left: 45%; }
   .new-course-feature .slider-arrows .next-arrow,
   .latest-events-featured .slider-arrows .next-arrow,
   .browse-categories__wrapper .slider-arrows .next-arrow {
-    left: 55%; } }
+    left: 50%; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .new-course-feature .slider-arrows .next-arrow,
@@ -21115,8 +21115,8 @@ header {
   .bestInstructor__title h3, .bestInstructor__title .h3,
   .event-sub-section-main h4, .event-sub-section-main .h4,
   .signup-area h3, .signup-area .h3 {
-    font-size: 32px !important;
-    line-height: 46px !important; }
+    font-size: 22px !important;
+    line-height: 32px !important; }
   .about-intro {
     padding: 0px !important; }
   .signup-area {
