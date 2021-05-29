@@ -14323,7 +14323,9 @@ header #search-nav.appear {
     .main-banner-end img {
       height: 450px; }
   .banner-input .main-input input {
-    padding-left: 15px; } }
+    padding-left: 15px; }
+  .latest-events-featured .latest-events-shape img.shape-02 {
+    bottom: 30px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-two {
