@@ -158,18 +158,6 @@ header {
             }
           }
         }
-        // test purpose
-        // &.active {
-        //   .nav-item--dropdown {
-        //     visibility: visible;
-        //     pointer-events: all;
-        //     user-select: all;
-        //     transform: translateY(0px);
-        //     ul {
-        //       display: block;
-        //     }
-        //   }
-        // }
       }
     }
   }
@@ -304,6 +292,9 @@ header {
         }
       }
     }
+    .rightContent {
+      justify-content: space-between;
+    }
   }
   header .navbar-nav .nav-item--dropdown {
     top: 75px;
@@ -369,11 +360,6 @@ header {
 @media (max-width: 767px) {
   header {
     position: relative;
-    // #cart-nav {
-    //   position: absolute;
-    //   top: -315px;
-    //   right: 85px;
-    // }
   }
   header .navbar-nav {
     flex-direction: column;
