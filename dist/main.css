@@ -10188,7 +10188,7 @@ button:focus {
         .videolist-area-wizard .main-wizard .download-wizard:hover .main-wizard-end small, .videolist-area-wizard .main-wizard .download-wizard:hover .main-wizard-end .small {
           color: #202029;
           text-decoration: none; }
-    .videolist-area-wizard .main-wizard a {
+    .videolist-area-wizard .main-wizard__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -15511,11 +15511,10 @@ header #search-nav.appear {
       padding: 24px;
       background-color: #fff;
       border-radius: 5px; }
-      .students-info-main .tab-content .info-student h6, .students-info-main .tab-content .info-student .h6,
-      .students-info-main .tab-content .about-student h6,
-      .students-info-main .tab-content .about-student .h6 {
+      .students-info-main .tab-content .info-student span,
+      .students-info-main .tab-content .about-student span {
         line-height: 30px; }
-    .students-info-main .tab-content .info-student-topic h6, .students-info-main .tab-content .info-student-topic .h6 {
+    .students-info-main .tab-content .info-student-topic span {
       font-size: 14px !important;
       line-height: 21px;
       font-weight: 500 !important;
@@ -20118,9 +20117,9 @@ body {
       padding: 10px 0px; }
       .checkout-area-summery .summery-area-text .summery-text .row {
         margin-bottom: 0 !important; }
-      .checkout-area-summery .summery-area-text .summery-text h6, .checkout-area-summery .summery-area-text .summery-text .h6 {
+      .checkout-area-summery .summery-area-text .summery-text span {
         color: #666575 !important;
-        font-size: 14px !important;
+        font-size: 13px !important;
         font-weight: 500 !important; }
       .checkout-area-summery .summery-area-text .summery-text p {
         font-size: 14px !important; }
