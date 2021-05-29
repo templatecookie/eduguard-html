@@ -12900,10 +12900,10 @@ header #search-nav.appear {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       margin-bottom: 30px; }
       .about-intro__img-wrapper img {
         height: 290px; }
@@ -12938,7 +12938,9 @@ header #search-nav.appear {
   .brands {
     background-color: #ebebf2 !important; }
     .brands .py-80 {
-      padding: 0px !important; } }
+      padding: 0px !important; }
+  .about-feature {
+    padding: 40px 15px !important; } }
 
 @media (max-width: 420px) {
   .breadcrumb {
@@ -13011,9 +13013,7 @@ header #search-nav.appear {
   .mentor__title h6, .mentor__title .h6 {
     font-size: 18px; }
   .mentor__img img {
-    height: auto; }
-  .about-intro__textContent {
-    text-align: center; } }
+    height: auto; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .breadcrumb {

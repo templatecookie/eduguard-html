@@ -234,7 +234,7 @@
 
     &__img-wrapper {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       margin-bottom: 30px;
       img {
         height: 290px;
@@ -308,6 +308,9 @@
     .py-80 {
       padding: 0px !important;
     }
+  }
+  .about-feature {
+    padding: 40px 15px !important;
   }
 }
 
@@ -423,12 +426,6 @@
   }
   .mentor__img img {
     height: auto;
-  }
-
-  // about -centered
-
-  .about-intro__textContent {
-    text-align: center;
   }
 }
 
