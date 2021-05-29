@@ -15332,7 +15332,12 @@ header #search-nav.appear {
     bottom: 60px;
     left: 220px; }
   .newCourse .slick-dots {
-    margin-top: 0px !important; } }
+    margin-top: 0px !important; }
+  .new-course-feature .row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .banner-three {

@@ -823,6 +823,11 @@
       margin-top: 0px !important;
     }
   }
+  .new-course-feature {
+    .row {
+      justify-content: center;
+    }
+  }
 }
 @media (min-width: 320px) and (max-width: 574px) {
   // banner three
