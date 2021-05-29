@@ -15884,6 +15884,10 @@ header #search-nav.appear {
     .info-student dl {
       margin-bottom: 10px !important; } }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .students-info-intro {
+    padding: 40px 0px; } }
+
 .purchase-area {
   background-color: #fff;
   border-radius: 4px;
