@@ -11900,7 +11900,9 @@ header #search-nav.appear {
   .banner-two-start .h1 {
     margin-bottom: 0px !important; }
   .banner-two-start .banner-input .main-input input {
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  .banner-two-end {
+    z-index: 0 !important; } }
 
 .populercourse {
   padding: 100px 0;
