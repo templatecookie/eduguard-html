@@ -52,8 +52,8 @@
                                 <div class="nav-item--dropdown">
                                     <ul>
                                         
-                                        <li><a href="coursesearch.html">Course Search List</a></li>
-                                        <li><a href="coursedetails.html">Single Course Details</a></li>
+                                        <li><a href="coursesearch.html">course list</a></li>
+                                        <li><a href="coursedetails.html">course details</a></li>
                                         <li><a href="coursedescription.html">Watch Course</a></li>
                                     </ul>
                                 </div>
@@ -116,7 +116,7 @@
                         <div class="d-flex align-items-center  rightContent rightContent-2">
                             <form action="#" class="header__Search-form" id="searchForm">
                                 <input type="text" class="header__Search-input" placeholder="Search Here..." />
-                                <button class="border-0 bg-transparent header__Search-button" onclick="openSearch()">
+                                <button type="button" class="border-0 bg-transparent header__Search-button" onclick="openSearch()">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="9.19522" cy="9.19518" r="7.61714" stroke="#35343E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></circle>
                                         <path d="M15.0493 15.4866L18.3493 18.778" stroke="#35343E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -148,7 +148,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <a href="javascript:void(0)" id="cart-nav" class="border-0 bg-transparent ms-4 me-1">
+                            <a href="cart.html" id="cart-nav" class="border-0 bg-transparent ms-4 me-1">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         fill-rule="evenodd"
@@ -437,19 +437,19 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab">
                                     <div class="row ">
-                                        <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="col-lg-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
-                                                    <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
+                                                    <a href="coursedetails.html"><img src="dist/images/courses/1.png" alt="images" class="img-fluid"></a>
                                                 </div>
                                                 <div class="course__content">
                                                     <div class="course__content_title">
-                                                        <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                                        <h6><a href="coursedetails.html">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
                                                     </div>
                                                     <div class="course__content_author">
                                                         <div class="info">
-                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
-        
+                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image"></a>
+            
                                                             <a href="#">Brandon Dias</a>
                                                         </div>
                                                         <div class="price">
@@ -461,13 +461,7 @@
                                                         <div class="star d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
-                                                                        stroke="#FF7A1A"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z" stroke="#FF7A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>4.5</span>
@@ -476,20 +470,8 @@
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <g clip-path="url(#clip0)">
-                                                                        <path
-                                                                            d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
-                                                                        <path
-                                                                            d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
+                                                                        <path d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                        <path d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     </g>
                                                                     <defs>
                                                                         <clipPath id="clip0">
@@ -503,20 +485,8 @@
                                                         <div class="book d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
-                                                                    <path
-                                                                        d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>37 Lesson</span>
@@ -524,13 +494,7 @@
                                                         <div class="clock d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                                                        stroke="#FFC91B"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
@@ -540,19 +504,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="col-lg-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
-                                                    <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
+                                                    <a href="coursedetails.html"><img src="dist/images/courses/2.png" alt="images" class="img-fluid"></a>
                                                 </div>
                                                 <div class="course__content">
                                                     <div class="course__content_title">
-                                                        <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                                        <h6><a href="coursedetails.html">Machine Learning A-Z™: Hands-On Python &amp; R In Data Science</a></h6>
                                                     </div>
                                                     <div class="course__content_author">
                                                         <div class="info">
-                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
-        
+                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image"></a>
+            
                                                             <a href="#">Brandon Dias</a>
                                                         </div>
                                                         <div class="price">
@@ -564,13 +528,7 @@
                                                         <div class="star d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
-                                                                        stroke="#FF7A1A"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z" stroke="#FF7A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>4.5</span>
@@ -579,20 +537,8 @@
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <g clip-path="url(#clip0)">
-                                                                        <path
-                                                                            d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
-                                                                        <path
-                                                                            d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
+                                                                        <path d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                        <path d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     </g>
                                                                     <defs>
                                                                         <clipPath id="clip0">
@@ -606,20 +552,8 @@
                                                         <div class="book d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
-                                                                    <path
-                                                                        d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>37 Lesson</span>
@@ -627,13 +561,7 @@
                                                         <div class="clock d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                                                        stroke="#FFC91B"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
@@ -643,19 +571,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="col-lg-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
-                                                    <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
+                                                    <a href="coursedetails.html"><img src="dist/images/courses/3.png" alt="images" class="img-fluid"></a>
                                                 </div>
                                                 <div class="course__content">
                                                     <div class="course__content_title">
-                                                        <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                                        <h6><a href="coursedetails.html">The Data Science Course 2021: Complete Data Science </a></h6>
                                                     </div>
                                                     <div class="course__content_author">
                                                         <div class="info">
-                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
-        
+                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image"></a>
+            
                                                             <a href="#">Brandon Dias</a>
                                                         </div>
                                                         <div class="price">
@@ -667,13 +595,7 @@
                                                         <div class="star d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
-                                                                        stroke="#FF7A1A"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z" stroke="#FF7A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>4.5</span>
@@ -682,20 +604,8 @@
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <g clip-path="url(#clip0)">
-                                                                        <path
-                                                                            d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
-                                                                        <path
-                                                                            d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
+                                                                        <path d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                        <path d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     </g>
                                                                     <defs>
                                                                         <clipPath id="clip0">
@@ -709,20 +619,8 @@
                                                         <div class="book d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
-                                                                    <path
-                                                                        d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>37 Lesson</span>
@@ -730,13 +628,7 @@
                                                         <div class="clock d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                                                        stroke="#FFC91B"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
@@ -746,19 +638,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="col-lg-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
-                                                    <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
+                                                    <a href="coursedetails.html"><img src="dist/images/courses/1.png" alt="images" class="img-fluid"></a>
                                                 </div>
                                                 <div class="course__content">
                                                     <div class="course__content_title">
-                                                        <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                                        <h6><a href="coursedetails.html">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
                                                     </div>
                                                     <div class="course__content_author">
                                                         <div class="info">
-                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
-        
+                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image"></a>
+            
                                                             <a href="#">Brandon Dias</a>
                                                         </div>
                                                         <div class="price">
@@ -770,13 +662,7 @@
                                                         <div class="star d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
-                                                                        stroke="#FF7A1A"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z" stroke="#FF7A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>4.5</span>
@@ -785,20 +671,8 @@
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <g clip-path="url(#clip0)">
-                                                                        <path
-                                                                            d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
-                                                                        <path
-                                                                            d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
+                                                                        <path d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                        <path d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     </g>
                                                                     <defs>
                                                                         <clipPath id="clip0">
@@ -812,20 +686,8 @@
                                                         <div class="book d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
-                                                                    <path
-                                                                        d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>37 Lesson</span>
@@ -833,13 +695,7 @@
                                                         <div class="clock d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                                                        stroke="#FFC91B"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
@@ -849,19 +705,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="col-lg-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
-                                                    <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
+                                                    <a href="coursedetails.html"><img src="dist/images/courses/2.png" alt="images" class="img-fluid"></a>
                                                 </div>
                                                 <div class="course__content">
                                                     <div class="course__content_title">
-                                                        <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                                        <h6><a href="coursedetails.html">Machine Learning A-Z™: Hands-On Python &amp; R In Data Science</a></h6>
                                                     </div>
                                                     <div class="course__content_author">
                                                         <div class="info">
-                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
-        
+                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image"></a>
+            
                                                             <a href="#">Brandon Dias</a>
                                                         </div>
                                                         <div class="price">
@@ -873,13 +729,7 @@
                                                         <div class="star d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
-                                                                        stroke="#FF7A1A"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z" stroke="#FF7A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>4.5</span>
@@ -888,20 +738,8 @@
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <g clip-path="url(#clip0)">
-                                                                        <path
-                                                                            d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
-                                                                        <path
-                                                                            d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
+                                                                        <path d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                        <path d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     </g>
                                                                     <defs>
                                                                         <clipPath id="clip0">
@@ -915,20 +753,8 @@
                                                         <div class="book d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
-                                                                    <path
-                                                                        d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>37 Lesson</span>
@@ -936,13 +762,7 @@
                                                         <div class="clock d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                                                        stroke="#FFC91B"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
@@ -952,19 +772,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="col-lg-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
-                                                    <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
+                                                    <a href="coursedetails.html"><img src="dist/images/courses/3.png" alt="images" class="img-fluid"></a>
                                                 </div>
                                                 <div class="course__content">
                                                     <div class="course__content_title">
-                                                        <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                                        <h6><a href="coursedetails.html">The Data Science Course 2021: Complete Data Science </a></h6>
                                                     </div>
                                                     <div class="course__content_author">
                                                         <div class="info">
-                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
-        
+                                                            <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image"></a>
+            
                                                             <a href="#">Brandon Dias</a>
                                                         </div>
                                                         <div class="price">
@@ -976,13 +796,7 @@
                                                         <div class="star d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
-                                                                        stroke="#FF7A1A"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z" stroke="#FF7A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>4.5</span>
@@ -991,20 +805,8 @@
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <g clip-path="url(#clip0)">
-                                                                        <path
-                                                                            d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
-                                                                        <path
-                                                                            d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
-                                                                            stroke="#1089FF"
-                                                                            stroke-width="1.8"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        ></path>
+                                                                        <path d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                        <path d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z" stroke="#1089FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     </g>
                                                                     <defs>
                                                                         <clipPath id="clip0">
@@ -1018,20 +820,8 @@
                                                         <div class="book d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
-                                                                    <path
-                                                                        d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
-                                                                        stroke="#00AF91"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z" stroke="#00AF91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
                                                             <span>37 Lesson</span>
@@ -1039,13 +829,7 @@
                                                         <div class="clock d-flex align-items-center">
                                                             <div class="icon pe-2">
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                                                        stroke="#FFC91B"
-                                                                        stroke-width="1.8"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    ></path>
+                                                                    <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                     <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
                                                             </div>
@@ -1823,7 +1607,7 @@
                             <h6>Company</h6>
                             <ul>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="#">Courses</a></li>
+                                <li><a href="coursesearch.html">Courses</a></li>
                                 <li><a href="#">Carrer</a></li>
                                 <li><a href="#">Affiliate</a></li>
                             </ul>
@@ -1835,8 +1619,8 @@
                             <ul>
                                 <li><a href="#">Help &amp; Supports </a></li>
                                 <li><a href="#">Pravacy Polocy</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1844,8 +1628,8 @@
                         <div class="footer__list">
                             <h6>Quick Links</h6>
                             <ul>
-                                <li><a href="#">Events</a></li>
-                                <li><a href="#">Become a Instructor</a></li>
+                                <li><a href="event-search.html">Events</a></li>
+                                <li><a href="becomeinstructor.html">Become a Instructor</a></li>
                                 <li><a href="#">Partnerships</a></li>
                                 <li><a href="#">Get the app</a></li>
                             </ul>

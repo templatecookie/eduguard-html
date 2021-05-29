@@ -216,6 +216,16 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .successful-instructor-feature {
+    min-height: 350px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .info-desk-image,
@@ -246,6 +256,12 @@
   .successful-instructor-feature-image {
     height: 55px;
     width: 55px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-featured .successful-instructor-feature {
+    margin: auto 30px;
   }
 }
 
@@ -371,5 +387,11 @@
   .info-desk-image {
     margin: 0 !important;
     margin-bottom: 15px !important;
+  }
+  .intro-featured .successful-instructor-feature {
+    margin: auto 15px;
+  }
+  .successful-instructor-feature {
+    min-height: auto;
   }
 }

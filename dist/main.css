@@ -11128,7 +11128,9 @@ button:focus {
     .latest-events-featured .slider-arrows .next-arrow:hover,
     .new-course-feature .slider-arrows .next-arrow:hover {
       border-color: none;
-      background-color: #1089ff; }
+      background-color: #1089ff;
+      -webkit-box-shadow: 0px 10px 20px 0px #0264ed40;
+              box-shadow: 0px 10px 20px 0px #0264ed40; }
       .browse-categories__wrapper .slider-arrows .prev-arrow:hover svg path, .testimonial-area .slider-arrows .prev-arrow:hover svg path, .ourinstructor__wrapper .slider-arrows .prev-arrow:hover svg path, .about-services__wrapper .slider-arrows .prev-arrow:hover svg path, .latest-events-featured .slider-arrows .prev-arrow:hover svg path, .new-course-feature .slider-arrows .prev-arrow:hover svg path,
       .browse-categories__wrapper .slider-arrows .next-arrow:hover svg path,
       .testimonial-area .slider-arrows .next-arrow:hover svg path,
@@ -13979,7 +13981,8 @@ header #search-nav.appear {
     line-height: 28px !important;
     margin-bottom: 30px; }
   .banner-two-end {
-    position: relative; }
+    position: relative;
+    z-index: -1; }
     .banner-two-end .image img {
       border: 5px solid #ffffff;
       -webkit-filter: drop-shadow(0px 36px 70px rgba(10, 9, 86, 0.14));
@@ -19066,6 +19069,24 @@ body {
     height: 55px;
     width: 55px; } }
 
+@media (max-width: 1024px) {
+  .successful-instructor-feature {
+    min-height: 350px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .info-desk-image,
   .instructor-rules-image,
@@ -19087,6 +19108,10 @@ body {
   .successful-instructor-feature-image {
     height: 55px;
     width: 55px; } }
+
+@media (max-width: 767px) {
+  .intro-featured .successful-instructor-feature {
+    margin: auto 30px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .instructor-rules-image,
@@ -19170,7 +19195,11 @@ body {
     margin-bottom: 15px; }
   .info-desk-image {
     margin: 0 !important;
-    margin-bottom: 15px !important; } }
+    margin-bottom: 15px !important; }
+  .intro-featured .successful-instructor-feature {
+    margin: auto 15px; }
+  .successful-instructor-feature {
+    min-height: auto; } }
 
 .instructor-courses {
   padding-bottom: 70px; }
