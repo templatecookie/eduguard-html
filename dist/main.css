@@ -11487,9 +11487,7 @@ header .navbar-nav {
             position: relative; }
             header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown {
               visibility: visible;
-              pointer-events: all;
-              -webkit-transform: translateY(-2px);
-                      transform: translateY(-2px); }
+              pointer-events: all; }
               header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown ul {
                 display: block; }
                 header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown ul li {
