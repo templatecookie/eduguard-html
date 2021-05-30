@@ -9905,18 +9905,17 @@ button:focus {
   z-index: 1; }
 
 .btn {
-  padding: 12px 24px;
+  padding: 12px 19px;
   border: 0px;
   outline: 0px;
   font-size: 16px;
+  line-height: 19.2px;
   font-weight: 500;
-  line-height: 1.5;
   border-radius: 4px;
   text-transform: capitalize;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
   .btn:focus {
-    border: 2px solid transparent;
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
   .btn.btn-outline-info {
@@ -9941,10 +9940,15 @@ button:focus {
   .btn.btn-link {
     color: #42414b !important;
     text-decoration: none; }
+  .btn.btn-md, .btn.btn-lg, .btn-group-lg > .btn {
+    letter-spacing: 0.04em;
+    font-weight: 600 !important;
+    text-transform: uppercase; }
   .btn.btn-md {
-    padding: 12px 24px !important; }
+    padding: 16px 24px !important;
+    text-transform: uppercase; }
   .btn.btn-lg, .btn-group-lg > .btn {
-    padding: 14px 32px !important; }
+    padding: 19px 32px !important; }
   .btn.bg-primary {
     color: white;
     background-color: #35343e !important;
@@ -9953,12 +9957,12 @@ button:focus {
     .btn.bg-primary:hover {
       background-color: #1089ff !important;
       color: white; }
-  .btn.bg-primary2 {
+  .btn.bg-primary--dark {
     color: white;
     background-color: #1089ff !important;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-    .btn.bg-primary2:hover {
+    .btn.bg-primary--dark:hover {
       background-color: #0264ed !important;
       color: white; }
   .btn.btn-outline-primary {
@@ -9968,11 +9972,11 @@ button:focus {
     .btn.btn-outline-primary:hover {
       color: white !important;
       background-color: #35343e !important; }
-  .btn.btn-outline-primary2 {
+  .btn.btn-outline-primary--dark {
     border-color: #1089ff !important;
     background-color: transparent !important;
     color: #1089ff !important; }
-    .btn.btn-outline-primary2:hover {
+    .btn.btn-outline-primary--dark:hover {
       color: white !important;
       background-color: #0264ed !important;
       border-color: #0264ed !important; }
@@ -9992,13 +9996,13 @@ button:focus {
     .btn.btn-shadow:hover {
       -webkit-box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
               box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25); }
-  .btn.btn-shadow2 {
+  .btn.btn-shadow--dark {
     color: #35343e;
     background: #ffffff;
     -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     border-radius: 3px; }
-    .btn.btn-shadow2:hover {
+    .btn.btn-shadow--dark:hover {
       color: #1089ff;
       -webkit-box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
               box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25); }
@@ -11124,7 +11128,7 @@ button:focus {
     .about-services__wrapper .slider-arrows .next-arrow:hover,
     .latest-events-featured .slider-arrows .next-arrow:hover,
     .new-course-feature .slider-arrows .next-arrow:hover {
-      border-color: none;
+      border-color: transparent;
       background-color: #1089ff;
       -webkit-box-shadow: 0px 10px 20px 0px #0264ed40;
               box-shadow: 0px 10px 20px 0px #0264ed40; }
@@ -11548,18 +11552,9 @@ header .rightContent #cart-nav {
   margin-right: 15px !important; }
 
 header .rightContent .btn {
-  border: 2px solid #ebebf2;
-  border-radius: 4px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0px 4px; }
-  header .rightContent .btn-active {
-    background: #0264ed;
-    color: #fff !important; }
-  header .rightContent .btn-dark-info:hover {
-    background: #42414b !important; }
   header .rightContent .btn:hover {
     color: #fff !important;
     text-decoration: none;
@@ -13242,10 +13237,6 @@ header #search-nav.appear {
         margin-bottom: 5px; }
       .browse-categories-item-text p {
         font-size: 14px !important; }
-  .browse-categories .btn-primary {
-    margin-top: 50px;
-    padding: 19px 32px;
-    font-weight: 600; }
   .browse-categories-shape img {
     position: absolute; }
   .browse-categories-shape .shape-01 {
@@ -14139,9 +14130,6 @@ header #search-nav.appear {
   .featured-popular-courses-shape .shape-03 {
     bottom: 175px;
     right: 85px; }
-  .featured-popular-courses .tab-content .btn-primary {
-    margin-top: 50px;
-    padding: 19px 32px; }
 
 .students-says {
   padding-top: 100px;
@@ -16717,14 +16705,22 @@ header #search-nav.appear {
     font-size: 16px; }
 
 .event-info-cart {
-  margin-top: -60px;
-  padding: 30px 25px;
+  margin-top: -120px;
+  padding: 30px 0px;
   background-color: white;
   border-radius: 8px; }
+  .event-info-cart .ticket-cost,
+  .event-info-cart form,
+  .event-info-cart .footer__wrapper_social,
+  .event-info-cart .event-info-cart h6,
+  .event-info-cart .event-info-cart .h6 {
+    padding: 0px 30px; }
   .event-info-cart p.ticket-cost {
     font-size: 32px;
     color: #202029 !important;
     margin-bottom: 5px; }
+  .event-info-cart .course-includes {
+    padding: 24px 30px; }
   .event-info-cart form {
     margin-bottom: 25px; }
     .event-info-cart form p {
@@ -17128,7 +17124,7 @@ header #search-nav.appear {
         height: 70px;
         background-color: rgba(16, 137, 255, 0.1);
         border-radius: 5px;
-        color: #1089FF;
+        color: #1089ff;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -17143,10 +17139,10 @@ header #search-nav.appear {
                 justify-content: center; }
       .events-location-text .text-item-start .email-bg {
         background-color: rgba(255, 122, 26, 0.1);
-        color: #FF7A1A; }
+        color: #ff7a1a; }
       .events-location-text .text-item-start .phone-bg {
         background-color: rgba(0, 175, 145, 0.1);
-        color: #00AF91; }
+        color: #00af91; }
     .events-location-text .text-item-end p {
       font-weight: 500;
       font-size: 12px;
@@ -20869,6 +20865,7 @@ header {
         stroke: #25252e; }
     .checkout-tab .nav .nav-item .nav-link {
       width: 100%;
+      cursor: pointer;
       border: none;
       background-color: transparent;
       margin: auto; }

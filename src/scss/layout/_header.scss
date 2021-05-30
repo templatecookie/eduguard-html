@@ -205,21 +205,17 @@ header {
       margin-right: 15px !important;
     }
     .btn {
-      border: 2px solid #ebebf2;
-      border-radius: 4px;
       transition: all 0.2s linear;
-      box-sizing: border-box;
-      // overflow: hidden;
       margin: 0px 4px;
-      &-active {
-        background: #0264ed;
-        color: #fff !important;
-      }
-      &-dark-info {
-        &:hover {
-          background: #42414b !important;
-        }
-      }
+      // &-active {
+      //   background: #0264ed;
+      //   color: #fff !important;
+      // }
+      // &-dark-info {
+      //   &:hover {
+      //     background: #42414b !important;
+      //   }
+      // }
       &:hover {
         color: #fff !important;
         text-decoration: none;
