@@ -1,6 +1,10 @@
 header {
+  .navbar {
+    padding: 0px;
+  }
   .navbar-nav {
     transition: all 0.2s ease-in-out;
+    // padding: 10px 0px;
     &.menuList {
       margin-right: 220px !important;
     }
@@ -14,15 +18,29 @@ header {
         width: 100%;
       }
       .nav-link {
-        padding: 30px 0 !important;
+        // padding: 30px 0 !important;
+        padding: 25px 0px;
         font-size: 16px;
         font-weight: 500;
         color: color(dark);
         position: relative;
+        &.active {
+          &::after {
+            position: absolute;
+            content: '';
+            top: 100%;
+            left: 0;
+            background-color: color(primary);
+            width: 100%;
+            height: 2px;
+            border-radius: 5px;
+            transition: 0.3s all linear;
+          }
+        }
         &::after {
           position: absolute;
           content: '';
-          bottom: 5px;
+          top: 100%;
           left: 0;
           background-color: color(primary);
           width: 100%;
@@ -185,7 +203,7 @@ header {
       }
     }
     #cart-nav {
-      margin-right: 30px !important;
+      margin-right: 15px !important;
     }
     .btn {
       border: 2px solid #ebebf2;
