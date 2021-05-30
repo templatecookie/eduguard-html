@@ -32,8 +32,8 @@
     dots: false,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: ' .prev-arrow',
-    nextArrow: ' .next-arrow',
+    prevArrow: '.event-slider-arrows .prev-arrow',
+    nextArrow: '.event-slider-arrows .next-arrow',
     responsive: [
       {
         breakpoint: 1025,
@@ -74,8 +74,8 @@
     dots: false,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: ' .prev-arrow',
-    nextArrow: ' .next-arrow',
+    prevArrow: '.new-course-arrows .prev-arrow',
+    nextArrow: '.new-course-arrows .next-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -102,7 +102,7 @@
   });
 
   // our students
-  $('.students').slick({
+  $('.student-slider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -112,8 +112,8 @@
     arrows: true,
     centerMode: true,
     centerPadding: '0px',
-    prevArrow: ' .prev-arrow',
-    nextArrow: ' .next-arrow',
+    prevArrow: '.student-slider-arrows .prev-arrow',
+    nextArrow: '.student-slider-arrows .next-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -147,8 +147,8 @@
     arrows: true,
     dots: true,
     autoplaySpeed: 2000,
-    nextArrow: '.next-arrow',
-    prevArrow: '.prev-arrow',
+    nextArrow: '.about-slider-arrows .next-arrow',
+    prevArrow: '.about-slider-arrows .prev-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -279,31 +279,31 @@
   });
 
   //Event _Slider
-  // $('.browse-categories-area').slick({
-  //   infinite: true,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   autoplay: false,
-  //   arrows: true,
-  //   autoplaySpeed: 2000,
-  //   nextArrow: '.next-arrow',
-  //   prevArrow: '.prev-arrow',
-  //   responsive: [
-  //     {
-  //       breakpoint: 1199,
-  //       settings: {
-  //         slidesToShow: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // });
+  $('.browse-categories-area').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    autoplaySpeed: 2000,
+    nextArrow: '.browse-categories-arrows .next-arrow',
+    prevArrow: '.browse-categories-arrows .prev-arrow',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
   // filter items on button click
   $('.populercourse-ist').on('click', 'li', function () {
