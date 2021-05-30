@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Course Search-Eduguard</title>
+        <title>Event Search-Eduguard</title>
         <link rel="stylesheet" href="src/scss/vendors/plugin/css/jquery-ui.css" />
         <link rel="stylesheet" href="dist/main.css" />
         <link rel="favicon" type="image/gif" href="dist/images/favicon/favicon.png">
@@ -57,7 +57,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
+                                <a class="nav-link" aria-current="page" href="#">
                                     Course
                                     <span>
                                         <svg
@@ -88,7 +88,7 @@
                                 <a class="nav-link" aria-current="page" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">
+                                <a class="nav-link active" aria-current="page" href="#">
                                     Events
                                     <span>
                                         <svg
@@ -236,6 +236,7 @@
                 </div>
             </nav>
         </header>
+        <!-- Header Ends Here -->
 
         <!-- Breadcrumb Starts Here -->
         <div class="event-sub-section eventsearch-sub-section">
@@ -519,7 +520,7 @@
                                 <div class="event-search-wizard-item">
                                     <div class="event-search-wizard-item-start">
                                         <form action="#">
-                                            <input class="checkbox-primary" type="checkbox" />
+                                            <input class="checkbox-primary" type="checkbox" id="all3" />
                                             <label for="all3">All</label>
                                         </form>
                                     </div>
@@ -552,8 +553,8 @@
                                 <div class="event-search-wizard-item">
                                     <div class="event-search-wizard-item-start">
                                         <form action="#">
-                                            <input class="checkbox-primary" type="checkbox" id="s3" />
-                                            <label for="s3">3 Star and higher</label>
+                                            <input class="checkbox-primary" type="checkbox" id="starThree" />
+                                            <label for="starThree">3 Star and higher</label>
                                         </form>
                                     </div>
                                     <div class="event-search-wizard-item-end">
@@ -597,8 +598,8 @@
                                 <div class="event-search-wizard-item">
                                     <div class="event-search-wizard-item-start">
                                         <form action="#">
-                                            <input class="checkbox-primary" type="checkbox" id="all3" />
-                                            <label for="all3">All</label>
+                                            <input class="checkbox-primary" type="checkbox" id="allcheck" />
+                                            <label for="allcheck">All</label>
                                         </form>
                                     </div>
                                     <div class="event-search-wizard-item-end">
@@ -630,8 +631,8 @@
                                 <div class="event-search-wizard-item">
                                     <div class="event-search-wizard-item-start">
                                         <form action="#">
-                                            <input class="checkbox-primary" type="checkbox" id="starThree" />
-                                            <label for="starThree">3 Star and higher</label>
+                                            <input class="checkbox-primary" type="checkbox" id="s3" />
+                                            <label for="s3">3 Star and higher</label>
                                         </form>
                                     </div>
                                     <div class="event-search-wizard-item-end">
@@ -1265,7 +1266,7 @@
                             </div>
                         </div>
 
-                        <div class="pagination-group">
+                        <div class="pagination-group mt-4">
                             <a href="#!-1" class="p_prev">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="9.414" height="16.828" viewBox="0 0 9.414 16.828">
                                     <path data-name="Icon feather-chevron-left" d="M20.5,23l-7-7,7-7" transform="translate(-12.5 -7.586)" fill="none" stroke="#1a2224" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -1432,7 +1433,7 @@
         <script src="src/scss/vendors/plugin/js/price_range_script.js"></script>
         <script src="src/scss/vendors/plugin/js/jquery-ui.min.js"></script>
         <script src="src/js/app.js"></script>
-        <script src="dist/main.js"></script>                
+        <script src="dist/main.js"></script>
         <script>
             function accordion(id, el) {
                 const wizard = document.getElementById(id);

@@ -8,12 +8,13 @@
 
         <link rel="stylesheet" href="src/scss/vendors/plugin/css/star-rating-svg.css" />
         <link rel="stylesheet" href="dist/main.css" />
+        <link rel="favicon" type="image/gif" href="dist/images/favicon/favicon.png">
     </head>
 
     <body style="background-color: #ebebf2;">
         <!-- Header Starts Here -->
-        <header class="bg-white nav-shadow">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent pb-lg-0">
+        <header class="bg-white">
+            <nav class="navbar navbar-expand-xl navbar-light bg-transparent">
                 <div class="container">
                     <!-- Logo -->
                     <a class="navbar-brand" href="index.html">
@@ -29,32 +30,127 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link " aria-current="page" href="#">Home
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </span>
+                                </a>
+                                <div class="nav-item--dropdown">
+                                    <ul>
+                                        
+                                        <li><a href="index.html">Homepage 01</a></li>
+                                        <li><a href="home-02.html">Homepage 02</a></li>
+                                        <li><a href="home-03.html">Homepage 03</a></li>
+                                    </ul>
+                                </div>
+                                
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Courses</a>
+                                <a class="nav-link active" aria-current="page" href="#">Course
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </span>
+                                </a>
+                                <div class="nav-item--dropdown">
+                                    <ul>
+                                        
+                                        <li><a href="coursesearch.html">course list</a></li>
+                                        <li><a href="coursedetails.html">course details</a></li>
+                                        <li><a href="coursedescription.html">Watch Course</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link " aria-current="page" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Events</a>
+                                <a class="nav-link " aria-current="page" href="#">Events
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </span>
+                                </a>
+                                <div class="nav-item--dropdown">
+                                    <ul>
+                                        
+                                        <li><a href="event-search.html">Event Search List</a></li>
+                                        <li><a href="event.html">Event Details</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#">Pages
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </span>
+                                </a>
+                                <div class="nav-item--dropdown">
+                                    <ul>
+                                        <li class="submenu">
+                                            <a href="#">My Account
+                                                <span >
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                                </span>
+                                            </a>
+                                            <div class="nav-item--subDropdown">
+                                                <ul>
+                                                    <li><a href="studentsprofile.html">Students Profile</a></li>
+                                                    <li><a href="signin.html">Sign-in page</a></li>
+                                                    <li><a href="signup.html">Sign-up page</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="instructor-profile.html">Instructor Profile</a></li>
+                                        <li><a href="becomeinstructor.html">Become Instructor</a></li>
+                                        <li><a href="cart.html">Cart Page</a></li>
+                                        <li><a href="checkout.html">Check out page</a></li>
+                                        
+                                        <li><a href="faq.html">Faq page</a></li>
+                                        <li><a href="404.html">404 page</a></li>
+                                        <li><a href="comingsoon.html">Coming Soon</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
-                        <div class="d-flex align-items-center justify-content-between justify-content-lg-start rightContent rightContent-2">
-                            <form action="#" class="header__Search-form">
+                        <div class="d-flex align-items-center  rightContent rightContent-2">
+                            <form action="#" class="header__Search-form" id="searchForm">
                                 <input type="text" class="header__Search-input" placeholder="Search Here..." />
-                                <button id="search-nav" class="border-0 bg-transparent header__Search-button">
+                                <button type="button" class="border-0 bg-transparent header__Search-button" onclick="openSearch()">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="9.19522" cy="9.19518" r="7.61714" stroke="#35343E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></circle>
                                         <path d="M15.0493 15.4866L18.3493 18.778" stroke="#35343E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
                                 </button>
+                                <div id="myOverlay" class="overlay">
+                                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                                    <div class="overlay-content">
+                                        <div>
+                                            <input type="text" placeholder="Search.." name="search" />
+                                            <button type="submit">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="#ffff"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="feather feather-search"
+                                                >
+                                                    <circle cx="11" cy="11" r="8"></circle>
+                                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
-                            <a href="javascript:void(0)" id="cart-nav" class="border-0 bg-transparent ms-4 me-1">
+                            <a href="cart.html" id="cart-nav" class="border-0 bg-transparent ms-4 me-1">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         fill-rule="evenodd"
@@ -76,6 +172,7 @@
                 </div>
             </nav>
         </header>
+
 
         <!-- Breadcrumb Starts Here -->
         <section class="event-sub-section">
@@ -180,7 +277,7 @@
                         <div class="course-overview">
                             <div class="course-overview-image">
                                 <img src="dist/images/courses/thumb.jpg" alt="img" />
-                                <a class="popup-video play-button" href="https://www.youtube.com/watch?v=3CvFz5j1Krk&amp;ab_channel=SVFMusic">
+                                <a class="popup-video play-button" href="https://www.youtube.com/watch?v=3CvFz5j1Krk">
                                     <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M22.2159 15.9113C22.1179 16.0425 21.6605 16.6002 21.3011 16.9611L21.1051 17.158C18.3608 20.1434 11.5327 24.6379 8.0696 26.0814C8.0696 26.1142 6.01136 26.9672 5.03125 27H4.90057C3.39773 27 1.9929 26.147 1.27415 24.7691C0.882102 24.0146 0.522727 21.8165 0.490057 21.7837C0.196023 19.8153 0 16.8004 0 13.4836C0 10.0061 0.196023 6.85662 0.555398 4.92102C0.555398 4.88821 0.914773 3.11665 1.14347 2.52612C1.50284 1.67315 2.15625 0.951397 2.97301 0.492102C3.62642 0.164034 4.3125 0 5.03125 0C5.78267 0.0328068 7.1875 0.52819 7.7429 0.754557C11.402 2.19806 18.3935 6.92224 21.0724 9.80923C21.5298 10.2685 22.0199 10.8262 22.1506 10.9575C22.706 11.6792 23 12.565 23 13.5197C23 14.3694 22.7386 15.2224 22.2159 15.9113Z"
@@ -213,12 +310,12 @@
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link me-0" id="pills-course-review-tab" data-bs-toggle="pill" data-bs-target="#pills-review" type="button" role="tab" aria-controls="pills-course-review" aria-selected="false">
+                                    <button class="nav-link me-0" id="pills-course-review-tab" data-bs-toggle="pill" data-bs-target="#pills-review" type="button" role="tab" aria-controls="pills-course-review-tab" aria-selected="false">
                                         Review
                                     </button>
                                 </li>
                             </ul>
-                            <div class="tab-content course-overview-content" id="pills-tabContent">
+                            <div class="tab-content course-overview-content" id="pills-tabContentTwo">
                                 <div class="tab-pane fade show active" id="pills-courseoverview" role="tabpanel" aria-labelledby="pills-courseoverview-tab">
                                     <!-- Course Overview Starts Here -->
                                     <div class="row course-overview-main">
@@ -306,12 +403,12 @@
                                     </div>
                                     <!-- Course Overview Ends Here -->
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-curriculum-tab">
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile">
                                     <!-- Course Curriculum Area Starts Here -->
                                     <div class="row">
                                         <div class="course-curriculum-area">
                                             <div class="curriculum-area">
-                                                <button class="curriculum-area-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                <div class="curriculum-area-top collapsed" role="button"  data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                                                     <div class="curriculum-area-top-start">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                             <path d="M15.8332 7.08337L9.99984 12.9167L4.1665 7.08337" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -353,7 +450,7 @@
                                                             <p>1H 16M</p>
                                                         </div>
                                                     </div>
-                                                </button>
+                                                </div>
                                                 <div class="curriculum-area-bottom collapse show" id="collapse1">
                                                     <div class="curriculum-description">
                                                         <div class="curriculum-description-start">
@@ -484,7 +581,7 @@
                                                 </div>
                                             </div>
                                             <div class="curriculum-area">
-                                                <button class="curriculum-area-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                <div class="curriculum-area-top collapsed" role="button"   data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                                     <div class="curriculum-area-top-start">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                             <path d="M15.8332 7.08337L9.99984 12.9167L4.1665 7.08337" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -526,7 +623,7 @@
                                                             <p>9H 18M</p>
                                                         </div>
                                                     </div>
-                                                </button>
+                                                </div>
                                                 <div class="curriculum-area-bottom collapse" id="collapse2">
                                                     <div class="curriculum-description">
                                                         <div class="curriculum-description-start">
@@ -657,7 +754,7 @@
                                                 </div>
                                             </div>
                                             <div class="curriculum-area mb-0">
-                                                <button class="curriculum-area-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                <div class="curriculum-area-top collapsed" role="button"  data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                                     <div class="curriculum-area-top-start">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                             <path d="M15.8332 7.08337L9.99984 12.9167L4.1665 7.08337" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -699,7 +796,7 @@
                                                             <p>10:20</p>
                                                         </div>
                                                     </div>
-                                                </button>
+                                                </div>
                                                 <div class="curriculum-area-bottom collapse" id="collapseExample">
                                                     <div class="curriculum-description">
                                                         <div class="curriculum-description-start">
@@ -894,10 +991,10 @@
                                     </div>
                                     <!-- Course Details Instructor Ends Here -->
                                 </div>
-                                <div class="tab-pane fade course-review-content" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
+                                <div class="tab-pane fade course-review-content" id="pills-review" role="tabpanel" aria-labelledby="pills-review">
                                     <!-- Course Details Review Starts Here -->
                                     <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab">
+                                        <div class="tab-pane fade" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses">
                                             <div class="row">
                                                 <div class="col-lg-6 mb-4">
                                                     <div class="course">
@@ -937,7 +1034,7 @@
                                                                 <div class="eay d-flex align-items-center">
                                                                     <div class="icon pe-2">
                                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <g clip-path="url(#clip0)">
+                                                                            <g clip-path="url(#clipOne)">
                                                                                 <path
                                                                                     d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
                                                                                     stroke="#1089FF"
@@ -954,7 +1051,7 @@
                                                                                 ></path>
                                                                             </g>
                                                                             <defs>
-                                                                                <clipPath id="clip0">
+                                                                                <clipPath >
                                                                                     <rect width="18" height="18" fill="white"></rect>
                                                                                 </clipPath>
                                                                             </defs>
@@ -1040,7 +1137,7 @@
                                                                 <div class="eay d-flex align-items-center">
                                                                     <div class="icon pe-2">
                                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <g clip-path="url(#clip0)">
+                                                                            <g clip-path="url(#clipOne)">
                                                                                 <path
                                                                                     d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
                                                                                     stroke="#1089FF"
@@ -1057,7 +1154,7 @@
                                                                                 ></path>
                                                                             </g>
                                                                             <defs>
-                                                                                <clipPath id="clip0">
+                                                                                <clipPath >
                                                                                     <rect width="18" height="18" fill="white"></rect>
                                                                                 </clipPath>
                                                                             </defs>
@@ -1143,7 +1240,7 @@
                                                                 <div class="eay d-flex align-items-center">
                                                                     <div class="icon pe-2">
                                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <g clip-path="url(#clip0)">
+                                                                            <g clip-path="url(#clipOne)">
                                                                                 <path
                                                                                     d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
                                                                                     stroke="#1089FF"
@@ -1160,7 +1257,7 @@
                                                                                 ></path>
                                                                             </g>
                                                                             <defs>
-                                                                                <clipPath id="clip0">
+                                                                                <clipPath >
                                                                                     <rect width="18" height="18" fill="white"></rect>
                                                                                 </clipPath>
                                                                             </defs>
@@ -1246,7 +1343,7 @@
                                                                 <div class="eay d-flex align-items-center">
                                                                     <div class="icon pe-2">
                                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <g clip-path="url(#clip0)">
+                                                                            <g clip-path="url(#clipOne)">
                                                                                 <path
                                                                                     d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
                                                                                     stroke="#1089FF"
@@ -1263,7 +1360,7 @@
                                                                                 ></path>
                                                                             </g>
                                                                             <defs>
-                                                                                <clipPath id="clip0">
+                                                                                <clipPath >
                                                                                     <rect width="18" height="18" fill="white"></rect>
                                                                                 </clipPath>
                                                                             </defs>
@@ -1349,7 +1446,7 @@
                                                                 <div class="eay d-flex align-items-center">
                                                                     <div class="icon pe-2">
                                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <g clip-path="url(#clip0)">
+                                                                            <g clip-path="url(#clipOne)">
                                                                                 <path
                                                                                     d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
                                                                                     stroke="#1089FF"
@@ -1366,7 +1463,7 @@
                                                                                 ></path>
                                                                             </g>
                                                                             <defs>
-                                                                                <clipPath id="clip0">
+                                                                                <clipPath >
                                                                                     <rect width="18" height="18" fill="white"></rect>
                                                                                 </clipPath>
                                                                             </defs>
@@ -1452,7 +1549,7 @@
                                                                 <div class="eay d-flex align-items-center">
                                                                     <div class="icon pe-2">
                                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <g clip-path="url(#clip0)">
+                                                                            <g clip-path="url(#clipOne)">
                                                                                 <path
                                                                                     d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
                                                                                     stroke="#1089FF"
@@ -1469,7 +1566,7 @@
                                                                                 ></path>
                                                                             </g>
                                                                             <defs>
-                                                                                <clipPath id="clip0">
+                                                                                <clipPath >
                                                                                     <rect width="18" height="18" fill="white"></rect>
                                                                                 </clipPath>
                                                                             </defs>
@@ -1555,7 +1652,7 @@
                                                                 <div class="eay d-flex align-items-center">
                                                                     <div class="icon pe-2">
                                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <g clip-path="url(#clip0)">
+                                                                            <g clip-path="url(#clipOne)">
                                                                                 <path
                                                                                     d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
                                                                                     stroke="#1089FF"
@@ -1572,7 +1669,7 @@
                                                                                 ></path>
                                                                             </g>
                                                                             <defs>
-                                                                                <clipPath id="clip0">
+                                                                                <clipPath >
                                                                                     <rect width="18" height="18" fill="white"></rect>
                                                                                 </clipPath>
                                                                             </defs>
@@ -1658,7 +1755,7 @@
                                                                 <div class="eay d-flex align-items-center">
                                                                     <div class="icon pe-2">
                                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <g clip-path="url(#clip0)">
+                                                                            <g clip-path="url(#clipOne)">
                                                                                 <path
                                                                                     d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
                                                                                     stroke="#1089FF"
@@ -1675,7 +1772,7 @@
                                                                                 ></path>
                                                                             </g>
                                                                             <defs>
-                                                                                <clipPath id="clip0">
+                                                                                <clipPath >
                                                                                     <rect width="18" height="18" fill="white"></rect>
                                                                                 </clipPath>
                                                                             </defs>
@@ -1729,7 +1826,7 @@
                                                             <a href="#!-1" class="p_prev">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="9.414" height="16.828" viewBox="0 0 9.414 16.828">
                                                                     <path
-                                                                        id="Icon_feather-chevron-left"
+                                                                        
                                                                         data-name="Icon feather-chevron-left"
                                                                         d="M20.5,23l-7-7,7-7"
                                                                         transform="translate(-12.5 -7.586)"
@@ -1754,7 +1851,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade show active" id="pills-pills-review" role="tabpanel" aria-labelledby="pills-pills-review-tab">
+                                        <div class="tab-pane fade show active" id="pills-pills-review" role="tabpanel" aria-labelledby="pills-pills-review">
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="instructor-rating-area d-flex">
@@ -1835,7 +1932,7 @@
                                                                     </li>
                                                                 </ul>
                                                             </div>
-                                                            <p>Instructor Rating</p>
+                                                            <p>Course Rating</p>
                                                         </div>
                                                         <div class="ms-lg-4 rating-range">
                                                             <div class="rating-range-item d-flex align-items-center">
@@ -2409,8 +2506,9 @@
                                 <div class="text-center mb-2">
                                     <p>5 hours to reaming this price</p>
                                 </div>
-                                <a class="btn btn-primary regular-fill-btn w-100 text-uppercase">Add to Cart</a>
-                                <button type="submit" class="mt-3 btn btn-outline-info regular-fill-btn w-100 text-uppercase">Buy Now</button>
+                                <a href="cart.html" class="btn bg-primary--dark btn-lg w-100">Add to Cart</a>
+                                <a href="checkout.html"  class="mt-3  btn btn-lg btn-outline-info regular-fill-btn w-100 text-uppercase">Buy Now</a>
+                                <!-- btn bg-primary--dark btn-lg -->
                             </form>
                             <div class="course-includes">
                                 <h6>This Course Includes:</h6>
@@ -2528,8 +2626,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <h6>Share This Course</h6>
+                           
                             <div class="footer__wrapper_social social-share m-0">
+                                <h6>Share This Course</h6>
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -2605,102 +2704,112 @@
         </section>
         <!-- Event Info Ends Here -->
 
-        <section class="new-course-feature">
+        <section class="new-course-feature bg-w">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-12">
-                        <h3>New Online Courses</h3>
+                        <h3>Relatd Course</h3>
                     </div>
                     <div class="row">
                         <div class="col-12 position-relative px-0 mx-0">
                             <div class="newCourse">
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                    <div class="featured-course">
-                                        <div class="featured-course-image">
-                                            <a href="#">
-                                                <img src="dist/images/courses/2.png" alt="Image" class="img-fluid" />
-                                            </a>
+                                    <div class="course featured-course">
+                                        <div class="course__img">
+                                            <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
                                         </div>
-                                        <div class="featured-course-text">
-                                            <small class="category-name">Marketing</small>
-                                            <h6><a href="#">Digital Art for Beginners - Unleash Your Creativity</a></h6>
-                                            <div class="course-card">
-                                                <div class="course-card-start">
-                                                    <h6>
-                                                        $12 <span><del>$95</del></span>
-                                                    </h6>
+                                        <div class="course__content">
+                                            <div class="course__content_title">
+                                                <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                            </div>
+                                            <div class="course__content_author">
+                                                <div class="info">
+                                                    <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
+
+                                                    <a href="#">Brandon Dias</a>
                                                 </div>
-                                                <div class="course-card-end">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-star"
-                                                    >
-                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                                    </svg>
-                                                    <small>4.5<span>(5,10,254)</span></small>
+                                                <div class="price">
+                                                    <span>$12</span>
+                                                    <del>$95</del>
                                                 </div>
                                             </div>
-                                            <div class="featured-course-info">
-                                                <div class="course-view">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-eye"
-                                                    >
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                            <div class="course__content_time d-flex justify-content-between align-items-center">
+                                                <div class="star d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
+                                                                stroke="#FF7A1A"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.5</span>
+                                                </div>
+                                                <div class="eay d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clipOne)">
+                                                                <path
+                                                                    d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
+                                                                    stroke="#1089FF"
+                                                                    stroke-width="1.8"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                                <path
+                                                                    d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
+                                                                    stroke="#1089FF"
+                                                                    stroke-width="1.8"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath >
+                                                                    <rect width="18" height="18" fill="white"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
                                                     <span>24,517</span>
                                                 </div>
-                                                <div class="course-lesson">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-book-open"
-                                                    >
-                                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                                    </svg>
-                                                    <span>35 Lesson</span>
+                                                <div class="book d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
+                                                                stroke="#00AF91"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                            <path
+                                                                d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
+                                                                stroke="#00AF91"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span>37 Lesson</span>
                                                 </div>
-                                                <div class="course-hours">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-clock"
-                                                    >
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                                    </svg>
+                                                <div class="clock d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                                                                stroke="#FFC91B"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                            <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
                                                     <span>3 Hours</span>
                                                 </div>
                                             </div>
@@ -2708,185 +2817,102 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                    <div class="featured-course">
-                                        <div class="featured-course-image">
-                                            <a href="#">
-                                                <img src="dist/images/courses/3.png" alt="Image" class="img-fluid" />
-                                            </a>
+                                    <div class="course featured-course">
+                                        <div class="course__img">
+                                            <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
                                         </div>
-                                        <div class="featured-course-text">
-                                            <small class="category-name">Typography</small>
-                                            <h6><a href="#">All About Typography Beginer to Advance</a></h6>
-                                            <div class="course-card">
-                                                <div class="course-card-start">
-                                                    <h6>
-                                                        $12 <span><del>$95</del></span>
-                                                    </h6>
+                                        <div class="course__content">
+                                            <div class="course__content_title">
+                                                <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                            </div>
+                                            <div class="course__content_author">
+                                                <div class="info">
+                                                    <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
+
+                                                    <a href="#">Brandon Dias</a>
                                                 </div>
-                                                <div class="course-card-end">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-star"
-                                                    >
-                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                                    </svg>
-                                                    <small>4.5<span>(5,10,254)</span></small>
+                                                <div class="price">
+                                                    <span>$12</span>
+                                                    <del>$95</del>
                                                 </div>
                                             </div>
-                                            <div class="featured-course-info">
-                                                <div class="course-view">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-eye"
-                                                    >
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                            <div class="course__content_time d-flex justify-content-between align-items-center">
+                                                <div class="star d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
+                                                                stroke="#FF7A1A"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.5</span>
+                                                </div>
+                                                <div class="eay d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clipOne)">
+                                                                <path
+                                                                    d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
+                                                                    stroke="#1089FF"
+                                                                    stroke-width="1.8"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                                <path
+                                                                    d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
+                                                                    stroke="#1089FF"
+                                                                    stroke-width="1.8"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath >
+                                                                    <rect width="18" height="18" fill="white"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
                                                     <span>24,517</span>
                                                 </div>
-                                                <div class="course-lesson">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-book-open"
-                                                    >
-                                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                                    </svg>
-                                                    <span>35 Lesson</span>
+                                                <div class="book d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
+                                                                stroke="#00AF91"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                            <path
+                                                                d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
+                                                                stroke="#00AF91"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span>37 Lesson</span>
                                                 </div>
-                                                <div class="course-hours">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-clock"
-                                                    >
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                                    </svg>
-                                                    <span>3 Hours</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="featured-course">
-                                        <div class="featured-course-image">
-                                            <a href="#">
-                                                <img src="dist/images/courses/6.png" alt="Image" class="img-fluid" />
-                                            </a>
-                                        </div>
-                                        <div class="featured-course-text">
-                                            <small class="category-name">ui/UX</small>
-                                            <h6><a href="#">Learn UX Design with Adobe XD in 2021 (Zero to Hero)</a></h6>
-                                            <div class="course-card">
-                                                <div class="course-card-start">
-                                                    <h6>
-                                                        $12 <span><del>$95</del></span>
-                                                    </h6>
-                                                </div>
-                                                <div class="course-card-end">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-star"
-                                                    >
-                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                                    </svg>
-                                                    <small>4.5<span>(5,10,254)</span></small>
-                                                </div>
-                                            </div>
-                                            <div class="featured-course-info">
-                                                <div class="course-view">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-eye"
-                                                    >
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
-                                                    <span>24,517</span>
-                                                </div>
-                                                <div class="course-lesson">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-book-open"
-                                                    >
-                                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                                    </svg>
-                                                    <span>35 Lesson</span>
-                                                </div>
-                                                <div class="course-hours">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-clock"
-                                                    >
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                                    </svg>
+                                                <div class="clock d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                                                                stroke="#FFC91B"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                            <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
                                                     <span>3 Hours</span>
                                                 </div>
                                             </div>
@@ -2894,92 +2920,102 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                    <div class="featured-course">
-                                        <div class="featured-course-image">
-                                            <a href="#">
-                                                <img src="dist/images/courses/2.png" alt="Image" class="img-fluid" />
-                                            </a>
+                                    <div class="course featured-course">
+                                        <div class="course__img">
+                                            <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
                                         </div>
-                                        <div class="featured-course-text">
-                                            <small class="category-name">Marketing</small>
-                                            <h6><a href="#">Digital Art for Beginners - Unleash Your Creativity</a></h6>
-                                            <div class="course-card">
-                                                <div class="course-card-start">
-                                                    <h6>
-                                                        $12 <span><del>$95</del></span>
-                                                    </h6>
+                                        <div class="course__content">
+                                            <div class="course__content_title">
+                                                <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                            </div>
+                                            <div class="course__content_author">
+                                                <div class="info">
+                                                    <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
+
+                                                    <a href="#">Brandon Dias</a>
                                                 </div>
-                                                <div class="course-card-end">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-star"
-                                                    >
-                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                                    </svg>
-                                                    <small>4.5<span>(5,10,254)</span></small>
+                                                <div class="price">
+                                                    <span>$12</span>
+                                                    <del>$95</del>
                                                 </div>
                                             </div>
-                                            <div class="featured-course-info">
-                                                <div class="course-view">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-eye"
-                                                    >
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                            <div class="course__content_time d-flex justify-content-between align-items-center">
+                                                <div class="star d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
+                                                                stroke="#FF7A1A"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.5</span>
+                                                </div>
+                                                <div class="eay d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clipOne)">
+                                                                <path
+                                                                    d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
+                                                                    stroke="#1089FF"
+                                                                    stroke-width="1.8"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                                <path
+                                                                    d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
+                                                                    stroke="#1089FF"
+                                                                    stroke-width="1.8"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath >
+                                                                    <rect width="18" height="18" fill="white"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
                                                     <span>24,517</span>
                                                 </div>
-                                                <div class="course-lesson">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-book-open"
-                                                    >
-                                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                                    </svg>
-                                                    <span>35 Lesson</span>
+                                                <div class="book d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
+                                                                stroke="#00AF91"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                            <path
+                                                                d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
+                                                                stroke="#00AF91"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span>37 Lesson</span>
                                                 </div>
-                                                <div class="course-hours">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-clock"
-                                                    >
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                                    </svg>
+                                                <div class="clock d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                                                                stroke="#FFC91B"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                            <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
                                                     <span>3 Hours</span>
                                                 </div>
                                             </div>
@@ -2987,185 +3023,102 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                    <div class="featured-course">
-                                        <div class="featured-course-image">
-                                            <a href="#">
-                                                <img src="dist/images/courses/3.png" alt="Image" class="img-fluid" />
-                                            </a>
+                                    <div class="course featured-course">
+                                        <div class="course__img">
+                                            <a href="#"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
                                         </div>
-                                        <div class="featured-course-text">
-                                            <small class="category-name">Typography</small>
-                                            <h6><a href="#">All About Typography Beginer to Advance</a></h6>
-                                            <div class="course-card">
-                                                <div class="course-card-start">
-                                                    <h6>
-                                                        $12 <span><del>$95</del></span>
-                                                    </h6>
+                                        <div class="course__content">
+                                            <div class="course__content_title">
+                                                <h6><a href="#">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h6>
+                                            </div>
+                                            <div class="course__content_author">
+                                                <div class="info">
+                                                    <a href="#" class="info_img"><img src="dist/images/courses/7.png" alt="client-image" /></a>
+
+                                                    <a href="#">Brandon Dias</a>
                                                 </div>
-                                                <div class="course-card-end">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-star"
-                                                    >
-                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                                    </svg>
-                                                    <small>4.5<span>(5,10,254)</span></small>
+                                                <div class="price">
+                                                    <span>$12</span>
+                                                    <del>$95</del>
                                                 </div>
                                             </div>
-                                            <div class="featured-course-info">
-                                                <div class="course-view">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-eye"
-                                                    >
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                            <div class="course__content_time d-flex justify-content-between align-items-center">
+                                                <div class="star d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 1.5L11.3175 6.195L16.5 6.9525L12.75 10.605L13.635 15.765L9 13.3275L4.365 15.765L5.25 10.605L1.5 6.9525L6.6825 6.195L9 1.5Z"
+                                                                stroke="#FF7A1A"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.5</span>
+                                                </div>
+                                                <div class="eay d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clipOne)">
+                                                                <path
+                                                                    d="M1 9C1 9 4 3 9.25 3C14.5 3 17.5 9 17.5 9C17.5 9 14.5 15 9.25 15C4 15 1 9 1 9Z"
+                                                                    stroke="#1089FF"
+                                                                    stroke-width="1.8"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                                <path
+                                                                    d="M9.25 11.25C10.4926 11.25 11.5 10.2426 11.5 9C11.5 7.75736 10.4926 6.75 9.25 6.75C8.00736 6.75 7 7.75736 7 9C7 10.2426 8.00736 11.25 9.25 11.25Z"
+                                                                    stroke="#1089FF"
+                                                                    stroke-width="1.8"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath >
+                                                                    <rect width="18" height="18" fill="white"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
                                                     <span>24,517</span>
                                                 </div>
-                                                <div class="course-lesson">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-book-open"
-                                                    >
-                                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                                    </svg>
-                                                    <span>35 Lesson</span>
+                                                <div class="book d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M1.5 2.25H6C6.79565 2.25 7.55871 2.56607 8.12132 3.12868C8.68393 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 8.76295 14.581 8.34099 14.159C7.91903 13.7371 7.34674 13.5 6.75 13.5H1.5V2.25Z"
+                                                                stroke="#00AF91"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                            <path
+                                                                d="M16.5 2.25H12C11.2044 2.25 10.4413 2.56607 9.87868 3.12868C9.31607 3.69129 9 4.45435 9 5.25V15.75C9 15.1533 9.23705 14.581 9.65901 14.159C10.081 13.7371 10.6533 13.5 11.25 13.5H16.5V2.25Z"
+                                                                stroke="#00AF91"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span>37 Lesson</span>
                                                 </div>
-                                                <div class="course-hours">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-clock"
-                                                    >
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                                    </svg>
-                                                    <span>3 Hours</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="featured-course">
-                                        <div class="featured-course-image">
-                                            <a href="#">
-                                                <img src="dist/images/courses/6.png" alt="Image" class="img-fluid" />
-                                            </a>
-                                        </div>
-                                        <div class="featured-course-text">
-                                            <small class="category-name">ui/UX</small>
-                                            <h6><a href="#">Learn UX Design with Adobe XD in 2021 (Zero to Hero)</a></h6>
-                                            <div class="course-card">
-                                                <div class="course-card-start">
-                                                    <h6>
-                                                        $12 <span><del>$95</del></span>
-                                                    </h6>
-                                                </div>
-                                                <div class="course-card-end">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-star"
-                                                    >
-                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                                    </svg>
-                                                    <small>4.5<span>(5,10,254)</span></small>
-                                                </div>
-                                            </div>
-                                            <div class="featured-course-info">
-                                                <div class="course-view">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-eye"
-                                                    >
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
-                                                    <span>24,517</span>
-                                                </div>
-                                                <div class="course-lesson">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-book-open"
-                                                    >
-                                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                                    </svg>
-                                                    <span>35 Lesson</span>
-                                                </div>
-                                                <div class="course-hours">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-clock"
-                                                    >
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                                    </svg>
+                                                <div class="clock d-flex align-items-center">
+                                                    <div class="icon pe-2">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                                                                stroke="#FFC91B"
+                                                                stroke-width="1.8"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                            <path d="M9 4.5V9L12 10.5" stroke="#FFC91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
                                                     <span>3 Hours</span>
                                                 </div>
                                             </div>
@@ -3174,11 +3127,11 @@
                                 </div>
                             </div>
 
-                            <div class="slider-arrows">
+                            <div class="slider-arrows new-course-arrows">
                                 <div class="prev-arrow">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="9.414" height="16.828" viewBox="0 0 9.414 16.828">
                                         <path
-                                            id="Icon_feather-chevron-left"
+                                            
                                             data-name="Icon feather-chevron-left"
                                             d="M20.5,23l-7-7,7-7"
                                             transform="translate(-12.5 -7.586)"
@@ -3193,7 +3146,7 @@
                                 <div class="next-arrow">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="9.414" height="16.828" viewBox="0 0 9.414 16.828">
                                         <path
-                                            id="Icon_feather-chevron-right"
+                                            
                                             data-name="Icon feather-chevron-right"
                                             d="M13.5,23l5.25-5.25.438-.437L20.5,16l-7-7"
                                             transform="translate(-12.086 -7.586)"
@@ -3208,13 +3161,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <a href="#" class="btn btn-primary regular-fill-btn text-uppercase">Browse All Course</a>
-                        </div>
-                    </div>
                 </div>
+            </div>
+            <div class="new-course-overlay">
+                <img src="dist/images/shape/circle5.png" alt="shape" class="img-fluid shape01" />
+                <img src="dist/images/shape/l01.png " alt="shape" class="img-fluid shape02" />
             </div>
         </section>
 
@@ -3301,7 +3252,7 @@
                             <h6>Company</h6>
                             <ul>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="#">Courses</a></li>
+                                <li><a href="coursesearch.html">Courses</a></li>
                                 <li><a href="#">Carrer</a></li>
                                 <li><a href="#">Affiliate</a></li>
                             </ul>
@@ -3313,8 +3264,8 @@
                             <ul>
                                 <li><a href="#">Help &amp; Supports </a></li>
                                 <li><a href="#">Pravacy Polocy</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -3322,8 +3273,8 @@
                         <div class="footer__list">
                             <h6>Quick Links</h6>
                             <ul>
-                                <li><a href="#">Events</a></li>
-                                <li><a href="#">Become a Instructor</a></li>
+                                <li><a href="event-search.html">Events</a></li>
+                                <li><a href="becomeinstructor.html">Become a Instructor</a></li>
                                 <li><a href="#">Partnerships</a></li>
                                 <li><a href="#">Get the app</a></li>
                             </ul>
@@ -3334,7 +3285,7 @@
                     <div class="col-sm-12">
                         <div class="footer__bottom">
                             <div class="footer__bottom_copyright">
-                                <p>© 2021 - Edubd. All rights reserved</p>
+                                <p>© 2021 - Eduguard. All rights reserved</p>
                             </div>
                             <div class="footer__bottom_topbutton">
                                 <a href="#">

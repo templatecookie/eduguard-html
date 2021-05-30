@@ -441,8 +441,8 @@
     align-items: flex-start;
 
     &-start {
-      flex-direction: column;
-      align-items: flex-start;
+      flex-direction: column !important;
+      align-items: center !important;
 
       .logo-image {
         padding-right: 0;
@@ -463,6 +463,10 @@
 
     &-end {
       margin-bottom: 30px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
   }
 

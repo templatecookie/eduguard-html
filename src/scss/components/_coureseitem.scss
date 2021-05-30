@@ -45,19 +45,22 @@
         a {
           font-size: 14px;
           line-height: 1.5;
-          color: color(lightBlack);
+          color: #42414b;
         }
       }
       .price {
         del {
           font-size: 14px;
-          color: color(lowBlack);
-          font-weight: 500;
+          line-height: 21px;
+          font-weight: 400;
+          color: #8f8fa3;
         }
         span {
-          color: color(lightBlack);
-          font-size: 14px;
+          font-size: 18px;
+          line-height: 27px;
           font-weight: 500;
+          font-weight: 500;
+          color: #42414b;
         }
       }
     }
@@ -69,7 +72,8 @@
       .clock {
         span {
           font-size: 14px;
-          color: color(lightBlack);
+          line-height: 21px;
+          color: #42414b;
         }
       }
     }

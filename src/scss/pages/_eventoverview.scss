@@ -34,7 +34,7 @@
       }
 
       .list-inline-item:not(:last-child) {
-        margin-right: 15px;
+        margin-right: 0px;
       }
     }
 
@@ -111,15 +111,23 @@
   }
 
   &-cart {
-    margin-top: -105px;
-    padding: 30px 25px;
+    margin-top: -120px;
+    padding: 30px 0px;
     background-color: white;
     border-radius: 8px;
-
+    .ticket-cost,
+    form,
+    .footer__wrapper_social,
+    .event-info-cart h6 {
+      padding: 0px 30px;
+    }
     p.ticket-cost {
       font-size: 32px;
       color: #202029 !important;
       margin-bottom: 5px;
+    }
+    .course-includes {
+      padding: 24px 30px;
     }
 
     form {

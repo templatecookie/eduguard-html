@@ -1,13 +1,5 @@
 'use strict';
 
-// // UI variables
-// const categoryBtn = document.querySelector('#categoryBtn');
-// const dropBox = document.querySelector('.categoryDrop');
-// categoryBtn.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   dropBox.classList.toggle('appear');
-// });
-
 (function ($) {
   $('.hamburger-menu a').on('click', function () {
     $('#mySidenav').css('left', '0');
@@ -40,8 +32,8 @@
     dots: false,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: ' .prev-arrow',
-    nextArrow: ' .next-arrow',
+    prevArrow: ' .slider__arrow-left',
+    nextArrow: ' .slider__arrow-right',
     responsive: [
       {
         breakpoint: 1025,
@@ -72,6 +64,7 @@
       },
     ],
   });
+
   // newCourse
   $('.newCourse').slick({
     infinite: true,
@@ -81,8 +74,8 @@
     dots: false,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: ' .prev-arrow',
-    nextArrow: ' .next-arrow',
+    prevArrow: '.new-course-arrows .prev-arrow',
+    nextArrow: '.new-course-arrows .next-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -107,8 +100,9 @@
       },
     ],
   });
+
   // our students
-  $('.students').slick({
+  $('.student-slider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -118,8 +112,8 @@
     arrows: true,
     centerMode: true,
     centerPadding: '0px',
-    prevArrow: ' .prev-arrow',
-    nextArrow: ' .next-arrow',
+    prevArrow: '.student-slider-arrows .prev-arrow',
+    nextArrow: '.student-slider-arrows .next-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -153,8 +147,8 @@
     arrows: true,
     dots: true,
     autoplaySpeed: 2000,
-    prevArrow: '.about__slider-wrap .prev-arrow',
-    nextArrow: '.about__slider-wrap .next-arrow',
+    nextArrow: '.about-slider-arrows .next-arrow',
+    prevArrow: '.about-slider-arrows .prev-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -223,7 +217,7 @@
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: '.ourinstructor__wrapper .prev-arrow',
     nextArrow: '.ourinstructor__wrapper .next-arrow',
@@ -284,10 +278,33 @@
     ],
   });
 
-  // init Isotope
-  var $grid = $('.populercourse-item').isotope({
-    // options
+  //Event _Slider
+  $('.browse-categories-area').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    autoplaySpeed: 2000,
+    nextArrow: ' .browse__right--arrow',
+    prevArrow: ' .browse__left--arrow',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
+
   // filter items on button click
   $('.populercourse-ist').on('click', 'li', function () {
     var filterValue = $(this).attr('data-filter');
@@ -312,5 +329,10 @@
   //nice-select
   $(document).ready(function () {
     $('select').niceSelect();
+  });
+
+  // init Isotope
+  var $grid = $('.populercourse-item').isotope({
+    // options
   });
 })(jQuery);

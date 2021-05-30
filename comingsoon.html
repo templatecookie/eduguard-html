@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Coming Soon</title>
         <link rel="stylesheet" href="dist/main.css" />
+        <link rel="favicon" type="image/gif" href="dist/images/favicon/favicon.png">
     </head>
 
     <body style="background-color: #ebebf2;">
@@ -14,9 +15,9 @@
             <div class="container">
                 <div class="row">
                     <div class="comingsoon-header">
-                        <div class="logo">
+                        <a class="logo" href="index.html">
                             <img src="dist/images/logo/logo.png" alt="logo" class="img-fluid" />
-                        </div>
+                        </a>
                         <div class="footer__wrapper_social mt-0">
                             <ul>
                                 <li>
@@ -99,8 +100,8 @@
                             <p>Something cool coming soon. Get notified when we launch.</p>
                             <form action="#">
                                 <div class="form-group d-flex align-items-center">
-                                    <input type="email" placeholder="Enter Your Email" checked />
-                                    <button type="submit" class="btn btn-primary regular-fill-btn">Notify Me</button>
+                                    <input type="email" placeholder="Enter Your Email"  />
+                                    <button type="submit" class="btn bg-primary--dark btn-lg">Notify Me</button>
                                 </div>
                             </form>
                             <div class="count-down mt-lg-5" id="countdown"></div>
@@ -128,7 +129,7 @@
         <script>
             $("#countdown").syotimer({
                 year: 2021,
-                month: 5,
+                month: 6,
                 day: 15,
                 hour: 20,
                 minute: 30,

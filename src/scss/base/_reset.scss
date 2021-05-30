@@ -114,3 +114,21 @@ button {
     outline: none;
   }
 }
+// slick
+.slick-slider {
+  position: relative;
+  z-index: 1;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: 0px !important;
+}
+
+.feedback-rating-end {
+  .jq-star {
+    margin-right: 0px !important;
+    svg {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+}

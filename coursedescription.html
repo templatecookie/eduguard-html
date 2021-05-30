@@ -6,8 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Course Description-Eduguard</title>
         <link rel="stylesheet" href="src/scss/vendors/plugin/css/video-js.css" />
-        <link rel="stylesheet" href="src/scss/vendors/plugin/css/star-rating-svg.css">
+        <link rel="stylesheet" href="src/scss/vendors/plugin/css/star-rating-svg.css" />
         <link rel="stylesheet" href="dist/main.css" />
+        <link rel="favicon" type="image/gif" href="dist/images/favicon/favicon.png">
     </head>
 
     <body style="background-color: #ebebf2;">
@@ -16,9 +17,9 @@
             <div class="container-fluid">
                 <div class="coursedescription-header">
                     <div class="coursedescription-header-start">
-                        <div class="logo-image">
-                            <a href="index.html"><img src="dist/images/logo/logo.png" alt="Logo" /></a>
-                        </div>
+                        <a class="logo-image" href="index.html">
+                            <img src="dist/images/logo/logo.png" alt="Logo" />
+                        </a>
                         <div class="topic-info">
                             <div class="topic-info-arrow">
                                 <a href="#">
@@ -74,7 +75,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header flex-column border-0">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        <h5 class="modal-title" id="ratingModal">Leave A Rating</h5>
+                                        <h5 class="modal-title">Leave A Rating</h5>
                                     </div>
                                     <div class="modal-body text-center pt-0 pb-0">
                                         <div class="modal-body-rating">
@@ -186,7 +187,7 @@
                                             <form action="#">
                                                 <label for="comment">Comment</label>
                                                 <textarea class="form-control" id="comment" placeholder="Add a Public Comment"></textarea>
-                                                <button type="submit" class="btn text-uppercase regular-fill-btn btn-primary float-end">Post Review</button>
+                                                <button type="submit" class="btn bg-primary--dark btn-md float-end">Post Comment</button>
                                             </form>
                                         </div>
                                         <div class="students-feedback pt-0 ps-0 pe-0 pb-0 mb-0">
@@ -449,7 +450,7 @@
                                 <h6 class="">Get Started</h6>
                             </div>
                             <div class="main-wizard">
-                                <a href="#">
+                                <div class="main-wizard__wrapper">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -475,13 +476,13 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="main-wizard">
-                                <a href="#" class="border-0">
+                                <div class="main-wizard__wrapper">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -507,13 +508,13 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="main-wizard">
-                                <a href="#" class="active">
+                                <div class="main-wizard__wrapper active">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -539,10 +540,10 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="videolist-area-wizard">
@@ -550,7 +551,7 @@
                                 <h6 class="">The Project Brief</h6>
                             </div>
                             <div class="main-wizard">
-                                <a href="#" class="border-0">
+                                <div class="main-wizard__wrapper border-0">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -576,13 +577,13 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="main-wizard">
-                                <a href="#" class="download-wizard">
+                                <div class="main-wizard__wrapper download-wizard">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -609,7 +610,7 @@
                                         <span>2.5 MB</span>
                                         <small>Downlaod</small>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="videolist-area-wizard">
@@ -617,7 +618,7 @@
                                 <h6 class="">Low Fidelity Wireframing</h6>
                             </div>
                             <div class="main-wizard">
-                                <a href="#">
+                                <div class="main-wizard__wrapper">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -643,13 +644,13 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="main-wizard">
-                                <a href="#">
+                                <div class="main-wizard__wrapper">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -675,13 +676,13 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="main-wizard">
-                                <a href="#" class="border-0">
+                                <div class="main-wizard__wrapper border-0">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -707,13 +708,13 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="main-wizard">
-                                <a href="#" class="download-wizard">
+                                <div class="main-wizard__wrapper download-wizard">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -739,10 +740,10 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="videolist-area-wizard">
@@ -750,7 +751,7 @@
                                 <h6 class="">Type, Color & Icon Introduction</h6>
                             </div>
                             <div class="main-wizard">
-                                <a href="#">
+                                <div class="main-wizard__wrapper">
                                     <div class="main-wizard-start">
                                         <div class="main-wizard-icon">
                                             <svg
@@ -776,10 +777,10 @@
                                     <div class="main-wizard-end d-flex align-items-center">
                                         <span>12:34</span>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;">
-                                          </div>
+                                            <input class="form-check-input" type="checkbox" value="" style="border-radius: 0px; margin-left: 5px;" />
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -801,10 +802,10 @@
             // Leave a Rating
             $(".my-rating").starRating({
                 starSize: 30,
-                    activeColor: '#FF7A1A',
-                    hoverColor: '#FF7A1A',
-                    ratedColors: ['#FF7A1A', '#FF7A1A', '#FF7A1A', '#FF7A1A', '#FF7A1A'],
-                    starShape: 'rounded',
+                activeColor: "#FF7A1A",
+                hoverColor: "#FF7A1A",
+                ratedColors: ["#FF7A1A", "#FF7A1A", "#FF7A1A", "#FF7A1A", "#FF7A1A"],
+                starShape: "rounded",
             });
         </script>
     </body>

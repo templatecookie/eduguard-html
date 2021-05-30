@@ -34,7 +34,7 @@
   }
 
   &__wrapper {
-    margin-left: 65px;
+    padding-left: 65px;
     &_title {
       h4 {
         margin-bottom: 50px;
@@ -97,7 +97,7 @@
     .slider-arrows {
       display: flex;
       align-items: center;
-      margin-top: -10px;
+      margin-bottom: 30px;
       .prev-arrow {
         margin-right: 20px;
       }
