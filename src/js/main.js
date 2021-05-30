@@ -286,8 +286,8 @@
     autoplay: false,
     arrows: true,
     autoplaySpeed: 2000,
-    nextArrow: '.browse-categories-arrows .next-arrow',
-    prevArrow: '.browse-categories-arrows .prev-arrow',
+    nextArrow: ' .browse__right--arrow',
+    prevArrow: ' .browse__left--arrow',
     responsive: [
       {
         breakpoint: 1199,
