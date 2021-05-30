@@ -264,6 +264,7 @@
       span {
         font-weight: 700;
         font-size: 96px;
+        line-height: 120px;
         color: rgba($color: #00af91, $alpha: 0.1);
       }
     }
@@ -272,6 +273,7 @@
       h6 {
         color: #42414b !important;
         font-size: 24px;
+        line-height: 36px;
         font-weight: 500;
         margin-bottom: 6px;
       }
@@ -557,12 +559,14 @@
       h6 {
         color: #42414b !important;
         font-size: 32px !important;
+        line-height: 40px;
         font-weight: 600 !important;
         margin-bottom: 10px !important;
       }
 
       p {
         margin-bottom: 20px;
+        font-weight: 400;
       }
 
       .green-btn {

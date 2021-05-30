@@ -9694,7 +9694,7 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 20px;
-  line-height: 1.25;
+  line-height: 30px;
   font-weight: 600;
   color: #202029 !important; }
 
@@ -9904,12 +9904,21 @@ button:focus {
   position: relative;
   z-index: 1; }
 
+.list-inline-item:not(:last-child) {
+  margin-right: 0px !important; }
+
+.feedback-rating-end .jq-star {
+  margin-right: 0px !important; }
+  .feedback-rating-end .jq-star svg {
+    width: 20px !important;
+    height: 20px !important; }
+
 .btn {
   padding: 12px 19px;
   border: 0px;
   outline: 0px;
   font-size: 16px;
-  line-height: 19.2px;
+  line-height: 24px;
   font-weight: 500;
   border-radius: 4px;
   text-transform: capitalize;
@@ -10402,7 +10411,7 @@ button:focus {
       .course__content_author .info a {
         font-size: 14px;
         line-height: 1.5;
-        color: #35343e; }
+        color: #42414b; }
     .course__content_author .price del {
       font-size: 14px;
       line-height: 21px;
@@ -10421,7 +10430,8 @@ button:focus {
     .course__content_time .book span,
     .course__content_time .clock span {
       font-size: 14px;
-      color: #35343e; }
+      line-height: 21px;
+      color: #42414b; }
 
 .categoryitem {
   padding: 140px 0; }
@@ -12539,6 +12549,8 @@ header #search-nav.appear {
   .newsletter-area form input:focus {
     -webkit-box-shadow: none;
             box-shadow: none; }
+  .newsletter-area h4, .newsletter-area .h4 {
+    font-weight: 600; }
 
 /*------------------------*/
 /*-------RESPOSIVE---------*/
@@ -12881,6 +12893,9 @@ header #search-nav.appear {
           -webkit-transition: 0.3s all linear;
           transition: 0.3s all linear;
           fill: white; }
+
+.mentor__title h6, .mentor__title .h6 {
+  color: #42414b; }
 
 @media (max-width: 1200px) {
   .section-pb-sm {
@@ -13286,10 +13301,12 @@ header #search-nav.appear {
       .learning-rules-item .item-number span {
         font-weight: 700;
         font-size: 96px;
+        line-height: 120px;
         color: rgba(0, 175, 145, 0.1); }
     .learning-rules-item .item-text h6, .learning-rules-item .item-text .h6 {
       color: #42414b !important;
       font-size: 24px;
+      line-height: 36px;
       font-weight: 500;
       margin-bottom: 6px; }
     .learning-rules-item .item-text p {
@@ -13455,10 +13472,12 @@ header #search-nav.appear {
       .main-become-instructor-item .main-text h6, .main-become-instructor-item .main-text .h6 {
         color: #42414b !important;
         font-size: 32px !important;
+        line-height: 40px;
         font-weight: 600 !important;
         margin-bottom: 10px !important; }
       .main-become-instructor-item .main-text p {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        font-weight: 400; }
       .main-become-instructor-item .main-text .green-btn {
         display: inline-block; }
   .main-become-instructor-shape img {
@@ -16664,7 +16683,7 @@ header #search-nav.appear {
         color: #8f8fa3 !important;
         font-size: 12px !important; }
     .event-sub-section-main .event-time .list-inline-item:not(:last-child) {
-      margin-right: 15px; }
+      margin-right: 0px; }
     .event-sub-section-main .icon-with-date {
       margin-bottom: 20px; }
       .event-sub-section-main .icon-with-date-start {
@@ -17486,7 +17505,7 @@ header #search-nav.appear {
       .course-curriculum-area .curriculum-area-top-start h6, .course-curriculum-area .curriculum-area-top-start .h6 {
         font-weight: 500 !important;
         font-size: 16px !important;
-        color: #42414b !important;
+        color: #0264ed !important;
         margin-left: 10px; }
     .course-curriculum-area .curriculum-area-top-end {
       display: -webkit-box;
@@ -17581,6 +17600,13 @@ header #search-nav.appear {
 
 .curriculum-area-top.collapsed {
   border-radius: 8px; }
+  .curriculum-area-top.collapsed .curriculum-area-top-start h6, .curriculum-area-top.collapsed .curriculum-area-top-start .h6 {
+    color: #42414b !important; }
+  .curriculum-area-top.collapsed .curriculum-area-top-start svg {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
 
 @media (max-width: 574px) {
   .course-curriculum-area .curriculum-area-top {
@@ -18705,6 +18731,9 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .count-down--sm .timer-body-block .table-cell .tab-val {
+    font-size: 24px !important;
+    line-height: 36px !important; }
 
 #countdown .timer-body-block {
   display: -webkit-box;
@@ -19539,8 +19568,8 @@ body {
 .rating-range-item {
   margin-bottom: 14px; }
   .rating-range-item-ratings svg {
-    width: 11px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
     color: #ff7a1a;
     fill: #ff7a1a; }
   .rating-range-item-bar {

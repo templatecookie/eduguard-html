@@ -19,7 +19,8 @@
         h6 {
           font-weight: 500 !important;
           font-size: 16px !important;
-          color: #42414b !important;
+          // color: #42414b !important;
+          color: #0264ed !important;
           margin-left: 10px;
         }
       }
@@ -110,6 +111,16 @@
 
 .curriculum-area-top.collapsed {
   border-radius: 8px;
+  .curriculum-area-top-start {
+    h6 {
+      // color: #0264ed !important;
+      color: #42414b !important;
+    }
+    svg {
+      transform: rotate(180deg);
+      transition: all 0.2s linear;
+    }
+  }
 }
 
 // curriculum-accordion Ends Here
