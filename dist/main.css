@@ -12087,7 +12087,7 @@ header #search-nav.appear {
       top: 50%;
       right: -40px; }
   .testimonial__wrapper {
-    margin-left: 65px;
+    padding-left: 65px;
     /* the slides */ }
     .testimonial__wrapper_title h4, .testimonial__wrapper_title .h4 {
       margin-bottom: 50px; }
@@ -12143,7 +12143,7 @@ header #search-nav.appear {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-top: -10px; }
+      margin-bottom: 30px; }
       .testimonial__wrapper .slider-arrows .prev-arrow {
         margin-right: 20px; }
       .testimonial__wrapper .slider-arrows .prev-arrow,
