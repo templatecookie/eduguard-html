@@ -64,7 +64,7 @@ header {
         pointer-events: none;
         width: 230px;
         position: absolute;
-        top: 92px;
+        top: 100%;
         left: 0%;
         background-color: #fff;
         box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
@@ -107,7 +107,6 @@ header {
                 .nav-item--subDropdown {
                   visibility: visible;
                   pointer-events: all;
-                  transform: translateY(-2px);
                   ul {
                     display: block;
                     li {
