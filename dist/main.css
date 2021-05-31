@@ -16443,7 +16443,8 @@ header #search-nav.appear {
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
-        right: 10px; }
+        right: 10px;
+        padding: 15px 32px !important; }
       .event-search-bar form .form-input-group svg {
         position: absolute;
         top: 50%;
