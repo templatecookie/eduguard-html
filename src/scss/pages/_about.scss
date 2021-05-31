@@ -81,51 +81,6 @@
     color: #666575;
   }
 }
-// .mentor {
-//   position: relative;
-//   &:hover {
-//     .instructor-overlay {
-//       opacity: 0.6;
-//       visibility: visible;
-//       ul {
-//         opacity: 1;
-//       }
-//     }
-//     h6 {
-//       a {
-//         color: #0264ed;
-//       }
-//     }
-//   }
-//   &__img {
-//     img {
-//       object-fit: cover;
-//       height: 300px;
-//       width: 300px;
-//     }
-//   }
-//   &__title {
-//     h6 {
-//       color: #25252e;
-//     }
-//   }
-// }
-// .instructor-overlay {
-//   transition: 0.3s all linear;
-
-//   visibility: hidden;
-//   position: absolute;
-//   bottom: 180px;
-//   left: 0;
-//   right: 0px;
-//   background: linear-gradient(
-//       180deg,
-//       rgba(0, 0, 0, 0) 55.21%,
-//       rgba(0, 0, 0, 0.8) 100%
-//     ),
-//     #c4c4c4;
-//   border-radius: 6px;
-// }
 
 .mentor {
   &:hover {
@@ -188,6 +143,11 @@
           }
         }
       }
+    }
+  }
+  &__title {
+    h6 {
+      color: #42414b;
     }
   }
 }

@@ -1,6 +1,8 @@
 // Banner Starts Here
 .brand-area-image {
   display: flex !important;
+  align-items: center;
+  height: 60px;
 }
 
 .banner-two {
@@ -261,12 +263,12 @@
     }
   }
 
-  .tab-content {
-    .btn-primary {
-      margin-top: 50px;
-      padding: 19px 32px;
-    }
-  }
+  // .tab-content {
+  //   .btn-primary {
+  //     margin-top: 50px;
+  //     padding: 19px 32px;
+  //   }
+  // }
 }
 
 // Students Says Starts Here

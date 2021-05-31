@@ -82,29 +82,16 @@
   display: flex;
   justify-content: center;
 
-  //   &-item {
-  //     height: 90px;
-  //     width: 90px;
-  //     background-color: white;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     justify-content: center;
-  //     border-radius: 5px;
-  //     margin-right: 15px;
-
-  //     h6 {
-  //       font-size: 40px;
-  //       font-weight: 400 !important;
-  //     }
-
-  //     p {
-  //       margin: 0;
-  //       color: #8f8fa3 !important;
-  //       letter-spacing: 1px;
-  //       font-size: 12px !important;
-  //     }
-  //   }
+  &--sm {
+    .timer-body-block {
+      .table-cell {
+        .tab-val {
+          font-size: 24px !important;
+          line-height: 36px !important;
+        }
+      }
+    }
+  }
 }
 
 #countdown {

@@ -32,8 +32,8 @@
     dots: false,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: '.event-slider-arrows .prev-arrow',
-    nextArrow: '.event-slider-arrows .next-arrow',
+    prevArrow: ' .slider__arrow-left',
+    nextArrow: ' .slider__arrow-right',
     responsive: [
       {
         breakpoint: 1025,
@@ -286,8 +286,8 @@
     autoplay: false,
     arrows: true,
     autoplaySpeed: 2000,
-    nextArrow: '.browse-categories-arrows .next-arrow',
-    prevArrow: '.browse-categories-arrows .prev-arrow',
+    nextArrow: ' .browse__right--arrow',
+    prevArrow: ' .browse__left--arrow',
     responsive: [
       {
         breakpoint: 1199,
