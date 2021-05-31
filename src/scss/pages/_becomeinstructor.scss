@@ -404,8 +404,12 @@
     margin: 0 !important;
     margin-bottom: 15px !important;
   }
+  .intro-featured {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
   .intro-featured .successful-instructor-feature {
-    margin: auto 15px;
+    margin: 0;
   }
   .successful-instructor-feature {
     min-height: auto;

@@ -134,6 +134,12 @@
       text-align: center;
     }
   }
+  .banner-two-end {
+    z-index: 0 !important;
+  }
+  .banner-two-end .image img {
+    margin-bottom: 30px;
+  }
 }
 
 // Medium devices 768px - 991px
@@ -265,6 +271,13 @@
   .banner-two-start .h1 {
     margin-bottom: 0px !important;
   }
+  .banner-two-end .image {
+    justify-content: flex-start;
+  }
+
+  .banner-two-end .image img {
+    margin-bottom: 15px;
+  }
 
   .banner-input {
     justify-content: space-around;
@@ -274,5 +287,10 @@
   }
   .banner-two-end {
     z-index: 0 !important;
+  }
+
+  .banner-two-start h1,
+  .banner-two-start p {
+    text-align: left;
   }
 }
