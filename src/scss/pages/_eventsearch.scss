@@ -11,6 +11,10 @@
     background: rgba($color: #ffffff, $alpha: 0.5);
     padding: 15px 24px 0px 24px;
     &.active {
+      .event-search-wizard-header {
+        margin-bottom: 0px;
+        border-bottom: 0px;
+      }
       .event-search-wizard-body {
         padding-bottom: 0px;
       }
