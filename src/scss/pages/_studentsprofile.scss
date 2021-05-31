@@ -172,6 +172,13 @@
   }
 }
 
+.students-info-form form .input-with-icon .input-icon {
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 // Responsive
 
 // large devices 992px - 1200px
@@ -664,5 +671,13 @@
 @media (min-width: 320px) and (max-width: 574px) {
   .students-info-intro {
     padding: 40px 0px;
+  }
+
+  .students-info .nav.nav-tabs {
+    justify-content: flex-start;
+  }
+  .students-info-main .nav-tabs .nav-link {
+    margin-bottom: 0px !important;
+    padding-bottom: 5px;
   }
 }

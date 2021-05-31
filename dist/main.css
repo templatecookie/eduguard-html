@@ -15663,6 +15663,10 @@ header #search-nav.appear {
   font-size: 20px;
   line-height: 30px; }
 
+.students-info-form form .input-with-icon .input-icon svg {
+  width: 18px;
+  height: 18px; }
+
 @media (max-width: 1200px) {
   .students-info-intro-start::after {
     top: 50%;
@@ -16022,7 +16026,15 @@ header #search-nav.appear {
 
 @media (min-width: 320px) and (max-width: 574px) {
   .students-info-intro {
-    padding: 40px 0px; } }
+    padding: 40px 0px; }
+  .students-info .nav.nav-tabs {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .students-info-main .nav-tabs .nav-link {
+    margin-bottom: 0px !important;
+    padding-bottom: 5px; } }
 
 .purchase-area {
   background-color: #fff;
