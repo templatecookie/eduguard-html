@@ -132,3 +132,12 @@ button {
     }
   }
 }
+
+.modal-body-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #my-rating {
+    margin-top: 30px;
+  }
+}
