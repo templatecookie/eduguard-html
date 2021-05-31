@@ -9982,7 +9982,7 @@ button:focus {
       color: white !important;
       background-color: #35343e !important; }
   .btn.btn-outline-primary--dark {
-    border-color: #1089ff !important;
+    border: 2px solid #1089ff;
     background-color: transparent !important;
     color: #1089ff !important; }
     .btn.btn-outline-primary--dark:hover {
