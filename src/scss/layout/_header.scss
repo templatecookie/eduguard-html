@@ -207,15 +207,7 @@ header {
     .btn {
       transition: all 0.2s linear;
       margin: 0px 4px;
-      // &-active {
-      //   background: #0264ed;
-      //   color: #fff !important;
-      // }
-      // &-dark-info {
-      //   &:hover {
-      //     background: #42414b !important;
-      //   }
-      // }
+
       &:hover {
         color: #fff !important;
         text-decoration: none;

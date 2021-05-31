@@ -17343,7 +17343,9 @@ header #search-nav.appear {
     top: 55%;
     left: 50%;
     -webkit-transform: translate(-45%, -50%);
-            transform: translate(-45%, -50%); }
+            transform: translate(-45%, -50%);
+    -webkit-box-shadow: 0px 25px 80px 0px #0a09561f;
+            box-shadow: 0px 25px 80px 0px #0a09561f; }
 
 .course-overview-nav {
   width: 390px;
@@ -20622,8 +20624,7 @@ body {
         height: auto; } }
 
 header {
-  position: relative;
-  z-index: 1; }
+  position: relative; }
 
 .nav-shadow {
   -webkit-box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
