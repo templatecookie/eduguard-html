@@ -19,7 +19,7 @@
   }
   .shape-02 {
     bottom: -25%;
-    right: 3%;
+    right: 0%;
   }
 }
 .instructor-rules-image {
@@ -140,12 +140,12 @@
     z-index: -1;
   }
   .shape-one {
-    top: -30px;
+    top: -45px;
     left: -30px;
   }
   .shape-two {
-    bottom: -85px;
-    right: -40px;
+    bottom: -15px;
+    right: -10px;
   }
   .shape-three {
     z-index: 2;
@@ -161,6 +161,12 @@
   }
   100% {
     transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}
+
+.list-unstyled {
+  li {
+    margin-bottom: 12px !important;
   }
 }
 

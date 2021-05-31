@@ -352,6 +352,15 @@
   user-select: none;
 }
 
+.form-control {
+  &--focus {
+    &:focus {
+      box-shadow: 0px 2px 10px 0px #0264ed33 !important;
+      border: 1px solid #1089ff !important;
+    }
+  }
+}
+
 // Responsive breakpoints
 @media (min-width: 575px) and (max-width: 767px) {
 }

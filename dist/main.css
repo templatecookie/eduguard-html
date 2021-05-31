@@ -18963,7 +18963,7 @@ body {
 
 .become-instructor-shape .shape-02 {
   bottom: -25%;
-  right: 3%; }
+  right: 0%; }
 
 .instructor-rules-image {
   margin-left: 65px;
@@ -19070,12 +19070,12 @@ body {
   z-index: -1; }
 
 .info-desk-shape .shape-one {
-  top: -30px;
+  top: -45px;
   left: -30px; }
 
 .info-desk-shape .shape-two {
-  bottom: -85px;
-  right: -40px; }
+  bottom: -15px;
+  right: -10px; }
 
 .info-desk-shape .shape-three {
   z-index: 2;
@@ -19099,6 +19099,9 @@ body {
   100% {
     -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
             transform: rotate(360deg) translate(-10px) rotate(-360deg); } }
+
+.list-unstyled li {
+  margin-bottom: 12px !important; }
 
 @media (max-width: 991px) {
   .becomeInstructor,
@@ -21243,4 +21246,9 @@ header {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+
+.form-control--focus:focus {
+  -webkit-box-shadow: 0px 2px 10px 0px #0264ed33 !important;
+          box-shadow: 0px 2px 10px 0px #0264ed33 !important;
+  border: 1px solid #1089ff !important; }
 
