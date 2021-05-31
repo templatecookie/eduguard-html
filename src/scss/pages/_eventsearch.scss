@@ -295,8 +295,6 @@
   .event-search-results-heading {
     margin-bottom: 10px;
     margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
 
     p {
       margin-top: 5px;
@@ -464,5 +462,21 @@
   }
   .event-info-tab .nav-tabs {
     justify-content: center;
+  }
+
+  // coursesearch
+  .event-search-results-heading .nice-select {
+    padding: 15px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .event-search-results-heading p {
+    font-size: 14px !important;
+    line-height: 24px !important;
   }
 }

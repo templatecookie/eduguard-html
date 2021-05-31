@@ -16609,16 +16609,7 @@ header #search-nav.appear {
     padding-bottom: 60px !important; }
   .event-search-results-heading {
     margin-bottom: 10px;
-    margin-top: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    margin-top: 10px; }
     .event-search-results-heading p {
       margin-top: 5px; }
   .event-search-content {
@@ -16722,7 +16713,23 @@ header #search-nav.appear {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .event-search-results-heading .nice-select {
+    padding: 15px;
+    padding-right: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .event-search-results-heading .nice-select span {
+      font-size: 14px; }
+  .event-search-results-heading p {
+    font-size: 14px !important;
+    line-height: 24px !important; } }
 
 .event-sub-section {
   padding-top: 25px;
