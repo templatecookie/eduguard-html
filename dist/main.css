@@ -14072,8 +14072,8 @@ header #search-nav.appear {
         color: #202029; }
   .banner-input .search-button {
     padding-left: 30px; }
-    .banner-input .search-button .btn-primary {
-      width: 130px; }
+    .banner-input .search-button button {
+      padding: 15px 32px !important; }
 
 .intro-featured {
   padding-bottom: 100px;

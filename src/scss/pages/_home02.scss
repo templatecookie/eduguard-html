@@ -111,10 +111,12 @@
 
   .search-button {
     padding-left: 30px;
-
-    .btn-primary {
-      width: 130px;
+    button {
+      padding: 15px 32px !important;
     }
+    // .btn-primary {
+    //   width: 130px;
+    // }
   }
 }
 // Intro Featured Starts Here
