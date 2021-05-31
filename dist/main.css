@@ -10038,6 +10038,15 @@ button:focus {
   .btn.btn-text-light {
     color: #908fa5; }
 
+.signinButtons .fb:hover {
+  border-color: #1089ff !important; }
+
+.signinButtons .google:hover {
+  border-color: rgba(241, 67, 54, 0.2) !important; }
+
+.signinButtons .twitter:hover {
+  border-color: rgba(3, 169, 244, 0.2) !important; }
+
 .checkbox-primary[type='checkbox'] {
   width: 24px;
   height: 24px;
