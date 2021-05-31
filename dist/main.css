@@ -10221,7 +10221,8 @@ button:focus {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      cursor: pointer; }
     .videolist-area-wizard .main-wizard-icon {
       margin-right: 8px; }
       .videolist-area-wizard .main-wizard-icon svg {
