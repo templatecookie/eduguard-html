@@ -4,7 +4,6 @@ header {
   }
   .navbar-nav {
     transition: all 0.2s ease-in-out;
-    // padding: 10px 0px;
     &.menuList {
       margin-right: 220px !important;
     }
@@ -18,7 +17,6 @@ header {
         width: 100%;
       }
       .nav-link {
-        // padding: 30px 0 !important;
         padding: 25px 0px;
         font-size: 16px;
         font-weight: 500;
@@ -146,13 +144,12 @@ header {
               user-select: none;
               width: 230px;
               position: absolute;
-              top: 2px;
-              right: -235px;
+              top: 0%;
+              left: 100%;
               background-color: #fff;
               box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
               border-radius: 0px;
               z-index: 999;
-              // transition: all 0.2s linear;
               ul {
                 padding: 0px;
                 display: none;
@@ -332,7 +329,6 @@ header {
     position: relative;
     .navbar-nav {
       .nav-item {
-        // margin: 0;
         .nav-link {
           padding: 15px 0 !important;
         }
@@ -376,9 +372,7 @@ header {
   header .navbar-nav .nav-item {
     margin-right: 0px;
   }
-  // header .navbar-nav .nav-item--dropdown {
-  //   top: 60px;
-  // }
+
   header .navbar-nav .nav-item .nav-link span {
     position: absolute;
     right: 0px;
@@ -389,7 +383,7 @@ header {
     ul
     li.submenu:hover
     .nav-item--subDropdown {
-    right: 0;
+    left: 0;
     top: 100%;
   }
 
