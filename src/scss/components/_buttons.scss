@@ -181,6 +181,17 @@
   border: 2px solid color(lowBlack);
 }
 
+@media (max-width: 991px) {
+  .btn {
+    &.btn-lg {
+      padding: 10px 15px !important;
+    }
+    &.btn-md {
+      padding: 8px 15px !important;
+    }
+  }
+}
+
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .btn {

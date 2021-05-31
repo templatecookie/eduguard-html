@@ -111,12 +111,6 @@
 
   .search-button {
     padding-left: 30px;
-    button {
-      padding: 15px 32px !important;
-    }
-    // .btn-primary {
-    //   width: 130px;
-    // }
   }
 }
 // Intro Featured Starts Here
@@ -531,6 +525,16 @@
   }
   .latest-events-featured .latest-events-shape img.shape-02 {
     bottom: 30px;
+  }
+}
+
+@media (min-width: 991.99px) {
+  .banner-input {
+    .search-button {
+      button {
+        padding: 15px 32px !important;
+      }
+    }
   }
 }
 
