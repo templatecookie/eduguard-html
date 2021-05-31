@@ -416,8 +416,14 @@
   }
   .course-description-start-content-tab {
     .nav-tabs {
-      justify-content: center;
+      justify-content: flex-start;
     }
+  }
+
+  .coursedescription-header-start .topic-info h6,
+  .coursedescription-header-start .topic-info .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important;
   }
 
   //   course overview
@@ -454,9 +460,8 @@
         margin-top: 15px;
         margin-bottom: 20px;
 
-        h6 {
-          font-size: 18px !important;
-          margin-bottom: 5px;
+        &-arrow {
+          padding-right: 15px;
         }
       }
     }
@@ -537,6 +542,21 @@
       font-size: 18px !important;
       line-height: 28px !important;
     }
+  }
+
+  .coursedescription-header,
+  .coursedescription-header-start {
+    flex-direction: column !important;
+  }
+  .coursedescription-header-end {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .course-description-start-content h4,
+  .course-description-start-content .h4 {
+    font-size: 28px !important;
+    line-height: 38px !important;
   }
 }
 // Medium devices 768px - 991px
@@ -759,5 +779,9 @@
   }
   .course-instructor {
     padding: 24px 0px !important;
+  }
+  .coursedescription-header-end {
+    width: 100%;
+    justify-content: center !important;
   }
 }
