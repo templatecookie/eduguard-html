@@ -10817,6 +10817,13 @@ button:focus {
       border-color: #1089ff;
       color: white; }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .pagination-group {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
 .watchcourse__content_author .info a {
   color: #202029 !important; }
 
