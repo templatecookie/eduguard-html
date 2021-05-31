@@ -69,8 +69,6 @@
 
   .events-location-map iframe {
     width: 100%;
-    height: auto;
-    margin-bottom: 20px;
   }
 
   .events-location-text {
@@ -80,12 +78,6 @@
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  .events-location-map iframe {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
   .events-location-text {
     padding-left: 0;
   }
@@ -126,5 +118,13 @@
 
   .events-location-text {
     padding-left: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .events-location-map iframe {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
   }
 }

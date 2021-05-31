@@ -254,11 +254,11 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-
   .event-info-tab .nav-tabs .nav-link {
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 0px;
+  }
+  .event-info-tab .nav-tabs {
+    justify-content: space-between;
   }
 
   .event-info-tab-content {
@@ -597,6 +597,13 @@
   }
 }
 
+@media (max-width: 420px) {
+  #countdown .timer-body-block .table-cell {
+    margin-right: 0px !important;
+    border-radius: 0px !important;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 574px) {
   // Testimonial slider
   .event__content_title h6 {
@@ -643,5 +650,38 @@
   .event-sub-section-main .icon-with-date-start,
   .icon-with-date-end {
     margin-right: 15px;
+  }
+
+  // event
+  .course-description-start-content h4,
+  .course-description-start-content .h4 {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+
+  .event-sub-section-main .icon-with-date {
+    flex-direction: column !important;
+  }
+  .event-sub-section-main .icon-with-date-start,
+  .icon-with-date-end {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+  }
+  .event-info-cart .book-info {
+    margin: 0 !important;
+  }
+  .event-info-cart p.ticket-cost {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+  .event__content_detail .loction span,
+  .event__content_detail .date span {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  #countdown .timer-body-block {
+    justify-content: center;
   }
 }
