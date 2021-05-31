@@ -2,6 +2,7 @@
   margin-left: 65px;
   position: relative;
   z-index: 1;
+  border-radius: 10px;
 }
 .regular-fill-btn {
   &:hover {
@@ -26,6 +27,7 @@
   margin-left: 65px;
   position: relative;
   z-index: 1;
+  border-radius: 10px;
 }
 .instructor-ruls-image-shape {
   img {
@@ -133,6 +135,7 @@
 .info-desk-image {
   position: relative;
   z-index: 1;
+  border-radius: 10px;
 }
 .info-desk-shape {
   img {
@@ -166,8 +169,15 @@
 
 .list-unstyled {
   li {
-    margin-bottom: 12px !important;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #666575;
   }
+}
+
+.textContent__wrapper {
+  margin-left: 20px;
 }
 
 // Responsive
@@ -378,13 +388,13 @@
 
 @media (min-width: 320px) and (max-width: 574px) {
   .instructor-rules {
-    .list-unstyled {
-      li {
-        font-size: 14px;
-        margin-bottom: 15px;
-        margin-left: 15px;
-      }
-    }
+    // .list-unstyled {
+    //   li {
+    //     font-size: 14px;
+    //     margin-bottom: 15px;
+    //     margin-left: 15px;
+    //   }
+    // }
   }
   .becomeInstructor__wrapper,
   .instructor-rules__wrapper {

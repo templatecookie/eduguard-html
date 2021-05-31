@@ -18947,7 +18947,8 @@ body {
 .become-instructor-image {
   margin-left: 65px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  border-radius: 10px; }
 
 .regular-fill-btn:hover {
   -webkit-box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
@@ -18968,7 +18969,8 @@ body {
 .instructor-rules-image {
   margin-left: 65px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  border-radius: 10px; }
 
 .instructor-ruls-image-shape img {
   position: absolute;
@@ -19063,7 +19065,8 @@ body {
 
 .info-desk-image {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  border-radius: 10px; }
 
 .info-desk-shape img {
   position: absolute;
@@ -19101,7 +19104,13 @@ body {
             transform: rotate(360deg) translate(-10px) rotate(-360deg); } }
 
 .list-unstyled li {
-  margin-bottom: 12px !important; }
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #666575; }
+
+.textContent__wrapper {
+  margin-left: 20px; }
 
 @media (max-width: 991px) {
   .becomeInstructor,
@@ -19254,10 +19263,6 @@ body {
     width: 55px; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .instructor-rules .list-unstyled li {
-    font-size: 14px;
-    margin-bottom: 15px;
-    margin-left: 15px; }
   .becomeInstructor__wrapper,
   .instructor-rules__wrapper {
     margin-bottom: 15px; }
@@ -20353,9 +20358,9 @@ body {
     border: 1.2px solid rgba(144, 143, 165, 0.4);
     padding: 15px 20px; }
     .form-area form input:focus {
-      -webkit-box-shadow: none !important;
-              box-shadow: none !important;
-      border-color: rgba(144, 143, 165, 0.4); }
+      border: 1px solid #1089ff !important;
+      -webkit-box-shadow: 0px 2px 10px 0px #0264ed33 !important;
+              box-shadow: 0px 2px 10px 0px #0264ed33 !important; }
   .form-area form textarea {
     border: 1.2px solid rgba(144, 143, 165, 0.4);
     height: 100px;
@@ -20940,6 +20945,9 @@ header {
 .section-padding {
   padding: 120px 0px; }
 
+.section-padding-bottom-lg {
+  padding: 150px; }
+
 .section-padding-m {
   padding: 100px 0px; }
 
@@ -21246,9 +21254,4 @@ header {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
-
-.form-control--focus:focus {
-  -webkit-box-shadow: 0px 2px 10px 0px #0264ed33 !important;
-          box-shadow: 0px 2px 10px 0px #0264ed33 !important;
-  border: 1px solid #1089ff !important; }
 
