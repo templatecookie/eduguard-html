@@ -17145,16 +17145,6 @@ header #search-nav.appear {
   .course-includes .h6, .event-info-cart h6, .event-info-cart .h6 {
     font-size: 18px !important;
     line-height: 28px !important; }
-  .event-sub-section-main .icon-with-date {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
   .course-overview-nav {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -17172,8 +17162,15 @@ header #search-nav.appear {
     margin-bottom: 0px; }
   .event-sub-section-main .icon-with-date-end span {
     margin-left: 0px; }
+  .event-sub-section-main .icon-with-date {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important; }
+  .event-sub-section-main .icon-with-date-start,
   .icon-with-date-end {
-    text-align: center; } }
+    margin-right: 15px; } }
 
 .event-speaker {
   margin-bottom: 30px;

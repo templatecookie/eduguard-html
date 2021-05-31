@@ -612,10 +612,6 @@
     line-height: 28px !important;
   }
 
-  .event-sub-section-main .icon-with-date {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
   .course-overview {
     &-nav {
       justify-content: center;
@@ -639,7 +635,13 @@
   .event-sub-section-main .icon-with-date-end span {
     margin-left: 0px;
   }
+
+  .event-sub-section-main .icon-with-date {
+    flex-direction: row !important;
+  }
+
+  .event-sub-section-main .icon-with-date-start,
   .icon-with-date-end {
-    text-align: center;
+    margin-right: 15px;
   }
 }
