@@ -182,20 +182,13 @@
 
 // Responsive
 
-@media (max-width: 991px) {
-  .becomeInstructor,
-  .instructor-rules {
-    padding-top: 30px !important;
-  }
-  // become instrcutor
-  .becomeInstructor,
-  .instructor-rules {
-    padding-bottom: 30px !important;
-  }
-  .becomeInstructor__wrapper,
-  .instructor-rules__wrapper,
-  .info-desk-image {
-    margin-bottom: 15px !important;
+@media (max-width: 1024px) {
+  .successful-instructor-feature {
+    min-height: 350px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -232,13 +225,30 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .successful-instructor-feature {
-    min-height: 350px;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media (max-width: 991px) {
+  .becomeInstructor,
+  .instructor-rules {
+    padding-top: 30px !important;
+  }
+  // become instrcutor
+  .becomeInstructor,
+  .instructor-rules {
+    padding-bottom: 30px !important;
+  }
+  .becomeInstructor__wrapper,
+  .instructor-rules__wrapper,
+  .info-desk-image,
+  .help__wrapper {
+    margin-bottom: 15px !important;
+  }
+  .textContent__wrapper {
+    margin-left: 0px;
+  }
+
+  .successful-instructor-feature h5,
+  .successful-instructor-feature .h5 {
+    font-size: 24px !important;
+    line-height: 34px !important;
   }
 }
 
@@ -387,14 +397,13 @@
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .instructor-rules {
-    // .list-unstyled {
-    //   li {
-    //     font-size: 14px;
-    //     margin-bottom: 15px;
-    //     margin-left: 15px;
-    //   }
-    // }
+  .list-unstyled {
+    li {
+      font-size: 14px;
+    }
+  }
+  .textContent__wrapper {
+    margin-left: 0px;
   }
   .becomeInstructor__wrapper,
   .instructor-rules__wrapper {

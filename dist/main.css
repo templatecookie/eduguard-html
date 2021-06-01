@@ -19334,17 +19334,23 @@ body {
 .textContent__wrapper {
   margin-left: 20px; }
 
-@media (max-width: 991px) {
-  .becomeInstructor,
-  .instructor-rules {
-    padding-top: 30px !important; }
-  .becomeInstructor,
-  .instructor-rules {
-    padding-bottom: 30px !important; }
-  .becomeInstructor__wrapper,
-  .instructor-rules__wrapper,
-  .info-desk-image {
-    margin-bottom: 15px !important; } }
+@media (max-width: 1024px) {
+  .successful-instructor-feature {
+    min-height: 350px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .info-desk-image,
@@ -19368,23 +19374,24 @@ body {
     height: 55px;
     width: 55px; } }
 
-@media (max-width: 1024px) {
-  .successful-instructor-feature {
-    min-height: 350px;
-    margin-bottom: 15px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
+@media (max-width: 991px) {
+  .becomeInstructor,
+  .instructor-rules {
+    padding-top: 30px !important; }
+  .becomeInstructor,
+  .instructor-rules {
+    padding-bottom: 30px !important; }
+  .becomeInstructor__wrapper,
+  .instructor-rules__wrapper,
+  .info-desk-image,
+  .help__wrapper {
+    margin-bottom: 15px !important; }
+  .textContent__wrapper {
+    margin-left: 0px; }
+  .successful-instructor-feature h5, .successful-instructor-feature .h5,
+  .successful-instructor-feature .h5 {
+    font-size: 24px !important;
+    line-height: 34px !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .info-desk-image,
@@ -19485,6 +19492,10 @@ body {
     width: 55px; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  .list-unstyled li {
+    font-size: 14px; }
+  .textContent__wrapper {
+    margin-left: 0px; }
   .becomeInstructor__wrapper,
   .instructor-rules__wrapper {
     margin-bottom: 15px; }
@@ -21184,7 +21195,7 @@ header {
   padding: 120px 0px; }
 
 .section-padding-bottom-lg {
-  padding: 150px; }
+  padding-bottom: 150px; }
 
 .section-padding-m {
   padding: 100px 0px; }
@@ -21244,6 +21255,10 @@ header {
     margin-bottom: 25px; }
   .mb-100 {
     margin-bottom: 0; } }
+
+@media (max-width: 991px) {
+  .section-padding-bottom-lg {
+    padding-bottom: 60px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .section-padding-m,
