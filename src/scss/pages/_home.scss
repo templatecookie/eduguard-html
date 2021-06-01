@@ -869,14 +869,21 @@
   .about-services .about__slider .slick-dots {
     margin-top: 30px !important;
   }
+  .mentor {
+    &__img {
+      width: 270px;
+      height: 290px;
+      margin: auto;
+    }
+  }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important;
-  }
+  // .best-instructor-featured .mentor__img img {
+  //   width: 100% !important;
+  //   height: auto !important;
+  // }
 
   .main-banner {
     &-end {

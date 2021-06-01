@@ -13437,12 +13437,13 @@ header #search-nav.appear {
   .main-instructor-featured .ourinstructor-active .slick-dots {
     margin-top: 15px; }
   .about-services .about__slider .slick-dots {
-    margin-top: 30px !important; } }
+    margin-top: 30px !important; }
+  .mentor__img {
+    width: 270px;
+    height: 290px;
+    margin: auto; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important; }
   .main-banner-end {
     margin-right: 0; }
   .browse-categories {
@@ -21460,7 +21461,6 @@ header {
   .bestInstructor .ourinstructor-active .slick-dots,
   .about-services .about__slider .slick-dots,
   .main-instructor-featured .ourinstructor-active .slick-dots,
-  .main-events-featured .eventsSlider .slick-dots,
   .ourevent-active .slick-dots {
     margin-top: 0px; } }
 
