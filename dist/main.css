@@ -16432,10 +16432,10 @@ header #search-nav.appear {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
       .cart-area .cart-wizard-area .image {
         display: none; }
       .cart-area .cart-wizard-area .text {
