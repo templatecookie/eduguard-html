@@ -11717,7 +11717,7 @@ header #search-nav.appear {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   header .navbar-nav .nav-item--dropdown {
-    top: 75px; } }
+    top: 100%; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   header .rightContent.appear a:nth-child(3), header .rightContent.appear a:nth-child(4) {
