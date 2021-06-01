@@ -156,36 +156,30 @@
   }
 }
 
-.about-instructor {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ebebf2;
-
-  h6 {
-    color: #42414b !important;
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    margin-bottom: 15px;
-  }
-
+.instructor-info {
   p {
-    color: #666575 !important;
-    font-size: 14px !important;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 
+.about-instructor,
 .instructor-qualification {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #ebebf2;
+}
 
-  h6 {
-    color: #42414b !important;
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    margin-bottom: 15px;
-  }
+.about-instructor h6,
+.instructor-qualification h6 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #42414b !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px;
+}
 
+.instructor-qualification {
   .qualification-info {
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -350,6 +344,7 @@
       background-color: white;
       border-radius: 5px;
       position: relative;
+      overflow: hidden;
 
       &::after {
         position: absolute;
@@ -554,6 +549,15 @@
   .feedback-comment .h6 {
     font-size: 14px !important;
     line-height: 24px !important;
+  }
+
+  .students-feedback-item .feedback-rating-start .text h6,
+  .students-feedback-item .feedback-rating-start .text .h6 {
+    line-height: 24px !important;
+  }
+  .students-feedback-item .feedback-rating-start .text p {
+    line-height: 22px !important;
+    margin-top: 0px;
   }
 }
 // large devices 992px - 1200px
@@ -939,5 +943,20 @@
         float: left !important;
       }
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .instructor-courses-instructor .instructor-image,
+  .instructor-courses-instructor .instructor-image img {
+    width: 150px;
+    height: 150px;
+  }
+  .instructor-info h4 {
+    margin-bottom: 0px !important;
+  }
+
+  .rating-number {
+    width: 100%;
   }
 }

@@ -9905,7 +9905,7 @@ button:focus {
   z-index: 1; }
 
 .list-inline-item:not(:last-child) {
-  margin-right: 15px !important; }
+  margin-right: 0px !important; }
 
 .feedback-rating-end .jq-star {
   margin-right: 0px !important; }
@@ -19664,57 +19664,54 @@ body {
         color: #8f8fa3 !important;
         font-size: 12px !important; }
 
-.about-instructor {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ebebf2; }
-  .about-instructor h6, .about-instructor .h6 {
-    color: #42414b !important;
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    margin-bottom: 15px; }
-  .about-instructor p {
-    color: #666575 !important;
-    font-size: 14px !important; }
+.instructor-info p {
+  font-size: 18px;
+  line-height: 27px; }
 
+.about-instructor,
 .instructor-qualification {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #ebebf2; }
-  .instructor-qualification h6, .instructor-qualification .h6 {
-    color: #42414b !important;
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    margin-bottom: 15px; }
-  .instructor-qualification .qualification-info {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ebebf2; }
-    .instructor-qualification .qualification-info p {
-      color: #8f8fa3 !important;
+
+.about-instructor h6, .about-instructor .h6,
+.instructor-qualification h6,
+.instructor-qualification .h6 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #42414b !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px; }
+
+.instructor-qualification .qualification-info {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebf2; }
+  .instructor-qualification .qualification-info p {
+    color: #8f8fa3 !important;
+    font-size: 14px !important; }
+  .instructor-qualification .qualification-info-title {
+    margin-bottom: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .instructor-qualification .qualification-info-title h6, .instructor-qualification .qualification-info-title .h6 {
+      margin-bottom: 0 !important;
+      color: rgba(66, 65, 75, 0.9) !important;
+      font-weight: 500 !important;
       font-size: 14px !important; }
-    .instructor-qualification .qualification-info-title {
-      margin-bottom: 5px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .instructor-qualification .qualification-info-title h6, .instructor-qualification .qualification-info-title .h6 {
-        margin-bottom: 0 !important;
-        color: rgba(66, 65, 75, 0.9) !important;
-        font-weight: 500 !important;
-        font-size: 14px !important; }
-      .instructor-qualification .qualification-info-title p {
-        color: #666575 !important;
-        font-size: 14px !important; }
+    .instructor-qualification .qualification-info-title p {
+      color: #666575 !important;
+      font-size: 14px !important; }
 
 .instructor-tabs-pills .nav-item {
   border-bottom: 1px solid #ffffff; }
@@ -19811,7 +19808,8 @@ body {
     height: 5px;
     background-color: white;
     border-radius: 5px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .rating-range-item-bar::after {
       position: absolute;
       content: '';
@@ -19979,7 +19977,13 @@ body {
   .feedback-comment h6, .feedback-comment .h6,
   .feedback-comment .h6 {
     font-size: 14px !important;
-    line-height: 24px !important; } }
+    line-height: 24px !important; }
+  .students-feedback-item .feedback-rating-start .text h6, .students-feedback-item .feedback-rating-start .text .h6,
+  .students-feedback-item .feedback-rating-start .text .h6 {
+    line-height: 24px !important; }
+  .students-feedback-item .feedback-rating-start .text p {
+    line-height: 22px !important;
+    margin-top: 0px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .instructor-course-info {
@@ -20279,6 +20283,16 @@ body {
     padding: 25px; }
     .feedback-comment form .btn {
       float: left !important; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .instructor-courses-instructor .instructor-image,
+  .instructor-courses-instructor .instructor-image img {
+    width: 150px;
+    height: 150px; }
+  .instructor-info h4, .instructor-info .h4 {
+    margin-bottom: 0px !important; }
+  .rating-number {
+    width: 100%; } }
 
 .faq-area {
   padding-bottom: 100px; }

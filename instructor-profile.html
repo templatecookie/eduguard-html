@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Instructor Courses-Eduguard</title>
         <!-- <link rel="stylesheet" href="src/scss/vendors/plugin/css/star-rating-svg.css" /> -->
-        <link rel="stylesheet" href="src/scss/vendors/plugin/css" />
+        <!-- <link rel="stylesheet" href="src/scss/vendors/plugin/css" /> -->
         <link rel="stylesheet" href="dist/main.css" />
         <link rel="favicon" type="image/gif" href="dist/images/favicon/favicon.png">
     </head>
@@ -508,7 +508,7 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab">
                                     <div class="row">
-                                        <div class="col-lg-6 mb-4">
+                                        <div class=" col-md-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
                                                     <a href="coursedetails.html"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
@@ -611,7 +611,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 mb-4">
+                                        <div class=" col-md-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
                                                     <a href="coursedetails.html"><img src="dist/images/courses/2.png" alt="images" class="img-fluid" /></a>
@@ -714,7 +714,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 mb-4">
+                                        <div class=" col-md-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
                                                     <a href="coursedetails.html"><img src="dist/images/courses/3.png" alt="images" class="img-fluid" /></a>
@@ -817,7 +817,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 mb-4">
+                                        <div class=" col-md-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
                                                     <a href="coursedetails.html"><img src="dist/images/courses/1.png" alt="images" class="img-fluid" /></a>
@@ -920,7 +920,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 mb-4">
+                                        <div class=" col-md-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
                                                     <a href="coursedetails.html"><img src="dist/images/courses/2.png" alt="images" class="img-fluid" /></a>
@@ -1023,7 +1023,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 mb-4">
+                                        <div class=" col-md-6 mb-4">
                                             <div class="course">
                                                 <div class="course__img">
                                                     <a href="coursedetails.html"><img src="dist/images/courses/3.png" alt="images" class="img-fluid" /></a>
@@ -1146,8 +1146,6 @@
                                             <a href="#!1" class="cdp_i active">01</a>
                                             <a href="#!2" class="cdp_i">02</a>
                                             <a href="#!3" class="cdp_i">03</a>
-                                            <a href="#!4" class="cdp_i">...</a>
-                                            <a href="#!5" class="cdp_i">658</a>
                                             <a href="#!+1" class="p_next">
                                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1.5 1L8.5 8L1.5 15" stroke="#35343E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1773,7 +1771,7 @@
                                             <div class="feedback-comment">
                                                 <h5>Leave a Rating</h5>
                                                 <h6>Rating</h6>
-                                                <div class="my-rating rating-icons"></div>
+                                                <div id="my-rating"></div>
                                                 <form action="#">
                                                     <label for="comment">Message</label>
                                                     <textarea class="form-control" id="comment" placeholder="how is your feeling about the instructor"></textarea>
@@ -1996,38 +1994,21 @@
 
         <script src="src/js/jquery.min.js"></script>
         <script src="src/js/bootstrap.bundle.min.js"></script>
-        <script src="src/scss/vendors/plugin/js/isotope.pkgd.min.js"></script>
-        <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
+        <!-- <script src="src/scss/vendors/plugin/js/isotope.pkgd.min.js"></script> -->
+        <!-- <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script> -->
         <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
-        <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
-        <script src="src/scss/vendors/plugin/js/jquery.rateyo.min.js"></script>
+        <!-- <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script> -->
+        <!-- <script src="src/scss/vendors/plugin/js/jquery.rateyo.min.js"></script> -->
+        <script src="src/scss/vendors/plugin/js/jquery.rateit.min.js"></script>
         <script src="src/js/app.js"></script>
-        <script src="dist/main.js"></script>
+        <!-- <script src="dist/main.js"></script> -->
         <script>
             // Leave a Rating
-
-                $(function () {
-                
-                $("#my-rating").rateYo({
-                rating: 3.6
-                });
-
-                });
-            // Students Feedback
-            $(".rating-icons-2").starRating({
-                starSize: 30,
-                activeColor: "#FF7A1A",
-                hoverColor: "#FF7A1A",
-                ratedColors: ["#FF7A1A", "#FF7A1A", "#FF7A1A", "#FF7A1A", "#FF7A1A"],
-                emptyColor: "red",
-                initialRating: 5,
-                readOnly: true,
-                useFullStars: true,
-                starGradient: {
-                    start: "#FF7A1A",
-                    end: "#FF7A1A",
-                },
-            });
+            // $("#my-rating").rate({
+            //         selected_symbol_type: 'fontawesome_star',
+            //         max_value: 5,
+            //         step_size: 0.25,
+            //     });
         </script>
     </body>
 </html>
