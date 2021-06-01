@@ -19095,10 +19095,6 @@ body {
     .comingsoon-area-start .count-down-item {
       height: 70px; } }
 
-@media (max-width: 767px) {
-  .comingsoon-area {
-    overflow-y: auto; } }
-
 @media (min-width: 575px) and (max-width: 767px) {
   .comingsoon-header {
     padding-left: 20px;
