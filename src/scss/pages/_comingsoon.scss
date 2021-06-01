@@ -20,10 +20,7 @@
 
 .comingsoon-area {
   position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 250px 0px;
 
   &-start {
     p {
@@ -329,6 +326,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .comingsoon-area {
+    padding: 120px 0px !important;
   }
 }
 

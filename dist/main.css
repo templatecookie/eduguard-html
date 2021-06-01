@@ -18939,19 +18939,7 @@ body {
 
 .comingsoon-area {
   position: relative;
-  height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  padding: 250px 0px; }
   .comingsoon-area-start p {
     color: #202029 !important;
     margin-top: 10px;
@@ -19146,6 +19134,10 @@ body {
       margin-bottom: 0; }
     .comingsoon-area-start .count-down h6, .comingsoon-area-start .count-down .h6 {
       font-size: 26px; } }
+
+@media (max-width: 991px) {
+  .comingsoon-area {
+    padding: 120px 0px !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .comingsoon-header {
