@@ -849,4 +849,22 @@
       display: none;
     }
   }
+
+  // Home-03
+  .featured-instructor-text h5,
+  .featured-instructor-text .h5 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .chose-course-item h5,
+  .chose-course-item .h5 {
+    margin-bottom: 0px;
+  }
+
+  .featured-instructor-image {
+    img {
+      width: 100%;
+    }
+  }
 }

@@ -186,6 +186,9 @@
 .section-padding {
   padding: 120px 0px;
 }
+.section-padding-bottom-lg {
+  padding-bottom: 150px;
+}
 .section-padding-m {
   padding: 100px 0px;
 }
@@ -280,6 +283,12 @@
   //   }
 }
 
+@media (max-width: 991px) {
+  .section-padding-bottom-lg {
+    padding-bottom: 60px;
+  }
+}
+
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .section-padding-m,
@@ -315,7 +324,4 @@
   .mb-100 {
     margin-bottom: 0;
   }
-  //   . {
-  //     font-size: 16px !important;
-  //   }
 }

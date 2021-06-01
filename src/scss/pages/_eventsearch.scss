@@ -11,6 +11,10 @@
     background: rgba($color: #ffffff, $alpha: 0.5);
     padding: 15px 24px 0px 24px;
     &.active {
+      .event-search-wizard-header {
+        margin-bottom: 0px;
+        border-bottom: 0px;
+      }
       .event-search-wizard-body {
         padding-bottom: 0px;
       }
@@ -162,6 +166,7 @@
           top: 50%;
           transform: translateY(-50%);
           right: 10px;
+          padding: 15px 32px !important;
         }
 
         svg {
@@ -290,8 +295,6 @@
   .event-search-results-heading {
     margin-bottom: 10px;
     margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
 
     p {
       margin-top: 5px;
@@ -459,5 +462,21 @@
   }
   .event-info-tab .nav-tabs {
     justify-content: center;
+  }
+
+  // coursesearch
+  .event-search-results-heading .nice-select {
+    padding: 15px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .event-search-results-heading p {
+    font-size: 14px !important;
+    line-height: 24px !important;
   }
 }

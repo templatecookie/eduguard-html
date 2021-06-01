@@ -1,33 +1,56 @@
 .event-speaker {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &-image {
-        height: 175px;
-        width: 175px;
-        margin-bottom: 12px;
+  &-image {
+    height: 175px;
+    width: 175px;
+    margin-bottom: 12px;
 
-        img {
-            max-width: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &-info {
+    h6 {
+      text-align: center;
+
+      a {
+        display: block;
+      }
     }
 
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .event-speaker-image {
+    width: 100px;
+    height: 100px;
+  }
+  .event-speaker-info h6 {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+  .event-speaker {
     &-info {
-        h6 {
-            text-align: center;
-
-            a {
-                display: block;
-            }
-        }
-
-        p {
-            font-size: 14px;
-            text-align: center;
-        }
+      p {
+        font-size: 12px !important;
+        line-height: 22px !important;
+      }
     }
+  }
+  .event-info-tab .nav-tabs .nav-link {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }

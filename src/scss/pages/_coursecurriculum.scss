@@ -2,6 +2,7 @@
 .course-curriculum-area {
   .curriculum-area {
     margin-bottom: 30px;
+
     &-top {
       width: 100%;
       background-color: white;
@@ -113,7 +114,6 @@
   border-radius: 8px;
   .curriculum-area-top-start {
     h6 {
-      // color: #0264ed !important;
       color: #42414b !important;
     }
     svg {
@@ -122,7 +122,9 @@
     }
   }
 }
-
+.accordion-button:not(.collapsed) {
+  color: #0264ed !important;
+}
 // curriculum-accordion Ends Here
 
 // Responsive

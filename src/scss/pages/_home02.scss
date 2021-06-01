@@ -111,10 +111,6 @@
 
   .search-button {
     padding-left: 30px;
-
-    .btn-primary {
-      width: 130px;
-    }
   }
 }
 // Intro Featured Starts Here
@@ -529,6 +525,16 @@
   }
   .latest-events-featured .latest-events-shape img.shape-02 {
     bottom: 30px;
+  }
+}
+
+@media (min-width: 991.99px) {
+  .banner-input {
+    .search-button {
+      button {
+        padding: 15px 32px !important;
+      }
+    }
   }
 }
 
@@ -987,10 +993,6 @@
       }
     }
 
-    .testimonial__wrapper {
-      margin-left: 0;
-    }
-
     .testimonial__wrapper_title {
       margin-bottom: 15px;
       margin-top: 0px;
@@ -1204,5 +1206,19 @@
   }
   .latest-events-shape {
     display: none;
+  }
+  .testimonial__wrapper {
+    padding-left: 0px;
+  }
+  .students-says .testimonial__wrapper_item-author {
+    align-items: flex-start;
+  }
+  .students-says .testimonial__wrapper_item-author .author__name h6,
+  .students-says .testimonial__wrapper_item-author .author__name .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+  .students-says .testimonial__wrapper_item-author .review {
+    margin-left: 75px;
   }
 }

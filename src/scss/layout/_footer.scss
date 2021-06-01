@@ -150,6 +150,11 @@
   .footer {
     &__wrapper {
       margin-bottom: 15px;
+      &_logo {
+        img {
+          width: 220px;
+        }
+      }
     }
     &__list {
       margin-bottom: 15px;

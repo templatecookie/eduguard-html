@@ -117,8 +117,7 @@
   }
 
   // banner img
-  .signup-area-image,
-  .banner-two-end .image {
+  .signup-area-image {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -176,8 +175,7 @@
   }
 
   // brief
-  .events-location-text .text-item-end h6,
-  .events-location-text .text-item-end .h6,
+
   .feedback-area-item .commentator-info h6,
   .feedback-area-item .commentator-info .h6 {
     font-size: 18px !important;
@@ -189,9 +187,7 @@
   .course__content_title .h6,
   .event__content_title h6,
   .event__content_title .h6,
-  .event-info-cart h6,
-  .event-speaker-info h6,
-  .event-speaker-info .h6 {
+  .event-info-cart h6 {
     font-size: 18px !important;
     line-height: 28px !important;
   }
@@ -326,10 +322,9 @@
   .course__content_title .h6,
   .event__content_title h6,
   .event__content_title .h6,
-  .event-info-cart h6,
-  .event-speaker-info h6,
-  .event-speaker-info .h6 {
-    font-size: 16px !important;
+  .event-info-cart h6 {
+    font-size: 18px !important;
+    line-height: 28px !important;
   }
 }
 
@@ -351,6 +346,15 @@
 .testimonial__wrapper_title h3 {
   user-select: none;
 }
+
+// .form-control {
+//   &--focus {
+//     &:focus {
+//       border: 1px solid #1089FF !important;
+//       box-shadow: 0px 2px 10px 0px #0264ed33 !important;
+//     }
+//   }
+// }
 
 // Responsive breakpoints
 @media (min-width: 575px) and (max-width: 767px) {

@@ -1380,6 +1380,7 @@
   .main-banner-end img {
     height: auto !important;
   }
+
   .banner-input .select-button button {
     display: none;
   }
@@ -1391,5 +1392,8 @@
   }
   .about-services .about__slider .slick-dots {
     margin-top: 15px !important;
+  }
+  .main-events-featured .event {
+    margin-bottom: 15px;
   }
 }

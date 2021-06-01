@@ -2,6 +2,7 @@
   margin-left: 65px;
   position: relative;
   z-index: 1;
+  border-radius: 10px;
 }
 .regular-fill-btn {
   &:hover {
@@ -19,13 +20,14 @@
   }
   .shape-02 {
     bottom: -25%;
-    right: 3%;
+    right: 0%;
   }
 }
 .instructor-rules-image {
   margin-left: 65px;
   position: relative;
   z-index: 1;
+  border-radius: 10px;
 }
 .instructor-ruls-image-shape {
   img {
@@ -38,7 +40,7 @@
   }
   .shape-02 {
     bottom: -16%;
-    right: -10%;
+    right: 5%;
   }
 }
 .rules-bullet {
@@ -133,6 +135,7 @@
 .info-desk-image {
   position: relative;
   z-index: 1;
+  border-radius: 10px;
 }
 .info-desk-shape {
   img {
@@ -140,12 +143,12 @@
     z-index: -1;
   }
   .shape-one {
-    top: -30px;
+    top: -45px;
     left: -30px;
   }
   .shape-two {
-    bottom: -85px;
-    right: -40px;
+    bottom: -15px;
+    right: -10px;
   }
   .shape-three {
     z-index: 2;
@@ -164,22 +167,33 @@
   }
 }
 
+.list-unstyled {
+  li {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #666575;
+  }
+}
+
+.textContent__wrapper {
+  margin-left: 20px;
+}
+
 // Responsive
 
-@media (max-width: 991px) {
-  .becomeInstructor,
-  .instructor-rules {
-    padding-top: 30px !important;
+@media (min-width: 1024px) {
+  .successful-instructor-feature {
+    margin-bottom: 0px;
   }
-  // become instrcutor
-  .becomeInstructor,
-  .instructor-rules {
-    padding-bottom: 30px !important;
-  }
-  .becomeInstructor__wrapper,
-  .instructor-rules__wrapper,
-  .info-desk-image {
-    margin-bottom: 15px !important;
+}
+@media (max-width: 1024px) {
+  .successful-instructor-feature {
+    min-height: 350px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -216,13 +230,30 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .successful-instructor-feature {
-    min-height: 350px;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media (max-width: 991px) {
+  .becomeInstructor,
+  .instructor-rules {
+    padding-top: 30px !important;
+  }
+  // become instrcutor
+  .becomeInstructor,
+  .instructor-rules {
+    padding-bottom: 30px !important;
+  }
+  .becomeInstructor__wrapper,
+  .instructor-rules__wrapper,
+  .info-desk-image,
+  .help__wrapper {
+    margin-bottom: 15px !important;
+  }
+  .textContent__wrapper {
+    margin-left: 0px;
+  }
+
+  .successful-instructor-feature h5,
+  .successful-instructor-feature .h5 {
+    font-size: 24px !important;
+    line-height: 34px !important;
   }
 }
 
@@ -371,14 +402,13 @@
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .instructor-rules {
-    .list-unstyled {
-      li {
-        font-size: 14px;
-        margin-bottom: 15px;
-        margin-left: 15px;
-      }
+  .list-unstyled {
+    li {
+      font-size: 14px;
     }
+  }
+  .textContent__wrapper {
+    margin-left: 0px;
   }
   .becomeInstructor__wrapper,
   .instructor-rules__wrapper {
@@ -388,8 +418,12 @@
     margin: 0 !important;
     margin-bottom: 15px !important;
   }
+  .intro-featured {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
   .intro-featured .successful-instructor-feature {
-    margin: auto 15px;
+    margin: 0;
   }
   .successful-instructor-feature {
     min-height: auto;
