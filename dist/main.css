@@ -15273,10 +15273,10 @@ header #search-nav.appear {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding-bottom: 15px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(55.21%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.21%, rgba(0, 0, 0, 0.8) 100%);
