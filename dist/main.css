@@ -18609,8 +18609,6 @@ header #search-nav.appear {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start; }
-  .course-instructor {
-    padding: 24px 0px !important; }
   .coursedescription-header-end {
     width: 100%;
     -webkit-box-pack: center !important;
