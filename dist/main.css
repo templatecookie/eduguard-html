@@ -11352,10 +11352,10 @@ button:focus {
   .price-range-block__inputWrapper input {
     width: 165px !important; } }
 
-.browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
+.browseCategories, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
 .students {
   position: relative; }
-  .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .browseCategories .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -11365,7 +11365,7 @@ button:focus {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .browseCategories .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -11376,7 +11376,7 @@ button:focus {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .browseCategories .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -11396,9 +11396,19 @@ button:focus {
 .browse-categories-item {
   padding: 30px 0px; }
 
-@media (min-width: 768px) {
-  .browseCategories .slick-dots {
+@media (max-width: 1199px) {
+  .browse-categories .slider-arrows {
     display: none !important; } }
+
+@media (max-width: 1024px) {
+  .browse-categories .slider-arrows {
+    display: none; }
+  .browse-categories .slick-dots {
+    margin-top: 30px !important; } }
+
+@media (max-width: 991px) {
+  .browseCategories .slick-dots {
+    margin-top: 0px !important; } }
 
 .overlay {
   height: 100%;
@@ -12866,10 +12876,10 @@ header #search-nav.appear {
   .footer__wrapper {
     max-width: 100%; } }
 
-.browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
+.browseCategories, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
 .students {
   position: relative; }
-  .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .browseCategories .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -12879,7 +12889,7 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .browseCategories .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -12890,7 +12900,7 @@ header #search-nav.appear {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .browseCategories .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -12969,7 +12979,6 @@ header #search-nav.appear {
     cursor: pointer;
     margin-right: 20px;
     width: 218px;
-    height: 205px;
     border: 1.5px solid #ebebf2;
     border-radius: 5px;
     -webkit-transition: 0.3s all linear;
@@ -15196,10 +15205,10 @@ header #search-nav.appear {
   .featured-instructor-image img {
     width: 100%; } }
 
-.browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
+.browseCategories, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
 .students {
   position: relative; }
-  .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .browseCategories .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -15209,7 +15218,7 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .browseCategories .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -15220,7 +15229,7 @@ header #search-nav.appear {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .browseCategories .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -19449,7 +19458,16 @@ body {
 
 @media (max-width: 767px) {
   .intro-featured .successful-instructor-feature {
-    margin: auto 30px; } }
+    margin: auto 30px; }
+  .info-desk-image,
+  .become-instructor-image,
+  .instructor-rules-image {
+    width: 350px !important;
+    height: 350px !important;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .help__wrapper {
+    margin-bottom: 0px !important; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .instructor-rules-image,
@@ -21347,10 +21365,10 @@ header {
 .text-button a {
   margin-bottom: 30px; }
 
-.browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
+.browseCategories, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
 .students {
   position: relative; }
-  .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .browseCategories .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -21360,7 +21378,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .browseCategories .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -21371,7 +21389,7 @@ header {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .browseCategories .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
