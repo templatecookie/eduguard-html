@@ -11725,6 +11725,11 @@ header #search-nav.appear {
   header .rightContent .btn-active {
     margin-left: 5px !important; } }
 
+@media (max-width: 1024px) {
+  header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown {
+    left: 0;
+    top: 100%; } }
+
 @media screen and (max-width: 991px) {
   header {
     position: relative; }
@@ -11756,9 +11761,6 @@ header #search-nav.appear {
   header .navbar-nav .nav-item .nav-link span {
     position: absolute;
     right: 0px; }
-  header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown {
-    left: 0;
-    top: 100%; }
   header .navbar-nav .nav-item--dropdown ul li.submenu:hover a span {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); } }
@@ -17802,6 +17804,9 @@ header #search-nav.appear {
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear; }
 
+.accordion-button:not(.collapsed) {
+  color: #0264ed !important; }
+
 @media (max-width: 574px) {
   .course-curriculum-area .curriculum-area-top {
     -webkit-box-orient: vertical;
@@ -19334,6 +19339,10 @@ body {
 .textContent__wrapper {
   margin-left: 20px; }
 
+@media (min-width: 1024px) {
+  .successful-instructor-feature {
+    margin-bottom: 0px; } }
+
 @media (max-width: 1024px) {
   .successful-instructor-feature {
     min-height: 350px;
@@ -20670,30 +20679,30 @@ body {
 @media (max-width: 991px) {
   .contactHero {
     padding-bottom: 30px !important; }
-    .contactHero__wrapper {
-      text-align: center; }
     .contactHero__img-wrapper {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       margin-bottom: 30px; }
+    .contactHero__wrapper {
+      margin-left: 0px; }
   .contact-location-area {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
     -webkit-flex-direction: row !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
-    -webkit-box-pack: center !important;
-    -webkit-justify-content: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important; }
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important; }
   .contact-location {
-    margin-right: 15px; }
+    margin-right: 30px; }
   .contact-feature-text {
     text-align: center; }
     .contact-feature-text h6, .contact-feature-text .h6 {
@@ -20761,9 +20770,7 @@ body {
     padding-top: 30px; }
     .map-area-frame {
       padding: 0;
-      border: none; }
-      .map-area-frame iframe {
-        height: auto; } }
+      border: none; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .form-area-shape,
@@ -20861,9 +20868,7 @@ body {
     padding-top: 30px; }
     .map-area-frame {
       padding: 0;
-      border: none; }
-      .map-area-frame iframe {
-        height: auto; } }
+      border: none; } }
 
 header {
   position: relative; }

@@ -222,21 +222,22 @@
 @media (max-width: 991px) {
   .contactHero {
     padding-bottom: 30px !important;
-    &__wrapper {
-      text-align: center;
-    }
+
     &__img-wrapper {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       margin-bottom: 30px;
+    }
+    &__wrapper {
+      margin-left: 0px;
     }
   }
   .contact-location-area {
     flex-direction: row !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
   .contact-location {
-    margin-right: 15px;
+    margin-right: 30px;
   }
   .contact-feature-text {
     text-align: center;
@@ -339,10 +340,6 @@
     &-frame {
       padding: 0;
       border: none;
-
-      iframe {
-        height: auto;
-      }
     }
   }
 }
@@ -492,10 +489,6 @@
     &-frame {
       padding: 0;
       border: none;
-
-      iframe {
-        height: auto;
-      }
     }
   }
 }

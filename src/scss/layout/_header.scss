@@ -324,6 +324,18 @@ header {
   }
 }
 
+@media (max-width: 1024px) {
+  header
+    .navbar-nav
+    .nav-item--dropdown
+    ul
+    li.submenu:hover
+    .nav-item--subDropdown {
+    left: 0;
+    top: 100%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   header {
     position: relative;
@@ -377,15 +389,15 @@ header {
     position: absolute;
     right: 0px;
   }
-  header
-    .navbar-nav
-    .nav-item--dropdown
-    ul
-    li.submenu:hover
-    .nav-item--subDropdown {
-    left: 0;
-    top: 100%;
-  }
+  // header
+  //   .navbar-nav
+  //   .nav-item--dropdown
+  //   ul
+  //   li.submenu:hover
+  //   .nav-item--subDropdown {
+  //   left: 0;
+  //   top: 100%;
+  // }
 
   header .navbar-nav .nav-item--dropdown ul li.submenu:hover a span {
     transform: rotate(90deg);
