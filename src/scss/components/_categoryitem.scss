@@ -65,6 +65,15 @@
   }
 }
 
+@media (max-width: 767px) {
+  .category__tittle h6,
+  .category__tittle .h6,
+  .category__tittle .h6 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+}
+
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
   .categoryitem {
