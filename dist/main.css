@@ -15179,7 +15179,7 @@ header #search-nav.appear {
     height: 50px; }
   .banner-three .playbtn-area {
     bottom: 60px;
-    left: 220px; }
+    left: 295px; }
   .newCourse .slick-dots {
     margin-top: 0px !important; }
   .new-course-feature .row {
@@ -21435,7 +21435,7 @@ header {
 
 @media (max-width: 1199px) {
   .slider-arrows {
-    display: none; } }
+    display: none !important; } }
 
 @media (max-width: 991px) {
   section {
