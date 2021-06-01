@@ -684,6 +684,12 @@
   .about-services .testimonial__wrapper_item p {
     text-align: center;
   }
+
+  .learning-rules-starts h2,
+  .learning-rules-starts .h2 {
+    font-size: 32px !important;
+    line-height: 42px !important;
+  }
 }
 
 // Medium devices 768px - 991px
@@ -755,10 +761,6 @@
 
     &-starts {
       text-align: center;
-
-      h2 {
-        font-size: 26px !important;
-      }
 
       .btn-primary {
         margin-top: 20px;

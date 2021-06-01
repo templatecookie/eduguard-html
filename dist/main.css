@@ -13333,7 +13333,11 @@ header #search-nav.appear {
       -o-object-fit: contain;
          object-fit: contain; }
   .about-services .testimonial__wrapper_item p {
-    text-align: center; } }
+    text-align: center; }
+  .learning-rules-starts h2, .learning-rules-starts .h2,
+  .learning-rules-starts .h2 {
+    font-size: 32px !important;
+    line-height: 42px !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .best-instructor-featured .mentor__img img {
@@ -13376,8 +13380,6 @@ header #search-nav.appear {
       display: none; }
     .learning-rules-starts {
       text-align: center; }
-      .learning-rules-starts h2, .learning-rules-starts .h2 {
-        font-size: 26px !important; }
       .learning-rules-starts .btn-primary {
         margin-top: 20px; }
     .learning-rules-ends {
@@ -15089,7 +15091,11 @@ header #search-nav.appear {
       text-align: center; }
     .newsletterarea-norlam-end {
       padding-left: 0;
-      margin-top: 20px; } }
+      margin-top: 20px; }
+  .chose-course-item h5, .chose-course-item .h5,
+  .chose-course-item .h5 {
+    font-size: 28px !important;
+    line-height: 38px !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .playbtn-area {

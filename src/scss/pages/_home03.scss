@@ -639,7 +639,6 @@
 
 // Responsive
 
-// extra Small devices 420px
 @media (max-width: 991px) {
   .banner-three {
     padding: 200px 0px;
@@ -729,6 +728,11 @@
       padding-left: 0;
       margin-top: 20px;
     }
+  }
+  .chose-course-item h5,
+  .chose-course-item .h5 {
+    font-size: 28px !important;
+    line-height: 38px !important;
   }
 }
 
