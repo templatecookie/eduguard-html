@@ -223,6 +223,14 @@
       }
     }
   }
+  .testimonial__wrapper_item-author .author__name h6,
+  .testimonial__wrapper_item-author .author__name .h6 {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+  .author__name {
+    margin-top: 15px;
+  }
 }
 
 // Medium devices 768px - 991px

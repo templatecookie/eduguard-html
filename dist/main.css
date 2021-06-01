@@ -12325,7 +12325,13 @@ header #search-nav.appear {
   .testimonial.students-says .testimonial__img img {
     height: 390px;
     -o-object-fit: contain;
-       object-fit: contain; } }
+       object-fit: contain; }
+  .testimonial__wrapper_item-author .author__name h6, .testimonial__wrapper_item-author .author__name .h6,
+  .testimonial__wrapper_item-author .author__name .h6 {
+    font-size: 28px !important;
+    line-height: 38px !important; }
+  .author__name {
+    margin-top: 15px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .testimonial {
