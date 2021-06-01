@@ -17337,6 +17337,12 @@ header #search-nav.appear {
     font-size: 14px;
     text-align: center; }
 
+@media (max-width: 767px) {
+  .event-speaker-info h6, .event-speaker-info .h6,
+  .event-speaker-info .h6 {
+    font-size: 28px !important;
+    line-height: 28px !important; } }
+
 @media (min-width: 320px) and (max-width: 574px) {
   .event-speaker-image {
     width: 100px;
