@@ -129,11 +129,6 @@
 }
 
 @media (max-width: 991px) {
-  .banner {
-    &-two-start {
-      text-align: center;
-    }
-  }
   .banner-two-end {
     z-index: 0 !important;
   }
@@ -163,6 +158,13 @@
       margin: auto;
       margin-top: 160px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-two-end .image img {
+    height: 350px;
+    width: 350px;
   }
 }
 
