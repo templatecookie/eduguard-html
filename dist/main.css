@@ -12376,6 +12376,10 @@ header #search-nav.appear {
     .testimonial__brand {
       margin-top: 70px; } }
 
+@media (max-width: 767px) {
+  .testimonial__img img {
+    margin-bottom: 15px; } }
+
 @media (min-width: 575px) and (max-width: 767px) {
   .testimonial {
     padding: 50px 0; }

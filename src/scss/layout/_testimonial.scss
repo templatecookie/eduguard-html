@@ -266,6 +266,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .testimonial__img {
+    img {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
   .testimonial {
