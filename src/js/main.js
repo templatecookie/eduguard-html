@@ -279,11 +279,12 @@
   });
 
   //Event _Slider
-  $('.browse-categories-area').slick({
+  $('.browseCategories').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
+    dots: true,
     arrows: true,
     autoplaySpeed: 2000,
     nextArrow: ' .browse__right--arrow',
@@ -293,6 +294,8 @@
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
+          dots: true,
+          arrows: false,
         },
       },
       {
