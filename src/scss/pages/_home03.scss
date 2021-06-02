@@ -181,7 +181,7 @@
       display: block;
       margin-bottom: 3px;
       padding-left: 12px;
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 12px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -194,7 +194,7 @@
 
       a {
         display: block;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 20px;
         line-height: 28px;
         color: #202029;
@@ -217,7 +217,7 @@
         h6 {
           padding: 0;
           margin-bottom: 0;
-          font-weight: 500 !important;
+          font-family: poppin-medium;
           font-size: 18px !important;
           color: #42414b !important;
 
@@ -379,7 +379,7 @@
 
     h5 {
       text-align: center;
-      font-weight: 500 !important;
+      font-family: poppin-medium;
       margin-bottom: 12px;
     }
 
@@ -453,7 +453,7 @@
       &-info {
         h6 {
           color: #42414b !important;
-          font-weight: 500 !important;
+          font-family: poppin-medium;
           font-size: 18px !important;
         }
 

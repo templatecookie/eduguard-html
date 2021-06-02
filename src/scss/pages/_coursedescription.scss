@@ -41,7 +41,7 @@
 
       &-text {
         h6 {
-          font-weight: 500;
+          font-family: poppin-medium;
           font-size: 24px;
 
           a {
@@ -76,7 +76,7 @@
   &-end {
     .rating-link {
       color: #202029;
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 16px;
       margin-right: 35px;
     }
@@ -128,7 +128,7 @@
       border-radius: 0px 0px 8px 8px;
 
       h4 {
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         color: #202029 !important;
         margin-bottom: 20px;
       }
@@ -157,7 +157,7 @@
           background-color: transparent;
           border: none;
           color: #666575;
-          font-weight: 500;
+          font-family: poppin-medium;
           font-size: 16px;
         }
       }

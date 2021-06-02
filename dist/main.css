@@ -627,29 +627,24 @@ h2, .h2 {
 h3, .h3 {
   font-size: 40px;
   line-height: 1.25;
-  font-weight: 700;
-  color: #202029 !important; }
+  font-weight: 700; }
 
 h4, .h4 {
   font-size: 32px;
   line-height: 1.25;
-  font-weight: 700;
-  color: #191922 !important; }
+  font-weight: 700; }
 
 h5, .h5 {
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 600;
-  color: #202029 !important; }
+  font-weight: 600; }
 
 h6, .h6 {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 600;
-  color: #202029 !important; }
+  font-weight: 600; }
 
 p {
-  color: #8f8fa3 !important;
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
@@ -9879,7 +9874,7 @@ button:focus {
   outline: 0px;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-family: poppin-medium;
   border-radius: 4px;
   text-transform: capitalize;
   -webkit-transition: 0.3s;
@@ -10116,7 +10111,7 @@ button:focus {
       .videolist-area-wizard .wizard-heading h6, .videolist-area-wizard .wizard-heading .h6 {
         font-size: 16px;
         line-height: 24px;
-        font-weight: 500 !important; }
+        font-family: poppin-medium; }
     .videolist-area-wizard .main-wizard .active {
       background: #1089ff;
       border-radius: 4px;
@@ -10137,7 +10132,7 @@ button:focus {
       .videolist-area-wizard .main-wizard .download-wizard .main-wizard-end small, .videolist-area-wizard .main-wizard .download-wizard .main-wizard-end .small {
         color: #666575;
         text-decoration: underline;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 14px;
         margin-left: 30px;
         -webkit-transition: 0.3s all linear;
@@ -10337,7 +10332,7 @@ button:focus {
     margin-bottom: 14px; }
     .course__content_title h6, .course__content_title .h6 {
       font-size: 20px;
-      font-weight: 500; }
+      font-family: poppin-medium; }
   .course__content_author {
     display: -webkit-box;
     display: -webkit-flex;
@@ -10385,8 +10380,8 @@ button:focus {
     .course__content_author .price span {
       font-size: 18px;
       line-height: 27px;
-      font-weight: 500;
-      font-weight: 500;
+      font-family: poppin-medium;
+      font-family: poppin-medium;
       color: #42414b; }
   .course__content_time {
     padding: 10px 0; }
@@ -10500,7 +10495,7 @@ button:focus {
   .features__title {
     margin-top: 22px; }
     .features__title h6, .features__title .h6 {
-      font-weight: 500;
+      font-family: poppin-medium;
       line-height: 1.5;
       margin-bottom: 20px; }
   .features:hover {
@@ -10716,7 +10711,7 @@ button:focus {
             justify-content: center;
     color: #666575;
     font-size: 16px;
-    font-weight: 500;
+    font-family: poppin-medium;
     line-height: 1.5;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -10776,17 +10771,18 @@ button:focus {
     border-radius: 6px; }
 
 .event__content_title {
-  border-bottom: 1px solid #EBEBF2; }
+  border-bottom: 1px solid #ebebf2; }
   .event__content_title h6, .event__content_title .h6 {
     font-size: 20px;
-    font-weight: 500;
+    font-family: poppin-medium;
     color: #35343e;
     line-height: 1.5;
     margin-bottom: 20px; }
 
 .event__content_detail {
   padding: 10px 0; }
-  .event__content_detail .loction span, .event__content_detail .date span {
+  .event__content_detail .loction span,
+  .event__content_detail .date span {
     color: #35343e;
     font-size: 14px; }
 
@@ -10794,7 +10790,8 @@ button:focus {
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .event__content_detail .loction span, .event__content_detail .date span {
+  .event__content_detail .loction span,
+  .event__content_detail .date span {
     font-size: 12px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -10803,13 +10800,14 @@ button:focus {
     .event__img img {
       border-radius: 6px; }
   .event__content_title {
-    border-bottom: 1px solid #EBEBF2; }
+    border-bottom: 1px solid #ebebf2; }
     .event__content_title h6, .event__content_title .h6 {
       font-size: 16px;
       margin-bottom: 15px; }
   .event__content_detail {
     padding: 10px 0; }
-    .event__content_detail .loction span, .event__content_detail .date span {
+    .event__content_detail .loction span,
+    .event__content_detail .date span {
       font-size: 10px; } }
 
 .play-button {
@@ -11388,11 +11386,12 @@ header .navbar-nav {
     header .navbar-nav .nav-item .nav-link.active::after {
       width: 100%; }
     header .navbar-nav .nav-item .nav-link {
-      padding: 25px 0px;
+      position: relative;
       font-size: 16px;
-      font-weight: 500;
+      line-height: 24px;
       color: #42414b;
-      position: relative; }
+      padding: 25px 0px;
+      font-family: poppin-medium; }
       header .navbar-nav .nav-item .nav-link.active::after {
         position: absolute;
         content: '';
@@ -12021,7 +12020,7 @@ header #search-nav.appear {
         margin-bottom: 20px; }
     .populercourse .course__content_title h6, .populercourse .course__content_title .h6 {
       font-size: 16px;
-      font-weight: 500; } }
+      font-family: poppin-medium; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .populercourse {
@@ -12039,7 +12038,7 @@ header #search-nav.appear {
         margin-right: 15px; }
     .populercourse .course__content_title h6, .populercourse .course__content_title .h6 {
       font-size: 16px;
-      font-weight: 500; }
+      font-family: poppin-medium; }
     .populercourse .course {
       margin: 0 75px;
       margin-bottom: 30px !important; } }
@@ -12070,7 +12069,7 @@ header #search-nav.appear {
           margin-right: 10px; }
     .populercourse .course__content_title h6, .populercourse .course__content_title .h6 {
       font-size: 16px;
-      font-weight: 500; }
+      font-family: poppin-medium; }
     .populercourse .course {
       margin-bottom: 30px !important; }
     .populercourse .course__img img {
@@ -12144,7 +12143,7 @@ header #search-nav.appear {
           color: #35343e;
           font-size: 20px;
           line-height: 1.5;
-          font-weight: 500; }
+          font-family: poppin-medium; }
         .testimonial__wrapper_item-author .author__name span {
           color: #908fa5;
           line-height: 1.5;
@@ -12667,7 +12666,7 @@ header #search-nav.appear {
       font-size: 20px;
       line-height: 1.5;
       color: #fff !important;
-      font-weight: 500;
+      font-family: poppin-medium;
       margin-bottom: 12px; }
     .footer__list ul li a {
       font-size: 16px;
@@ -12997,7 +12996,7 @@ header #search-nav.appear {
       color: #42414b !important;
       font-size: 24px;
       line-height: 36px;
-      font-weight: 500;
+      font-family: poppin-medium;
       margin-bottom: 6px; }
     .learning-rules-item .item-text p {
       max-width: 376px; }
@@ -13694,9 +13693,9 @@ header #search-nav.appear {
     margin-bottom: 20px; }
   .banner-two-start p {
     max-width: 525px;
-    color: #666575 !important;
-    font-size: 20px !important;
-    line-height: 28px !important;
+    color: #666575;
+    font-size: 20px;
+    line-height: 28px;
     margin-bottom: 30px; }
   .banner-two-end {
     position: relative;
@@ -14006,7 +14005,8 @@ header #search-nav.appear {
     display: none; }
   .testimonial__wrapper_title h3, .testimonial__wrapper_title .h3 {
     font-size: 35px; }
-  .event__content_detail .loction span, .event__content_detail .date span {
+  .event__content_detail .loction span,
+  .event__content_detail .date span {
     font-size: 14px; }
   .get-started-area {
     -webkit-box-align: start !important;
@@ -14264,7 +14264,8 @@ header #search-nav.appear {
             flex-direction: column; }
     .get-started-area::after {
       display: none !important; }
-  .event__content_detail .loction span, .event__content_detail .date span {
+  .event__content_detail .loction span,
+  .event__content_detail .date span {
     font-size: 14px; } }
 
 @media (max-width: 420px) {
@@ -14628,7 +14629,7 @@ header #search-nav.appear {
       display: block;
       margin-bottom: 3px;
       padding-left: 12px;
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 12px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -14638,7 +14639,7 @@ header #search-nav.appear {
       margin-bottom: 12px; }
       .featured-course .featured-course-text h6 a, .featured-course .featured-course-text .h6 a {
         display: block;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 20px;
         line-height: 28px;
         color: #202029;
@@ -14664,7 +14665,7 @@ header #search-nav.appear {
       .featured-course .featured-course-text .course-card-start h6, .featured-course .featured-course-text .course-card-start .h6 {
         padding: 0;
         margin-bottom: 0;
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         font-size: 18px !important;
         color: #42414b !important; }
         .featured-course .featured-course-text .course-card-start h6 span, .featured-course .featured-course-text .course-card-start .h6 span {
@@ -14775,7 +14776,7 @@ header #search-nav.appear {
         transition: 0.3s all linear; }
     .chose-course-item h5, .chose-course-item .h5 {
       text-align: center;
-      font-weight: 500 !important;
+      font-family: poppin-medium;
       margin-bottom: 12px; }
     .chose-course-item p {
       text-align: center; }
@@ -14833,7 +14834,7 @@ header #search-nav.appear {
           border-radius: 50%; }
       .testimonial-area-item .testimonial-client-info h6, .testimonial-area-item .testimonial-client-info .h6 {
         color: #42414b !important;
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         font-size: 18px !important; }
       .testimonial-area-item .testimonial-client-info p {
         font-size: 14px !important; }
@@ -15539,7 +15540,7 @@ header #search-nav.appear {
     .students-info-main .nav-tabs .nav-link {
       background-color: transparent;
       color: #666575;
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 16px;
       padding-bottom: 0;
       padding-left: 0;
@@ -15571,7 +15572,7 @@ header #search-nav.appear {
     .students-info-main .tab-content .info-student-topic span {
       font-size: 14px !important;
       line-height: 21px;
-      font-weight: 500 !important;
+      font-family: poppin-medium;
       color: #666575 !important; }
     .students-info-main .tab-content .info-student-topic p {
       font-size: 14px !important; }
@@ -15979,7 +15980,7 @@ header #search-nav.appear {
       .purchase-area-items-start .text-main {
         max-width: 370px; }
         .purchase-area-items-start .text-main h6, .purchase-area-items-start .text-main .h6 {
-          font-weight: 500;
+          font-family: poppin-medium;
           font-size: 18px; }
         .purchase-area-items-start .text-main p {
           margin-top: 10px;
@@ -15994,7 +15995,7 @@ header #search-nav.appear {
         margin-bottom: 10px; }
       .purchase-area-items-end dt {
         color: #666575;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 14px; }
       .purchase-area-items-end dd {
         color: #8f8fa3;
@@ -16116,7 +16117,7 @@ header #search-nav.appear {
     text-transform: uppercase; }
   .students-info-form form label {
     color: #202029;
-    font-weight: 500;
+    font-family: poppin-medium;
     font-size: 14px;
     margin-bottom: 5px; }
   .students-info-form form input {
@@ -16190,7 +16191,7 @@ header #search-nav.appear {
       padding-bottom: 0 !important;
       max-width: 480px; }
       .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 20px; }
         .cart-area .cart-wizard-area .text h6 a, .cart-area .cart-wizard-area .text .h6 a {
           display: block; }
@@ -16201,7 +16202,7 @@ header #search-nav.appear {
           color: #8f8fa3; }
       .cart-area .cart-wizard-area .text .bottom-wizard p {
         color: #202029 !important;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 18px !important; }
         .cart-area .cart-wizard-area .text .bottom-wizard p span {
           color: #8f8fa3 !important;
@@ -16228,11 +16229,11 @@ header #search-nav.appear {
       border-bottom: 1px solid rgba(143, 143, 163, 0.3); }
       .cart-area .summery-wizard-text h6, .cart-area .summery-wizard-text .h6 {
         color: #666575 !important;
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         font-size: 16px !important; }
     .cart-area .summery-wizard form label {
       color: #202029;
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 14px;
       margin-bottom: 5px; }
     .cart-area .summery-wizard form .cart-input {
@@ -16733,7 +16734,7 @@ header #search-nav.appear {
       border-radius: 5px; }
       .event-sub-section-main .event-time-item h6, .event-sub-section-main .event-time-item .h6 {
         color: #42414b !important;
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         font-size: 24px !important; }
       .event-sub-section-main .event-time-item p {
         color: #8f8fa3 !important;
@@ -16818,7 +16819,7 @@ header #search-nav.appear {
       padding-left: 0;
       padding-right: 0;
       color: #666575;
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 14px;
       border-left: none !important;
       border-right: none !important;
@@ -17175,7 +17176,8 @@ header #search-nav.appear {
   .event-info-cart p.ticket-cost {
     font-size: 28px !important;
     line-height: 38px !important; }
-  .event__content_detail .loction span, .event__content_detail .date span {
+  .event__content_detail .loction span,
+  .event__content_detail .date span {
     font-size: 12px;
     line-height: 22px; }
   #countdown .timer-body-block {
@@ -17277,7 +17279,7 @@ header #search-nav.appear {
         background-color: rgba(0, 175, 145, 0.1);
         color: #00af91; }
     .events-location-text .text-item-end p {
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 12px;
       letter-spacing: 2px;
       margin-bottom: 5px; }
@@ -17463,7 +17465,7 @@ header #search-nav.appear {
     padding-right: 0;
     margin-right: 30px;
     color: #666575;
-    font-weight: 500;
+    font-family: poppin-medium;
     font-size: 16px; }
 
 .course-overview-main-item {
@@ -17614,7 +17616,7 @@ header #search-nav.appear {
       display: -ms-flexbox;
       display: flex; }
       .course-curriculum-area .curriculum-area-top-start h6, .course-curriculum-area .curriculum-area-top-start .h6 {
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         font-size: 16px !important;
         color: #0264ed !important;
         margin-left: 10px; }
@@ -17875,7 +17877,7 @@ header #search-nav.appear {
           background-color: white;
           color: #202029; }
       .coursedescription-header-start .topic-info-text h6, .coursedescription-header-start .topic-info-text .h6 {
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 24px; }
         .coursedescription-header-start .topic-info-text h6 a, .coursedescription-header-start .topic-info-text .h6 a {
           display: block; }
@@ -17907,7 +17909,7 @@ header #search-nav.appear {
           margin-left: 25px; }
   .coursedescription-header-end .rating-link {
     color: #202029;
-    font-weight: 500;
+    font-family: poppin-medium;
     font-size: 16px;
     margin-right: 35px; }
 
@@ -17955,7 +17957,7 @@ header #search-nav.appear {
       background: #ffffff;
       border-radius: 0px 0px 8px 8px; }
       .course-description-start-content h4, .course-description-start-content .h4 {
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         color: #202029 !important;
         margin-bottom: 20px; }
       .course-description-start-content-tab .active {
@@ -17977,7 +17979,7 @@ header #search-nav.appear {
         background-color: transparent;
         border: none;
         color: #666575;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 16px; }
       .course-description-start-content-tabitem {
         margin-top: 20px; }
@@ -18503,7 +18505,7 @@ header #search-nav.appear {
     max-width: 815px; }
   .course-notes h6, .course-notes .h6 {
     color: #666575 !important;
-    font-weight: 500 !important;
+    font-family: poppin-medium;
     font-size: 16px !important;
     margin-bottom: 5px; }
   .course-notes-item {
@@ -18514,7 +18516,7 @@ header #search-nav.appear {
       left: 0;
       width: 5px;
       height: 5px;
-      background-color: #8F8FA3;
+      background-color: #8f8fa3;
       border-radius: 50%;
       margin-right: 10px; }
     .course-notes-item p {
@@ -18637,13 +18639,13 @@ body {
   padding-left: 20px; }
 
 .modal form label {
-  font-weight: 500;
+  font-family: poppin-medium;
   font-size: 14px;
   color: #202029;
   margin-bottom: 6px; }
 
 .modal-body-rating p {
-  font-weight: 500 !important;
+  font-family: poppin-medium;
   font-size: 18px !important;
   color: #42414b !important; }
   .modal-body-rating p span {
@@ -18755,7 +18757,7 @@ body {
         max-width: 100%; }
     .course-instructor-info .instructor-text h6, .course-instructor-info .instructor-text .h6 {
       color: #202029 !important;
-      font-weight: 500 !important;
+      font-family: poppin-medium;
       font-size: 24px !important; }
       .course-instructor-info .instructor-text h6 a, .course-instructor-info .instructor-text .h6 a {
         display: block; }
@@ -18765,11 +18767,11 @@ body {
       margin-top: 10px;
       margin-right: 20px; }
       .course-instructor-info .instructor-text .ratings-icon p {
-        color: #42414B !important;
+        color: #42414b !important;
         font-size: 14px !important;
         margin-left: 5px; }
   .course-instructor .lead-p {
-    font-weight: 500 !important;
+    font-family: poppin-medium;
     font-size: 16px !important;
     color: #666575 !important;
     margin-top: 18px;
@@ -19535,7 +19537,7 @@ body {
       margin-top: 10px; }
       .instructor-course-info-rating .text h6, .instructor-course-info-rating .text .h6 {
         color: #42414b !important;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 18px; }
       .instructor-course-info-rating .text p {
         color: #8f8fa3 !important;
@@ -19564,7 +19566,7 @@ body {
       margin-top: 10px; }
       .instructor-course-info-students .text h6, .instructor-course-info-students .text .h6 {
         color: #42414b !important;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 18px; }
       .instructor-course-info-students .text p {
         color: #8f8fa3 !important;
@@ -19593,7 +19595,7 @@ body {
       margin-top: 10px; }
       .instructor-course-info-courses .text h6, .instructor-course-info-courses .text .h6 {
         color: #42414b !important;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 18px; }
       .instructor-course-info-courses .text p {
         color: #8f8fa3 !important;
@@ -19642,7 +19644,7 @@ body {
     .instructor-qualification .qualification-info-title h6, .instructor-qualification .qualification-info-title .h6 {
       margin-bottom: 0 !important;
       color: rgba(66, 65, 75, 0.9) !important;
-      font-weight: 500 !important;
+      font-family: poppin-medium;
       font-size: 14px !important; }
     .instructor-qualification .qualification-info-title p {
       color: #666575 !important;
@@ -19652,7 +19654,7 @@ body {
   border-bottom: 1px solid #ffffff; }
   .instructor-tabs-pills .nav-item .active {
     color: #202029 !important;
-    font-weight: 500;
+    font-family: poppin-medium;
     font-size: 16px;
     position: relative; }
     .instructor-tabs-pills .nav-item .active::after {
@@ -19667,7 +19669,7 @@ body {
   .instructor-tabs-pills .nav-item .nav-link {
     background-color: transparent !important;
     color: #666575;
-    font-weight: 500;
+    font-family: poppin-medium;
     font-size: 16px;
     border: none !important;
     padding-left: 0 !important;
@@ -19805,7 +19807,7 @@ body {
               align-items: center; }
       .students-feedback-heading .right h6, .students-feedback-heading .right .h6 {
         font-size: 14px !important;
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         color: #42414b !important; }
       .students-feedback-heading .right .dropdown .btn {
         padding-left: 10px !important;
@@ -19874,14 +19876,14 @@ body {
     font-weight: 600; }
   .feedback-comment h6, .feedback-comment .h6 {
     font-size: 14px;
-    font-weight: 500;
+    font-family: poppin-medium;
     color: #42414b;
     margin: 12px 0px 5px 0px; }
   .feedback-comment form {
     padding-bottom: 50px; }
     .feedback-comment form label {
       color: #42414b;
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 14px;
       margin-bottom: 5px; }
     .feedback-comment form textarea {
@@ -20341,7 +20343,7 @@ body {
       .checkout-area-summery .summery-area-text .summery-text span {
         color: #666575 !important;
         font-size: 13px !important;
-        font-weight: 500 !important; }
+        font-family: poppin-medium; }
       .checkout-area-summery .summery-area-text .summery-text p {
         font-size: 14px !important; }
       .checkout-area-summery .summery-area-text .summery-text .total-cost h6, .checkout-area-summery .summery-area-text .summery-text .total-cost .h6 {
@@ -20513,7 +20515,7 @@ body {
   .contact-feature-text h6, .contact-feature-text .h6 {
     color: #908fa5;
     font-size: 12px;
-    font-weight: 500;
+    font-family: poppin-medium;
     margin-bottom: 5px;
     letter-spacing: 2px;
     text-transform: uppercase; }
@@ -20534,7 +20536,7 @@ body {
   .form-area form label {
     font-size: 14px;
     color: #25252e;
-    font-weight: 500;
+    font-family: poppin-medium;
     margin-bottom: 10px; }
   .form-area form input {
     border: 1.2px solid rgba(144, 143, 165, 0.4);
@@ -20793,7 +20795,7 @@ header {
           box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05); }
 
 .signin-area form label {
-  font-weight: 500; }
+  font-family: poppin-medium; }
 
 .signup-area {
   position: relative;
@@ -21092,7 +21094,7 @@ header {
         margin-top: 10px;
         color: #908fa5;
         font-size: 14px;
-        font-weight: 500; }
+        font-family: poppin-medium; }
 
 .checkout-tab .tab-pane form label {
   margin-bottom: 10px;

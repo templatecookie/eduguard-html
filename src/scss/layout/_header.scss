@@ -17,11 +17,13 @@ header {
         width: 100%;
       }
       .nav-link {
-        padding: 25px 0px;
-        font-size: 16px;
-        font-weight: 500;
-        color: color(dark);
         position: relative;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: color(dark);
+        padding: 25px 0px;
+        font-family: poppin-medium;
         &.active {
           &::after {
             position: absolute;
