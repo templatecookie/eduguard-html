@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
 /* Slider */
 .slick-slider
 {
@@ -610,6 +609,86 @@ img.mfp-img {
     padding-left: 6px;
     padding-right: 6px; } }
 
+.font-title--lg {
+  font-size: 80px;
+  line-height: 100px;
+  font-family: poppin-bold; }
+
+h1, .h1 {
+  font-size: 80px;
+  line-height: 1.25;
+  font-weight: 700; }
+
+h2, .h2 {
+  font-size: 56px;
+  line-height: 1.25;
+  font-weight: 700; }
+
+h3, .h3 {
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #202029 !important; }
+
+h4, .h4 {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #191922 !important; }
+
+h5, .h5 {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #202029 !important; }
+
+h6, .h6 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #202029 !important; }
+
+p {
+  color: #8f8fa3 !important;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  margin: 0; }
+
+h1 a, .h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a,
+h6 a,
+.h6 a {
+  color: inherit; }
+  h1 a:hover, .h1 a:hover,
+  h2 a:hover,
+  .h2 a:hover,
+  h3 a:hover,
+  .h3 a:hover,
+  h4 a:hover,
+  .h4 a:hover,
+  h5 a:hover,
+  .h5 a:hover,
+  h6 a:hover,
+  .h6 a:hover {
+    color: inherit; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: color(lightBlack);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0; }
+
+/*------------------------*/
+/*-------RESPOSIVE---------*/
+/*-------------------------*/
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -9664,139 +9743,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-h1, .h1 {
-  font-size: 80px;
-  line-height: 1.25;
-  font-weight: 700; }
-
-h2, .h2 {
-  font-size: 56px;
-  line-height: 1.25;
-  font-weight: 700; }
-
-h3, .h3 {
-  font-size: 40px;
-  line-height: 1.25;
-  font-weight: 700;
-  color: #202029 !important; }
-
-h4, .h4 {
-  font-size: 32px;
-  line-height: 1.25;
-  font-weight: 700;
-  color: #191922 !important; }
-
-h5, .h5 {
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 600;
-  color: #202029 !important; }
-
-h6, .h6 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #202029 !important; }
-
-p {
-  color: #8f8fa3 !important;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: normal;
-  margin: 0; }
-
-h1 a, .h1 a,
-h2 a,
-.h2 a,
-h3 a,
-.h3 a,
-h4 a,
-.h4 a,
-h5 a,
-.h5 a,
-h6 a,
-.h6 a {
-  color: inherit; }
-  h1 a:hover, .h1 a:hover,
-  h2 a:hover,
-  .h2 a:hover,
-  h3 a:hover,
-  .h3 a:hover,
-  h4 a:hover,
-  .h4 a:hover,
-  h5 a:hover,
-  .h5 a:hover,
-  h6 a:hover,
-  .h6 a:hover {
-    color: inherit; }
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  color: #35343e;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  margin: 0; }
-
-/*------------------------*/
-/*-------RESPOSIVE---------*/
-/*-------------------------*/
-@media (min-width: 992px) and (max-width: 1199px) {
-  h1, .h1 {
-    font-size: 52px; }
-  h3, .h3 {
-    font-size: 38px; }
-  h4, .h4 {
-    font-size: 32px; }
-  h5, .h5 {
-    font-size: 24px; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  h1, .h1 {
-    font-size: 55px; }
-  h3, .h3 {
-    font-size: 35px; }
-  h4, .h4 {
-    font-size: 32px; }
-  h5, .h5 {
-    font-size: 24px; }
-  p {
-    font-size: 14px; } }
-
-@media (min-width: 575px) and (max-width: 767px) {
-  h3, .h3 {
-    font-size: 32px; }
-  h4, .h4 {
-    font-size: 30px; }
-  h5, .h5 {
-    font-size: 22px; }
-  h6, .h6 {
-    font-size: 20px; }
-  p {
-    font-size: 14px; } }
-
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  h3, .h3 {
-    font-size: 24px; }
-  h4, .h4 {
-    font-size: 24px; }
-  h5, .h5 {
-    font-size: 18px; }
-  h6, .h6 {
-    font-size: 18px; }
-  p {
-    font-size: 14px; } }
-
-@media (max-width: 420px) {
-  h3, .h3 {
-    font-size: 23px; }
-  h4, .h4 {
-    font-size: 20px; }
-  h5, .h5 {
-    font-size: 18px; }
-  h6, .h6 {
-    font-size: 18px; }
-  p {
-    font-size: 14px; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -9819,7 +9765,7 @@ html {
     max-width: 1170px; } }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: poppin-regular;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -9887,9 +9833,6 @@ li {
     transition: 0.3s; }
     .bg-denger svg path {
       stroke: #f15c4c; }
-
-.section-title {
-  margin-bottom: 50px; }
 
 .mb-30 {
   margin-bottom: 30px; }

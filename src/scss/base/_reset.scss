@@ -25,7 +25,8 @@ html {
 }
 
 body {
-  font-family: $font;
+  // font-family: $font;
+  font-family: poppin-regular;
   transition: 0.3s;
 }
 
@@ -99,16 +100,19 @@ li {
     }
   }
 }
-.section-title {
-  margin-bottom: 50px;
-}
+
+// .section-title {
+//   margin-bottom: 50px;
+// }
 
 .mb-30 {
   margin-bottom: 30px;
 }
+
 .footer-ex-p {
   padding-top: 220px !important;
 }
+
 button {
   &:focus {
     outline: none;

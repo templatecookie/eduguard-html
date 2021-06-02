@@ -1,6 +1,7 @@
 // abstracts
-@import 'abstracts/functions';
+@import 'base/typography';
 @import 'abstracts/variables';
+@import 'abstracts/functions';
 
 // vendors
 @import '~bootstrap/scss/bootstrap';
@@ -8,7 +9,6 @@
 @import 'vendors/plugin/css/nice-select.css';
 @import 'vendors/plugin/css/magnific-popup.css';
 
-@import 'base/typography';
 @import 'base/reset';
 
 // components
