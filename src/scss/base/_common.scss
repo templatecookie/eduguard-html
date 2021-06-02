@@ -49,6 +49,31 @@
     z-index: -1;
   }
 }
+// Checkbox
+.checkbox-primary[type='checkbox'] {
+  width: 24px;
+  height: 24px;
+  border: 2px solid color(lowBlack);
+}
+
+// overlay select issues fixed
+.main-instructor-featured-shape img,
+.banner-two-start h1,
+.browse-categories h3,
+.main-heading h3,
+.chose-course h3,
+.learning-rules-starts h3,
+.about-services-shape img,
+.featured-popular-courses-shape img,
+.about-services-shape img,
+.learning-rules-shape img,
+.main-events-featured-shape img,
+.testimonial__img img,
+.testimonial__img .dot img,
+.testimonial__img .rectangle img,
+.testimonial__wrapper_title h3 {
+  user-select: none;
+}
 
 // Responsive
 
@@ -151,46 +176,46 @@
   }
 
   // Fonts Title
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @extend %fonts-md;
-  }
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6 {
+  //   @extend %fonts-md;
+  // }
 
   // subtitle fonts size
-  .cart-area .cart-wizard-area .text h6,
-  .cart-area .cart-wizard-area .text .h6,
-  .event-search-wizard-header h6,
-  .event-search-wizard-header .h6,
-  .nav-overview h6,
-  .feedback-area h6,
-  .feedback-area .h6,
-  .writereview-area h6,
-  .writereview-area .h6 {
-    font-size: 24px !important;
-    line-height: 36px !important;
-  }
+  // .cart-area .cart-wizard-area .text h6,
+  // .cart-area .cart-wizard-area .text .h6,
+  // .event-search-wizard-header h6,
+  // .event-search-wizard-header .h6,
+  // .nav-overview h6,
+  // .feedback-area h6,
+  // .feedback-area .h6,
+  // .writereview-area h6,
+  // .writereview-area .h6 {
+  //   font-size: 24px !important;
+  //   line-height: 36px !important;
+  // }
 
   // brief
 
-  .feedback-area-item .commentator-info h6,
-  .feedback-area-item .commentator-info .h6 {
-    font-size: 18px !important;
-    line-height: 28px !important;
-  }
+  // .feedback-area-item .commentator-info h6,
+  // .feedback-area-item .commentator-info .h6 {
+  //   font-size: 18px !important;
+  //   line-height: 28px !important;
+  // }
 
   // Testimonial  slider
-  .course__content_title h6,
-  .course__content_title .h6,
-  .event__content_title h6,
-  .event__content_title .h6,
-  .event-info-cart h6 {
-    font-size: 18px !important;
-    line-height: 28px !important;
-  }
+  // .course__content_title h6,
+  // .course__content_title .h6,
+  // .event__content_title h6,
+  // .event__content_title .h6,
+  // .event-info-cart h6 {
+  //   font-size: 18px !important;
+  //   line-height: 28px !important;
+  // }
   .ourevent-active {
     .slick-dots {
       margin-top: 0px;
@@ -220,25 +245,25 @@
   }
 
   // Fonts Title
-  .about-intro__textContent h3,
-  .about-intro__textContent .h3,
-  .about-feature h4,
-  .about-feature .h4,
-  .bestInstructor__title h3,
-  .event-sub-section-main h4,
-  .event-sub-section-main .h4,
-  .signup-area h3 {
-    @extend %fonts-sm-1;
-  }
+  // .about-intro__textContent h3,
+  // .about-intro__textContent .h3,
+  // .about-feature h4,
+  // .about-feature .h4,
+  // .bestInstructor__title h3,
+  // .event-sub-section-main h4,
+  // .event-sub-section-main .h4,
+  // .signup-area h3 {
+  //   @extend %fonts-sm-1;
+  // }
 
   // subtitle
-  .checkout-tab .nav .nav-item .nav-link h6,
-  .checkout-area-summery .summery-area-content-item .text h5,
-  .event-search-wizard-header h6,
-  .event-search-wizard-header .h6 {
-    font-size: 18px !important;
-    line-height: 26px !important;
-  }
+  // .checkout-tab .nav .nav-item .nav-link h6,
+  // .checkout-area-summery .summery-area-content-item .text h5,
+  // .event-search-wizard-header h6,
+  // .event-search-wizard-header .h6 {
+  //   font-size: 18px !important;
+  //   line-height: 26px !important;
+  // }
 
   // slider dots
   .bestInstructor .ourinstructor-active .slick-dots,
@@ -289,75 +314,41 @@
   }
 
   // Fonts  title
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .banner-three h1,
-  .banner-three .h1 .event-sub-section-main h4 {
-    @extend %fonts-sm-2;
-  }
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // .banner-three h1,
+  // .banner-three .h1 .event-sub-section-main h4 {
+  //   @extend %fonts-sm-2;
+  // }
   .cart-area .cart-wizard-area .text h6 {
     font-size: 16px !important;
     line-height: 26px !important;
   }
 
   // sub title
-  .feedback-area h6 {
-    font-size: 16px !important;
-    line-height: 26px !important;
-  }
+  // .feedback-area h6 {
+  //   font-size: 16px !important;
+  //   line-height: 26px !important;
+  // }
 
   // para
-  p,
-  .events-location-text .text-item-end h6,
-  .banner-two-start p {
-    @extend %brief;
-  }
+  // p,
+  // .events-location-text .text-item-end h6,
+  // .banner-two-start p {
+  //   @extend %brief;
+  // }
 
   // Testimonial  slider
-  .course__content_title h6,
-  .course__content_title .h6,
-  .event__content_title h6,
-  .event__content_title .h6,
-  .event-info-cart h6 {
-    font-size: 18px !important;
-    line-height: 28px !important;
-  }
-}
-
-// overlay select issues fixed
-.main-instructor-featured-shape img,
-.banner-two-start h1,
-.browse-categories h3,
-.main-heading h3,
-.chose-course h3,
-.learning-rules-starts h3,
-.about-services-shape img,
-.featured-popular-courses-shape img,
-.about-services-shape img,
-.learning-rules-shape img,
-.main-events-featured-shape img,
-.testimonial__img img,
-.testimonial__img .dot img,
-.testimonial__img .rectangle img,
-.testimonial__wrapper_title h3 {
-  user-select: none;
-}
-
-// .form-control {
-//   &--focus {
-//     &:focus {
-//       border: 1px solid #1089FF !important;
-//       box-shadow: 0px 2px 10px 0px #0264ed33 !important;
-//     }
-//   }
-// }
-
-// Responsive breakpoints
-@media (min-width: 575px) and (max-width: 767px) {
-}
-@media (min-width: 320px) and (max-width: 574px) {
+  // .course__content_title h6,
+  // .course__content_title .h6,
+  // .event__content_title h6,
+  // .event__content_title .h6,
+  // .event-info-cart h6 {
+  //   font-size: 18px !important;
+  //   line-height: 28px !important;
+  // }
 }

@@ -173,50 +173,42 @@
   }
 }
 
-// Checkbox
-
-.checkbox-primary[type='checkbox'] {
-  width: 24px;
-  height: 24px;
-  border: 2px solid color(lowBlack);
-}
-
 @media (max-width: 991px) {
-  .btn {
-    &.btn-lg {
-      padding: 10px 15px !important;
-    }
-    &.btn-md {
-      padding: 8px 15px !important;
-    }
-  }
+  // .btn {
+  //   &.btn-lg {
+  //     padding: 10px 15px !important;
+  //   }
+  //   &.btn-md {
+  //     padding: 8px 15px !important;
+  //   }
+  // }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-  .btn {
-    font-size: 14px;
-  }
+  // .btn {
+  //   font-size: 14px;
+  // }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .btn {
-    font-size: 14px;
-  }
+  // .btn {
+  //   font-size: 14px;
+  // }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  .btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
+  // .btn {
+  //   font-size: 14px;
+  //   padding: 10px 20px;
+  // }
 }
 
 // extra Small devices 420px
 @media (max-width: 420px) {
-  .btn {
-    font-size: 12px;
-  }
+  // .btn {
+  //   font-size: 12px;
+  // }
 }

@@ -10064,34 +10064,6 @@ button:focus {
 .signinButtons .twitter:hover {
   border-color: rgba(3, 169, 244, 0.2) !important; }
 
-.checkbox-primary[type='checkbox'] {
-  width: 24px;
-  height: 24px;
-  border: 2px solid #908fa5; }
-
-@media (max-width: 991px) {
-  .btn.btn-lg, .btn-group-lg > .btn {
-    padding: 10px 15px !important; }
-  .btn.btn-md {
-    padding: 8px 15px !important; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .btn {
-    font-size: 14px; } }
-
-@media (min-width: 575px) and (max-width: 767px) {
-  .btn {
-    font-size: 14px; } }
-
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  .btn {
-    font-size: 14px;
-    padding: 10px 20px; } }
-
-@media (max-width: 420px) {
-  .btn {
-    font-size: 12px; } }
-
 .form-element {
   margin-bottom: 20px;
   position: relative; }
@@ -21345,6 +21317,29 @@ header {
     opacity: 0.3;
     z-index: -1; }
 
+.checkbox-primary[type='checkbox'] {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #908fa5; }
+
+.main-instructor-featured-shape img, .banner-two-start h1, .banner-two-start .h1, .browse-categories h3, .browse-categories .h3,
+.main-heading h3,
+.main-heading .h3, .chose-course h3, .chose-course .h3,
+.learning-rules-starts h3,
+.learning-rules-starts .h3,
+.about-services-shape img,
+.featured-popular-courses-shape img,
+.about-services-shape img,
+.learning-rules-shape img,
+.main-events-featured-shape img,
+.testimonial__img img,
+.testimonial__img .dot img,
+.testimonial__img .rectangle img, .testimonial__wrapper_title h3, .testimonial__wrapper_title .h3 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
 @media (max-width: 1200px) {
   .new-course-feature .slider-arrows .prev-arrow,
   .new-course-feature .slider-arrows .next-arrow,
@@ -21385,9 +21380,6 @@ header {
 @media (max-width: 991px) {
   section {
     padding: 90px 0px !important; }
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    font-size: 38px !important;
-    line-height: 52px !important; }
   .signup-area {
     overflow-y: auto !important; }
   .signup-area-image {
@@ -21418,45 +21410,16 @@ header {
     padding-top: 30px !important; }
   .get-started {
     padding-bottom: 30px !important; }
-  .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6,
-  .cart-area .cart-wizard-area .text .h6, .event-search-wizard-header h6, .event-search-wizard-header .h6,
-  .event-search-wizard-header .h6,
-  .nav-overview h6,
-  .nav-overview .h6, .feedback-area h6, .feedback-area .h6,
-  .feedback-area .h6, .writereview-area h6, .writereview-area .h6,
-  .writereview-area .h6 {
-    font-size: 24px !important;
-    line-height: 36px !important; }
-  .feedback-area-item .commentator-info h6, .feedback-area-item .commentator-info .h6,
-  .feedback-area-item .commentator-info .h6 {
-    font-size: 18px !important;
-    line-height: 28px !important; }
-  .course__content_title h6, .course__content_title .h6,
-  .course__content_title .h6, .event__content_title h6, .event__content_title .h6,
-  .event__content_title .h6, .event-info-cart h6, .event-info-cart .h6 {
-    font-size: 18px !important;
-    line-height: 28px !important; }
   .ourevent-active .slick-dots {
     margin-top: 0px; } }
 
 @media (max-width: 767px) {
   section {
     padding: 60px 0px !important; }
-  .about-intro__textContent h3, .about-intro__textContent .h3,
-  .about-feature h4, .about-feature .h4,
-  .bestInstructor__title h3, .bestInstructor__title .h3,
-  .event-sub-section-main h4, .event-sub-section-main .h4,
-  .signup-area h3, .signup-area .h3 {
-    font-size: 22px !important;
-    line-height: 32px !important; }
   .about-intro {
     padding: 0px !important; }
   .signup-area {
     padding-top: 0px !important; }
-  .checkout-tab .nav .nav-item .nav-link h6, .checkout-tab .nav .nav-item .nav-link .h6, .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5, .event-search-wizard-header h6, .event-search-wizard-header .h6,
-  .event-search-wizard-header .h6 {
-    font-size: 18px !important;
-    line-height: 26px !important; }
   .bestInstructor .ourinstructor-active .slick-dots,
   .about-services .about__slider .slick-dots,
   .main-instructor-featured .ourinstructor-active .slick-dots,
@@ -21467,16 +21430,6 @@ header {
 @media (min-width: 320px) and (max-width: 574px) {
   section {
     padding: 45px 0px !important; }
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
-  .banner-three h1, .banner-three .h1,
-  .banner-three .h1 .event-sub-section-main h4, .banner-three .h1 .event-sub-section-main .h4 {
-    font-size: 24px !important;
-    line-height: 36px !important; }
-  p,
-  .events-location-text .text-item-end h6, .events-location-text .text-item-end .h6,
-  .banner-two-start p {
-    font-size: 14px !important;
-    line-height: 26px !important; }
   .signup-area {
     height: auto !important; }
   .contactHero {
@@ -21489,31 +21442,5 @@ header {
     height: auto; }
   .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
     font-size: 16px !important;
-    line-height: 26px !important; }
-  .feedback-area h6, .feedback-area .h6 {
-    font-size: 16px !important;
-    line-height: 26px !important; }
-  .course__content_title h6, .course__content_title .h6,
-  .course__content_title .h6, .event__content_title h6, .event__content_title .h6,
-  .event__content_title .h6, .event-info-cart h6, .event-info-cart .h6 {
-    font-size: 18px !important;
-    line-height: 28px !important; } }
-
-.main-instructor-featured-shape img, .banner-two-start h1, .banner-two-start .h1, .browse-categories h3, .browse-categories .h3,
-.main-heading h3,
-.main-heading .h3, .chose-course h3, .chose-course .h3,
-.learning-rules-starts h3,
-.learning-rules-starts .h3,
-.about-services-shape img,
-.featured-popular-courses-shape img,
-.about-services-shape img,
-.learning-rules-shape img,
-.main-events-featured-shape img,
-.testimonial__img img,
-.testimonial__img .dot img,
-.testimonial__img .rectangle img, .testimonial__wrapper_title h3, .testimonial__wrapper_title .h3 {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+    line-height: 26px !important; } }
 
