@@ -1,70 +1,112 @@
 // fonts family
-.font-title--lg {
-  font-size: 80px;
-  line-height: 100px;
-  font-weight: 700;
+
+.font-title--lg,
+.font-title--md,
+.font-title--sm,
+.font-title--xs {
+  text-transform: capitalize;
 }
 
-h1 {
-  font-size: 80px;
-  line-height: 1.25;
-  font-weight: 700;
+.font-title--lg,
+.font-title--md,
+.font-title--xs {
+  font-family: poppin-bold;
+  color: #202029;
 }
 
-h2 {
-  font-size: 56px;
-  line-height: 1.25;
-  font-weight: 700;
-}
-h3 {
-  font-size: 40px;
-  line-height: 1.25;
-  font-weight: 700;
-}
-h4 {
-  font-size: 32px;
-  line-height: 1.25;
-  font-weight: 700;
-}
-h5 {
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 600;
-}
-h6 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: normal;
-  margin: 0;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: inherit;
-  &:hover {
-    color: inherit;
+// Fonts  => Title/heading
+.font-title {
+  &--lg {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  &--md {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  &--sm {
+    font-size: 32px;
+    line-height: 40px;
+    font-family: poppin-semiBold;
+  }
+  &--xs {
+    font-size: 24px;
+    line-height: 36px;
+    color: #42414b;
+    font-family: poppin-medium;
   }
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: color(lightBlack);
-  transition: 0.3s;
-  margin: 0;
+
+// Fonts => paragraph/section brief
+
+.font-para {
+  &--lg {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3;
+  }
 }
+
+// h1 {
+//   font-size: 80px;
+//   line-height: 1.25;
+//   font-weight: 700;
+// }
+
+// h2 {
+//   font-size: 56px;
+//   line-height: 1.25;
+//   font-weight: 700;
+// }
+// h3 {
+//   font-size: 40px;
+//   line-height: 1.25;
+//   font-weight: 700;
+// }
+// h4 {
+//   font-size: 32px;
+//   line-height: 1.25;
+//   font-weight: 700;
+// }
+// h5 {
+//   font-size: 24px;
+//   line-height: 1.25;
+//   font-weight: 600;
+// }
+// h6 {
+//   font-size: 20px;
+//   line-height: 30px;
+//   font-weight: 600;
+// }
+
+// p {
+//   font-size: 16px;
+//   line-height: 1.5;
+//   font-weight: normal;
+//   margin: 0;
+// }
+
+// h1 a,
+// h2 a,
+// h3 a,
+// h4 a,
+// h5 a,
+// h6 a {
+//   color: inherit;
+//   &:hover {
+//     color: inherit;
+//   }
+// }
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: color(lightBlack);
+//   transition: 0.3s;
+//   margin: 0;
+// }
 
 /*------------------------*/
 /*-------RESPOSIVE---------*/
@@ -161,6 +203,3 @@ h6 {
 //     font-size: 14px;
 //   }
 // }
-
-@media (max-width: 1024px) {
-}
