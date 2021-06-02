@@ -17,11 +17,8 @@
       &-start {
         display: flex;
 
-        h6 {
-          font-family: poppin-medium;
-          font-size: 16px !important;
-          // color: #42414b !important;
-          color: #0264ed !important;
+        p {
+          color: #42414b;
           margin-left: 10px;
         }
       }
@@ -114,7 +111,7 @@
   border-radius: 8px;
   .curriculum-area-top-start {
     h6 {
-      color: #42414b !important;
+      color: #42414b;
     }
     svg {
       transform: rotate(180deg);
@@ -122,9 +119,7 @@
     }
   }
 }
-.accordion-button:not(.collapsed) {
-  color: #0264ed !important;
-}
+
 // curriculum-accordion Ends Here
 
 // Responsive

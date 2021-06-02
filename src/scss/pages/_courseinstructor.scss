@@ -22,17 +22,10 @@
 
     .instructor-text {
       h6 {
-        color: #202029 !important;
-        font-family: poppin-medium;
-        font-size: 24px !important;
-
         a {
+          color: #202029;
           display: block;
         }
-      }
-
-      p {
-        font-size: 14px !important;
       }
 
       .ratings-icon {
@@ -40,8 +33,7 @@
         margin-right: 20px;
 
         p {
-          color: #42414b !important;
-          font-size: 14px !important;
+          color: #42414b;
           margin-left: 5px;
         }
       }
@@ -49,15 +41,9 @@
   }
 
   .lead-p {
-    font-family: poppin-medium;
-    font-size: 16px !important;
-    color: #666575 !important;
-    margin-top: 18px;
+    color: #666575;
+    margin-top: 15px;
     margin-bottom: 8px;
-  }
-
-  &-description {
-    font-size: 14px !important;
   }
 }
 

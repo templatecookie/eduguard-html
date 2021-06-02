@@ -78,7 +78,6 @@
       .active {
         color: #202029 !important;
         position: relative;
-
         &::after {
           content: '';
           position: absolute;
@@ -91,14 +90,12 @@
       }
 
       .nav-link {
+        color: #666575;
         border: none;
         background-color: transparent;
         padding-left: 0;
         padding-right: 0;
         margin-right: 30px;
-        color: #666575;
-        font-family: poppin-medium;
-        font-size: 16px;
       }
     }
   }
@@ -114,12 +111,10 @@
     }
 
     .bullets-line {
-      font-size: 16px !important;
-      color: #666575 !important;
+      color: #666575;
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-
       span {
         background-color: #666575;
         height: 5px;
