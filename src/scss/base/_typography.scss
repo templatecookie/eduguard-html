@@ -40,12 +40,16 @@
   &--card {
     font-size: 20px;
     line-height: 30px;
-    font-family: poppin-semiBold;
+    font-family: poppin-medium;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 }
 
 // Fonts => paragraph/section brief
-
 .font-para {
   &--lg {
     font-size: 16px;
@@ -59,160 +63,3 @@
     color: #8585a3;
   }
 }
-
-// h1 {
-//   font-size: 80px;
-//   line-height: 1.25;
-//   font-weight: 700;
-// }
-
-// h2 {
-//   font-size: 56px;
-//   line-height: 1.25;
-//   font-weight: 700;
-// }
-// h3 {
-//   font-size: 40px;
-//   line-height: 1.25;
-//   font-weight: 700;
-// }
-// h4 {
-//   font-size: 32px;
-//   line-height: 1.25;
-//   font-weight: 700;
-// }
-// h5 {
-//   font-size: 24px;
-//   line-height: 1.25;
-//   font-weight: 600;
-// }
-// h6 {
-//   font-size: 20px;
-//   line-height: 30px;
-//   font-weight: 600;
-// }
-
-// p {
-//   font-size: 16px;
-//   line-height: 1.5;
-//   font-weight: normal;
-//   margin: 0;
-// }
-
-// h1 a,
-// h2 a,
-// h3 a,
-// h4 a,
-// h5 a,
-// h6 a {
-//   color: inherit;
-//   &:hover {
-//     color: inherit;
-//   }
-// }
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   color: color(lightBlack);
-//   transition: 0.3s;
-//   margin: 0;
-// }
-
-/*------------------------*/
-/*-------RESPOSIVE---------*/
-/*-------------------------*/
-
-// // large devices 992px - 1169px
-// @media (min-width: 992px) and (max-width: 1199px) {
-//   h1 {
-//     font-size: 52px;
-//   }
-//   h3 {
-//     font-size: 38px;
-//   }
-//   h4 {
-//     font-size: 32px;
-//   }
-//   h5 {
-//     font-size: 24px;
-//   }
-// }
-
-// // Medium devices 768px - 991px
-// @media (min-width: 768px) and (max-width: 991px) {
-//   h1 {
-//     font-size: 55px;
-//   }
-//   h3 {
-//     font-size: 35px;
-//   }
-//   h4 {
-//     font-size: 32px;
-//   }
-//   h5 {
-//     font-size: 24px;
-//   }
-//   p {
-//     font-size: 14px;
-//   }
-// }
-
-// // Small devices 575px - 767px
-// @media (min-width: 575px) and (max-width: 767px) {
-//   h3 {
-//     font-size: 32px;
-//   }
-//   h4 {
-//     font-size: 30px;
-//   }
-//   h5 {
-//     font-size: 22px;
-//   }
-//   h6 {
-//     font-size: 20px;
-//   }
-//   p {
-//     font-size: 14px;
-//   }
-// }
-
-// // Small devices 420px - 574px
-// @media only screen and (min-width: 420px) and (max-width: 574px) {
-//   h3 {
-//     font-size: 24px;
-//   }
-//   h4 {
-//     font-size: 24px;
-//   }
-//   h5 {
-//     font-size: 18px;
-//   }
-//   h6 {
-//     font-size: 18px;
-//   }
-//   p {
-//     font-size: 14px;
-//   }
-// }
-
-// // extra Small devices 420px
-// @media (max-width: 420px) {
-//   h3 {
-//     font-size: 23px;
-//   }
-//   h4 {
-//     font-size: 20px;
-//   }
-//   h5 {
-//     font-size: 18px;
-//   }
-//   h6 {
-//     font-size: 18px;
-//   }
-//   p {
-//     font-size: 14px;
-//   }
-// }

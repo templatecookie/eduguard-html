@@ -47,6 +47,9 @@ a:focus,
 }
 a {
   transition: 0.3s;
+  &:hover {
+    color: #202029;
+  }
 }
 a,
 a:focus,

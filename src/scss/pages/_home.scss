@@ -218,12 +218,6 @@
     }
   }
 }
-// Popular Courses Starts Here
-.main-popular-course {
-  .course__content {
-    padding-bottom: 0 !important;
-  }
-}
 
 .featured-popular-courses-shape .dot-06 {
   bottom: 100px;
@@ -480,30 +474,6 @@
   background-color: rgba($color: #ebebf2, $alpha: 0.55);
   position: relative;
   z-index: 88;
-  .event {
-    margin: 0px 15px;
-  }
-  .event__img {
-    margin-bottom: 0 !important;
-
-    img {
-      border-radius: 5px 5px 0px 0px !important;
-    }
-  }
-
-  .event__content {
-    padding-top: 12px;
-    background-color: white;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 5px;
-  }
-
-  .btn-primary {
-    margin-top: 50px;
-    padding: 19px 32px;
-  }
-
   &-shape {
     img {
       position: absolute;

@@ -493,11 +493,6 @@
     font-size: 35px;
   }
 
-  .event__content_detail .loction span,
-  .event__content_detail .date span {
-    font-size: 14px;
-  }
-
   .get-started-area {
     align-items: flex-start !important;
   }
@@ -696,10 +691,10 @@
     }
   }
 
-  .course__img,
-  .course__content {
-    width: 100% !important;
-  }
+  // .course__img,
+  // .course__content {
+  //   width: 100% !important;
+  // }
 }
 
 @media (max-width: 767px) {
@@ -882,11 +877,6 @@
         display: none !important;
       }
     }
-  }
-
-  .event__content_detail .loction span,
-  .event__content_detail .date span {
-    font-size: 14px;
   }
 }
 

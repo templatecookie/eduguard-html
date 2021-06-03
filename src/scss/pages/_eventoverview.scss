@@ -6,8 +6,8 @@
   &-main {
     margin-top: 60px;
 
-    h4 {
-      margin-bottom: 20px;
+    h3 {
+      margin-bottom: 24px;
     }
 
     .event-time {
@@ -39,30 +39,37 @@
     }
 
     .icon-with-date {
-      margin-bottom: 20px;
-
+      margin-bottom: 12px;
+      margin-top: 15px;
       &-start {
         margin-right: 40px;
       }
 
       &-start,
       &-end {
-        span {
+        p {
           margin-left: 5px;
           color: #42414b;
-          font-size: 14px;
+          span {
+            color: #8f8fa3;
+          }
         }
       }
     }
   }
 }
 
+// Event inforamtion section
 .event-info {
   &-main {
     .image {
       margin-top: 35px;
       margin-bottom: 70px;
     }
+  }
+
+  .eventCard--wrapper {
+    margin-top: -110px;
   }
 
   &-tab {
@@ -111,7 +118,6 @@
   }
 
   &-cart {
-    margin-top: -120px;
     padding: 30px 0px;
     background-color: white;
     border-radius: 8px;
@@ -121,11 +127,12 @@
     .event-info-cart h6 {
       padding: 0px 30px;
     }
-    p.ticket-cost {
-      font-size: 32px;
-      color: #202029 !important;
-      margin-bottom: 5px;
+
+    .ticket-cost {
+      font-family: poppin-regular;
+      color: #202029;
     }
+
     .course-includes {
       padding: 24px 30px;
     }
@@ -134,9 +141,10 @@
       margin-bottom: 25px;
 
       p {
-        margin-top: 10px;
         font-size: 12px;
+        line-height: 15px;
         color: #8f8fa3;
+        margin-top: 18px;
 
         a {
           color: #1089ff;
@@ -352,17 +360,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
-  .event__content_detail {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
-  }
 }
 
 @media (max-width: 767px) {
@@ -419,17 +416,6 @@
   .similar-events {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-
-  .event__content_detail {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
   }
 }
 
@@ -496,17 +482,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
-  .event__content_detail {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
-  }
 }
 
 // large devices 992px - 1200px
@@ -553,17 +528,6 @@
     display: none;
   }
 
-  .event__content_detail {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
-  }
-
   .icon-with-date {
     flex-direction: column;
     margin-bottom: 10px;
@@ -590,10 +554,6 @@
       }
     }
   }
-  .event__content_title h6,
-  .event__content_title .h6 {
-    margin-bottom: 15px;
-  }
 }
 
 @media (max-width: 420px) {
@@ -604,11 +564,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  // Testimonial slider
-  .event__content_title h6 {
-    font-size: 16px !important;
-  }
-
   .event-sub-section-main h4,
   .event-sub-section-main .h4,
   .course-includes h6,
@@ -673,11 +628,6 @@
   .event-info-cart p.ticket-cost {
     font-size: 28px !important;
     line-height: 38px !important;
-  }
-  .event__content_detail .loction span,
-  .event__content_detail .date span {
-    font-size: 12px;
-    line-height: 22px;
   }
 
   #countdown .timer-body-block {
