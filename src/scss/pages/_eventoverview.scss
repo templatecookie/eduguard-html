@@ -123,8 +123,7 @@
     border-radius: 8px;
     .ticket-cost,
     form,
-    .footer__wrapper_social,
-    .event-info-cart h6 {
+    .footer__wrapper_social {
       padding: 0px 30px;
     }
 
@@ -277,10 +276,6 @@
     font-size: 14px;
   }
 
-  .event-info-cart {
-    margin-top: 0;
-  }
-
   .event-info {
     padding-bottom: 30px;
   }
@@ -344,10 +339,6 @@
     font-size: 14px;
   }
 
-  .event-info-cart {
-    margin-top: 0;
-  }
-
   .event-info {
     padding-bottom: 30px;
   }
@@ -379,10 +370,6 @@
     margin-bottom: 20px;
   }
 
-  .event-info-cart p.ticket-cost {
-    text-align: center;
-  }
-
   .event-sub-section {
     padding-bottom: 25px;
   }
@@ -399,10 +386,6 @@
 
   .event-info-tab-content .nav-overview p {
     font-size: 14px;
-  }
-
-  .event-info-cart {
-    margin-top: 0;
   }
 
   .event-info {
@@ -422,8 +405,6 @@
 @media (max-width: 991px) {
   .course-includes h6,
   .course-includes .h6,
-  .event-info-cart h6,
-  .event-info-cart .h6,
   .course-overview-main-item h6,
   .course-overview-main-item .h6 {
     font-size: 28px !important;
@@ -443,11 +424,6 @@
   .event-time {
     margin-bottom: 20px;
   }
-
-  .event-info-cart p.ticket-cost {
-    text-align: center;
-  }
-
   .event-sub-section {
     padding-bottom: 25px;
   }
@@ -464,10 +440,6 @@
 
   .event-info-tab-content .nav-overview p {
     font-size: 14px;
-  }
-
-  .event-info-cart {
-    margin-top: 0;
   }
 
   .event-info {
@@ -493,11 +465,6 @@
   .event-time {
     margin-bottom: 20px;
   }
-
-  .event-info-cart p.ticket-cost {
-    text-align: center;
-  }
-
   .event-sub-section {
     padding-bottom: 25px;
   }
@@ -515,11 +482,6 @@
   .event-info-tab-content .nav-overview p {
     font-size: 14px;
   }
-
-  .event-info-cart {
-    margin-top: 30px;
-  }
-
   .event-info {
     padding-bottom: 30px;
   }
@@ -566,9 +528,7 @@
 @media (min-width: 320px) and (max-width: 574px) {
   .event-sub-section-main h4,
   .event-sub-section-main .h4,
-  .course-includes h6,
-  .course-includes .h6,
-  .event-info-cart h6 {
+  .course-includes h6 {
     font-size: 18px !important;
     line-height: 28px !important;
   }
@@ -622,14 +582,6 @@
     justify-content: space-between;
     margin-right: 0px;
   }
-  .event-info-cart .book-info {
-    margin: 0 !important;
-  }
-  .event-info-cart p.ticket-cost {
-    font-size: 28px !important;
-    line-height: 38px !important;
-  }
-
   #countdown .timer-body-block {
     justify-content: center;
   }

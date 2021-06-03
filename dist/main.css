@@ -16709,9 +16709,7 @@ header #search-nav.appear {
   border-radius: 8px; }
   .event-info-cart .ticket-cost,
   .event-info-cart form,
-  .event-info-cart .footer__wrapper_social,
-  .event-info-cart .event-info-cart h6,
-  .event-info-cart .event-info-cart .h6 {
+  .event-info-cart .footer__wrapper_social {
     padding: 0px 30px; }
   .event-info-cart .ticket-cost {
     font-family: poppin-regular;
@@ -16808,8 +16806,6 @@ header #search-nav.appear {
     padding-bottom: 0; }
   .event-info-tab-content .nav-overview p {
     font-size: 14px; }
-  .event-info-cart {
-    margin-top: 0; }
   .event-info {
     padding-bottom: 30px; }
   .similar-events .shape {
@@ -16848,8 +16844,6 @@ header #search-nav.appear {
     padding-bottom: 0; }
   .event-info-tab-content .nav-overview p {
     font-size: 14px; }
-  .event-info-cart {
-    margin-top: 0; }
   .event-info {
     padding-bottom: 30px; }
   .similar-events .shape {
@@ -16868,8 +16862,6 @@ header #search-nav.appear {
     margin-top: 30px; }
   .event-time {
     margin-bottom: 20px; }
-  .event-info-cart p.ticket-cost {
-    text-align: center; }
   .event-sub-section {
     padding-bottom: 25px; }
   .event-info-main .image {
@@ -16880,8 +16872,6 @@ header #search-nav.appear {
     padding-bottom: 0; }
   .event-info-tab-content .nav-overview p {
     font-size: 14px; }
-  .event-info-cart {
-    margin-top: 0; }
   .event-info {
     padding-bottom: 30px; }
   .similar-events .shape {
@@ -16892,8 +16882,7 @@ header #search-nav.appear {
 
 @media (max-width: 991px) {
   .course-includes h6, .course-includes .h6,
-  .course-includes .h6, .event-info-cart h6, .event-info-cart .h6,
-  .event-info-cart .h6,
+  .course-includes .h6,
   .course-overview-main-item h6,
   .course-overview-main-item .h6,
   .course-overview-main-item .h6 {
@@ -16910,8 +16899,6 @@ header #search-nav.appear {
     margin-top: 30px; }
   .event-time {
     margin-bottom: 20px; }
-  .event-info-cart p.ticket-cost {
-    text-align: center; }
   .event-sub-section {
     padding-bottom: 25px; }
   .event-info-main .image {
@@ -16922,8 +16909,6 @@ header #search-nav.appear {
     padding-bottom: 0; }
   .event-info-tab-content .nav-overview p {
     font-size: 14px; }
-  .event-info-cart {
-    margin-top: 0; }
   .event-info {
     padding-bottom: 30px; }
   .similar-events .shape {
@@ -16937,8 +16922,6 @@ header #search-nav.appear {
     margin-top: 50px; }
   .event-time {
     margin-bottom: 20px; }
-  .event-info-cart p.ticket-cost {
-    text-align: center; }
   .event-sub-section {
     padding-bottom: 25px; }
   .event-info-main .image {
@@ -16949,8 +16932,6 @@ header #search-nav.appear {
     padding-bottom: 0; }
   .event-info-tab-content .nav-overview p {
     font-size: 14px; }
-  .event-info-cart {
-    margin-top: 30px; }
   .event-info {
     padding-bottom: 30px; }
   .similar-events .shape {
@@ -16983,8 +16964,7 @@ header #search-nav.appear {
 
 @media (min-width: 320px) and (max-width: 574px) {
   .event-sub-section-main h4, .event-sub-section-main .h4,
-  .event-sub-section-main .h4, .course-includes h6, .course-includes .h6,
-  .course-includes .h6, .event-info-cart h6, .event-info-cart .h6 {
+  .event-sub-section-main .h4, .course-includes h6, .course-includes .h6 {
     font-size: 18px !important;
     line-height: 28px !important; }
   .course-overview-nav {
@@ -17034,11 +17014,6 @@ header #search-nav.appear {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-right: 0px; }
-  .event-info-cart .book-info {
-    margin: 0 !important; }
-  .event-info-cart p.ticket-cost {
-    font-size: 28px !important;
-    line-height: 38px !important; }
   #countdown .timer-body-block {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -17146,8 +17121,6 @@ header #search-nav.appear {
       font-size: 16px; }
 
 @media (max-width: 420px) {
-  .event-info-cart p.ticket-cost {
-    text-align: center; }
   .events-location-map iframe {
     width: 100%; }
   .events-location-text {
