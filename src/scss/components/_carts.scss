@@ -142,6 +142,7 @@
     }
     .productContent {
       display: flex;
+      align-items: center;
       border-bottom: 1px solid #ebebf2;
       padding: 15px 0px;
       &:nth-child(1) {
@@ -206,5 +207,21 @@
     h6 {
       margin-bottom: 14px;
     }
+  }
+}
+
+// Responsive
+@media (max-width: 767px) {
+  .cart__includes-info .productContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart__includes-info .productContent-item:nth-child(1) {
+    width: auto;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .cart__includes-info .productContent-item:nth-child(2) {
+    width: 100%;
   }
 }
