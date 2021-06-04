@@ -671,7 +671,7 @@ img.mfp-img {
 .font-title--card {
   font-size: 20px;
   line-height: 30px;
-  font-family: poppin-medium; }
+  font-family: poppin-semiBold; }
   @media (max-width: 767px) {
     .font-title--card {
       font-size: 16px;
@@ -15152,7 +15152,7 @@ header #search-nav.appear {
       color: #202029 !important; }
     .about-feature.dark-feature p {
       color: #8f8fa3 !important; }
-  .about-feature h4, .about-feature .h4 {
+  .about-feature h5, .about-feature .h5 {
     margin-bottom: 15px; }
   .about-feature p {
     color: #666575; }
@@ -17645,11 +17645,8 @@ header #search-nav.appear {
           border-radius: 50%;
           background-color: white;
           color: #202029; }
-      .coursedescription-header-start .topic-info-text h6, .coursedescription-header-start .topic-info-text .h6 {
-        font-family: poppin-medium;
-        font-size: 24px; }
-        .coursedescription-header-start .topic-info-text h6 a, .coursedescription-header-start .topic-info-text .h6 a {
-          display: block; }
+      .coursedescription-header-start .topic-info-text h6 a, .coursedescription-header-start .topic-info-text .h6 a {
+        display: block; }
       .coursedescription-header-start .topic-info-text .lesson-hours {
         display: -webkit-box;
         display: -webkit-flex;
