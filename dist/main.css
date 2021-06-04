@@ -16703,59 +16703,6 @@ header #search-nav.appear {
   .event-info-tab-content .nav-overview p {
     font-size: 16px; }
 
-.event-info-cart {
-  padding: 30px 0px;
-  background-color: white;
-  border-radius: 8px; }
-  .event-info-cart .ticket-cost,
-  .event-info-cart form,
-  .event-info-cart .footer__wrapper_social {
-    padding: 0px 30px; }
-  .event-info-cart .ticket-cost {
-    font-family: poppin-regular;
-    color: #202029; }
-  .event-info-cart .course-includes {
-    padding: 24px 30px; }
-  .event-info-cart form {
-    margin-bottom: 25px; }
-    .event-info-cart form p {
-      font-size: 12px;
-      line-height: 15px;
-      color: #8f8fa3;
-      margin-top: 18px; }
-      .event-info-cart form p a {
-        color: #1089ff; }
-  .event-info-cart .book-info {
-    border-top: 1px solid #ebebf2;
-    border-bottom: 1px solid #ebebf2;
-    padding-top: 20px;
-    padding-bottom: 15px; }
-    .event-info-cart .book-info li {
-      padding-left: 0;
-      padding-right: 0;
-      color: #666575;
-      font-family: poppin-medium;
-      font-size: 14px;
-      border-left: none !important;
-      border-right: none !important;
-      border-top: none !important; }
-      .event-info-cart .book-info li span {
-        color: #8f8fa3; }
-  .event-info-cart h6, .event-info-cart .h6 {
-    margin-top: 25px;
-    margin-bottom: 10px; }
-  .event-info-cart .social-share.footer__wrapper_social ul li {
-    margin-right: 10px; }
-    .event-info-cart .social-share.footer__wrapper_social ul li a {
-      border: 1px solid #ebebf2;
-      background-color: transparent;
-      color: #42414b;
-      -webkit-transition: 0.3s all linear;
-      transition: 0.3s all linear; }
-      .event-info-cart .social-share.footer__wrapper_social ul li a:hover {
-        color: white;
-        background-color: #0264ed; }
-
 .similar-events {
   padding: 100px 0px;
   background-color: rgba(255, 255, 255, 0.4);

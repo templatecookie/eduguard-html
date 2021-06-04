@@ -117,85 +117,85 @@
     }
   }
 
-  &-cart {
-    padding: 30px 0px;
-    background-color: white;
-    border-radius: 8px;
-    .ticket-cost,
-    form,
-    .footer__wrapper_social {
-      padding: 0px 30px;
-    }
+  // &-cart {
+  //   padding: 30px 0px;
+  //   background-color: white;
+  //   border-radius: 8px;
+  //   .ticket-cost,
+  //   form,
+  //   .footer__wrapper_social {
+  //     padding: 0px 30px;
+  //   }
 
-    .ticket-cost {
-      font-family: poppin-regular;
-      color: #202029;
-    }
+  //   .ticket-cost {
+  //     font-family: poppin-regular;
+  //     color: #202029;
+  //   }
 
-    .course-includes {
-      padding: 24px 30px;
-    }
+  //   .course-includes {
+  //     padding: 24px 30px;
+  //   }
 
-    form {
-      margin-bottom: 25px;
+  //   form {
+  //     margin-bottom: 25px;
 
-      p {
-        font-size: 12px;
-        line-height: 15px;
-        color: #8f8fa3;
-        margin-top: 18px;
+  //     p {
+  //       font-size: 12px;
+  //       line-height: 15px;
+  //       color: #8f8fa3;
+  //       margin-top: 18px;
 
-        a {
-          color: #1089ff;
-        }
-      }
-    }
+  //       a {
+  //         color: #1089ff;
+  //       }
+  //     }
+  //   }
 
-    .book-info {
-      border-top: 1px solid #ebebf2;
-      border-bottom: 1px solid #ebebf2;
-      padding-top: 20px;
-      padding-bottom: 15px;
+  //   .book-info {
+  //     border-top: 1px solid #ebebf2;
+  //     border-bottom: 1px solid #ebebf2;
+  //     padding-top: 20px;
+  //     padding-bottom: 15px;
 
-      li {
-        padding-left: 0;
-        padding-right: 0;
-        color: #666575;
-        font-family: poppin-medium;
-        font-size: 14px;
-        border-left: none !important;
-        border-right: none !important;
-        border-top: none !important;
+  //     li {
+  //       padding-left: 0;
+  //       padding-right: 0;
+  //       color: #666575;
+  //       font-family: poppin-medium;
+  //       font-size: 14px;
+  //       border-left: none !important;
+  //       border-right: none !important;
+  //       border-top: none !important;
 
-        span {
-          color: #8f8fa3;
-        }
-      }
-    }
+  //       span {
+  //         color: #8f8fa3;
+  //       }
+  //     }
+  //   }
 
-    h6 {
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
+  //   h6 {
+  //     margin-top: 25px;
+  //     margin-bottom: 10px;
+  //   }
 
-    .social-share {
-      &.footer__wrapper_social ul li {
-        margin-right: 10px;
+  //   .social-share {
+  //     &.footer__wrapper_social ul li {
+  //       margin-right: 10px;
 
-        a {
-          border: 1px solid #ebebf2;
-          background-color: transparent;
-          color: #42414b;
-          transition: 0.3s all linear;
+  //       a {
+  //         border: 1px solid #ebebf2;
+  //         background-color: transparent;
+  //         color: #42414b;
+  //         transition: 0.3s all linear;
 
-          &:hover {
-            color: white;
-            background-color: #0264ed;
-          }
-        }
-      }
-    }
-  }
+  //         &:hover {
+  //           color: white;
+  //           background-color: #0264ed;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .similar-events {
