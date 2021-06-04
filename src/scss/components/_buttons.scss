@@ -11,7 +11,7 @@
   &:focus {
     box-shadow: none !important;
   }
-  &.btn-outline-info {
+  &-outline-info {
     border: 2px solid #1089ff;
     color: #1089ff;
     border-radius: 3px;
@@ -24,32 +24,32 @@
       border-color: transparent;
     }
   }
-  &.btn-primary {
+  &-primary {
     color: white;
     background-color: color(primary) !important;
     &:hover {
       background-color: color(secondary) !important;
     }
   }
-  &.btn-dark {
+  &-dark {
     background-color: color(dark) !important;
   }
-  &.btn-link {
+  &-link {
     color: color(dark) !important;
     text-decoration: none;
   }
-  &.btn-md,
-  &.btn-lg {
+  &-md,
+  &-lg {
     letter-spacing: 0.04em;
     font-weight: 600 !important;
     text-transform: uppercase;
     font-family: poppin-semiBold;
   }
-  &.btn-md {
+  &-md {
     padding: 16px 24px !important;
     text-transform: uppercase;
   }
-  &.btn-lg {
+  &-lg {
     padding: 19px 32px !important;
   }
   &.bg-primary {
@@ -72,7 +72,7 @@
       color: white;
     }
   }
-  &.btn-outline-primary {
+  &-outline-primary {
     border-color: color(lightBlack) !important;
     background-color: transparent !important;
     color: color(lightBlack) !important;
@@ -82,7 +82,7 @@
       background-color: color(lightBlack) !important;
     }
   }
-  &.btn-outline-primary--dark {
+  &-outline-primary--dark {
     border: 2px solid #1089ff;
     background-color: transparent !important;
     color: color(primary) !important;
@@ -98,14 +98,18 @@
     color: color(light);
     background-color: color(ash) !important;
   }
+  &-success {
+    background-color: #00af91;
+    color: #fff;
+  }
 
-  &.btn-outline-light {
+  &-outline-light {
     border-color: color(ash) !important;
     background-color: transparent !important;
     color: color(lowBlack) !important;
   }
 
-  &.btn-shadow {
+  &-shadow {
     color: color(lightBlack);
     background: #ffffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
@@ -114,7 +118,7 @@
       box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
     }
   }
-  &.btn-shadow--dark {
+  &-shadow--dark {
     color: color(lightBlack);
     background: #ffffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
@@ -124,7 +128,7 @@
       box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
     }
   }
-  &.btn-shadow-light {
+  &-shadow-light {
     color: color(lowBlack);
     background: #ffffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
@@ -150,7 +154,7 @@
       text-decoration: underline;
     }
   }
-  &.btn-text-light {
+  &-text-light {
     color: color(lowBlack);
   }
 }
@@ -172,17 +176,6 @@
       border-color: rgba(3, 169, 244, 0.2) !important;
     }
   }
-}
-
-@media (max-width: 991px) {
-  // .btn {
-  //   &.btn-lg {
-  //     padding: 10px 15px !important;
-  //   }
-  //   &.btn-md {
-  //     padding: 8px 15px !important;
-  //   }
-  // }
 }
 
 // Medium devices 768px - 991px
