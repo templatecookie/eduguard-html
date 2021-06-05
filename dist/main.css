@@ -10422,6 +10422,7 @@ button:focus {
   overflow: hidden;
   background-color: #fff;
   padding: 30px 20px;
+  border-radius: 5px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   text-align: center; }
@@ -12315,6 +12316,9 @@ header #search-nav.appear {
   .banner-two-start h1, .banner-two-start .h1,
   .banner-two-start p {
     text-align: left; } }
+
+.feature .cardFeature {
+  margin-bottom: 24px; }
 
 .populercourse {
   padding: 100px 0;
