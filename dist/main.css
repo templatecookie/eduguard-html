@@ -10415,6 +10415,64 @@ button:focus {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
 
+.cardFeature {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 30px 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  text-align: center; }
+  .cardFeature:hover {
+    -webkit-box-shadow: 0px 25px 80px 0px #0a09561f;
+            box-shadow: 0px 25px 80px 0px #0a09561f; }
+    .cardFeature:hover .cardFeature__icon--bg-book {
+      background: #00af92; }
+    .cardFeature:hover .cardFeature__icon--bg-user {
+      background: #1089ff; }
+    .cardFeature:hover .cardFeature__icon--bg-clock {
+      background: #f15c4c; }
+    .cardFeature:hover .cardFeature__icon--bg-book svg, .cardFeature:hover .cardFeature__icon--bg-user svg, .cardFeature:hover .cardFeature__icon--bg-clock svg {
+      color: #fff; }
+  .cardFeature__icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    .cardFeature__icon--bg-book {
+      background: rgba(0, 175, 146, 0.1); }
+      .cardFeature__icon--bg-book svg {
+        color: #00af91; }
+    .cardFeature__icon--bg-user {
+      background: rgba(16, 137, 255, 0.1); }
+      .cardFeature__icon--bg-user svg {
+        color: #1089ff; }
+    .cardFeature__icon--bg-clock {
+      background: rgba(241, 92, 76, 0.1); }
+      .cardFeature__icon--bg-clock svg {
+        color: #f15c4c; }
+  .cardFeature h5.font-title--xs, .cardFeature .font-title--xs.h5 {
+    margin-bottom: 4px; }
+  .cardFeature p {
+    font-family: poppin-regular; }
+
 .form-element {
   margin-bottom: 20px;
   position: relative; }
@@ -21251,6 +21309,15 @@ header {
 .text-button a {
   margin-bottom: 30px; }
 
+.section {
+  position: relative;
+  padding: 100px 0px; }
+  @media (max-width: 767px) {
+    .section {
+      padding: 60px 0px; } }
+  .section--bg-offwhite {
+    background-color: #ebebf2; }
+
 .browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
 .students {
   position: relative; }
@@ -21357,8 +21424,6 @@ header {
     display: none; } }
 
 @media (max-width: 991px) {
-  section {
-    padding: 90px 0px !important; }
   .signup-area {
     overflow-y: auto !important; }
   .signup-area-image {
@@ -21393,8 +21458,6 @@ header {
     margin-top: 0px; } }
 
 @media (max-width: 767px) {
-  section {
-    padding: 60px 0px !important; }
   .about-intro {
     padding: 0px !important; }
   .signup-area {
@@ -21407,8 +21470,6 @@ header {
     margin-top: 0px; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  section {
-    padding: 45px 0px !important; }
   .signup-area {
     height: auto !important; }
   .contactHero {
