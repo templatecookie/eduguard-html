@@ -656,6 +656,10 @@ img.mfp-img {
 .font-title--md {
   font-size: 40px;
   line-height: 50px; }
+  @media (max-width: 767px) {
+    .font-title--md {
+      font-size: 26px;
+      line-height: 36px; } }
 
 .font-title--sm {
   font-size: 32px;
@@ -21321,6 +21325,8 @@ header {
       padding: 60px 0px; } }
   .section--bg-offwhite {
     background-color: #ebebf2; }
+  .section .font-title--md {
+    margin-bottom: 50px; }
 
 .browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
 .students {
