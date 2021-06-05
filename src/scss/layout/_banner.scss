@@ -73,25 +73,6 @@
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
 
-@media (max-width: 1200px) {
-  .banner-two-start {
-    h1 {
-      font-size: 58px;
-      line-height: 72px;
-    }
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .banner {
-    &-two-start {
-      h1 {
-        font-size: 48px;
-        line-height: 62px;
-      }
-    }
-  }
-}
 // large devices 992px - 1169px
 @media (min-width: 992px) and (max-width: 1199px) {
   .banner {

@@ -20,6 +20,14 @@
   &--lg {
     font-size: 80px;
     line-height: 100px;
+    @media (max-width: 1024px) {
+      font-size: 58px;
+      line-height: 68px;
+    }
+    @media (max-width: 767px) {
+      font-size: 36px;
+      line-height: 46px;
+    }
   }
   &--md {
     font-size: 40px;
