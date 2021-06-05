@@ -1,3 +1,12 @@
+// Section spacing and common css
+.section {
+  position: relative;
+  padding: 100px 0px;
+  @media (max-width: 767px) {
+    padding: 60px 0px;
+  }
+}
+
 // slic-dots
 %slickdots {
   position: relative;
@@ -153,9 +162,9 @@
   }
 
   // Section spacing
-  section {
-    @extend %space-1;
-  }
+  // section {
+  //   @extend %space-1;
+  // }
   // extra space remove(top)
   .checkout-area,
   .contactHero,
@@ -192,9 +201,9 @@
   }
 
   // Section spacing
-  section {
-    @extend %space-2;
-  }
+  // section {
+  //   @extend %space-2;
+  // }
 
   .about-intro {
     padding: 0px !important;
@@ -232,9 +241,9 @@
   }
 
   // Section spacing
-  section {
-    @extend %space;
-  }
+  // section {
+  //   @extend %space;
+  // }
   .contactHero {
     padding-top: 0px !important;
   }
