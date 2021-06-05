@@ -671,7 +671,7 @@ img.mfp-img {
 .font-title--card {
   font-size: 20px;
   line-height: 30px;
-  font-family: poppin-semiBold; }
+  font-family: poppin-medium; }
   @media (max-width: 767px) {
     .font-title--card {
       font-size: 16px;
