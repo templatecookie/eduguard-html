@@ -13352,15 +13352,6 @@ header #search-nav.appear {
   left: 0px;
   z-index: -1; }
 
-.learn-with {
-  background-color: rgba(235, 235, 242, 0.7);
-  position: relative; }
-  .learn-with-shape img {
-    position: absolute; }
-  .learn-with-shape .circle-06 {
-    top: 60px;
-    right: 65px; }
-
 .learning-rules {
   padding: 100px 0px;
   position: relative; }
@@ -13642,8 +13633,6 @@ header #search-nav.appear {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
-  .learn-with-shape {
-    display: none; }
   .learning-rules {
     padding: 30px 0px; }
     .learning-rules-item {
@@ -13752,8 +13741,6 @@ header #search-nav.appear {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
-  .learn-with-shape {
-    display: none; }
   .learning-rules {
     padding: 30px 0px; }
     .learning-rules-item {
@@ -13854,8 +13841,6 @@ header #search-nav.appear {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-  .learn-with-shape {
-    display: none; }
   .learning-rules {
     padding: 30px 0px; }
     .learning-rules-item {
@@ -13956,8 +13941,6 @@ header #search-nav.appear {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-  .learn-with-shape {
-    display: none; }
   .learning-rules {
     padding: 30px 0px; }
     .learning-rules-item {
@@ -15078,69 +15061,6 @@ header #search-nav.appear {
       .featured-course .featured-instructor-text p {
         font-size: 18px !important;
         margin-top: 20px; }
-  .featured-course .chose-course {
-    padding: 100px 0px; }
-    .featured-course .chose-course h3, .featured-course .chose-course .h3 {
-      margin-bottom: 50px; }
-    .featured-course .chose-course-item {
-      cursor: pointer;
-      padding: 30px 20px;
-      background-color: white;
-      border-radius: 5px;
-      border: 1px solid #ebebf2;
-      -webkit-transition: 0.3s all linear;
-      transition: 0.3s all linear; }
-      .featured-course .chose-course-item:hover {
-        -webkit-box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
-                box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12); }
-        .featured-course .chose-course-item:hover svg {
-          color: white; }
-        .featured-course .chose-course-item:hover .hours-icon {
-          background-color: #00af91; }
-        .featured-course .chose-course-item:hover .user-icon {
-          background-color: #1089ff !important; }
-        .featured-course .chose-course-item:hover .book-icon {
-          background-color: #f15c4c !important; }
-      .featured-course .chose-course-item .book-icon {
-        background-color: rgba(241, 92, 76, 0.1) !important;
-        color: #f15c4c !important; }
-      .featured-course .chose-course-item .user-icon {
-        background-color: rgba(16, 137, 255, 0.1) !important;
-        color: #1089ff !important; }
-      .featured-course .chose-course-item .book-icon,
-      .featured-course .chose-course-item .user-icon,
-      .featured-course .chose-course-item .hours-icon {
-        -webkit-transition: 0.3s all linear;
-        transition: 0.3s all linear;
-        background: rgba(0, 175, 145, 0.1);
-        border-radius: 5px;
-        height: 70px;
-        width: 70px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        color: #00af91;
-        margin-bottom: 20px; }
-        .featured-course .chose-course-item .book-icon svg,
-        .featured-course .chose-course-item .user-icon svg,
-        .featured-course .chose-course-item .hours-icon svg {
-          -webkit-transition: 0.3s all linear;
-          transition: 0.3s all linear; }
-      .featured-course .chose-course-item h5, .featured-course .chose-course-item .h5 {
-        text-align: center;
-        font-family: poppin-medium;
-        margin-bottom: 12px; }
-      .featured-course .chose-course-item p {
-        text-align: center; }
   .featured-course .testimonial-area {
     padding: 100px 0px;
     background-color: white; }
@@ -15333,11 +15253,6 @@ header #search-nav.appear {
         .featured-course .featured-instructor-text p {
           font-size: 14px !important;
           margin-top: 15px; }
-    .featured-course .chose-course {
-      padding: 30px 0px; }
-      .featured-course .chose-course h3, .featured-course .chose-course .h3 {
-        margin-bottom: 20px;
-        font-size: 26px !important; }
     .featured-course .testimonial-area {
       padding: 30px 0px; }
       .featured-course .testimonial-area h3, .featured-course .testimonial-area .h3 {
@@ -15369,8 +15284,6 @@ header #search-nav.appear {
       bottom: 370px; }
     .featured-course .featured-course .featured-course-text h6 a, .featured-course .featured-course .featured-course-text .h6 a {
       font-size: 18px !important; }
-    .featured-course .chose-course-item h5, .featured-course .chose-course-item .h5 {
-      font-size: 22px !important; }
     .featured-course .join-area-image .img-01 {
       top: 100px;
       left: 50px; }
@@ -15436,9 +15349,6 @@ header #search-nav.appear {
     .featured-course .featured-instructor-text .h5 {
       font-size: 18px !important;
       line-height: 28px !important; }
-    .featured-course .chose-course-item h5, .featured-course .chose-course-item .h5,
-    .featured-course .chose-course-item .h5 {
-      margin-bottom: 0px; }
     .featured-course .featured-instructor-image img {
       width: 100%; } }
 
@@ -21379,8 +21289,6 @@ header {
 .main-instructor-featured-shape img, .banner-two-start h1, .banner-two-start .h1, .browse-categories h3, .browse-categories .h3,
 .main-heading h3,
 .main-heading .h3,
-.chose-course h3,
-.chose-course .h3,
 .learning-rules-starts h3,
 .learning-rules-starts .h3,
 .about-services-shape img,

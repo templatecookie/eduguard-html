@@ -224,22 +224,6 @@
   left: 0px;
   z-index: -1;
 }
-// Learn With Starts Here
-.learn-with {
-  background-color: rgba($color: #ebebf2, $alpha: 0.7);
-  position: relative;
-
-  &-shape {
-    img {
-      position: absolute;
-    }
-
-    .circle-06 {
-      top: 60px;
-      right: 65px;
-    }
-  }
-}
 
 // Learning Rules Starts Here
 .learning-rules {
@@ -692,12 +676,6 @@
     }
   }
 
-  .learn-with {
-    &-shape {
-      display: none;
-    }
-  }
-
   .learning-rules {
     padding: 30px 0px;
 
@@ -877,12 +855,6 @@
     }
   }
 
-  .learn-with {
-    &-shape {
-      display: none;
-    }
-  }
-
   .learning-rules {
     padding: 30px 0px;
 
@@ -1045,12 +1017,6 @@
     }
   }
 
-  .learn-with {
-    &-shape {
-      display: none;
-    }
-  }
-
   .learning-rules {
     padding: 30px 0px;
 
@@ -1210,12 +1176,6 @@
 
     &-area {
       flex-direction: column;
-    }
-  }
-
-  .learn-with {
-    &-shape {
-      display: none;
     }
   }
 
