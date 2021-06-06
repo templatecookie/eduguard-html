@@ -7,14 +7,33 @@
   }
   // section background colors
   &--bg-offwhite {
+    background-color: #ebebf2;
+  }
+  &--bg-offwhite-one {
     background: rgba(235, 235, 242, 0.7);
   }
-  &--bg-offwhite &--bg-offgradient {
+  &--bg-offwhite-two {
+    background: rgba(235, 235, 242, 0.6);
+  }
+  &--bg-offwhite-three {
+    background: rgba(235, 235, 242, 0.5);
+  }
+  &--bg-offwhite-four {
+    background: rgba(235, 235, 242, 0.4);
+  }
+  &--bg-offgradient {
     background: linear-gradient(
       180deg,
       #ebebf2 0%,
       rgba(235, 235, 242, 0.4) 100%
     );
+  }
+
+  &--white-one {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  &--white-two {
+    background: rgba(255, 255, 255, 0.3);
   }
 
   // Section title spacing
