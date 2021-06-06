@@ -279,31 +279,33 @@
   });
 
   //Event _Slider
-  $('.browse-categories-area').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
-    autoplaySpeed: 2000,
-    nextArrow: ' .browse__right--arrow',
-    prevArrow: ' .browse__left--arrow',
-    responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
+  // $('.browse-categories-area').slick({
+  //   infinite: true,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: false,
+  //   arrows: true,
+  //   autoplaySpeed: 2000,
+  //   centerMode: true,
+  //   centerPadding: '10px',
+  //   nextArrow: ' .browse__right--arrow',
+  //   prevArrow: ' .browse__left--arrow',
+  //   // responsive: [
+  //   //   {
+  //   //     breakpoint: 1199,
+  //   //     settings: {
+  //   //       slidesToShow: 2,
+  //   //     },
+  //   //   },
+  //   //   {
+  //   //     breakpoint: 768,
+  //   //     settings: {
+  //   //       slidesToShow: 1,
+  //   //       slidesToScroll: 1,
+  //   //     },
+  //   //   },
+  //   // ],
+  // });
 
   // filter items on button click
   $('.populercourse-ist').on('click', 'li', function () {
