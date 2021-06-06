@@ -197,24 +197,6 @@
     }
   }
 
-  // Section spacing
-  // section {
-  //   @extend %space-1;
-  // }
-  // extra space remove(top)
-  .checkout-area,
-  .contactHero,
-  .event-sub-section,
-  .event-info,
-  .faq-area,
-  .banner-two,
-  .featured-categories,
-  .brands-area-two,
-  .browse-categories,
-  .instructor-courses,
-  .verify {
-    padding-top: 30px !important;
-  }
   // extra space remove(bottom)
   .get-started {
     padding-bottom: 30px !important;
@@ -276,10 +258,6 @@
     height: auto !important;
   }
 
-  // Section spacing
-  // section {
-  //   @extend %space;
-  // }
   .contactHero {
     padding-top: 0px !important;
   }

@@ -192,13 +192,7 @@
 }
 // Popular Courses Starts Here
 .featured-popular-courses {
-  padding: 100px 0px;
-  background-color: rgba($color: #ebebf2, $alpha: 0.5);
-  position: relative;
-
   &-heading {
-    margin-bottom: 50px;
-
     .main-heading {
       h3 {
         color: #202029;
@@ -259,12 +253,9 @@
     }
   }
 
-  // .tab-content {
-  //   .btn-primary {
-  //     margin-top: 50px;
-  //     padding: 19px 32px;
-  //   }
-  // }
+  .contentCard {
+    margin-bottom: 24px;
+  }
 }
 
 // Students Says Starts Here
@@ -602,8 +593,6 @@
   }
 
   .featured-popular-courses {
-    padding: 30px 0px;
-
     &-shape {
       display: none;
     }
@@ -700,7 +689,7 @@
 @media (max-width: 767px) {
   // Homepage -01
   .main-banner {
-    padding: 90px 0px;
+    padding: 60px 0px;
   }
   .banner-input .select-button {
     padding-left: 0px;
@@ -791,8 +780,6 @@
   }
 
   .featured-popular-courses {
-    padding: 30px 0px;
-
     &-shape {
       display: none;
     }
@@ -948,8 +935,6 @@
   }
 
   .featured-popular-courses {
-    padding: 30px 0px;
-
     &-shape {
       display: none;
     }
@@ -1102,8 +1087,6 @@
   }
 
   .featured-popular-courses {
-    padding: 30px 0px;
-
     &-shape {
       display: none;
     }

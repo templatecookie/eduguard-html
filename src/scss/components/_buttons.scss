@@ -10,6 +10,12 @@
   text-transform: capitalize;
   font-family: poppin-medium;
   transition: all 0.2s linear;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
   &-md,
   &-lg {
     border: 0px;
@@ -24,6 +30,9 @@
 
   &-lg {
     padding: 19px 32px;
+    @media (max-width: 767px) {
+      padding: 12px 19px;
+    }
   }
 
   // Dark buttons
@@ -116,180 +125,6 @@
     }
   }
 }
-
-// .btn {
-//   padding: 12px 19px;
-//   border: 0px;
-//   outline: 0px;
-//   font-size: 16px;
-//   line-height: 24px;
-//   font-family: poppin-medium;
-//   border-radius: 4px;
-//   text-transform: capitalize;
-//   transition: 0.3s;
-//   &:focus {
-//     box-shadow: none !important;
-//   }
-//   &-outline-info {
-//     border: 2px solid #1089ff;
-//     color: #1089ff;
-//     border-radius: 3px;
-//     font-weight: 600;
-//     font-size: 14px;
-//     &:hover {
-//       background: #0264ed;
-//       box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
-//       color: white;
-//       border-color: transparent;
-//     }
-//   }
-
-//   &-primary {
-//     color: white;
-//     background-color: color(primary) !important;
-//     &:hover {
-//       background-color: color(secondary) !important;
-//     }
-//   }
-
-//   &-dark {
-//     background-color: color(dark) !important;
-//   }
-
-//   &-link {
-//     color: color(dark) !important;
-//     text-decoration: none;
-//   }
-
-//   &-md,
-//   &-lg {
-//     letter-spacing: 0.04em;
-//     font-weight: 600 !important;
-//     text-transform: uppercase;
-//     font-family: poppin-semiBold;
-//   }
-
-//   &-md {
-//     padding: 16px 24px !important;
-//     text-transform: uppercase;
-//   }
-
-//   &.bg-primary {
-//     color: white;
-//     background-color: color(lightBlack) !important;
-//     transition: 0.3s;
-
-//     &:hover {
-//       background-color: color(primary) !important;
-//       color: white;
-//     }
-//   }
-
-//   &.bg-primary--dark {
-//     color: white;
-//     background-color: color(primary) !important;
-//     transition: 0.3s;
-
-//     &:hover {
-//       background-color: color(secondary) !important;
-//       color: white;
-//     }
-//   }
-
-//   &-outline-primary {
-//     border-color: color(lightBlack) !important;
-//     background-color: transparent !important;
-//     color: color(lightBlack) !important;
-
-//     &:hover {
-//       color: white !important;
-//       background-color: color(lightBlack) !important;
-//     }
-//   }
-
-//   &-outline-primary--dark {
-//     border: 2px solid #1089ff;
-//     background-color: transparent !important;
-//     color: color(primary) !important;
-
-//     &:hover {
-//       color: white !important;
-//       background-color: color(secondary) !important;
-//       border-color: color(secondary) !important;
-//     }
-//   }
-
-//   &.bg-light {
-//     color: color(light);
-//     background-color: color(ash) !important;
-//   }
-
-//   &-success {
-//     background-color: #00af91;
-//     color: #fff;
-//   }
-
-//   &-outline-light {
-//     border-color: color(ash) !important;
-//     background-color: transparent !important;
-//     color: color(lowBlack) !important;
-//   }
-
-//   &-shadow {
-//     color: color(lightBlack);
-//     background: #ffffff;
-//     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-//     border-radius: 3px;
-//     &:hover {
-//       box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
-//     }
-//   }
-
-//   &-shadow--dark {
-//     color: color(lightBlack);
-//     background: #ffffff;
-//     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-//     border-radius: 3px;
-//     &:hover {
-//       color: color(primary);
-//       box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
-//     }
-//   }
-
-//   &-shadow-light {
-//     color: color(lowBlack);
-//     background: #ffffff;
-//     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-//     border-radius: 3px;
-//   }
-
-//   &.bg-transparent {
-//     color: color(primary);
-//     background-color: transparent !important;
-//     &:hover {
-//       color: color(primary) !important;
-//       background-color: rgba(16, 137, 255, 0.1) !important;
-//     }
-//   }
-
-//   &.bg-transparent-light {
-//     color: color(lowBlack);
-//   }
-
-//   &.text-primary {
-//     border: 0;
-//     color: color(lightBlack) !important;
-
-//     &:hover {
-//       color: color(primary) !important;
-//       text-decoration: underline;
-//     }
-//   }
-
-//   &-text-light {
-//     color: color(lowBlack);
-//   }
-// }
 
 // social buttons
 .signinButtons {

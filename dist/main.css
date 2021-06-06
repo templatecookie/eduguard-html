@@ -679,6 +679,10 @@ img.mfp-img {
   line-height: 36px;
   color: #42414b;
   font-family: poppin-medium; }
+  @media (max-width: 767px) {
+    .font-title--xs {
+      font-size: 18px;
+      line-height: 28px; } }
 
 .font-title--card {
   font-size: 20px;
@@ -694,6 +698,10 @@ img.mfp-img {
   line-height: 24px;
   color: #8f8fa3;
   font-family: poppin-medium; }
+  @media (max-width: 767px) {
+    .font-para--lg {
+      font-size: 14px;
+      line-height: 24px; } }
 
 .font-para--md {
   font-size: 14px;
@@ -9905,6 +9913,10 @@ button:focus {
   font-family: poppin-medium;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear; }
+  @media (max-width: 767px) {
+    .button {
+      font-size: 14px;
+      line-height: 24px; } }
   .button-md, .button-lg {
     border: 0px;
     text-transform: uppercase;
@@ -9914,6 +9926,9 @@ button:focus {
     padding: 16px 24px; }
   .button-lg {
     padding: 19px 32px; }
+    @media (max-width: 767px) {
+      .button-lg {
+        padding: 12px 19px; } }
   .button--dark {
     background-color: #202029; }
     .button--dark:hover {
@@ -13307,74 +13322,70 @@ header #search-nav.appear {
   left: 0px;
   z-index: -1; }
 
-.learning-rules {
-  padding: 100px 0px;
-  position: relative; }
-  .learning-rules-item {
-    margin-bottom: 8px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-basis: 65px;
-        -ms-flex-preferred-size: 65px;
-            flex-basis: 65px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .learning-rules-item .item-number {
-      -webkit-flex-basis: 100px !important;
-          -ms-flex-preferred-size: 100px !important;
-              flex-basis: 100px !important; }
-      .learning-rules-item .item-number span {
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 120px;
-        color: rgba(0, 175, 145, 0.1); }
-    .learning-rules-item .item-text h6, .learning-rules-item .item-text .h6 {
-      color: #42414b !important;
-      font-size: 24px;
-      line-height: 36px;
-      font-family: poppin-medium;
-      margin-bottom: 6px; }
-    .learning-rules-item .item-text p {
-      max-width: 376px; }
-  .learning-rules-starts h2, .learning-rules-starts .h2 {
-    font-size: 48px !important;
-    color: #202029 !important;
-    margin-bottom: 20px; }
-  .learning-rules-starts .btn-primary {
-    padding: 19px 32px;
-    font-weight: 600; }
-  .learning-rules-ends {
-    padding-left: 80px;
-    margin-right: -80px;
-    position: relative;
-    z-index: 2; }
-    .learning-rules-ends-circle img {
-      position: absolute;
-      left: 250px;
-      top: -48px; }
-    .learning-rules-ends .earning-rules-ends-shape img {
-      position: absolute;
-      z-index: -2; }
-    .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-      top: 330px;
-      right: 40%;
-      -webkit-transform: translateX(-60%);
-              transform: translateX(-60%); }
-    .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-      top: -110px;
-      right: -70px; }
-  .learning-rules-shape img {
-    position: absolute; }
-  .learning-rules-shape .shape-01 {
-    top: 200px;
-    left: 185px; }
-  .learning-rules-shape .shape-02 {
-    bottom: 55px;
-    left: 40px; }
+.learning-rules-item {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 65px;
+      -ms-flex-preferred-size: 65px;
+          flex-basis: 65px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .learning-rules-item .item-number {
+    -webkit-flex-basis: 100px;
+        -ms-flex-preferred-size: 100px;
+            flex-basis: 100px; }
+    .learning-rules-item .item-number span {
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 120px;
+      color: rgba(0, 175, 145, 0.1); }
+  .learning-rules-item .item-text p {
+    max-width: 376px; }
+
+.learning-rules-starts h2, .learning-rules-starts .h2 {
+  margin-bottom: 20px; }
+
+.learning-rules-starts .btn-primary {
+  padding: 19px 32px;
+  font-weight: 600; }
+
+.learning-rules-ends {
+  padding-left: 80px;
+  margin-right: -80px;
+  position: relative;
+  z-index: 2; }
+  .learning-rules-ends-circle img {
+    position: absolute;
+    left: 250px;
+    top: -48px; }
+  .learning-rules-ends .earning-rules-ends-shape img {
+    position: absolute;
+    z-index: -2; }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: 355px;
+    right: 40%;
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%); }
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    top: -110px;
+    right: -70px; }
+
+.learning-rules-shape img {
+  position: absolute;
+  z-index: -1; }
+
+.learning-rules-shape .shape-01 {
+  top: 200px;
+  left: 185px; }
+
+.learning-rules-shape .shape-02 {
+  bottom: 55px;
+  left: 40px; }
 
 .about-services {
   padding: 100px 0px;
@@ -13483,12 +13494,6 @@ header #search-nav.appear {
     .main-become-instructor-item .main-text {
       text-align: center;
       margin-top: 30px; }
-      .main-become-instructor-item .main-text h6, .main-become-instructor-item .main-text .h6 {
-        color: #42414b !important;
-        font-size: 32px !important;
-        line-height: 40px;
-        font-weight: 600 !important;
-        margin-bottom: 10px !important; }
       .main-become-instructor-item .main-text p {
         margin-bottom: 20px; }
       .main-become-instructor-item .main-text .green-btn {
@@ -13505,13 +13510,24 @@ header #search-nav.appear {
   .about-services-shape,
   .learning-rules-shape,
   .featured-popular-courses-shape,
-  .learning-rules-ends-circle,
-  .earning-rules-ends-shape,
   .browse-categories-shape {
     display: none; }
   .main-banner,
   .learning-rules {
     overflow: hidden !important; } }
+
+@media (max-width: 1200px) {
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    top: -110px;
+    right: -15px; }
+  .learning-rules-ends-circle img {
+    left: 130px;
+    top: -44px; }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: 220px;
+    right: 65%; }
+  .learning-rules-item {
+    margin-bottom: 30px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .learning-rules-ends,
@@ -13521,18 +13537,9 @@ header #search-nav.appear {
   .main-events-featured-shape,
   .main-instructor-featured-shape,
   .about-services-shape,
-  .learning-rules-shape,
   .featured-popular-courses-shape,
-  .learning-rules-ends-circle,
-  .earning-rules-ends-shape,
   .browse-categories-shape {
     display: none; }
-  .learning-rules-starts {
-    text-align: center; }
-    .learning-rules-starts h2, .learning-rules-starts .h2 {
-      font-size: 30px !important; }
-  .learning-rules-item {
-    display: block !important; }
   .learning-rules-starts .btn-primary {
     margin-top: 35px; }
   .about-services h3, .about-services .h3 {
@@ -13560,12 +13567,63 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px; }
-    .learning-rules-ends img {
-      height: 450px;
-      -o-object-fit: contain;
-         object-fit: contain; }
+    .learning-rules-ends > img {
+      height: 450px; }
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    height: 450px;
+    top: 0px;
+    right: 30px; }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: auto;
+    bottom: 0px;
+    left: 115px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
   .about-services .testimonial__wrapper_item p {
-    text-align: center; } }
+    text-align: center; }
+  .learning-rules-ends {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    left: auto;
+    right: 150px; }
+  .learning-rules-ends-circle img {
+    left: 50px; }
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    display: none; }
+  .learning-rules-ends-circle img {
+    left: auto;
+    right: 0px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .learning-rules-ends-circle img {
+    left: auto;
+    right: 45px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .learning-rules-starts h2, .learning-rules-starts .h2,
+  .learning-rules-starts .h2 {
+    text-align: left; }
+  .learning-rules-item .item-number span {
+    font-size: 58px;
+    line-height: 68px; }
+  .learning-rules-ends {
+    padding-left: 0px;
+    margin-right: 0px; }
+  .learning-rules-item .item-number {
+    -webkit-flex-basis: 65px;
+        -ms-flex-preferred-size: 65px;
+            flex-basis: 65px; }
+  .learning-rules {
+    overflow: hidden; }
+  .learning-rules-shape .shape-02 {
+    bottom: -85px;
+    left: auto;
+    right: -45px; }
+  .learning-rules-item .item-text {
+    text-align: left; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .best-instructor-featured .mentor__img img {
@@ -13573,50 +13631,19 @@ header #search-nav.appear {
     height: auto !important; }
   .main-banner-end {
     margin-right: 0; }
-  .browse-categories {
-    padding: 30px 0px; }
-    .browse-categories h3, .browse-categories .h3 {
-      margin-bottom: 20px; }
-    .browse-categories .btn-primary {
-      margin-top: 20px; }
-    .browse-categories-shape {
-      display: none; }
-    .browse-categories-item {
-      margin-right: 20px;
-      margin-bottom: 20px; }
-    .browse-categories-area {
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-  .learning-rules {
-    padding: 30px 0px; }
-    .learning-rules-item {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .learning-rules-item .item-number {
-        margin-right: 0; }
-      .learning-rules-item .item-text {
-        text-align: center; }
-        .learning-rules-item .item-text h6, .learning-rules-item .item-text .h6 {
-          font-size: 20px !important; }
-    .learning-rules-shape {
-      display: none; }
-    .learning-rules-starts {
-      text-align: center; }
-      .learning-rules-starts h2, .learning-rules-starts .h2 {
-        font-size: 26px !important; }
-      .learning-rules-starts .btn-primary {
-        margin-top: 20px; }
-    .learning-rules-ends {
-      margin-right: 0;
-      padding-left: 0;
-      margin-top: 30px; }
-      .learning-rules-ends .learning-rules-ends-circle,
-      .learning-rules-ends .earning-rules-ends-shape {
-        display: none; }
+  .browse-categories h3, .browse-categories .h3 {
+    margin-bottom: 20px; }
+  .browse-categories .btn-primary {
+    margin-top: 20px; }
+  .browse-categories-shape {
+    display: none; }
+  .browse-categories-item {
+    margin-right: 20px;
+    margin-bottom: 20px; }
+  .browse-categories-area {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .about-services {
     padding: 30px 0px; }
     .about-services h3, .about-services .h3 {
@@ -13673,7 +13700,9 @@ header #search-nav.appear {
   .main-instructor-featured .ourinstructor-active .slick-dots {
     margin-top: 15px; }
   .about-services .about__slider .slick-dots {
-    margin-top: 30px !important; } }
+    margin-top: 30px !important; }
+  .learning-rules-ends > img {
+    height: 350px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .best-instructor-featured .mentor__img img {
@@ -13681,50 +13710,19 @@ header #search-nav.appear {
     height: auto !important; }
   .main-banner-end {
     margin-right: 0; }
-  .browse-categories {
-    padding: 30px 0px; }
-    .browse-categories h3, .browse-categories .h3 {
-      margin-bottom: 20px; }
-    .browse-categories .btn-primary {
-      margin-top: 20px; }
-    .browse-categories-shape {
-      display: none; }
-    .browse-categories-item {
-      margin-right: 20px;
-      margin-bottom: 20px; }
-    .browse-categories-area {
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-  .learning-rules {
-    padding: 30px 0px; }
-    .learning-rules-item {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .learning-rules-item .item-number {
-        margin-right: 0; }
-      .learning-rules-item .item-text {
-        text-align: center; }
-        .learning-rules-item .item-text h6, .learning-rules-item .item-text .h6 {
-          font-size: 20px !important; }
-    .learning-rules-shape {
-      display: none; }
-    .learning-rules-starts {
-      text-align: center; }
-      .learning-rules-starts h2, .learning-rules-starts .h2 {
-        font-size: 26px !important; }
-      .learning-rules-starts .btn-primary {
-        margin-top: 20px; }
-    .learning-rules-ends {
-      margin-right: 0;
-      padding-left: 0;
-      margin-top: 30px; }
-      .learning-rules-ends .learning-rules-ends-circle,
-      .learning-rules-ends .earning-rules-ends-shape {
-        display: none; }
+  .browse-categories h3, .browse-categories .h3 {
+    margin-bottom: 20px; }
+  .browse-categories .btn-primary {
+    margin-top: 20px; }
+  .browse-categories-shape {
+    display: none; }
+  .browse-categories-item {
+    margin-right: 20px;
+    margin-bottom: 20px; }
+  .browse-categories-area {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .about-services {
     padding: 30px 0px; }
     .about-services h3, .about-services .h3 {
@@ -13779,52 +13777,44 @@ header #search-nav.appear {
     padding: 30px 0px; }
     .main-banner-end {
       margin-right: 0; }
-  .browse-categories {
-    padding: 30px 0px; }
-    .browse-categories h3, .browse-categories .h3 {
-      margin-bottom: 20px; }
-    .browse-categories .btn-primary {
-      margin-top: 20px; }
-    .browse-categories-shape {
-      display: none; }
-    .browse-categories-item {
-      margin-right: 0;
-      margin-bottom: 20px; }
-    .browse-categories-area {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-  .learning-rules {
-    padding: 30px 0px; }
-    .learning-rules-item {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .learning-rules-item .item-number {
-        margin-right: 0; }
-      .learning-rules-item .item-text {
-        text-align: center; }
-        .learning-rules-item .item-text h6, .learning-rules-item .item-text .h6 {
-          font-size: 20px !important; }
-    .learning-rules-shape {
-      display: none; }
-    .learning-rules-starts {
+  .browse-categories h3, .browse-categories .h3 {
+    margin-bottom: 20px; }
+  .browse-categories .btn-primary {
+    margin-top: 20px; }
+  .browse-categories-shape {
+    display: none; }
+  .browse-categories-item {
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .browse-categories-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .learning-rules-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .learning-rules-item .item-number {
+      margin-right: 0; }
+    .learning-rules-item .item-text {
       text-align: center; }
-      .learning-rules-starts h2, .learning-rules-starts .h2 {
-        font-size: 26px !important; }
-      .learning-rules-starts .btn-primary {
-        margin-top: 20px; }
-    .learning-rules-ends {
-      margin-right: 0;
-      padding-left: 0;
-      margin-top: 30px; }
-      .learning-rules-ends .learning-rules-ends-circle,
-      .learning-rules-ends .earning-rules-ends-shape {
-        display: none; }
+  .learning-rules-shape {
+    display: none; }
+  .learning-rules-starts {
+    text-align: center; }
+    .learning-rules-starts .btn-primary {
+      margin-top: 20px; }
+  .learning-rules-ends {
+    margin-right: 0;
+    padding-left: 0;
+    margin-top: 30px; }
+    .learning-rules-ends .learning-rules-ends-circle,
+    .learning-rules-ends .earning-rules-ends-shape {
+      display: none; }
   .about-services {
     padding: 30px 0px; }
     .about-services h3, .about-services .h3 {
@@ -13879,52 +13869,21 @@ header #search-nav.appear {
     padding: 30px 0px; }
     .main-banner-end {
       margin-right: 0; }
-  .browse-categories {
-    padding: 30px 0px; }
-    .browse-categories h3, .browse-categories .h3 {
-      margin-bottom: 20px; }
-    .browse-categories .btn-primary {
-      margin-top: 20px; }
-    .browse-categories-shape {
-      display: none; }
-    .browse-categories-item {
-      margin-right: 0;
-      margin-bottom: 20px; }
-    .browse-categories-area {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-  .learning-rules {
-    padding: 30px 0px; }
-    .learning-rules-item {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .learning-rules-item .item-number {
-        margin-right: 0; }
-      .learning-rules-item .item-text {
-        text-align: center; }
-        .learning-rules-item .item-text h6, .learning-rules-item .item-text .h6 {
-          font-size: 20px !important; }
-    .learning-rules-shape {
-      display: none; }
-    .learning-rules-starts {
-      text-align: center; }
-      .learning-rules-starts h2, .learning-rules-starts .h2 {
-        font-size: 26px !important; }
-      .learning-rules-starts .btn-primary {
-        margin-top: 20px; }
-    .learning-rules-ends {
-      margin-right: 0;
-      padding-left: 0;
-      margin-top: 30px; }
-      .learning-rules-ends .learning-rules-ends-circle,
-      .learning-rules-ends .earning-rules-ends-shape {
-        display: none; }
+  .browse-categories h3, .browse-categories .h3 {
+    margin-bottom: 20px; }
+  .browse-categories .btn-primary {
+    margin-top: 20px; }
+  .browse-categories-shape {
+    display: none; }
+  .browse-categories-item {
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .browse-categories-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .about-services {
     padding: 30px 0px; }
     .about-services h3, .about-services .h3 {
@@ -13985,7 +13944,19 @@ header #search-nav.appear {
   .about-services .about__slider .slick-dots {
     margin-top: 15px !important; }
   .main-events-featured .event {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .learning-rules-item {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .learning-rules-item .item-number {
+      -webkit-flex-basis: 85px;
+          -ms-flex-preferred-size: 85px;
+              flex-basis: 85px; }
+  .learning-rules-ends-circle img,
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    display: none; } }
 
 .brand-area-image {
   display: -webkit-box !important;
@@ -14117,47 +14088,51 @@ header #search-nav.appear {
   .featured-categories .btn-primary {
     margin-top: 50px; }
 
-.featured-popular-courses {
-  padding: 100px 0px;
-  background-color: rgba(235, 235, 242, 0.5);
+.featured-popular-courses-heading .main-heading h3, .featured-popular-courses-heading .main-heading .h3 {
+  color: #202029; }
+
+.featured-popular-courses-heading .nav-button .nav-pills {
+  border-bottom: 1px solid white; }
+
+.featured-popular-courses-heading .nav-button .active {
+  color: #202029 !important;
   position: relative; }
-  .featured-popular-courses-heading {
-    margin-bottom: 50px; }
-    .featured-popular-courses-heading .main-heading h3, .featured-popular-courses-heading .main-heading .h3 {
-      color: #202029; }
-    .featured-popular-courses-heading .nav-button .nav-pills {
-      border-bottom: 1px solid white; }
-    .featured-popular-courses-heading .nav-button .active {
-      color: #202029 !important;
-      position: relative; }
-      .featured-popular-courses-heading .nav-button .active::after {
-        position: absolute;
-        content: '';
-        background-color: #0264ed;
-        height: 3px;
-        width: 100%;
-        border-radius: 70px;
-        bottom: 0px;
-        left: 0px; }
-    .featured-popular-courses-heading .nav-button .nav-link {
-      padding-left: 0px;
-      padding-right: 0px;
-      margin-right: 24px;
-      border: none;
-      background-color: transparent;
-      color: #666575;
-      font-size: 14px; }
-  .featured-popular-courses-shape img {
-    position: absolute; }
-  .featured-popular-courses-shape .shape-01 {
-    top: -25px;
-    right: 85px; }
-  .featured-popular-courses-shape .shape-02 {
-    top: 350px;
-    left: 0; }
-  .featured-popular-courses-shape .shape-03 {
-    bottom: 175px;
-    right: 85px; }
+  .featured-popular-courses-heading .nav-button .active::after {
+    position: absolute;
+    content: '';
+    background-color: #0264ed;
+    height: 3px;
+    width: 100%;
+    border-radius: 70px;
+    bottom: 0px;
+    left: 0px; }
+
+.featured-popular-courses-heading .nav-button .nav-link {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 24px;
+  border: none;
+  background-color: transparent;
+  color: #666575;
+  font-size: 14px; }
+
+.featured-popular-courses-shape img {
+  position: absolute; }
+
+.featured-popular-courses-shape .shape-01 {
+  top: -25px;
+  right: 85px; }
+
+.featured-popular-courses-shape .shape-02 {
+  top: 350px;
+  left: 0; }
+
+.featured-popular-courses-shape .shape-03 {
+  bottom: 175px;
+  right: 85px; }
+
+.featured-popular-courses .contentCard {
+  margin-bottom: 24px; }
 
 .students-says {
   padding-top: 100px;
@@ -14390,22 +14365,20 @@ header #search-nav.appear {
       width: 100%; }
     .featured-categories .btn-primary {
       margin-top: 20px; }
-  .featured-popular-courses {
-    padding: 30px 0px; }
-    .featured-popular-courses-shape {
-      display: none; }
-    .featured-popular-courses-heading {
-      margin-bottom: 20px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .featured-popular-courses-heading .main-heading {
-        text-align: center;
-        margin-bottom: 10px; }
-    .featured-popular-courses .tab-content .btn-primary {
-      margin-top: 20px; }
+  .featured-popular-courses-shape {
+    display: none; }
+  .featured-popular-courses-heading {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .featured-popular-courses-heading .main-heading {
+      text-align: center;
+      margin-bottom: 10px; }
+  .featured-popular-courses .tab-content .btn-primary {
+    margin-top: 20px; }
   .students-says {
     padding: 30px 0px; }
     .students-says .testimonial__img {
@@ -14455,7 +14428,7 @@ header #search-nav.appear {
 
 @media (max-width: 767px) {
   .main-banner {
-    padding: 90px 0px; }
+    padding: 60px 0px; }
   .banner-input .select-button {
     padding-left: 0px; }
   .banner-two-start .banner-input .search-button .btn {
@@ -14513,22 +14486,20 @@ header #search-nav.appear {
       width: 100%; }
     .featured-categories .btn-primary {
       margin-top: 20px; }
-  .featured-popular-courses {
-    padding: 30px 0px; }
-    .featured-popular-courses-shape {
-      display: none; }
-    .featured-popular-courses-heading {
-      margin-bottom: 20px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .featured-popular-courses-heading .main-heading {
-        text-align: center;
-        margin-bottom: 10px; }
-    .featured-popular-courses .tab-content .btn-primary {
-      margin-top: 20px; }
+  .featured-popular-courses-shape {
+    display: none; }
+  .featured-popular-courses-heading {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .featured-popular-courses-heading .main-heading {
+      text-align: center;
+      margin-bottom: 10px; }
+  .featured-popular-courses .tab-content .btn-primary {
+    margin-top: 20px; }
   .students-says {
     padding: 30px 0px; }
     .students-says .testimonial__img {
@@ -14609,22 +14580,20 @@ header #search-nav.appear {
       width: 100%; }
     .featured-categories .btn-primary {
       margin-top: 20px; }
-  .featured-popular-courses {
-    padding: 30px 0px; }
-    .featured-popular-courses-shape {
-      display: none; }
-    .featured-popular-courses-heading {
-      margin-bottom: 20px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .featured-popular-courses-heading .main-heading {
-        text-align: center;
-        margin-bottom: 10px; }
-    .featured-popular-courses .tab-content .btn-primary {
-      margin-top: 20px; }
+  .featured-popular-courses-shape {
+    display: none; }
+  .featured-popular-courses-heading {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .featured-popular-courses-heading .main-heading {
+      text-align: center;
+      margin-bottom: 10px; }
+  .featured-popular-courses .tab-content .btn-primary {
+    margin-top: 20px; }
   .students-says {
     padding: 30px 0px; }
     .students-says .testimonial__img {
@@ -14708,22 +14677,20 @@ header #search-nav.appear {
       width: 100%; }
     .featured-categories .btn-primary {
       margin-top: 20px; }
-  .featured-popular-courses {
-    padding: 30px 0px; }
-    .featured-popular-courses-shape {
-      display: none; }
-    .featured-popular-courses-heading {
-      margin-bottom: 20px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .featured-popular-courses-heading .main-heading {
-        text-align: center;
-        margin-bottom: 10px; }
-    .featured-popular-courses .tab-content .btn-primary {
-      margin-top: 20px; }
+  .featured-popular-courses-shape {
+    display: none; }
+  .featured-popular-courses-heading {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .featured-popular-courses-heading .main-heading {
+      text-align: center;
+      margin-bottom: 10px; }
+  .featured-popular-courses .tab-content .btn-primary {
+    margin-top: 20px; }
   .students-says {
     padding: 30px 0px; }
     .students-says .testimonial__img {
@@ -21327,18 +21294,6 @@ header {
       height: 350px;
       -o-object-fit: contain;
          object-fit: contain; }
-  .checkout-area,
-  .contactHero,
-  .event-sub-section,
-  .event-info,
-  .faq-area,
-  .banner-two,
-  .featured-categories,
-  .brands-area-two,
-  .browse-categories,
-  .instructor-courses,
-  .verify {
-    padding-top: 30px !important; }
   .get-started {
     padding-bottom: 30px !important; }
   .ourevent-active .slick-dots {
