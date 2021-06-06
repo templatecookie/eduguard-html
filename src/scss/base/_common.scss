@@ -5,8 +5,16 @@
   @media (max-width: 767px) {
     padding: 60px 0px;
   }
+  // section background colors
   &--bg-offwhite {
-    background-color: #ebebf2;
+    background: rgba(235, 235, 242, 0.7);
+  }
+  &--bg-offwhite &--bg-offgradient {
+    background: linear-gradient(
+      180deg,
+      #ebebf2 0%,
+      rgba(235, 235, 242, 0.4) 100%
+    );
   }
 
   // Section title spacing
