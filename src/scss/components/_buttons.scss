@@ -1,12 +1,15 @@
 .button {
-  border-radius: 4px;
+  display: inline-block;
   padding: 12px 19px;
+  border: 0px;
   font-size: 16px;
   line-height: 19.2px;
+  border-radius: 4px;
   color: #fff;
+  text-align: center;
   text-transform: capitalize;
-  transition: all 0.2s linear;
   font-family: poppin-medium;
+  transition: all 0.2s linear;
   &-md,
   &-lg {
     border: 0px;
@@ -88,6 +91,7 @@
   &--primary {
     background-color: #1089ff;
     &:hover {
+      color: #fff;
       background-color: #0264ed;
       box-shadow: 0px 10px 20px 0px #0264ed40;
     }
