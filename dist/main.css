@@ -21188,10 +21188,22 @@ header {
     .section {
       padding: 60px 0px; } }
   .section--bg-offwhite {
+    background-color: #ebebf2; }
+  .section--bg-offwhite-one {
     background: rgba(235, 235, 242, 0.7); }
-  .section--bg-offwhite .section--bg-offgradient {
+  .section--bg-offwhite-two {
+    background: rgba(235, 235, 242, 0.6); }
+  .section--bg-offwhite-three {
+    background: rgba(235, 235, 242, 0.5); }
+  .section--bg-offwhite-four {
+    background: rgba(235, 235, 242, 0.4); }
+  .section--bg-offgradient {
     background: -webkit-gradient(linear, left top, left bottom, from(#ebebf2), to(rgba(235, 235, 242, 0.4)));
     background: linear-gradient(180deg, #ebebf2 0%, rgba(235, 235, 242, 0.4) 100%); }
+  .section--white-one {
+    background: rgba(255, 255, 255, 0.4); }
+  .section--white-two {
+    background: rgba(255, 255, 255, 0.3); }
   .section .font-title--md {
     margin-bottom: 50px; }
 
