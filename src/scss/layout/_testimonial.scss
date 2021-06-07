@@ -6,6 +6,7 @@
     background-color: #fff;
     overflow: hidden;
     margin: 0px 15px;
+    // transition: all 0.2s linear;
     p {
       font-size: 20px;
       line-height: 30px;
@@ -47,7 +48,7 @@
   // Homepage-03
   &--two {
     .testimonial__item {
-      border: 1px solid #ebebf2;
+      border: 2px solid #ebebf2;
       &-star {
         margin-bottom: 11px;
       }
@@ -56,6 +57,9 @@
         line-height: 22.5px;
         color: #8f8fa3;
         font-family: poppin-regular;
+      }
+      &.slick-current {
+        border-color: #1089ff;
       }
     }
 

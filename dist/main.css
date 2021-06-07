@@ -12791,7 +12791,7 @@ header #search-nav.appear {
     color: #ff7a1a; }
 
 .testimonial--two .testimonial__item {
-  border: 1px solid #ebebf2; }
+  border: 2px solid #ebebf2; }
   .testimonial--two .testimonial__item-star {
     margin-bottom: 11px; }
   .testimonial--two .testimonial__item p {
@@ -12799,6 +12799,8 @@ header #search-nav.appear {
     line-height: 22.5px;
     color: #8f8fa3;
     font-family: poppin-regular; }
+  .testimonial--two .testimonial__item.slick-current {
+    border-color: #1089ff; }
 
 .testimonial--two .testimonial__user-info h6, .testimonial--two .testimonial__user-info .h6 {
   font-size: 18px;

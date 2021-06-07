@@ -171,7 +171,7 @@
 
   //testimonial_slider
   $('.testimonial__slider--one').slick({
-    autoPlay: true,
+    autoPlay: false,
     autoplaySpeed: 2000,
     infinite: true,
     slidesToShow: 2,
@@ -186,9 +186,35 @@
       },
     ],
   });
+
   $('.testimonial__slider--two').slick({
     infinite: true,
     slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    centerMode: true,
+    centerPadding: '0px',
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $('.testimonial__slider--three').slick({
+    infinite: true,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     arrows: true,
