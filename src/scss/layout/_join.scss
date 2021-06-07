@@ -3,6 +3,7 @@
   padding-bottom: 195px;
   &__overlay-img {
     position: absolute;
+    // pointer-events: none;
     img {
       position: relative;
       z-index: 1;

@@ -171,12 +171,12 @@
 
   //testimonial_slider
   $('.testimonial__slider--one').slick({
-    autoPlay: false,
+    autoPlay: true,
     autoplaySpeed: 2000,
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 992,
@@ -192,7 +192,7 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: true,
+    arrows: false,
     centerMode: true,
     centerPadding: '0px',
     autoplaySpeed: 2000,
@@ -217,7 +217,7 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: true,
+    arrows: false,
     autoplaySpeed: 2000,
   });
 

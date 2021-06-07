@@ -13617,7 +13617,6 @@ header #search-nav.appear {
     right: 67px; }
 
 .main-events-featured {
-  background-color: rgba(235, 235, 242, 0.55);
   position: relative;
   z-index: 88; }
   .main-events-featured-shape img {
@@ -14345,8 +14344,6 @@ header #search-nav.appear {
     border-color: #ebebf2; }
 
 .latest-events-featured {
-  padding: 100px 0px;
-  position: relative;
   z-index: 1; }
   .latest-events-featured.le-2 {
     background-color: #fff; }
