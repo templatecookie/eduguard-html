@@ -123,159 +123,160 @@
 // Responsive
 
 @media (max-width: 1200px) {
-  // slick-arrows
-  .new-course-feature .slider-arrows .prev-arrow,
-  .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .prev-arrow,
-  .latest-events-featured .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .prev-arrow,
-  .about-services__wrapper .slider-arrows .prev-arrow,
-  .about-services__wrapper .slider-arrows .next-arrow {
-    top: auto;
-    bottom: -95px;
-  }
+  // // slick-arrows
+  // .new-course-feature .slider-arrows .prev-arrow,
+  // .new-course-feature .slider-arrows .next-arrow,
+  // .latest-events-featured .slider-arrows .prev-arrow,
+  // .latest-events-featured .slider-arrows .next-arrow,
+  // .browse-categories__wrapper .slider-arrows .next-arrow,
+  // .browse-categories__wrapper .slider-arrows .prev-arrow,
+  // .about-services__wrapper .slider-arrows .prev-arrow,
+  // .about-services__wrapper .slider-arrows .next-arrow {
+  //   top: auto;
+  //   bottom: -95px;
+  // }
 
-  .new-course-feature .slider-arrows .prev-arrow,
-  .latest-events-featured .slider-arrows .prev-arrow,
-  .browse-categories__wrapper .slider-arrows .prev-arrow {
-    left: 0;
-  }
-  .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .next-arrow {
-    right: 0;
-  }
-  .new-course-feature .slider-arrows .slick-arrow,
-  .latest-events-featured .slider-arrows .slick-arrow,
-  .browse-categories__wrapper .slider-arrows .slick-arrow {
-    left: 45%;
-  }
-  .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .next-arrow {
-    left: 50%;
-  }
+  // .new-course-feature .slider-arrows .prev-arrow,
+  // .latest-events-featured .slider-arrows .prev-arrow,
+  // .browse-categories__wrapper .slider-arrows .prev-arrow {
+  //   left: 0;
+  // }
+  // .new-course-feature .slider-arrows .next-arrow,
+  // .latest-events-featured .slider-arrows .next-arrow,
+  // .browse-categories__wrapper .slider-arrows .next-arrow {
+  //   right: 0;
+  // }
+  // .new-course-feature .slider-arrows .slick-arrow,
+  // .latest-events-featured .slider-arrows .slick-arrow,
+  // .browse-categories__wrapper .slider-arrows .slick-arrow {
+  //   left: 45%;
+  // }
+  // .new-course-feature .slider-arrows .next-arrow,
+  // .latest-events-featured .slider-arrows .next-arrow,
+  // .browse-categories__wrapper .slider-arrows .next-arrow {
+  //   left: 50%;
+  // }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow {
-    left: 60%;
-  }
+  // .new-course-feature .slider-arrows .next-arrow,
+  // .latest-events-featured .slider-arrows .next-arrow {
+  //   left: 60%;
+  // }
 }
 
 @media (max-width: 1199px) {
-  .slider-arrows {
-    display: none;
-  }
-}
-
-@media (max-width: 991px) {
-  %space-1 {
-    padding: 90px 0px !important;
-  }
-
-  %fonts-md {
-    font-size: 38px !important;
-    line-height: 52px !important;
-  }
-
-  // overflow
-  .signup-area {
-    overflow-y: auto !important;
-  }
-
-  // banner img
-  .signup-area-image {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    img {
-      height: 350px;
-      object-fit: contain;
-    }
-  }
-
-  // extra space remove(bottom)
-  .get-started {
-    padding-bottom: 30px !important;
-  }
-
-  .ourevent-active {
-    .slick-dots {
-      margin-top: 0px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  %space-2 {
-    padding: 60px 0px !important;
-  }
-  %fonts-sm-1 {
-    font-size: 22px !important;
-    line-height: 32px !important;
-  }
-
-  // Section spacing
-  // section {
-  //   @extend %space-2;
+  //   .slider-arrows {
+  //     display: none;
+  //   }
   // }
 
-  .about-intro {
-    padding: 0px !important;
-  }
-  .signup-area {
-    padding-top: 0px !important;
-  }
+  // @media (max-width: 991px) {
+  //   %space-1 {
+  //     padding: 90px 0px !important;
+  //   }
 
-  // slider dots
-  .bestInstructor .ourinstructor-active .slick-dots,
-  .about-services .about__slider .slick-dots,
-  .main-instructor-featured .ourinstructor-active .slick-dots,
-  .main-events-featured .eventsSlider .slick-dots,
-  .ourevent-active .slick-dots {
-    margin-top: 0px;
-  }
-}
+  //   %fonts-md {
+  //     font-size: 38px !important;
+  //     line-height: 52px !important;
+  //   }
 
-@media (min-width: 320px) and (max-width: 574px) {
-  %space {
-    padding: 45px 0px !important;
-  }
-  %fonts-sm-2 {
-    font-size: 24px !important;
-    line-height: 36px !important;
-  }
-  %brief {
-    font-size: 14px !important;
-    line-height: 26px !important;
-  }
+  //   // overflow
+  //   .signup-area {
+  //     overflow-y: auto !important;
+  //   }
 
-  // overflow
-  .signup-area {
-    height: auto !important;
-  }
+  //   // banner img
+  //   .signup-area-image {
+  //     margin-bottom: 30px;
+  //     display: flex;
+  //     justify-content: center;
+  //     img {
+  //       height: 350px;
+  //       object-fit: contain;
+  //     }
+  //   }
 
-  .contactHero {
-    padding-top: 0px !important;
-  }
+  //   // extra space remove(bottom)
+  //   .get-started {
+  //     padding-bottom: 30px !important;
+  //   }
 
-  // banner img
-  .signup-area-image {
-    margin-bottom: 15px;
-    img {
-      height: auto;
-    }
-  }
-  // img height auto
-  .learning-rules-ends img {
-    height: auto;
-  }
+  //   .ourevent-active {
+  //     .slick-dots {
+  //       margin-top: 0px;
+  //     }
+  //   }
+  // }
 
-  .cart-area .cart-wizard-area .text h6 {
-    font-size: 16px !important;
-    line-height: 26px !important;
-  }
+  // @media (max-width: 767px) {
+  //   %space-2 {
+  //     padding: 60px 0px !important;
+  //   }
+  //   %fonts-sm-1 {
+  //     font-size: 22px !important;
+  //     line-height: 32px !important;
+  //   }
+
+  //   // Section spacing
+  //   // section {
+  //   //   @extend %space-2;
+  //   // }
+
+  //   .about-intro {
+  //     padding: 0px !important;
+  //   }
+  //   .signup-area {
+  //     padding-top: 0px !important;
+  //   }
+
+  //   // slider dots
+  //   .bestInstructor .ourinstructor-active .slick-dots,
+  //   .about-services .about__slider .slick-dots,
+  //   .main-instructor-featured .ourinstructor-active .slick-dots,
+  //   .main-events-featured .eventsSlider .slick-dots,
+  //   .ourevent-active .slick-dots {
+  //     margin-top: 0px;
+  //   }
+  // }
+
+  // @media (min-width: 320px) and (max-width: 574px) {
+  //   %space {
+  //     padding: 45px 0px !important;
+  //   }
+  //   %fonts-sm-2 {
+  //     font-size: 24px !important;
+  //     line-height: 36px !important;
+  //   }
+  //   %brief {
+  //     font-size: 14px !important;
+  //     line-height: 26px !important;
+  //   }
+
+  //   // overflow
+  //   .signup-area {
+  //     height: auto !important;
+  //   }
+
+  //   .contactHero {
+  //     padding-top: 0px !important;
+  //   }
+
+  //   // banner img
+  //   .signup-area-image {
+  //     margin-bottom: 15px;
+  //     img {
+  //       height: auto;
+  //     }
+  //   }
+  //   // img height auto
+  //   .learning-rules-ends img {
+  //     height: auto;
+  //   }
+
+  //   .cart-area .cart-wizard-area .text h6 {
+  //     font-size: 16px !important;
+  //     line-height: 26px !important;
+  //   }
+  // }
 }

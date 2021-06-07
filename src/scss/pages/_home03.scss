@@ -381,138 +381,6 @@
 
   // Testimonial Area Ends Here
 
-  // Join Area Starts Here
-  .join-area {
-    padding: 200px 0px;
-    position: relative;
-
-    &-image {
-      img {
-        position: absolute;
-        z-index: 1;
-      }
-
-      .img-01 {
-        top: 100px;
-        left: 130px;
-      }
-
-      .img-02 {
-        top: 52px;
-        left: 375px;
-      }
-
-      .img-03 {
-        top: 268px;
-        left: 227px;
-      }
-
-      .img-04 {
-        top: 278px;
-        left: 404px;
-      }
-
-      .img-05 {
-        top: 393px;
-        left: 65px;
-      }
-
-      .img-06 {
-        bottom: 80px;
-        left: 235px;
-      }
-
-      .img-07 {
-        bottom: 94px;
-        left: 474px;
-      }
-
-      .img-08 {
-        bottom: 58px;
-        left: 737px;
-      }
-
-      .img-09 {
-        top: 118px;
-        right: 358px;
-      }
-
-      .img-10 {
-        bottom: 194px;
-        right: 371px;
-      }
-
-      .img-11 {
-        bottom: 300px;
-        right: 236px;
-      }
-
-      .img-12 {
-        top: 90px;
-        right: 80px;
-      }
-
-      .img-13 {
-        bottom: 175px;
-        right: 85px;
-      }
-
-      .img-14 {
-        bottom: 60px;
-        right: 140px;
-      }
-    }
-
-    &-shape {
-      img {
-        position: absolute;
-        z-index: -1;
-      }
-
-      .shape-02 {
-        top: 78px;
-        left: 700px;
-      }
-
-      .shape-03 {
-        bottom: 88px;
-        right: 510px;
-      }
-
-      .shape-04 {
-        left: 214px;
-        top: 238px;
-      }
-
-      .shape-05 {
-        bottom: 88px;
-        left: 283px;
-      }
-
-      .shape-06 {
-        top: 247px;
-        right: 111px;
-      }
-
-      .shape-07 {
-        top: 67px;
-        right: 243px;
-      }
-    }
-
-    &-text {
-      h3 {
-        color: #202029 !important;
-      }
-
-      p {
-        font-size: 18px !important;
-        margin-top: 15px;
-        margin-bottom: 30px;
-      }
-    }
-  }
-
   // Join Area Ends Here
 
   // Newsletter Area Starts Here
@@ -619,15 +487,7 @@
         font-size: 26px !important;
       }
     }
-    .join-area {
-      padding: 30px 0px;
-      &-text {
-        p {
-          font-size: 14px !important;
-          margin-bottom: 20px;
-        }
-      }
-    }
+
     .newsletterarea-norlam {
       padding: 30px 0px;
       &-start {
@@ -659,59 +519,6 @@
     }
     .featured-course .featured-course-text h6 a {
       font-size: 18px !important;
-    }
-
-    .join-area-image {
-      .img-01 {
-        top: 100px;
-        left: 50px;
-      }
-      .img-02 {
-        top: 25px;
-        left: 375px;
-      }
-      .img-03 {
-        top: 55px;
-        left: 190px;
-      }
-      .img-04 {
-        top: 278px;
-        left: 50px;
-      }
-      .img-09 {
-        top: 60px;
-        right: 315px;
-      }
-      .img-10 {
-        bottom: 60px;
-        right: 340px;
-      }
-      .img-11 {
-        bottom: 315px;
-        right: 110px;
-      }
-    }
-    .join-area-shape {
-      .shape-02 {
-        top: 52px;
-        left: 700px;
-      }
-      .shape-04 {
-        left: 160px;
-        top: 80px;
-      }
-      .shape-07 {
-        top: 68px;
-        right: 228px;
-      }
-      .shape-06 {
-        top: 310px;
-        right: 97px;
-      }
-      .shape-03 {
-        bottom: 90px;
-        right: 475px;
-      }
     }
   }
 

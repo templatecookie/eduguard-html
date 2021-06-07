@@ -9900,6 +9900,104 @@ button:focus {
   .modal-body-rating #my-rating {
     margin-top: 30px; }
 
+.section {
+  position: relative;
+  padding: 100px 0px; }
+  @media (max-width: 767px) {
+    .section {
+      padding: 60px 0px; } }
+  .section--bg-offwhite {
+    background-color: #ebebf2; }
+  .section--bg-offwhite-one {
+    background: rgba(235, 235, 242, 0.7); }
+  .section--bg-offwhite-two {
+    background: rgba(235, 235, 242, 0.6); }
+  .section--bg-offwhite-three {
+    background: rgba(235, 235, 242, 0.5); }
+  .section--bg-offwhite-four {
+    background: rgba(235, 235, 242, 0.4); }
+  .section--bg-offgradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ebebf2), to(rgba(235, 235, 242, 0.4)));
+    background: linear-gradient(180deg, #ebebf2 0%, rgba(235, 235, 242, 0.4) 100%); }
+  .section--white-one {
+    background: rgba(255, 255, 255, 0.4); }
+  .section--white-two {
+    background: rgba(255, 255, 255, 0.3); }
+  .section .font-title--md {
+    margin-bottom: 50px; }
+
+.ourevent-active,
+.students, .browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active {
+  position: relative; }
+  .ourevent-active .slick-dots, .students .slick-dots, .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px; }
+    .ourevent-active .slick-dots li button, .students .slick-dots li button, .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button {
+      background-color: transparent;
+      border: 0px;
+      font-size: 0px;
+      width: 8px;
+      height: 8px;
+      background-color: #8f8fa3;
+      margin: 0px 8px;
+      border-radius: 50%;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+    .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button, .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button {
+      width: 24px;
+      border-radius: 50px;
+      background-color: #202029; }
+
+.bg-w {
+  position: relative;
+  z-index: 1; }
+  .bg-w::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.3;
+    z-index: -1; }
+
+.checkbox-primary[type='checkbox'] {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #908fa5; }
+
+.main-instructor-featured-shape img,
+.banner-two-start h1,
+.banner-two-start .h1,
+.browse-categories h3,
+.browse-categories .h3,
+.main-heading h3,
+.main-heading .h3,
+.learning-rules-starts h3,
+.learning-rules-starts .h3,
+.about-services-shape img,
+.featured-popular-courses-shape img,
+.about-services-shape img,
+.learning-rules-shape img,
+.main-events-featured-shape img,
+.testimonial__img img,
+.testimonial__img .dot img,
+.testimonial__img .rectangle img,
+.testimonial__wrapper_title h3,
+.testimonial__wrapper_title .h3 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
 .button {
   display: inline-block;
   padding: 12px 19px;
@@ -11636,10 +11734,10 @@ button:focus {
   .price-range-block__inputWrapper input {
     width: 165px !important; } }
 
-.browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
-.students {
+.ourevent-active,
+.students, .browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active {
   position: relative; }
-  .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .ourevent-active .slick-dots, .students .slick-dots, .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -11649,7 +11747,7 @@ button:focus {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .ourevent-active .slick-dots li button, .students .slick-dots li button, .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -11660,7 +11758,7 @@ button:focus {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button, .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -12269,7 +12367,9 @@ header #search-nav.appear {
 @media (min-width: 320px) and (max-width: 574px) {
   .banner-two-start p {
     margin-right: 0px; }
-  .banner-two-start h1, .banner-two-start .h1,
+  
+  .banner-two-start h1,
+  .banner-two-start .h1,
   .banner-two-start .h1 {
     margin-bottom: 0px !important; }
   .banner-two-end .image {
@@ -12287,12 +12387,229 @@ header #search-nav.appear {
     padding-left: 5px; }
   .banner-two-end {
     z-index: 0 !important; }
-  .banner-two-start h1, .banner-two-start .h1,
+  
+  .banner-two-start h1,
+  .banner-two-start .h1,
   .banner-two-start p {
     text-align: left; } }
 
 .feature .cardFeature {
   margin-bottom: 24px; }
+
+.join {
+  padding-top: 205px;
+  padding-bottom: 195px; }
+  .join__overlay-img {
+    position: absolute; }
+    .join__overlay-img img {
+      position: relative;
+      z-index: 1; }
+    .join__overlay-img span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      -webkit-animation: circle 3s linear infinite;
+              animation: circle 3s linear infinite; }
+    .join__overlay-img--3, .join__overlay-img--4, .join__overlay-img--7, .join__overlay-img--8, .join__overlay-img--10, .join__overlay-img--15 {
+      -webkit-animation: circle 3s linear infinite;
+              animation: circle 3s linear infinite; }
+    .join__overlay-img--3 {
+      animation-direction: alternate-reverse; }
+    .join__overlay-img--1 {
+      bottom: 94px;
+      left: 283px; }
+      .join__overlay-img--1 span {
+        margin-left: -30px; }
+    .join__overlay-img--2 {
+      bottom: 274px;
+      left: 227px; }
+      .join__overlay-img--2 span {
+        left: -23px;
+        bottom: 24px; }
+    .join__overlay-img--3 {
+      top: 78px;
+      left: 700px; }
+    .join__overlay-img--4 {
+      right: 121px;
+      top: 257px;
+      -webkit-animation: circle 3s linear infinite;
+              animation: circle 3s linear infinite; }
+    .join__overlay-img--5 {
+      top: 78px;
+      right: 254px; }
+    .join__overlay-img--6 {
+      top: 84px;
+      right: 90px; }
+    .join__overlay-img--7 {
+      bottom: 60px;
+      right: 140px; }
+    .join__overlay-img--8 {
+      bottom: 180px;
+      left: 65px; }
+    .join__overlay-img--9 {
+      top: 1024px;
+      left: 136px; }
+    .join__overlay-img--10 {
+      bottom: 100px;
+      left: 474px; }
+    .join__overlay-img--11 {
+      left: 404px;
+      bottom: 320px; }
+    .join__overlay-img--12 {
+      right: 87px;
+      bottom: 175px; }
+    .join__overlay-img--13 {
+      right: 236px;
+      top: 300px; }
+    .join__overlay-img--14 {
+      right: 371px;
+      bottom: 194px; }
+    .join__overlay-img--15 {
+      right: 510px;
+      bottom: 88px; }
+    .join__overlay-img--16 {
+      right: 354px;
+      top: 126px; }
+    .join__overlay-img--17 {
+      bottom: 58px;
+      left: 729px; }
+    .join__overlay-img--18 {
+      top: 73px;
+      left: 374px; }
+    .join__overlay-img--19 {
+      top: 102px;
+      left: 136px; }
+  .join p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #666575; }
+
+@media (max-width: 1200px) {
+  .join__overlay-img--2 {
+    bottom: 274px;
+    left: 135px; }
+    .join__overlay-img--2 span {
+      left: -23px;
+      bottom: 24px; }
+  .join__overlay-img--6 {
+    top: 36px;
+    right: 30px; }
+  .join__overlay-img--7 {
+    bottom: 60px;
+    right: 140px; }
+  .join__overlay-img--8 {
+    bottom: 65px;
+    left: 65px; }
+  .join__overlay-img--9 {
+    top: 1024px;
+    left: 136px; }
+  .join__overlay-img--10 {
+    bottom: 30px;
+    left: 474px; }
+  .join__overlay-img--11 {
+    left: 405px;
+    bottom: 195px; }
+  .join__overlay-img--12 {
+    right: 30px;
+    bottom: 175px; }
+  .join__overlay-img--13 {
+    right: 165px;
+    top: 230px; }
+  .join__overlay-img--14 {
+    right: 265px;
+    bottom: 194px; }
+  .join__overlay-img--15 {
+    right: 425px; }
+  .join__overlay-img--16 {
+    right: 354px;
+    top: 60px; }
+  .join__overlay-img--17 {
+    bottom: 58px;
+    left: 729px; }
+  .join__overlay-img--18 {
+    top: 73px;
+    left: 374px; }
+  .join__overlay-img--19 {
+    top: 30px;
+    left: 30px; } }
+
+@media (max-width: 1199px) {
+  .join__overlay-img--1, .join__overlay-img--7, .join__overlay-img--10, .join__overlay-img--11, .join__overlay-img--14, .join__overlay-img--16, .join__overlay-img--17, .join__overlay-img--18 {
+    display: none; } }
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .join__overlay-img--11 {
+    display: none; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .join__overlay-img--2 {
+    left: 75px; }
+    .join__overlay-img--2 span {
+      left: auto;
+      right: -55px; }
+  .join__overlay-img--4 {
+    right: 85px;
+    top: 265px; }
+  .join__overlay-img--6 {
+    top: 30px;
+    right: 185px; }
+  .join__overlay-img--12 {
+    bottom: 65px; }
+  .join__overlay-img--13 {
+    right: 85px;
+    top: 270px; }
+  .join__overlay-img--15 {
+    right: 185px;
+    bottom: 130px; } }
+
+@media (max-width: 991px) {
+  .join__overlay-img--5, .join__overlay-img--6, .join__overlay-img--19 {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .join__overlay-img--2 {
+    top: 30px;
+    left: 35px; }
+  .join__overlay-img--3 {
+    top: 40px;
+    left: 595px; }
+  .join__overlay-img--4 {
+    top: auto;
+    bottom: 30px;
+    right: 10px; }
+  .join__overlay-img--8 {
+    -webkit-animation: stop;
+            animation: stop; }
+  .join__overlay-img--12 {
+    bottom: 60px; }
+  .join__overlay-img--13 {
+    top: 60px;
+    right: 165px; }
+  .join__overlay-img--15 {
+    right: auto;
+    left: 120px;
+    bottom: 85px; } }
+
+@media (max-width: 767px) {
+  .join {
+    overflow: hidden; }
+    .join__overlay-img--2, .join__overlay-img--12 {
+      display: none; }
+    .join__overlay-img--4 {
+      right: auto;
+      left: 30px;
+      top: 30px; }
+    .join__overlay-img--8 {
+      left: auto;
+      right: 30px; }
+    .join__overlay-img--13 {
+      top: 60px;
+      right: auto;
+      left: 30px; }
+    .join p {
+      font-size: 14px;
+      line-height: 24px; } }
 
 .populercourse {
   padding: 100px 0;
@@ -13131,10 +13448,10 @@ header #search-nav.appear {
   .footer__wrapper {
     max-width: 100%; } }
 
-.browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
-.students {
+.ourevent-active,
+.students, .browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active {
   position: relative; }
-  .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .ourevent-active .slick-dots, .students .slick-dots, .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -13144,7 +13461,7 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .ourevent-active .slick-dots li button, .students .slick-dots li button, .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -13155,7 +13472,7 @@ header #search-nav.appear {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button, .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -13172,7 +13489,9 @@ header #search-nav.appear {
 .browse-categories {
   position: relative;
   padding: 100px 0px; }
-  .browse-categories h3, .browse-categories .h3 {
+  
+  .browse-categories h3,
+  .browse-categories .h3 {
     margin-bottom: 50px;
     color: #202029 !important; }
   .browse-categories-area {
@@ -13477,7 +13796,7 @@ header #search-nav.appear {
 
 .main-become-instructor {
   padding: 100px 0px;
-  padding-top: 200px;
+  padding-top: 200px !important;
   background-color: #ebebf2;
   position: relative; }
   .main-become-instructor-item {
@@ -13631,7 +13950,9 @@ header #search-nav.appear {
     height: auto !important; }
   .main-banner-end {
     margin-right: 0; }
-  .browse-categories h3, .browse-categories .h3 {
+  
+  .browse-categories h3,
+  .browse-categories .h3 {
     margin-bottom: 20px; }
   .browse-categories .btn-primary {
     margin-top: 20px; }
@@ -13710,7 +14031,9 @@ header #search-nav.appear {
     height: auto !important; }
   .main-banner-end {
     margin-right: 0; }
-  .browse-categories h3, .browse-categories .h3 {
+  
+  .browse-categories h3,
+  .browse-categories .h3 {
     margin-bottom: 20px; }
   .browse-categories .btn-primary {
     margin-top: 20px; }
@@ -13777,7 +14100,9 @@ header #search-nav.appear {
     padding: 30px 0px; }
     .main-banner-end {
       margin-right: 0; }
-  .browse-categories h3, .browse-categories .h3 {
+  
+  .browse-categories h3,
+  .browse-categories .h3 {
     margin-bottom: 20px; }
   .browse-categories .btn-primary {
     margin-top: 20px; }
@@ -13869,7 +14194,9 @@ header #search-nav.appear {
     padding: 30px 0px; }
     .main-banner-end {
       margin-right: 0; }
-  .browse-categories h3, .browse-categories .h3 {
+  
+  .browse-categories h3,
+  .browse-categories .h3 {
     margin-bottom: 20px; }
   .browse-categories .btn-primary {
     margin-top: 20px; }
@@ -13975,7 +14302,9 @@ header #search-nav.appear {
   background-color: rgba(235, 235, 242, 0.55);
   -webkit-clip-path: ellipse(100% 100% at 50% 0%);
           clip-path: ellipse(100% 100% at 50% 0%); }
-  .banner-two-start h1, .banner-two-start .h1 {
+  
+  .banner-two-start h1,
+  .banner-two-start .h1 {
     margin-bottom: 20px; }
   .banner-two-start p {
     max-width: 525px;
@@ -14204,20 +14533,6 @@ header #search-nav.appear {
       bottom: 30px;
       right: 0px; }
 
-.join-area-02 {
-  position: relative;
-  z-index: 1; }
-  .join-area-02::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ebebf2;
-    opacity: 0.6;
-    z-index: -1; }
-
 .get-started {
   padding: 100px 0px;
   background: rgba(235, 235, 242, 0.6); }
@@ -14271,13 +14586,6 @@ header #search-nav.appear {
             box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
     color: white; }
 
-@media only screen and (min-width: 1201px) and (max-width: 1550px) {
-  .join-area-image .img-03 {
-    left: 95px !important; }
-  .join-area-image .img-04 {
-    top: 250px !important;
-    left: 226px !important; } }
-
 @media (max-width: 1200px) {
   .banner-input {
     width: 680px; }
@@ -14293,7 +14601,9 @@ header #search-nav.appear {
   .featured-popular-courses-shape .shape-02,
   .featured-popular-courses-shape .shape-03 {
     display: none; }
-  .testimonial__wrapper_title h3, .testimonial__wrapper_title .h3 {
+  
+  .testimonial__wrapper_title h3,
+  .testimonial__wrapper_title .h3 {
     font-size: 35px; }
   .get-started-area {
     -webkit-box-align: start !important;
@@ -15039,81 +15349,6 @@ header #search-nav.appear {
           font-size: 18px !important; }
         .featured-course .testimonial-area-item .testimonial-client-info p {
           font-size: 14px !important; }
-  .featured-course .join-area {
-    padding: 200px 0px;
-    position: relative; }
-    .featured-course .join-area-image img {
-      position: absolute;
-      z-index: 1; }
-    .featured-course .join-area-image .img-01 {
-      top: 100px;
-      left: 130px; }
-    .featured-course .join-area-image .img-02 {
-      top: 52px;
-      left: 375px; }
-    .featured-course .join-area-image .img-03 {
-      top: 268px;
-      left: 227px; }
-    .featured-course .join-area-image .img-04 {
-      top: 278px;
-      left: 404px; }
-    .featured-course .join-area-image .img-05 {
-      top: 393px;
-      left: 65px; }
-    .featured-course .join-area-image .img-06 {
-      bottom: 80px;
-      left: 235px; }
-    .featured-course .join-area-image .img-07 {
-      bottom: 94px;
-      left: 474px; }
-    .featured-course .join-area-image .img-08 {
-      bottom: 58px;
-      left: 737px; }
-    .featured-course .join-area-image .img-09 {
-      top: 118px;
-      right: 358px; }
-    .featured-course .join-area-image .img-10 {
-      bottom: 194px;
-      right: 371px; }
-    .featured-course .join-area-image .img-11 {
-      bottom: 300px;
-      right: 236px; }
-    .featured-course .join-area-image .img-12 {
-      top: 90px;
-      right: 80px; }
-    .featured-course .join-area-image .img-13 {
-      bottom: 175px;
-      right: 85px; }
-    .featured-course .join-area-image .img-14 {
-      bottom: 60px;
-      right: 140px; }
-    .featured-course .join-area-shape img {
-      position: absolute;
-      z-index: -1; }
-    .featured-course .join-area-shape .shape-02 {
-      top: 78px;
-      left: 700px; }
-    .featured-course .join-area-shape .shape-03 {
-      bottom: 88px;
-      right: 510px; }
-    .featured-course .join-area-shape .shape-04 {
-      left: 214px;
-      top: 238px; }
-    .featured-course .join-area-shape .shape-05 {
-      bottom: 88px;
-      left: 283px; }
-    .featured-course .join-area-shape .shape-06 {
-      top: 247px;
-      right: 111px; }
-    .featured-course .join-area-shape .shape-07 {
-      top: 67px;
-      right: 243px; }
-    .featured-course .join-area-text h3, .featured-course .join-area-text .h3 {
-      color: #202029 !important; }
-    .featured-course .join-area-text p {
-      font-size: 18px !important;
-      margin-top: 15px;
-      margin-bottom: 30px; }
   .featured-course .newsletterarea-norlam {
     padding: 100px 0px;
     background-color: white; }
@@ -15180,11 +15415,6 @@ header #search-nav.appear {
         margin-bottom: 20px;
         line-height: 34px;
         font-size: 26px !important; }
-    .featured-course .join-area {
-      padding: 30px 0px; }
-      .featured-course .join-area-text p {
-        font-size: 14px !important;
-        margin-bottom: 20px; }
     .featured-course .newsletterarea-norlam {
       padding: 30px 0px; }
       .featured-course .newsletterarea-norlam-start {
@@ -15204,43 +15434,7 @@ header #search-nav.appear {
     .featured-course .banner-three .playbtn-area {
       bottom: 370px; }
     .featured-course .featured-course .featured-course-text h6 a, .featured-course .featured-course .featured-course-text .h6 a {
-      font-size: 18px !important; }
-    .featured-course .join-area-image .img-01 {
-      top: 100px;
-      left: 50px; }
-    .featured-course .join-area-image .img-02 {
-      top: 25px;
-      left: 375px; }
-    .featured-course .join-area-image .img-03 {
-      top: 55px;
-      left: 190px; }
-    .featured-course .join-area-image .img-04 {
-      top: 278px;
-      left: 50px; }
-    .featured-course .join-area-image .img-09 {
-      top: 60px;
-      right: 315px; }
-    .featured-course .join-area-image .img-10 {
-      bottom: 60px;
-      right: 340px; }
-    .featured-course .join-area-image .img-11 {
-      bottom: 315px;
-      right: 110px; }
-    .featured-course .join-area-shape .shape-02 {
-      top: 52px;
-      left: 700px; }
-    .featured-course .join-area-shape .shape-04 {
-      left: 160px;
-      top: 80px; }
-    .featured-course .join-area-shape .shape-07 {
-      top: 68px;
-      right: 228px; }
-    .featured-course .join-area-shape .shape-06 {
-      top: 310px;
-      right: 97px; }
-    .featured-course .join-area-shape .shape-03 {
-      bottom: 90px;
-      right: 475px; } }
+      font-size: 18px !important; } }
   @media (max-width: 767px) {
     .featured-course .play-button {
       width: 50px;
@@ -15273,10 +15467,10 @@ header #search-nav.appear {
     .featured-course .featured-instructor-image img {
       width: 100%; } }
 
-.browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
-.students {
+.ourevent-active,
+.students, .browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active {
   position: relative; }
-  .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
+  .ourevent-active .slick-dots, .students .slick-dots, .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -15286,7 +15480,7 @@ header #search-nav.appear {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px; }
-    .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
+    .ourevent-active .slick-dots li button, .students .slick-dots li button, .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button {
       background-color: transparent;
       border: 0px;
       font-size: 0px;
@@ -15297,7 +15491,7 @@ header #search-nav.appear {
       border-radius: 50%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
+    .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button, .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button {
       width: 24px;
       border-radius: 50px;
       background-color: #202029; }
@@ -21147,182 +21341,4 @@ header {
 .transparent-button a,
 .text-button a {
   margin-bottom: 30px; }
-
-.section {
-  position: relative;
-  padding: 100px 0px; }
-  @media (max-width: 767px) {
-    .section {
-      padding: 60px 0px; } }
-  .section--bg-offwhite {
-    background-color: #ebebf2; }
-  .section--bg-offwhite-one {
-    background: rgba(235, 235, 242, 0.7); }
-  .section--bg-offwhite-two {
-    background: rgba(235, 235, 242, 0.6); }
-  .section--bg-offwhite-three {
-    background: rgba(235, 235, 242, 0.5); }
-  .section--bg-offwhite-four {
-    background: rgba(235, 235, 242, 0.4); }
-  .section--bg-offgradient {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ebebf2), to(rgba(235, 235, 242, 0.4)));
-    background: linear-gradient(180deg, #ebebf2 0%, rgba(235, 235, 242, 0.4) 100%); }
-  .section--white-one {
-    background: rgba(255, 255, 255, 0.4); }
-  .section--white-two {
-    background: rgba(255, 255, 255, 0.3); }
-  .section .font-title--md {
-    margin-bottom: 50px; }
-
-.browse-categories-area, .about-services .about__slider, .main-instructor-featured .ourinstructor-active, .main-events-featured .eventsSlider, .newCourse, .bestInstructor .ourinstructor-active, .ourevent-active,
-.students {
-  position: relative; }
-  .browse-categories-area .slick-dots, .about-services .about__slider .slick-dots, .main-instructor-featured .ourinstructor-active .slick-dots, .main-events-featured .eventsSlider .slick-dots, .newCourse .slick-dots, .bestInstructor .ourinstructor-active .slick-dots, .ourevent-active .slick-dots, .students .slick-dots {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 40px; }
-    .browse-categories-area .slick-dots li button, .about-services .about__slider .slick-dots li button, .main-instructor-featured .ourinstructor-active .slick-dots li button, .main-events-featured .eventsSlider .slick-dots li button, .newCourse .slick-dots li button, .bestInstructor .ourinstructor-active .slick-dots li button, .ourevent-active .slick-dots li button, .students .slick-dots li button {
-      background-color: transparent;
-      border: 0px;
-      font-size: 0px;
-      width: 8px;
-      height: 8px;
-      background-color: #8f8fa3;
-      margin: 0px 8px;
-      border-radius: 50%;
-      -webkit-transition: all 0.2s linear;
-      transition: all 0.2s linear; }
-    .browse-categories-area .slick-dots li.slick-active button, .about-services .about__slider .slick-dots li.slick-active button, .main-instructor-featured .ourinstructor-active .slick-dots li.slick-active button, .main-events-featured .eventsSlider .slick-dots li.slick-active button, .newCourse .slick-dots li.slick-active button, .bestInstructor .ourinstructor-active .slick-dots li.slick-active button, .ourevent-active .slick-dots li.slick-active button, .students .slick-dots li.slick-active button {
-      width: 24px;
-      border-radius: 50px;
-      background-color: #202029; }
-
-.bg-w {
-  position: relative;
-  z-index: 1; }
-  .bg-w::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    opacity: 0.3;
-    z-index: -1; }
-
-.checkbox-primary[type='checkbox'] {
-  width: 24px;
-  height: 24px;
-  border: 2px solid #908fa5; }
-
-.main-instructor-featured-shape img, .banner-two-start h1, .banner-two-start .h1, .browse-categories h3, .browse-categories .h3,
-.main-heading h3,
-.main-heading .h3,
-.learning-rules-starts h3,
-.learning-rules-starts .h3,
-.about-services-shape img,
-.featured-popular-courses-shape img,
-.about-services-shape img,
-.learning-rules-shape img,
-.main-events-featured-shape img,
-.testimonial__img img,
-.testimonial__img .dot img,
-.testimonial__img .rectangle img, .testimonial__wrapper_title h3, .testimonial__wrapper_title .h3 {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
-
-@media (max-width: 1200px) {
-  .new-course-feature .slider-arrows .prev-arrow,
-  .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .prev-arrow,
-  .latest-events-featured .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .prev-arrow,
-  .about-services__wrapper .slider-arrows .prev-arrow,
-  .about-services__wrapper .slider-arrows .next-arrow {
-    top: auto;
-    bottom: -95px; }
-  .new-course-feature .slider-arrows .prev-arrow,
-  .latest-events-featured .slider-arrows .prev-arrow,
-  .browse-categories__wrapper .slider-arrows .prev-arrow {
-    left: 0; }
-  .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .next-arrow {
-    right: 0; }
-  .new-course-feature .slider-arrows .slick-arrow,
-  .latest-events-featured .slider-arrows .slick-arrow,
-  .browse-categories__wrapper .slider-arrows .slick-arrow {
-    left: 45%; }
-  .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow,
-  .browse-categories__wrapper .slider-arrows .next-arrow {
-    left: 50%; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .new-course-feature .slider-arrows .next-arrow,
-  .latest-events-featured .slider-arrows .next-arrow {
-    left: 60%; } }
-
-@media (max-width: 1199px) {
-  .slider-arrows {
-    display: none; } }
-
-@media (max-width: 991px) {
-  .signup-area {
-    overflow-y: auto !important; }
-  .signup-area-image {
-    margin-bottom: 30px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .signup-area-image img {
-      height: 350px;
-      -o-object-fit: contain;
-         object-fit: contain; }
-  .get-started {
-    padding-bottom: 30px !important; }
-  .ourevent-active .slick-dots {
-    margin-top: 0px; } }
-
-@media (max-width: 767px) {
-  .about-intro {
-    padding: 0px !important; }
-  .signup-area {
-    padding-top: 0px !important; }
-  .bestInstructor .ourinstructor-active .slick-dots,
-  .about-services .about__slider .slick-dots,
-  .main-instructor-featured .ourinstructor-active .slick-dots,
-  .main-events-featured .eventsSlider .slick-dots,
-  .ourevent-active .slick-dots {
-    margin-top: 0px; } }
-
-@media (min-width: 320px) and (max-width: 574px) {
-  .signup-area {
-    height: auto !important; }
-  .contactHero {
-    padding-top: 0px !important; }
-  .signup-area-image {
-    margin-bottom: 15px; }
-    .signup-area-image img {
-      height: auto; }
-  .learning-rules-ends img {
-    height: auto; }
-  .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
-    font-size: 16px !important;
-    line-height: 26px !important; } }
 

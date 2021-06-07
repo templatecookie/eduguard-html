@@ -10,6 +10,8 @@
 @import 'vendors/plugin/css/magnific-popup.css';
 @import 'base/reset';
 
+@import 'base/common';
+
 // components
 @import 'components/buttons';
 @import 'components/cards';
@@ -44,6 +46,7 @@
 @import 'layout/header';
 @import 'layout/banner';
 @import 'layout/feature';
+@import 'layout/join';
 
 @import 'layout/breadcrumb';
 @import 'layout/populercoures';
@@ -90,5 +93,3 @@
 @import 'pages/signup';
 @import 'themes/theme';
 @import 'pages/styleguide';
-
-@import 'base/common';

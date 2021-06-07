@@ -369,23 +369,6 @@
   }
 }
 
-// Join Area Starts Here
-.join-area-02 {
-  position: relative;
-  z-index: 1;
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ebebf2;
-    opacity: 0.6;
-    z-index: -1;
-  }
-}
-
 // Get Started Starts Here
 .get-started {
   padding: 100px 0px;
@@ -444,16 +427,6 @@
 }
 
 // Responsive
-@media only screen and (min-width: 1201px) and (max-width: 1550px) {
-  .join-area-image .img-03 {
-    left: 95px !important;
-  }
-
-  .join-area-image .img-04 {
-    top: 250px !important;
-    left: 226px !important;
-  }
-}
 
 @media (max-width: 1200px) {
   // Homepage-01 Banner
