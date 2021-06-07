@@ -170,15 +170,29 @@
   });
 
   //testimonial_slider
-  $('.testimonial__active').slick({
+  $('.testimonial__slider--one').slick({
+    autoPlay: true,
+    autoplaySpeed: 2000,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+  $('.testimonial__slider--two').slick({
+    infinite: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: '.testimonial__wrapper .prev-arrow',
-    nextArrow: '.testimonial__wrapper .next-arrow',
   });
 
   //Brand_slider
