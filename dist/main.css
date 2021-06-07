@@ -12608,6 +12608,141 @@ header #search-nav.appear {
       font-size: 14px;
       line-height: 24px; } }
 
+.hero {
+  overflow: hidden; }
+  .hero__img-content {
+    position: relative; }
+    .hero__img-content--main img {
+      border-radius: 15px;
+      position: relative;
+      z-index: 1; }
+    .hero__img-content--shape-01, .hero__img-content--shape-02 {
+      position: absolute; }
+  .hero__content-info h2, .hero__content-info .h2 {
+    margin-bottom: 18px !important; }
+  .hero__content-info > p {
+    color: #8f8fa3;
+    margin-bottom: 30px;
+    font-family: poppin-regular; }
+  .hero__content-location li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 36px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .hero__content-location li:nth-last-child(1) {
+      margin-right: 0px; }
+    .hero__content-location li span {
+      width: 48px;
+      height: 48px;
+      border-radius: 4px;
+      margin-right: 8px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .hero__content-location li p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #666575;
+      font-family: poppin-medium; }
+    .hero__content-location li:nth-child(1) span {
+      background: rgba(0, 175, 145, 0.1); }
+      .hero__content-location li:nth-child(1) span svg {
+        color: #00af91; }
+    .hero__content-location li:nth-child(2) span {
+      background: rgba(255, 122, 26, 0.1); }
+      .hero__content-location li:nth-child(2) span svg {
+        color: #ff7a1a; }
+    .hero__content-location li:nth-child(3) span {
+      background: rgba(16, 137, 255, 0.1); }
+      .hero__content-location li:nth-child(3) span svg {
+        color: #1089ff; }
+    .hero__content-location li:hover span svg {
+      color: #fff; }
+    .hero__content-location li:hover:nth-child(1) span {
+      background-color: #00af91; }
+    .hero__content-location li:hover:nth-child(2) span {
+      background-color: #ff7a1a; }
+    .hero__content-location li:hover:nth-child(3) span {
+      background-color: #1089ff; }
+  .hero__dots-info li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 12px; }
+    .hero__dots-info li span {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: #1089ff;
+      margin-right: 12px; }
+    .hero__dots-info li p {
+      font-size: 18px;
+      line-height: 27px;
+      color: #666575; }
+  .hero--one {
+    padding-top: 118px;
+    padding-bottom: 190px; }
+    .hero--one .hero__img-content {
+      margin-left: 45px; }
+      .hero--one .hero__img-content--shape-01 {
+        top: 125px;
+        left: -100px; }
+      .hero--one .hero__img-content--shape-02 {
+        right: 45px;
+        bottom: -50px; }
+  .hero--two .hero__img-content {
+    margin-left: 75px; }
+    .hero--two .hero__img-content--shape-01 {
+      left: -55px;
+      bottom: -35px; }
+    .hero--two .hero__img-content--shape-02 {
+      right: 5px;
+      bottom: -95px; }
+  .hero--three .hero__img-content {
+    margin-left: 75px; }
+    .hero--three .hero__img-content--shape-01 {
+      top: -50px;
+      left: -50px; }
+    .hero--three .hero__img-content--shape-02 {
+      right: -40px;
+      bottom: -60px; }
+  .hero--four {
+    padding-bottom: 150px; }
+    .hero--four .hero__img-content {
+      margin-left: 65px; }
+      .hero--four .hero__img-content--shape-01 {
+        top: -50px;
+        left: -50px; }
+      .hero--four .hero__img-content--shape-02 {
+        right: 35px;
+        bottom: -65px; }
+      .hero--four .hero__img-content--shape-03 {
+        position: absolute;
+        bottom: -30px;
+        left: -22px; }
+
 .populercourse {
   padding: 100px 0;
   background: #ebebf2; }
