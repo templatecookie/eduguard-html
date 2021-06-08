@@ -1,33 +1,33 @@
 // common
-%slickdots {
-  position: relative;
+// %slickdots {
+//   position: relative;
 
-  .slick-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    li {
-      button {
-        background-color: transparent;
-        border: 0px;
-        font-size: 0px;
-        width: 8px;
-        height: 8px;
-        background-color: #8f8fa3;
-        margin: 0px 8px;
-        border-radius: 50%;
-        transition: all 0.2s linear;
-      }
-      &.slick-active {
-        button {
-          width: 24px;
-          border-radius: 50px;
-          background-color: #202029;
-        }
-      }
-    }
-  }
-}
+//   .slick-dots {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 40px;
+//     li {
+//       button {
+//         background-color: transparent;
+//         border: 0px;
+//         font-size: 0px;
+//         width: 8px;
+//         height: 8px;
+//         background-color: #8f8fa3;
+//         margin: 0px 8px;
+//         border-radius: 50%;
+//         transition: all 0.2s linear;
+//       }
+//       &.slick-active {
+//         button {
+//           width: 24px;
+//           border-radius: 50px;
+//           background-color: #202029;
+//         }
+//       }
+//     }
+//   }
+// }
 
 .about-intro {
   padding-bottom: 80px;
@@ -82,39 +82,12 @@
   }
 }
 
-// Best Instructor Section
-.bestInstructor {
-  .ourinstructor-active {
-    @extend %slickdots;
-  }
-}
-
 // Responsive
 
 @media (max-width: 1200px) {
   // Best instructor section
   .section-pb-sm {
     padding-bottom: 90px !important;
-  }
-  .bestInstructor {
-    .ourinstructor-active {
-      .slick-dots {
-        position: absolute;
-        bottom: 45px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .bestInstructor {
-    .ourinstructor-active {
-      .slick-dots {
-        bottom: 20px;
-      }
-    }
   }
 }
 
@@ -135,15 +108,6 @@
       h3 {
         font-size: 38px;
         line-height: 52px;
-      }
-    }
-  }
-
-  // best instructor section
-  .bestInstructor {
-    .ourinstructor-active {
-      .slick-dots {
-        bottom: 45px;
       }
     }
   }

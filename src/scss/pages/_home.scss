@@ -1,33 +1,33 @@
 // common
-%slickdots {
-  position: relative;
+// %slickdots {
+//   position: relative;
 
-  .slick-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    li {
-      button {
-        background-color: transparent;
-        border: 0px;
-        font-size: 0px;
-        width: 8px;
-        height: 8px;
-        background-color: #8f8fa3;
-        margin: 0px 8px;
-        border-radius: 50%;
-        transition: all 0.2s linear;
-      }
-      &.slick-active {
-        button {
-          width: 24px;
-          border-radius: 50px;
-          background-color: #202029;
-        }
-      }
-    }
-  }
-}
+//   .slick-dots {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 40px;
+//     li {
+//       button {
+//         background-color: transparent;
+//         border: 0px;
+//         font-size: 0px;
+//         width: 8px;
+//         height: 8px;
+//         background-color: #8f8fa3;
+//         margin: 0px 8px;
+//         border-radius: 50%;
+//         transition: all 0.2s linear;
+//       }
+//       &.slick-active {
+//         button {
+//           width: 24px;
+//           border-radius: 50px;
+//           background-color: #202029;
+//         }
+//       }
+//     }
+//   }
+// }
 // Banner Starts Here
 .main-banner {
   padding-top: 180px;
@@ -376,14 +376,6 @@
   }
   &__wrapper {
     position: relative;
-    .slider-arrows {
-      @extend %arrows;
-    }
-  }
-
-  // Slick dots
-  .about__slider {
-    @extend %slickdots;
   }
 }
 
@@ -437,10 +429,6 @@
       right: 67px;
     }
   }
-  // slick dots
-  .ourinstructor-active {
-    @extend %slickdots;
-  }
 }
 
 // Latest Events Featured Starts Here
@@ -456,11 +444,6 @@
       bottom: -66px;
       left: 18px;
     }
-  }
-
-  // Slick dots
-  .eventsSlider {
-    @extend %slickdots;
   }
 }
 
@@ -832,15 +815,6 @@
 @media (max-width: 767px) {
   .banner-input .main-input input {
     width: 195px;
-  }
-  // Slick dots
-  .about-services .about__slider .slick-dots,
-  .main-events-featured .eventsSlider .slick-dots,
-  .main-instructor-featured .ourinstructor-active .slick-dots {
-    margin-top: 15px;
-  }
-  .about-services .about__slider .slick-dots {
-    margin-top: 30px !important;
   }
 
   .learning-rules-ends > img {
@@ -1219,9 +1193,7 @@
   .about-services .testimonial__wrapper_item {
     padding: 24px 15px;
   }
-  .about-services .about__slider .slick-dots {
-    margin-top: 15px !important;
-  }
+
   .main-events-featured .event {
     margin-bottom: 15px;
   }

@@ -74,9 +74,6 @@
   .btn-primary {
     margin-top: 50px;
   }
-  .slider-arrows {
-    @extend %arrows;
-  }
 }
 
 .new-course-overlay {
@@ -95,10 +92,6 @@
       left: 0;
     }
   }
-}
-
-.newCourse {
-  @extend %slickdots;
 }
 
 // Featured Course Starts Here
@@ -531,11 +524,7 @@
       bottom: 60px;
       left: 220px;
     }
-    .newCourse {
-      .slick-dots {
-        margin-top: 0px !important;
-      }
-    }
+
     .new-course-feature {
       .row {
         justify-content: center;

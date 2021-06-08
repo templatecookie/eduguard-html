@@ -223,10 +223,11 @@
 
   $('.browse-categories-area').slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
     arrows: false,
+    dots: true,
     autoplaySpeed: 2000,
     responsive: [
       {
