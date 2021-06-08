@@ -12770,7 +12770,14 @@ header #search-nav.appear {
 /*------------------------*/
 /*------- Responsive  ---------*/
 /*-------------------------*/
+@media (max-width: 1024px) {
+  .hero--one .hero__img-content--shape-01,
+  .hero--one .hero__img-content--shape-02 {
+    height: 250px; } }
+
 @media (max-width: 991px) {
+  .hero--one .hero__img-content {
+    margin-left: 0px; }
   .hero__img-content {
     margin-bottom: 30px; }
     .hero__img-content--main img {
@@ -12779,6 +12786,16 @@ header #search-nav.appear {
          object-fit: contain; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .hero--one .hero__img-content--shape-01 {
+    top: 0px;
+    left: auto;
+    right: 250px;
+    height: 250px; }
+  .hero--one .hero__img-content--shape-02 {
+    height: 250px;
+    right: auto;
+    bottom: -25px;
+    left: 75px; }
   .hero--five .hero__img-content--shape-01 {
     left: -30px; }
   .hero--five .hero__img-content--shape-02 {
@@ -12789,6 +12806,31 @@ header #search-nav.appear {
     left: -20px; } }
 
 @media (max-width: 767px) {
+  .hero__content-info h2, .hero__content-info .h2 {
+    margin-bottom: 15px !important; }
+  .hero__content-location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important; }
+    .hero__content-location li {
+      margin-right: 0px;
+      margin-bottom: 15px; }
+  .hero--one {
+    padding: 60px 0px; }
+    .hero--one .hero__img-content--shape-01 {
+      top: -100px;
+      left: 115px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    .hero--one .hero__img-content--shape-02 {
+      right: 135px;
+      bottom: 0px; }
   .hero--five .hero__content-info span {
     font-size: 18px;
     line-height: 28px;
@@ -12804,6 +12846,8 @@ header #search-nav.appear {
     right: 155px; } }
 
 @media (max-width: 574px) {
+  .hero--one .hero__img-content--shape-01,
+  .hero--one .hero__img-content--shape-02,
   .hero--five .hero__img-content--shape-02,
   .hero--five .hero__img-content--shape-03 {
     display: none; }

@@ -234,7 +234,18 @@
 /*------- Responsive  ---------*/
 /*-------------------------*/
 
+@media (max-width: 1024px) {
+  .hero--one .hero__img-content--shape-01,
+  .hero--one .hero__img-content--shape-02 {
+    height: 250px;
+  }
+}
+
 @media (max-width: 991px) {
+  .hero--one .hero__img-content {
+    margin-left: 0px;
+  }
+
   .hero {
     &__img-content {
       margin-bottom: 30px;
@@ -247,8 +258,28 @@
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero {
+    &--one {
+      .hero {
+        &__img-content {
+          &--shape-01 {
+            top: 0px;
+            left: auto;
+            right: 250px;
+            height: 250px;
+          }
+          &--shape-02 {
+            height: 250px;
+            right: auto;
+            bottom: -25px;
+            left: 75px;
+          }
+        }
+      }
+    }
+
     &--five {
       .hero {
         &__img-content {
@@ -268,8 +299,41 @@
     }
   }
 }
+
 @media (max-width: 767px) {
   .hero {
+    &__content-info {
+      h2 {
+        margin-bottom: 15px !important;
+      }
+    }
+
+    &__content-location {
+      flex-direction: column;
+      align-items: flex-start !important;
+      li {
+        margin-right: 0px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &--one {
+      padding: 60px 0px;
+      .hero {
+        &__img-content {
+          &--shape-01 {
+            top: -100px;
+            left: 115px;
+            transform: rotate(90deg);
+          }
+          &--shape-02 {
+            right: 135px;
+            bottom: 0px;
+          }
+        }
+      }
+    }
+
     &--five {
       .hero {
         &__content-info {
@@ -299,6 +363,8 @@
 }
 
 @media (max-width: 574px) {
+  .hero--one .hero__img-content--shape-01,
+  .hero--one .hero__img-content--shape-02,
   .hero--five .hero__img-content--shape-02,
   .hero--five .hero__img-content--shape-03 {
     display: none;
