@@ -1,6 +1,12 @@
 header {
   .navbar {
     padding: 0px;
+    &-toggler {
+      transition: all 0.2s ease-in-out;
+      &.active {
+        transform: translateY(2px);
+      }
+    }
   }
   .navbar-nav {
     transition: all 0.2s ease-in-out;

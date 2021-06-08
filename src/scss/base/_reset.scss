@@ -37,6 +37,8 @@ body {
   // font-family: $font;
   font-family: poppin-regular;
   transition: 0.3s;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
 }
 
 a:focus,

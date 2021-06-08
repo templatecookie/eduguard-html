@@ -9793,7 +9793,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 body {
   font-family: poppin-regular;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility; }
 
 a:focus,
 .button:focus {
@@ -10562,6 +10564,173 @@ button:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.toggled .app {
+  left: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.app {
+  position: absolute;
+  top: 0;
+  left: -550px;
+  height: 100vh;
+  z-index: 9999;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.sidemenu__search-field input {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white; }
+
+.sidemenu__search-field button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #1089ff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+  .sidemenu__search-field button:focus {
+    -webkit-transform: translateY(0.9px);
+            transform: translateY(0.9px); }
+
+/* -------------
+Sidebar
+----------------*/
+.sidebar {
+  position: absolute;
+  width: 25em;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #19222a;
+  -webkit-transform: translateZ(0);
+  visibility: visible;
+  -webkit-backface-visibility: hidden; }
+  .sidebar .sidemenu__header {
+    background-color: #1089ff;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 24px 15px; }
+    .sidebar .sidemenu__header h5, .sidebar .sidemenu__header .h5 {
+      font-size: 18px;
+      color: #fff;
+      font-family: poppin-bold; }
+    .sidebar .sidemenu__header-close {
+      border: 0px; }
+
+/* -------------
+Sidebar Nav
+----------------*/
+.sidebar-nav {
+  position: fixed;
+  background-color: #fff;
+  height: 100%;
+  font-weight: 400;
+  font-size: 1.2em;
+  overflow: auto;
+  padding-bottom: 6em;
+  z-index: 9;
+  overflow: hidden;
+  /* -------------
+Chev elements
+----------------*/
+  /* -------------
+Nav-Flyout
+----------------*/
+  /* -------------
+Hover
+----------------*/ }
+  .sidebar-nav ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0; }
+    .sidebar-nav ul li {
+      margin-left: 0;
+      padding-left: 0;
+      display: inline-block;
+      width: 100%;
+      /* -------------
+Sidebar: icons
+----------------*/ }
+      .sidebar-nav ul li a {
+        color: #42414b;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 1.05em 1em;
+        position: relative;
+        display: block; }
+        .sidebar-nav ul li a:hover {
+          background-color: #202029;
+          color: #fff;
+          -webkit-transition: all 0.6s linear;
+          transition: all 0.6s linear; }
+          .sidebar-nav ul li a:hover::after {
+            border-color: #fff; }
+      .sidebar-nav ul li i {
+        font-size: 1.8em;
+        padding-right: 0.5em;
+        width: 9em;
+        display: inline;
+        vertical-align: middle; }
+  .sidebar-nav > ul > li > a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    border: solid #202029;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg); }
+    .sidebar-nav > ul > li > a::after:hover {
+      border-color: #fff !important;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+  .sidebar-nav .nav-flyout {
+    position: absolute;
+    background-color: #080d11;
+    z-index: 9;
+    left: 2.5em;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .sidebar-nav .nav-flyout a:hover {
+      background-color: rgba(255, 255, 255, 0.05); }
+  .sidebar-nav ul > li:hover .nav-flyout {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .sidebar {
+    width: 20em; } }
 
 .form-element {
   margin-bottom: 20px;
@@ -11739,6 +11908,12 @@ button:focus {
 
 header .navbar {
   padding: 0px; }
+  header .navbar-toggler {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    header .navbar-toggler.active {
+      -webkit-transform: translateY(2px);
+              transform: translateY(2px); }
 
 header .navbar-nav {
   -webkit-transition: all 0.2s ease-in-out;
