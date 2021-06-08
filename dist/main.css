@@ -12767,6 +12767,51 @@ header #search-nav.appear {
     bottom: -30px;
     left: -40px; }
 
+/*------------------------*/
+/*------- Responsive  ---------*/
+/*-------------------------*/
+@media (max-width: 991px) {
+  .hero__img-content {
+    margin-bottom: 30px; }
+    .hero__img-content--main img {
+      height: 350px;
+      -o-object-fit: contain;
+         object-fit: contain; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero--five .hero__img-content--shape-01 {
+    left: -30px; }
+  .hero--five .hero__img-content--shape-02 {
+    right: auto;
+    left: 240px; }
+  .hero--five .hero__img-content--shape-03 {
+    bottom: -15px;
+    left: -20px; } }
+
+@media (max-width: 767px) {
+  .hero--five .hero__content-info span {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px; }
+  .hero--five .hero__img-content--shape-01 {
+    display: none; }
+  .hero--five .hero__img-content--shape-02 {
+    top: -35px;
+    right: 95px; }
+  .hero--five .hero__img-content--shape-03 {
+    bottom: -15px;
+    left: auto;
+    right: 155px; } }
+
+@media (max-width: 574px) {
+  .hero--five .hero__img-content--shape-02,
+  .hero--five .hero__img-content--shape-03 {
+    display: none; }
+  .hero__img-content {
+    margin-bottom: 15px; }
+    .hero__img-content--main img {
+      height: auto; } }
+
 .populercourse {
   padding: 100px 0;
   background: #ebebf2; }
@@ -15343,23 +15388,23 @@ header #search-nav.appear {
           font-size: 18px !important; }
         .featured-course .testimonial-area-item .testimonial-client-info p {
           font-size: 14px !important; }
-  .featured-course .newsletterarea-norlam {
+  .featured-course .newsletterarea-normal {
     padding: 100px 0px;
     background-color: white; }
-    .featured-course .newsletterarea-norlam-start h4, .featured-course .newsletterarea-norlam-start .h4 {
+    .featured-course .newsletterarea-normal-start h4, .featured-course .newsletterarea-normal-start .h4 {
       color: #202029 !important;
       margin-bottom: 10px;
       font-weight: 600 !important; }
-    .featured-course .newsletterarea-norlam-end {
+    .featured-course .newsletterarea-normal-end {
       padding-left: 25px; }
-      .featured-course .newsletterarea-norlam-end form input {
+      .featured-course .newsletterarea-normal-end form input {
         padding-left: 20px;
         border-radius: 4px; }
-        .featured-course .newsletterarea-norlam-end form input:focus {
+        .featured-course .newsletterarea-normal-end form input:focus {
           -webkit-box-shadow: none;
                   box-shadow: none;
           border-color: #1089ff; }
-      .featured-course .newsletterarea-norlam-end form button {
+      .featured-course .newsletterarea-normal-end form button {
         border-radius: 4px; }
   @media (max-width: 991px) {
     .featured-course .banner-three {
@@ -15409,11 +15454,11 @@ header #search-nav.appear {
         margin-bottom: 20px;
         line-height: 34px;
         font-size: 26px !important; }
-    .featured-course .newsletterarea-norlam {
+    .featured-course .newsletterarea-normal {
       padding: 30px 0px; }
-      .featured-course .newsletterarea-norlam-start {
+      .featured-course .newsletterarea-normal-start {
         text-align: center; }
-      .featured-course .newsletterarea-norlam-end {
+      .featured-course .newsletterarea-normal-end {
         padding-left: 0;
         margin-top: 20px; } }
   @media (min-width: 768px) and (max-width: 991px) {

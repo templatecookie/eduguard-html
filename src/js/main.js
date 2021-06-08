@@ -48,14 +48,14 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: true,
+          dots: false,
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -84,14 +84,14 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: true,
+          dots: false,
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -122,14 +122,14 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: true,
+          dots: false,
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -145,7 +145,7 @@
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    dots: true,
+    dots: false,
     autoplaySpeed: 2000,
     nextArrow: '.about-slider-arrows .next-arrow',
     prevArrow: '.about-slider-arrows .prev-arrow',
@@ -156,7 +156,7 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -267,7 +267,7 @@
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -275,7 +275,7 @@
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -283,7 +283,7 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
     ],
@@ -304,7 +304,7 @@
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -312,7 +312,7 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
     ],
