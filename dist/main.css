@@ -12748,6 +12748,24 @@ header #search-nav.appear {
         position: absolute;
         bottom: -30px;
         left: -22px; }
+  .hero--five .hero__content-info h2, .hero--five .hero__content-info .h2 {
+    margin-bottom: 0px !important; }
+  .hero--five .hero__content-info span {
+    font-size: 27px;
+    line-height: 33.75px;
+    color: #202029;
+    display: inline-block;
+    margin-bottom: 20px; }
+  .hero--five .hero__img-content--shape-01 {
+    top: 45px;
+    left: -120px; }
+  .hero--five .hero__img-content--shape-02 {
+    top: -55px;
+    right: -12px; }
+  .hero--five .hero__img-content--shape-03 {
+    position: absolute;
+    bottom: -30px;
+    left: -40px; }
 
 .populercourse {
   padding: 100px 0;

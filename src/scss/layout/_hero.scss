@@ -192,4 +192,36 @@
       }
     }
   }
+  &--five {
+    .hero {
+      &__content-info {
+        h2 {
+          margin-bottom: 0px !important;
+        }
+        span {
+          font-size: 27px;
+          line-height: 33.75px;
+          color: #202029;
+          display: inline-block;
+          margin-bottom: 20px;
+        }
+      }
+
+      &__img-content {
+        &--shape-01 {
+          top: 45px;
+          left: -120px;
+        }
+        &--shape-02 {
+          top: -55px;
+          right: -12px;
+        }
+        &--shape-03 {
+          position: absolute;
+          bottom: -30px;
+          left: -40px;
+        }
+      }
+    }
+  }
 }
