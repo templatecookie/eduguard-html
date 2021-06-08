@@ -10,8 +10,10 @@
       }
     }
     &--shape-01,
-    &--shape-02 {
+    &--shape-02,
+    &--shape-03 {
       position: absolute;
+      pointer-events: none;
     }
   }
   &__content-info {
