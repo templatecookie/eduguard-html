@@ -216,9 +216,78 @@
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     autoplaySpeed: 2000,
+  });
+
+  $('.browse-categories-area').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
+  $('.categories__slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '0px',
+    responsive: [
+      {
+        breakpoint: 1260,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   //Brand_slider
@@ -317,35 +386,6 @@
       },
     ],
   });
-
-  //Event _Slider
-  // $('.browse-categories-area').slick({
-  //   infinite: true,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   autoplay: false,
-  //   arrows: false,
-  //   autoplaySpeed: 2000,
-  //   centerMode: true,
-  //   centerPadding: '10px',
-  //   nextArrow: ' .browse__right--arrow',
-  //   prevArrow: ' .browse__left--arrow',
-  //   // responsive: [
-  //   //   {
-  //   //     breakpoint: 1199,
-  //   //     settings: {
-  //   //       slidesToShow: 2,
-  //   //     },
-  //   //   },
-  //   //   {
-  //   //     breakpoint: 768,
-  //   //     settings: {
-  //   //       slidesToShow: 1,
-  //   //       slidesToScroll: 1,
-  //   //     },
-  //   //   },
-  //   // ],
-  // });
 
   // filter items on button click
   $('.populercourse-ist').on('click', 'li', function () {

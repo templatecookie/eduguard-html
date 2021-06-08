@@ -72,6 +72,53 @@
   }
 }
 
+// Homepage-02
+.testimonial {
+  &.students-says {
+    .testimonial__wrapper {
+      margin-left: 60px;
+    }
+
+    .testimonial__item {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+.testimonial__img {
+  position: relative;
+  z-index: 1;
+  .dot,
+  .rectangle,
+  .play-video {
+    position: absolute;
+    z-index: -1;
+  }
+  .rectangle {
+    bottom: -35px;
+    left: -38px;
+  }
+  .dot {
+    left: -255px;
+    bottom: 35px;
+  }
+  .play-video {
+    top: 50%;
+    right: -15px;
+    z-index: 2;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .testimonial.students-says .testimonial__wrapper {
+    margin-left: 30px;
+  }
+  .students-says .testimonial__wrapper_title {
+    margin-bottom: 0px !important;
+  }
+}
+
 @media (max-width: 767px) {
   // Testimonial -01
   .testimonial {

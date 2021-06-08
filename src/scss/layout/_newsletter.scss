@@ -12,7 +12,14 @@
     }
   }
   h4 {
-    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: poppin-semiBold;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3;
   }
 }
 
@@ -27,6 +34,12 @@
   }
 }
 
+@media (max-width: 991px) {
+  .newsletter-area {
+    margin-bottom: -60px;
+  }
+}
+
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .newsletter-area {
@@ -36,7 +49,7 @@
 
 @media (max-width: 767px) {
   .newsletter-area {
-    margin-bottom: -215px;
+    margin-bottom: -120px;
   }
 }
 

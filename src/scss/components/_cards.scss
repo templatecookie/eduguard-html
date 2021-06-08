@@ -148,3 +148,17 @@
     margin: 0px 15px;
   }
 }
+
+/*------------------------*/
+/*-------Responsive  ---------*/
+/*-------------------------*/
+
+@media (max-width: 767px) {
+  .contentCard {
+    &-more {
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}

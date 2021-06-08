@@ -109,12 +109,17 @@
       }
     }
   }
+  .banner-three .playbtn-area {
+    position: absolute;
+    bottom: 325px !important;
+    left: 255px !important;
+  }
 }
 
 @media (max-width: 991px) {
   .banner {
     &-two-start {
-      text-align: center;
+      text-align: left;
     }
   }
   .banner-two-end {
@@ -122,6 +127,11 @@
   }
   .banner-two-end .image img {
     margin-bottom: 30px;
+  }
+
+  // Homepage 02
+  .banner-two-end .image img {
+    height: 450px;
   }
 }
 
@@ -146,6 +156,35 @@
       margin: auto;
       margin-top: 160px;
     }
+  }
+  .banner-three .playbtn-area {
+    position: absolute;
+    bottom: 360px !important;
+    left: 250px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-three-content {
+    height: 100vh !important;
+  }
+  .banner-three {
+    clip-path: none !important;
+  }
+  .banner-three .playbtn-area {
+    position: absolute;
+    bottom: 290px !important;
+    left: 330px !important;
+  }
+  // homepage-02
+  .banner-two-start h1,
+  .banner-two-start .h1 {
+    margin-bottom: 15px !important;
+  }
+  .banner-two-start p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin-bottom: 15px !important;
   }
 }
 
@@ -241,6 +280,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .banner-three .playbtn-area {
+    left: 240px !important;
+  }
+}
+
 // extra Small devices 420px
 @media (min-width: 320px) and (max-width: 574px) {
   .banner {
@@ -265,6 +310,10 @@
   .banner-input {
     justify-content: space-around;
   }
+  // Homepage-02
+  .banner-two-end .image img {
+    height: auto;
+  }
   .banner-two-start .banner-input .main-input input {
     padding-left: 5px;
   }
@@ -275,5 +324,15 @@
   .banner-two-start h1,
   .banner-two-start p {
     text-align: left;
+  }
+  // Homepage-03
+  .banner-three-content {
+    height: 75vh !important;
+  }
+  .banner-three {
+    .playbtn-area {
+      left: 215px !important;
+      bottom: 135px !important;
+    }
   }
 }

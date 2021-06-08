@@ -2,6 +2,7 @@
 .section {
   position: relative;
   padding: 100px 0px;
+
   @media (max-width: 767px) {
     padding: 60px 0px;
   }
@@ -45,7 +46,15 @@
   }
 }
 
-// Section bg colors
+// Spacing units
+.m {
+  &--240 {
+    margin-top: -240px;
+    @media (max-width: 991px) {
+      margin-top: 0px;
+    }
+  }
+}
 
 // slic-dots
 %slickdots {

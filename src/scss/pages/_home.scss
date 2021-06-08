@@ -184,14 +184,17 @@
       text-align: center;
 
       h6 {
-        color: #202029 !important;
-        font-size: 20px !important;
-        font-weight: 600 !important;
         margin-bottom: 5px;
+        font-family: poppin-semiBold;
+        a {
+          color: #202029;
+        }
       }
 
       p {
-        font-size: 14px !important;
+        font-size: 14px;
+        line-height: 21px;
+        color: #8f8fa3;
       }
     }
   }
@@ -214,9 +217,13 @@
 }
 
 .featured-popular-courses-shape .dot-06 {
-  bottom: 100px;
+  top: 200px;
   left: 0px;
   z-index: -1;
+}
+.featured-popular-courses-shape .dot-07 {
+  top: 0px;
+  right: 0px;
 }
 
 // Learning Rules Starts Here
@@ -492,8 +499,15 @@
       text-align: center;
       margin-top: 30px;
 
+      h6 {
+        margin-bottom: 10px;
+      }
+
       p {
+        font-size: 16px;
+        line-height: 24px;
         margin-bottom: 20px;
+        color: #8f8fa3;
       }
 
       .green-btn {
@@ -531,6 +545,13 @@
 
 @media (max-width: 1200px) {
   // learning Rules
+  .learning-rules {
+    overflow: hidden;
+  }
+  .learning-rules-shape .shape-01 {
+    top: 0px;
+    left: 0px;
+  }
   .learning-rules-ends .earning-rules-ends-shape .shape-2 {
     top: -110px;
     right: -15px;
@@ -545,6 +566,11 @@
   }
   .learning-rules-item {
     margin-bottom: 30px;
+  }
+  .learning-rules-shape .shape-02 {
+    left: auto;
+    right: 0px;
+    bottom: -125px;
   }
 }
 
@@ -582,6 +608,21 @@
   .about-services__wrapper .slider-arrows .prev-arrow,
   .about-services__wrapper .slider-arrows .next-arrow {
     display: none !important;
+  }
+  // Learning Rules section
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    height: 100%;
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: auto;
+    right: auto;
+    left: 120px;
+    bottom: -120px;
   }
 }
 
@@ -776,14 +817,6 @@
       margin-bottom: 135px;
 
       .main-text {
-        h6 {
-          font-size: 20px !important;
-        }
-
-        p {
-          font-size: 14px !important;
-        }
-
         .green-btn {
           font-size: 12px;
         }
@@ -910,14 +943,6 @@
       margin-bottom: 135px;
 
       .main-text {
-        h6 {
-          font-size: 20px !important;
-        }
-
-        p {
-          font-size: 14px !important;
-        }
-
         .green-btn {
           font-size: 12px;
         }
@@ -1064,10 +1089,6 @@
           font-size: 20px !important;
         }
 
-        p {
-          font-size: 14px !important;
-        }
-
         .green-btn {
           font-size: 12px;
         }
@@ -1173,14 +1194,6 @@
       margin-bottom: 135px;
 
       .main-text {
-        h6 {
-          font-size: 20px !important;
-        }
-
-        p {
-          font-size: 14px !important;
-        }
-
         .green-btn {
           font-size: 12px;
         }
@@ -1212,6 +1225,7 @@
   .main-events-featured .event {
     margin-bottom: 15px;
   }
+  // Learning rules
   .learning-rules {
     &-item {
       align-items: flex-start;
@@ -1224,5 +1238,8 @@
   .learning-rules-ends-circle img,
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
     display: none;
+  }
+  .learning-rules-ends > img {
+    height: auto;
   }
 }
