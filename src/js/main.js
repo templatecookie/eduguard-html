@@ -66,7 +66,7 @@
   });
 
   // newCourse
-  $('.newCourse').slick({
+  $('.new__courses').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -74,8 +74,8 @@
     dots: false,
     arrows: false,
     autoplaySpeed: 2000,
-    prevArrow: '.new-course-arrows .prev-arrow',
-    nextArrow: '.new-course-arrows .next-arrow',
+    // prevArrow: '.new-course-arrows .prev-arrow',
+    // nextArrow: '.new-course-arrows .next-arrow',
     responsive: [
       {
         breakpoint: 992,

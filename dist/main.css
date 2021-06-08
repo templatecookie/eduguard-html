@@ -10209,6 +10209,12 @@ button:focus {
     .contentCard--event-transparent .contentCard-more::after {
       height: 0; }
 
+/*------------------------*/
+/*------- New Courses Section ---------*/
+/*-------------------------*/
+.new__courses .contentCard {
+  margin: 0px 15px; }
+
 .cart {
   overflow: hidden;
   position: relative;
