@@ -10215,14 +10215,27 @@ button:focus {
       text-decoration: underline;
       color: #1089ff; }
 
-.signinButtons .fb:hover {
-  border-color: #1089ff !important; }
+.signinButtons {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .signinButtons .fb:hover {
+    border-color: #1089ff !important; }
+  .signinButtons .google:hover {
+    border-color: rgba(241, 67, 54, 0.2) !important; }
+  .signinButtons .twitter:hover {
+    border-color: rgba(3, 169, 244, 0.2) !important; }
 
-.signinButtons .google:hover {
-  border-color: rgba(241, 67, 54, 0.2) !important; }
-
-.signinButtons .twitter:hover {
-  border-color: rgba(3, 169, 244, 0.2) !important; }
+@media (max-width: 1200px) {
+  .signinButtons {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .signinButtons a {
+      margin-right: 15px;
+      margin-bottom: 10px; } }
 
 /*------------------------*/
 /*-------Content Cards ---------*/
@@ -21547,8 +21560,7 @@ body {
   .form-element input {
     padding: 12px 15px; }
   .signup-with {
-    height: 45px;
-    margin-bottom: 10px; }
+    height: 45px; }
     .signup-with.border-secondary-primary {
       margin-top: 10px; } }
 

@@ -128,6 +128,7 @@
 
 // social buttons
 .signinButtons {
+  justify-content: space-between;
   .fb {
     &:hover {
       border-color: #1089ff !important;
@@ -141,6 +142,17 @@
   .twitter {
     &:hover {
       border-color: rgba(3, 169, 244, 0.2) !important;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 1200px) {
+  .signinButtons {
+    justify-content: center;
+    a {
+      margin-right: 15px;
+      margin-bottom: 10px;
     }
   }
 }

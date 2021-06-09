@@ -13,19 +13,6 @@ function showPassword(id, el) {
   }
 }
 
-// Sidenav
-const body = document.querySelector('body');
-
-const openSide = document.querySelector('.navbar-toggler');
-const closeSide = document.querySelector('.sidemenu__header button');
-openSide.addEventListener('click', function () {
-  body.classList.toggle('toggled');
-  openSide.classList.toggle('active');
-});
-closeSide.addEventListener('click', function () {
-  body.classList.remove('toggled');
-});
-
 // popup-Search
 function openSearch() {
   document.getElementById('myOverlay').style.display = 'block';
