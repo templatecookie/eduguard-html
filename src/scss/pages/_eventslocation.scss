@@ -45,7 +45,7 @@
 
       &-end {
         p {
-          font-weight: 500;
+          font-family: poppin-medium;
           font-size: 12px;
           letter-spacing: 2px;
           margin-bottom: 5px;
@@ -53,7 +53,6 @@
 
         h6 {
           font-size: 16px;
-          font-weight: 400;
         }
       }
     }
@@ -63,10 +62,6 @@
 // Responsive
 // extra Small devices 420px
 @media (max-width: 420px) {
-  .event-info-cart p.ticket-cost {
-    text-align: center;
-  }
-
   .events-location-map iframe {
     width: 100%;
   }

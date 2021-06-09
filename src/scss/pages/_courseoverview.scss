@@ -16,10 +16,10 @@
     }
 
     h6 {
-      color: #42414b !important;
-      font-size: 18px !important;
-
+      font-size: 18px;
+      font-family: poppin-semiBold;
       a {
+        color: #42414b !important;
         display: block;
       }
     }
@@ -78,7 +78,6 @@
       .active {
         color: #202029 !important;
         position: relative;
-
         &::after {
           content: '';
           position: absolute;
@@ -91,14 +90,12 @@
       }
 
       .nav-link {
+        color: #666575;
         border: none;
         background-color: transparent;
         padding-left: 0;
         padding-right: 0;
         margin-right: 30px;
-        color: #666575;
-        font-weight: 500;
-        font-size: 16px;
       }
     }
   }
@@ -114,12 +111,10 @@
     }
 
     .bullets-line {
-      font-size: 16px !important;
-      color: #666575 !important;
+      color: #666575;
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-
       span {
         background-color: #666575;
         height: 5px;
@@ -146,10 +141,7 @@
   }
 }
 
-// Course-Overview Ends Here
-
 // Responsive
-// extra Small devices 420px
 @media (max-width: 420px) {
   .course-overview-image {
     width: 100%;

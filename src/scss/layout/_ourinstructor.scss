@@ -2,9 +2,6 @@
   background-color: rgba(16, 137, 255, 0.05);
   padding: 100px 0;
   &__wrapper {
-    .slider-arrows {
-      @extend %arrows;
-    }
     .slick-slide {
       margin: 0 15px;
     }
@@ -50,14 +47,6 @@
         display: none;
       }
     }
-    .mentor {
-      &__title {
-        h6 {
-          font-size: 18px;
-          font-size: 12px;
-        }
-      }
-    }
   }
 }
 
@@ -73,6 +62,3 @@
   }
 }
 
-// extra Small devices 420px
-@media (max-width: 420px) {
-}

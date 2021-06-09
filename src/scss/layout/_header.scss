@@ -1,6 +1,12 @@
 header {
   .navbar {
     padding: 0px;
+    &-toggler {
+      transition: all 0.2s ease-in-out;
+      &.active {
+        transform: translateY(2px);
+      }
+    }
   }
   .navbar-nav {
     transition: all 0.2s ease-in-out;
@@ -17,11 +23,13 @@ header {
         width: 100%;
       }
       .nav-link {
-        padding: 25px 0px;
-        font-size: 16px;
-        font-weight: 500;
-        color: color(dark);
         position: relative;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: color(dark);
+        padding: 25px 0px;
+        font-family: poppin-medium;
         &.active {
           &::after {
             position: absolute;
@@ -107,7 +115,6 @@ header {
             a {
               font-size: 16px;
               line-height: 24px;
-              font-weight: 400;
               color: #202029;
               text-transform: capitalize;
               span {
@@ -389,15 +396,6 @@ header {
     position: absolute;
     right: 0px;
   }
-  // header
-  //   .navbar-nav
-  //   .nav-item--dropdown
-  //   ul
-  //   li.submenu:hover
-  //   .nav-item--subDropdown {
-  //   left: 0;
-  //   top: 100%;
-  // }
 
   header .navbar-nav .nav-item--dropdown ul li.submenu:hover a span {
     transform: rotate(90deg);

@@ -1,33 +1,3 @@
-// common
-%slickdots {
-  position: relative;
-
-  .slick-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    li {
-      button {
-        background-color: transparent;
-        border: 0px;
-        font-size: 0px;
-        width: 8px;
-        height: 8px;
-        background-color: #8f8fa3;
-        margin: 0px 8px;
-        border-radius: 50%;
-        transition: all 0.2s linear;
-      }
-      &.slick-active {
-        button {
-          width: 24px;
-          border-radius: 50px;
-          background-color: #202029;
-        }
-      }
-    }
-  }
-}
 
 .about-intro {
   padding-bottom: 80px;
@@ -74,87 +44,11 @@
       color: #8f8fa3 !important;
     }
   }
-  h4 {
+  h5 {
     margin-bottom: 15px;
   }
   p {
     color: #666575;
-  }
-}
-
-.mentor {
-  &:hover {
-    .mentor__img {
-      .list-inline {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-    .mentor__title {
-      h6 {
-        a {
-          color: rgba(2, 100, 237, 1);
-        }
-      }
-    }
-  }
-  .mentor__img {
-    position: relative;
-
-    .list-inline {
-      z-index: 1;
-      position: absolute;
-      left: 50%;
-      bottom: 0px;
-      transform: translate(-50%);
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-evenly;
-      padding-bottom: 15px;
-      background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 55.21%,
-        rgba(0, 0, 0, 0.8) 100%
-      );
-      border-radius: 6px;
-      transition: all 0.2s linear;
-      opacity: 0;
-      visibility: hidden;
-      li {
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 36px;
-          width: 36px;
-          border-radius: 3px;
-          background-color: white;
-          transition: 0.3s all linear;
-          &:hover {
-            background-color: color(primary);
-            svg {
-              path {
-                transition: 0.3s all linear;
-                fill: white;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  &__title {
-    h6 {
-      color: #42414b;
-    }
-  }
-}
-// Best Instructor Section
-.bestInstructor {
-  .ourinstructor-active {
-    @extend %slickdots;
   }
 }
 
@@ -164,26 +58,6 @@
   // Best instructor section
   .section-pb-sm {
     padding-bottom: 90px !important;
-  }
-  .bestInstructor {
-    .ourinstructor-active {
-      .slick-dots {
-        position: absolute;
-        bottom: 45px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .bestInstructor {
-    .ourinstructor-active {
-      .slick-dots {
-        bottom: 20px;
-      }
-    }
   }
 }
 
@@ -208,28 +82,9 @@
     }
   }
 
-  // best instructor section
-  .bestInstructor {
-    .ourinstructor-active {
-      .slick-dots {
-        bottom: 45px;
-      }
-    }
-  }
-
   // section padding
   .aboutFeature {
     padding: 30px 0px !important;
-  }
-
-  // mentor section
-  .mentor {
-    &__title {
-      h6 {
-        font-size: 24px !important;
-        line-height: 36px !important;
-      }
-    }
   }
 }
 
@@ -318,9 +173,7 @@
   .intro-shape {
     display: none;
   }
-  // p. {
-  //   font-size: 16px !important;
-  // }
+
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0;

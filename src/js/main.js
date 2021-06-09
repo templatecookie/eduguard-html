@@ -28,9 +28,9 @@
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     dots: false,
-    arrows: true,
+    arrows: false,
     autoplaySpeed: 2000,
     prevArrow: ' .slider__arrow-left',
     nextArrow: ' .slider__arrow-right',
@@ -48,34 +48,34 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
-          arrows: true,
+          dots: false,
+          arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: true,
+          dots: false,
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: true,
+          arrows: false,
         },
       },
     ],
   });
 
   // newCourse
-  $('.newCourse').slick({
+  $('.new__courses').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    dots: true,
-    arrows: true,
+    autoplay: false,
+    dots: false,
+    arrows: false,
     autoplaySpeed: 2000,
-    prevArrow: '.new-course-arrows .prev-arrow',
-    nextArrow: '.new-course-arrows .next-arrow',
+    // prevArrow: '.new-course-arrows .prev-arrow',
+    // nextArrow: '.new-course-arrows .next-arrow',
     responsive: [
       {
         breakpoint: 992,
@@ -84,13 +84,15 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
+
+          dots: false,
           arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: true,
+          dots: false,
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -108,7 +110,7 @@
     autoplay: false,
     autoplaySpeed: 2000,
     dots: false,
-    arrows: true,
+    arrows: false,
     centerMode: true,
     centerPadding: '0px',
     prevArrow: '.student-slider-arrows .prev-arrow',
@@ -121,18 +123,18 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
-          arrows: true,
+          dots: false,
+          arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: true,
+          dots: false,
           autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: true,
+          arrows: false,
         },
       },
     ],
@@ -143,8 +145,8 @@
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: true,
-    dots: true,
+    arrows: false,
+    dots: false,
     autoplaySpeed: 2000,
     nextArrow: '.about-slider-arrows .next-arrow',
     prevArrow: '.about-slider-arrows .prev-arrow',
@@ -155,7 +157,7 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -169,15 +171,125 @@
   });
 
   //testimonial_slider
-  $('.testimonial__active').slick({
+  $('.testimonial__slider--one').slick({
+    autoPlay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $('.testimonial__slider--two').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '0px',
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $('.testimonial__slider--three').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    arrows: true,
+    autoplay: false,
+    arrows: false,
     autoplaySpeed: 2000,
-    prevArrow: '.testimonial__wrapper .prev-arrow',
-    nextArrow: '.testimonial__wrapper .next-arrow',
+  });
+
+  $('.browse-categories-area').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
+  $('.categories__slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '0px',
+    responsive: [
+      {
+        breakpoint: 1260,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   //Brand_slider
@@ -226,7 +338,7 @@
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -234,7 +346,7 @@
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -242,7 +354,7 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
     ],
@@ -254,7 +366,7 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    arrows: true,
+    arrows: false,
     autoplaySpeed: 2000,
     prevArrow: '.ourevent__wrapper .prev-arrow',
     nextArrow: '.ourevent__wrapper .next-arrow',
@@ -293,8 +405,8 @@
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          dots: true,
           arrows: false,
+          dots: false,
         },
       },
       {
@@ -302,6 +414,7 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],

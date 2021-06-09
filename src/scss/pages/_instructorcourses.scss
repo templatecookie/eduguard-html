@@ -86,7 +86,7 @@
 
       h6 {
         color: #42414b !important;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 18px;
       }
 
@@ -115,7 +115,7 @@
 
       h6 {
         color: #42414b !important;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 18px;
       }
 
@@ -144,7 +144,7 @@
 
       h6 {
         color: #42414b !important;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 18px;
       }
 
@@ -199,7 +199,7 @@
       h6 {
         margin-bottom: 0 !important;
         color: rgba($color: #42414b, $alpha: 0.9) !important;
-        font-weight: 500 !important;
+        font-family: poppin-medium;
         font-size: 14px !important;
       }
 
@@ -218,7 +218,7 @@
 
       .active {
         color: #202029 !important;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 16px;
         position: relative;
 
@@ -237,7 +237,7 @@
       .nav-link {
         background-color: transparent !important;
         color: #666575;
-        font-weight: 500;
+        font-family: poppin-medium;
         font-size: 16px;
         border: none !important;
         padding-left: 0 !important;
@@ -396,13 +396,10 @@
     margin-bottom: 15px;
 
     h5 {
-      color: #202029 !important;
-      font-weight: 600 !important;
-      font-size: 20px !important;
-
+      color: #42414b;
       span {
-        color: #8f8fa3 !important;
-        font-weight: 400 !important;
+        color: #8f8fa3;
+        font-family: poppin-regular;
       }
     }
 
@@ -411,17 +408,15 @@
       align-items: center;
 
       h6 {
-        font-size: 14px !important;
-        font-weight: 500 !important;
-        color: #42414b !important;
+        color: #42414b;
+        font-family: poppin-medium;
       }
 
       .dropdown {
         .btn {
-          padding-left: 10px !important;
-          color: #666575 !important;
           font-size: 14px !important;
-          font-weight: 400 !important;
+          padding-left: 10px;
+          color: #666575;
         }
       }
     }
@@ -456,15 +451,18 @@
           margin-left: 12px;
 
           h6 {
-            color: #42414b !important;
-            font-size: 14px !important;
-            font-weight: 600 !important;
+            font-family: poppin-semiBold;
+            a {
+              color: #42414b;
+            }
           }
 
           p {
-            margin-top: 5px;
-            color: #8f8fa3 !important;
-            font-size: 12px !important;
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 2px;
+            color: #8f8fa3;
+            font-size: 12px;
           }
         }
       }
@@ -472,8 +470,7 @@
 
     p {
       margin-top: 12px;
-      color: #8f8fa3 !important;
-      font-size: 14px !important;
+      color: #8f8fa3;
     }
   }
 }
@@ -495,7 +492,7 @@
 
   h6 {
     font-size: 14px;
-    font-weight: 500;
+    font-family: poppin-medium;
     color: #42414b;
     margin: 12px 0px 5px 0px;
   }
@@ -505,7 +502,7 @@
 
     label {
       color: #42414b;
-      font-weight: 500;
+      font-family: poppin-medium;
       font-size: 14px;
       margin-bottom: 5px;
     }
@@ -554,7 +551,7 @@
 
     .clock,
     .book,
-    .eay,
+    .eye,
     .star {
       margin-bottom: 15px;
     }
@@ -615,11 +612,6 @@
   .instructor-courses {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-
-  .course__img,
-  .course__content {
-    width: 75%;
   }
 
   .course__img {
@@ -712,7 +704,7 @@
 
     .clock,
     .book,
-    .eay,
+    .eye,
     .star {
       margin-bottom: 15px;
     }
@@ -802,7 +794,7 @@
 
     .clock,
     .book,
-    .eay,
+    .eye,
     .star {
       margin-bottom: 15px;
     }
@@ -909,7 +901,7 @@
 
     .clock,
     .book,
-    .eay,
+    .eye,
     .star {
       margin-bottom: 15px;
     }

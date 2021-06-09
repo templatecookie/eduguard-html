@@ -1,36 +1,34 @@
 // Course Notes Starts Here
 .course-notes {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    &-area {
-        max-width: 815px;
+  &-area {
+    max-width: 815px;
+  }
+
+  h6 {
+    color: #666575 !important;
+    font-family: poppin-medium;
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
+
+  &-item {
+    position: relative;
+
+    .dot {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      background-color: #8f8fa3;
+      border-radius: 50%;
+      margin-right: 10px;
     }
 
-    h6 {
-        color: #666575 !important;
-        font-weight: 500 !important;
-        font-size: 16px !important;
-        margin-bottom: 5px;
+    p {
+      margin-left: 10px;
     }
-
-    &-item {
-        position: relative;
-
-        .dot {
-            position: absolute;
-            top: 8px;
-            left: 0;
-            width: 5px;
-            height: 5px;
-            background-color: #8F8FA3;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        p {
-            margin-left: 10px;
-        }
-    }
+  }
 }
-
-// Course Notes Ends Here

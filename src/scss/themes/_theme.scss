@@ -34,16 +34,6 @@
 .dark-text {
   color: color(dark) !important;
 }
-// Font Size
-// . {
-//     font-size: 16px !important;
-// }
-// . {
-//     font-size: 18px !important;
-// }
-// .fs-6 {
-//     font-size: 14px !important;
-// }
 
 // Background color
 .bg-primary {
@@ -89,7 +79,6 @@
   width: 16px;
   border-radius: 50%;
   font-size: 10px;
-  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +126,7 @@
           margin-top: 10px;
           color: #908fa5;
           font-size: 14px;
-          font-weight: 500;
+          font-family: poppin-medium;
         }
 
         border: none;
@@ -152,7 +141,6 @@
       label {
         margin-bottom: 10px;
         font-size: 14px;
-        font-weight: 400;
       }
 
       input {
@@ -252,9 +240,7 @@
   .mb-100 {
     margin-bottom: 0;
   }
-  //   . {
-  //     font-size: 14px !important;
-  //   }
+
 }
 
 // Small devices 575px - 767px
@@ -278,9 +264,7 @@
   .mb-100 {
     margin-bottom: 0;
   }
-  //   . {
-  //     font-size: 14px !important;
-  //   }
+
 }
 
 @media (max-width: 991px) {
@@ -310,9 +294,7 @@
   .mb-100 {
     margin-bottom: 0;
   }
-  //   . {
-  //     font-size: 14px !important;
-  //   }
+
 }
 
 // large devices 992px - 1169px

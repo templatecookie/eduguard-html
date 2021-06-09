@@ -1,33 +1,4 @@
-// common
-%slickdots {
-  position: relative;
 
-  .slick-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    li {
-      button {
-        background-color: transparent;
-        border: 0px;
-        font-size: 0px;
-        width: 8px;
-        height: 8px;
-        background-color: #8f8fa3;
-        margin: 0px 8px;
-        border-radius: 50%;
-        transition: all 0.2s linear;
-      }
-      &.slick-active {
-        button {
-          width: 24px;
-          border-radius: 50px;
-          background-color: #202029;
-        }
-      }
-    }
-  }
-}
 // Banner Starts Here
 .main-banner {
   padding-top: 180px;
@@ -183,23 +154,20 @@
       text-align: center;
 
       h6 {
-        color: #202029 !important;
-        font-size: 20px !important;
-        font-weight: 600 !important;
         margin-bottom: 5px;
+        font-family: poppin-semiBold;
+        a {
+          color: #202029;
+        }
       }
 
       p {
-        font-size: 14px !important;
+        font-size: 14px;
+        line-height: 21px;
+        color: #8f8fa3;
       }
     }
   }
-
-  // .btn-primary {
-  //   margin-top: 50px;
-  //   padding: 19px 32px;
-  //   font-weight: 600;
-  // }
 
   &-shape {
     img {
@@ -217,40 +185,19 @@
     }
   }
 }
-// Popular Courses Starts Here
-.main-popular-course {
-  .course__content {
-    padding-bottom: 0 !important;
-  }
-}
 
 .featured-popular-courses-shape .dot-06 {
-  bottom: 100px;
+  top: 200px;
   left: 0px;
   z-index: -1;
 }
-// Learn With Starts Here
-.learn-with {
-  background-color: rgba($color: #ebebf2, $alpha: 0.7);
-  position: relative;
-
-  &-shape {
-    img {
-      position: absolute;
-    }
-
-    .circle-06 {
-      top: 60px;
-      right: 65px;
-    }
-  }
+.featured-popular-courses-shape .dot-07 {
+  top: 0px;
+  right: 0px;
 }
 
 // Learning Rules Starts Here
 .learning-rules {
-  padding: 100px 0px;
-  position: relative;
-
   &-item {
     margin-bottom: 8px;
     display: flex;
@@ -258,7 +205,7 @@
     align-items: center;
 
     .item-number {
-      flex-basis: 100px !important;
+      flex-basis: 100px;
 
       span {
         font-weight: 700;
@@ -269,14 +216,6 @@
     }
 
     .item-text {
-      h6 {
-        color: #42414b !important;
-        font-size: 24px;
-        line-height: 36px;
-        font-weight: 500;
-        margin-bottom: 6px;
-      }
-
       p {
         max-width: 376px;
       }
@@ -285,8 +224,6 @@
 
   &-starts {
     h2 {
-      font-size: 48px !important;
-      color: #202029 !important;
       margin-bottom: 20px;
     }
     .btn-primary {
@@ -316,7 +253,7 @@
       }
 
       .shape-1 {
-        top: 330px;
+        top: 355px;
         right: 40%;
         transform: translateX(-60%);
       }
@@ -331,6 +268,7 @@
   &-shape {
     img {
       position: absolute;
+      z-index: -1;
     }
 
     .shape-01 {
@@ -408,14 +346,6 @@
   }
   &__wrapper {
     position: relative;
-    .slider-arrows {
-      @extend %arrows;
-    }
-  }
-
-  // Slick dots
-  .about__slider {
-    @extend %slickdots;
   }
 }
 
@@ -469,40 +399,12 @@
       right: 67px;
     }
   }
-  // slick dots
-  .ourinstructor-active {
-    @extend %slickdots;
-  }
 }
+
 // Latest Events Featured Starts Here
 .main-events-featured {
-  background-color: rgba($color: #ebebf2, $alpha: 0.55);
   position: relative;
   z-index: 88;
-  .event {
-    margin: 0px 15px;
-  }
-  .event__img {
-    margin-bottom: 0 !important;
-
-    img {
-      border-radius: 5px 5px 0px 0px !important;
-    }
-  }
-
-  .event__content {
-    padding-top: 12px;
-    background-color: white;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 5px;
-  }
-
-  .btn-primary {
-    margin-top: 50px;
-    padding: 19px 32px;
-  }
-
   &-shape {
     img {
       position: absolute;
@@ -512,11 +414,6 @@
       bottom: -66px;
       left: 18px;
     }
-  }
-
-  // Slick dots
-  .eventsSlider {
-    @extend %slickdots;
   }
 }
 
@@ -531,7 +428,7 @@
 
 .main-become-instructor {
   padding: 100px 0px;
-  padding-top: 200px;
+  padding-top: 200px !important;
   background-color: #ebebf2;
   position: relative;
 
@@ -556,16 +453,14 @@
       margin-top: 30px;
 
       h6 {
-        color: #42414b !important;
-        font-size: 32px !important;
-        line-height: 40px;
-        font-weight: 600 !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 10px;
       }
 
       p {
+        font-size: 16px;
+        line-height: 24px;
         margin-bottom: 20px;
-        font-weight: 400;
+        color: #8f8fa3;
       }
 
       .green-btn {
@@ -584,7 +479,6 @@
 }
 
 // Responsive
-
 @media (min-width: 1201px) and (max-width: 1499px) {
   .main-become-instructor-shape,
   .main-events-featured-shape,
@@ -592,8 +486,6 @@
   .about-services-shape,
   .learning-rules-shape,
   .featured-popular-courses-shape,
-  .learning-rules-ends-circle,
-  .earning-rules-ends-shape,
   .browse-categories-shape {
     display: none;
   }
@@ -601,6 +493,37 @@
   .main-banner,
   .learning-rules {
     overflow: hidden !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  // learning Rules
+  .learning-rules {
+    overflow: hidden;
+  }
+  .learning-rules-shape .shape-01 {
+    top: 0px;
+    left: 0px;
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    top: -110px;
+    right: -15px;
+  }
+  .learning-rules-ends-circle img {
+    left: 130px;
+    top: -44px;
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: 220px;
+    right: 65%;
+  }
+  .learning-rules-item {
+    margin-bottom: 30px;
+  }
+  .learning-rules-shape .shape-02 {
+    left: auto;
+    right: 0px;
+    bottom: -125px;
   }
 }
 
@@ -615,24 +538,9 @@
   .main-events-featured-shape,
   .main-instructor-featured-shape,
   .about-services-shape,
-  .learning-rules-shape,
   .featured-popular-courses-shape,
-  .learning-rules-ends-circle,
-  .earning-rules-ends-shape,
   .browse-categories-shape {
     display: none;
-  }
-
-  .learning-rules-starts {
-    text-align: center;
-
-    h2 {
-      font-size: 30px !important;
-    }
-  }
-
-  .learning-rules-item {
-    display: block !important;
   }
 
   .learning-rules-starts {
@@ -654,6 +562,21 @@
   .about-services__wrapper .slider-arrows .next-arrow {
     display: none !important;
   }
+  // Learning Rules section
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    height: 100%;
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: auto;
+    right: auto;
+    left: 120px;
+    bottom: -120px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -674,20 +597,81 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    img {
+
+    & > img {
       height: 450px;
-      object-fit: contain;
     }
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    height: 450px;
+    top: 0px;
+    right: 30px;
+  }
+
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: auto;
+    bottom: 0px;
+    left: 115px;
+    transform: rotate(90deg);
   }
 
   .about-services .testimonial__wrapper_item p {
     text-align: center;
   }
 
+  .learning-rules-ends {
+    justify-content: flex-start;
+  }
+
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    left: auto;
+    right: 150px;
+  }
+
+  .learning-rules-ends-circle img {
+    left: 50px;
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
+    display: none;
+  }
+
+  .learning-rules-ends-circle img {
+    left: auto;
+    right: 0px;
+    transform: rotate(45deg);
+  }
+  .learning-rules-ends-circle img {
+    left: auto;
+    right: 45px;
+    transform: rotate(45deg);
+  }
+
   .learning-rules-starts h2,
   .learning-rules-starts .h2 {
-    font-size: 32px !important;
-    line-height: 42px !important;
+    text-align: left;
+  }
+  .learning-rules-item .item-number span {
+    font-size: 58px;
+    line-height: 68px;
+  }
+
+  .learning-rules-ends {
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+  .learning-rules-item .item-number {
+    flex-basis: 65px;
+  }
+  .learning-rules {
+    overflow: hidden;
+  }
+  .learning-rules-shape .shape-02 {
+    bottom: -85px;
+    left: auto;
+    right: -45px;
+  }
+  .learning-rules-item .item-text {
+    text-align: left;
   }
 }
 
@@ -705,8 +689,6 @@
   }
 
   .browse-categories {
-    padding: 30px 0px;
-
     h3 {
       margin-bottom: 20px;
     }
@@ -726,55 +708,6 @@
 
     &-area {
       flex-wrap: wrap;
-    }
-  }
-
-  .learn-with {
-    &-shape {
-      display: none;
-    }
-  }
-
-  .learning-rules {
-    padding: 30px 0px;
-
-    &-item {
-      flex-direction: column;
-
-      .item-number {
-        margin-right: 0;
-      }
-
-      .item-text {
-        text-align: center;
-
-        h6 {
-          font-size: 20px !important;
-        }
-      }
-    }
-
-    &-shape {
-      display: none;
-    }
-
-    &-starts {
-      text-align: center;
-
-      .btn-primary {
-        margin-top: 20px;
-      }
-    }
-
-    &-ends {
-      margin-right: 0;
-      padding-left: 0;
-      margin-top: 30px;
-
-      .learning-rules-ends-circle,
-      .earning-rules-ends-shape {
-        display: none;
-      }
     }
   }
 
@@ -837,14 +770,6 @@
       margin-bottom: 135px;
 
       .main-text {
-        h6 {
-          font-size: 20px !important;
-        }
-
-        p {
-          font-size: 14px !important;
-        }
-
         .green-btn {
           font-size: 12px;
         }
@@ -861,14 +786,9 @@
   .banner-input .main-input input {
     width: 195px;
   }
-  // Slick dots
-  .about-services .about__slider .slick-dots,
-  .main-events-featured .eventsSlider .slick-dots,
-  .main-instructor-featured .ourinstructor-active .slick-dots {
-    margin-top: 15px;
-  }
-  .about-services .about__slider .slick-dots {
-    margin-top: 30px !important;
+
+  .learning-rules-ends > img {
+    height: 350px;
   }
   .mentor {
     &__img {
@@ -881,10 +801,6 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  // .best-instructor-featured .mentor__img img {
-  //   width: 100% !important;
-  //   height: auto !important;
-  // }
 
   .main-banner {
     &-end {
@@ -893,8 +809,6 @@
   }
 
   .browse-categories {
-    padding: 30px 0px;
-
     h3 {
       margin-bottom: 20px;
     }
@@ -914,59 +828,6 @@
 
     &-area {
       flex-wrap: wrap;
-    }
-  }
-
-  .learn-with {
-    &-shape {
-      display: none;
-    }
-  }
-
-  .learning-rules {
-    padding: 30px 0px;
-
-    &-item {
-      flex-direction: column;
-
-      .item-number {
-        margin-right: 0;
-      }
-
-      .item-text {
-        text-align: center;
-
-        h6 {
-          font-size: 20px !important;
-        }
-      }
-    }
-
-    &-shape {
-      display: none;
-    }
-
-    &-starts {
-      text-align: center;
-
-      h2 {
-        font-size: 26px !important;
-      }
-
-      .btn-primary {
-        margin-top: 20px;
-      }
-    }
-
-    &-ends {
-      margin-right: 0;
-      padding-left: 0;
-      margin-top: 30px;
-
-      .learning-rules-ends-circle,
-      .earning-rules-ends-shape {
-        display: none;
-      }
     }
   }
 
@@ -1029,14 +890,6 @@
       margin-bottom: 135px;
 
       .main-text {
-        h6 {
-          font-size: 20px !important;
-        }
-
-        p {
-          font-size: 14px !important;
-        }
-
         .green-btn {
           font-size: 12px;
         }
@@ -1061,8 +914,6 @@
   }
 
   .browse-categories {
-    padding: 30px 0px;
-
     h3 {
       margin-bottom: 20px;
     }
@@ -1085,15 +936,7 @@
     }
   }
 
-  .learn-with {
-    &-shape {
-      display: none;
-    }
-  }
-
   .learning-rules {
-    padding: 30px 0px;
-
     &-item {
       flex-direction: column;
 
@@ -1103,10 +946,6 @@
 
       .item-text {
         text-align: center;
-
-        h6 {
-          font-size: 20px !important;
-        }
       }
     }
 
@@ -1116,10 +955,6 @@
 
     &-starts {
       text-align: center;
-
-      h2 {
-        font-size: 26px !important;
-      }
 
       .btn-primary {
         margin-top: 20px;
@@ -1199,10 +1034,6 @@
       .main-text {
         h6 {
           font-size: 20px !important;
-        }
-
-        p {
-          font-size: 14px !important;
         }
 
         .green-btn {
@@ -1229,8 +1060,6 @@
   }
 
   .browse-categories {
-    padding: 30px 0px;
-
     h3 {
       margin-bottom: 20px;
     }
@@ -1250,59 +1079,6 @@
 
     &-area {
       flex-direction: column;
-    }
-  }
-
-  .learn-with {
-    &-shape {
-      display: none;
-    }
-  }
-
-  .learning-rules {
-    padding: 30px 0px;
-
-    &-item {
-      flex-direction: column;
-
-      .item-number {
-        margin-right: 0;
-      }
-
-      .item-text {
-        text-align: center;
-
-        h6 {
-          font-size: 20px !important;
-        }
-      }
-    }
-
-    &-shape {
-      display: none;
-    }
-
-    &-starts {
-      text-align: center;
-
-      h2 {
-        font-size: 26px !important;
-      }
-
-      .btn-primary {
-        margin-top: 20px;
-      }
-    }
-
-    &-ends {
-      margin-right: 0;
-      padding-left: 0;
-      margin-top: 30px;
-
-      .learning-rules-ends-circle,
-      .earning-rules-ends-shape {
-        display: none;
-      }
     }
   }
 
@@ -1365,14 +1141,6 @@
       margin-bottom: 135px;
 
       .main-text {
-        h6 {
-          font-size: 20px !important;
-        }
-
-        p {
-          font-size: 14px !important;
-        }
-
         .green-btn {
           font-size: 12px;
         }
@@ -1398,10 +1166,25 @@
   .about-services .testimonial__wrapper_item {
     padding: 24px 15px;
   }
-  .about-services .about__slider .slick-dots {
-    margin-top: 15px !important;
-  }
+
   .main-events-featured .event {
     margin-bottom: 15px;
+  }
+  // Learning rules
+  .learning-rules {
+    &-item {
+      align-items: flex-start;
+      .item-number {
+        flex-basis: 85px;
+      }
+    }
+  }
+
+  .learning-rules-ends-circle img,
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    display: none;
+  }
+  .learning-rules-ends > img {
+    height: auto;
   }
 }

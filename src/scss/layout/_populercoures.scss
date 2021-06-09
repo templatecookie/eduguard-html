@@ -83,7 +83,7 @@
     .course__content_time {
       .clock,
       .star,
-      .eay,
+      .eye,
       .book {
         span {
           font-size: 12px !important;
@@ -108,7 +108,7 @@
     }
     .course__content_title h6 {
       font-size: 16px;
-      font-weight: 500;
+      font-family: poppin-medium;
     }
   }
 }
@@ -137,7 +137,7 @@
     }
     .course__content_title h6 {
       font-size: 16px;
-      font-weight: 500;
+      font-family: poppin-medium;
     }
     .course {
       margin: 0 75px;
@@ -174,7 +174,7 @@
     }
     .course__content_title h6 {
       font-size: 16px;
-      font-weight: 500;
+      font-family: poppin-medium;
     }
     .course {
       margin-bottom: 30px !important;
@@ -183,8 +183,4 @@
       width: 100%;
     }
   }
-}
-
-// extra Small devices 420px
-@media (max-width: 420px) {
 }

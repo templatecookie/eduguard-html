@@ -1,165 +1,90 @@
-// Font Import
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+// fonts family
 
-$font: 'Poppins', sans-serif;
-
-h1 {
-  font-size: 80px;
-  line-height: 1.25;
-  font-weight: 700;
-}
-h2 {
-  font-size: 56px;
-  line-height: 1.25;
-  font-weight: 700;
-}
-h3 {
-  font-size: 40px;
-  line-height: 1.25;
-  font-weight: 700;
-  color: #202029 !important;
-}
-h4 {
-  font-size: 32px;
-  line-height: 1.25;
-  font-weight: 700;
-  color: #191922 !important;
-}
-h5 {
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 600;
-  color: #202029 !important;
-}
-h6 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #202029 !important;
+.font-title--lg,
+.font-title--md,
+.font-title--sm,
+.font-title--xs {
+  text-transform: capitalize;
 }
 
-p {
-  color: #8f8fa3 !important;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: normal;
-  margin: 0;
+.font-title--lg,
+.font-title--md,
+.font-title--xs,
+.font-title--card {
+  font-family: poppin-bold;
+  color: #202029;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: inherit;
-  &:hover {
-    color: inherit;
+// Fonts  => Title/heading
+.font-title {
+  &--lg {
+    font-size: 80px;
+    line-height: 100px;
+    @media (max-width: 1024px) {
+      font-size: 58px;
+      line-height: 68px;
+    }
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 42px;
+    }
   }
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: color(lightBlack);
-  transition: 0.3s;
-  margin: 0;
-}
+  &--md {
+    font-size: 40px;
+    line-height: 50px;
 
-/*------------------------*/
-/*-------RESPOSIVE---------*/
-/*-------------------------*/
-
-// large devices 992px - 1169px
-@media (min-width: 992px) and (max-width: 1199px) {
-  h1 {
-    font-size: 52px;
+    @media (max-width: 767px) {
+      font-size: 26px;
+      line-height: 36px;
+    }
   }
-  h3 {
-    font-size: 38px;
-  }
-  h4 {
+  &--sm {
     font-size: 32px;
+    line-height: 40px;
+    font-family: poppin-semiBold;
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
-  h5 {
+  &--xs {
     font-size: 24px;
-  }
-}
+    line-height: 36px;
+    color: #42414b;
+    font-family: poppin-medium;
 
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
-  h1 {
-    font-size: 55px;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
-  h3 {
-    font-size: 35px;
-  }
-  h4 {
-    font-size: 32px;
-  }
-  h5 {
-    font-size: 24px;
-  }
-  p {
-    font-size: 14px;
-  }
-}
 
-// Small devices 575px - 767px
-@media (min-width: 575px) and (max-width: 767px) {
-  h3 {
-    font-size: 32px;
-  }
-  h4 {
-    font-size: 30px;
-  }
-  h5 {
-    font-size: 22px;
-  }
-  h6 {
+  &--card {
     font-size: 20px;
-  }
-  p {
-    font-size: 14px;
-  }
-}
-
-// Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  h3 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 24px;
-  }
-  h5 {
-    font-size: 18px;
-  }
-  h6 {
-    font-size: 18px;
-  }
-  p {
-    font-size: 14px;
+    line-height: 30px;
+    font-family: poppin-medium;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 }
 
-// extra Small devices 420px
-@media (max-width: 420px) {
-  h3 {
-    font-size: 23px;
+// Fonts => paragraph/section brief
+.font-para {
+  &--lg {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3;
+    font-family: poppin-medium;
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
-  h4 {
-    font-size: 20px;
-  }
-  h5 {
-    font-size: 18px;
-  }
-  h6 {
-    font-size: 18px;
-  }
-  p {
+  &--md {
     font-size: 14px;
+    line-height: 21px;
+    color: #8585a3;
   }
 }

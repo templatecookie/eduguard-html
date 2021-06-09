@@ -24,9 +24,21 @@ html {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px;
+}
+
 body {
-  font-family: $font;
+  // font-family: $font;
+  font-family: poppin-regular;
   transition: 0.3s;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
 }
 
 a:focus,
@@ -37,6 +49,9 @@ a:focus,
 }
 a {
   transition: 0.3s;
+  &:hover {
+    color: #202029;
+  }
 }
 a,
 a:focus,
@@ -65,6 +80,9 @@ ul {
 
 li {
   list-style: none;
+}
+p {
+  margin-bottom: 0px;
 }
 
 .bg-warning {
@@ -99,16 +117,19 @@ li {
     }
   }
 }
-.section-title {
-  margin-bottom: 50px;
-}
+
+// .section-title {
+//   margin-bottom: 50px;
+// }
 
 .mb-30 {
   margin-bottom: 30px;
 }
+
 .footer-ex-p {
   padding-top: 220px !important;
 }
+
 button {
   &:focus {
     outline: none;
