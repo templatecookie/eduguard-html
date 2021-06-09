@@ -53,7 +53,7 @@
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 575,
         settings: {
           dots: false,
           autoplay: true,
@@ -338,7 +338,6 @@
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          dots: false,
         },
       },
       {
@@ -346,15 +345,15 @@
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: false,
         },
       },
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false,
+          // slidesToSc
+          centerMode: true,
+          centerPadding: '15px',
         },
       },
     ],
