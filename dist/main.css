@@ -19396,7 +19396,7 @@ body {
   position: relative;
   padding: 250px 0px; }
   .comingsoon-area-start p {
-    color: #202029 !important;
+    color: #202029;
     margin-top: 10px;
     margin-bottom: 25px; }
   .comingsoon-area-start form {
@@ -19466,12 +19466,14 @@ body {
     border-radius: 5px;
     margin-right: 15px; }
     #countdown .timer-body-block .table-cell .tab-val {
-      font-size: 40px; }
+      font-size: 40px;
+      line-height: 40px; }
     #countdown .timer-body-block .table-cell .tab-metr {
       margin: 0;
-      color: #8f8fa3 !important;
+      color: #8f8fa3;
       letter-spacing: 1px;
-      font-size: 12px !important; }
+      font-size: 12px;
+      text-transform: uppercase; }
 
 @media (max-width: 420px) {
   .comingsoon-header {
@@ -19640,6 +19642,29 @@ body {
       width: 100%;
       margin-bottom: 15px;
       margin-right: 0; } }
+
+@media (max-width: 1200px) {
+  .comingsoon-area-start input {
+    text-align: center; } }
+
+@media (max-width: 767px) {
+  .comingsoon-area-start form {
+    margin: 30px 0px; }
+  #countdown .timer-body-block .table-cell {
+    width: 75px;
+    height: 75px; }
+  #countdown .timer-body-block .table-cell .tab-val {
+    font-size: 28px;
+    line-height: 38px; }
+  .comingsoon-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .comingsoon-header .logo {
+    margin-right: 0px;
+    margin-bottom: 30px; } }
 
 .become-instructor-image {
   margin-left: 65px;
