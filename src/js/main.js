@@ -1,5 +1,33 @@
 'use strict';
 
+// Toggle Menu
+const toggleMenu = document.querySelector('.menu-icon-container');
+const sidebar = document.querySelector('.navbar-mobile');
+toggleMenu.addEventListener('click', function () {
+  sidebar.classList.toggle('show');
+  document.body.classList.toggle('over');
+});
+
+var navMenu = [].slice.call(
+  document.querySelectorAll('.navbar-mobile__menu-item')
+);
+
+for (var y = 0; y < navMenu.length; y++) {
+  navMenu[y].addEventListener('click', function () {
+    menuClick(this);
+  });
+}
+
+function menuClick(current) {
+  const active = current.classList.contains('open');
+  navMenu.forEach((el) => el.classList.remove('open'));
+  if (active) {
+    current.classList.remove('open');
+  } else {
+    current.classList.add('open');
+  }
+}
+
 (function ($) {
   $('.hamburger-menu a').on('click', function () {
     $('#mySidenav').css('left', '0');

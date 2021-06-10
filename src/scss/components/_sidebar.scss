@@ -40,6 +40,14 @@
             }
           }
         }
+        &.open {
+          .navbar-mobile__menu-dropmenu li a {
+            &.active {
+              background-color: #1088ff72 !important;
+              color: #fff !important;
+            }
+          }
+        }
         a {
           display: flex;
           justify-content: space-between;
@@ -76,6 +84,7 @@
       color: #42414b;
       font-family: poppin-medium;
     }
+
     &-dropicon {
       margin-right: 15px;
       svg {
