@@ -23,6 +23,10 @@
     $('#overlayy').toggleClass('active');
   }
 
+  $('.menu-icon-container').on('click', function () {
+    $('.menu-icon').toggleClass('transformed');
+  });
+
   //Events Slider
   $('.eventsSlider').slick({
     infinite: true,
