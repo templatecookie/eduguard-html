@@ -189,7 +189,7 @@ header {
   }
   .rightContent {
     &.appear {
-      #cart-nav {
+      .cart-nav {
         margin-right: 0px !important;
       }
       .btn {
@@ -221,7 +221,7 @@ header {
       }
     }
   }
-  #cart-nav {
+  .cart-nav {
     position: relative;
     .badge {
       position: absolute;
