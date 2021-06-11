@@ -106,13 +106,15 @@ header {
             cursor: pointer;
             position: relative;
 
-            &:hover {
+            &:hover,
+            &.active {
               background-color: #1089ff;
 
               a {
-                color: #fff;
+                color: #fff !important;
               }
             }
+
             a {
               font-size: 16px;
               line-height: 24px;
@@ -135,10 +137,16 @@ header {
                     display: block;
                     li {
                       display: block;
+                      &.active {
+                        a {
+                          color: #fff !important;
+                        }
+                      }
                     }
                   }
                 }
                 a {
+                  color: #202029 !important;
                   span {
                     transform: rotate(0deg);
                   }
@@ -169,7 +177,7 @@ header {
                   &:hover {
                     background-color: #1089ff;
                     a {
-                      color: #fff;
+                      color: #fff !important;
                     }
                   }
                   a {
@@ -274,13 +282,13 @@ header {
       }
     }
   }
+
   #search-nav {
     &.appear {
       background-color: #42414b !important;
     }
   }
 }
-
 .nav-shadow {
   box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
 }

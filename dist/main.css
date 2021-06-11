@@ -12091,10 +12091,10 @@ header {
             transition: all 0.3s ease-in-out;
             cursor: pointer;
             position: relative; }
-            header .navbar-nav .nav-item--dropdown ul li:hover {
+            header .navbar-nav .nav-item--dropdown ul li:hover, header .navbar-nav .nav-item--dropdown ul li.active {
               background-color: #1089ff; }
-              header .navbar-nav .nav-item--dropdown ul li:hover a {
-                color: #fff; }
+              header .navbar-nav .nav-item--dropdown ul li:hover a, header .navbar-nav .nav-item--dropdown ul li.active a {
+                color: #fff !important; }
             header .navbar-nav .nav-item--dropdown ul li a {
               font-size: 16px;
               line-height: 24px;
@@ -12115,9 +12115,13 @@ header {
                   display: block; }
                   header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown ul li {
                     display: block; }
-              header .navbar-nav .nav-item--dropdown ul li.submenu:hover a span {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg); }
+                    header .navbar-nav .nav-item--dropdown ul li.submenu:hover .nav-item--subDropdown ul li.active a {
+                      color: #fff !important; }
+              header .navbar-nav .nav-item--dropdown ul li.submenu:hover a {
+                color: #202029 !important; }
+                header .navbar-nav .nav-item--dropdown ul li.submenu:hover a span {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
             header .navbar-nav .nav-item--dropdown ul li .nav-item--subDropdown {
               visibility: hidden;
               pointer-events: none;
@@ -12145,7 +12149,7 @@ header {
                   header .navbar-nav .nav-item--dropdown ul li .nav-item--subDropdown ul li:hover {
                     background-color: #1089ff; }
                     header .navbar-nav .nav-item--dropdown ul li .nav-item--subDropdown ul li:hover a {
-                      color: #fff; }
+                      color: #fff !important; }
                   header .navbar-nav .nav-item--dropdown ul li .nav-item--subDropdown ul li a {
                     color: #202029; }
   header .navbar-light .navbar-toggler {
