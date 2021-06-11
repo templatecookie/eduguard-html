@@ -531,32 +531,6 @@
   }
 }
 
-@media (max-width: 991px) {
-  .rating-icons {
-    .jq-star {
-      margin-right: 0px;
-      &-svg {
-        width: 24px;
-      }
-    }
-  }
-
-  // feedback comments
-  .feedback-comment h6,
-  .feedback-comment .h6 {
-    font-size: 14px !important;
-    line-height: 24px !important;
-  }
-
-  .students-feedback-item .feedback-rating-start .text h6,
-  .students-feedback-item .feedback-rating-start .text .h6 {
-    line-height: 24px !important;
-  }
-  .students-feedback-item .feedback-rating-start .text p {
-    line-height: 22px !important;
-    margin-top: 0px;
-  }
-}
 // large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .instructor-course-info {
@@ -602,6 +576,33 @@
   }
 }
 
+@media (max-width: 991px) {
+  .rating-icons {
+    .jq-star {
+      margin-right: 0px;
+      &-svg {
+        width: 24px;
+      }
+    }
+  }
+
+  // feedback comments
+  .feedback-comment h6,
+  .feedback-comment .h6 {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+
+  .students-feedback-item .feedback-rating-start .text h6,
+  .students-feedback-item .feedback-rating-start .text .h6 {
+    line-height: 24px !important;
+  }
+  .students-feedback-item .feedback-rating-start .text p {
+    line-height: 22px !important;
+    margin-top: 0px;
+  }
+}
+
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .breadcrumb {
@@ -627,6 +628,36 @@
   // Review
   .instructor-rating-area {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .instructor-courses-instructor .instructor-image,
+  .instructor-courses-instructor .instructor-image img {
+    width: 180px;
+    height: 180px;
+  }
+  .instructor-info h4 {
+    line-height: 48px !important;
+  }
+  .social-links li a {
+    width: 45px;
+    height: 45px;
+  }
+  .instructor-course-info-courses .text h6,
+  .instructor-course-info-courses .text .h6,
+  .instructor-course-info-students .text h6,
+  .instructor-course-info-students .text .h6,
+  .instructor-course-info-rating .text h6,
+  .instructor-course-info-rating .text .h6 {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+  .instructor-rating-area {
+    align-items: flex-start;
+  }
+  .rating-number {
+    width: 100%;
   }
 }
 
@@ -946,9 +977,5 @@
   }
   .instructor-info h4 {
     margin-bottom: 0px !important;
-  }
-
-  .rating-number {
-    width: 100%;
   }
 }

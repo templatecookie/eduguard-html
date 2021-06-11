@@ -304,6 +304,17 @@
   .intro-featured .successful-instructor-feature {
     margin: auto 30px;
   }
+  .info-desk-image,
+  .become-instructor-image,
+  .instructor-rules-image {
+    width: 350px !important;
+    height: 350px !important;
+    object-fit: contain;
+  }
+
+  .help__wrapper {
+    margin-bottom: 0px !important;
+  }
 }
 
 // Small devices 575px - 767px

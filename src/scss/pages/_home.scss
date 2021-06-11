@@ -1,33 +1,4 @@
-// common
-// %slickdots {
-//   position: relative;
 
-//   .slick-dots {
-//     display: flex;
-//     justify-content: center;
-//     margin-top: 40px;
-//     li {
-//       button {
-//         background-color: transparent;
-//         border: 0px;
-//         font-size: 0px;
-//         width: 8px;
-//         height: 8px;
-//         background-color: #8f8fa3;
-//         margin: 0px 8px;
-//         border-radius: 50%;
-//         transition: all 0.2s linear;
-//       }
-//       &.slick-active {
-//         button {
-//           width: 24px;
-//           border-radius: 50px;
-//           background-color: #202029;
-//         }
-//       }
-//     }
-//   }
-// }
 // Banner Starts Here
 .main-banner {
   padding-top: 180px;
@@ -103,7 +74,6 @@
     cursor: pointer;
     margin-right: 20px;
     width: 218px;
-    height: 205px;
     border: 1.5px solid #ebebf2;
     border-radius: 5px;
     transition: 0.3s all linear;
@@ -820,14 +790,17 @@
   .learning-rules-ends > img {
     height: 350px;
   }
+  .mentor {
+    &__img {
+      width: 270px;
+      height: 290px;
+      margin: auto;
+    }
+  }
 }
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important;
-  }
 
   .main-banner {
     &-end {

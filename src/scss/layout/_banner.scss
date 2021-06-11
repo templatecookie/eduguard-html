@@ -188,6 +188,13 @@
   }
 }
 
+@media (max-width: 767px) {
+  .banner-two-end .image img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
   .banner {

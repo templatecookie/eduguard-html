@@ -6,7 +6,6 @@
     background-color: #fff;
     overflow: hidden;
     margin: 0px 15px;
-    // transition: all 0.2s linear;
     p {
       font-size: 20px;
       line-height: 30px;
@@ -107,6 +106,14 @@
     right: -15px;
     z-index: 2;
     transform: translateY(-50%);
+  }
+  .testimonial__wrapper_item-author .author__name h6,
+  .testimonial__wrapper_item-author .author__name .h6 {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+  .author__name {
+    margin-top: 15px;
   }
 }
 

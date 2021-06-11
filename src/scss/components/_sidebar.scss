@@ -1,190 +1,130 @@
-// @import 'bourbon';
-// @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
-
-.toggled {
-  .app {
-    left: 0px;
-    transition: all 0.3s ease-in-out;
-  }
-}
-
-.app {
-  position: absolute;
-  top: 0;
-  left: -550px;
-  height: 100vh;
-  z-index: 9999;
-  transition: all 0.3s ease-in-out;
-}
-
-.sidemenu__search-field {
-  input {
-    padding: 10px;
-    font-size: 17px;
-    border: none;
-    float: left;
-    width: 80%;
-    background: white;
-  }
-  button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #1089ff;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    &:focus {
-      transform: translateY(0.9px);
-    }
-  }
-}
-/* -------------
-Sidebar
-----------------*/
-.sidebar {
-  position: absolute;
-  //width: 33.3333%;
-  width: 25em;
-  height: 100%;
-  top: 0;
-  overflow: hidden;
-  overflow-y: auto;
-  background-color: #19222a;
-  -webkit-transform: translateZ(0);
-  visibility: visible;
-  -webkit-backface-visibility: hidden;
-
-  .sidemenu__header {
-    background-color: #1089ff;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 15px;
-    h5 {
-      font-size: 18px;
-      color: #fff;
-      font-family: poppin-bold;
-    }
-    &-close {
-      border: 0px;
-    }
-  }
-}
-
-/* -------------
-Sidebar Nav
-----------------*/
-.sidebar-nav {
+.navbar-mobile {
   position: fixed;
+  top: 0;
+  left: -280px;
+  width: 60px;
   background-color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.8s ease-in-out;
+  z-index: 9999999;
+  &.show {
+    left: 0px;
+    width: 300px;
+    padding: 20px 15px;
+    transition: all 0.8s ease-in-out;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-  height: 100%;
-  font-weight: 400;
-  font-size: 1.2em;
-  overflow: auto;
-  padding-bottom: 6em;
-  z-index: 9;
-  overflow: hidden;
-
-  ul {
-    list-style: none;
-    display: block;
-    padding: 0;
-    margin: 0;
-
-    li {
-      margin-left: 0;
-      padding-left: 0;
-      display: inline-block;
-      width: 100%;
-
-      a {
-        color: #42414b;
-        font-size: 14px;
-        line-height: 21px;
-        padding: 1.05em 1em;
-        position: relative;
-        display: block;
-
-        &:hover {
-          background-color: #202029;
-          color: #fff;
-          transition: all 0.6s linear;
-          &::after {
-            border-color: #fff;
+  &__menu {
+    margin: 30px 0px;
+    &-list {
+      li {
+        margin-bottom: 5px;
+        &.open,
+        &.active {
+          a {
+            background-color: #1089ff;
+            span {
+              color: #fff;
+              svg {
+                color: #fff;
+              }
+            }
+          }
+        }
+        &.open {
+          .navbar-mobile__menu-dropmenu li a {
+            &.active {
+              background-color: #1088ff72 !important;
+              color: #fff !important;
+            }
+          }
+        }
+        a {
+          display: flex;
+          justify-content: space-between;
+          padding: 15px 0px;
+          padding-left: 15px;
+          &:hover {
+            background-color: #1089ff;
+            span {
+              color: #fff;
+              svg {
+                color: #fff;
+              }
+            }
+          }
+        }
+        &.open {
+          & > a {
+            border-bottom: 2px solid #42414b;
+          }
+          .navbar-mobile__menu-dropmenu {
+            display: block;
+          }
+          .navbar-mobile__menu-dropicon {
+            svg {
+              transform: rotate(90deg);
+            }
           }
         }
       }
-      /* -------------
-Sidebar: icons
-----------------*/
-      i {
-        font-size: 1.8em;
-        padding-right: 0.5em;
-        width: 9em;
-        display: inline;
-        vertical-align: middle;
+    }
+    &-link {
+      font-size: 16px;
+      line-height: 24px;
+      color: #42414b;
+      font-family: poppin-medium;
+    }
+
+    &-dropicon {
+      margin-right: 15px;
+      svg {
+        color: #42414b;
       }
     }
-  }
+    &-dropmenu {
+      display: none;
+      li {
+        margin-bottom: 2px;
 
-  /* -------------
-Chev elements
-----------------*/
-  & > ul > li > a::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    border: solid #202029;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 2px;
-    transform: translateY(-50%) rotate(-45deg);
-    &:hover {
-      border-color: #fff !important;
-      transition: all 0.3s linear;
-    }
-  }
-  /* -------------
-Nav-Flyout
-----------------*/
-  & .nav-flyout {
-    position: absolute;
-    background-color: #080d11;
-    z-index: 9;
-    left: 2.5em;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-    transform: translateX(100%);
-    // @include transform(translateX(100%));
-    transition: all 0.5s ease;
-    // @include transition(all 0.5s ease);
-
-    a:hover {
-      background-color: rgba(255, 255, 255, 0.05);
-    }
-  }
-
-  /* -------------
-Hover
-----------------*/
-  & ul > li:hover {
-    .nav-flyout {
-      // @include transform(translateX(0));
-      // @include transition(all 0.5s ease);
-      transform: translateX(0);
-      transition: all 0.5s ease;
+        a {
+          font-size: 16px;
+          line-height: 24px;
+          color: #42414b;
+          font-family: poppin-medium;
+          padding: 15px 0px;
+          padding-left: 15px;
+          background-color: transparent !important;
+          &:hover {
+            background-color: rgba(16, 136, 255, 0.515) !important;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }
 
-@media (min-width: 320px) and (max-width: 574px) {
-  .sidebar {
-    width: 20em;
+@media (min-width: 1200px) {
+  .navbar-mobile,
+  .menu-icon-container {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-mobile {
+    &.show {
+      width: 260px;
+    }
   }
 }

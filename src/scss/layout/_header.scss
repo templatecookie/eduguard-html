@@ -1,4 +1,5 @@
 header {
+  position: relative;
   .navbar {
     padding: 0px;
     &-toggler {
@@ -188,7 +189,7 @@ header {
   }
   .rightContent {
     &.appear {
-      #cart-nav {
+      .cart-nav {
         margin-right: 0px !important;
       }
       .btn {
@@ -220,7 +221,7 @@ header {
       }
     }
   }
-  #cart-nav {
+  .cart-nav {
     position: relative;
     .badge {
       position: absolute;
@@ -280,6 +281,10 @@ header {
   }
 }
 
+.nav-shadow {
+  box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
+}
+
 // Responsive
 
 @media (max-width: 1199px) {
@@ -309,7 +314,7 @@ header {
     }
   }
   header .navbar-nav .nav-item--dropdown {
-    top: 75px;
+    top: 100%;
   }
 }
 
@@ -396,15 +401,6 @@ header {
     position: absolute;
     right: 0px;
   }
-  // header
-  //   .navbar-nav
-  //   .nav-item--dropdown
-  //   ul
-  //   li.submenu:hover
-  //   .nav-item--subDropdown {
-  //   left: 0;
-  //   top: 100%;
-  // }
 
   header .navbar-nav .nav-item--dropdown ul li.submenu:hover a span {
     transform: rotate(90deg);

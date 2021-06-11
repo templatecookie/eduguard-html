@@ -118,10 +118,6 @@ p {
   }
 }
 
-// .section-title {
-//   margin-bottom: 50px;
-// }
-
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -161,4 +157,8 @@ button {
   #my-rating {
     margin-top: 30px;
   }
+}
+.slick-arrows,
+.slick-dots {
+  display: none !important;
 }
