@@ -231,6 +231,7 @@ header {
   }
   .cart-nav {
     position: relative;
+    margin-right: 20px;
     .badge {
       position: absolute;
       top: -5px;
@@ -276,6 +277,7 @@ header {
       }
       &-button {
         padding: 8px;
+        margin-right: 25px;
         &.appear {
           background-color: #2493ff !important;
         }
