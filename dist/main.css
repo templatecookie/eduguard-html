@@ -10563,7 +10563,31 @@ button:focus {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px; }
+  .slick-dots li {
+    margin-right: 8px; }
+    .slick-dots li:nth-last-child(1) {
+      margin-right: 0px; }
+    .slick-dots li button {
+      font-size: 0px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 0px;
+      outline: 0; }
+    .slick-dots li.slick-active button {
+      width: 24px;
+      height: 8px;
+      border-radius: 50px;
+      background-color: #202029;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
 
 .toggled .app {
   left: 0px;
