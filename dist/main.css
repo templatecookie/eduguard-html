@@ -12262,38 +12262,7 @@ header {
          object-fit: cover; }
   header form {
     position: relative; }
-    header form .header__Search-input {
-      position: absolute;
-      top: 50%;
-      right: 40px;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      font-size: 16px;
-      padding: 6px 0px;
-      padding-left: 20px;
-      border-radius: 4px;
-      border: 1px solid rgba(144, 143, 165, 0.4);
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      width: 0px;
-      opacity: 0;
-      pointer-events: none;
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
-      header form .header__Search-input.appear {
-        width: 195px;
-        opacity: 1;
-        pointer-events: all; }
-      header form .header__Search-input::-webkit-input-placeholder {
-        font-size: 14px; }
-      header form .header__Search-input::-moz-placeholder {
-        font-size: 14px; }
-      header form .header__Search-input:-ms-input-placeholder {
-        font-size: 14px; }
-      header form .header__Search-input::-ms-input-placeholder {
-        font-size: 14px; }
-      header form .header__Search-input::placeholder {
-        font-size: 14px; }
+
     header form .header__Search-button {
       padding: 8px; }
       header form .header__Search-button.appear {
@@ -12351,8 +12320,6 @@ header {
       padding: 15px 0 !important; }
   header .navbar-nav.menuList {
     margin-right: 0px !important; }
-  header form .header__Search-input {
-    margin-top: 1px; }
   header .rightContent {
     position: relative;
     -webkit-transition: all 0.2s linear;
@@ -12380,12 +12347,7 @@ header {
             transform: rotate(90deg); } }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  header form .header__Search-input {
-    width: 260px;
-    height: 0px; }
-    header form .header__Search-input.appear {
-      width: 260px;
-      height: 40px; }
+
   header .rightContent {
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
