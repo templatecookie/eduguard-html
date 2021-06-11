@@ -10784,6 +10784,11 @@ button:focus {
           .navbar-mobile__menu-dropmenu li a:hover {
             background-color: rgba(16, 136, 255, 0.515) !important;
             color: #fff; }
+  .navbar-mobile--cross {
+    width: 30px;
+    height: 30px;
+    background-color: #ebebf2;
+    border: 0; }
 
 .filter-sidebar {
   position: fixed;
@@ -10834,7 +10839,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar-mobile.show {
-    width: 260px; }
+    width: 100%; }
   .filter-sidebar.active {
     width: 100%; } }
 
@@ -21168,7 +21173,8 @@ body {
     border-bottom: none;
     border-bottom-right-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
-    border-radius: 15px; }
+    border-radius: 15px;
+    position: relative; }
     .map-area-frame iframe {
       width: 100%;
       height: 392px;

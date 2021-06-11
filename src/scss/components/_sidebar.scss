@@ -113,6 +113,12 @@
       }
     }
   }
+  &--cross {
+    width: 30px;
+    height: 30px;
+    background-color: #ebebf2;
+    border: 0;
+  }
 }
 
 // Filter sidebar
@@ -174,7 +180,7 @@
   // Mobile Responsive
   .navbar-mobile {
     &.show {
-      width: 260px;
+      width: 100%;
     }
   }
   // Filter Sidebar

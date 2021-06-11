@@ -3,9 +3,17 @@
 // Toggle Menu
 const toggleMenu = document.querySelector('.menu-icon-container');
 const sidebar = document.querySelector('.navbar-mobile');
+const crossSidebar = document.querySelector('.navbar-mobile--cross');
+let menuicon = document.querySelector('.menu-icon');
+
 toggleMenu.addEventListener('click', function () {
   sidebar.classList.toggle('show');
   document.body.classList.toggle('over');
+});
+
+crossSidebar.addEventListener('click', function () {
+  sidebar.classList.remove('show');
+  menuicon.classList.remove('transformed');
 });
 
 var navMenu = [].slice.call(
