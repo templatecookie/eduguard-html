@@ -10785,6 +10785,48 @@ button:focus {
             background-color: rgba(16, 136, 255, 0.515) !important;
             color: #fff; }
 
+.filter-sidebar {
+  position: fixed;
+  top: 0;
+  left: -420px;
+  background-color: #fff;
+  width: 60px;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin-bottom: auto;
+  z-index: 999;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear; }
+  .filter-sidebar.active {
+    padding: 24px 15px;
+    width: 400px;
+    left: 0px; }
+  .filter-sidebar__top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 30px; }
+    .filter-sidebar__top button {
+      width: 30px;
+      height: 30px;
+      background: #ebebf2;
+      border: 0; }
+      .filter-sidebar__top button svg {
+        color: #202029; }
+  .filter-sidebar .event-search-wizard {
+    background-color: #ebebf2; }
+  .filter-sidebar .event-search-wizard-header h6, .filter-sidebar .event-search-wizard-header .h6,
+  .filter-sidebar .event-search-wizard-header .h6 {
+    font-family: poppin-semiBold; }
+  .filter-sidebar .price-range-block__inputWrapper input {
+    width: 100px !important; }
+
 @media (min-width: 1200px) {
   .navbar-mobile,
   .menu-icon-container {
@@ -10792,7 +10834,34 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar-mobile.show {
-    width: 260px; } }
+    width: 260px; }
+  .filter-sidebar.active {
+    width: 100%; } }
+
+@media (max-width: 574px) {
+  .event-search-results-heading {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .event-search-results-heading .nice-select {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .event-search-results-heading p {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px !important; }
+  .event-search-results-heading #filter {
+    font-size: 0px;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; } }
 
 .form-element {
   margin-bottom: 20px;

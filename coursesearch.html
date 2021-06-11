@@ -425,11 +425,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 order-2 order-lg-0">
+                <div class="col-lg-4 d-none d-lg-block">
                     <div class="event-search-wizard" id="category">
                         <div class="event-search-wizard-header">
                             <h6>Category</h6>
-                            <button style="border: 0; background: transparent;" onclick="accordion('category',this);">
+                            <button style="border: 0; background: transparent;" onclick="toggle('category',this);">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B"
@@ -531,7 +531,7 @@
                     <div class="event-search-wizard" id="level">
                         <div class="event-search-wizard-header">
                             <h6>Level</h6>
-                            <button style="border: 0; background: transparent;" onclick="accordion('level',this);">
+                            <button style="border: 0; background: transparent;" onclick="toggle('level',this);">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B"
@@ -600,7 +600,7 @@
                     <div class="event-search-wizard" id="price">
                         <div class="event-search-wizard-header">
                             <h6>Price</h6>
-                            <button style="border: 0; background: transparent;" onclick="accordion('price',this);">
+                            <button style="border: 0; background: transparent;" onclick="toggle('price',this);">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B"
@@ -640,7 +640,7 @@
                     <div class="event-search-wizard" id="rating">
                         <div class="event-search-wizard-header">
                             <h6>Rating</h6>
-                            <button style="border: 0; background: transparent;" onclick="accordion('rating',this);">
+                            <button style="border: 0; background: transparent;" onclick="toggle('rating',this);">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B"
@@ -720,7 +720,7 @@
                     <div class="event-search-wizard" id="duration">
                         <div class="event-search-wizard-header">
                             <h6>Duration</h6>
-                            <button style="border: 0; background: transparent;" onclick="accordion('duration',this);">
+                            <button style="border: 0; background: transparent;" onclick="toggle('duration',this);">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B"
@@ -798,7 +798,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 order-1 order-lg-0">
+                <div class="col-lg-8 ">
                     <div class="event-search-results">
                         <div class="event-search-results-heading">
                             <div class="nice-select" tabindex="0">
@@ -813,6 +813,20 @@
                                 </ul>
                             </div>
                             <p>1, 254 results found.</p>
+                            <button class="button button-lg button--primary button--primary-filter d-lg-none" id="filter">
+                                <span><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.3335 14.9999V9.55554" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.3335 6.4444V1" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M9.55469 14.9999V8" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M9.55469 4.88886V1" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M15.7773 14.9999V11.1111" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M15.7773 7.99995V1" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M1 9.55554H5.66663" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.22217 4.88867H11.8888" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M13.4443 11.1111H18.111" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    </span>
+                                Filter</button>
                         </div>
                     </div>
                     <div class="row event-search-content">
@@ -1102,7 +1116,372 @@
             </div>
         </div>
     </section>
-    <!-- Event Search Ends Here -->
+
+    <div class="filter-sidebar">
+        <div class="filter-sidebar__top">
+            <button class="filter--cross">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5967 4.59668L5.40429 13.7891" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.40332 4.59668L14.5957 13.7891" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+            </button>
+        </div>
+        <div class="filter-sidebar__wrapper">
+            <div class="event-search-wizard " id="category-sidebar">
+                <div class="event-search-wizard-header">
+                    <h6>Category</h6>
+                    <button style="border: 0; background: transparent;" onclick="toggle('category-sidebar',this);">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="event-search-wizard-body">
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="all">
+                                <label for="all">All</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>1,54,750</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="development">
+                                <label for="development">Development</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>45,770</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="finance">
+                                <label for="finance">Finance &amp; Accounting</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>35,790</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="it">
+                                <label for="it">IT &amp; Software</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>5,770</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="productivity">
+                                <label for="productivity">Offices Productivity</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>765</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="pdevelopment">
+                                <label for="pdevelopment">Personal Development</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>65</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="dmarketing">
+                                <label for="dmarketing">Digatal Marketing</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>9,870</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="hft">
+                                <label for="hft">Health &amp; Fitness</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>70</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-search-wizard active" id="level-sidebar">
+                <div class="event-search-wizard-header">
+                    <h6>Level</h6>
+                    <button style="border: 0; background: transparent;" onclick="toggle('level-sidebar',this);">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="event-search-wizard-body">
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="all2">
+                                <label for="all2">All</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>1,54,750</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="beginner">
+                                <label for="beginner">Beginner</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>45,770</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="intermediate">
+                                <label for="intermediate">Intermediate</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>35,790</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="advanced">
+                                <label for="advanced">Advanced</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>5,770</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="eexpert">
+                                <label for="eexpert">Expert</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>765</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-search-wizard active" id="price-sidebar">
+                <div class="event-search-wizard-header">
+                    <h6>Price</h6>
+                    <button style="border: 0; background: transparent;" onclick="toggle('price-sidebar',this);">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="event-search-wizard-body">
+                    <div class="event-search-wizard-item price-range">
+                        <div class="event-search-wizard-item-start">
+                            <div class="price-range-block">
+                                <form class="d-flex price-range-block__inputWrapper" action="#">
+                                    <input type="number" min="0" max="5000" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" style="width: 105px; height: 50px; border-radius: 4px; padding: 15px;">
+                                    <span>to</span>
+                                    <input type="number" min="0" max="5000" oninput="validity.valid||(value='5000');" id="max_price" class="price-range-field" style="width: 125px; height: 50px; padding: 15px; border-radius: 4px;">
+                                    <button class="angle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <div id="slider-range" class="price-filter-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-search-wizard active" id="rating-sidebar">
+                <div class="event-search-wizard-header">
+                    <h6>Rating</h6>
+                    <button style="border: 0; background: transparent;" onclick="toggle('rating-sidebar',this);">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="event-search-wizard-body">
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="all3">
+                                <label for="all3">All</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>1,54,750</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="s1">
+                                <label for="s1">1 Star and higher</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>45,770</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="starTwo">
+                                <label for="starTwo">2 Star and higher</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>35,790</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="starThree">
+                                <label for="starThree">3 Star and higher</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>5,770</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="s4">
+                                <label for="s4">4 Star and higher</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>765</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="s5">
+                                <label for="s5">5 Star</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>75</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-search-wizard active" id="duration-sidebar">
+                <div class="event-search-wizard-header">
+                    <h6>Duration</h6>
+                    <button style="border: 0; background: transparent;" onclick="toggle('duration-sidebar',this);">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16658 12.917L9.99992 7.08366L15.8333 12.917" stroke="#42414B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="event-search-wizard-body">
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="allcheck">
+                                <label for="allcheck">All</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>1,54,750</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="starOne">
+                                <label for="starOne">1 Star and higher</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>45,770</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="s2">
+                                <label for="s2">2 Star and higher</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>35,790</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="s3">
+                                <label for="s3">3 Star and higher</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>5,770</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="starFour">
+                                <label for="starFour">4 Star and higher</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>765</p>
+                        </div>
+                    </div>
+                    <div class="event-search-wizard-item">
+                        <div class="event-search-wizard-item-start">
+                            <form action="#">
+                                <input class="checkbox-primary" type="checkbox" id="starFive">
+                                <label for="starFive">5 Star</label>
+                            </form>
+                        </div>
+                        <div class="event-search-wizard-item-end">
+                            <p>75</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Starts Here -->
     <footer class="footer">
@@ -1319,11 +1698,21 @@
     <script src="src/js/app.js"></script>
     <script src="dist/main.js"></script>
     <script>
-        function accordion(id, el) {
+        function toggle(id, el) {
             const wizard = document.getElementById(id);
-            console.log(wizard);
             wizard.classList.toggle("active");
         }
+
+        const filterBtn = document.querySelector('#filter');
+            const cross = document.querySelector('.filter--cross');
+            filterBtn.addEventListener('click',function(){ 
+                let sidebar = document.querySelector('.filter-sidebar');
+                sidebar.classList.toggle('active')
+            });
+            cross.addEventListener('click',function(){
+                let sidebar = document.querySelector('.filter-sidebar');
+                sidebar.classList.remove('active')
+            });
     </script>
 </body>
 

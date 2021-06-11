@@ -1,3 +1,4 @@
+// Navigation menu
 .navbar-mobile {
   position: fixed;
   top: 0;
@@ -114,6 +115,54 @@
   }
 }
 
+// Filter sidebar
+.filter-sidebar {
+  position: fixed;
+  top: 0;
+  left: -420px;
+  background-color: #fff;
+  width: 60px;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin-bottom: auto;
+  z-index: 999;
+  transition: all 0.6s linear;
+  &.active {
+    padding: 24px 15px;
+    width: 400px;
+    left: 0px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    button {
+      width: 30px;
+      height: 30px;
+      background: #ebebf2;
+      border: 0;
+      svg {
+        color: #202029;
+      }
+    }
+  }
+
+  .event-search-wizard {
+    // background-color: #ddd;
+    // background-color: rgba(255, 255, 255, 0.4);
+    background-color: #ebebf2;
+  }
+  .event-search-wizard-header h6,
+  .event-search-wizard-header .h6 {
+    font-family: poppin-semiBold;
+  }
+  .price-range-block__inputWrapper input {
+    width: 100px !important;
+  }
+}
+
 @media (min-width: 1200px) {
   .navbar-mobile,
   .menu-icon-container {
@@ -122,9 +171,33 @@
 }
 
 @media (max-width: 767px) {
+  // Mobile Responsive
   .navbar-mobile {
     &.show {
       width: 260px;
     }
+  }
+  // Filter Sidebar
+  .filter-sidebar.active {
+    width: 100%;
+  }
+}
+
+@media (max-width: 574px) {
+  .event-search-results-heading {
+    flex-wrap: wrap;
+  }
+  .event-search-results-heading .nice-select {
+    order: 1;
+  }
+  .event-search-results-heading p {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px !important;
+  }
+  .event-search-results-heading #filter {
+    font-size: 0px;
+    order: 2;
   }
 }
