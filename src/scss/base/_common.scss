@@ -25,6 +25,9 @@
   &--bg-offwhite-four {
     background: rgba(235, 235, 242, 0.4);
   }
+  &--bg-offwhite-five {
+    background: rgba(235, 235, 242, 0.3);
+  }
   &--bg-offgradient {
     background: linear-gradient(
       180deg,
@@ -55,7 +58,6 @@
     }
   }
 }
-
 
 .bg-w {
   position: relative;

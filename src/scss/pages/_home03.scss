@@ -82,6 +82,7 @@
     top: 0;
     user-select: none;
     pointer-events: none;
+    z-index: -1;
     &.shape01 {
       top: -35px;
       right: 0px;
@@ -521,6 +522,7 @@
       }
     }
   }
+
   @media (min-width: 320px) and (max-width: 574px) {
     // banner three
     .banner-three {

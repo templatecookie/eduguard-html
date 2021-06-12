@@ -70,73 +70,109 @@ function menuClick(current) {
     slidesToScroll: 1,
     autoplay: false,
     dots: false,
-    arrows: false,
+    arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: ' .slider__arrow-left',
-    nextArrow: ' .slider__arrow-right',
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 1441,
         settings: {
           arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 992,
         settings: {
-          autoplay: true,
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
           arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 575,
         settings: {
-          dots: false,
-          autoplay: true,
           slidesToShow: 1,
-          slidesToScroll: 1,
           arrows: false,
+          dots: true,
         },
       },
     ],
   });
 
-  // newCourse
-  $('.new__courses').slick({
+  //Similar events
+  $('.similar-events').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    dots: false,
-    arrows: false,
+    dots: true,
+    arrows: true,
     autoplaySpeed: 2000,
-    // prevArrow: '.new-course-arrows .prev-arrow',
-    // nextArrow: '.new-course-arrows .next-arrow',
+    prevArrow:
+      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          arrows: true,
+        },
+      },
       {
         breakpoint: 992,
         settings: {
-          autoplay: true,
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 
-          dots: false,
+  // new__courses
+  $('.new__courses').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: false,
+    arrows: true,
+    autoplaySpeed: 2000,
+    prevArrow:
+      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
           arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: false,
-          autoplay: true,
           slidesToShow: 1,
-          slidesToScroll: 1,
           arrows: false,
+          dots: true,
         },
       },
     ],
@@ -149,8 +185,8 @@ function menuClick(current) {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    dots: false,
-    arrows: false,
+    dots: true,
+    arrows: true,
     centerMode: true,
     centerPadding: '0px',
     prevArrow: '.student-slider-arrows .prev-arrow',
@@ -159,22 +195,13 @@ function menuClick(current) {
       {
         breakpoint: 992,
         settings: {
-          autoplay: true,
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-          arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: false,
-          autoplay: true,
           slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
         },
       },
     ],
@@ -185,8 +212,8 @@ function menuClick(current) {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: false,
-    dots: false,
+    arrows: true,
+    dots: true,
     autoplaySpeed: 2000,
     nextArrow: '.about-slider-arrows .next-arrow',
     prevArrow: '.about-slider-arrows .prev-arrow',
@@ -195,16 +222,12 @@ function menuClick(current) {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
         },
       },
       {
         breakpoint: 769,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -212,18 +235,29 @@ function menuClick(current) {
 
   //testimonial_slider
   $('.testimonial__slider--one').slick({
-    autoPlay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: true,
+    prevArrow:
+      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+        },
+      },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
+          arrows: false,
         },
       },
     ],
@@ -234,21 +268,37 @@ function menuClick(current) {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: false,
+    arrows: true,
+    dots: false,
     centerMode: true,
     centerPadding: '0px',
     autoplaySpeed: 2000,
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
+          arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],
@@ -259,7 +309,7 @@ function menuClick(current) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    arrows: false,
+    arrows: true,
     autoplaySpeed: 2000,
   });
 
@@ -267,30 +317,44 @@ function menuClick(current) {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
-    arrows: false,
+    autoplay: true,
+    arrows: true,
     dots: false,
     autoplaySpeed: 2000,
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
       {
         breakpoint: 1201,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],
@@ -300,34 +364,51 @@ function menuClick(current) {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
-    arrows: false,
+    autoplay: true,
+    arrows: true,
     autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: '0px',
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
       {
         breakpoint: 1260,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true,
         },
       },
       {
         breakpoint: 1080,
         settings: {
           slidesToShow: 3,
+          dots: true,
         },
       },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
+          dots: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          dots: true,
+          arrows: false,
         },
       },
     ],
@@ -371,14 +452,25 @@ function menuClick(current) {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    prevArrow: '.ourinstructor__wrapper .prev-arrow',
-    nextArrow: '.ourinstructor__wrapper .next-arrow',
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
       {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
       {
@@ -386,15 +478,18 @@ function menuClick(current) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          // slidesToSc
           centerMode: true,
           centerPadding: '15px',
+          arrows: false,
+          dots: true,
         },
       },
     ],
@@ -406,7 +501,7 @@ function menuClick(current) {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    arrows: false,
+    arrows: true,
     autoplaySpeed: 2000,
     prevArrow: '.ourevent__wrapper .prev-arrow',
     nextArrow: '.ourevent__wrapper .next-arrow',
@@ -415,15 +510,12 @@ function menuClick(current) {
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          dots: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
         },
       },
     ],
@@ -445,16 +537,12 @@ function menuClick(current) {
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          arrows: false,
-          dots: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false,
         },
       },
     ],

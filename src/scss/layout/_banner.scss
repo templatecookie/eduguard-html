@@ -165,6 +165,12 @@
 }
 
 @media (max-width: 767px) {
+  .banner-two {
+    padding: 60px 0px !important;
+  }
+  .banner-two-end .image img {
+    object-fit: cover;
+  }
   .banner-three-content {
     height: 100vh !important;
   }

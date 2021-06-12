@@ -119,10 +119,6 @@
 }
 
 .similar-events {
-  padding: 100px 0px;
-  background-color: rgba($color: #ffffff, $alpha: 0.4);
-  position: relative;
-
   .shape {
     img {
       position: absolute;
@@ -332,6 +328,9 @@
   }
   .course-curriculum-area .curriculum-area-top-start {
     align-items: center;
+  }
+  .event-info .eventCard--wrapper {
+    margin-top: 0px;
   }
 }
 
