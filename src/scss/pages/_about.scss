@@ -55,6 +55,26 @@
   }
 }
 
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+  .breadcrumb {
+    padding-bottom: 30px;
+  }
+  .intro-image {
+    margin: 0 !important;
+  }
+  .slick-slide img {
+    margin: auto;
+  }
+  .instructor-overlay {
+    bottom: 40%;
+    transform: translateY(-60%);
+  }
+  .mentor__img img {
+    height: auto;
+  }
+}
+
 @media (max-width: 991px) {
   // about intro
   .about-intro {
@@ -80,9 +100,46 @@
   .aboutFeature {
     padding: 30px 0px !important;
   }
+
+  .intro-shape {
+    display: none;
+  }
 }
 
+// Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb {
+    padding-bottom: 5px;
+  }
+  .about-intro {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+  .instructor-overlay {
+    bottom: 30%;
+    transform: translateY(-70%);
+  }
+  .mentor__img {
+    img {
+      width: 100%;
+    }
+  }
+  .slider-arrows {
+    display: none !important;
+  }
+  .newsletter__wrapper {
+    padding: 20px 10px;
+    p {
+      text-align: left;
+    }
+  }
+  .mentor__title h6 {
+    font-size: 16px;
+  }
+  .mentor__img img {
+    height: auto;
+  }
+
   .about-intro {
     padding-top: 0px !important;
     padding-bottom: 30px !important;
@@ -93,33 +150,44 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 574px) {
-  // about intro section
+@media (max-width: 767px) {
   .about-intro {
-    margin-top: 0px;
-    padding-top: 0px !important;
-    &__img-wrapper {
-      margin-bottom: 15px;
-      img {
-        height: auto;
-      }
+    padding-top: 0px;
+  }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+  .breadcrumb {
+    padding-bottom: 5px;
+  }
+  .about-intro {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+  .instructor-overlay {
+    bottom: 30%;
+    transform: translateY(-70%);
+  }
+  .mentor__img {
+    img {
+      width: 100%;
     }
   }
-
-  // Best instructor
-  .bestInstructor .ourinstructor-active .slick-dots {
-    bottom: 25px;
+  .slider-arrows {
+    display: none !important;
   }
-
-  // brands section
-  .brands {
-    background-color: #ebebf2 !important;
-    .py-80 {
-      padding: 0px !important;
+  .newsletter__wrapper {
+    padding: 20px 10px;
+    p {
+      text-align: left;
     }
   }
-  .about-feature {
-    padding: 40px 15px !important;
+  .mentor__title h6 {
+    font-size: 18px;
+  }
+  .mentor__img img {
+    height: auto;
   }
 }
 
@@ -127,9 +195,6 @@
 @media (max-width: 420px) {
   .breadcrumb {
     padding-bottom: 5px;
-  }
-  .intro-shape {
-    display: none;
   }
   .about-intro {
     padding-bottom: 30px;
@@ -164,10 +229,6 @@
   .breadcrumb {
     padding-bottom: 5px;
   }
-  .intro-shape {
-    display: none;
-  }
-
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0;
@@ -198,101 +259,32 @@
   }
 }
 
-// Small devices 575px - 767px
-@media (min-width: 575px) and (max-width: 767px) {
-  .breadcrumb {
-    padding-bottom: 5px;
-  }
-  .intro-shape {
-    display: none;
-  }
+@media (min-width: 320px) and (max-width: 574px) {
+  // about intro section
   .about-intro {
-    padding-bottom: 30px;
-    margin-bottom: 0;
-  }
-  .instructor-overlay {
-    bottom: 30%;
-    transform: translateY(-70%);
-  }
-  .mentor__img {
-    img {
-      width: 100%;
+    margin-top: 0px;
+    padding-top: 0px !important;
+    &__img-wrapper {
+      margin-bottom: 15px;
+      img {
+        height: auto;
+      }
     }
   }
-  .slider-arrows {
-    display: none !important;
-  }
-  .newsletter__wrapper {
-    padding: 20px 10px;
-    p {
-      text-align: left;
-    }
-  }
-  .mentor__title h6 {
-    font-size: 18px;
-  }
-  .mentor__img img {
-    height: auto;
-  }
-}
 
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
-  .breadcrumb {
-    padding-bottom: 5px;
+  // Best instructor
+  .bestInstructor .ourinstructor-active .slick-dots {
+    bottom: 25px;
   }
-  .intro-shape {
-    display: none;
-  }
-  .about-intro {
-    padding-bottom: 30px;
-    margin-bottom: 0;
-  }
-  .instructor-overlay {
-    bottom: 30%;
-    transform: translateY(-70%);
-  }
-  .mentor__img {
-    img {
-      width: 100%;
-    }
-  }
-  .slider-arrows {
-    display: none !important;
-  }
-  .newsletter__wrapper {
-    padding: 20px 10px;
-    p {
-      text-align: left;
-    }
-  }
-  .mentor__title h6 {
-    font-size: 16px;
-  }
-  .mentor__img img {
-    height: auto;
-  }
-}
 
-// large devices 992px - 1200px
-@media (min-width: 992px) and (max-width: 1200px) {
-  .breadcrumb {
-    padding-bottom: 30px;
+  // brands section
+  .brands {
+    background-color: #ebebf2 !important;
+    .py-80 {
+      padding: 0px !important;
+    }
   }
-  .intro-shape {
-    display: none;
-  }
-  .intro-image {
-    margin: 0 !important;
-  }
-  .slick-slide img {
-    margin: auto;
-  }
-  .instructor-overlay {
-    bottom: 40%;
-    transform: translateY(-60%);
-  }
-  .mentor__img img {
-    height: auto;
+  .about-feature {
+    padding: 40px 15px !important;
   }
 }

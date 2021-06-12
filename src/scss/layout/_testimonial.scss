@@ -84,6 +84,7 @@
     }
   }
 }
+
 .testimonial__img {
   position: relative;
   z-index: 1;
@@ -114,6 +115,20 @@
   }
   .author__name {
     margin-top: 15px;
+  }
+}
+
+.testimonial__slider--three {
+  .slick-arrow {
+    top: 100%;
+    margin-top: 60px;
+    &--right {
+      right: auto;
+      left: 10%;
+    }
+    &--left {
+      left: 0%;
+    }
   }
 }
 

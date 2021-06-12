@@ -1,9 +1,20 @@
+.brands {
+  &__titleContent {
+    p {
+      font-family: poppin-regular;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .brands {
     &__titleContent {
       h4 {
         font-size: 28px !important;
         line-height: 38px !important;
+      }
+      p {
+        font-family: poppin-regular;
       }
     }
   }

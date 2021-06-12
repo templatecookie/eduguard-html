@@ -368,38 +368,42 @@
   }
 
   // Newsletter Area Starts Here
-  .newsletterarea-normal {
-    padding: 100px 0px;
-    background-color: white;
 
-    &-start {
-      h4 {
-        color: #202029 !important;
-        margin-bottom: 10px;
-        font-weight: 600 !important;
-      }
-    }
+  // .newsletterarea-normal-start {
+  //   h5 {
+  //     margin-bottom: 8px;
+  //   }
+  // }
 
-    &-end {
-      padding-left: 25px;
+  // .newsletterarea-normal {
+  //   &-start {
+  //     h5 {
+  //       color: #202029;
+  //       margin-bottom: 10px;
+  //       font-family: poppin-semiBold;
+  //     }
+  //   }
 
-      form {
-        input {
-          padding-left: 20px;
-          border-radius: 4px;
+  //   &-end {
+  //     padding-left: 25px;
 
-          &:focus {
-            box-shadow: none;
-            border-color: $primary;
-          }
-        }
+  //     form {
+  //       input {
+  //         padding-left: 20px;
+  //         border-radius: 4px;
 
-        button {
-          border-radius: 4px;
-        }
-      }
-    }
-  }
+  //         &:focus {
+  //           box-shadow: none;
+  //           border-color: $primary;
+  //         }
+  //       }
+
+  //       button {
+  //         border-radius: 4px;
+  //       }
+  //     }
+  //   }
+  // }
 
   // Newsletter Area Ends Here
 

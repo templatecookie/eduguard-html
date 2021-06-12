@@ -23,6 +23,15 @@
   }
 }
 
+.newsletterarea-normal-start {
+  h5 {
+    margin-bottom: 8px;
+  }
+  p {
+    font-family: poppin-regular;
+  }
+}
+
 /*------------------------*/
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
@@ -37,6 +46,10 @@
 @media (max-width: 991px) {
   .newsletter-area {
     margin-bottom: -60px;
+  }
+  .newsletterarea-normal-start {
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 

@@ -11602,6 +11602,10 @@ button:focus {
       line-height: 1.5;
       color: #666575; }
 
+@media (max-width: 767px) {
+  .breadcrumb {
+    margin-bottom: 0px; } }
+
 .pagination-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12926,7 +12930,8 @@ header {
       left: 65px; }
     .join__overlay-img--9 {
       top: 1024px;
-      left: 136px; }
+      left: 136px;
+      display: none; }
     .join__overlay-img--10 {
       bottom: 100px;
       left: 474px; }
@@ -13623,6 +13628,15 @@ header {
   .testimonial__img .author__name {
     margin-top: 15px; }
 
+.testimonial__slider--three .slick-arrow {
+  top: 100%;
+  margin-top: 60px; }
+  .testimonial__slider--three .slick-arrow--right {
+    right: auto;
+    left: 10%; }
+  .testimonial__slider--three .slick-arrow--left {
+    left: 0%; }
+
 @media (max-width: 1024px) {
   .testimonial.students-says .testimonial__wrapper {
     margin-left: 30px; }
@@ -13909,6 +13923,12 @@ header {
     line-height: 24px;
     color: #8f8fa3; }
 
+.newsletterarea-normal-start h5, .newsletterarea-normal-start .h5 {
+  margin-bottom: 8px; }
+
+.newsletterarea-normal-start p {
+  font-family: poppin-regular; }
+
 /*------------------------*/
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
@@ -13918,7 +13938,10 @@ header {
 
 @media (max-width: 991px) {
   .newsletter-area {
-    margin-bottom: -60px; } }
+    margin-bottom: -60px; }
+  .newsletterarea-normal-start {
+    text-align: center;
+    margin-bottom: 30px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .newsletter-area {
@@ -13959,10 +13982,15 @@ header {
       .newsletter-area form .input-group button {
         border-radius: 5px !important; } }
 
+.brands__titleContent p {
+  font-family: poppin-regular; }
+
 @media (max-width: 767px) {
   .brands__titleContent h4, .brands__titleContent .h4 {
     font-size: 28px !important;
-    line-height: 38px !important; } }
+    line-height: 38px !important; }
+  .brands__titleContent p {
+    font-family: poppin-regular; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .brands__titleContent h4, .brands__titleContent .h4 {
@@ -14685,7 +14713,9 @@ header {
       .main-become-instructor-item .main-text .green-btn {
         font-size: 12px; }
   .about-services .testimonial__wrapper_item {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .main-instructor-featured {
+    padding-top: 0px; } }
 
 @media (max-width: 767px) {
   .banner-input .main-input input {
@@ -15122,26 +15152,26 @@ header {
 .featured-popular-courses .contentCard {
   margin-bottom: 24px; }
 
-.students-says {
-  padding-top: 100px;
-  padding-bottom: 65px; }
-  .students-says .testimonial__wrapper_title {
-    margin-bottom: 30px; }
-    .students-says .testimonial__wrapper_title h3, .students-says .testimonial__wrapper_title .h3 {
-      color: #202029 !important; }
-  .students-says .testimonial__wrapper_item p {
-    color: #666575 !important;
-    font-style: normal !important; }
-  .students-says .testimonial__wrapper_item-author .author__img {
-    width: 64px;
-    height: 64px; }
-    .students-says .testimonial__wrapper_item-author .author__img img {
-      max-width: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      border-radius: 50%; }
-  .students-says .testimonial__wrapper_item-author .author__name h6, .students-says .testimonial__wrapper_item-author .author__name .h6 {
+.students-says .testimonial__wrapper_title {
+  margin-bottom: 30px; }
+  .students-says .testimonial__wrapper_title h3, .students-says .testimonial__wrapper_title .h3 {
     color: #202029 !important; }
+
+.students-says .testimonial__wrapper_item p {
+  color: #666575 !important;
+  font-style: normal !important; }
+
+.students-says .testimonial__wrapper_item-author .author__img {
+  width: 64px;
+  height: 64px; }
+  .students-says .testimonial__wrapper_item-author .author__img img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%; }
+
+.students-says .testimonial__wrapper_item-author .author__name h6, .students-says .testimonial__wrapper_item-author .author__name .h6 {
+  color: #202029 !important; }
 
 .brands-area-two {
   padding-top: 40px;
@@ -15155,16 +15185,16 @@ header {
       font-size: 14px !important;
       color: #8f8fa3; }
 
-.best-instructor-featured {
-  padding: 100px 0px; }
-  .best-instructor-featured h3, .best-instructor-featured .h3 {
-    color: #202029 !important; }
-  .best-instructor-featured .mentor__img img {
-    width: 270px;
-    height: 290px; }
-  .best-instructor-featured .ourinstructor__wrapper .slider-arrows .prev-arrow,
-  .best-instructor-featured .ourinstructor__wrapper .slider-arrows .next-arrow {
-    border-color: #ebebf2; }
+.best-instructor-featured h3, .best-instructor-featured .h3 {
+  color: #202029 !important; }
+
+.best-instructor-featured .mentor__img img {
+  width: 270px;
+  height: 290px; }
+
+.best-instructor-featured .ourinstructor__wrapper .slider-arrows .prev-arrow,
+.best-instructor-featured .ourinstructor__wrapper .slider-arrows .next-arrow {
+  border-color: #ebebf2; }
 
 .latest-events-featured {
   z-index: 1; }
@@ -15192,7 +15222,6 @@ header {
       right: 0px; }
 
 .get-started {
-  padding: 100px 0px;
   background: rgba(235, 235, 242, 0.6); }
   .get-started-area {
     display: -webkit-box;
@@ -15356,26 +15385,24 @@ header {
       text-align: center; }
   .featured-popular-courses .tab-content .btn-primary {
     margin-top: 20px; }
-  .students-says {
-    padding: 30px 0px; }
-    .students-says .testimonial__img {
-      margin-bottom: 0;
-      height: auto;
-      width: 100%;
-      margin-left: 0; }
-    .students-says .testimonial__wrapper {
-      margin-left: 0; }
-    .students-says .testimonial__wrapper_title {
-      margin-bottom: 15px;
-      margin-top: 20px; }
-    .students-says .testimonial__wrapper_item-author .author__img img {
-      width: auto !important;
-      height: auto !important; }
-    .students-says .testimonial__wrapper_item-author {
-      margin-top: 10px;
-      margin-bottom: 10px; }
-    .students-says .testimonial__wrapper_item p {
-      font-size: 14px !important; }
+  .students-says .testimonial__img {
+    margin-bottom: 0;
+    height: auto;
+    width: 100%;
+    margin-left: 0; }
+  .students-says .testimonial__wrapper {
+    margin-left: 0; }
+  .students-says .testimonial__wrapper_title {
+    margin-bottom: 15px;
+    margin-top: 20px; }
+  .students-says .testimonial__wrapper_item-author .author__img img {
+    width: auto !important;
+    height: auto !important; }
+  .students-says .testimonial__wrapper_item-author {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .students-says .testimonial__wrapper_item p {
+    font-size: 14px !important; }
   .brand-area-image {
     display: -webkit-box !important;
     display: -webkit-flex !important;
@@ -15475,26 +15502,24 @@ header {
       text-align: center; }
   .featured-popular-courses .tab-content .btn-primary {
     margin-top: 20px; }
-  .students-says {
-    padding: 30px 0px; }
-    .students-says .testimonial__img {
-      margin-bottom: 0;
-      height: auto;
-      width: 100%;
-      margin-left: 0; }
-    .students-says .testimonial__wrapper {
-      margin-left: 0; }
-    .students-says .testimonial__wrapper_title {
-      margin-bottom: 15px;
-      margin-top: 20px; }
-    .students-says .testimonial__wrapper_item-author .author__img img {
-      width: auto !important;
-      height: auto !important; }
-    .students-says .testimonial__wrapper_item-author {
-      margin-top: 10px;
-      margin-bottom: 10px; }
-    .students-says .testimonial__wrapper_item p {
-      font-size: 14px !important; }
+  .students-says .testimonial__img {
+    margin-bottom: 0;
+    height: auto;
+    width: 100%;
+    margin-left: 0; }
+  .students-says .testimonial__wrapper {
+    margin-left: 0; }
+  .students-says .testimonial__wrapper_title {
+    margin-bottom: 15px;
+    margin-top: 20px; }
+  .students-says .testimonial__wrapper_item-author .author__img img {
+    width: auto !important;
+    height: auto !important; }
+  .students-says .testimonial__wrapper_item-author {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .students-says .testimonial__wrapper_item p {
+    font-size: 14px !important; }
   .brand-area-image {
     display: -webkit-box !important;
     display: -webkit-flex !important;
@@ -15564,31 +15589,29 @@ header {
       text-align: center; }
   .featured-popular-courses .tab-content .btn-primary {
     margin-top: 20px; }
-  .students-says {
-    padding: 30px 0px; }
-    .students-says .testimonial__img {
-      height: auto;
-      width: 100%;
-      margin-left: 0; }
-      .students-says .testimonial__img .rectangle,
-      .students-says .testimonial__img .dot {
-        display: none; }
-    .students-says .testimonial__wrapper_title {
-      margin-bottom: 15px;
-      margin-top: 0px; }
-    .students-says .testimonial__wrapper_item-author .author__img img {
-      width: auto !important;
-      height: auto !important; }
-    .students-says .testimonial__wrapper_item-author {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      margin-top: 10px;
-      margin-bottom: 10px; }
-    .students-says .testimonial__wrapper_item p {
-      font-size: 14px !important; }
+  .students-says .testimonial__img {
+    height: auto;
+    width: 100%;
+    margin-left: 0; }
+    .students-says .testimonial__img .rectangle,
+    .students-says .testimonial__img .dot {
+      display: none; }
+  .students-says .testimonial__wrapper_title {
+    margin-bottom: 15px;
+    margin-top: 0px; }
+  .students-says .testimonial__wrapper_item-author .author__img img {
+    width: auto !important;
+    height: auto !important; }
+  .students-says .testimonial__wrapper_item-author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .students-says .testimonial__wrapper_item p {
+    font-size: 14px !important; }
   .banner-two-start p {
     font-size: 16px !important; }
   .brands-area-two {
@@ -15653,28 +15676,26 @@ header {
       text-align: center; }
   .featured-popular-courses .tab-content .btn-primary {
     margin-top: 20px; }
-  .students-says {
-    padding: 30px 0px; }
-    .students-says .testimonial__img {
-      height: auto;
-      width: 100%;
-      margin-left: 0; }
-      .students-says .testimonial__img .rectangle,
-      .students-says .testimonial__img .dot {
-        display: none; }
-    .students-says .testimonial__wrapper {
-      margin-left: 0; }
-    .students-says .testimonial__wrapper_title {
-      margin-bottom: 15px;
-      margin-top: 20px; }
-    .students-says .testimonial__wrapper_item-author .author__img img {
-      width: auto !important;
-      height: auto !important; }
-    .students-says .testimonial__wrapper_item-author {
-      margin-top: 10px;
-      margin-bottom: 10px; }
-    .students-says .testimonial__wrapper_item p {
-      font-size: 14px !important; }
+  .students-says .testimonial__img {
+    height: auto;
+    width: 100%;
+    margin-left: 0; }
+    .students-says .testimonial__img .rectangle,
+    .students-says .testimonial__img .dot {
+      display: none; }
+  .students-says .testimonial__wrapper {
+    margin-left: 0; }
+  .students-says .testimonial__wrapper_title {
+    margin-bottom: 15px;
+    margin-top: 20px; }
+  .students-says .testimonial__wrapper_item-author .author__img img {
+    width: auto !important;
+    height: auto !important; }
+  .students-says .testimonial__wrapper_item-author {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .students-says .testimonial__wrapper_item p {
+    font-size: 14px !important; }
   .brand-area-image {
     display: -webkit-box !important;
     display: -webkit-flex !important;
@@ -15999,24 +16020,6 @@ header {
           font-size: 18px !important; }
         .featured-course .testimonial-area-item .testimonial-client-info p {
           font-size: 14px !important; }
-  .featured-course .newsletterarea-normal {
-    padding: 100px 0px;
-    background-color: white; }
-    .featured-course .newsletterarea-normal-start h4, .featured-course .newsletterarea-normal-start .h4 {
-      color: #202029 !important;
-      margin-bottom: 10px;
-      font-weight: 600 !important; }
-    .featured-course .newsletterarea-normal-end {
-      padding-left: 25px; }
-      .featured-course .newsletterarea-normal-end form input {
-        padding-left: 20px;
-        border-radius: 4px; }
-        .featured-course .newsletterarea-normal-end form input:focus {
-          -webkit-box-shadow: none;
-                  box-shadow: none;
-          border-color: #1089ff; }
-      .featured-course .newsletterarea-normal-end form button {
-        border-radius: 4px; }
   @media (max-width: 991px) {
     .featured-course .banner-three {
       padding: 200px 0px;
@@ -16159,6 +16162,20 @@ header {
   .section-pb-sm {
     padding-bottom: 90px !important; } }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .breadcrumb {
+    padding-bottom: 30px; }
+  .intro-image {
+    margin: 0 !important; }
+  .slick-slide img {
+    margin: auto; }
+  .instructor-overlay {
+    bottom: 40%;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%); }
+  .mentor__img img {
+    height: auto; } }
+
 @media (max-width: 991px) {
   .about-intro {
     margin-top: 0px; }
@@ -16178,37 +16195,68 @@ header {
       font-size: 38px;
       line-height: 52px; }
   .aboutFeature {
-    padding: 30px 0px !important; } }
+    padding: 30px 0px !important; }
+  .intro-shape {
+    display: none; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb {
+    padding-bottom: 5px; }
+  .about-intro {
+    padding-bottom: 30px;
+    margin-bottom: 0; }
+  .instructor-overlay {
+    bottom: 30%;
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%); }
+  .mentor__img img {
+    width: 100%; }
+  .slider-arrows {
+    display: none !important; }
+  .newsletter__wrapper {
+    padding: 20px 10px; }
+    .newsletter__wrapper p {
+      text-align: left; }
+  .mentor__title h6, .mentor__title .h6 {
+    font-size: 16px; }
+  .mentor__img img {
+    height: auto; }
   .about-intro {
     padding-top: 0px !important;
     padding-bottom: 30px !important; }
   .bestInstructor {
     padding-top: 30px !important; } }
 
-@media (min-width: 320px) and (max-width: 574px) {
+@media (max-width: 767px) {
   .about-intro {
-    margin-top: 0px;
-    padding-top: 0px !important; }
-    .about-intro__img-wrapper {
-      margin-bottom: 15px; }
-      .about-intro__img-wrapper img {
-        height: auto; }
-  .bestInstructor .ourinstructor-active .slick-dots {
-    bottom: 25px; }
-  .brands {
-    background-color: #ebebf2 !important; }
-    .brands .py-80 {
-      padding: 0px !important; }
-  .about-feature {
-    padding: 40px 15px !important; } }
+    padding-top: 0px; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .breadcrumb {
+    padding-bottom: 5px; }
+  .about-intro {
+    padding-bottom: 30px;
+    margin-bottom: 0; }
+  .instructor-overlay {
+    bottom: 30%;
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%); }
+  .mentor__img img {
+    width: 100%; }
+  .slider-arrows {
+    display: none !important; }
+  .newsletter__wrapper {
+    padding: 20px 10px; }
+    .newsletter__wrapper p {
+      text-align: left; }
+  .mentor__title h6, .mentor__title .h6 {
+    font-size: 18px; }
+  .mentor__img img {
+    height: auto; } }
 
 @media (max-width: 420px) {
   .breadcrumb {
     padding-bottom: 5px; }
-  .intro-shape {
-    display: none; }
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0; }
@@ -16230,8 +16278,6 @@ header {
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   .breadcrumb {
     padding-bottom: 5px; }
-  .intro-shape {
-    display: none; }
   .about-intro {
     padding-bottom: 30px;
     margin-bottom: 0; }
@@ -16252,71 +16298,22 @@ header {
   .mentor__img img {
     height: auto; } }
 
-@media (min-width: 575px) and (max-width: 767px) {
-  .breadcrumb {
-    padding-bottom: 5px; }
-  .intro-shape {
-    display: none; }
+@media (min-width: 320px) and (max-width: 574px) {
   .about-intro {
-    padding-bottom: 30px;
-    margin-bottom: 0; }
-  .instructor-overlay {
-    bottom: 30%;
-    -webkit-transform: translateY(-70%);
-            transform: translateY(-70%); }
-  .mentor__img img {
-    width: 100%; }
-  .slider-arrows {
-    display: none !important; }
-  .newsletter__wrapper {
-    padding: 20px 10px; }
-    .newsletter__wrapper p {
-      text-align: left; }
-  .mentor__title h6, .mentor__title .h6 {
-    font-size: 18px; }
-  .mentor__img img {
-    height: auto; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .breadcrumb {
-    padding-bottom: 5px; }
-  .intro-shape {
-    display: none; }
-  .about-intro {
-    padding-bottom: 30px;
-    margin-bottom: 0; }
-  .instructor-overlay {
-    bottom: 30%;
-    -webkit-transform: translateY(-70%);
-            transform: translateY(-70%); }
-  .mentor__img img {
-    width: 100%; }
-  .slider-arrows {
-    display: none !important; }
-  .newsletter__wrapper {
-    padding: 20px 10px; }
-    .newsletter__wrapper p {
-      text-align: left; }
-  .mentor__title h6, .mentor__title .h6 {
-    font-size: 16px; }
-  .mentor__img img {
-    height: auto; } }
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .breadcrumb {
-    padding-bottom: 30px; }
-  .intro-shape {
-    display: none; }
-  .intro-image {
-    margin: 0 !important; }
-  .slick-slide img {
-    margin: auto; }
-  .instructor-overlay {
-    bottom: 40%;
-    -webkit-transform: translateY(-60%);
-            transform: translateY(-60%); }
-  .mentor__img img {
-    height: auto; } }
+    margin-top: 0px;
+    padding-top: 0px !important; }
+    .about-intro__img-wrapper {
+      margin-bottom: 15px; }
+      .about-intro__img-wrapper img {
+        height: auto; }
+  .bestInstructor .ourinstructor-active .slick-dots {
+    bottom: 25px; }
+  .brands {
+    background-color: #ebebf2 !important; }
+    .brands .py-80 {
+      padding: 0px !important; }
+  .about-feature {
+    padding: 40px 15px !important; } }
 
 .students-info {
   padding-bottom: 70px; }
@@ -17645,7 +17642,7 @@ header {
       margin-bottom: 12px;
       margin-top: 15px; }
       .event-sub-section-main .icon-with-date-start {
-        margin-right: 40px; }
+        margin-right: 25px; }
       .event-sub-section-main .icon-with-date-start p, .event-sub-section-main .icon-with-date-end p {
         margin-left: 5px;
         color: #42414b; }
@@ -17656,7 +17653,7 @@ header {
   margin-top: 35px;
   margin-bottom: 70px; }
 
-.event-info .eventCard--wrapper {
+.event-info .courseCard--wrapper {
   margin-top: -200px; }
 
 .event-info-tab .nav-tabs {
@@ -17816,7 +17813,7 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .event-info .eventCard--wrapper {
+  .event-info .courseCard--wrapper {
     margin-top: 0px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -18231,7 +18228,8 @@ header {
     margin-bottom: 16px;
     font-family: poppin-semiBold; }
   .course-overview-main-item p {
-    font-family: poppin-regular; }
+    font-family: poppin-regular;
+    color: #666575; }
 
 .course-overview-main .bullets-line {
   color: #666575;
@@ -18345,7 +18343,7 @@ header {
 @media (max-width: 1200px) {
   .course-overview-image {
     padding-top: 0px; }
-  .event-info .eventCard--wrapper {
+  .event-info .courseCard--wrapper {
     margin-top: 0px; }
   .course-curriculum-area .curriculum-area {
     margin-bottom: 15px !important; } }
@@ -19513,20 +19511,36 @@ body {
         -o-object-fit: cover;
            object-fit: cover;
         max-width: 100%; }
-    .course-instructor-info .instructor-text h6 a, .course-instructor-info .instructor-text .h6 a {
-      color: #202029;
-      display: block;
-      font-family: poppin-medium; }
+    .course-instructor-info .instructor-text h6, .course-instructor-info .instructor-text .h6 {
+      color: #202029; }
+      .course-instructor-info .instructor-text h6 a, .course-instructor-info .instructor-text .h6 a {
+        color: #202029;
+        display: block;
+        font-family: poppin-medium; }
+    .course-instructor-info .instructor-text p {
+      font-size: 14px;
+      line-height: 21px;
+      color: #8f8fa3; }
     .course-instructor-info .instructor-text .ratings-icon {
       margin-top: 10px;
       margin-right: 20px; }
       .course-instructor-info .instructor-text .ratings-icon p {
+        font-size: 14px;
+        line-height: 21px;
         color: #42414b;
         margin-left: 5px; }
   .course-instructor .lead-p {
     color: #666575;
     margin-top: 15px;
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #42414b;
+    font-family: poppin-medium; }
+  .course-instructor .course-instructor-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3; }
 
 @media (max-width: 574px) {
   .course-instructor-info {

@@ -42,7 +42,7 @@
       margin-bottom: 12px;
       margin-top: 15px;
       &-start {
-        margin-right: 40px;
+        margin-right: 25px;
       }
 
       &-start,
@@ -68,7 +68,7 @@
     }
   }
 
-  .eventCard--wrapper {
+  .courseCard--wrapper {
     margin-top: -200px;
   }
 
@@ -329,7 +329,7 @@
   .course-curriculum-area .curriculum-area-top-start {
     align-items: center;
   }
-  .event-info .eventCard--wrapper {
+  .event-info .courseCard--wrapper {
     margin-top: 0px;
   }
 }

@@ -23,11 +23,17 @@
 
     .instructor-text {
       h6 {
+        color: #202029;
         a {
           color: #202029;
           display: block;
           font-family: poppin-medium;
         }
+      }
+      p {
+        font-size: 14px;
+        line-height: 21px;
+        color: #8f8fa3;
       }
 
       .ratings-icon {
@@ -35,6 +41,8 @@
         margin-right: 20px;
 
         p {
+          font-size: 14px;
+          line-height: 21px;
           color: #42414b;
           margin-left: 5px;
         }
@@ -46,6 +54,15 @@
     color: #666575;
     margin-top: 15px;
     margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #42414b;
+    font-family: poppin-medium;
+  }
+  .course-instructor-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3;
   }
 }
 
