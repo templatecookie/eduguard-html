@@ -11,10 +11,15 @@
 
     h6 {
       font-size: 18px;
+      line-height: 27px;
+      color: #202029;
+      font-family: poppin-semiBold;
     }
 
     p {
       font-size: 14px;
+      line-height: 21px;
+      color: #8f8fa3;
     }
   }
 
@@ -25,7 +30,7 @@
     background-color: #ebebf2;
     position: relative;
 
-    &::before {
+    span {
       position: absolute;
       content: '';
       top: 0;
@@ -34,6 +39,11 @@
       height: 3px;
       background-color: #1089ff;
       border-radius: 0px 20px 20px 0px;
+    }
+
+    &__wrapper {
+      max-height: 950px;
+      overflow-y: auto;
     }
   }
 
@@ -136,6 +146,8 @@
       &-title {
         p {
           font-size: 14px;
+          line-height: 21px;
+          color: #8f8fa3;
         }
       }
 

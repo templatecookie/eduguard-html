@@ -397,6 +397,7 @@
 
     h5 {
       color: #42414b;
+      font-family: poppin-semiBold;
       span {
         color: #8f8fa3;
         font-family: poppin-regular;
@@ -486,7 +487,9 @@
 
   h5 {
     color: #202029 !important;
-    font-size: 20px !important;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: poppin-semiBold;
     font-weight: 600;
   }
 
@@ -528,6 +531,17 @@
 @media (max-width: 1200px) {
   .instructor-rating-area {
     align-items: center;
+    justify-content: space-between;
+  }
+  .rating-range {
+    margin-top: 10px;
+  }
+  .rating-number {
+    margin-bottom: 0px !important;
+  }
+
+  .rating-range-item {
+    margin-bottom: 5px;
   }
 }
 
@@ -563,9 +577,9 @@
   }
 
   // Review
-  .instructor-rating-area {
-    flex-direction: column;
-  }
+  // .instructor-rating-area {
+  //   flex-direction: column;
+  // }
 
   .rating-range {
     margin-left: 0 !important;

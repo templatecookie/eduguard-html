@@ -44,8 +44,9 @@
         &.open {
           .navbar-mobile__menu-dropmenu li a {
             &.active {
-              background-color: #1088ff72 !important;
-              color: #fff !important;
+              // background-color: #1088ff72 !important;
+              // color: #fff !important;
+              color: #1089ff;
             }
           }
         }
@@ -94,6 +95,9 @@
     }
     &-dropmenu {
       display: none;
+      background-color: #ecf6ff;
+      padding: 10px 0;
+      padding-left: 10px;
       li {
         margin-bottom: 2px;
 
@@ -157,6 +161,7 @@
 
   .event-search-wizard {
     background-color: #ebebf2;
+    margin-bottom: 15px !important;
   }
   .event-search-wizard-header h6,
   .event-search-wizard-header .h6 {

@@ -42,7 +42,8 @@
       &-text {
         h6 {
           a {
-            display: block;
+            // display: block;
+            color: #202029;
           }
         }
 
@@ -124,9 +125,8 @@
       background: #ffffff;
       border-radius: 0px 0px 8px 8px;
 
-      h4 {
-        font-family: poppin-medium;
-        color: #202029 !important;
+      h5 {
+        color: #202029;
         margin-bottom: 20px;
       }
 
@@ -166,6 +166,9 @@
           max-width: 800px;
 
           p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #8f8fa3;
             a {
               color: #1089ff;
             }
@@ -420,13 +423,12 @@
     font-size: 18px !important;
     line-height: 28px !important;
   }
-
-  //   course overview
-  .course-overview-main-item h6,
-  .course-overview-main-item .h6 {
-    font-size: 24px !important;
-    line-height: 36px !important;
-    margin-bottom: 0px;
+  .course-overview-main .bullets-line span {
+    margin-right: 15px;
+  }
+  .course-overview-main .bullets-line {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -746,9 +748,9 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 574px) {
+@media (max-width: 574px) {
   .coursedescription-header-start {
-    flex-direction: column !important;
+    // flex-direction: column !important;
   }
   .coursedescription-header-start .topic-info {
     margin-left: 0px;
@@ -776,5 +778,21 @@
   .coursedescription-header-end {
     width: 100%;
     justify-content: center !important;
+  }
+  .course-overview-nav .nav-item .nav-link {
+    margin-right: 0px;
+  }
+  .course-overview-nav {
+    justify-content: space-between;
+  }
+  .course-instructor-info .instructor-text-bottom {
+    flex-direction: row !important;
+  }
+  .course-instructor-info .instructor-text .ratings-icon {
+    margin-top: 15px;
+    margin-right: 10px !important;
+    &:nth-last-child(1) {
+      margin-right: 0px !important;
+    }
   }
 }

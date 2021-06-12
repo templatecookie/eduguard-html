@@ -1,8 +1,9 @@
 .course-instructor {
-  padding: 24px;
-  background-color: rgba(255, 255, 255, 0.4);
+  // background-color: rgba(255, 255, 255, 0.4);
+  background-color: #fff;
   border-radius: 8px;
   max-width: 670px;
+  padding: 24px;
 
   &-info {
     display: flex;
@@ -25,6 +26,7 @@
         a {
           color: #202029;
           display: block;
+          font-family: poppin-medium;
         }
       }
 
