@@ -18806,10 +18806,8 @@ header {
     .course-description-start {
       padding-right: 0;
       margin-bottom: 30px; }
-      .course-description-start-content {
-        padding: 18px 20px 26px 20px; }
-        .course-description-start-content h4, .course-description-start-content .h4 {
-          margin-bottom: 10px; }
+      .course-description-start-content h4, .course-description-start-content .h4 {
+        margin-bottom: 10px; }
     .course-description-end .coursecontents-heading {
       padding: 0px 20px;
       -webkit-box-orient: vertical;
@@ -19208,6 +19206,8 @@ header {
           margin-top: 5px; } }
 
 @media (max-width: 574px) {
+  .course-instructor {
+    padding: 0px !important; }
   .coursedescription-header-start .topic-info {
     margin-left: 0px; }
   .coursedescription-header-end {

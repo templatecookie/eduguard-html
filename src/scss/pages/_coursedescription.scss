@@ -245,7 +245,7 @@
       margin-bottom: 30px;
 
       &-content {
-        padding: 18px 20px 26px 20px;
+        // padding: 18px 0px 26px 0px;
 
         h4 {
           margin-bottom: 10px;
@@ -751,6 +751,10 @@
 }
 
 @media (max-width: 574px) {
+  .course-instructor {
+    padding: 0px !important;
+  }
+
   .coursedescription-header-start .topic-info {
     margin-left: 0px;
   }
