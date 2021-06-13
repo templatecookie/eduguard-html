@@ -162,6 +162,16 @@
   h2 {
     width: 50%;
   }
+  .feature .cardFeature {
+    margin-bottom: 0px;
+  }
+  .section__overlay span {
+    z-index: 1;
+  }
+  .section__overlay--shape-01 {
+    top: 30%;
+    right: 10%;
+  }
 }
 
 @keyframes circle {
@@ -186,7 +196,6 @@
 }
 
 // Responsive
-
 @media (min-width: 1024px) {
   .successful-instructor-feature {
     margin-bottom: 0px;
