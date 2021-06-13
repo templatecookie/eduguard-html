@@ -14379,7 +14379,6 @@ header {
   left: 40px; }
 
 .about-services {
-  padding: 100px 0px;
   background: rgba(235, 235, 242, 0.6);
   position: relative; }
   .about-services-shape img {
@@ -14659,25 +14658,23 @@ header {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-  .about-services {
-    padding: 30px 0px; }
-    .about-services h3, .about-services .h3 {
-      margin-bottom: 20px; }
-    .about-services-area {
-      margin-bottom: 30px; }
-    .about-services-shape {
-      display: none; }
-    .about-services .testimonial__wrapper_item-author,
-    .about-services .author {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      text-align: center; }
-      .about-services .testimonial__wrapper_item-author .author__img,
-      .about-services .author .author__img {
-        margin-right: 0; }
+  .about-services h3, .about-services .h3 {
+    margin-bottom: 20px; }
+  .about-services-area {
+    margin-bottom: 30px; }
+  .about-services-shape {
+    display: none; }
+  .about-services .testimonial__wrapper_item-author,
+  .about-services .author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+    .about-services .testimonial__wrapper_item-author .author__img,
+    .about-services .author .author__img {
+      margin-right: 0; }
   .main-instructor-featured-shape {
     display: none; }
   .main-instructor-featured .instructor-overlay ul {
@@ -14701,9 +14698,7 @@ header {
       .main-become-instructor-item .main-text .green-btn {
         font-size: 12px; }
   .about-services .testimonial__wrapper_item {
-    max-width: 100%; }
-  .main-instructor-featured {
-    padding-top: 0px; } }
+    max-width: 100%; } }
 
 @media (max-width: 767px) {
   .banner-input .main-input input {
@@ -14732,25 +14727,23 @@ header {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-  .about-services {
-    padding: 30px 0px; }
-    .about-services h3, .about-services .h3 {
-      margin-bottom: 20px; }
-    .about-services-area {
-      margin-bottom: 30px; }
-    .about-services-shape {
-      display: none; }
-    .about-services .testimonial__wrapper_item-author,
-    .about-services .author {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      text-align: center; }
-      .about-services .testimonial__wrapper_item-author .author__img,
-      .about-services .author .author__img {
-        margin-right: 0; }
+  .about-services h3, .about-services .h3 {
+    margin-bottom: 20px; }
+  .about-services-area {
+    margin-bottom: 30px; }
+  .about-services-shape {
+    display: none; }
+  .about-services .testimonial__wrapper_item-author,
+  .about-services .author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+    .about-services .testimonial__wrapper_item-author .author__img,
+    .about-services .author .author__img {
+      margin-right: 0; }
   .main-instructor-featured-shape {
     display: none; }
   .main-instructor-featured .instructor-overlay ul {
@@ -14822,25 +14815,23 @@ header {
     .learning-rules-ends .learning-rules-ends-circle,
     .learning-rules-ends .earning-rules-ends-shape {
       display: none; }
-  .about-services {
-    padding: 30px 0px; }
-    .about-services h3, .about-services .h3 {
-      margin-bottom: 20px; }
-    .about-services-area {
-      margin-bottom: 30px; }
-    .about-services-shape {
-      display: none; }
-    .about-services .testimonial__wrapper_item-author,
-    .about-services .author {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      text-align: center; }
-      .about-services .testimonial__wrapper_item-author .author__img,
-      .about-services .author .author__img {
-        margin-right: 0; }
+  .about-services h3, .about-services .h3 {
+    margin-bottom: 20px; }
+  .about-services-area {
+    margin-bottom: 30px; }
+  .about-services-shape {
+    display: none; }
+  .about-services .testimonial__wrapper_item-author,
+  .about-services .author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+    .about-services .testimonial__wrapper_item-author .author__img,
+    .about-services .author .author__img {
+      margin-right: 0; }
   .main-instructor-featured-shape {
     display: none; }
   .main-instructor-featured .instructor-overlay ul {
@@ -14891,25 +14882,23 @@ header {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .about-services {
-    padding: 30px 0px; }
-    .about-services h3, .about-services .h3 {
-      margin-bottom: 20px; }
-    .about-services-area {
-      margin-bottom: 30px; }
-    .about-services-shape {
-      display: none; }
-    .about-services .testimonial__wrapper_item-author,
-    .about-services .author {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      text-align: center; }
-      .about-services .testimonial__wrapper_item-author .author__img,
-      .about-services .author .author__img {
-        margin-right: 0; }
+  .about-services h3, .about-services .h3 {
+    margin-bottom: 20px; }
+  .about-services-area {
+    margin-bottom: 30px; }
+  .about-services-shape {
+    display: none; }
+  .about-services .testimonial__wrapper_item-author,
+  .about-services .author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+    .about-services .testimonial__wrapper_item-author .author__img,
+    .about-services .author .author__img {
+      margin-right: 0; }
   .main-instructor-featured-shape {
     display: none; }
   .main-instructor-featured .instructor-overlay ul {
