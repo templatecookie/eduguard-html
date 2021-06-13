@@ -56,7 +56,13 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 574px) {
+@media (max-width: 574px) {
+  .pagination-group .p_prev,
+  .pagination-group .p_next,
+  .pagination-group .cdp_i {
+    width: 40px;
+    height: 40px;
+  }
   .pagination-group {
     justify-content: center;
   }

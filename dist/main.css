@@ -10134,6 +10134,9 @@ button:focus {
     font-family: poppin-semiBold; }
   .button-md {
     padding: 16px 24px; }
+    @media (max-width: 767px) {
+      .button-md {
+        padding: 8px 16px; } }
   .button-lg {
     padding: 19px 32px; }
     @media (max-width: 767px) {
@@ -11671,7 +11674,12 @@ button:focus {
       border-color: #1089ff;
       color: white; }
 
-@media (min-width: 320px) and (max-width: 574px) {
+@media (max-width: 574px) {
+  .pagination-group .p_prev,
+  .pagination-group .p_next,
+  .pagination-group .cdp_i {
+    width: 40px;
+    height: 40px; }
   .pagination-group {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -20304,23 +20312,21 @@ body {
   .successful-instructor-feature {
     min-height: auto; } }
 
-.instructor-courses {
-  padding-bottom: 70px; }
-  .instructor-courses-instructor {
-    background: #ffffff;
-    border-radius: 6px;
-    padding: 30px; }
-    .instructor-courses-instructor .instructor-image {
-      margin-bottom: 20px;
-      width: 250px;
-      height: 250px; }
-      .instructor-courses-instructor .instructor-image img {
-        -o-object-fit: cover;
-           object-fit: cover;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        vertical-align: middle; }
+.instructor-courses-instructor {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 30px; }
+  .instructor-courses-instructor .instructor-image {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 250px; }
+    .instructor-courses-instructor .instructor-image img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      vertical-align: middle; }
 
 .social-links {
   display: -webkit-box;
@@ -20404,12 +20410,14 @@ body {
     .instructor-course-info-rating .text {
       margin-top: 10px; }
       .instructor-course-info-rating .text h6, .instructor-course-info-rating .text .h6 {
-        color: #42414b !important;
-        font-family: poppin-medium;
-        font-size: 18px; }
+        font-size: 18px;
+        line-height: 27px;
+        color: #42414b;
+        font-family: poppin-medium; }
       .instructor-course-info-rating .text p {
-        color: #8f8fa3 !important;
-        font-size: 12px !important; }
+        font-size: 12px;
+        line-height: 15px;
+        color: #8f8fa3 !important; }
   .instructor-course-info-students {
     display: -webkit-box;
     display: -webkit-flex;
@@ -20471,7 +20479,8 @@ body {
 
 .instructor-info p {
   font-size: 18px;
-  line-height: 27px; }
+  line-height: 27px;
+  color: #666575; }
 
 .about-instructor,
 .instructor-qualification {
@@ -20479,13 +20488,18 @@ body {
   padding-bottom: 30px;
   border-bottom: 1px solid #ebebf2; }
 
+.about-instructor p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666575; }
+
 .about-instructor h6, .about-instructor .h6,
 .instructor-qualification h6,
 .instructor-qualification .h6 {
   font-size: 18px;
   line-height: 27px;
-  color: #42414b !important;
-  font-weight: 600 !important;
+  color: #42414b;
+  font-weight: 600;
   margin-bottom: 15px; }
 
 .instructor-qualification .qualification-info {
@@ -20571,8 +20585,13 @@ body {
   background-color: white;
   border-radius: 5px;
   text-align: center; }
+  .rating-number h2, .rating-number .h2 {
+    font-size: 56px;
+    line-height: 70px;
+    font-family: poppin-bold;
+    color: #42414b; }
   .rating-number h6, .rating-number .h6 {
-    color: #42414b !important; }
+    color: #42414b; }
   .rating-number .rating-icon {
     margin-bottom: 10px; }
     .rating-number .rating-icon svg {
@@ -20581,8 +20600,8 @@ body {
       color: #ff7a1a;
       fill: #ff7a1a; }
   .rating-number p {
-    color: #666575 !important;
-    font-size: 14px !important; }
+    color: #666575;
+    font-size: 14px; }
 
 .rating-range .four-star .rating-range-item-bar::after {
   width: 96px !important; }
@@ -20726,8 +20745,10 @@ body {
             color: #8f8fa3;
             font-size: 12px; }
     .students-feedback-item p {
-      margin-top: 12px;
-      color: #8f8fa3; }
+      font-size: 14px;
+      line-height: 21px;
+      color: #8f8fa3;
+      margin-top: 12px; }
 
 .my-rating {
   margin-bottom: 18px; }
@@ -20736,24 +20757,23 @@ body {
   border-radius: 5px;
   background-color: white;
   padding: 30px; }
-  .feedback-comment h5, .feedback-comment .h5 {
-    color: #202029 !important;
-    font-size: 20px;
-    line-height: 30px;
-    font-family: poppin-semiBold;
-    font-weight: 600; }
   .feedback-comment h6, .feedback-comment .h6 {
+    font-family: poppin-SemiBold;
+    margin-bottom: 12px; }
+  .feedback-comment span {
     font-size: 14px;
+    line-height: 21px;
     font-family: poppin-medium;
     color: #42414b;
-    margin: 12px 0px 5px 0px; }
+    margin-bottom: 6px; }
   .feedback-comment form {
     padding-bottom: 50px; }
     .feedback-comment form label {
-      color: #42414b;
-      font-family: poppin-medium;
       font-size: 14px;
-      margin-bottom: 5px; }
+      line-height: 21px;
+      color: #42414b;
+      margin-bottom: 5px;
+      font-family: poppin-medium; }
     .feedback-comment form textarea {
       margin-bottom: 20px;
       border: 1px solid rgba(143, 143, 163, 0.3);
@@ -20761,13 +20781,35 @@ body {
               box-sizing: border-box;
       border-radius: 4px;
       resize: none;
-      height: 112px; }
+      height: 112px;
+      padding: 16px 20px; }
+      .feedback-comment form textarea::-webkit-input-placeholder {
+        font-size: 16px;
+        line-height: 24px; }
+      .feedback-comment form textarea::-moz-placeholder {
+        font-size: 16px;
+        line-height: 24px; }
+      .feedback-comment form textarea:-ms-input-placeholder {
+        font-size: 16px;
+        line-height: 24px; }
+      .feedback-comment form textarea::-ms-input-placeholder {
+        font-size: 16px;
+        line-height: 24px; }
+      .feedback-comment form textarea::placeholder {
+        font-size: 16px;
+        line-height: 24px; }
       .feedback-comment form textarea:focus {
         -webkit-box-shadow: none !important;
                 box-shadow: none !important;
         border: 1px solid rgba(143, 143, 163, 0.3); }
 
 @media (max-width: 1200px) {
+  .instructor-courses-instructor .instructor-image {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px; }
+  .instructor-courses {
+    padding-top: 15px; }
   .instructor-rating-area {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -20787,13 +20829,10 @@ body {
 @media (min-width: 992px) and (max-width: 1200px) {
   .instructor-course-info {
     margin-bottom: 20px;
-    padding-bottom: 5px;
     padding-top: 25px;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-    .instructor-course-info-rating, .instructor-course-info-students, .instructor-course-info-courses {
-      margin-bottom: 20px; }
   .course__content_time {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -20825,7 +20864,11 @@ body {
     line-height: 24px !important; }
   .students-feedback-item .feedback-rating-start .text p {
     line-height: 22px !important;
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  .instructor-course-info {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .breadcrumb {
@@ -20833,9 +20876,6 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .instructor-courses {
-    padding-top: 40px;
-    padding-bottom: 40px; }
   .course__img img {
     width: 100%;
     -o-object-fit: cover;
@@ -20861,12 +20901,6 @@ body {
   .social-links li a {
     width: 45px;
     height: 45px; }
-  .instructor-course-info-courses .text h6, .instructor-course-info-courses .text .h6,
-  .instructor-course-info-courses .text .h6, .instructor-course-info-students .text h6, .instructor-course-info-students .text .h6,
-  .instructor-course-info-students .text .h6, .instructor-course-info-rating .text h6, .instructor-course-info-rating .text .h6,
-  .instructor-course-info-rating .text .h6 {
-    font-size: 28px !important;
-    line-height: 38px !important; }
   .instructor-rating-area {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -20881,9 +20915,6 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .instructor-courses {
-    padding-top: 30px;
-    padding-bottom: 30px; }
   .instructor-course-info {
     margin-bottom: 20px;
     padding-bottom: 5px;
@@ -20944,9 +20975,6 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .instructor-courses {
-    padding-top: 30px;
-    padding-bottom: 30px; }
   .instructor-course-info {
     margin-bottom: 20px;
     padding-bottom: 5px;
@@ -21030,9 +21058,6 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .instructor-courses {
-    padding-top: 30px;
-    padding-bottom: 30px; }
   .instructor-course-info {
     margin-bottom: 20px;
     padding-bottom: 5px;
@@ -21112,13 +21137,19 @@ body {
   .feedback-comment {
     padding: 25px; }
     .feedback-comment form .btn {
-      float: left !important; } }
+      float: left !important; }
+  .instructor-course-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .rating-icons.rating-icons-modal .jq-star {
+    width: 25px !important;
+    height: 25px !important;
+    margin-right: 15px; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .instructor-courses-instructor .instructor-image,
-  .instructor-courses-instructor .instructor-image img {
-    width: 150px;
-    height: 150px; }
   .instructor-info h4, .instructor-info .h4 {
     margin-bottom: 0px !important; } }
 
