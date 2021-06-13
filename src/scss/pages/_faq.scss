@@ -1,20 +1,18 @@
 .faq-area {
-  padding-bottom: 100px;
-
   .accordion-item {
     margin-bottom: 20px;
     background-color: white;
-    border-radius: 5px !important;
-    border: none !important;
+    border-radius: 5px;
+    border: none;
 
     .accordion-button {
-      border: none !important;
-      border-radius: 5px !important;
-      border-bottom-left-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
       font-size: 18px;
+      line-height: 27px;
       color: #42414b;
-      text-align: left;
+      font-family: poppin-medium;
+      border-radius: 5px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
 
       &:focus {
         box-shadow: none !important;
@@ -25,16 +23,18 @@
 
 .accordion-button:not(.collapsed) {
   color: #0264ed !important;
-  background-color: white !important;
+  background-color: white;
 }
 
 .accordion-body {
   border-top: 1px solid #e5e5ee;
-  border-radius: 5px !important;
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 
   p {
+    font-size: 16px;
+    line-height: 24px;
     color: #8f8fa3;
   }
 }
@@ -45,22 +45,29 @@
 
 // Responsive
 
+@media (max-width: 1200px) {
+  .faq-area {
+    padding-top: 0px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .faq-area {
-    padding-bottom: 50px;
-    padding-top: 50px;
-
     .accordion-item .accordion-button {
       font-size: 16px;
     }
   }
 }
+
+@media (max-width: 991px) {
+  .faq-area {
+    padding-top: 30px;
+  }
+}
+
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .faq-area {
-    padding-bottom: 30px;
-    padding-top: 30px;
-
     .accordion-item .accordion-button {
       font-size: 16px;
     }
@@ -70,9 +77,6 @@
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
   .faq-area {
-    padding-bottom: 30px;
-    padding-top: 30px;
-
     .accordion-item .accordion-button {
       font-size: 16px;
     }
@@ -82,8 +86,6 @@
 // Small devices 420px - 574px
 @media only screen and (min-width: 320px) and (max-width: 574px) {
   .faq-area {
-    padding-bottom: 30px;
-    padding-top: 30px;
     .accordion-item {
       .accordion-button {
         font-size: 14px;

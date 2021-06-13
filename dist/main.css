@@ -21136,68 +21136,64 @@ body {
   .instructor-info h4, .instructor-info .h4 {
     margin-bottom: 0px !important; } }
 
-.faq-area {
-  padding-bottom: 100px; }
-  .faq-area .accordion-item {
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 5px !important;
-    border: none !important; }
-    .faq-area .accordion-item .accordion-button {
-      border: none !important;
-      border-radius: 5px !important;
-      border-bottom-left-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
-      font-size: 18px;
-      color: #42414b;
-      text-align: left; }
-      .faq-area .accordion-item .accordion-button:focus {
-        -webkit-box-shadow: none !important;
-                box-shadow: none !important; }
+.faq-area .accordion-item {
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: none; }
+  .faq-area .accordion-item .accordion-button {
+    font-size: 18px;
+    line-height: 27px;
+    color: #42414b;
+    font-family: poppin-medium;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+    .faq-area .accordion-item .accordion-button:focus {
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important; }
 
 .accordion-button:not(.collapsed) {
   color: #0264ed !important;
-  background-color: white !important; }
+  background-color: white; }
 
 .accordion-body {
   border-top: 1px solid #e5e5ee;
-  border-radius: 5px !important;
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important; }
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
   .accordion-body p {
+    font-size: 16px;
+    line-height: 24px;
     color: #8f8fa3; }
 
 .accordion-collapse {
   border: none !important; }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .faq-area {
-    padding-bottom: 50px;
-    padding-top: 50px; }
-    .faq-area .accordion-item .accordion-button {
-      font-size: 16px; } }
+    padding-top: 0px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .faq-area .accordion-item .accordion-button {
+    font-size: 16px; } }
+
+@media (max-width: 991px) {
+  .faq-area {
+    padding-top: 30px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .faq-area {
-    padding-bottom: 30px;
-    padding-top: 30px; }
-    .faq-area .accordion-item .accordion-button {
-      font-size: 16px; } }
+  .faq-area .accordion-item .accordion-button {
+    font-size: 16px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
-  .faq-area {
-    padding-bottom: 30px;
-    padding-top: 30px; }
-    .faq-area .accordion-item .accordion-button {
-      font-size: 16px; } }
+  .faq-area .accordion-item .accordion-button {
+    font-size: 16px; } }
 
 @media only screen and (min-width: 320px) and (max-width: 574px) {
-  .faq-area {
-    padding-bottom: 30px;
-    padding-top: 30px; }
-    .faq-area .accordion-item .accordion-button {
-      font-size: 14px;
-      line-height: 26px; } }
+  .faq-area .accordion-item .accordion-button {
+    font-size: 14px;
+    line-height: 26px; } }
 
 .checkout-area-checkout .checkout-tab {
   background-color: white;
