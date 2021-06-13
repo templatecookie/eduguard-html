@@ -11086,7 +11086,8 @@ button:focus {
 .videolist-area {
   background-color: white;
   padding: 12px 0px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  overflow: hidden; }
   .videolist-area-heading {
     padding: 0px 24px 12px 24px;
     display: -webkit-box;
