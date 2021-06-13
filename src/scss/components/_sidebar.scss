@@ -53,7 +53,7 @@
         a {
           display: flex;
           justify-content: space-between;
-          padding: 15px 0px;
+          padding: 10px 0px;
           padding-left: 15px;
           &:hover {
             background-color: #1089ff;
@@ -66,9 +66,6 @@
           }
         }
         &.open {
-          & > a {
-            border-bottom: 2px solid #42414b;
-          }
           .navbar-mobile__menu-dropmenu {
             display: block;
           }
@@ -96,8 +93,10 @@
     &-dropmenu {
       display: none;
       background-color: #ecf6ff;
-      padding: 10px 0;
+      padding: 15px 0;
       padding-left: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
       li {
         margin-bottom: 2px;
 
@@ -106,7 +105,7 @@
           line-height: 24px;
           color: #42414b;
           font-family: poppin-medium;
-          padding: 15px 0px;
+          padding: 8px 0px;
           padding-left: 15px;
           background-color: transparent !important;
           &:hover {

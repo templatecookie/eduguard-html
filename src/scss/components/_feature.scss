@@ -72,3 +72,9 @@
     font-family: poppin-regular;
   }
 }
+
+@media (max-width: 1200px) {
+  .cardFeature {
+    height: 100%;
+  }
+}

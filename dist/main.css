@@ -10772,6 +10772,10 @@ button:focus {
   .cardFeature p {
     font-family: poppin-regular; }
 
+@media (max-width: 1200px) {
+  .cardFeature {
+    height: 100%; } }
+
 .slick-dots {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10874,7 +10878,7 @@ button:focus {
         -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        padding: 15px 0px;
+        padding: 10px 0px;
         padding-left: 15px; }
         .navbar-mobile__menu-list li a:hover {
           background-color: #1089ff; }
@@ -10882,8 +10886,6 @@ button:focus {
             color: #fff; }
             .navbar-mobile__menu-list li a:hover span svg {
               color: #fff; }
-      .navbar-mobile__menu-list li.open > a {
-        border-bottom: 2px solid #42414b; }
       .navbar-mobile__menu-list li.open .navbar-mobile__menu-dropmenu {
         display: block; }
       .navbar-mobile__menu-list li.open .navbar-mobile__menu-dropicon svg {
@@ -10901,8 +10903,10 @@ button:focus {
     .navbar-mobile__menu-dropmenu {
       display: none;
       background-color: #ecf6ff;
-      padding: 10px 0;
-      padding-left: 10px; }
+      padding: 15px 0;
+      padding-left: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
       .navbar-mobile__menu-dropmenu li {
         margin-bottom: 2px; }
         .navbar-mobile__menu-dropmenu li a {
@@ -10910,7 +10914,7 @@ button:focus {
           line-height: 24px;
           color: #42414b;
           font-family: poppin-medium;
-          padding: 15px 0px;
+          padding: 8px 0px;
           padding-left: 15px;
           background-color: transparent !important; }
           .navbar-mobile__menu-dropmenu li a:hover {
