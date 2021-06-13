@@ -108,7 +108,7 @@ function menuClick(current) {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     dots: false,
     arrows: true,
     autoplaySpeed: 2000,
@@ -128,12 +128,16 @@ function menuClick(current) {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
+          arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 575,
         settings: {
           slidesToShow: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],

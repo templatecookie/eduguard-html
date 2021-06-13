@@ -40,6 +40,7 @@
 
     .icon-with-date {
       margin-top: 12px;
+
       &-start {
         margin-right: 45px;
       }
@@ -49,6 +50,7 @@
         p {
           margin-left: 5px;
           color: #42414b;
+
           span {
             color: #8f8fa3;
           }
@@ -80,6 +82,7 @@
   .courseCard--wrapper {
     margin-top: -200px;
   }
+
   .eventCard--wrapper {
     margin-top: -110px;
   }
@@ -127,6 +130,7 @@
       h6 {
         font-family: poppin-semiBold;
       }
+
       p {
         font-size: 16px;
         line-height: 24px;
@@ -194,9 +198,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .event-info-tab .nav-tabs .nav-link {
-    margin-right: 0px;
-  }
+
   .event-info-tab .nav-tabs {
     justify-content: space-between;
   }
@@ -208,19 +210,6 @@
 
   .event-info-tab-content .nav-overview p {
     font-size: 14px;
-  }
-
-  // .event-info {
-  //   padding-bottom: 30px;
-  // }
-
-  .similar-events .shape {
-    display: none;
-  }
-
-  .similar-events {
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 }
 
@@ -276,21 +265,19 @@
   .event-info {
     padding-bottom: 30px;
   }
-
-  .similar-events .shape {
-    display: none;
-  }
-
-  .similar-events {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
 @media (max-width: 767px) {
   .similar-events {
     position: relative;
-    overflow: hidden;
+  }
+
+  .event-info-tab .nav-tabs .nav-link {
+    margin-right: 15px;
+  }
+
+  .event-info-tab-content #nav-overview p {
+    font-size: 14px;
   }
 }
 
@@ -321,32 +308,13 @@
   .event-info-tab-content .nav-overview p {
     font-size: 14px;
   }
-
-  .event-info {
-    padding-bottom: 30px;
-  }
-
-  .similar-events .shape {
-    display: none;
-  }
-
-  .similar-events {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
 @media (max-width: 991px) {
-  // .course-includes h6,
-  // .course-includes .h6,
-  // .course-overview-main-item h6,
-  // .course-overview-main-item .h6 {
-  //   font-size: 28px !important;
-  //   line-height: 38px !important;
-  // }
   .course-curriculum-area .curriculum-area-top-start {
     align-items: center;
   }
+
   .event-info .courseCard--wrapper {
     margin-top: 0px;
   }
@@ -361,6 +329,7 @@
   .event-time {
     margin-bottom: 20px;
   }
+
   .event-sub-section {
     padding-bottom: 25px;
   }
@@ -405,6 +374,7 @@
   .event-time {
     margin-bottom: 20px;
   }
+
   .event-sub-section {
     padding-bottom: 25px;
   }
@@ -432,13 +402,16 @@
     align-items: flex-start !important;
     margin-top: 0px;
   }
+
   .event-sub-section-main .icon-with-date-start {
     margin-right: 0px;
     margin-bottom: 10px;
   }
+
   .event-sub-section-main .icon-with-date-end {
     margin-bottom: 10px;
   }
+
   .event-sub-section-main {
     align-items: center;
   }
@@ -474,6 +447,7 @@
       justify-content: center;
     }
   }
+
   .icon-with-date-start,
   .icon-with-date-end {
     svg {
@@ -482,13 +456,16 @@
       margin-right: 15px;
     }
   }
+
   .event-sub-section-main .icon-with-date-start,
   .icon-with-date-end {
     margin-bottom: 15px;
   }
+
   .event-sub-section-main .icon-with-date {
     margin-bottom: 0px;
   }
+
   .event-sub-section-main .icon-with-date-end span {
     margin-left: 0px;
   }
@@ -512,12 +489,14 @@
   .event-sub-section-main .icon-with-date {
     flex-direction: column !important;
   }
+
   .event-sub-section-main .icon-with-date-start,
   .icon-with-date-end {
     display: flex;
     justify-content: space-between;
     margin-right: 0px;
   }
+
   #countdown .timer-body-block {
     justify-content: center;
   }
