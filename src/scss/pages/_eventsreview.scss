@@ -4,10 +4,11 @@
   padding: 30px;
 
   h6 {
-    color: #42414b !important;
-
+    color: #42414b;
+    font-family: poppin-semiBold;
     span {
-      color: #8f8fa3 !important;
+      color: #8f8fa3;
+      font-family: poppin-regular;
     }
   }
 
@@ -35,10 +36,14 @@
       &-info {
         h6 {
           font-size: 14px;
+          line-height: 21px;
+          color: #42414b;
         }
 
         p {
-          font-size: 12px !important;
+          font-size: 12px;
+          line-height: 15px;
+          color: #8f8fa3;
         }
       }
     }
@@ -47,7 +52,9 @@
       margin-top: 10px;
 
       p {
-        font-size: 14px !important;
+        font-size: 14px;
+        line-height: 21px;
+        color: #8f8fa3;
       }
     }
   }
@@ -60,16 +67,21 @@
   border-radius: 8px;
 
   h6 {
-    color: #42414b !important;
+    color: #42414b;
+    font-family: poppin-SemiBold;
   }
 
   form {
     label {
+      font-size: 14px;
+      line-height: 21px;
+      font-family: poppin-medium;
       margin-top: 5px;
       margin-bottom: 5px;
     }
 
     textarea {
+      padding: 16px 20px;
       height: 112px;
       resize: none;
       border: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);

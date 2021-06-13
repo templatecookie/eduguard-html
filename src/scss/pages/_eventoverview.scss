@@ -6,7 +6,7 @@
   &-main {
     margin-top: 60px;
 
-    h3 {
+    h5 {
       margin-bottom: 24px;
     }
 
@@ -39,10 +39,9 @@
     }
 
     .icon-with-date {
-      margin-bottom: 12px;
-      margin-top: 15px;
+      margin-top: 12px;
       &-start {
-        margin-right: 25px;
+        margin-right: 45px;
       }
 
       &-start,
@@ -53,6 +52,16 @@
           span {
             color: #8f8fa3;
           }
+        }
+      }
+
+      &-start,
+      &-end {
+        span {
+          margin-left: 5px;
+          font-size: 14px;
+          line-height: 21px;
+          color: #424242;
         }
       }
     }
@@ -71,6 +80,9 @@
   .courseCard--wrapper {
     margin-top: -200px;
   }
+  .eventCard--wrapper {
+    margin-top: -110px;
+  }
 
   &-tab {
     .nav-tabs {
@@ -84,7 +96,7 @@
         bottom: 0;
         left: 0;
         height: 2px;
-        width: 100%;
+        width: calc(100% - 15px);
         background-color: white;
       }
 
@@ -95,24 +107,31 @@
       }
 
       .nav-link {
-        border: 0;
-        background-color: transparent;
-        padding: 0;
-        padding-bottom: 12px;
-        margin-right: 30px;
-        color: #666575;
         font-size: 16px;
+        line-height: 24px;
+        font-family: poppin-medium;
+        color: #666575;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        padding-bottom: 12px;
+        margin-right: 25px;
       }
     }
   }
 
   &-tab-content {
-    padding-top: 35px;
+    padding-top: 30px;
     padding-bottom: 100px;
 
-    .nav-overview {
+    #nav-overview {
+      h6 {
+        font-family: poppin-semiBold;
+      }
       p {
         font-size: 16px;
+        line-height: 24px;
+        color: #8f8fa3;
       }
     }
   }

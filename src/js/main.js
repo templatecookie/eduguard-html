@@ -109,7 +109,7 @@ function menuClick(current) {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    dots: true,
+    dots: false,
     arrows: true,
     autoplaySpeed: 2000,
     prevArrow:
@@ -118,9 +118,10 @@ function menuClick(current) {
       ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 1441,
         settings: {
-          arrows: true,
+          arrows: false,
+          dots: true,
         },
       },
       {

@@ -45,14 +45,18 @@
 
       &-end {
         p {
-          font-family: poppin-medium;
           font-size: 12px;
           letter-spacing: 2px;
           margin-bottom: 5px;
+          color: #8f8fa3;
+          text-transform: uppercase;
+          font-family: poppin-medium;
         }
 
         h6 {
-          font-size: 16px;
+          &.font-para--lg {
+            color: #202029;
+          }
         }
       }
     }

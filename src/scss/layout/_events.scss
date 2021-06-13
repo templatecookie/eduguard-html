@@ -1,0 +1,17 @@
+.section {
+  &__overlay {
+    span {
+      position: absolute;
+      img {
+      }
+    }
+    &--01 {
+      top: -10%;
+      left: 0;
+    }
+    &--02 {
+      right: 5%;
+      bottom: 10%;
+    }
+  }
+}
