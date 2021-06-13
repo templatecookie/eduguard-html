@@ -83,6 +83,10 @@
   .purchase-area-items-start {
     margin-bottom: 15px;
   }
+  .purchase-area-items {
+    border-right: 0px;
+    border-bottom: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
+  }
 }
 
 // Medium devices 768px - 991px
@@ -94,7 +98,6 @@
 
   .purchase-area-items {
     padding-right: 0;
-    border: none;
 
     h6 {
       margin-top: 25px;
@@ -196,7 +199,6 @@
 
   .purchase-area-items {
     padding-right: 0;
-    border: none;
 
     .text-main {
       max-width: 100%;

@@ -16946,15 +16946,17 @@ header {
 
 @media (max-width: 991px) {
   .purchase-area-items-start {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .purchase-area-items {
+    border-right: 0px;
+    border-bottom: 1px solid rgba(143, 143, 163, 0.3); } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .purchase-area {
     padding: 20px;
     padding-bottom: 10px; }
   .purchase-area-items {
-    padding-right: 0;
-    border: none; }
+    padding-right: 0; }
     .purchase-area-items h6, .purchase-area-items .h6 {
       margin-top: 25px; }
     .purchase-area-items .text-main {
@@ -17010,8 +17012,7 @@ header {
     padding: 20px;
     padding-bottom: 10px; }
   .purchase-area-items {
-    padding-right: 0;
-    border: none; }
+    padding-right: 0; }
     .purchase-area-items .text-main {
       max-width: 100%; }
       .purchase-area-items .text-main p {
@@ -17584,12 +17585,6 @@ header {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .event-sub-section-main .icon-with-date {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-    -webkit-flex-direction: column !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important; }
   .event-info-tab .nav-tabs {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -17734,14 +17729,8 @@ header {
     .event-sub-section-main .event-time .list-inline-item:not(:last-child) {
       margin-right: 10px; }
   .event-sub-section-main .icon-with-date {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-bottom: 10px; }
     .event-sub-section-main .icon-with-date-start {
-      margin-right: 0;
       margin-bottom: 5px; }
   .event-sub-section {
     padding-bottom: 25px; }
@@ -17770,14 +17759,8 @@ header {
     .event-sub-section-main .event-time .list-inline-item:not(:last-child) {
       margin-right: 10px; }
   .event-sub-section-main .icon-with-date {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-bottom: 10px; }
     .event-sub-section-main .icon-with-date-start {
-      margin-right: 0;
       margin-bottom: 5px; }
   .event-sub-section {
     padding-bottom: 25px; }
@@ -17879,7 +17862,6 @@ header {
             align-items: flex-start !important;
     margin-top: 0px; }
   .event-sub-section-main .icon-with-date-start {
-    margin-right: 0px;
     margin-bottom: 10px; }
   .event-sub-section-main .icon-with-date-end {
     margin-bottom: 10px; }
@@ -17892,6 +17874,13 @@ header {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain; } }
+
+@media (max-width: 575px) {
+  .event-sub-section-main .icon-with-date-start span, .event-sub-section-main .icon-with-date-end span {
+    font-size: 12px;
+    line-height: 22px; }
+  .event-sub-section-main .icon-with-date-start {
+    margin-right: 5px; } }
 
 @media (max-width: 420px) {
   #countdown .timer-body-block .table-cell {
@@ -17913,45 +17902,11 @@ header {
   .icon-with-date-start svg,
   .icon-with-date-end svg {
     width: 25px;
-    height: 25px;
-    margin-right: 15px; }
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    margin-bottom: 15px; }
-  .event-sub-section-main .icon-with-date {
-    margin-bottom: 0px; }
-  .event-sub-section-main .icon-with-date-end span {
-    margin-left: 0px; }
-  .event-sub-section-main .icon-with-date {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-    -webkit-flex-direction: row !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important; }
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    margin-right: 15px; }
+    height: 25px; }
   .course-description-start-content h4, .course-description-start-content .h4,
   .course-description-start-content .h4 {
     font-size: 24px !important;
     line-height: 34px !important; }
-  .event-sub-section-main .icon-with-date {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-    -webkit-flex-direction: column !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important; }
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-right: 0px; }
   #countdown .timer-body-block {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

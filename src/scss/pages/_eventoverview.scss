@@ -180,11 +180,9 @@
     }
 
     .icon-with-date {
-      flex-direction: column;
       margin-bottom: 10px;
 
       &-start {
-        margin-right: 0;
         margin-bottom: 5px;
       }
     }
@@ -234,11 +232,9 @@
     }
 
     .icon-with-date {
-      flex-direction: column;
       margin-bottom: 10px;
 
       &-start {
-        margin-right: 0;
         margin-bottom: 5px;
       }
     }
@@ -404,7 +400,6 @@
   }
 
   .event-sub-section-main .icon-with-date-start {
-    margin-right: 0px;
     margin-bottom: 10px;
   }
 
@@ -424,6 +419,17 @@
         object-fit: contain;
       }
     }
+  }
+}
+
+@media (max-width: 575px) {
+  .event-sub-section-main .icon-with-date-start span,
+  .event-sub-section-main .icon-with-date-end span {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .event-sub-section-main .icon-with-date-start {
+    margin-right: 5px;
   }
 }
 
@@ -453,30 +459,7 @@
     svg {
       width: 25px;
       height: 25px;
-      margin-right: 15px;
     }
-  }
-
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    margin-bottom: 15px;
-  }
-
-  .event-sub-section-main .icon-with-date {
-    margin-bottom: 0px;
-  }
-
-  .event-sub-section-main .icon-with-date-end span {
-    margin-left: 0px;
-  }
-
-  .event-sub-section-main .icon-with-date {
-    flex-direction: row !important;
-  }
-
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    margin-right: 15px;
   }
 
   // event
@@ -484,17 +467,6 @@
   .course-description-start-content .h4 {
     font-size: 24px !important;
     line-height: 34px !important;
-  }
-
-  .event-sub-section-main .icon-with-date {
-    flex-direction: column !important;
-  }
-
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 0px;
   }
 
   #countdown .timer-body-block {
