@@ -41,6 +41,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+a {
+  display: inline-block;
+}
+
 a:focus,
 .button:focus {
   text-decoration: none;

@@ -9936,6 +9936,9 @@ body {
   overflow-y: scroll;
   text-rendering: optimizeLegibility; }
 
+a {
+  display: inline-block; }
+
 a:focus,
 .button:focus {
   text-decoration: none;
@@ -21328,6 +21331,12 @@ body {
   background-repeat: no-repeat; }
   .getin-touch h3, .getin-touch .h3 {
     margin-bottom: 40px !important; }
+  .getin-touch .form-area label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #202020;
+    font-family: poppin-medium;
+    margin-bottom: 4px; }
 
 .contact-feature {
   padding: 30px;
@@ -21504,13 +21513,14 @@ body {
     .contact-feature-icon {
       margin-right: 0;
       margin-bottom: 20px; }
-  .form-area {
-    padding: 16px; }
-    .form-area form input {
-      padding: 12px 20px; }
+  .form-area form input {
+    padding: 12px 20px; }
   .map-area-frame {
     padding: 0;
-    border: none; } }
+    border: none; }
+  .getin-touch .form-area {
+    width: 97%;
+    margin: auto; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .form-area-shape,
@@ -21536,6 +21546,11 @@ body {
   .map-area-frame {
     padding: 0;
     border: none; } }
+
+@media (max-width: 767px) {
+  .getin-touch .form-area {
+    width: 95%;
+    margin: auto; } }
 
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   .form-area-shape,
@@ -21587,10 +21602,8 @@ body {
     .contact-feature-icon {
       margin-right: 0;
       margin-bottom: 20px; }
-  .form-area {
-    padding: 16px; }
-    .form-area form input {
-      padding: 12px 20px; }
+  .form-area form input {
+    padding: 12px 20px; }
   .map-area-frame {
     padding: 0;
     border: none; } }
