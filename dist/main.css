@@ -10787,7 +10787,7 @@ button:focus {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-top: 10px; }
-  @media (max-width: 1200px) {
+  @media (max-width: 767px) {
     .slick-dots {
       margin-top: 0px; } }
   .slick-dots li {
@@ -12715,8 +12715,8 @@ header {
             clip-path: none !important; }
   .banner-three .playbtn-area {
     position: absolute;
-    bottom: 290px !important;
-    left: 330px !important; }
+    bottom: 40px !important;
+    left: 50% !important; }
   
   .banner-two-start h1,
   .banner-two-start .h1,
@@ -12810,7 +12810,8 @@ header {
 
 @media (max-width: 575px) {
   .banner-three .playbtn-area {
-    left: 240px !important; } }
+    bottom: 90px !important;
+    left: 65% !important; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .banner-two-start p {
@@ -12843,10 +12844,7 @@ header {
   .banner-two-start p {
     text-align: left; }
   .banner-three-content {
-    height: 75vh !important; }
-  .banner-three .playbtn-area {
-    left: 215px !important;
-    bottom: 135px !important; } }
+    height: 75vh !important; } }
 
 .feature .cardFeature {
   margin-bottom: 24px; }

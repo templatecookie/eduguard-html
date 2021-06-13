@@ -179,8 +179,8 @@
   }
   .banner-three .playbtn-area {
     position: absolute;
-    bottom: 290px !important;
-    left: 330px !important;
+    bottom: 40px !important;
+    left: 50% !important;
   }
   // homepage-02
   .banner-two-start h1,
@@ -295,7 +295,8 @@
 
 @media (max-width: 575px) {
   .banner-three .playbtn-area {
-    left: 240px !important;
+    bottom: 90px !important;
+    left: 65% !important;
   }
 }
 
@@ -342,10 +343,10 @@
   .banner-three-content {
     height: 75vh !important;
   }
-  .banner-three {
-    .playbtn-area {
-      left: 215px !important;
-      bottom: 135px !important;
-    }
-  }
+  // .banner-three {
+  //   .playbtn-area {
+  //     left: 215px !important;
+  //     bottom: 135px !important;
+  //   }
+  // }
 }
