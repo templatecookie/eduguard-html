@@ -699,11 +699,6 @@
       display: none;
     }
 
-    &-item {
-      margin-right: 20px;
-      margin-bottom: 20px;
-    }
-
     &-area {
       flex-wrap: wrap;
     }
@@ -800,6 +795,9 @@
       margin: auto;
     }
   }
+  .browse-categories__wrapper .slick-dots {
+    margin-top: 0px;
+  }
 }
 
 // Small devices 575px - 767px
@@ -821,11 +819,6 @@
 
     &-shape {
       display: none;
-    }
-
-    &-item {
-      margin-right: 20px;
-      margin-bottom: 20px;
     }
 
     &-area {

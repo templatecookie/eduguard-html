@@ -12174,20 +12174,6 @@ button:focus {
 .browse-categories-item {
   padding: 30px 0px; }
 
-@media (max-width: 1199px) {
-  .browse-categories .slider-arrows {
-    display: none !important; } }
-
-@media (max-width: 1024px) {
-  .browse-categories .slider-arrows {
-    display: none; }
-  .browse-categories .slick-dots {
-    margin-top: 30px !important; } }
-
-@media (max-width: 991px) {
-  .browseCategories .slick-dots {
-    margin-top: 0px !important; } }
-
 .overlay {
   height: 100%;
   width: 100%;
@@ -13215,6 +13201,9 @@ header {
         position: absolute;
         bottom: -30px;
         left: -22px; }
+  @media (min-width: 1200px) {
+    .hero--five-p {
+      padding: 130px 0px; } }
   .hero--five .hero__content-info h2, .hero--five .hero__content-info .h2 {
     margin-bottom: 0px !important; }
   .hero--five .hero__content-info span {
@@ -14663,9 +14652,6 @@ header {
     margin-top: 20px; }
   .browse-categories-shape {
     display: none; }
-  .browse-categories-item {
-    margin-right: 20px;
-    margin-bottom: 20px; }
   .browse-categories-area {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -14724,7 +14710,9 @@ header {
   .mentor__img {
     width: 270px;
     height: 290px;
-    margin: auto; } }
+    margin: auto; }
+  .browse-categories__wrapper .slick-dots {
+    margin-top: 0px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .main-banner-end {
@@ -14737,9 +14725,6 @@ header {
     margin-top: 20px; }
   .browse-categories-shape {
     display: none; }
-  .browse-categories-item {
-    margin-right: 20px;
-    margin-bottom: 20px; }
   .browse-categories-area {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;

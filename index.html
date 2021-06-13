@@ -132,7 +132,7 @@
                </ul>
                <div class="d-flex align-items-center justify-content-between rightContent ">
                   <form class="header__Search-form" id="searchForm">
-  
+
                      <button type="button" class="border-0 bg-transparent header__Search-button" onclick="openSearch()">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <circle cx="9.19522" cy="9.19518" r="7.61714" stroke="#35343E" stroke-width="1.6"
@@ -177,7 +177,8 @@
                      <a href="index.html"> <img src="dist/images/logo/logo.png" alt="brand" class="img-fluid"> </a>
                      <div>
                         <a href="cart.html" class="cart-nav">
-                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd"
                                  d="M2.87778 2.51099L2.77634 2.50038C2.40716 2.48688 2.07562 2.74796 2.01087 3.12209L2.00026 3.22354C1.98676 3.59272 2.24784 3.92426 2.62197 3.98901L4.13098 4.25L5.04551 15.1457L5.06443 15.3095C5.24843 16.5519 6.31708 17.486 7.58988 17.486H18.5019L18.6662 17.4808C19.8626 17.4044 20.8545 16.4996 21.0291 15.2978L21.9781 8.73941L21.9945 8.58877C22.0819 7.38969 21.132 6.349 19.9089 6.349H5.81198L5.57725 3.54727L5.55956 3.43641C5.49112 3.14809 5.25673 2.92273 4.95778 2.87099L2.87778 2.51099ZM7.47394 15.9797C6.97867 15.9255 6.58258 15.5277 6.54028 15.0207L5.93798 7.849H19.9089L19.997 7.85548C20.3128 7.90242 20.5409 8.19769 20.4936 8.52465L19.5446 15.0826L19.5208 15.1998C19.4005 15.6584 18.985 15.986 18.5019 15.986H7.58988L7.47394 15.9797ZM5.90828 20.5853C5.90828 19.7492 6.58595 19.0703 7.42228 19.0703C8.25849 19.0703 8.93728 19.7491 8.93728 20.5853C8.93728 21.4216 8.25838 22.0993 7.42228 22.0993C6.58606 22.0993 5.90828 21.4215 5.90828 20.5853ZM17.1597 20.5853C17.1597 19.7491 17.8385 19.0703 18.6747 19.0703C19.5109 19.0703 20.1897 19.7491 20.1897 20.5853C20.1897 21.4216 19.5108 22.0993 18.6747 22.0993C17.8386 22.0993 17.1597 21.4216 17.1597 20.5853ZM17.6484 10.795C17.6484 10.3808 17.3126 10.045 16.8984 10.045H14.1254L14.0236 10.0518C13.6575 10.1015 13.3754 10.4153 13.3754 10.795C13.3754 11.2092 13.7112 11.545 14.1254 11.545H16.8984L17.0001 11.5382C17.3662 11.4885 17.6484 11.1747 17.6484 10.795Z"
                                  fill="#35343E"></path>
@@ -185,11 +186,14 @@
                            <span class="badge bg-primary">2</span> <span class="visually-hidden">Items Added</span>
                         </a>
                         <button class="navbar-mobile--cross">
-                           <svg width="20" height="19" viewBox="0 0 20 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M14.5967 4.59668L5.40429 13.7891" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M5.40332 4.59668L14.5957 13.7891" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
-                              
+                           <svg width="20" height="19" viewBox="0 0 20 19" fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.5967 4.59668L5.40429 13.7891" stroke="currentColor" stroke-width="1.5"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M5.40332 4.59668L14.5957 13.7891" stroke="currentColor" stroke-width="1.5"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+
                         </button>
                      </div>
                   </div>
@@ -434,11 +438,11 @@
    </section>
 
    <!-- Browse Categories Starts Here -->
-   <section class="section browse-categories d-none">
+   <section class="section browse-categories ">
       <div class="container">
          <h2 class="font-title--md text-center">Browse Course with Top Categories</h2>
          <div class="browse-categories__wrapper  position-relative">
-            <div class="browse-categories-area">
+            <div class="categories--box">
                <div class="browse-categories-item default-item-one">
                   <div class="browse-categories-item-icon">
                      <div class="categories-one default-categories">
@@ -528,11 +532,48 @@
                      <p>2k Courses</p>
                   </div>
                </div>
+               <div class="browse-categories-item default-item-four">
+                  <div class="browse-categories-item-icon">
+                     <div class="categories-four default-categories">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                           class="feather feather-headphones">
+                           <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                           <path
+                              d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                           </path>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="browse-categories-item-text">
+                     <h6 class="font-title--card"><a href="#">Music</a></h6>
+                     <p>297 Courses</p>
+                  </div>
+               </div>
+               <div class="browse-categories-item default-item-five">
+                  <div class="browse-categories-item-icon">
+                     <div class="categories-five default-categories">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                           class="feather feather-box">
+                           <path
+                              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                           </path>
+                           <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                           <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="browse-categories-item-text">
+                     <h6 class="font-title--card"><a href="#">Marketing</a></h6>
+                     <p>2k Courses</p>
+                  </div>
+               </div>
             </div>
          </div>
          <div class="row">
             <div class="col-lg-12 text-center"> <a href="coursesearch.html"
-                  class="button button-lg button--primary mt-lg-5 mt-2">Browse all
+                  class="button button-lg button--primary mt-lg-5 mt-5">Browse all
                   Courses</a>
             </div>
          </div>
@@ -543,886 +584,857 @@
    </section>
 
    <!--  Popular Courses Starts Here -->
-   <section class=" section section--bg-offwhite-four featured-popular-courses main-popular-course ">
+   <section class="section section--bg-offwhite-three featured-popular-courses main-popular-course">
       <div class="container">
          <div class="row">
-             <div class="col-lg-12">
-                 <div class="featured-popular-courses-heading d-flex align-content-center justify-content-between">
-                     <div class="main-heading">
-                         <h3 class="font-title--md">Our Popular Courses</h3>
-                     </div>
-                     <div class="nav-button featured-popular-courses-tabs">
-                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                             <li class="nav-item" role="presentation">
-                                 <button class="nav-link active ps-0" id="pills-all-tab" data-bs-toggle="pill"
-                                     data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
-                                     aria-selected="true">All</button>
-                             </li>
-                             <li class="nav-item" role="presentation">
-                                 <button class="nav-link" id="pills-design-tab" data-bs-toggle="pill"
-                                     data-bs-target="#pills-design" type="button" role="tab"
-                                     aria-controls="pills-design" aria-selected="false">Design</button>
-                             </li>
-                             <li class="nav-item" role="presentation">
-                                 <button class="nav-link" id="pills-dev-tab" data-bs-toggle="pill"
-                                     data-bs-target="#pills-dev" type="button" role="tab" aria-controls="pills-dev"
-                                     aria-selected="false">Development</button>
-                             </li>
-                             <li class="nav-item" role="presentation">
-                                 <button class="nav-link" id="pills-bus-tab" data-bs-toggle="pill"
-                                     data-bs-target="#pills-bus" type="button" role="tab" aria-controls="pills-bus"
-                                     aria-selected="false">Business</button>
-                             </li>
-                             <li class="nav-item" role="presentation">
-                                 <button class="nav-link me-0" id="pills-its-tab" data-bs-toggle="pill"
-                                     data-bs-target="#pills-its" type="button" role="tab" aria-controls="pills-its"
-                                     aria-selected="false">IT & Software</button>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
+            <div class="col-lg-12">
+               <div class="featured-popular-courses-heading d-flex align-content-center justify-content-between">
+                  <div class="main-heading">
+                     <h3 class="font-title--md">Our Popular Courses</h3>
+                  </div>
+                  <div class="nav-button featured-popular-courses-tabs">
+                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link active ps-0" id="pills-all-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                              aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-design-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-design" type="button" role="tab" aria-controls="pills-design"
+                              aria-selected="false">Design</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-dev-tab" data-bs-toggle="pill" data-bs-target="#pills-dev"
+                              type="button" role="tab" aria-controls="pills-dev"
+                              aria-selected="false">Development</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-bus-tab" data-bs-toggle="pill" data-bs-target="#pills-bus"
+                              type="button" role="tab" aria-controls="pills-bus" aria-selected="false">Business</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link me-0" id="pills-its-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-its" type="button" role="tab" aria-controls="pills-its"
+                              aria-selected="false">IT & Software</button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </div>
          <div class="row">
-             <div class="tab-content" id="pills-tabContent">
-                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
-                     aria-labelledby="pills-all-tab">
-                     <div class="row">
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png"
-                                             alt="images" class="img-fluid"></a>
+            <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                  <div class="row">
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
                                  </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-02.png"
-                                             alt="images" class="img-fluid"></a>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
                                  </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-03.png"
-                                             alt="images" class="img-fluid"></a>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-02.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
                                  </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-04.png"
-                                             alt="images" class="img-fluid"></a>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
                                  </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-05.png"
-                                             alt="images" class="img-fluid"></a>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
                                  </div>
-                             </div>
-                         </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-03.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-04.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-05.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12 text-center">
+                        <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
+                           all Courses</a>
                      </div>
-                     <div class="row">
-                         <div class="col-lg-12 text-center">
-                             <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
-                                 all Courses</a>
-                         </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">
+                  <div class="row">
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                 </div>
-                 <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">
-                     <div class="row">
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png"
-                                             alt="images" class="img-fluid"></a>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-02.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
                                  </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-02.png"
-                                             alt="images" class="img-fluid"></a>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
                                  </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-03.png"
-                                             alt="images" class="img-fluid"></a>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <div class="row">
-                         <div class="col-lg-12 text-center">
-                             <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
-                                 all Courses</a>
-                         </div>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-03.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                 </div>
-                 <div class="tab-pane fade" id="pills-dev" role="tabpanel" aria-labelledby="pills-dev-tab">
-                     <div class="row">
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png"
-                                             alt="images" class="img-fluid"></a>
-                                 </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-02.png"
-                                             alt="images" class="img-fluid"></a>
-                                 </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12 text-center">
+                        <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
+                           all Courses</a>
                      </div>
-                     <div class="row">
-                         <div class="col-lg-12 text-center">
-                             <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
-                                 all Courses</a>
-                         </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="pills-dev" role="tabpanel" aria-labelledby="pills-dev-tab">
+                  <div class="row">
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                 </div>
-                 <div class="tab-pane fade" id="pills-bus" role="tabpanel" aria-labelledby="pills-bus-tab">
-                     <div class="row">
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png"
-                                             alt="images" class="img-fluid"></a>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-02.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
                                  </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-02.png"
-                                             alt="images" class="img-fluid"></a>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
                                  </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-03.png"
-                                             alt="images" class="img-fluid"></a>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-04.png"
-                                             alt="images" class="img-fluid"></a>
-                                 </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <div class="row">
-                         <div class="col-lg-12 text-center">
-                             <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
-                                 all Courses</a>
-                         </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12 text-center">
+                        <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
+                           all Courses</a>
                      </div>
-                 </div>
-                 <div class="tab-pane fade" id="pills-its" role="tabpanel" aria-labelledby="pills-its-tab">
-                     <div class="row">
-                         <div class="col-lg-4 col-md-6 mb-4">
-                             <div class="contentCard contentCard--course">
-                                 <div class="contentCard-top">
-                                     <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png"
-                                             alt="images" class="img-fluid"></a>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="pills-bus" role="tabpanel" aria-labelledby="pills-bus-tab">
+                  <div class="row">
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
                                  </div>
-                                 <div class="contentCard-bottom">
-                                     <h5>
-                                         <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
-                                             Flexbox, Grid, Animations and More!</a>
-                                     </h5>
-                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                         <a href="instructor-profile.html"
-                                             class="contentCard-user d-flex align-items-center">
-                                             <img src="dist/images/courses/7.png" alt="client-image"
-                                                 class="rounded-circle">
-                                             <p class="font-para--md">Brandon Dias</p>
-                                         </a>
-                                         <div class="price">
-                                             <span>$12</span>
-                                             <del>$95</del>
-                                         </div>
-                                     </div>
-                                     <div class="contentCard-more d-flex justify-content-between">
-                                         <div class=" d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/star.png" alt="star">
-                                             </div>
-                                             <span>4.5</span>
-                                         </div>
-                                         <div class="eye d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/eye.png" alt="eye">
-                                             </div>
-                                             <span>24,517</span>
-                                         </div>
-                                         <div class="book d-flex align-items-center">
-                                             <div class="icon">
-                                                 <img src="dist/images/icon/book.png" alt="location">
-                                             </div>
-                                             <span>37 Lesson</span>
-                                         </div>
-                                         <div class="clock d-flex align-items-center">
-                                             <div class="icon ">
-                                                 <img src="dist/images/icon/Clock.png" alt="clock">
-                                             </div>
-                                             <span>3 Hours</span>
-                                         </div>
-                                     </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
                                  </div>
-                             </div>
-                         </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <div class="row">
-                         <div class="col-lg-12 text-center">
-                             <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
-                                 all Courses</a>
-                         </div>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-02.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                 </div>
-             </div>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-03.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-04.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12 text-center">
+                        <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
+                           all Courses</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="pills-its" role="tabpanel" aria-labelledby="pills-its-tab">
+                  <div class="row">
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="contentCard contentCard--course">
+                           <div class="contentCard-top">
+                              <a href="coursedetails.html"><img src="dist/images/courses/demo-img-01.png" alt="images"
+                                    class="img-fluid"></a>
+                           </div>
+                           <div class="contentCard-bottom">
+                              <h5>
+                                 <a href="coursedetails.html" class="font-title--card">Advanced CSS and Sass:
+                                    Flexbox, Grid, Animations and More!</a>
+                              </h5>
+                              <div class="contentCard-info d-flex align-items-center justify-content-between">
+                                 <a href="instructor-profile.html" class="contentCard-user d-flex align-items-center">
+                                    <img src="dist/images/courses/7.png" alt="client-image" class="rounded-circle">
+                                    <p class="font-para--md">Brandon Dias</p>
+                                 </a>
+                                 <div class="price">
+                                    <span>$12</span>
+                                    <del>$95</del>
+                                 </div>
+                              </div>
+                              <div class="contentCard-more d-flex justify-content-between">
+                                 <div class=" d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/star.png" alt="star">
+                                    </div>
+                                    <span>4.5</span>
+                                 </div>
+                                 <div class="eye d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/eye.png" alt="eye">
+                                    </div>
+                                    <span>24,517</span>
+                                 </div>
+                                 <div class="book d-flex align-items-center">
+                                    <div class="icon">
+                                       <img src="dist/images/icon/book.png" alt="location">
+                                    </div>
+                                    <span>37 Lesson</span>
+                                 </div>
+                                 <div class="clock d-flex align-items-center">
+                                    <div class="icon ">
+                                       <img src="dist/images/icon/Clock.png" alt="clock">
+                                    </div>
+                                    <span>3 Hours</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12 text-center">
+                        <a href="coursesearch.html" class="button button-lg button--primary mt-lg-5 mt-2">Browse
+                           all Courses</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
-     </div>
-      <div class="featured-popular-courses-shape"> <img src="dist/images/shape/dot06.png" alt="Shape"
-            class="img-fluid dot-06" /> </div>
+      </div>
+      <div class="featured-popular-courses-shape">
+         <img src="dist/images/shape/dot06.png" alt="Shape" class="img-fluid dot-06" />
+         <img src="dist/images/shape/triangel.png" alt="Shape" class="img-fluid dot-07" />
+      </div>
    </section>
+
 
    <section class=" section feature section section--bg-offwhite-one ">
       <div class="container">
@@ -2204,7 +2216,7 @@
    </section>
 
    <!--  Latest Events Featured Starts Here -->
-   <section class="section latest-events-featured main-events-featured">
+   <section class="section section--bg-offwhite-three latest-events-featured main-events-featured">
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
@@ -2571,14 +2583,15 @@
       </div>
    </footer>
 
+
    <script src="src/js/jquery.min.js"></script>
+   <script src="src/js/bootstrap.bundle.min.js"></script>
    <script src="src/scss/vendors/plugin/js/isotope.pkgd.min.js"></script>
    <script src="src/scss/vendors/plugin/js/jquery.magnific-popup.min.js"></script>
    <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
    <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
-   <script src="https://use.fontawesome.com/d4af8eee2d.js"></script>
    <script src="src/js/app.js"></script>
-   <script src="src/js/main.js"></script>
+   <script src="dist/main.js"></script>
    <script>
       function drop() {
          const dropBox = document.querySelector(".categoryDrop");

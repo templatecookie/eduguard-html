@@ -331,9 +331,9 @@ function menuClick(current) {
     ],
   });
 
-  $('.browse-categories-area').slick({
+  $('.categories--box').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     arrows: true,

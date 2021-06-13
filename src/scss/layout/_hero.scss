@@ -209,6 +209,11 @@
   }
 
   &--five {
+    &-p {
+      @media (min-width: 1200px) {
+        padding: 130px 0px;
+      }
+    }
     .hero {
       &__content-info {
         h2 {
