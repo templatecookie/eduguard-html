@@ -6,6 +6,12 @@
   }
 }
 
+@media (max-width: 991px) {
+  .brands {
+    padding-bottom: 0px;
+  }
+}
+
 @media (max-width: 767px) {
   .brands {
     &__titleContent {

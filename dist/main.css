@@ -13987,6 +13987,10 @@ header {
 .brands__titleContent p {
   font-family: poppin-regular; }
 
+@media (max-width: 991px) {
+  .brands {
+    padding-bottom: 0px; } }
+
 @media (max-width: 767px) {
   .brands__titleContent h4, .brands__titleContent .h4 {
     font-size: 28px !important;
