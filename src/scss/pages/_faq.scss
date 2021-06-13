@@ -11,8 +11,6 @@
       color: #42414b;
       font-family: poppin-medium;
       border-radius: 5px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
 
       &:focus {
         box-shadow: none !important;
@@ -74,23 +72,25 @@
   }
 }
 
+@media (max-width: 767px) {
+  .faq-area {
+    .accordion-item {
+      .accordion-button {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+  .accordion-body p { 
+    font-size: 14px;
+  }
+}
+
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
   .faq-area {
     .accordion-item .accordion-button {
       font-size: 16px;
-    }
-  }
-}
-
-// Small devices 420px - 574px
-@media only screen and (min-width: 320px) and (max-width: 574px) {
-  .faq-area {
-    .accordion-item {
-      .accordion-button {
-        font-size: 14px;
-        line-height: 26px;
-      }
     }
   }
 }

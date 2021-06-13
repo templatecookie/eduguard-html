@@ -21123,9 +21123,7 @@ body {
     line-height: 27px;
     color: #42414b;
     font-family: poppin-medium;
-    border-radius: 5px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
+    border-radius: 5px; }
     .faq-area .accordion-item .accordion-button:focus {
       -webkit-box-shadow: none !important;
               box-shadow: none !important; }
@@ -21163,14 +21161,16 @@ body {
   .faq-area .accordion-item .accordion-button {
     font-size: 16px; } }
 
+@media (max-width: 767px) {
+  .faq-area .accordion-item .accordion-button {
+    font-size: 16px;
+    line-height: 26px; }
+  .accordion-body p {
+    font-size: 14px; } }
+
 @media (min-width: 575px) and (max-width: 767px) {
   .faq-area .accordion-item .accordion-button {
     font-size: 16px; } }
-
-@media only screen and (min-width: 320px) and (max-width: 574px) {
-  .faq-area .accordion-item .accordion-button {
-    font-size: 14px;
-    line-height: 26px; } }
 
 .checkout-area-checkout .checkout-tab {
   background-color: white;
