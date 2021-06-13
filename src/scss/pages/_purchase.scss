@@ -80,10 +80,6 @@
 // Responsive
 
 @media (max-width: 991px) {
-  .purchase-area-items-start .text-main h6 {
-    font-size: 26px !important;
-    line-height: 36px !important;
-  }
   .purchase-area-items-start {
     margin-bottom: 15px;
   }
@@ -120,14 +116,6 @@
         margin-bottom: 0 !important;
       }
     }
-  }
-}
-
-@media (max-width: 767px) {
-  .purchase-area-items-start .text-main h6,
-  .purchase-area-items-start .text-main .h6 {
-    font-size: 18px !important;
-    line-height: 28px !important;
   }
 }
 

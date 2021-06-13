@@ -426,11 +426,14 @@
     padding-bottom: 30px;
   }
   .change-image-wizard .image {
-    width: 120px;
-    height: 120px;
+    width: 120px !important;
+    height: 120px !important;
   }
   .students-info .nav.nav-tabs {
     justify-content: flex-start;
+  }
+  .purchase-area-items {
+    margin-top: 15px;
   }
 }
 

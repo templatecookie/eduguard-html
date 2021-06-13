@@ -16681,13 +16681,15 @@ header {
   .students-info-intro-start {
     padding-bottom: 30px; }
   .change-image-wizard .image {
-    width: 120px;
-    height: 120px; }
+    width: 120px !important;
+    height: 120px !important; }
   .students-info .nav.nav-tabs {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start; } }
+            justify-content: flex-start; }
+  .purchase-area-items {
+    margin-top: 15px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .students-info {
@@ -16954,9 +16956,6 @@ header {
         font-size: 14px; }
 
 @media (max-width: 991px) {
-  .purchase-area-items-start .text-main h6, .purchase-area-items-start .text-main .h6 {
-    font-size: 26px !important;
-    line-height: 36px !important; }
   .purchase-area-items-start {
     margin-bottom: 15px; } }
 
@@ -16978,12 +16977,6 @@ header {
       margin-top: 10px; }
       .purchase-area-items-end dl {
         margin-bottom: 0 !important; } }
-
-@media (max-width: 767px) {
-  .purchase-area-items-start .text-main h6, .purchase-area-items-start .text-main .h6,
-  .purchase-area-items-start .text-main .h6 {
-    font-size: 18px !important;
-    line-height: 28px !important; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .purchase-area {
@@ -17143,8 +17136,7 @@ header {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 20px;
-    padding-bottom: 0 !important;
-    max-width: 480px; }
+    padding-bottom: 0 !important; }
     .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
       font-family: poppin-medium;
       font-size: 20px; }
@@ -17234,17 +17226,22 @@ header {
   .total-wizard p.font-title--card {
     font-family: poppin-regular; }
 
+@media (max-width: 1200px) {
+  .cart-area {
+    padding-top: 0px; }
+  .cart-area .cart-wizard-area .text {
+    width: 100%; } }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .cart-area .cart-wizard-area .image {
     display: none; }
   .cart-area .cart-wizard-area .text {
-    max-width: 100%;
-    border-radius: 5px !important; }
+    border-radius: 5px; }
     .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
-      font-size: 18px !important; }
+      font-size: 18px; }
   .cart-area form label {
     margin-top: 10px;
-    margin-bottom: 10px !important; } }
+    margin-bottom: 10px; } }
 
 @media (max-width: 991px) {
   .cart-area .cart-wizard-area .text h6, .cart-area .cart-wizard-area .text .h6 {
