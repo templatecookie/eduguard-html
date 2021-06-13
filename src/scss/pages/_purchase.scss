@@ -13,7 +13,7 @@
   &-items {
     padding-right: 45px;
     border-right: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
-
+    width: 60%;
     &-start {
       margin-bottom: 35px;
 
@@ -34,14 +34,18 @@
           max-width: 370px;
 
           h6 {
-            font-family: poppin-medium;
             font-size: 18px;
+            line-height: 27px;
+            font-family: poppin-medium;
+            a {
+              color: #202029;
+            }
           }
 
           p {
-            margin-top: 10px;
             font-size: 14px;
-
+            line-height: 21px;
+            color: #8f8fa3;
             a {
               color: #8f8fa3;
             }
@@ -52,7 +56,7 @@
 
     &-end {
       padding-left: 45px;
-
+      width: 40%;
       p {
         font-size: 20px !important;
         color: #202029 !important;

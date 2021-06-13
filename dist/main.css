@@ -16323,18 +16323,61 @@ header {
   .about-feature {
     padding: 40px 15px !important; } }
 
-.students-info {
-  padding-bottom: 70px; }
-  .students-info-intro {
-    margin-bottom: 40px;
+.students-info-intro {
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 35px;
+  background-color: white;
+  border-radius: 6px; }
+  .students-info-intro-start {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 40px 35px;
-    background-color: white;
-    border-radius: 6px; }
-    .students-info-intro-start {
+    position: relative; }
+    .students-info-intro-start::after {
+      content: '';
+      position: absolute;
+      right: 22px;
+      top: 0;
+      width: 1px;
+      height: 150px;
+      background-color: #ebebf2; }
+    .students-info-intro-start .image {
+      margin-right: 25px;
+      height: 150px;
+      width: 150px; }
+      .students-info-intro-start .image img {
+        border-radius: 50%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        max-width: 100%; }
+    .students-info-intro-start .text h5, .students-info-intro-start .text .h5 {
+      color: #202029;
+      margin-bottom: 6px; }
+    .students-info-intro-start .text p {
+      font-size: 18px;
+      line-height: 27px;
+      color: #8f8fa3; }
+  .students-info-intro-end {
+    padding-left: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 18px; }
+    .students-info-intro-end .enrolled-courses {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -16344,28 +16387,41 @@ header {
           -ms-flex-align: center;
               align-items: center;
       position: relative; }
-      .students-info-intro-start::after {
+      .students-info-intro-end .enrolled-courses::after {
         content: '';
         position: absolute;
-        right: 22px;
-        top: 0;
+        right: -15px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         width: 1px;
-        height: 150px;
+        height: 45px;
         background-color: #ebebf2; }
-      .students-info-intro-start .image {
-        margin-right: 25px;
-        height: 150px;
-        width: 150px; }
-        .students-info-intro-start .image img {
-          border-radius: 50%;
-          -o-object-fit: cover;
-             object-fit: cover;
-          max-width: 100%; }
-      .students-info-intro-start .text p {
-        font-size: 18px;
-        line-height: 27px; }
-    .students-info-intro-end {
-      padding-left: 15px;
+      .students-info-intro-end .enrolled-courses-icon {
+        margin-right: 12px;
+        background-color: rgba(16, 137, 255, 0.1);
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #1089ff; }
+      .students-info-intro-end .enrolled-courses-text h5, .students-info-intro-end .enrolled-courses-text .h5 {
+        line-height: 36px; }
+      .students-info-intro-end .enrolled-courses-text p {
+        font-size: 14px !important;
+        line-height: 21px; }
+    .students-info-intro-end .completed-courses {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -16374,8 +16430,13 @@ header {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-left: 18px; }
-      .students-info-intro-end .enrolled-courses {
+      margin-left: 30px; }
+      .students-info-intro-end .completed-courses-icon {
+        margin-right: 12px;
+        background-color: rgba(0, 175, 145, 0.1);
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -16384,113 +16445,79 @@ header {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        position: relative; }
-        .students-info-intro-end .enrolled-courses::after {
-          content: '';
-          position: absolute;
-          right: -15px;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-                  transform: translateY(-50%);
-          width: 1px;
-          height: 45px;
-          background-color: #ebebf2; }
-        .students-info-intro-end .enrolled-courses-icon {
-          margin-right: 12px;
-          background-color: rgba(16, 137, 255, 0.1);
-          height: 80px;
-          width: 80px;
-          border-radius: 50%;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          color: #1089ff; }
-        .students-info-intro-end .enrolled-courses-text h5, .students-info-intro-end .enrolled-courses-text .h5 {
-          line-height: 36px; }
-        .students-info-intro-end .enrolled-courses-text p {
-          font-size: 14px !important;
-          line-height: 21px; }
-      .students-info-intro-end .completed-courses {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin-left: 30px; }
-        .students-info-intro-end .completed-courses-icon {
-          margin-right: 12px;
-          background-color: rgba(0, 175, 145, 0.1);
-          height: 80px;
-          width: 80px;
-          border-radius: 50%;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          color: #00af91; }
-  .students-info-main .nav-tabs {
-    padding: 12px 100px;
-    padding-top: 0;
-    border-bottom: 1px solid white; }
-    .students-info-main .nav-tabs .nav-link {
-      background-color: transparent;
-      color: #666575;
-      font-family: poppin-medium;
-      font-size: 16px;
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0 15px;
-      border-color: transparent; }
-      .students-info-main .nav-tabs .nav-link.active {
-        position: relative;
-        color: #202029 !important; }
-        .students-info-main .nav-tabs .nav-link.active::after {
-          position: absolute;
-          content: '';
-          bottom: -14px;
-          left: 0;
-          height: 3px;
-          width: 100%;
-          background-color: #0264ed;
-          border-radius: 10px !important; }
-  .students-info-main .tab-content {
-    padding-top: 30px; }
-    .students-info-main .tab-content .info-student,
-    .students-info-main .tab-content .about-student {
-      padding: 24px;
-      background-color: #fff;
-      border-radius: 5px; }
-      .students-info-main .tab-content .info-student span,
-      .students-info-main .tab-content .about-student span {
-        line-height: 30px; }
-    .students-info-main .tab-content .info-student-topic span {
-      font-size: 14px !important;
-      line-height: 21px;
-      font-family: poppin-medium;
-      color: #666575 !important; }
-    .students-info-main .tab-content .info-student-topic p {
-      font-size: 14px !important; }
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #00af91; }
+    .students-info-intro-end .enrolled-courses-text h6, .students-info-intro-end .enrolled-courses-text .h6,
+    .students-info-intro-end .completed-courses-text h6,
+    .students-info-intro-end .completed-courses-text .h6 {
+      color: #202029;
+      font-family: poppin-SemiBold; }
+    .students-info-intro-end .enrolled-courses-text p,
+    .students-info-intro-end .completed-courses-text p {
+      color: #8f8fa3; }
+
+.students-info-main .nav-tabs {
+  padding: 12px 0px;
+  padding-top: 0;
+  border-bottom: 1px solid white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .students-info-main .nav-tabs .nav-link {
+    background-color: transparent;
+    color: #666575;
+    font-family: poppin-medium;
+    font-size: 16px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 15px;
+    border-color: transparent; }
+    .students-info-main .nav-tabs .nav-link.active {
+      position: relative;
+      color: #202029 !important; }
+      .students-info-main .nav-tabs .nav-link.active::after {
+        position: absolute;
+        content: '';
+        bottom: -14px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #0264ed;
+        border-radius: 10px !important; }
+
+.students-info-main .tab-content {
+  padding-top: 30px; }
+  .students-info-main .tab-content .info-student,
+  .students-info-main .tab-content .about-student {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 5px; }
+    .students-info-main .tab-content .info-student span,
+    .students-info-main .tab-content .about-student span {
+      line-height: 30px; }
+  .students-info-main .tab-content .info-student-topic span {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: poppin-medium;
+    color: #666575; }
+  .students-info-main .tab-content .info-student-topic p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #8f8fa3; }
+
+.students-info .about-student h6, .students-info .about-student .h6,
+.students-info .info-student h6,
+.students-info .info-student .h6 {
+  margin-bottom: 12px; }
 
 .course__content_title {
   font-size: 20px;
@@ -16501,6 +16528,8 @@ header {
   height: 18px; }
 
 @media (max-width: 1200px) {
+  .students-info {
+    padding-top: 0px; }
   .students-info-intro-start::after {
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -16508,26 +16537,24 @@ header {
   .students-info-intro-end .enrolled-courses::after {
     right: -70px; }
   .students-info-intro-end .enrolled-courses::after {
-    height: 50%; } }
+    height: 50%; }
+  .students-info-intro-start .image {
+    width: 120px;
+    height: 120px; }
+  .students-info-intro {
+    margin-bottom: 15px; } }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
   .students-info-intro-end .enrolled-courses::after {
     right: -50px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .students-info {
-    padding-bottom: 65px; }
-  .students-info-intro {
-    margin-top: 30px;
-    margin-bottom: 30px; }
   .students-info-intro-start {
-    margin-bottom: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 10px; }
+            flex-direction: column; }
     .students-info-intro-start .image {
       margin-right: 0;
       margin-bottom: 20px; }
@@ -16537,7 +16564,8 @@ header {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    padding: 0; }
+    padding: 0;
+    margin-left: 0px; }
     .students-info-intro-end .enrolled-courses {
       padding: 0;
       border-right: 0;
@@ -16570,9 +16598,7 @@ header {
       padding-top: 0;
       margin-left: 0 !important; }
   .info-student {
-    padding-bottom: 20px !important; }
-    .info-student dl {
-      margin-bottom: 10px !important; } }
+    padding-bottom: 20px !important; } }
 
 @media (max-width: 991px) {
   .students-info {
@@ -16587,7 +16613,12 @@ header {
     display: none; }
   .students-info-intro-end,
   .students-info-intro-end .completed-courses {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .students-info-main .nav-tabs .nav-link {
+    padding-bottom: 10px; }
+  .purchase-area-items,
+  .purchase-area-items-end {
+    width: 100% !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .students-info {
@@ -16643,7 +16674,6 @@ header {
   .students-info-main .nav-tabs {
     padding: 0; }
     .students-info-main .nav-tabs .nav-link {
-      margin-bottom: 10px;
       padding-top: 0;
       margin-left: 0 !important; }
       .students-info-main .nav-tabs .nav-link.active::after {
@@ -16658,7 +16688,15 @@ header {
   .students-info-intro {
     margin-top: 0px; }
   .students-info-intro-start {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+  .change-image-wizard .image {
+    width: 120px;
+    height: 120px; }
+  .students-info .nav.nav-tabs {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .students-info {
@@ -16713,7 +16751,6 @@ header {
   .students-info-main .nav-tabs {
     padding: 0; }
     .students-info-main .nav-tabs .nav-link {
-      margin-bottom: 10px;
       padding-top: 0;
       margin-left: 0 !important; }
       .students-info-main .nav-tabs .nav-link.active::after {
@@ -16723,6 +16760,14 @@ header {
     padding-bottom: 10px !important; }
     .info-student dl {
       margin-bottom: 10px !important; } }
+
+@media (max-width: 575px) {
+  .info-student-topic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   .students-info {
@@ -16860,11 +16905,6 @@ header {
 @media (min-width: 320px) and (max-width: 574px) {
   .students-info-intro {
     padding: 40px 0px; }
-  .students-info .nav.nav-tabs {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
   .students-info-main .nav-tabs .nav-link {
     margin-bottom: 0px !important;
     padding-bottom: 5px; } }
@@ -16880,7 +16920,8 @@ header {
     right: 25px; }
   .purchase-area-items {
     padding-right: 45px;
-    border-right: 1px solid rgba(143, 143, 163, 0.3); }
+    border-right: 1px solid rgba(143, 143, 163, 0.3);
+    width: 60%; }
     .purchase-area-items-start {
       margin-bottom: 35px; }
       .purchase-area-items-start .image {
@@ -16895,15 +16936,20 @@ header {
       .purchase-area-items-start .text-main {
         max-width: 370px; }
         .purchase-area-items-start .text-main h6, .purchase-area-items-start .text-main .h6 {
-          font-family: poppin-medium;
-          font-size: 18px; }
+          font-size: 18px;
+          line-height: 27px;
+          font-family: poppin-medium; }
+          .purchase-area-items-start .text-main h6 a, .purchase-area-items-start .text-main .h6 a {
+            color: #202029; }
         .purchase-area-items-start .text-main p {
-          margin-top: 10px;
-          font-size: 14px; }
+          font-size: 14px;
+          line-height: 21px;
+          color: #8f8fa3; }
           .purchase-area-items-start .text-main p a {
             color: #8f8fa3; }
     .purchase-area-items-end {
-      padding-left: 45px; }
+      padding-left: 45px;
+      width: 40%; }
       .purchase-area-items-end p {
         font-size: 20px !important;
         color: #202029 !important;
@@ -17065,6 +17111,8 @@ header {
 
 .change-image-wizard p {
   font-size: 12px;
+  line-height: 15px;
+  color: #8f8fa3;
   text-align: center;
   margin-top: 10px; }
 
