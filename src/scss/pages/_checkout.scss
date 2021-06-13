@@ -1,6 +1,4 @@
 .checkout-area {
-  padding-bottom: 100px;
-
   &-checkout {
     .checkout-tab {
       background-color: white;
@@ -107,35 +105,26 @@
 
 // Responsive
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .checkout-area {
-    padding-bottom: 30px;
+    padding-top: 0px;
   }
 }
 
 @media (max-width: 991px) {
-  .checkout-tab .nav .nav-item .nav-link h6 {
-    font-size: 24px !important;
-    line-height: 34px !important;
+  .checkout-area {
+    padding-top: 30px;
   }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-  .checkout-area {
-    padding: 30px 0px;
-  }
-
   .checkout-tab .tab-pane form input {
     padding: 10px 0px 10px 15px !important;
   }
 }
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .checkout-area {
-    padding: 30px 0px;
-  }
-
   .checkout-tab .tab-pane form input {
     padding: 10px 0px 10px 15px !important;
   }
@@ -147,40 +136,32 @@
 }
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  .checkout-area {
-    padding: 30px 0px;
-  }
-
   .checkout-tab .tab-pane form input {
     padding: 10px 0px 10px 15px !important;
   }
 
-  .checkout-area-summery .summery-area-content-item .text h5,
-  .checkout-area-summery .summery-area-content-item .text .h5 {
-    font-size: 18px !important;
-  }
+  // .checkout-area-summery .summery-area-content-item .text h5,
+  // .checkout-area-summery .summery-area-content-item .text .h5 {
+  //   font-size: 18px !important;
+  // }
 }
 // extra Small devices 420px
 @media (max-width: 420px) {
-  .checkout-area {
-    padding: 30px 0px;
-  }
-
   .checkout-tab .tab-pane form input {
     padding: 10px 0px 10px 15px !important;
   }
 
-  .checkout-area-summery .summery-area-content-item .text h5,
-  .checkout-area-summery .summery-area-content-item .text .h5 {
-    font-size: 18px !important;
-  }
+  // .checkout-area-summery .summery-area-content-item .text h5,
+  // .checkout-area-summery .summery-area-content-item .text .h5 {
+  //   font-size: 18px !important;
+  // }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .checkout-tab .nav .nav-item .nav-link h6 {
-    font-size: 14px !important;
-    line-height: 26px !important;
-  }
+  // .checkout-tab .nav .nav-item .nav-link h6 {
+  //   font-size: 14px !important;
+  //   line-height: 26px !important;
+  // }
   .checkout-area {
     &-summery {
       .summery-area-content-item {
@@ -195,8 +176,8 @@
   .checkout-area-summery .summery-area-content-item .text h6 {
     margin-top: 0px !important;
   }
-  .checkout-tab .nav .nav-item .nav-link h6 {
-    font-size: 18px !important;
-    line-height: 28px !important;
-  }
+  // .checkout-tab .nav .nav-item .nav-link h6 {
+  //   font-size: 18px !important;
+  //   line-height: 28px !important;
+  // }
 }

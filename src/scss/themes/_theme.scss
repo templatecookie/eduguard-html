@@ -105,7 +105,7 @@
           transform: translateX(-50%);
           width: 100%;
           height: 2px;
-          background-color: #25252e;
+          background-color: #0264ed;
         }
 
         h6 {
@@ -122,11 +122,15 @@
       .nav-link {
         width: 100%;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         h6 {
-          margin-top: 10px;
-          color: #908fa5;
           font-size: 14px;
+          line-height: 21px;
+          color: #908fa5;
           font-family: poppin-medium;
+          margin-top: 10px;
         }
 
         border: none;
@@ -139,8 +143,11 @@
   .tab-pane {
     form {
       label {
-        margin-bottom: 10px;
         font-size: 14px;
+        line-height: 21px;
+        color: #202029;
+        font-family: poppin-medium;
+        margin-bottom: 10px;
       }
 
       input {
