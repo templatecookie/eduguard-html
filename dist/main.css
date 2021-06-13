@@ -19490,7 +19490,7 @@ body {
     padding-top: 0px !important; }
   .error-area {
     height: auto;
-    padding: 30px !important; }
+    padding: 30px 0px !important; }
     .error-area-shape {
       display: none; }
     .error-area .image {
