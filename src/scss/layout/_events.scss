@@ -2,7 +2,9 @@
   &__overlay {
     span {
       position: absolute;
+      z-index: -1;
       img {
+        pointer-events: none;
       }
     }
     &--01 {

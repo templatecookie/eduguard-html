@@ -84,12 +84,6 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .events-location-map iframe {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
   .events-location-text {
     padding-left: 0;
   }
@@ -97,18 +91,18 @@
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-  .events-location-map iframe {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
   .events-location-text {
     padding-left: 0;
   }
 }
 
-// large devices 992px - 1200px
+@media (max-width: 991px) {
+  .events-location-map iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .events-location-map iframe {
     width: 100%;

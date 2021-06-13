@@ -122,7 +122,6 @@
 
   &-tab-content {
     padding-top: 30px;
-    padding-bottom: 100px;
 
     #nav-overview {
       h6 {
@@ -380,10 +379,6 @@
     font-size: 14px;
   }
 
-  // .event-info {
-  //   padding-bottom: 30px;
-  // }
-
   .similar-events .shape {
     display: none;
   }
@@ -394,7 +389,14 @@
   }
 }
 
-// large devices 992px - 1200px
+// Responsive
+
+@media (max-width: 1200px) {
+  .event-info .eventCard--wrapper {
+    margin-top: 30px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .event-sub-section-main {
     margin-top: 50px;
@@ -420,23 +422,25 @@
   .event-info-tab-content .nav-overview p {
     font-size: 14px;
   }
-  // .event-info {
-  //   padding-bottom: 30px;
-  // }
 
   .similar-events .shape {
     display: none;
   }
 
-  .icon-with-date {
+  .event-sub-section-main .icon-with-date {
     flex-direction: column;
-    margin-bottom: 10px;
     align-items: flex-start !important;
-
-    &-start {
-      margin-right: 0 !important;
-      margin-bottom: 5px;
-    }
+    margin-top: 0px;
+  }
+  .event-sub-section-main .icon-with-date-start {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .event-sub-section-main .icon-with-date-end {
+    margin-bottom: 10px;
+  }
+  .event-sub-section-main {
+    align-items: center;
   }
 
   // slider

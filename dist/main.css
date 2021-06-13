@@ -13245,7 +13245,10 @@ header {
     width: 450px; } }
 
 .section__overlay span {
-  position: absolute; }
+  position: absolute;
+  z-index: -1; }
+  .section__overlay span img {
+    pointer-events: none; }
 
 .section__overlay--01 {
   top: -10%;
@@ -17550,8 +17553,7 @@ header {
     margin-right: 25px; }
 
 .event-info-tab-content {
-  padding-top: 30px;
-  padding-bottom: 100px; }
+  padding-top: 30px; }
   .event-info-tab-content #nav-overview h6, .event-info-tab-content #nav-overview .h6 {
     font-family: poppin-semiBold; }
   .event-info-tab-content #nav-overview p {
@@ -17709,6 +17711,10 @@ header {
     padding-top: 30px;
     padding-bottom: 30px; } }
 
+@media (max-width: 1200px) {
+  .event-info .eventCard--wrapper {
+    margin-top: 30px; } }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .event-sub-section-main {
     margin-top: 50px; }
@@ -17726,20 +17732,27 @@ header {
     font-size: 14px; }
   .similar-events .shape {
     display: none; }
-  .icon-with-date {
+  .event-sub-section-main .icon-with-date {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 10px;
     -webkit-box-align: start !important;
     -webkit-align-items: flex-start !important;
         -ms-flex-align: start !important;
-            align-items: flex-start !important; }
-    .icon-with-date-start {
-      margin-right: 0 !important;
-      margin-bottom: 5px; }
+            align-items: flex-start !important;
+    margin-top: 0px; }
+  .event-sub-section-main .icon-with-date-start {
+    margin-right: 0px;
+    margin-bottom: 10px; }
+  .event-sub-section-main .icon-with-date-end {
+    margin-bottom: 10px; }
+  .event-sub-section-main {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .ourevent-active .slick-slide img {
     width: 100%;
     -o-object-fit: contain;
@@ -17930,20 +17943,17 @@ header {
     padding-left: 0; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
-  .events-location-map iframe {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px; }
   .events-location-text {
     padding-left: 0; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .events-location-map iframe {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px; }
   .events-location-text {
     padding-left: 0; } }
+
+@media (max-width: 991px) {
+  .events-location-map iframe {
+    width: 100%;
+    margin-bottom: 20px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .events-location-map iframe {
