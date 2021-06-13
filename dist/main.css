@@ -10919,7 +10919,9 @@ button:focus {
           font-family: poppin-medium;
           padding: 8px 0px;
           padding-left: 15px;
-          background-color: transparent !important; }
+          background-color: transparent !important;
+          text-transform: capitalize;
+          width: 100%; }
           .navbar-mobile__menu-dropmenu li a:hover {
             background-color: rgba(16, 136, 255, 0.515) !important;
             color: #fff; }
@@ -12352,7 +12354,8 @@ header {
               font-size: 16px;
               line-height: 24px;
               color: #202029;
-              text-transform: capitalize; }
+              text-transform: capitalize;
+              width: 100%; }
               header .navbar-nav .nav-item--dropdown ul li a span {
                 display: inline-block;
                 -webkit-transform: rotate(90deg);

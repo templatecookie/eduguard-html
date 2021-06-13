@@ -108,6 +108,8 @@
           padding: 8px 0px;
           padding-left: 15px;
           background-color: transparent !important;
+          text-transform: capitalize;
+          width: 100%;
           &:hover {
             background-color: rgba(16, 136, 255, 0.515) !important;
             color: #fff;
