@@ -10787,6 +10787,9 @@ button:focus {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-top: 10px; }
+  @media (max-width: 1200px) {
+    .slick-dots {
+      margin-top: 0px; } }
   .slick-dots li {
     margin-right: 8px; }
     .slick-dots li:nth-last-child(1) {
