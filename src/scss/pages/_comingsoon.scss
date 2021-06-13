@@ -108,10 +108,17 @@
         color: #8f8fa3;
         letter-spacing: 1px;
         font-size: 12px;
+        line-height: 12px;
         text-transform: uppercase;
       }
     }
   }
+}
+
+.comingsoon-area #countdown .timer-body-block .table-cell .tab-val {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: poppin-regular;
 }
 
 // Responsive
@@ -130,11 +137,6 @@
         li {
           margin-right: 0;
           margin-left: 8px;
-
-          a {
-            width: 30px;
-            height: 30px;
-          }
         }
       }
     }

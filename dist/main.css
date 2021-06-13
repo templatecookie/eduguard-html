@@ -19731,7 +19731,13 @@ body {
       color: #8f8fa3;
       letter-spacing: 1px;
       font-size: 12px;
+      line-height: 12px;
       text-transform: uppercase; }
+
+.comingsoon-area #countdown .timer-body-block .table-cell .tab-val {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: poppin-regular; }
 
 @media (max-width: 420px) {
   .comingsoon-header {
@@ -19742,9 +19748,6 @@ body {
     .comingsoon-header .footer__wrapper_social ul li {
       margin-right: 0;
       margin-left: 8px; }
-      .comingsoon-header .footer__wrapper_social ul li a {
-        width: 30px;
-        height: 30px; }
   .comingsoon-area-shape {
     display: none; }
   .comingsoon-area-start h1, .comingsoon-area-start .h1 {
@@ -21499,10 +21502,7 @@ body {
   .contact-location {
     margin-right: 30px; }
   .contact-feature-text {
-    text-align: center; }
-    .contact-feature-text h6, .contact-feature-text .h6 {
-      font-size: 24px !important;
-      line-height: 36px !important; } }
+    text-align: center; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .contactHero__wrapper {
@@ -21518,22 +21518,14 @@ body {
     -webkit-flex-direction: column !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    margin: auto !important; }
-  .contact-feature-text h6, .contact-feature-text .h6 {
-    font-size: 18px !important;
-    line-height: 26px !important; }
-  .contact-feature-text h5, .contact-feature-text .h5 {
-    font-size: 14px !important;
-    line-height: 20px !important; } }
+    margin: auto !important; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .contact-feature-shape,
   .contact-hero-shape {
     display: none; }
   .contact-location-area .contact-location {
-    margin-bottom: 10px !important; }
-  .contact-feature-text h5, .contact-feature-text .h5 {
-    font-size: 20px !important; } }
+    margin-bottom: 10px !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .form-area-shape,
@@ -21553,8 +21545,6 @@ body {
     .contact-feature-icon {
       margin-right: 0;
       margin-bottom: 20px; }
-    .contact-feature-text h5, .contact-feature-text .h5 {
-      font-size: 18px !important; }
   .form-area {
     padding: 16px; }
     .form-area form input {
@@ -21585,8 +21575,6 @@ body {
     .contact-feature-icon {
       margin-right: 0;
       margin-bottom: 20px; }
-    .contact-feature-text h5, .contact-feature-text .h5 {
-      font-size: 18px !important; }
   .form-area {
     padding: 16px; }
     .form-area form input {
@@ -21619,8 +21607,6 @@ body {
     .contact-feature-icon {
       margin-right: 0;
       margin-bottom: 20px; }
-    .contact-feature-text h5, .contact-feature-text .h5 {
-      font-size: 18px !important; }
   .form-area {
     padding: 16px; }
     .form-area form input {

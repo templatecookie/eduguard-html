@@ -240,10 +240,10 @@
   }
   .contact-feature-text {
     text-align: center;
-    h6 {
-      font-size: 24px !important;
-      line-height: 36px !important;
-    }
+    // h6 {
+    //   font-size: 24px !important;
+    //   line-height: 36px !important;
+    // }
   }
 }
 
@@ -261,16 +261,16 @@
     margin: auto !important;
   }
 
-  .contact-feature-text {
-    h6 {
-      font-size: 18px !important;
-      line-height: 26px !important;
-    }
-    h5 {
-      font-size: 14px !important;
-      line-height: 20px !important;
-    }
-  }
+  // .contact-feature-text {
+  //   h6 {
+  //     font-size: 18px !important;
+  //     line-height: 26px !important;
+  //   }
+  //   h5 {
+  //     font-size: 14px !important;
+  //     line-height: 20px !important;
+  //   }
+  // }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -288,9 +288,9 @@
     }
   }
 
-  .contact-feature-text h5 {
-    font-size: 20px !important;
-  }
+  // .contact-feature-text h5 {
+  //   font-size: 20px !important;
+  // }
 }
 
 // Medium devices 768px - 991px
@@ -315,11 +315,11 @@
       margin-bottom: 20px;
     }
 
-    &-text {
-      h5 {
-        font-size: 18px !important;
-      }
-    }
+    // &-text {
+    //   h5 {
+    //     font-size: 18px !important;
+    //   }
+    // }
   }
 
   .form-area {
@@ -364,11 +364,11 @@
       margin-bottom: 20px;
     }
 
-    &-text {
-      h5 {
-        font-size: 18px !important;
-      }
-    }
+    // &-text {
+    //   h5 {
+    //     font-size: 18px !important;
+    //   }
+    // }
   }
 
   .form-area {
@@ -417,11 +417,11 @@
       margin-bottom: 20px;
     }
 
-    &-text {
-      h5 {
-        font-size: 18px !important;
-      }
-    }
+    // &-text {
+    //   h5 {
+    //     font-size: 18px !important;
+    //   }
+    // }
   }
 
   .form-area {
