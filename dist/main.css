@@ -10336,6 +10336,9 @@ button:focus {
   /*-------------------------*/ }
   .contentCard--space {
     margin: 0px 15px; }
+  .contentCard-top a {
+    width: 100%;
+    height: 100%; }
   .contentCard-top img {
     width: 100%; }
   .contentCard-bottom {
@@ -16591,7 +16594,8 @@ header {
   .students-info-intro-end .completed-courses {
     margin-left: 0px; }
   .students-info-main .nav-tabs .nav-link {
-    padding-bottom: 10px; }
+    padding-bottom: 2px;
+    margin-bottom: 16px; }
   .purchase-area-items,
   .purchase-area-items-end {
     width: 100% !important; } }
