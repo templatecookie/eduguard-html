@@ -63,11 +63,18 @@
     font-size: 16px;
     line-height: 24px;
     color: #8f8fa3;
+    max-width: 70%;
   }
 }
 
 // Responsive
-// extra Small devices 420px
+
+@media (max-width: 1200px) {
+  .course-instructor .course-instructor-description {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 574px) {
   .course-instructor-info {
     text-align: center;

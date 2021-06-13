@@ -111,7 +111,7 @@
       }
       p {
         font-family: poppin-regular;
-        color: #666575;
+        color: #8f8fa3;
       }
     }
 
@@ -140,6 +140,10 @@
     li {
       list-style: disc;
       margin-left: 20px;
+
+      p {
+        color: #666575;
+      }
     }
   }
 }

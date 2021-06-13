@@ -430,6 +430,9 @@
     font-size: 14px;
     line-height: 24px;
   }
+  .course-description-start-content-tabitem .lesson-description p {
+    font-size: 14px;
+  }
 }
 
 // Small devices 575px - 767px
@@ -748,9 +751,6 @@
 }
 
 @media (max-width: 574px) {
-  .coursedescription-header-start {
-    // flex-direction: column !important;
-  }
   .coursedescription-header-start .topic-info {
     margin-left: 0px;
   }

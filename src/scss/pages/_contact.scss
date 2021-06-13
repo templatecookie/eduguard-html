@@ -240,37 +240,14 @@
   }
   .contact-feature-text {
     text-align: center;
-    // h6 {
-    //   font-size: 24px !important;
-    //   line-height: 36px !important;
-    // }
   }
-}
-
-@media (min-width: 320px) and (max-width: 574px) {
-  .contactHero {
-    &__wrapper {
-      margin-left: 0px;
-    }
+  .getin-touch {
+    padding-bottom: 100px;
   }
-  .contact-location-area {
-    align-items: center;
+  .map-area {
+    margin-top: 0px;
+    padding: 100px 0px;
   }
-  .contact-location {
-    flex-direction: column !important;
-    margin: auto !important;
-  }
-
-  // .contact-feature-text {
-  //   h6 {
-  //     font-size: 18px !important;
-  //     line-height: 26px !important;
-  //   }
-  //   h5 {
-  //     font-size: 14px !important;
-  //     line-height: 20px !important;
-  //   }
-  // }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -280,17 +257,10 @@
   }
 
   .contact-location-area {
-    // flex-direction: column !important;
-    // align-items: flex-start !important;
-
     .contact-location {
       margin-bottom: 10px !important;
     }
   }
-
-  // .contact-feature-text h5 {
-  //   font-size: 20px !important;
-  // }
 }
 
 // Medium devices 768px - 991px
@@ -302,7 +272,7 @@
   }
 
   .getin-touch {
-    padding: 30px 0px;
+    // padding: 30px 0px;
     background-image: none !important;
     background-color: rgba($color: #ebebf2, $alpha: 0.75) !important;
   }
@@ -314,12 +284,6 @@
       margin-right: 0;
       margin-bottom: 20px;
     }
-
-    // &-text {
-    //   h5 {
-    //     font-size: 18px !important;
-    //   }
-    // }
   }
 
   .form-area {
@@ -331,15 +295,21 @@
   }
 
   .map-area {
-    margin-top: 0px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    // margin-top: 0px;
+    // padding-bottom: 30px;
+    // padding-top: 30px;
 
     &-frame {
       padding: 0;
       border: none;
     }
   }
+}
+
+
+
+@media(max-width: 767px) { 
+  
 }
 
 // Small devices 575px - 767px
@@ -351,7 +321,7 @@
   }
 
   .getin-touch {
-    padding: 30px 0px;
+    // padding: 30px 0px;
     background-image: none !important;
     background-color: rgba($color: #ebebf2, $alpha: 0.75) !important;
   }
@@ -363,12 +333,6 @@
       margin-right: 0;
       margin-bottom: 20px;
     }
-
-    // &-text {
-    //   h5 {
-    //     font-size: 18px !important;
-    //   }
-    // }
   }
 
   .form-area {
@@ -380,17 +344,9 @@
   }
 
   .map-area {
-    margin-top: 0px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-
     &-frame {
       padding: 0;
       border: none;
-
-      iframe {
-        height: auto;
-      }
     }
   }
 }
@@ -416,12 +372,6 @@
       margin-right: 0;
       margin-bottom: 20px;
     }
-
-    // &-text {
-    //   h5 {
-    //     font-size: 18px !important;
-    //   }
-    // }
   }
 
   .form-area {
@@ -480,13 +430,24 @@
   }
 
   .map-area {
-    margin-top: 0px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-
     &-frame {
       padding: 0;
       border: none;
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .contactHero {
+    &__wrapper {
+      margin-left: 0px;
+    }
+  }
+  .contact-location-area {
+    align-items: center;
+  }
+  .contact-location {
+    flex-direction: column !important;
+    margin: auto !important;
   }
 }
