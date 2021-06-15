@@ -11592,6 +11592,11 @@ button:focus {
   -webkit-box-shadow: 0px 24px 50px rgba(9, 8, 78, 0.1);
           box-shadow: 0px 24px 50px rgba(9, 8, 78, 0.1); }
 
+@media (max-width: 767px) {
+  .play-button {
+    width: 60px;
+    height: 60px; } }
+
 .mentor {
   text-align: center; }
   .mentor:hover .mentor__img .list-inline {
@@ -12537,11 +12542,7 @@ header {
       .banner__img::after {
         display: none; }
       .banner__img::before {
-        display: none; }
-  .banner-three .playbtn-area {
-    position: absolute;
-    bottom: 325px !important;
-    left: 255px !important; } }
+        display: none; } }
 
 @media (max-width: 991px) {
   .banner-two-start {
@@ -12568,11 +12569,7 @@ header {
         min-width: 100%; }
     .banner__img {
       margin: auto;
-      margin-top: 160px; }
-  .banner-three .playbtn-area {
-    position: absolute;
-    bottom: 360px !important;
-    left: 250px !important; } }
+      margin-top: 160px; } }
 
 @media (max-width: 767px) {
   .banner-two {
@@ -12585,10 +12582,6 @@ header {
   .banner-three {
     -webkit-clip-path: none !important;
             clip-path: none !important; }
-  .banner-three .playbtn-area {
-    position: absolute;
-    bottom: 40px !important;
-    left: 50% !important; }
   
   .banner-two-start h1,
   .banner-two-start .h1,
@@ -12680,11 +12673,6 @@ header {
       .banner__img::before {
         display: none; } }
 
-@media (max-width: 575px) {
-  .banner-three .playbtn-area {
-    bottom: 90px !important;
-    left: 65% !important; } }
-
 @media (min-width: 320px) and (max-width: 574px) {
   .banner-two-start p {
     margin-right: 0px; }
@@ -12714,12 +12702,14 @@ header {
   .banner-two-start h1,
   .banner-two-start .h1,
   .banner-two-start p {
-    text-align: left; }
-  .banner-three-content {
-    height: 75vh !important; } }
+    text-align: left; } }
 
 .feature .cardFeature {
   margin-bottom: 24px; }
+
+@media (max-width: 991px) {
+  .feature {
+    margin: 0px !important; } }
 
 .join {
   padding-top: 205px;
@@ -14028,8 +14018,7 @@ header {
     margin-right: -50px; }
 
 .browse-categories {
-  position: relative;
-  padding: 100px 0px; }
+  position: relative; }
   
   .browse-categories h3,
   .browse-categories .h3 {
@@ -15593,11 +15582,20 @@ header {
 .banner-three {
   -webkit-clip-path: ellipse(100% 100% at 50% 0%);
           clip-path: ellipse(100% 100% at 50% 0%);
-  position: relative; }
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .banner-three .playbtn-area {
     position: absolute;
-    bottom: 330px;
-    left: 55%; }
+    right: 0px;
+    bottom: calc(0% + 15px); }
     .banner-three .playbtn-area .pulse {
       -webkit-animation: pulse-animation 2s infinite;
               animation: pulse-animation 2s infinite; }
@@ -15872,6 +15870,11 @@ header {
           font-size: 18px !important; }
         .featured-course .testimonial-area-item .testimonial-client-info p {
           font-size: 14px !important; }
+  @media (max-width: 1200px) {
+    .featured-course .banner-three .playbtn-area {
+      position: absolute;
+      bottom: 27%;
+      left: 20%; } }
   @media (max-width: 991px) {
     .featured-course .banner-three {
       padding: 200px 0px;
@@ -15930,11 +15933,8 @@ header {
   @media (min-width: 768px) and (max-width: 991px) {
     .featured-course .playbtn-area {
       bottom: 0;
-      bottom: 85px !important;
-      left: 255px !important; }
-      .featured-course .playbtn-area .play-button {
-        width: 65px;
-        height: 65px; } }
+      bottom: 85px;
+      left: 255px; } }
   @media (min-width: 992px) and (max-width: 1200px) {
     .featured-course .banner-three .playbtn-area {
       bottom: 370px; }
@@ -15955,8 +15955,6 @@ header {
   @media (min-width: 320px) and (max-width: 574px) {
     .featured-course .banner-three {
       padding: 120px 0px !important; }
-      .featured-course .banner-three .playbtn-area {
-        bottom: 120px; }
     .featured-course .banner-three p {
       padding: 15px 0px; }
     .featured-course .playbtn-area svg {
@@ -15969,6 +15967,16 @@ header {
       line-height: 28px !important; }
     .featured-course .featured-instructor-image img {
       width: 100%; } }
+
+@media (max-width: 1200px) {
+  .banner-three .playbtn-area {
+    bottom: calc(0% + 0px);
+    right: auto;
+    left: calc(30% + 35px); } }
+
+@media (max-width: 574px) {
+  .banner-three .playbtn-area {
+    left: calc(30% + 100px); } }
 
 .intro-image {
   z-index: 1; }

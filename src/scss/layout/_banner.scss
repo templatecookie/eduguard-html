@@ -67,8 +67,6 @@
   }
 }
 
-// Banner -01 => Homepage
-
 /*------------------------*/
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
@@ -108,11 +106,6 @@
         display: none;
       }
     }
-  }
-  .banner-three .playbtn-area {
-    position: absolute;
-    bottom: 325px !important;
-    left: 255px !important;
   }
 }
 
@@ -157,11 +150,6 @@
       margin-top: 160px;
     }
   }
-  .banner-three .playbtn-area {
-    position: absolute;
-    bottom: 360px !important;
-    left: 250px !important;
-  }
 }
 
 @media (max-width: 767px) {
@@ -177,11 +165,7 @@
   .banner-three {
     clip-path: none !important;
   }
-  .banner-three .playbtn-area {
-    position: absolute;
-    bottom: 40px !important;
-    left: 50% !important;
-  }
+
   // homepage-02
   .banner-two-start h1,
   .banner-two-start .h1 {
@@ -293,13 +277,6 @@
   }
 }
 
-@media (max-width: 575px) {
-  .banner-three .playbtn-area {
-    bottom: 90px !important;
-    left: 65% !important;
-  }
-}
-
 // extra Small devices 420px
 @media (min-width: 320px) and (max-width: 574px) {
   .banner {
@@ -339,14 +316,4 @@
   .banner-two-start p {
     text-align: left;
   }
-  // Homepage-03
-  .banner-three-content {
-    height: 75vh !important;
-  }
-  // .banner-three {
-  //   .playbtn-area {
-  //     left: 215px !important;
-  //     bottom: 135px !important;
-  //   }
-  // }
 }

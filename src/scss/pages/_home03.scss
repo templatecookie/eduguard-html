@@ -2,11 +2,13 @@
 .banner-three {
   clip-path: ellipse(100% 100% at 50% 0%);
   position: relative;
-
+  height: 100vh;
+  display: flex;
+  align-items: center;
   .playbtn-area {
     position: absolute;
-    bottom: 330px;
-    left: 55%;
+    right: 0px;
+    bottom: calc(0% + 15px);
 
     .pulse {
       animation: pulse-animation 2s infinite;
@@ -57,8 +59,6 @@
     color: #1089ff !important;
   }
 }
-
-// Banner Ends Here
 
 // New Course Feature Starts Here
 .new-course-feature {
@@ -367,47 +367,21 @@
     }
   }
 
-  // Newsletter Area Starts Here
-
-  // .newsletterarea-normal-start {
-  //   h5 {
-  //     margin-bottom: 8px;
-  //   }
-  // }
-
-  // .newsletterarea-normal {
-  //   &-start {
-  //     h5 {
-  //       color: #202029;
-  //       margin-bottom: 10px;
-  //       font-family: poppin-semiBold;
-  //     }
-  //   }
-
-  //   &-end {
-  //     padding-left: 25px;
-
-  //     form {
-  //       input {
-  //         padding-left: 20px;
-  //         border-radius: 4px;
-
-  //         &:focus {
-  //           box-shadow: none;
-  //           border-color: $primary;
-  //         }
-  //       }
-
-  //       button {
-  //         border-radius: 4px;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // Newsletter Area Ends Here
-
   // Responsive
+
+  @media (max-width: 1200px) {
+    .banner-three .playbtn-area {
+      position: absolute;
+      bottom: 27%;
+      left: 20%;
+    }
+    // ..banner-three .playbtn-area {
+    //   .playbtn-area {
+    //     bottom: 27%;
+    //     left: 20%;
+    //   }
+    // }
+  }
 
   @media (max-width: 991px) {
     .banner-three {
@@ -490,12 +464,8 @@
   @media (min-width: 768px) and (max-width: 991px) {
     .playbtn-area {
       bottom: 0;
-      bottom: 85px !important;
-      left: 255px !important;
-      .play-button {
-        width: 65px;
-        height: 65px;
-      }
+      bottom: 85px;
+      left: 255px;
     }
   }
 
@@ -529,9 +499,6 @@
     // banner three
     .banner-three {
       padding: 120px 0px !important;
-      .playbtn-area {
-        bottom: 120px;
-      }
     }
     .banner-three p {
       padding: 15px 0px;
@@ -558,5 +525,47 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner-three .playbtn-area {
+    bottom: calc(0% + 0px);
+    right: auto;
+    left: calc(30% + 35px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  // .banner-three .playbtn-area {
+  //   left: 35%;
+  //   bottom: 35%;
+  // }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  // .banner-three .playbtn-area {
+  //   left: 25%;
+  //   bottom: 31%;
+  // }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  // .banner-three .playbtn-area {
+  //   left: calc(30% - 15px);
+  //   bottom: 31%;
+  // }
+}
+
+@media (max-width: 767px) {
+  // .banner-three .playbtn-area {
+  //   left: 45%;
+  //   bottom: 35%;
+  // }
+}
+
+@media (max-width: 574px) {
+  .banner-three .playbtn-area {
+    left: calc(30% + 100px);
   }
 }
