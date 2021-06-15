@@ -10658,9 +10658,6 @@ button:focus {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-top: 10px; }
-  @media (max-width: 767px) {
-    .slick-dots {
-      margin-top: 0px; } }
   .slick-dots li {
     margin-right: 8px; }
     .slick-dots li:nth-last-child(1) {
@@ -15134,7 +15131,9 @@ header {
     bottom: 0px; }
   .latest-events-featured .slider-arrows .slick-arrow {
     top: auto;
-    bottom: -90px; } }
+    bottom: -90px; }
+  .brands-area-two-heading {
+    margin-top: 15px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .featured-popular-courses-shape .shape-02,
