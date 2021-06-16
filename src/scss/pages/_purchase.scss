@@ -78,7 +78,6 @@
 }
 
 // Responsive
-
 @media (max-width: 991px) {
   .purchase-area-items-start {
     margin-bottom: 15px;
@@ -157,7 +156,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .purchase-area {
     padding: 20px;
     padding-bottom: 10px;

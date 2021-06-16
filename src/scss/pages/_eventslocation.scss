@@ -76,7 +76,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .events-location-text {
     padding-left: 0;
   }

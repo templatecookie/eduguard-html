@@ -23,7 +23,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .lesson-comments {
     .students-feedback {
       margin-bottom: 0;

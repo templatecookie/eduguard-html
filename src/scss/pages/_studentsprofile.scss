@@ -103,9 +103,9 @@
 
       .enrolled-courses-text,
       .completed-courses-text {
-        h6 {
-          color: #202029;
-          font-family: poppin-SemiBold;
+        h6,
+        h5 {
+          font-family: poppin-semiBold;
         }
         p {
           color: #8f8fa3;
@@ -285,7 +285,6 @@
       }
     }
   }
-
   .students-info-main .nav-tabs {
     padding: 0;
 
@@ -319,8 +318,8 @@
     margin-left: 0px;
   }
   .students-info-main .nav-tabs .nav-link {
-    padding-bottom: 2px;
-    margin-bottom: 16px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
   }
 
   // Purchase cards
@@ -533,7 +532,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .students-info {
     padding-bottom: 30px;
   }

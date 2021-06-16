@@ -130,6 +130,10 @@ p {
   padding-top: 220px !important;
 }
 
+.accordion-button:focus {
+  border-color: transparent !important;
+}
+
 button {
   &:focus {
     outline: none;

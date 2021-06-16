@@ -375,12 +375,6 @@
       bottom: 27%;
       left: 20%;
     }
-    // ..banner-three .playbtn-area {
-    //   .playbtn-area {
-    //     bottom: 27%;
-    //     left: 20%;
-    //   }
-    // }
   }
 
   @media (max-width: 991px) {
@@ -534,34 +528,6 @@
     right: auto;
     left: calc(30% + 35px);
   }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  // .banner-three .playbtn-area {
-  //   left: 35%;
-  //   bottom: 35%;
-  // }
-}
-
-@media (min-width: 992px) and (max-width: 1023px) {
-  // .banner-three .playbtn-area {
-  //   left: 25%;
-  //   bottom: 31%;
-  // }
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-  // .banner-three .playbtn-area {
-  //   left: calc(30% - 15px);
-  //   bottom: 31%;
-  // }
-}
-
-@media (max-width: 767px) {
-  // .banner-three .playbtn-area {
-  //   left: 45%;
-  //   bottom: 35%;
-  // }
 }
 
 @media (max-width: 574px) {

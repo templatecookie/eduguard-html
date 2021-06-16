@@ -20,8 +20,10 @@
 
 .comingsoon-area {
   position: relative;
-  padding: 250px 0px;
-
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
   &-start {
     p {
       color: #202029;
@@ -34,7 +36,7 @@
       margin: auto;
 
       input {
-        height: 54px;
+        height: 58px;
         border-radius: 4px;
         padding-left: 20px;
         width: 495px;
@@ -189,7 +191,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .comingsoon-header {
     padding-left: 20px;
     padding-right: 20px;
@@ -326,9 +328,25 @@
   }
 }
 
-@media (max-width: 991px) {
-  .comingsoon-area {
-    padding: 120px 0px !important;
+@media (max-width: 767px) {
+  .comingsoon-area-start form {
+    margin: 30px 0px;
+  }
+
+  #countdown .timer-body-block .table-cell {
+    width: 75px;
+    height: 75px;
+  }
+  #countdown .timer-body-block .table-cell .tab-val {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .comingsoon-header {
+    flex-direction: column;
+  }
+  .comingsoon-header .logo {
+    margin-right: 0px;
+    margin-bottom: 30px;
   }
 }
 
@@ -424,27 +442,5 @@
 @media (max-width: 1200px) {
   .comingsoon-area-start input {
     text-align: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .comingsoon-area-start form {
-    margin: 30px 0px;
-  }
-
-  #countdown .timer-body-block .table-cell {
-    width: 75px;
-    height: 75px;
-  }
-  #countdown .timer-body-block .table-cell .tab-val {
-    font-size: 28px;
-    line-height: 38px;
-  }
-  .comingsoon-header {
-    flex-direction: column;
-  }
-  .comingsoon-header .logo {
-    margin-right: 0px;
-    margin-bottom: 30px;
   }
 }

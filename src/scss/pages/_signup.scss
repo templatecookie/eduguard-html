@@ -11,7 +11,10 @@
 .signup-area {
   position: relative;
   background: linear-gradient(90deg, #fff 55%, rgba(236, 236, 243, 0.6) 45%);
-
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
   &-image {
     margin-right: -140px;
     margin-left: 60px;
@@ -86,6 +89,10 @@
     position: relative;
     z-index: 1;
   }
+  .signin-area,
+  .signup-area {
+    height: auto;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -95,23 +102,16 @@
     margin: auto !important;
     margin-bottom: 30px !important;
   }
-
-  .signup-area-textwrapper {
-    text-align: center;
-  }
   .signup-area-image img {
     width: 450px;
   }
 }
 
-// extra Small devices 420px
-@media (max-width: 420px) {
+// large devices 992px - 1169px
+@media (min-width: 992px) and (max-width: 1200px) {
   .signup-area {
-    background: #fff;
-
     &-image {
       margin: 0;
-      margin-top: 30px;
     }
   }
 
@@ -119,63 +119,20 @@
     display: none;
   }
 
-  .form-element input {
-    padding: 10px 15px;
-  }
-
   .checkbox-primary[type='checkbox'] {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
   }
-}
 
-// Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  .signup-area {
-    background: #fff;
+  .form-element input {
+    padding: 12px 15px;
+  }
 
-    &-image {
-      margin: 0;
-      margin-top: 30px;
+  .signup-with {
+    height: 45px;
+    &.border-secondary-primary {
+      margin-top: 10px;
     }
-  }
-
-  .dot-images {
-    display: none;
-  }
-
-  .form-element input {
-    padding: 10px 15px;
-  }
-
-  .checkbox-primary[type='checkbox'] {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-// Small devices 575px - 767px
-@media (min-width: 575px) and (max-width: 767px) {
-  .signup-area {
-    background: #fff;
-
-    &-image {
-      margin: 0;
-      margin-top: 30px;
-    }
-  }
-
-  .dot-images {
-    display: none;
-  }
-
-  .form-element input {
-    padding: 10px 15px;
-  }
-
-  .checkbox-primary[type='checkbox'] {
-    width: 20px;
-    height: 20px;
   }
 }
 
@@ -213,13 +170,8 @@
     }
   }
 }
-
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-  .signup-area {
-    background: #fff;
-  }
-
   .checkbox-primary[type='checkbox'] {
     width: 22px;
     height: 22px;
@@ -236,20 +188,12 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 574px) {
-  // verify image
-  .verify__image img {
-    height: auto;
-  }
-}
-
-// large devices 992px - 1169px
-@media (min-width: 992px) and (max-width: 1200px) {
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
   .signup-area {
-    background: #fff;
-
     &-image {
       margin: 0;
+      margin-top: 30px;
     }
   }
 
@@ -257,19 +201,66 @@
     display: none;
   }
 
+  .form-element input {
+    padding: 10px 15px;
+  }
+
   .checkbox-primary[type='checkbox'] {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// Small devices 420px - 574px
+@media  (min-width: 420px) and (max-width: 574px) {
+  .signup-area {
+    background: #fff;
+
+    &-image {
+      margin: 0;
+      margin-top: 30px;
+    }
+  }
+
+  .dot-images {
+    display: none;
   }
 
   .form-element input {
-    padding: 12px 15px;
+    padding: 10px 15px;
   }
 
-  .signup-with {
-    height: 45px;
-    &.border-secondary-primary {
-      margin-top: 10px;
+  .checkbox-primary[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+  }
+}
+// extra Small devices 420px
+@media (max-width: 420px) {
+  .signup-area {
+    &-image {
+      margin: 0;
+      margin-top: 30px;
     }
+  }
+
+  .dot-images {
+    display: none;
+  }
+
+  .form-element input {
+    padding: 10px 15px;
+  }
+
+  .checkbox-primary[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  // verify image
+  .verify__image img {
+    height: auto;
   }
 }

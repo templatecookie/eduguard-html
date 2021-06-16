@@ -258,9 +258,6 @@
 
 // Students Says Starts Here
 .students-says {
-  // padding-top: 100px;
-  // padding-bottom: 65px;
-
   .testimonial__wrapper_title {
     margin-bottom: 30px;
 
@@ -598,8 +595,6 @@
   }
 
   .students-says {
-    // padding: 30px 0px;
-
     .testimonial__img {
       margin-bottom: 0;
       height: auto;
@@ -989,7 +984,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .banner-two {
     padding: 30px 0px;
     clip-path: none !important;

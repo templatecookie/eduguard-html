@@ -883,7 +883,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .best-instructor-featured .mentor__img img {
     width: 100% !important;
     height: auto !important;

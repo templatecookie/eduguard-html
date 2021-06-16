@@ -673,6 +673,9 @@
   .rating-number {
     width: 100%;
   }
+  .instructor-course-info {
+    justify-content: space-between;
+  }
 }
 
 // Small devices 575px - 767px
@@ -761,7 +764,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .breadcrumb {
     align-items: center;
   }
@@ -860,9 +863,6 @@
       }
     }
   }
-}
-
-@media (max-width: 575px) {
 }
 
 // extra Small devices 420px
@@ -969,9 +969,7 @@
       }
     }
   }
-  .instructor-course-info {
-    flex-direction: column;
-  }
+
   .rating-icons.rating-icons-modal .jq-star {
     width: 25px !important;
     height: 25px !important;

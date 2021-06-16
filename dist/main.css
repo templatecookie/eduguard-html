@@ -9876,6 +9876,9 @@ p {
 .footer-ex-p {
   padding-top: 220px !important; }
 
+.accordion-button:focus {
+  border-color: transparent !important; }
+
 button:focus {
   outline: none; }
 
@@ -11260,7 +11263,7 @@ button:focus {
       .categoryitem .category__tittle span {
         font-size: 12px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .categoryitem {
     padding: 50px 0; }
     .categoryitem .category {
@@ -11350,7 +11353,7 @@ button:focus {
       .featuresitem .features__title p {
         font-size: 14px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .featuresitem {
     margin-top: 0px;
     padding-top: 50px; }
@@ -12629,7 +12632,7 @@ header {
       width: 400px;
       height: 452px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .banner {
     min-height: 880px;
     background-image: none !important;
@@ -12705,7 +12708,7 @@ header {
     text-align: left; } }
 
 .feature .cardFeature {
-  margin-bottom: 24px; }
+  margin-bottom: 24px !important; }
 
 @media (max-width: 991px) {
   .feature {
@@ -13123,7 +13126,6 @@ header {
   .hero--two {
     padding-bottom: 0px; }
   .hero--four {
-    padding-top: 0px;
     padding-bottom: 100px; }
   .hero--four .hero__img-content--shape-03 {
     display: none; }
@@ -13373,7 +13375,7 @@ header {
       margin: 0 75px;
       margin-bottom: 30px !important; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .populercourse {
     padding: 50px 0; }
     .populercourse__wrapper {
@@ -13586,7 +13588,7 @@ header {
     .ourinstructor__wrapper .slider-arrows {
       display: none; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .ourinstructor {
     padding: 50px 0; }
     .ourinstructor__wrapper .slider-arrows {
@@ -13812,7 +13814,7 @@ header {
   .newsletter-area {
     padding: 30px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .newsletter-area {
     padding: 20px; } }
 
@@ -14004,7 +14006,7 @@ header {
   .footer__wrapper {
     max-width: 100%; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .footer__wrapper {
     max-width: 100%; } }
 
@@ -14630,7 +14632,7 @@ header {
       .main-become-instructor-item .main-text .green-btn {
         font-size: 12px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .best-instructor-featured .mentor__img img {
     width: 100% !important;
     height: auto !important; }
@@ -15473,7 +15475,7 @@ header {
     display: -ms-flexbox !important;
     display: flex !important; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .banner-two {
     padding: 30px 0px;
     -webkit-clip-path: none !important;
@@ -16135,7 +16137,7 @@ header {
   .mentor__img img {
     height: auto; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .breadcrumb {
     padding-bottom: 5px; }
   .about-intro {
@@ -16302,11 +16304,12 @@ header {
             -ms-flex-pack: center;
                 justify-content: center;
         color: #00af91; }
-    .students-info-intro-end .enrolled-courses-text h6, .students-info-intro-end .enrolled-courses-text .h6,
+    .students-info-intro-end .enrolled-courses-text h6, .students-info-intro-end .enrolled-courses-text .h6, .students-info-intro-end .enrolled-courses-text h5, .students-info-intro-end .enrolled-courses-text .h5,
     .students-info-intro-end .completed-courses-text h6,
-    .students-info-intro-end .completed-courses-text .h6 {
-      color: #202029;
-      font-family: poppin-SemiBold; }
+    .students-info-intro-end .completed-courses-text .h6,
+    .students-info-intro-end .completed-courses-text h5,
+    .students-info-intro-end .completed-courses-text .h5 {
+      font-family: poppin-semiBold; }
     .students-info-intro-end .enrolled-courses-text p,
     .students-info-intro-end .completed-courses-text p {
       color: #8f8fa3; }
@@ -16467,8 +16470,8 @@ header {
   .students-info-intro-end .completed-courses {
     margin-left: 0px; }
   .students-info-main .nav-tabs .nav-link {
-    padding-bottom: 2px;
-    margin-bottom: 16px; }
+    padding-bottom: 15px;
+    margin-bottom: 0px; }
   .purchase-area-items,
   .purchase-area-items-end {
     width: 100% !important; } }
@@ -16624,7 +16627,7 @@ header {
         -ms-flex-direction: column;
             flex-direction: column; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .students-info {
     padding-bottom: 30px; }
   .students-info-intro {
@@ -16861,7 +16864,7 @@ header {
       .purchase-area-items-end dl {
         margin-bottom: 0 !important; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .purchase-area {
     padding: 20px;
     padding-bottom: 10px; }
@@ -16987,6 +16990,11 @@ header {
 
 .cart-area .cart-wizard-area {
   margin-bottom: 30px; }
+  .cart-area .cart-wizard-area .image a {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .cart-area .cart-wizard-area .image img {
     width: 200px;
     height: 100%;
@@ -17377,7 +17385,7 @@ header {
   .event-search-pagination {
     margin-top: 10px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .event-search {
     padding-bottom: 30px; }
   .eventsearch-sub-section {
@@ -17621,7 +17629,7 @@ header {
   .event-info-tab-content .nav-overview p {
     font-size: 14px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .event-sub-section-main {
     margin-top: 30px; }
   .event-sub-section-main .event-time-item {
@@ -17910,7 +17918,7 @@ header {
   .events-location-text {
     padding-left: 0; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .events-location-text {
     padding-left: 0; } }
 
@@ -18146,7 +18154,7 @@ header {
   .course-overview-main .bullets-line {
     display: block; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .course-overview-image {
     width: 100%;
     height: auto;
@@ -18714,7 +18722,7 @@ header {
         .course-description-end .coursecontents-wizard-content-end {
           margin-top: 5px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .video-js {
     min-height: auto; }
   .coursedescription-header {
@@ -19168,7 +19176,7 @@ header {
         -ms-flex-align: start !important;
             align-items: flex-start !important; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .lesson-comments .students-feedback {
     margin-bottom: 0;
     padding-bottom: 0; }
@@ -19466,7 +19474,16 @@ body {
 
 .comingsoon-area {
   position: relative;
-  padding: 250px 0px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow-y: auto; }
   .comingsoon-area-start p {
     color: #202029;
     margin-top: 10px;
@@ -19475,7 +19492,7 @@ body {
     max-width: 660px;
     margin: auto; }
     .comingsoon-area-start form input {
-      height: 54px;
+      height: 58px;
       border-radius: 4px;
       padding-left: 20px;
       width: 495px;
@@ -19587,7 +19604,7 @@ body {
     .comingsoon-area-start .count-down-item {
       height: 70px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .comingsoon-header {
     padding-left: 20px;
     padding-right: 20px; }
@@ -19660,10 +19677,6 @@ body {
       margin-bottom: 0; }
     .comingsoon-area-start .count-down h6, .comingsoon-area-start .count-down .h6 {
       font-size: 26px; } }
-
-@media (max-width: 991px) {
-  .comingsoon-area {
-    padding: 120px 0px !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .comingsoon-header {
@@ -19920,6 +19933,12 @@ body {
 .textContent__wrapper {
   margin-left: 20px; }
 
+@media (max-width: 1200px) {
+  .sucessfullInstructor .section__overlay--shape-01 {
+    top: 0;
+    right: auto;
+    left: 0; } }
+
 @media (min-width: 1024px) {
   .successful-instructor-feature {
     margin-bottom: 0px; } }
@@ -20048,7 +20067,7 @@ body {
     height: 55px;
     width: 55px; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .instructor-rules-image,
   .become-instructor-image {
     margin: 0 !important;
@@ -20702,7 +20721,12 @@ body {
         -ms-flex-align: start;
             align-items: flex-start; }
   .rating-number {
-    width: 100%; } }
+    width: 100%; }
+  .instructor-course-info {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .breadcrumb {
@@ -20764,7 +20788,7 @@ body {
     .feedback-comment form .btn {
       float: left !important; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .breadcrumb {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -20933,12 +20957,6 @@ body {
     padding: 25px; }
     .feedback-comment form .btn {
       float: left !important; }
-  .instructor-course-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
   .rating-icons.rating-icons-modal .jq-star {
     width: 25px !important;
     height: 25px !important;
@@ -20960,6 +20978,7 @@ body {
     font-family: poppin-medium;
     border-radius: 5px; }
     .faq-area .accordion-item .accordion-button:focus {
+      border-color: none !important;
       -webkit-box-shadow: none !important;
               box-shadow: none !important; }
 
@@ -21001,7 +21020,11 @@ body {
     font-size: 16px;
     line-height: 26px; }
   .accordion-body p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .faq-area .accordion-item .accordion-button {
+    text-align: left; }
+  .accordion-button::after {
+    margin-left: 15px; } }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .faq-area .accordion-item .accordion-button {
@@ -21084,7 +21107,7 @@ body {
   .checkout-area-summery .summery-area-content-item .text .h5 {
     font-size: 18px !important; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .checkout-tab .tab-pane form input {
     padding: 10px 0px 10px 15px !important; } }
 
@@ -21290,6 +21313,8 @@ body {
     line-height: 26px; } }
 
 @media (max-width: 991px) {
+  .getin-touch {
+    padding-bottom: 60px; }
   .contactHero {
     padding-bottom: 30px !important; }
     .contactHero__img-wrapper {
@@ -21318,8 +21343,6 @@ body {
     margin-right: 30px; }
   .contact-feature-text {
     text-align: center; }
-  .getin-touch {
-    padding-bottom: 100px; }
   .map-area {
     margin-top: 0px;
     padding: 100px 0px; } }
@@ -21387,7 +21410,7 @@ body {
     width: 95%;
     margin: auto; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .form-area-shape,
   .contact-feature-shape,
   .contact-hero-shape {
@@ -21425,7 +21448,6 @@ body {
   .contact-hero-shape {
     display: none; }
   .getin-touch {
-    padding: 30px 0px;
     background-image: none !important;
     background-color: rgba(235, 235, 242, 0.75) !important; }
   .contact-feature {
@@ -21465,7 +21487,17 @@ body {
 .signup-area {
   position: relative;
   background: -webkit-gradient(linear, left top, right top, color-stop(55%, #fff), color-stop(45%, rgba(236, 236, 243, 0.6)));
-  background: linear-gradient(90deg, #fff 55%, rgba(236, 236, 243, 0.6) 45%); }
+  background: linear-gradient(90deg, #fff 55%, rgba(236, 236, 243, 0.6) 45%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow-y: auto; }
   .signup-area-image {
     margin-right: -140px;
     margin-left: 60px; }
@@ -21527,7 +21559,10 @@ body {
             align-items: center;
     overflow-y: auto !important;
     position: relative;
-    z-index: 1; } }
+    z-index: 1; }
+  .signin-area,
+  .signup-area {
+    height: auto; } }
 
 @media (max-width: 1199px) {
   .signup-area-image {
@@ -21541,52 +21576,23 @@ body {
             justify-content: center;
     margin: auto !important;
     margin-bottom: 30px !important; }
-  .signup-area-textwrapper {
-    text-align: center; }
   .signup-area-image img {
     width: 450px; } }
 
-@media (max-width: 420px) {
-  .signup-area {
-    background: #fff; }
-    .signup-area-image {
-      margin: 0;
-      margin-top: 30px; }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .signup-area-image {
+    margin: 0; }
   .dot-images {
     display: none; }
-  .form-element input {
-    padding: 10px 15px; }
   .checkbox-primary[type='checkbox'] {
-    width: 20px;
-    height: 20px; } }
-
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  .signup-area {
-    background: #fff; }
-    .signup-area-image {
-      margin: 0;
-      margin-top: 30px; }
-  .dot-images {
-    display: none; }
+    width: 22px;
+    height: 22px; }
   .form-element input {
-    padding: 10px 15px; }
-  .checkbox-primary[type='checkbox'] {
-    width: 20px;
-    height: 20px; } }
-
-@media (min-width: 575px) and (max-width: 767px) {
-  .signup-area {
-    background: #fff; }
-    .signup-area-image {
-      margin: 0;
-      margin-top: 30px; }
-  .dot-images {
-    display: none; }
-  .form-element input {
-    padding: 10px 15px; }
-  .checkbox-primary[type='checkbox'] {
-    width: 20px;
-    height: 20px; } }
+    padding: 12px 15px; }
+  .signup-with {
+    height: 45px; }
+    .signup-with.border-secondary-primary {
+      margin-top: 10px; } }
 
 @media (max-width: 991px) {
   .verify {
@@ -21623,8 +21629,6 @@ body {
       margin-right: 15px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .signup-area {
-    background: #fff; }
   .checkbox-primary[type='checkbox'] {
     width: 22px;
     height: 22px; }
@@ -21635,26 +21639,47 @@ body {
   .signup-with {
     width: 125px !important; } }
 
-@media (min-width: 320px) and (max-width: 574px) {
-  .verify__image img {
-    height: auto; } }
+@media (min-width: 575px) and (max-width: 767px) {
+  .signup-area-image {
+    margin: 0;
+    margin-top: 30px; }
+  .dot-images {
+    display: none; }
+  .form-element input {
+    padding: 10px 15px; }
+  .checkbox-primary[type='checkbox'] {
+    width: 20px;
+    height: 20px; } }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .signup-area {
     background: #fff; }
     .signup-area-image {
-      margin: 0; }
+      margin: 0;
+      margin-top: 30px; }
   .dot-images {
     display: none; }
-  .checkbox-primary[type='checkbox'] {
-    width: 22px;
-    height: 22px; }
   .form-element input {
-    padding: 12px 15px; }
-  .signup-with {
-    height: 45px; }
-    .signup-with.border-secondary-primary {
-      margin-top: 10px; } }
+    padding: 10px 15px; }
+  .checkbox-primary[type='checkbox'] {
+    width: 20px;
+    height: 20px; } }
+
+@media (max-width: 420px) {
+  .signup-area-image {
+    margin: 0;
+    margin-top: 30px; }
+  .dot-images {
+    display: none; }
+  .form-element input {
+    padding: 10px 15px; }
+  .checkbox-primary[type='checkbox'] {
+    width: 20px;
+    height: 20px; } }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .verify__image img {
+    height: auto; } }
 
 .mt-35 {
   margin-top: 35px; }
@@ -21852,7 +21877,7 @@ body {
   .mb-100 {
     margin-bottom: 0; } }
 
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .section-padding-m,
   .section-padding-bottom,
   .section-padding {

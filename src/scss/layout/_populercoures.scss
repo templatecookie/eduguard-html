@@ -147,7 +147,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .populercourse {
     padding: 50px 0;
     &__wrapper {

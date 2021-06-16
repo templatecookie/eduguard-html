@@ -196,6 +196,15 @@
 }
 
 // Responsive
+
+@media (max-width: 1200px) {
+  .sucessfullInstructor .section__overlay--shape-01 {
+    top: 0;
+    right: auto;
+    left: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .successful-instructor-feature {
     margin-bottom: 0px;
@@ -365,7 +374,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .instructor-rules-image,
   .become-instructor-image {
     margin: 0 !important;

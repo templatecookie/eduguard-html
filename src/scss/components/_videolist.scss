@@ -3,6 +3,7 @@
   padding: 12px 0px;
   border-radius: 8px;
   overflow: hidden;
+
   &-heading {
     padding: 0px 24px 12px 24px;
     display: flex;
@@ -166,12 +167,14 @@
               outline: 0;
             }
           }
+
           label {
             font-size: 14px;
             line-height: 24px;
             color: #8f8fa3;
           }
         }
+
         &.active {
           .form-check-input:checked {
             background-color: rgb(209, 203, 203);
@@ -219,6 +222,7 @@
     flex-direction: column;
     align-items: flex-end;
   }
+
   .videolist-area-wizard .main-wizard a {
     flex-direction: row;
     width: 100%;

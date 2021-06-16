@@ -68,18 +68,11 @@
       border-bottom-right-radius: 8px;
       transition: all 0.2s linear;
 
-      // .active {
-      //   border: 1px solid rgba($color: #1089ff, $alpha: 0.4) !important;
-      //   border-radius: 4px !important;
-      // }
-
       .curriculum-description {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 12px 24px;
-        // border-color: transparent !important;
-        // border-bottom: 1px solid #ebebf2;
         border: 1px solid transparent;
         margin-bottom: 5px;
         &.active,
