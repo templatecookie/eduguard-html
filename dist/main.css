@@ -19639,7 +19639,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 90vh;
   overflow-y: auto; }
   .comingsoon-area-start p {
     color: #202029;
