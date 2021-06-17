@@ -158,6 +158,7 @@
         padding: 24px;
         background-color: #fff;
         border-radius: 5px;
+        height: 100%;
         span {
           line-height: 30px;
         }
@@ -306,6 +307,10 @@
     .nav.nav-tabs {
       justify-content: center;
     }
+  }
+
+  .students-info-main .tab-content {
+    padding-bottom: 30px;
   }
 
   //   students top bar
