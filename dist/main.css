@@ -15679,8 +15679,6 @@ header {
   100% {
     -webkit-box-shadow: 0 0 0 20px rgba(253, 253, 253, 0);
             box-shadow: 0 0 0 20px rgba(253, 253, 253, 0); } }
-  .banner-three-content {
-    height: 1037px; }
   .banner-three h1, .banner-three .h1 {
     color: white !important; }
   .banner-three p {
