@@ -117,33 +117,12 @@
   }
 }
 
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
-  .checkout-tab .tab-pane form input {
-    padding: 10px 0px 10px 15px !important;
-  }
-}
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .checkout-tab .tab-pane form input {
-    padding: 10px 0px 10px 15px !important;
-  }
 
   .checkout-area-summery .summery-area-content-item .text h5,
   .checkout-area-summery .summery-area-content-item .text .h5 {
     font-size: 18px !important;
-  }
-}
-// Small devices 420px - 574px
-@media (min-width: 420px) and (max-width: 574px) {
-  .checkout-tab .tab-pane form input {
-    padding: 10px 0px 10px 15px !important;
-  }
-}
-// extra Small devices 420px
-@media (max-width: 420px) {
-  .checkout-tab .tab-pane form input {
-    padding: 10px 0px 10px 15px !important;
   }
 }
 

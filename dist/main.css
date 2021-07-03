@@ -10565,7 +10565,7 @@ button:focus {
           line-height: 30px !important;
           color: #202029 !important; }
         .cart__checkout-process ul li:nth-last-child(1) p:nth-last-child(2) {
-          font-family: poppin-semiBold !important; }
+          font-weight: 600; }
         .cart__checkout-process ul li .total-price {
           font-family: 'Poppins', sans-serif;
           font-weight: 400; }
@@ -11096,6 +11096,8 @@ button:focus {
     border: 1px solid rgba(144, 143, 165, 0.4);
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear; }
+    .form-element input:focus {
+      border-color: #1089ff; }
   .form-element .form-alert {
     display: -webkit-box;
     display: -webkit-flex;
@@ -11146,6 +11148,30 @@ button:focus {
     border: 1px solid #1089ff;
     -webkit-box-shadow: 0px 2px 10px 0px #0264ed33;
             box-shadow: 0px 2px 10px 0px #0264ed33; }
+
+@media (max-width: 1200px) {
+  .checkout-area .checkout-area {
+    padding-top: 0px; } }
+
+@media (max-width: 991px) {
+  .checkout-area .checkout-area {
+    padding-top: 30px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .checkout-area form input {
+    padding: 10px 0px 10px 15px; } }
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .checkout-area form input {
+    padding: 10px 0px 10px 15px; } }
+
+@media (min-width: 420px) and (max-width: 574px) {
+  .checkout-area form input {
+    padding: 10px 0px 10px 15px; } }
+
+@media (max-width: 420px) {
+  .checkout-area form input {
+    padding: 10px 0px 10px 15px; } }
 
 .videolist-area {
   background-color: white;
@@ -21380,24 +21406,10 @@ body {
   .checkout-area {
     padding-top: 30px; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .checkout-tab .tab-pane form input {
-    padding: 10px 0px 10px 15px !important; } }
-
 @media (min-width: 575px) and (max-width: 767px) {
-  .checkout-tab .tab-pane form input {
-    padding: 10px 0px 10px 15px !important; }
   .checkout-area-summery .summery-area-content-item .text h5, .checkout-area-summery .summery-area-content-item .text .h5,
   .checkout-area-summery .summery-area-content-item .text .h5 {
     font-size: 18px !important; } }
-
-@media (min-width: 420px) and (max-width: 574px) {
-  .checkout-tab .tab-pane form input {
-    padding: 10px 0px 10px 15px !important; } }
-
-@media (max-width: 420px) {
-  .checkout-tab .tab-pane form input {
-    padding: 10px 0px 10px 15px !important; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .checkout-area-summery .summery-area-content-item .image {
@@ -22118,7 +22130,8 @@ body {
   padding: 15px 0px 15px 20px; }
   .checkout-tab .tab-pane form input:focus {
     -webkit-box-shadow: none;
-            box-shadow: none; }
+            box-shadow: none;
+    border-color: #1089ff; }
 
 .checkout-tab .tab-pane form input[type='checkbox'] {
   width: 24px;

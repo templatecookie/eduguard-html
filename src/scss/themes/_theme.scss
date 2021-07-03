@@ -155,9 +155,9 @@
       input {
         border-color: color(lowBlack);
         padding: 15px 0px 15px 20px;
-
         &:focus {
           box-shadow: none;
+          border-color: $primary;
         }
       }
 

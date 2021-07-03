@@ -19,6 +19,9 @@
     padding: 16px 20px;
     border: 1px solid rgba($black50, 0.4);
     transition: all 0.2s linear;
+    &:focus {
+        border-color: $primary;
+    }
   }
   .form-alert {
     display: flex;
@@ -78,3 +81,48 @@
     }
   }
 }
+
+
+.checkout-area {
+
+  
+  // Responsive
+  @media (max-width: 1200px) {
+    .checkout-area {
+      padding-top: 0px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .checkout-area {
+      padding-top: 30px;
+    }
+  }
+  
+  // Medium devices 768px - 991px
+  @media (min-width: 768px) and (max-width: 991px) {
+    form input {
+      padding: 10px 0px 10px 15px;
+    }
+  }
+  // Small devices 575px - 767px
+  @media (min-width: 575px) and (max-width: 767px) {
+    form input {
+      padding: 10px 0px 10px 15px;
+    }
+  }
+  // Small devices 420px - 574px
+  @media (min-width: 420px) and (max-width: 574px) {
+    form input {
+      padding: 10px 0px 10px 15px;
+    }
+  }
+  // extra Small devices 420px
+  @media (max-width: 420px) {
+    form input {
+      padding: 10px 0px 10px 15px;
+    }
+  }
+}
+  
+  
