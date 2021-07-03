@@ -13,7 +13,7 @@
   &-items {
     padding-right: 45px;
     border-right: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
-
+    width: 60%;
     &-start {
       margin-bottom: 35px;
 
@@ -34,14 +34,19 @@
           max-width: 370px;
 
           h6 {
-            font-weight: 500;
             font-size: 18px;
+            line-height: 27px;
+            font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+            a {
+              color: #202029;
+            }
           }
 
           p {
-            margin-top: 10px;
             font-size: 14px;
-
+            line-height: 21px;
+            color: #8f8fa3;
             a {
               color: #8f8fa3;
             }
@@ -52,7 +57,7 @@
 
     &-end {
       padding-left: 45px;
-
+      width: 40%;
       p {
         font-size: 20px !important;
         color: #202029 !important;
@@ -61,6 +66,7 @@
 
       dt {
         color: #666575;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 14px;
       }
@@ -74,14 +80,13 @@
 }
 
 // Responsive
-
 @media (max-width: 991px) {
-  .purchase-area-items-start .text-main h6 {
-    font-size: 26px !important;
-    line-height: 36px !important;
-  }
   .purchase-area-items-start {
     margin-bottom: 15px;
+  }
+  .purchase-area-items {
+    border-right: 0px;
+    border-bottom: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
   }
 }
 
@@ -94,7 +99,6 @@
 
   .purchase-area-items {
     padding-right: 0;
-    border: none;
 
     h6 {
       margin-top: 25px;
@@ -116,14 +120,6 @@
         margin-bottom: 0 !important;
       }
     }
-  }
-}
-
-@media (max-width: 767px) {
-  .purchase-area-items-start .text-main h6,
-  .purchase-area-items-start .text-main .h6 {
-    font-size: 18px !important;
-    line-height: 28px !important;
   }
 }
 
@@ -162,7 +158,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .purchase-area {
     padding: 20px;
     padding-bottom: 10px;
@@ -204,7 +200,6 @@
 
   .purchase-area-items {
     padding-right: 0;
-    border: none;
 
     .text-main {
       max-width: 100%;

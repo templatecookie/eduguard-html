@@ -18,7 +18,7 @@
         display: flex;
         align-items: center;
         li {
-          margin-right: 24px;
+          margin-right: 12px;
           a {
             display: flex;
             align-items: center;
@@ -48,7 +48,8 @@
       font-size: 20px;
       line-height: 1.5;
       color: #fff !important;
-      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       margin-bottom: 12px;
     }
     ul {
@@ -95,7 +96,6 @@
 
 // Responsive
 
-// large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .footer__wrapper {
     max-width: 80%;
@@ -186,7 +186,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .footer__wrapper {
     max-width: 100%;
   }

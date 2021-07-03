@@ -1,13 +1,13 @@
 .event-sub-section {
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 35px !important;
   background-color: rgba($color: #ffffff, $alpha: 0.4);
 
   &-main {
     margin-top: 60px;
 
-    h4 {
-      margin-bottom: 20px;
+    h5 {
+      margin-bottom: 24px;
     }
 
     .event-time {
@@ -23,7 +23,8 @@
 
         h6 {
           color: #42414b !important;
-          font-weight: 500 !important;
+          font-family: 'Poppins', sans-serif;
+        font-weight: 500;
           font-size: 24px !important;
         }
 
@@ -39,30 +40,58 @@
     }
 
     .icon-with-date {
-      margin-bottom: 20px;
+      margin-top: 12px;
 
       &-start {
-        margin-right: 40px;
+        margin-right: 45px;
+      }
+
+      &-start,
+      &-end {
+        p {
+          margin-left: 5px;
+          color: #42414b;
+
+          span {
+            color: #8f8fa3;
+          }
+        }
       }
 
       &-start,
       &-end {
         span {
           margin-left: 5px;
-          color: #42414b;
           font-size: 14px;
+          line-height: 21px;
+          color: #424242;
         }
       }
     }
   }
 }
 
+.created-by  {
+    margin-top: 20px;
+}
+
+// Event inforamtion section
 .event-info {
+padding-bottom: 100px;
+padding-top: 0px;
   &-main {
     .image {
       margin-top: 35px;
       margin-bottom: 70px;
     }
+  }
+
+  .courseCard--wrapper {
+    margin-top: -110px;
+  }
+
+  .eventCard--wrapper {
+    margin-top: -100px;
   }
 
   &-tab {
@@ -77,7 +106,7 @@
         bottom: 0;
         left: 0;
         height: 2px;
-        width: 100%;
+        width: calc(100% - 15px);
         background-color: white;
       }
 
@@ -88,115 +117,39 @@
       }
 
       .nav-link {
-        border: 0;
-        background-color: transparent;
-        padding: 0;
-        padding-bottom: 12px;
-        margin-right: 30px;
-        color: #666575;
         font-size: 16px;
+        line-height: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        color: #666575;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        padding-bottom: 12px;
+        margin-right: 25px;
       }
     }
   }
 
   &-tab-content {
-    padding-top: 35px;
-    padding-bottom: 100px;
+    padding-top: 30px;
 
-    .nav-overview {
+    #nav-overview {
+      h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+      }
+
       p {
         font-size: 16px;
-      }
-    }
-  }
-
-  &-cart {
-    margin-top: -120px;
-    padding: 30px 0px;
-    background-color: white;
-    border-radius: 8px;
-    .ticket-cost,
-    form,
-    .footer__wrapper_social,
-    .event-info-cart h6 {
-      padding: 0px 30px;
-    }
-    p.ticket-cost {
-      font-size: 32px;
-      color: #202029 !important;
-      margin-bottom: 5px;
-    }
-    .course-includes {
-      padding: 24px 30px;
-    }
-
-    form {
-      margin-bottom: 25px;
-
-      p {
-        margin-top: 10px;
-        font-size: 12px;
+        line-height: 24px;
         color: #8f8fa3;
-
-        a {
-          color: #1089ff;
-        }
-      }
-    }
-
-    .book-info {
-      border-top: 1px solid #ebebf2;
-      border-bottom: 1px solid #ebebf2;
-      padding-top: 20px;
-      padding-bottom: 15px;
-
-      li {
-        padding-left: 0;
-        padding-right: 0;
-        color: #666575;
-        font-weight: 500;
-        font-size: 14px;
-        border-left: none !important;
-        border-right: none !important;
-        border-top: none !important;
-
-        span {
-          color: #8f8fa3;
-          font-weight: 400;
-        }
-      }
-    }
-
-    h6 {
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
-
-    .social-share {
-      &.footer__wrapper_social ul li {
-        margin-right: 10px;
-
-        a {
-          border: 1px solid #ebebf2;
-          background-color: transparent;
-          color: #42414b;
-          transition: 0.3s all linear;
-
-          &:hover {
-            color: white;
-            background-color: #0264ed;
-          }
-        }
       }
     }
   }
 }
 
 .similar-events {
-  padding: 100px 0px;
-  background-color: rgba($color: #ffffff, $alpha: 0.4);
-  position: relative;
-
   .shape {
     img {
       position: absolute;
@@ -215,7 +168,7 @@
 }
 
 // Responsive
-// extra Small devices 420px
+
 @media (max-width: 420px) {
   .event-sub-section-main {
     margin-top: 30px;
@@ -236,11 +189,9 @@
     }
 
     .icon-with-date {
-      flex-direction: column;
       margin-bottom: 10px;
 
       &-start {
-        margin-right: 0;
         margin-bottom: 5px;
       }
     }
@@ -254,9 +205,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .event-info-tab .nav-tabs .nav-link {
-    margin-right: 0px;
-  }
+
   .event-info-tab .nav-tabs {
     justify-content: space-between;
   }
@@ -269,27 +218,10 @@
   .event-info-tab-content .nav-overview p {
     font-size: 14px;
   }
-
-  .event-info-cart {
-    margin-top: 0;
-  }
-
-  .event-info {
-    padding-bottom: 30px;
-  }
-
-  .similar-events .shape {
-    display: none;
-  }
-
-  .similar-events {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .event-sub-section-main {
     margin-top: 30px;
   }
@@ -309,11 +241,9 @@
     }
 
     .icon-with-date {
-      flex-direction: column;
       margin-bottom: 10px;
 
       &-start {
-        margin-right: 0;
         margin-bottom: 5px;
       }
     }
@@ -337,39 +267,22 @@
     font-size: 14px;
   }
 
-  .event-info-cart {
-    margin-top: 0;
-  }
-
   .event-info {
     padding-bottom: 30px;
-  }
-
-  .similar-events .shape {
-    display: none;
-  }
-
-  .similar-events {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .event__content_detail {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
   }
 }
 
 @media (max-width: 767px) {
   .similar-events {
     position: relative;
-    overflow: hidden;
+  }
+
+  .event-info-tab .nav-tabs .nav-link {
+    margin-right: 15px;
+  }
+
+  .event-info-tab-content #nav-overview p {
+    font-size: 14px;
   }
 }
 
@@ -383,10 +296,6 @@
     margin-bottom: 20px;
   }
 
-  .event-info-cart p.ticket-cost {
-    text-align: center;
-  }
-
   .event-sub-section {
     padding-bottom: 25px;
   }
@@ -404,48 +313,15 @@
   .event-info-tab-content .nav-overview p {
     font-size: 14px;
   }
-
-  .event-info-cart {
-    margin-top: 0;
-  }
-
-  .event-info {
-    padding-bottom: 30px;
-  }
-
-  .similar-events .shape {
-    display: none;
-  }
-
-  .similar-events {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .event__content_detail {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
-  }
 }
 
 @media (max-width: 991px) {
-  .course-includes h6,
-  .course-includes .h6,
-  .event-info-cart h6,
-  .event-info-cart .h6,
-  .course-overview-main-item h6,
-  .course-overview-main-item .h6 {
-    font-size: 28px !important;
-    line-height: 38px !important;
-  }
   .course-curriculum-area .curriculum-area-top-start {
     align-items: center;
+  }
+
+  .event-info .courseCard--wrapper {
+    margin-top: 0px;
   }
 }
 
@@ -459,10 +335,6 @@
     margin-bottom: 20px;
   }
 
-  .event-info-cart p.ticket-cost {
-    text-align: center;
-  }
-
   .event-sub-section {
     padding-bottom: 25px;
   }
@@ -481,14 +353,6 @@
     font-size: 14px;
   }
 
-  .event-info-cart {
-    margin-top: 0;
-  }
-
-  .event-info {
-    padding-bottom: 30px;
-  }
-
   .similar-events .shape {
     display: none;
   }
@@ -497,20 +361,16 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+}
 
-  .event__content_detail {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
+// Responsive
 
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
+@media (max-width: 1200px) {
+  .event-info .eventCard--wrapper {
+    margin-top: 30px;
   }
 }
 
-// large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .event-sub-section-main {
     margin-top: 50px;
@@ -520,10 +380,6 @@
     margin-bottom: 20px;
   }
 
-  .event-info-cart p.ticket-cost {
-    text-align: center;
-  }
-
   .event-sub-section {
     padding-bottom: 25px;
   }
@@ -542,44 +398,26 @@
     font-size: 14px;
   }
 
-  .event-info-cart {
-    margin-top: 30px;
-  }
-
-  .event-info {
-    padding-bottom: 30px;
-  }
-
   .similar-events .shape {
     display: none;
   }
 
-  .event__content_detail {
+  .event-sub-section-main .icon-with-date {
     flex-direction: column;
     align-items: flex-start !important;
+    margin-top: 0px;
   }
 
-  .event__content_detail {
-    .loction {
-      margin-bottom: 5px;
-    }
-  }
-
-  .icon-with-date {
-    flex-direction: column;
+  .event-sub-section-main .icon-with-date-start {
     margin-bottom: 10px;
-    align-items: flex-start !important;
-
-    &-start {
-      margin-right: 0 !important;
-      margin-bottom: 5px;
-    }
   }
 
-  .similar-events {
-    .ourinstructor__wrapper .slick-dots {
-      display: none !important;
-    }
+  .event-sub-section-main .icon-with-date-end {
+    margin-bottom: 10px;
+  }
+
+  .event-sub-section-main {
+    align-items: center;
   }
 
   // slider
@@ -591,9 +429,16 @@
       }
     }
   }
-  .event__content_title h6,
-  .event__content_title .h6 {
-    margin-bottom: 15px;
+}
+
+@media (max-width: 575px) {
+  .event-sub-section-main .icon-with-date-start span,
+  .event-sub-section-main .icon-with-date-end span {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .event-sub-section-main .icon-with-date-start {
+    margin-right: 5px;
   }
 }
 
@@ -605,16 +450,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  // Testimonial slider
-  .event__content_title h6 {
-    font-size: 16px !important;
-  }
-
   .event-sub-section-main h4,
   .event-sub-section-main .h4,
-  .course-includes h6,
-  .course-includes .h6,
-  .event-info-cart h6 {
+  .course-includes h6 {
     font-size: 18px !important;
     line-height: 28px !important;
   }
@@ -624,32 +462,13 @@
       justify-content: center;
     }
   }
+
   .icon-with-date-start,
   .icon-with-date-end {
     svg {
       width: 25px;
       height: 25px;
-      margin-right: 15px;
     }
-  }
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    margin-bottom: 15px;
-  }
-  .event-sub-section-main .icon-with-date {
-    margin-bottom: 0px;
-  }
-  .event-sub-section-main .icon-with-date-end span {
-    margin-left: 0px;
-  }
-
-  .event-sub-section-main .icon-with-date {
-    flex-direction: row !important;
-  }
-
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    margin-right: 15px;
   }
 
   // event
@@ -657,28 +476,6 @@
   .course-description-start-content .h4 {
     font-size: 24px !important;
     line-height: 34px !important;
-  }
-
-  .event-sub-section-main .icon-with-date {
-    flex-direction: column !important;
-  }
-  .event-sub-section-main .icon-with-date-start,
-  .icon-with-date-end {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 0px;
-  }
-  .event-info-cart .book-info {
-    margin: 0 !important;
-  }
-  .event-info-cart p.ticket-cost {
-    font-size: 28px !important;
-    line-height: 38px !important;
-  }
-  .event__content_detail .loction span,
-  .event__content_detail .date span {
-    font-size: 12px;
-    line-height: 22px;
   }
 
   #countdown .timer-body-block {

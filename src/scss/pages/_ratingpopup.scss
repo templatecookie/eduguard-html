@@ -41,7 +41,8 @@ body {
     }
 
     label {
-      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       font-size: 14px;
       color: #202029;
       margin-bottom: 6px;
@@ -51,13 +52,13 @@ body {
 
 .modal-body-rating {
   p {
-    font-weight: 500 !important;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     font-size: 18px !important;
     color: #42414b !important;
 
     span {
       color: #8f8fa3 !important;
-      font-weight: 400 !important;
     }
   }
 }

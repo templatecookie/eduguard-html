@@ -16,10 +16,11 @@
     }
 
     h6 {
-      color: #42414b !important;
-      font-size: 18px !important;
-
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 600;
       a {
+        color: #42414b !important;
         display: block;
       }
     }
@@ -78,7 +79,6 @@
       .active {
         color: #202029 !important;
         position: relative;
-
         &::after {
           content: '';
           position: absolute;
@@ -91,14 +91,12 @@
       }
 
       .nav-link {
+        color: #666575;
         border: none;
         background-color: transparent;
         padding-left: 0;
         padding-right: 0;
         margin-right: 30px;
-        color: #666575;
-        font-weight: 500;
-        font-size: 16px;
       }
     }
   }
@@ -108,18 +106,24 @@
       margin-bottom: 30px;
 
       h6 {
-        color: #42414b !important;
+        color: #42414b;
         margin-bottom: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+      }
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #8f8fa3;
       }
     }
 
     .bullets-line {
-      font-size: 16px !important;
-      color: #666575 !important;
+      color: #666575;
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-
+      color: #666575;
       span {
         background-color: #666575;
         height: 5px;
@@ -135,21 +139,19 @@
     }
   }
 
-  &-content {
-    padding-bottom: 100px;
-  }
   &__point {
     li {
       list-style: disc;
       margin-left: 20px;
+
+      p {
+        color: #666575;
+      }
     }
   }
 }
 
-// Course-Overview Ends Here
-
 // Responsive
-// extra Small devices 420px
 @media (max-width: 420px) {
   .course-overview-image {
     width: 100%;
@@ -180,7 +182,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .course-overview-image {
     width: 100%;
     height: auto;
@@ -269,7 +271,6 @@
   }
 }
 
-// large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .course-overview-image {
     width: 100%;
@@ -292,5 +293,17 @@
 
   .course-overview-content {
     padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .course-overview-image {
+    padding-top: 0px;
+  }
+  .event-info .courseCard--wrapper {
+    margin-top: 0px;
+  }
+  .course-curriculum-area .curriculum-area {
+    margin-bottom: 15px !important;
   }
 }

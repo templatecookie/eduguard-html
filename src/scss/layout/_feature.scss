@@ -1,0 +1,11 @@
+.feature {
+  .cardFeature {
+    margin-bottom: 24px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .feature {
+    margin: 0px !important;
+  }
+}

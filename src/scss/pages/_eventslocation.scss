@@ -45,15 +45,19 @@
 
       &-end {
         p {
-          font-weight: 500;
           font-size: 12px;
           letter-spacing: 2px;
           margin-bottom: 5px;
+          color: #8f8fa3;
+          text-transform: uppercase;
+          font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         }
 
         h6 {
-          font-size: 16px;
-          font-weight: 400;
+          &.font-para--lg {
+            color: #202029;
+          }
         }
       }
     }
@@ -63,10 +67,6 @@
 // Responsive
 // extra Small devices 420px
 @media (max-width: 420px) {
-  .event-info-cart p.ticket-cost {
-    text-align: center;
-  }
-
   .events-location-map iframe {
     width: 100%;
   }
@@ -77,7 +77,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .events-location-text {
     padding-left: 0;
   }
@@ -85,12 +85,6 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .events-location-map iframe {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
   .events-location-text {
     padding-left: 0;
   }
@@ -98,18 +92,18 @@
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-  .events-location-map iframe {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
   .events-location-text {
     padding-left: 0;
   }
 }
 
-// large devices 992px - 1200px
+@media (max-width: 991px) {
+  .events-location-map iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .events-location-map iframe {
     width: 100%;

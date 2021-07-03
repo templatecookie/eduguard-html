@@ -1,6 +1,14 @@
 header {
+  position: relative;
+  background-color: #fff !important;
   .navbar {
     padding: 0px;
+    &-toggler {
+      transition: all 0.2s ease-in-out;
+      &.active {
+        transform: translateY(2px);
+      }
+    }
   }
   .navbar-nav {
     transition: all 0.2s ease-in-out;
@@ -17,11 +25,14 @@ header {
         width: 100%;
       }
       .nav-link {
-        padding: 25px 0px;
-        font-size: 16px;
-        font-weight: 500;
-        color: color(dark);
         position: relative;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: color(dark);
+        padding: 25px 0px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         &.active {
           &::after {
             position: absolute;
@@ -97,19 +108,21 @@ header {
             cursor: pointer;
             position: relative;
 
-            &:hover {
+            &:hover,
+            &.active {
               background-color: #1089ff;
 
               a {
-                color: #fff;
+                color: #fff !important;
               }
             }
+
             a {
               font-size: 16px;
               line-height: 24px;
-              font-weight: 400;
               color: #202029;
               text-transform: capitalize;
+              width: 100%;
               span {
                 display: inline-block;
                 transform: rotate(90deg);
@@ -127,10 +140,16 @@ header {
                     display: block;
                     li {
                       display: block;
+                      &.active {
+                        a {
+                          color: #fff !important;
+                        }
+                      }
                     }
                   }
                 }
                 a {
+                  color: #202029 !important;
                   span {
                     transform: rotate(0deg);
                   }
@@ -141,7 +160,7 @@ header {
             .nav-item--subDropdown {
               visibility: hidden;
               pointer-events: none;
-              user-select: none;
+            //   user-select: none;
               width: 230px;
               position: absolute;
               top: 0%;
@@ -161,7 +180,7 @@ header {
                   &:hover {
                     background-color: #1089ff;
                     a {
-                      color: #fff;
+                      color: #fff !important;
                     }
                   }
                   a {
@@ -181,7 +200,7 @@ header {
   }
   .rightContent {
     &.appear {
-      #cart-nav {
+      .cart-nav {
         margin-right: 0px !important;
       }
       .btn {
@@ -213,8 +232,9 @@ header {
       }
     }
   }
-  #cart-nav {
+  .cart-nav {
     position: relative;
+    margin-right: 20px;
     .badge {
       position: absolute;
       top: -5px;
@@ -260,17 +280,22 @@ header {
       }
       &-button {
         padding: 8px;
+        margin-right: 25px;
         &.appear {
           background-color: #2493ff !important;
         }
       }
     }
   }
+
   #search-nav {
     &.appear {
       background-color: #42414b !important;
     }
   }
+}
+.nav-shadow {
+  box-shadow: 0px 10px 16px rgba(9, 8, 78, 0.05);
 }
 
 // Responsive
@@ -389,15 +414,6 @@ header {
     position: absolute;
     right: 0px;
   }
-  // header
-  //   .navbar-nav
-  //   .nav-item--dropdown
-  //   ul
-  //   li.submenu:hover
-  //   .nav-item--subDropdown {
-  //   left: 0;
-  //   top: 100%;
-  // }
 
   header .navbar-nav .nav-item--dropdown ul li.submenu:hover a span {
     transform: rotate(90deg);

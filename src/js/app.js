@@ -1,4 +1,10 @@
 'use strict';
+const preloader = document.querySelector('.loader');
+
+function loader() {
+  preloader.style.display = 'none';
+}
+
 // Input field password type show/hide
 function showPassword(id, el) {
   let x = document.getElementById(id);

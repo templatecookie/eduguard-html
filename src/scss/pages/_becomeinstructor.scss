@@ -125,10 +125,10 @@
     content: '';
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #fff;
     clip-path: ellipse(70% 100% at 50% 0%);
     z-index: -1;
-    height: 300px;
+    height: 450px;
     width: 100%;
   }
 }
@@ -158,6 +158,22 @@
   }
 }
 
+.sucessfullInstructor {
+  h2 {
+    width: 50%;
+  }
+  .feature .cardFeature {
+    margin-bottom: 0px;
+  }
+  .section__overlay span {
+    z-index: 1;
+  }
+  .section__overlay--shape-01 {
+    top: 30%;
+    right: 10%;
+  }
+}
+
 @keyframes circle {
   0% {
     transform: rotate(0deg) translate(-10px) rotate(0deg);
@@ -171,7 +187,6 @@
   li {
     font-size: 18px;
     line-height: 27px;
-    font-weight: 400;
     color: #666575;
   }
 }
@@ -181,6 +196,14 @@
 }
 
 // Responsive
+
+@media (max-width: 1200px) {
+  .sucessfullInstructor .section__overlay--shape-01 {
+    top: 0;
+    right: auto;
+    left: 0;
+  }
+}
 
 @media (min-width: 1024px) {
   .successful-instructor-feature {
@@ -197,7 +220,6 @@
   }
 }
 
-// large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .info-desk-image,
   .instructor-rules-image,
@@ -254,6 +276,11 @@
   .successful-instructor-feature .h5 {
     font-size: 24px !important;
     line-height: 34px !important;
+  }
+  .sucessfullInstructor {
+    h2 {
+      width: 100%;
+    }
   }
 }
 
@@ -347,7 +374,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .instructor-rules-image,
   .become-instructor-image {
     margin: 0 !important;

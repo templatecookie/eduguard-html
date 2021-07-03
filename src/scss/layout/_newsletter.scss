@@ -12,7 +12,25 @@
     }
   }
   h4 {
-    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3;
+  }
+}
+
+.newsletterarea-normal-start {
+  h5 {
+    margin-bottom: 8px;
+  }
+  p {
+    font-family: 'Poppins', sans-serif;
+        font-weight: 400;
   }
 }
 
@@ -27,6 +45,16 @@
   }
 }
 
+@media (max-width: 991px) {
+  .newsletter-area {
+    margin-bottom: -60px;
+  }
+  .newsletterarea-normal-start {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .newsletter-area {
@@ -36,7 +64,15 @@
 
 @media (max-width: 767px) {
   .newsletter-area {
-    margin-bottom: -215px;
+    margin-bottom: -120px;
+  }
+  .newsletter-area h4,
+  .newsletter-area .h4 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .newsletter-area p {
+    font-size: 14px;
   }
 }
 
@@ -48,7 +84,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .newsletter-area {
     padding: 20px;
   }

@@ -71,25 +71,6 @@
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
 
-@media (max-width: 1200px) {
-  .banner-two-start {
-    h1 {
-      font-size: 58px;
-      line-height: 72px;
-    }
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .banner {
-    &-two-start {
-      h1 {
-        font-size: 48px;
-        line-height: 62px;
-      }
-    }
-  }
-}
 // large devices 992px - 1169px
 @media (min-width: 992px) and (max-width: 1199px) {
   .banner {
@@ -129,11 +110,21 @@
 }
 
 @media (max-width: 991px) {
+  .banner {
+    &-two-start {
+      text-align: left;
+    }
+  }
   .banner-two-end {
     z-index: 0 !important;
   }
   .banner-two-end .image img {
     margin-bottom: 30px;
+  }
+
+  // Homepage 02
+  .banner-two-end .image img {
+    height: 450px;
   }
 }
 
@@ -158,6 +149,32 @@
       margin: auto;
       margin-top: 160px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-two {
+    padding: 60px 0px !important;
+  }
+  .banner-two-end .image img {
+    object-fit: cover;
+  }
+  .banner-three-content {
+    height: 100vh !important;
+  }
+  .banner-three {
+    clip-path: none !important;
+  }
+
+  // homepage-02
+  .banner-two-start h1,
+  .banner-two-start .h1 {
+    margin-bottom: 15px !important;
+  }
+  .banner-two-start p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin-bottom: 15px !important;
   }
 }
 
@@ -206,7 +223,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .banner {
     min-height: 880px;
     background-image: none !important;
@@ -283,6 +300,10 @@
 
   .banner-input {
     justify-content: space-around;
+  }
+  // Homepage-02
+  .banner-two-end .image img {
+    height: auto;
   }
   .banner-two-start .banner-input .main-input input {
     padding-left: 5px;

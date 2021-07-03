@@ -1,161 +1,139 @@
-.btn {
+.button {
+  display: inline-block;
   padding: 12px 19px;
   border: 0px;
-  outline: 0px;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
+  line-height: 19.2px;
   border-radius: 4px;
+  color: #fff;
+  text-align: center;
   text-transform: capitalize;
-  transition: 0.3s;
-  &:focus {
-    box-shadow: none !important;
-  }
-  &.btn-outline-info {
-    border: 2px solid #1089ff;
-    color: #1089ff;
-    border-radius: 3px;
-    font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+  transition: all 0.2s linear;
+
+  @media (max-width: 767px) {
     font-size: 14px;
-    &:hover {
-      background: #0264ed;
-      box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
-      color: white;
-      border-color: transparent;
-    }
+    line-height: 24px;
   }
-  &.btn-primary {
-    color: white;
-    background-color: color(primary) !important;
-    &:hover {
-      background-color: color(secondary) !important;
-    }
-  }
-  &.btn-dark {
-    background-color: color(dark) !important;
-  }
-  &.btn-link {
-    color: color(dark) !important;
-    text-decoration: none;
-  }
-  &.btn-md,
-  &.btn-lg {
+
+  &-md,
+  &-lg {
+    border: 0px;
+    text-transform: uppercase;
     letter-spacing: 0.04em;
-    font-weight: 600 !important;
-    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
   }
-  &.btn-md {
-    padding: 16px 24px !important;
-    text-transform: uppercase;
-  }
-  &.btn-lg {
-    padding: 19px 32px !important;
-  }
-  &.bg-primary {
-    color: white;
-    background-color: color(lightBlack) !important;
-    transition: 0.3s;
-
-    &:hover {
-      background-color: color(primary) !important;
-      color: white;
+  // medium buttons
+  &-md {
+    padding: 16px 24px;
+    @media (max-width: 767px) {
+      padding: 8px 16px;
     }
   }
-  &.bg-primary--dark {
-    color: white;
-    background-color: color(primary) !important;
-    transition: 0.3s;
 
-    &:hover {
-      background-color: color(secondary) !important;
-      color: white;
+  &-lg {
+    padding: 19px 32px;
+    @media (max-width: 767px) {
+      padding: 12px 19px;
     }
   }
-  &.btn-outline-primary {
-    border-color: color(lightBlack) !important;
-    background-color: transparent !important;
-    color: color(lightBlack) !important;
 
+  // Dark buttons
+  &--dark {
+    background-color: #202029;
     &:hover {
-      color: white !important;
-      background-color: color(lightBlack) !important;
+      background-color: #1089ff;
+      color: #fff;
     }
   }
-  &.btn-outline-primary--dark {
+  &--disabled {
+    background-color: #ebebf2;
+    color: #8f8fa3;
+    pointer-events: none;
+  }
+
+  // Dark Outline buttons
+  &--dark-outline {
+    border: 2px solid #202029;
+    color: #202029;
+    &:hover {
+      background-color: #202029;
+      color: #fff;
+    }
+  }
+
+  &--outline-disabled {
+    border: 2px solid #8f8fa3;
+    color: #8f8fa3;
+    pointer-events: none;
+  }
+
+  // shaddow buttons
+  &--shaddow {
+    color: #202029;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px 0px #00000014;
+    &:hover {
+      box-shadow: 0px 8px 18px 0px #0264ed26;
+    }
+  }
+
+  &--shaddow-disabled {
+    color: #8f8fa3;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px 0px #00000014;
+    pointer-events: none;
+  }
+
+  // transparent buttons
+  &--transparent {
+    color: #1089ff;
+    background-color: transparent;
+    &:hover {
+      background: rgba(16, 137, 255, 0.1);
+      color: #1089ff;
+    }
+  }
+  &--transparent-disabled {
+    color: #8f8fa3;
+    pointer-events: none;
+  }
+
+  // button primary
+  &--primary {
+    background-color: #1089ff;
+    &:hover {
+      color: #fff;
+      background-color: #0264ed;
+      box-shadow: 0px 10px 20px 0px #0264ed40;
+    }
+  }
+  &--primary-outline {
     border: 2px solid #1089ff;
-    background-color: transparent !important;
-    color: color(primary) !important;
-
+    background-color: transparent;
+    color: #1089ff;
     &:hover {
-      color: white !important;
-      background-color: color(secondary) !important;
-      border-color: color(secondary) !important;
+      color: #fff;
+      background-color: #0264ed;
+      box-shadow: 0px 10px 20px 0px #0264ed40;
     }
   }
 
-  &.bg-light {
-    color: color(light);
-    background-color: color(ash) !important;
-  }
-
-  &.btn-outline-light {
-    border-color: color(ash) !important;
-    background-color: transparent !important;
-    color: color(lowBlack) !important;
-  }
-
-  &.btn-shadow {
-    color: color(lightBlack);
-    background: #ffffff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 3px;
+  // button text
+  &--text {
+    color: #202029;
     &:hover {
-      box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
-    }
-  }
-  &.btn-shadow--dark {
-    color: color(lightBlack);
-    background: #ffffff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 3px;
-    &:hover {
-      color: color(primary);
-      box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
-    }
-  }
-  &.btn-shadow-light {
-    color: color(lowBlack);
-    background: #ffffff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 3px;
-  }
-  &.bg-transparent {
-    color: color(primary);
-    background-color: transparent !important;
-    &:hover {
-      color: color(primary) !important;
-      background-color: rgba(16, 137, 255, 0.1) !important;
-    }
-  }
-  &.bg-transparent-light {
-    color: color(lowBlack);
-  }
-  &.text-primary {
-    border: 0;
-    color: color(lightBlack) !important;
-
-    &:hover {
-      color: color(primary) !important;
       text-decoration: underline;
+      color: #1089ff;
     }
-  }
-  &.btn-text-light {
-    color: color(lowBlack);
   }
 }
 
 // social buttons
 .signinButtons {
+  justify-content: space-between;
   .fb {
     &:hover {
       border-color: #1089ff !important;
@@ -173,50 +151,85 @@
   }
 }
 
-// Checkbox
-
-.checkbox-primary[type='checkbox'] {
-  width: 24px;
-  height: 24px;
-  border: 2px solid color(lowBlack);
-}
-
-@media (max-width: 991px) {
-  .btn {
-    &.btn-lg {
-      padding: 10px 15px !important;
-    }
-    &.btn-md {
-      padding: 8px 15px !important;
+// Responsive
+@media (max-width: 1200px) {
+  .signinButtons {
+    justify-content: center;
+    a {
+      margin-right: 15px;
+      margin-bottom: 10px;
     }
   }
 }
 
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
-  .btn {
-    font-size: 14px;
-  }
+// sidebar menu icons
+
+.menu-icon-container {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
 }
 
-// Small devices 575px - 767px
-@media (min-width: 575px) and (max-width: 767px) {
-  .btn {
-    font-size: 14px;
-  }
+.menu-icon {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #202029;
+
+  margin-top: -2px;
+  margin-left: -15px;
+  transition: background-color 0.2s ease-out;
+}
+.menu-icon::after,
+.menu-icon::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #202029;
+  left: 0px;
+  transition: all 0.2s ease-out;
+}
+.menu-icon::after {
+  top: 9px;
+}
+.menu-icon::before {
+  top: -9px;
+}
+.menu-icon-container:hover .menu-icon::after {
+  top: 10px;
+  transition: all 0.2s ease-out;
+}
+.menu-icon-container:hover .menu-icon::before {
+  top: -10px;
+  transition: all 0.2s ease-out;
 }
 
-// Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  .btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
+/*---cross---*/
+.menu-icon.transformed {
+  background-color: transparent;
+}
+.menu-icon.transformed::after,
+.menu-icon.transformed::before {
+  transform-origin: 50% 50%;
+  top: 0px;
+  left: 2px;
+  width: 26px;
+  transition: all 0.15s ease-out;
+}
+.menu-icon.transformed::after {
+  transform: rotate(45deg);
+}
+.menu-icon.transformed::before {
+  transform: rotate(-45deg);
 }
 
-// extra Small devices 420px
-@media (max-width: 420px) {
-  .btn {
-    font-size: 12px;
-  }
+.menu-icon-container:hover .menu-icon.transformed::after,
+.menu-icon-container:hover .menu-icon.transformed::before {
+  top: 0px;
+  left: -1px;
+  width: 32px;
+  transition: all 0.15s ease-out;
 }

@@ -1,5 +1,41 @@
 'use strict';
 
+// Toggle Menu
+const toggleMenu = document.querySelector('.menu-icon-container');
+const sidebar = document.querySelector('.navbar-mobile');
+const crossSidebar = document.querySelector('.navbar-mobile--cross');
+let menuicon = document.querySelector('.menu-icon');
+
+toggleMenu.addEventListener('click', function () {
+  sidebar.classList.toggle('show');
+  document.body.classList.toggle('over');
+});
+
+crossSidebar.addEventListener('click', function () {
+  sidebar.classList.remove('show');
+  menuicon.classList.remove('transformed');
+});
+
+var navMenu = [].slice.call(
+  document.querySelectorAll('.navbar-mobile__menu-item')
+);
+
+for (var y = 0; y < navMenu.length; y++) {
+  navMenu[y].addEventListener('click', function () {
+    menuClick(this);
+  });
+}
+
+function menuClick(current) {
+  const active = current.classList.contains('open');
+  navMenu.forEach((el) => el.classList.remove('open'));
+  if (active) {
+    current.classList.remove('open');
+  } else {
+    current.classList.add('open');
+  }
+}
+
 (function ($) {
   $('.hamburger-menu a').on('click', function () {
     $('#mySidenav').css('left', '0');
@@ -23,8 +59,52 @@
     $('#overlayy').toggleClass('active');
   }
 
+  $('.menu-icon-container').on('click', function () {
+    $('.menu-icon').toggleClass('transformed');
+  });
+
   //Events Slider
   $('.eventsSlider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    dots: false,
+    arrows: true,
+    autoplaySpeed: 2000,
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
+
+  //Similar events
+  $('.similar-events').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -32,69 +112,72 @@
     dots: false,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: ' .slider__arrow-left',
-    nextArrow: ' .slider__arrow-right',
+    prevArrow:
+      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 1441,
         settings: {
           arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 992,
         settings: {
-          autoplay: true,
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
+          arrows: false,
           dots: true,
-          arrows: true,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 575,
         settings: {
-          dots: true,
-          autoplay: true,
           slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
+          arrows: false,
+          dots: true,
         },
       },
     ],
   });
 
-  // newCourse
-  $('.newCourse').slick({
+  // new__courses
+  $('.new__courses').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    dots: true,
+    dots: false,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: '.new-course-arrows .prev-arrow',
-    nextArrow: '.new-course-arrows .next-arrow',
+    prevArrow:
+      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: false,
+        },
+      },
       {
         breakpoint: 992,
         settings: {
-          autoplay: true,
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
           arrows: false,
+          dots: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: true,
-          autoplay: true,
           slidesToShow: 1,
-          slidesToScroll: 1,
           arrows: false,
+          dots: false,
         },
       },
     ],
@@ -107,7 +190,7 @@
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    dots: false,
+    dots: true,
     arrows: true,
     centerMode: true,
     centerPadding: '0px',
@@ -117,22 +200,13 @@
       {
         breakpoint: 992,
         settings: {
-          autoplay: true,
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          arrows: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          dots: true,
-          autoplay: true,
           slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
         },
       },
     ],
@@ -153,31 +227,210 @@
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
       {
         breakpoint: 769,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
   });
 
   //testimonial_slider
-  $('.testimonial__active').slick({
+  $('.testimonial__slider--one').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    prevArrow:
+      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
+  });
+
+  $('.testimonial__slider--two').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    dots: false,
+    centerMode: true,
+    centerPadding: '0px',
+    autoplaySpeed: 2000,
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: false,
+        },
+      },
+    ],
+  });
+
+  $('.testimonial__slider--three').slick({
     infinite: true,
     slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    autoplaySpeed: 2000,
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
+
+  $('.categories--box').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    dots: false,
+    autoplaySpeed: 2000,
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
+
+  $('.categories__slider').slick({
+    infinite: true,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow: '.testimonial__wrapper .prev-arrow',
-    nextArrow: '.testimonial__wrapper .next-arrow',
+    centerMode: true,
+    centerPadding: '0px',
+    dots: false,
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1260,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   //Brand_slider
@@ -218,14 +471,24 @@
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    prevArrow: '.ourinstructor__wrapper .prev-arrow',
-    nextArrow: '.ourinstructor__wrapper .next-arrow',
+    prevArrow:
+      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+    nextArrow:
+      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
       {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          arrows: false,
           dots: true,
         },
       },
@@ -234,14 +497,17 @@
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false,
           dots: true,
         },
       },
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '15px',
+          arrows: false,
           dots: true,
         },
       },
@@ -263,15 +529,12 @@
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          dots: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
         },
       },
     ],
@@ -293,15 +556,12 @@
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          dots: true,
-          arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],

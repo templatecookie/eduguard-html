@@ -1,5 +1,4 @@
 .error-area {
-  //   height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -57,7 +56,7 @@
   }
   .error-area {
     height: auto;
-    padding: 30px !important;
+    padding: 30px 0px !important;
 
     &-shape {
       display: none;
@@ -78,7 +77,6 @@
   }
 }
 
-// large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .error-area {
     &-shape {

@@ -14,14 +14,15 @@
       justify-content: space-between;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
+      &.collapsed {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+      }
       &-start {
         display: flex;
 
-        h6 {
-          font-weight: 500 !important;
-          font-size: 16px !important;
-          // color: #42414b !important;
-          color: #0264ed !important;
+        p {
+          color: #42414b;
           margin-left: 10px;
         }
       }
@@ -52,6 +53,14 @@
           }
         }
       }
+
+      &:not(.collapsed) {
+        .curriculum-area-top-start {
+          p {
+            color: #0264ed !important;
+          }
+        }
+      }
     }
 
     &-bottom {
@@ -62,19 +71,20 @@
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
       transition: all 0.2s linear;
-      .active {
-        border: none !important;
-        border: 1px solid rgba($color: #1089ff, $alpha: 0.4) !important;
-        border-radius: 4px !important;
-      }
 
       .curriculum-description {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 12px 24px;
+        border: 1px solid transparent;
+        margin-bottom: 0px;
         border-bottom: 1px solid #ebebf2;
-        border: 0px;
+        &.active,
+        &:hover {
+          border: 1px solid rgba(16, 137, 255, 0.4) !important;
+          border-radius: 4px !important;
+        }
         &-start {
           p {
             display: flex;
@@ -109,23 +119,6 @@
     }
   }
 }
-
-.curriculum-area-top.collapsed {
-  border-radius: 8px;
-  .curriculum-area-top-start {
-    h6 {
-      color: #42414b !important;
-    }
-    svg {
-      transform: rotate(180deg);
-      transition: all 0.2s linear;
-    }
-  }
-}
-.accordion-button:not(.collapsed) {
-  color: #0264ed !important;
-}
-// curriculum-accordion Ends Here
 
 // Responsive
 // extra Small devices 420px

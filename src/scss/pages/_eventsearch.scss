@@ -28,7 +28,9 @@
       border-bottom: 1px solid rgba($color: #8f8fa3, $alpha: 0.25);
 
       h6 {
-        color: #42414b !important;
+        color: #42414b;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
       }
     }
     &-body {
@@ -223,20 +225,6 @@
         border-bottom-right-radius: 0px;
       }
     }
-
-    .event__content {
-      background: white;
-      padding-top: 20px;
-      padding-bottom: 12px;
-      padding-left: 12px;
-      padding-right: 12px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-    }
-
-    .event__content_detail {
-      padding-bottom: 0 !important;
-    }
   }
 
   &-pagination {
@@ -320,7 +308,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .event-search {
     padding-bottom: 30px;
   }
@@ -457,9 +445,7 @@
   .eventCount {
     flex-direction: column;
   }
-  .event-sub-section-main .icon-with-date {
-    flex-direction: column !important;
-  }
+
   .event-info-tab .nav-tabs {
     justify-content: center;
   }

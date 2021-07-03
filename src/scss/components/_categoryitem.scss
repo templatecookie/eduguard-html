@@ -1,3 +1,9 @@
+.categories {
+  .category {
+    margin: 0px 15px;
+  }
+}
+
 .categoryitem {
   padding: 140px 0;
 }
@@ -19,9 +25,12 @@
     border: 1px solid #ebebf2;
     h6 {
       font-size: 20px;
-      color: color(lightBlack);
-      font-weight: 600;
-      transition: none;
+      line-height: 30px;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+      a {
+        color: #42414b;
+      }
     }
     span {
       font-size: 14px;
@@ -94,7 +103,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .categoryitem {
     padding: 50px 0;
 

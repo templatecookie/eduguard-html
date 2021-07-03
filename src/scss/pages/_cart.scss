@@ -1,10 +1,17 @@
 .cart-area {
-  padding-bottom: 100px;
-
+  h6.font-title--card {
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+  }
   .cart-wizard-area {
     margin-bottom: 30px;
 
     .image {
+      a {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
       img {
         width: 200px;
         height: 100%;
@@ -20,17 +27,20 @@
       border-bottom-right-radius: 5px;
       padding: 20px;
       padding-bottom: 0 !important;
-      max-width: 480px;
       h6 {
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 20px;
 
         a {
-          display: block;
+          color: #202029;
         }
       }
 
       p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #8f8fa3;
         margin-top: 7px;
         margin-bottom: 10px;
 
@@ -42,12 +52,12 @@
       .bottom-wizard {
         p {
           color: #202029 !important;
-          font-weight: 500;
+          font-family: 'Poppins', sans-serif;
+        font-weight: 500;
           font-size: 18px !important;
 
           span {
             color: #8f8fa3 !important;
-            font-weight: 400 !important;
             font-size: 14px;
           }
         }
@@ -69,7 +79,8 @@
 
       h6 {
         color: #666575 !important;
-        font-weight: 500 !important;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 16px !important;
       }
     }
@@ -77,6 +88,7 @@
     form {
       label {
         color: #202029;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 14px;
         margin-bottom: 5px;
@@ -119,61 +131,63 @@
   padding-top: 12px;
   margin-bottom: 30px !important;
 
-  h6 {
-    font-weight: 600 !important;
-    font-size: 20px !important;
-  }
-
-  p {
-    color: #202029 !important;
-    font-size: 20px;
+  p.font-title--card {
+    font-family: 'Poppins', sans-serif;
+        font-weight: 400;
   }
 }
 
 // Responsive
-// large devices 992px - 1200px
+
+@media (max-width: 1200px) {
+  .cart-area {
+    padding-top: 0px;
+  }
+  .cart-area .cart-wizard-area .text {
+    width: 100%;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .cart-area {
-    padding: 50px 0px;
-
     .cart-wizard-area {
       .image {
         display: none;
       }
 
       .text {
-        max-width: 100%;
-        border-radius: 5px !important;
+        border-radius: 5px;
 
         h6 {
-          font-size: 18px !important;
+          font-size: 18px;
         }
       }
     }
 
     form label {
       margin-top: 10px;
-      margin-bottom: 10px !important;
+      margin-bottom: 10px;
     }
   }
 }
 
 @media (max-width: 991px) {
   .cart-area {
-    padding-top: 30px !important;
     .cart-wizard-area {
       .text h6 {
         margin-left: 0px;
       }
     }
   }
+
+  .cart-area .cart-wizard-area .text {
+    max-width: 100%;
+  }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .cart-area {
-    padding: 30px 0px;
-
     form label {
       margin-top: 10px;
       margin-bottom: 10px !important;
@@ -184,8 +198,6 @@
 // extra Small devices 420px
 @media (max-width: 767px) {
   .cart-area {
-    padding: 30px 0px;
-
     .cart-wizard-area {
       flex-direction: column;
       align-items: flex-start;
@@ -195,10 +207,6 @@
 
       .text {
         border-radius: 5px !important;
-
-        h6 {
-          font-size: 18px !important;
-        }
       }
     }
 
@@ -211,29 +219,9 @@
   .cart-area .summery-wizard {
     padding: 20px 15px;
   }
-}
 
-@media (min-width: 575px) and (max-width: 767px) {
-  .cart-area {
-    h6 {
-      font-size: 24px !important;
-      line-height: 36px !important;
-      margin-bottom: 8px !important;
-    }
-  }
-}
-
-@media (min-width: 320px) and (max-width: 574px) {
-  .cart-area {
-    h6 {
-      font-size: 18px !important;
-      line-height: 28px !important;
-      margin-bottom: 8px !important;
-      margin-left: 0px;
-    }
-  }
-  .cart-area .cart-wizard-area .text h6 {
-    font-size: 16px !important;
-    line-height: 26px !important;
+  .cart-area .cart-wizard-area .text p {
+    font-size: 14px;
+    line-height: 24px;
   }
 }

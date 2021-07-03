@@ -1,6 +1,4 @@
 .instructor-courses {
-  padding-bottom: 70px;
-
   &-instructor {
     background: #ffffff;
     border-radius: 6px;
@@ -13,8 +11,8 @@
 
       img {
         object-fit: cover;
-        width: 250px;
-        height: 250px;
+        width: inherit;
+        height: inherit;
         border-radius: 50%;
         vertical-align: middle;
       }
@@ -85,14 +83,17 @@
       margin-top: 10px;
 
       h6 {
-        color: #42414b !important;
-        font-weight: 500;
         font-size: 18px;
+        line-height: 27px;
+        color: #42414b;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       }
 
       p {
+        font-size: 12px;
+        line-height: 15px;
         color: #8f8fa3 !important;
-        font-size: 12px !important;
       }
     }
   }
@@ -115,6 +116,7 @@
 
       h6 {
         color: #42414b !important;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 18px;
       }
@@ -144,6 +146,7 @@
 
       h6 {
         color: #42414b !important;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 18px;
       }
@@ -160,6 +163,7 @@
   p {
     font-size: 18px;
     line-height: 27px;
+    color: #666575;
   }
 }
 
@@ -170,12 +174,20 @@
   border-bottom: 1px solid #ebebf2;
 }
 
+.about-instructor {
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666575;
+  }
+}
+
 .about-instructor h6,
 .instructor-qualification h6 {
   font-size: 18px;
   line-height: 27px;
-  color: #42414b !important;
-  font-weight: 600 !important;
+  color: #42414b;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -199,7 +211,8 @@
       h6 {
         margin-bottom: 0 !important;
         color: rgba($color: #42414b, $alpha: 0.9) !important;
-        font-weight: 500 !important;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 14px !important;
       }
 
@@ -218,6 +231,7 @@
 
       .active {
         color: #202029 !important;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 16px;
         position: relative;
@@ -237,6 +251,7 @@
       .nav-link {
         background-color: transparent !important;
         color: #666575;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 16px;
         border: none !important;
@@ -264,25 +279,32 @@
   background-color: white;
   border-radius: 5px;
   text-align: center;
+  h2 {
+    font-size: 56px;
+    line-height: 70px;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    color: #42414b;
+  }
 
   h6 {
-    color: #42414b !important;
+    color: #42414b;
   }
 
   .rating-icon {
     margin-bottom: 10px;
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 14px;
+      height: 14px;
       color: #ff7a1a;
       fill: #ff7a1a;
     }
   }
 
   p {
-    color: #666575 !important;
-    font-size: 14px !important;
+    color: #666575;
+    font-size: 14px;
   }
 }
 
@@ -396,13 +418,13 @@
     margin-bottom: 15px;
 
     h5 {
-      color: #202029 !important;
-      font-weight: 600 !important;
-      font-size: 20px !important;
-
+      color: #42414b;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 600;
       span {
-        color: #8f8fa3 !important;
-        font-weight: 400 !important;
+        color: #8f8fa3;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
       }
     }
 
@@ -411,17 +433,16 @@
       align-items: center;
 
       h6 {
-        font-size: 14px !important;
-        font-weight: 500 !important;
-        color: #42414b !important;
+        color: #42414b;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       }
 
       .dropdown {
         .btn {
-          padding-left: 10px !important;
-          color: #666575 !important;
           font-size: 14px !important;
-          font-weight: 400 !important;
+          padding-left: 10px;
+          color: #666575;
         }
       }
     }
@@ -456,24 +477,29 @@
           margin-left: 12px;
 
           h6 {
-            color: #42414b !important;
-            font-size: 14px !important;
-            font-weight: 600 !important;
+            font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+            a {
+              color: #42414b;
+            }
           }
 
           p {
-            margin-top: 5px;
-            color: #8f8fa3 !important;
-            font-size: 12px !important;
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 2px;
+            color: #8f8fa3;
+            font-size: 12px;
           }
         }
       }
     }
 
     p {
+      font-size: 14px;
+      line-height: 21px;
+      color: #8f8fa3;
       margin-top: 12px;
-      color: #8f8fa3 !important;
-      font-size: 14px !important;
     }
   }
 }
@@ -486,28 +512,30 @@
   border-radius: 5px;
   background-color: white;
   padding: 30px;
-
-  h5 {
-    color: #202029 !important;
-    font-size: 20px !important;
-    font-weight: 600;
-  }
-
   h6 {
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    margin-bottom: 12px;
+  }
+  span {
     font-size: 14px;
-    font-weight: 500;
+    line-height: 21px;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     color: #42414b;
-    margin: 12px 0px 5px 0px;
+    margin-bottom: 6px;
   }
 
   form {
     padding-bottom: 50px;
 
     label {
-      color: #42414b;
-      font-weight: 500;
       font-size: 14px;
+      line-height: 21px;
+      color: #42414b;
       margin-bottom: 5px;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
 
     textarea {
@@ -517,7 +545,11 @@
       border-radius: 4px;
       resize: none;
       height: 112px;
-
+      padding: 16px 20px;
+      &::placeholder {
+        font-size: 16px;
+        line-height: 24px;
+      }
       &:focus {
         box-shadow: none !important;
         border: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
@@ -529,24 +561,36 @@
 // Responsive
 
 @media (max-width: 1200px) {
+  .instructor-courses-instructor .instructor-image {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+  }
+
+  .instructor-courses {
+    padding-top: 15px;
+  }
   .instructor-rating-area {
     align-items: center;
+    justify-content: space-between;
+  }
+  .rating-range {
+    margin-top: 10px;
+  }
+  .rating-number {
+    margin-bottom: 0px !important;
+  }
+
+  .rating-range-item {
+    margin-bottom: 5px;
   }
 }
 
-// large devices 992px - 1200px
 @media (min-width: 992px) and (max-width: 1200px) {
   .instructor-course-info {
     margin-bottom: 20px;
-    padding-bottom: 5px;
     padding-top: 25px;
     flex-wrap: wrap;
-
-    &-rating,
-    &-students,
-    &-courses {
-      margin-bottom: 20px;
-    }
   }
 
   .course__content_time {
@@ -554,7 +598,7 @@
 
     .clock,
     .book,
-    .eay,
+    .eye,
     .star {
       margin-bottom: 15px;
     }
@@ -563,11 +607,6 @@
   .course__content_title h6,
   .course__content_title .h6 {
     font-size: 16px;
-  }
-
-  // Review
-  .instructor-rating-area {
-    flex-direction: column;
   }
 
   .rating-range {
@@ -590,11 +629,6 @@
   }
 
   // feedback comments
-  .feedback-comment h6,
-  .feedback-comment .h6 {
-    font-size: 14px !important;
-    line-height: 24px !important;
-  }
 
   .students-feedback-item .feedback-rating-start .text h6,
   .students-feedback-item .feedback-rating-start .text .h6 {
@@ -604,22 +638,16 @@
     line-height: 22px !important;
     margin-top: 0px;
   }
+
+  .instructor-course-info {
+    justify-content: space-around;
+  }
 }
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .breadcrumb {
     align-items: center;
-  }
-
-  .instructor-courses {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .course__img,
-  .course__content {
-    width: 75%;
   }
 
   .course__img {
@@ -652,20 +680,15 @@
     width: 45px;
     height: 45px;
   }
-  .instructor-course-info-courses .text h6,
-  .instructor-course-info-courses .text .h6,
-  .instructor-course-info-students .text h6,
-  .instructor-course-info-students .text .h6,
-  .instructor-course-info-rating .text h6,
-  .instructor-course-info-rating .text .h6 {
-    font-size: 28px !important;
-    line-height: 38px !important;
-  }
+
   .instructor-rating-area {
     align-items: flex-start;
   }
   .rating-number {
     width: 100%;
+  }
+  .instructor-course-info {
+    justify-content: space-between;
   }
 }
 
@@ -673,11 +696,6 @@
 @media (min-width: 575px) and (max-width: 767px) {
   .breadcrumb {
     align-items: center;
-  }
-
-  .instructor-courses {
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   .instructor-course-info {
@@ -712,7 +730,7 @@
 
     .clock,
     .book,
-    .eay,
+    .eye,
     .star {
       margin-bottom: 15px;
     }
@@ -760,14 +778,9 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .breadcrumb {
     align-items: center;
-  }
-
-  .instructor-courses {
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   .instructor-course-info {
@@ -802,7 +815,7 @@
 
     .clock,
     .book,
-    .eay,
+    .eye,
     .star {
       margin-bottom: 15px;
     }
@@ -872,11 +885,6 @@
     align-items: center;
   }
 
-  .instructor-courses {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
   .instructor-course-info {
     margin-bottom: 20px;
     padding-bottom: 5px;
@@ -909,7 +917,7 @@
 
     .clock,
     .book,
-    .eay,
+    .eye,
     .star {
       margin-bottom: 15px;
     }
@@ -975,14 +983,15 @@
       }
     }
   }
+
+  .rating-icons.rating-icons-modal .jq-star {
+    width: 25px !important;
+    height: 25px !important;
+    margin-right: 15px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .instructor-courses-instructor .instructor-image,
-  .instructor-courses-instructor .instructor-image img {
-    width: 150px;
-    height: 150px;
-  }
   .instructor-info h4 {
     margin-bottom: 0px !important;
   }

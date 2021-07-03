@@ -83,7 +83,7 @@
     .course__content_time {
       .clock,
       .star,
-      .eay,
+      .eye,
       .book {
         span {
           font-size: 12px !important;
@@ -108,7 +108,8 @@
     }
     .course__content_title h6 {
       font-size: 16px;
-      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
   }
 }
@@ -137,7 +138,8 @@
     }
     .course__content_title h6 {
       font-size: 16px;
-      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
     .course {
       margin: 0 75px;
@@ -147,7 +149,7 @@
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .populercourse {
     padding: 50px 0;
     &__wrapper {
@@ -174,7 +176,8 @@
     }
     .course__content_title h6 {
       font-size: 16px;
-      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
     .course {
       margin-bottom: 30px !important;
@@ -183,8 +186,4 @@
       width: 100%;
     }
   }
-}
-
-// extra Small devices 420px
-@media (max-width: 420px) {
 }

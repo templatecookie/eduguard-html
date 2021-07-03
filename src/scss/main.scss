@@ -1,28 +1,35 @@
 // abstracts
-@import 'abstracts/functions';
+@import 'base/typography';
 @import 'abstracts/variables';
+@import 'abstracts/functions';
 
 // vendors
 @import '~bootstrap/scss/bootstrap';
 @import 'vendors/plugin/css/slick.css';
 @import 'vendors/plugin/css/nice-select.css';
 @import 'vendors/plugin/css/magnific-popup.css';
-
-@import 'base/typography';
 @import 'base/reset';
+@import 'base/common';
 
 // components
+@import 'components/loader';
 @import 'components/buttons';
+@import 'components/cards';
+@import 'components/carts';
+@import 'components/socialicons';
+@import 'components/input';
+@import 'components/feature';
+@import 'components/dots';
+@import 'components/sidebar';
+
 @import 'components/form';
 @import 'components/videolist';
 @import 'components/alert';
-@import 'components/coureseitem';
 @import 'components/categoryitem';
 @import 'components/featuresitem';
 @import 'components/search';
 @import 'components/breadcrumb';
 @import 'components/pagination';
-@import 'components/watchcourse';
 @import 'components/eventitem';
 @import 'components/playbutton';
 @import 'components/mentor';
@@ -37,7 +44,11 @@
 // layout
 @import 'layout/header';
 @import 'layout/banner';
-@import 'layout/breadcrumb';
+@import 'layout/feature';
+@import 'layout/join';
+@import 'layout/hero';
+@import 'layout/events';
+
 @import 'layout/populercoures';
 @import 'layout/testimonial';
 @import 'layout/ourinstructor';
@@ -73,7 +84,6 @@
 @import 'pages/404';
 @import 'pages/courseinstructor';
 @import 'pages/comingsoon';
-@import 'pages/studentsallcourses';
 @import 'pages/becomeinstructor';
 @import 'pages/instructorcourses';
 @import 'pages/faq';
@@ -82,5 +92,3 @@
 @import 'pages/signup';
 @import 'themes/theme';
 @import 'pages/styleguide';
-
-@import 'base/common';

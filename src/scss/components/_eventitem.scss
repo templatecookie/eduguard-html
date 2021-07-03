@@ -1,86 +1,45 @@
-.ourevent{
-    background-color: white;
+.ourevent {
+  background-color: white;
 }
-.event{
-    &__img{
-        margin-bottom: 12px;
-        img{
-            border-radius: 6px;
-        }
-    }
-    &__content{
-      &_title{
-        border-bottom: 1px solid #EBEBF2;
-          h6{
-              font-size: 20px;
-              font-weight: 500;
-              color: color(lightBlack);
-              line-height: 1.5;
-              margin-bottom: 20px;
-          }
-      }
-      &_detail{
-          padding: 10px 0;
-          .loction,.date{
-              span{
-                  color: color(lightBlack);
-                  font-size: 14px;
-              }
-          }
-      } 
-    }
-}
+
 /*------------------------*/
 /*-------RESPOSIVE---------*/
 /*-------------------------*/
 
-// large devices 992px - 1169px
-@media (min-width: 992px) and (max-width: 1199px) {
-    .event__content_detail .loction span, .event__content_detail .date span{
-        font-size: 12px;
-    }
-}
-
-// Medium devices 768px - 991px
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-    .event{
-        &__img{
-            margin-bottom: 10px;
-            img{
-                border-radius: 6px;
-            }
-        }
-        &__content{
-          &_title{
-            border-bottom: 1px solid #EBEBF2;
-              h6{
-                  font-size: 16px;
-                  margin-bottom: 15px;
-              }
-          }
-          &_detail{
-              padding: 10px 0;
-              .loction,.date{
-                  span{
-                      font-size: 10px;
-                  }
-              }
-          } 
-        }
+  .event {
+    &__img {
+      margin-bottom: 10px;
+      img {
+        border-radius: 6px;
+      }
     }
+    &__content {
+      &_title {
+        border-bottom: 1px solid #ebebf2;
+        h6 {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+      &_detail {
+        padding: 10px 0;
+        .loction,
+        .date {
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Small devices 420px - 574px
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-
+@media (min-width: 420px) and (max-width: 574px) {
 }
 
 // extra Small devices 420px
 @media (max-width: 420px) {
-
 }
