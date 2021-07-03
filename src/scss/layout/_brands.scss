@@ -1,7 +1,8 @@
 .brands {
   &__titleContent {
     p {
-      font-family: poppin-regular;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 400;
     }
   }
 }
@@ -20,7 +21,8 @@
         line-height: 38px !important;
       }
       p {
-        font-family: poppin-regular;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
       }
     }
   }

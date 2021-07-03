@@ -1,3 +1,4 @@
+
 .testimonial {
   &__item {
     position: relative;
@@ -26,7 +27,8 @@
       font-size: 20px;
       line-height: 30px;
       color: #42414b;
-      font-family: poppin-medium;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
   }
 
@@ -55,7 +57,8 @@
         font-size: 15px;
         line-height: 22.5px;
         color: #8f8fa3;
-        font-family: poppin-regular;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
       }
       &.slick-current {
         border-color: #1089ff;
@@ -70,6 +73,9 @@
     }
   }
 }
+.testimonial__user {
+    // margin-top: 20px;
+}
 
 // Homepage-02
 .testimonial {
@@ -81,6 +87,10 @@
     .testimonial__item {
       margin: 0px;
       padding: 0px;
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -189,4 +199,8 @@
       }
     }
   }
+}
+
+.testimonial__slider--one .slick-dots{
+    margin-top: 30px;
 }

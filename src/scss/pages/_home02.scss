@@ -7,10 +7,8 @@
 
 .banner-two {
   padding-top: 150px;
-  padding-bottom: 380px;
+  padding-bottom: 200px;
   background-color: rgba($color: #ebebf2, $alpha: 0.55);
-  clip-path: ellipse(100% 100% at 50% 0%);
-
   &-start {
     h1 {
       margin-bottom: 20px;
@@ -60,6 +58,19 @@
       }
     }
   }
+}
+
+.home-top-feature {
+    padding: 0;
+    position: relative;
+    background-color: rgba(#EBEBF2, 0.6);
+    .shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .banner-input {
@@ -263,6 +274,7 @@
 
     h3 {
       color: #202029 !important;
+      margin-bottom: 40px;
     }
   }
 

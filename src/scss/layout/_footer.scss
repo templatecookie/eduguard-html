@@ -18,7 +18,7 @@
         display: flex;
         align-items: center;
         li {
-          margin-right: 24px;
+          margin-right: 12px;
           a {
             display: flex;
             align-items: center;
@@ -48,7 +48,8 @@
       font-size: 20px;
       line-height: 1.5;
       color: #fff !important;
-      font-family: poppin-medium;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       margin-bottom: 12px;
     }
     ul {

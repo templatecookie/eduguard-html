@@ -74,7 +74,8 @@
   &-end {
     .rating-link {
       color: #202029;
-      font-family: poppin-medium;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       font-size: 16px;
       margin-right: 35px;
     }
@@ -154,7 +155,8 @@
           background-color: transparent;
           border: none;
           color: #666575;
-          font-family: poppin-medium;
+          font-family: 'Poppins', sans-serif;
+        font-weight: 500;
           font-size: 16px;
         }
       }

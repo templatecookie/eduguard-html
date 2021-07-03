@@ -86,7 +86,8 @@
         font-size: 18px;
         line-height: 27px;
         color: #42414b;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       }
 
       p {
@@ -115,7 +116,8 @@
 
       h6 {
         color: #42414b !important;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 18px;
       }
 
@@ -144,7 +146,8 @@
 
       h6 {
         color: #42414b !important;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 18px;
       }
 
@@ -208,7 +211,8 @@
       h6 {
         margin-bottom: 0 !important;
         color: rgba($color: #42414b, $alpha: 0.9) !important;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 14px !important;
       }
 
@@ -227,7 +231,8 @@
 
       .active {
         color: #202029 !important;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 16px;
         position: relative;
 
@@ -246,7 +251,8 @@
       .nav-link {
         background-color: transparent !important;
         color: #666575;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 16px;
         border: none !important;
         padding-left: 0 !important;
@@ -276,7 +282,8 @@
   h2 {
     font-size: 56px;
     line-height: 70px;
-    font-family: poppin-bold;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 700;
     color: #42414b;
   }
 
@@ -412,10 +419,12 @@
 
     h5 {
       color: #42414b;
-      font-family: poppin-semiBold;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 600;
       span {
         color: #8f8fa3;
-        font-family: poppin-regular;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
       }
     }
 
@@ -425,7 +434,8 @@
 
       h6 {
         color: #42414b;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       }
 
       .dropdown {
@@ -467,7 +477,8 @@
           margin-left: 12px;
 
           h6 {
-            font-family: poppin-semiBold;
+            font-family: 'Poppins', sans-serif;
+        font-weight: 600;
             a {
               color: #42414b;
             }
@@ -502,13 +513,15 @@
   background-color: white;
   padding: 30px;
   h6 {
-    font-family: poppin-SemiBold;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
     margin-bottom: 12px;
   }
   span {
     font-size: 14px;
     line-height: 21px;
-    font-family: poppin-medium;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     color: #42414b;
     margin-bottom: 6px;
   }
@@ -521,7 +534,8 @@
       line-height: 21px;
       color: #42414b;
       margin-bottom: 5px;
-      font-family: poppin-medium;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
 
     textarea {

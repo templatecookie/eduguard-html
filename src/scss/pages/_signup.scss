@@ -2,7 +2,8 @@
 .signin-area {
   form {
     label {
-      font-family: poppin-medium;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
   }
 }
@@ -40,7 +41,8 @@
       color: #666575;
       a {
         color: #202029;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       }
     }
     #agree {
@@ -51,7 +53,8 @@
         font-size: 14px;
         line-height: 21px;
         color: #8f8fa3;
-        font-family: poppin-regular;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
         a {
           text-decoration: underline;
           color: #1089ff;

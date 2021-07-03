@@ -32,5 +32,8 @@
   // customizations
   &--border-white {
     border: 1px solid #fff;
+    &:hover {
+        border-color: #1089ff;
+    }
   }
 }

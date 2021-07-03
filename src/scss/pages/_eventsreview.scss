@@ -5,10 +5,12 @@
 
   h6 {
     color: #42414b;
-    font-family: poppin-semiBold;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
     span {
       color: #8f8fa3;
-      font-family: poppin-regular;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 400;
     }
   }
 
@@ -68,14 +70,16 @@
 
   h6 {
     color: #42414b;
-    font-family: poppin-SemiBold;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
   }
 
   form {
     label {
       font-size: 14px;
       line-height: 21px;
-      font-family: poppin-medium;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       margin-top: 5px;
       margin-bottom: 5px;
     }

@@ -103,7 +103,8 @@
       border-radius: 5px;
       margin-right: 15px;
       .tab-val {
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       }
       .tab-metr {
         margin: 0;
@@ -120,7 +121,8 @@
 .comingsoon-area #countdown .timer-body-block .table-cell .tab-val {
   font-size: 40px;
   line-height: 50px;
-  font-family: poppin-regular;
+  font-family: 'Poppins', sans-serif;
+        font-weight: 400;
 }
 
 // Responsive

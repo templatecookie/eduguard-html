@@ -14,7 +14,8 @@
       font-size: 18px;
       line-height: 27px;
       color: #202029;
-      font-family: poppin-semiBold;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 600;
     }
 
     p {
@@ -58,7 +59,8 @@
       h6 {
         font-size: 16px;
         line-height: 24px;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       }
     }
 
@@ -102,7 +104,8 @@
           small {
             color: #666575;
             text-decoration: underline;
-            font-family: poppin-medium;
+            font-family: 'Poppins', sans-serif;
+        font-weight: 500;
             font-size: 14px;
             margin-left: 30px;
             transition: 0.3s all linear;

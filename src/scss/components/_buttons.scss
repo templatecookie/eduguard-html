@@ -8,7 +8,8 @@
   color: #fff;
   text-align: center;
   text-transform: capitalize;
-  font-family: poppin-medium;
+  font-family: 'Poppins', sans-serif;
+        font-weight: 500;
   transition: all 0.2s linear;
 
   @media (max-width: 767px) {
@@ -21,7 +22,8 @@
     border: 0px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    font-family: poppin-semiBold;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
   }
   // medium buttons
   &-md {

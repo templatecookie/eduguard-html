@@ -31,7 +31,8 @@ header {
 
         color: color(dark);
         padding: 25px 0px;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         &.active {
           &::after {
             position: absolute;

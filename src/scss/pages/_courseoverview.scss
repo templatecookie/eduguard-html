@@ -17,7 +17,8 @@
 
     h6 {
       font-size: 18px;
-      font-family: poppin-semiBold;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 600;
       a {
         color: #42414b !important;
         display: block;
@@ -107,10 +108,12 @@
       h6 {
         color: #42414b;
         margin-bottom: 16px;
-        font-family: poppin-semiBold;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
       }
       p {
-        font-family: poppin-regular;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
         color: #8f8fa3;
       }
     }

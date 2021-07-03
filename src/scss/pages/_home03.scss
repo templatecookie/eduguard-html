@@ -166,7 +166,8 @@
       display: block;
       margin-bottom: 3px;
       padding-left: 12px;
-      font-family: poppin-medium;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       font-size: 12px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -179,7 +180,8 @@
 
       a {
         display: block;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 20px;
         line-height: 28px;
         color: #202029;
@@ -202,7 +204,8 @@
         h6 {
           padding: 0;
           margin-bottom: 0;
-          font-family: poppin-medium;
+          font-family: 'Poppins', sans-serif;
+        font-weight: 500;
           font-size: 18px !important;
           color: #42414b !important;
 
@@ -351,7 +354,8 @@
         &-info {
           h6 {
             color: #42414b !important;
-            font-family: poppin-medium;
+            font-family: 'Poppins', sans-serif;
+        font-weight: 500;
             font-size: 18px !important;
           }
 

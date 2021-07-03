@@ -1,6 +1,7 @@
 .cart-area {
   h6.font-title--card {
-    font-family: poppin-SemiBold;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
   }
   .cart-wizard-area {
     margin-bottom: 30px;
@@ -27,7 +28,8 @@
       padding: 20px;
       padding-bottom: 0 !important;
       h6 {
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 20px;
 
         a {
@@ -50,7 +52,8 @@
       .bottom-wizard {
         p {
           color: #202029 !important;
-          font-family: poppin-medium;
+          font-family: 'Poppins', sans-serif;
+        font-weight: 500;
           font-size: 18px !important;
 
           span {
@@ -76,7 +79,8 @@
 
       h6 {
         color: #666575 !important;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 16px !important;
       }
     }
@@ -84,7 +88,8 @@
     form {
       label {
         color: #202029;
-        font-family: poppin-medium;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         font-size: 14px;
         margin-bottom: 5px;
       }
@@ -127,7 +132,8 @@
   margin-bottom: 30px !important;
 
   p.font-title--card {
-    font-family: poppin-regular;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 400;
   }
 }
 

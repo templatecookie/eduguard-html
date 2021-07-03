@@ -1,5 +1,10 @@
-// fonts family
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+// fonts family
 .font-title--lg,
 .font-title--md,
 .font-title--sm,
@@ -11,7 +16,8 @@
 .font-title--md,
 .font-title--xs,
 .font-title--card {
-  font-family: poppin-bold;
+  font-family: 'Poppins', sans-serif;
+        font-weight: 700;
   color: #202029;
 }
 
@@ -41,7 +47,8 @@
   &--sm {
     font-size: 32px;
     line-height: 40px;
-    font-family: poppin-semiBold;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 600;
     @media (max-width: 767px) {
       font-size: 24px;
       line-height: 34px;
@@ -51,7 +58,8 @@
     font-size: 24px;
     line-height: 36px;
     color: #42414b;
-    font-family: poppin-medium;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 500;
 
     @media (max-width: 767px) {
       font-size: 18px;
@@ -62,7 +70,8 @@
   &--card {
     font-size: 20px;
     line-height: 30px;
-    font-family: poppin-medium;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     @media (max-width: 767px) {
       font-size: 16px;
       line-height: 26px;
@@ -76,7 +85,8 @@
     font-size: 16px;
     line-height: 24px;
     color: #8f8fa3;
-    font-family: poppin-medium;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     @media (max-width: 767px) {
       font-size: 14px;
       line-height: 24px;

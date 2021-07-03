@@ -13,7 +13,8 @@
       display: flex;
       align-items: center;
       h3 {
-        font-family: poppin-regular;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
         margin-right: 6px;
         color: #202029;
       }
@@ -80,7 +81,8 @@
           font-family: poppin-semiBold !important;
         }
         .total-price {
-          font-family: poppin-regular;
+          font-family: 'Poppins', sans-serif;
+        font-weight: 400;
         }
       }
     }
@@ -93,7 +95,8 @@
 
     h6 {
       color: #202029;
-      font-family: poppin-medium;
+      font-family: 'Poppins', sans-serif;
+        font-weight: 500;
       margin-bottom: 6px;
     }
   }
