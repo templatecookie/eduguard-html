@@ -13383,8 +13383,9 @@ header {
     .hero__dots-info li span {
       margin-right: 0px; }
     .hero__dots-info li p {
-      font-size: 14px;
-      margin-left: 15px; }
+      font-size: 18px;
+      margin-left: 15px;
+      font-weight: 300; }
   .hero--one {
     padding: 60px 0px; }
   .hero__content-info h2, .hero__content-info .h2 {
@@ -16728,8 +16729,8 @@ header {
   .students-info-intro-end .completed-courses {
     margin-left: 0px; }
   .students-info-main .nav-tabs .nav-link {
-    padding-bottom: 15px;
-    margin-bottom: 0px; }
+    padding-bottom: 5px;
+    margin-bottom: 10px; }
   .purchase-area-items,
   .purchase-area-items-end {
     width: 100% !important; } }
@@ -17022,7 +17023,6 @@ header {
   .students-info-intro {
     padding: 40px 0px; }
   .students-info-main .nav-tabs .nav-link {
-    margin-bottom: 0px !important;
     padding-bottom: 5px; } }
 
 .purchase-area {
@@ -19776,7 +19776,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 90vh;
-  overflow-y: auto; }
+  overflow-y: auto;
+  padding: 70px 0; }
   .comingsoon-area-start p {
     color: #202029;
     margin-top: 10px;
