@@ -161,7 +161,7 @@ function menuClick(current) {
         breakpoint: 1441,
         settings: {
           arrows: false,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -169,7 +169,7 @@ function menuClick(current) {
         settings: {
           slidesToShow: 2,
           arrows: false,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -177,7 +177,7 @@ function menuClick(current) {
         settings: {
           slidesToShow: 1,
           arrows: false,
-          dots: true,
+          dots: false,
         },
       },
     ],

@@ -10497,7 +10497,11 @@ button:focus {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .cart__price .current-price {
       display: -webkit-box;
       display: -webkit-flex;
@@ -17780,53 +17784,55 @@ header {
         line-height: 21px;
         color: #424242; }
 
-.event-info-main .image {
-  margin-top: 35px;
-  margin-bottom: 70px; }
+.created-by {
+  margin-top: 20px; }
 
-.event-info .courseCard--wrapper {
-  margin-top: -200px; }
-
-.event-info .eventCard--wrapper {
-  margin-top: -110px; }
-
-.event-info-tab .nav-tabs {
-  max-width: 362px;
-  border-bottom: 0;
-  position: relative; }
-  .event-info-tab .nav-tabs::after {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: calc(100% - 15px);
-    background-color: white; }
-  .event-info-tab .nav-tabs .nav-link.active {
-    border-bottom: 3px solid #0264ed;
-    z-index: 5;
-    color: #202029; }
-  .event-info-tab .nav-tabs .nav-link {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #666575;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    padding-bottom: 12px;
-    margin-right: 25px; }
-
-.event-info-tab-content {
-  padding-top: 30px; }
-  .event-info-tab-content #nav-overview h6, .event-info-tab-content #nav-overview .h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; }
-  .event-info-tab-content #nav-overview p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #8f8fa3; }
+.event-info {
+  padding-bottom: 100px;
+  padding-top: 0px; }
+  .event-info-main .image {
+    margin-top: 35px;
+    margin-bottom: 70px; }
+  .event-info .courseCard--wrapper {
+    margin-top: -110px; }
+  .event-info .eventCard--wrapper {
+    margin-top: -100px; }
+  .event-info-tab .nav-tabs {
+    max-width: 362px;
+    border-bottom: 0;
+    position: relative; }
+    .event-info-tab .nav-tabs::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: calc(100% - 15px);
+      background-color: white; }
+    .event-info-tab .nav-tabs .nav-link.active {
+      border-bottom: 3px solid #0264ed;
+      z-index: 5;
+      color: #202029; }
+    .event-info-tab .nav-tabs .nav-link {
+      font-size: 16px;
+      line-height: 24px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      color: #666575;
+      border: 0;
+      padding: 0;
+      background-color: transparent;
+      padding-bottom: 12px;
+      margin-right: 25px; }
+  .event-info-tab-content {
+    padding-top: 30px; }
+    .event-info-tab-content #nav-overview h6, .event-info-tab-content #nav-overview .h6 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600; }
+    .event-info-tab-content #nav-overview p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #8f8fa3; }
 
 .similar-events .shape img {
   position: absolute; }
@@ -18499,6 +18505,9 @@ header {
             justify-content: space-between;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px; }
+    .course-curriculum-area .curriculum-area-top.collapsed {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
     .course-curriculum-area .curriculum-area-top-start {
       display: -webkit-box;
       display: -webkit-flex;
@@ -18565,7 +18574,8 @@ header {
               justify-content: space-between;
       padding: 12px 24px;
       border: 1px solid transparent;
-      margin-bottom: 5px; }
+      margin-bottom: 0px;
+      border-bottom: 1px solid #ebebf2; }
       .course-curriculum-area .curriculum-area-bottom .curriculum-description.active, .course-curriculum-area .curriculum-area-bottom .curriculum-description:hover {
         border: 1px solid rgba(16, 137, 255, 0.4) !important;
         border-radius: 4px !important; }
@@ -20678,8 +20688,8 @@ body {
   .rating-number .rating-icon {
     margin-bottom: 10px; }
     .rating-number .rating-icon svg {
-      width: 20px;
-      height: 20px;
+      width: 14px;
+      height: 14px;
       color: #ff7a1a;
       fill: #ff7a1a; }
   .rating-number p {

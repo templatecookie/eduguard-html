@@ -14,6 +14,10 @@
       justify-content: space-between;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
+      &.collapsed {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+      }
       &-start {
         display: flex;
 
@@ -74,7 +78,8 @@
         justify-content: space-between;
         padding: 12px 24px;
         border: 1px solid transparent;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #ebebf2;
         &.active,
         &:hover {
           border: 1px solid rgba(16, 137, 255, 0.4) !important;
