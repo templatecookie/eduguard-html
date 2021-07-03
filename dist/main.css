@@ -15072,7 +15072,8 @@ header {
 .banner-two {
   padding-top: 150px;
   padding-bottom: 200px;
-  background-color: rgba(235, 235, 242, 0.55); }
+  background-color: rgba(235, 235, 242, 0.55);
+  z-index: 1; }
   .banner-two-start h1, .banner-two-start .h1 {
     margin-bottom: 20px; }
   .banner-two-start p {
