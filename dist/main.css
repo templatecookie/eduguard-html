@@ -13146,9 +13146,10 @@ header {
     margin-bottom: 18px !important; }
   .hero__content-info > p {
     color: #8f8fa3;
+    font-size: 18px;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400; }
+    font-weight: 300; }
   .hero__content-location li {
     display: -webkit-box;
     display: -webkit-flex;
@@ -13643,7 +13644,9 @@ header {
   .testimonial__item-star li:nth-last-child(1) {
     margin-right: 0px; }
   .testimonial__item-star li svg {
-    color: #ff7a1a; }
+    color: #ff7a1a;
+    height: 16px;
+    width: 16px; }
 
 .testimonial--two .testimonial__item {
   border: 2px solid #ebebf2; }
@@ -13701,10 +13704,10 @@ header {
 
 .testimonial__slider--three .slick-arrow {
   top: 100%;
-  margin-top: 60px; }
+  margin-top: 66px; }
   .testimonial__slider--three .slick-arrow--right {
     right: auto;
-    left: 10%; }
+    left: 70px; }
   .testimonial__slider--three .slick-arrow--left {
     left: 0%; }
 

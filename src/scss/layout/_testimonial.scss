@@ -40,8 +40,8 @@
       }
       svg {
         color: #ff7a1a;
-        &:hover {
-        }
+        height: 16px;
+        width: 16px;
       }
     }
   }
@@ -131,10 +131,10 @@
 .testimonial__slider--three {
   .slick-arrow {
     top: 100%;
-    margin-top: 60px;
+    margin-top: 66px;
     &--right {
       right: auto;
-      left: 10%;
+      left: 70px;
     }
     &--left {
       left: 0%;
