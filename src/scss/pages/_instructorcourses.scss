@@ -311,35 +311,19 @@
 // Rating Range
 .rating-range {
   .four-star {
-    .rating-range-item-bar {
-      &::after {
-        width: 96px !important;
-      }
-    }
+    
   }
 
   .three-star {
-    .rating-range-item-bar {
-      &::after {
-        width: 30px !important;
-      }
-    }
+    
   }
 
   .two-star {
-    .rating-range-item-bar {
-      &::after {
-        width: 8px !important;
-      }
-    }
+    
   }
 
   .one-star {
-    .rating-range-item-bar {
-      &::after {
-        width: 8px !important;
-      }
-    }
+    
   }
 
   .fill-star {
@@ -368,12 +352,10 @@
       position: relative;
       overflow: hidden;
 
-      &::after {
+      .rating-width {
         position: absolute;
-        content: '';
         top: 0;
         left: 0;
-        width: 190px;
         height: 5px;
         background: #1089ff;
         border-radius: 5px;
