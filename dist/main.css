@@ -14555,6 +14555,15 @@ header {
     @media (max-width: 575px) {
       .footer--two {
         padding-top: 180px; } }
+  .footer--three {
+    padding: 0; }
+    .footer--three .footer__top {
+      padding-top: 100px;
+      padding-bottom: 70px; }
+    .footer--three .footer__wrapper {
+      margin-bottom: 0px; }
+      .footer--three .footer__wrapper_social {
+        margin-bottom: 0px !important; }
   .footer__wrapper {
     margin-bottom: 50px;
     max-width: 65%; }

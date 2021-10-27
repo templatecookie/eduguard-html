@@ -9,6 +9,20 @@
     }
   }
 
+  &--three {
+    padding: 0;
+    .footer__top {
+      padding-top: 100px;
+      padding-bottom: 70px;
+    }
+    .footer__wrapper {
+      margin-bottom: 0px;
+      &_social {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+
   &__wrapper {
     margin-bottom: 50px;
     &_logo {
