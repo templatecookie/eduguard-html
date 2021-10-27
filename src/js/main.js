@@ -16,9 +16,7 @@ crossSidebar.addEventListener('click', function () {
   menuicon.classList.remove('transformed');
 });
 
-var navMenu = [].slice.call(
-  document.querySelectorAll('.navbar-mobile__menu-item')
-);
+var navMenu = [].slice.call(document.querySelectorAll('.navbar-mobile__menu-item'));
 
 for (var y = 0; y < navMenu.length; y++) {
   navMenu[y].addEventListener('click', function () {

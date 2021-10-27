@@ -24,45 +24,45 @@
     justify-content: center;
   }
 
-  .default-item-one {
-    transition: 0.3s all linear;
+  // .default-item-one {
+  //   transition: 0.3s all linear;
 
-    &:hover {
-      border-color: rgba($color: #f15c4c, $alpha: 0.3) !important;
-    }
-  }
+  //   &:hover {
+  //     border-color: rgba($color: #f15c4c, $alpha: 0.3) !important;
+  //   }
+  // }
 
-  .default-item-two {
-    transition: 0.3s all linear;
+  // .default-item-two {
+  //   transition: 0.3s all linear;
 
-    &:hover {
-      border-color: rgba($color: #1089ff, $alpha: 0.3) !important;
-    }
-  }
+  //   &:hover {
+  //     border-color: rgba($color: #1089ff, $alpha: 0.3) !important;
+  //   }
+  // }
 
-  .default-item-three {
-    transition: 0.3s all linear;
+  // .default-item-three {
+  //   transition: 0.3s all linear;
 
-    &:hover {
-      border-color: rgba($color: #ffc91b, $alpha: 0.3) !important;
-    }
-  }
+  //   &:hover {
+  //     border-color: rgba($color: #ffc91b, $alpha: 0.3) !important;
+  //   }
+  // }
 
-  .default-item-four {
-    transition: 0.3s all linear;
+  // .default-item-four {
+  //   transition: 0.3s all linear;
 
-    &:hover {
-      border-color: rgba($color: #00af91, $alpha: 0.3) !important;
-    }
-  }
+  //   &:hover {
+  //     border-color: rgba($color: #00af91, $alpha: 0.3) !important;
+  //   }
+  // }
 
-  .default-item-five {
-    transition: 0.3s all linear;
+  // .default-item-five {
+  //   transition: 0.3s all linear;
 
-    &:hover {
-      border-color: rgba($color: #ff7a1a, $alpha: 0.3) !important;
-    }
-  }
+  //   &:hover {
+  //     border-color: rgba($color: #ff7a1a, $alpha: 0.3) !important;
+  //   }
+  // }
 
   &-item {
     display: flex;
@@ -77,6 +77,9 @@
     transition: 0.3s all linear;
 
     &:hover {
+      box-shadow: 0px 16px 72px 0px #0000001f;
+      border-color: transparent;
+
       .categories-one {
         color: white;
         background-color: #f15c4c;
