@@ -1,5 +1,4 @@
 .mentor {
-  text-align: center;
   &:hover {
     .mentor__img {
       .list-inline {
@@ -17,14 +16,20 @@
   }
 
   &__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     img {
       max-width: 100%;
-      border-radius: 5px;
     }
   }
 
   &__title {
-    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ebebf2;
     h6 {
       font-size: 20px;
       line-height: 1.5;

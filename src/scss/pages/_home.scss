@@ -785,9 +785,14 @@
   }
   .mentor {
     &__img {
-      width: 270px;
+      width: 100%;
       height: 290px;
       margin: auto;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
     }
   }
   .browse-categories__wrapper .slick-dots {

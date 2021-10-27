@@ -12275,84 +12275,94 @@ button:focus {
     width: 60px;
     height: 60px; } }
 
-.mentor {
-  text-align: center; }
-  .mentor:hover .mentor__img .list-inline {
-    opacity: 1;
-    visibility: visible; }
-  .mentor:hover .mentor__title h6 a, .mentor:hover .mentor__title .h6 a {
-    color: #0264ed; }
+.mentor:hover .mentor__img .list-inline {
+  opacity: 1;
+  visibility: visible; }
+
+.mentor:hover .mentor__title h6 a, .mentor:hover .mentor__title .h6 a {
+  color: #0264ed; }
+
+.mentor__img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
   .mentor__img img {
-    max-width: 100%;
-    border-radius: 5px; }
-  .mentor__title {
-    margin-top: 20px; }
-    .mentor__title h6, .mentor__title .h6 {
-      font-size: 20px;
-      line-height: 1.5;
-      font-weight: 600; }
-    .mentor__title p {
-      color: #908fa5;
-      font-size: 14px;
-      line-height: 1.5; }
-  .mentor .mentor__img {
-    position: relative; }
-    .mentor .mentor__img .list-inline {
-      z-index: 1;
-      position: absolute;
-      left: 50%;
-      bottom: 0px;
-      -webkit-transform: translate(-50%);
-              transform: translate(-50%);
-      width: 100%;
-      height: 100%;
+    max-width: 100%; }
+
+.mentor__title {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ebebf2; }
+  .mentor__title h6, .mentor__title .h6 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600; }
+  .mentor__title p {
+    color: #908fa5;
+    font-size: 14px;
+    line-height: 1.5; }
+
+.mentor .mentor__img {
+  position: relative; }
+  .mentor .mentor__img .list-inline {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-bottom: 15px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(55.21%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.21%, rgba(0, 0, 0, 0.8) 100%);
+    border-radius: 6px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    opacity: 0;
+    visibility: hidden; }
+    .mentor .mentor__img .list-inline li a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: end;
-      -webkit-align-items: flex-end;
-          -ms-flex-align: end;
-              align-items: flex-end;
-      -webkit-box-pack: space-evenly;
-      -webkit-justify-content: space-evenly;
-          -ms-flex-pack: space-evenly;
-              justify-content: space-evenly;
-      padding-bottom: 15px;
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(55.21%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.21%, rgba(0, 0, 0, 0.8) 100%);
-      border-radius: 6px;
-      -webkit-transition: all 0.2s linear;
-      transition: all 0.2s linear;
-      opacity: 0;
-      visibility: hidden; }
-      .mentor .mentor__img .list-inline li a {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        height: 36px;
-        width: 36px;
-        border-radius: 3px;
-        background-color: white;
-        -webkit-transition: 0.3s all linear;
-        transition: 0.3s all linear; }
-        .mentor .mentor__img .list-inline li a:hover {
-          background-color: #1089ff; }
-          .mentor .mentor__img .list-inline li a:hover svg path {
-            -webkit-transition: 0.3s all linear;
-            transition: 0.3s all linear;
-            fill: white; }
-  .mentor__title h6 a, .mentor__title .h6 a {
-    color: #42414b; }
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 36px;
+      width: 36px;
+      border-radius: 3px;
+      background-color: white;
+      -webkit-transition: 0.3s all linear;
+      transition: 0.3s all linear; }
+      .mentor .mentor__img .list-inline li a:hover {
+        background-color: #1089ff; }
+        .mentor .mentor__img .list-inline li a:hover svg path {
+          -webkit-transition: 0.3s all linear;
+          transition: 0.3s all linear;
+          fill: white; }
+
+.mentor__title h6 a, .mentor__title .h6 a {
+  color: #42414b; }
 
 .avatar01 {
   width: 122px;
@@ -15245,9 +15255,14 @@ header {
   .learning-rules-ends > img {
     height: 350px; }
   .mentor__img {
-    width: 270px;
+    width: 100%;
     height: 290px;
     margin: auto; }
+    .mentor__img img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
   .browse-categories__wrapper .slick-dots {
     margin-top: 0px; } }
 
@@ -15705,10 +15720,6 @@ header {
 
 .best-instructor-featured h3, .best-instructor-featured .h3 {
   color: #202029 !important; }
-
-.best-instructor-featured .mentor__img img {
-  width: 270px;
-  height: 290px; }
 
 .best-instructor-featured .ourinstructor__wrapper .slider-arrows .prev-arrow,
 .best-instructor-featured .ourinstructor__wrapper .slider-arrows .next-arrow {
