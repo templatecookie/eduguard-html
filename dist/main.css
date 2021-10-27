@@ -15777,7 +15777,6 @@ header {
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
   .get-started-item {
-    text-align: center;
     max-width: 500px; }
     .get-started-item h6, .get-started-item .h6 {
       color: #42414b;
