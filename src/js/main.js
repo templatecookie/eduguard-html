@@ -437,6 +437,8 @@ function menuClick(current) {
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1600,
     responsive: [
       {
         breakpoint: 1024,

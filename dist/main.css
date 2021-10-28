@@ -14074,16 +14074,16 @@ header {
 
 .testimonial__item {
   position: relative;
-  padding: 24px;
+  padding: 32px;
   border-radius: 5px;
   background-color: #fff;
   overflow: hidden;
   margin: 0px 15px; }
   .testimonial__item p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 27px;
     color: #666575;
-    margin-bottom: 16px; }
+    margin-bottom: 24px; }
 
 .testimonial__user-img {
   margin-right: 12px; }
@@ -14091,11 +14091,11 @@ header {
     border-radius: 50%; }
 
 .testimonial__user-info h6, .testimonial__user-info .h6 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #42414b;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500; }
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #202029;
+  font-family: 'Poppins', sans-serif; }
 
 .testimonial__item-star li {
   margin-right: 5px; }
@@ -14233,8 +14233,9 @@ header {
   .testimonial--two .testimonial__item p {
     text-align: center; } }
 
-.testimonial__slider--one .slick-dots {
-  margin-top: 30px; }
+@media (min-width: 1200px) {
+  .testimonial__slider--one .slick-dots {
+    margin-top: 30px; } }
 
 .ourinstructor {
   background-color: rgba(16, 137, 255, 0.05);
@@ -14965,7 +14966,7 @@ header {
     right: 65px;
     bottom: 36px; }
   .about-services-area {
-    margin-bottom: 120px; }
+    margin-bottom: 150px; }
   .about-services h3, .about-services .h3 {
     margin-bottom: 50px; }
   .about-services .testimonial__wrapper_item {
