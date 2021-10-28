@@ -42,7 +42,6 @@
       &-text {
         h6 {
           a {
-            // display: block;
             color: #202029;
           }
         }
@@ -75,7 +74,7 @@
     .rating-link {
       color: #202029;
       font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+      font-weight: 500;
       font-size: 16px;
       margin-right: 35px;
     }
@@ -156,7 +155,7 @@
           border: none;
           color: #666575;
           font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+          font-weight: 500;
           font-size: 16px;
         }
       }
@@ -247,8 +246,6 @@
       margin-bottom: 30px;
 
       &-content {
-        // padding: 18px 0px 26px 0px;
-
         h4 {
           margin-bottom: 10px;
         }
