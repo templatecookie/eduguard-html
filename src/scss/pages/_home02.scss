@@ -1,4 +1,5 @@
 // Banner Starts Here
+
 .brand-area-image {
   display: flex !important;
   align-items: center;
@@ -76,51 +77,49 @@
 
 .banner-input {
   display: flex;
-  width: 745px;
+  width: 575px;
   height: 65px;
   padding-left: 50px;
+  padding-right: 10px;
   position: relative;
   align-items: center;
+  justify-content: space-between;
   border-radius: 9px;
   background: #ffffff;
   box-shadow: 0px 32px 60px rgba(2, 100, 237, 0.08);
-
+  @include max(767px) {
+    width: 100%;
+  }
+  @include max(575px) {
+    padding-left: 10px;
+  }
   .main-input {
+    width: 315px;
+    @include max(480px) {
+      width: 100%;
+    }
     svg {
       color: #42414b;
       position: absolute;
       top: 50%;
       left: 20px;
       transform: translateY(-50%);
+      @include max(575px) {
+        display: none;
+      }
     }
 
     input {
+      width: inherit;
+      border: none;
+      font-size: 16px;
+      line-height: 24px;
       padding-left: 5px;
       padding-right: 15px;
-      width: 400px;
-      border: none;
-      color: #8f8fa3;
-      border-right: 1px solid #ebebf2;
-    }
-  }
-
-  .select-button {
-    padding-left: 25px;
-
-    button {
-      background-color: transparent !important;
-      border: none !important;
-      outline: none !important;
-      color: #666575;
-
-      svg {
-        color: #202029;
+      &::placeholder {
+        color: #8f8fa3;
       }
     }
-  }
-
-  .search-button {
-    padding-left: 30px;
   }
 }
 // Intro Featured Starts Here
@@ -199,6 +198,7 @@
     margin-top: 50px;
   }
 }
+
 // Popular Courses Starts Here
 .featured-popular-courses {
   &-heading {
@@ -321,6 +321,7 @@
     }
   }
 }
+
 // Instructor Featured Area Starts Here
 .best-instructor-featured {
   h3 {
@@ -335,6 +336,7 @@
     }
   }
 }
+
 // Latest Events Featured Starts Here
 .latest-events-featured {
   z-index: 1;
@@ -433,12 +435,6 @@
 // Responsive
 @media (max-width: 1200px) {
   // Homepage-01 Banner
-  .banner-input {
-    width: 680px;
-  }
-  .banner-input .main-input input {
-    width: 320px;
-  }
 
   .latest-events-featured .latest-events-shape img.shape-02 {
     bottom: 0px;
@@ -483,10 +479,8 @@
     justify-content: center;
     img {
       height: 450px;
+      object-fit: cover;
     }
-  }
-  .banner-input .main-input input {
-    padding-left: 15px;
   }
   .latest-events-featured .latest-events-shape img.shape-02 {
     bottom: 30px;
@@ -514,16 +508,6 @@
   }
 }
 
-@media (min-width: 991.99px) {
-  .banner-input {
-    .search-button {
-      button {
-        padding: 15px 32px !important;
-      }
-    }
-  }
-}
-
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-two {
@@ -533,28 +517,6 @@
     &-start {
       p {
         font-size: 16px;
-      }
-
-      .banner-input {
-        height: 60px;
-        width: 100% !important;
-        padding-left: 40px;
-
-        .search-button {
-          padding-right: 10px;
-          margin-left: auto;
-
-          .btn {
-            width: 100px;
-          }
-        }
-
-        .main-input {
-          input {
-            width: 360px;
-            border-right: 0px;
-          }
-        }
       }
     }
 
@@ -660,22 +622,6 @@
 }
 
 @media (max-width: 767px) {
-  // Homepage -01
-  .main-banner {
-    padding: 60px 0px;
-  }
-  .banner-input .select-button {
-    padding-left: 0px;
-  }
-  .banner-two-start .banner-input .search-button .btn {
-    width: 100%;
-  }
-  .banner-two-start .banner-input .search-button {
-    padding-left: 0px;
-  }
-  .banner-input .main-input input::placeholder {
-    font-size: 12px;
-  }
   // Testimonial => Homepage 02
   .students-says .testimonial__img .play-video {
     right: 50%;
@@ -709,30 +655,6 @@
 @media (min-width: 575px) and (max-width: 767px) {
   .banner-two {
     clip-path: none !important;
-
-    &-start {
-      .banner-input {
-        height: 60px;
-        width: 100% !important;
-        padding-left: 40px;
-
-        .search-button {
-          padding-right: 10px;
-          margin-left: auto;
-
-          .btn {
-            width: 100px;
-          }
-        }
-
-        .main-input {
-          input {
-            width: 100%;
-            border-right: 0px;
-          }
-        }
-      }
-    }
 
     &-end {
       .image-shapes {
@@ -856,33 +778,6 @@
     padding: 30px 0px;
     clip-path: none !important;
 
-    &-start {
-      .banner-input {
-        height: 60px;
-        width: 100% !important;
-        padding-left: 40px;
-
-        .search-button {
-          padding-right: 10px;
-
-          .btn {
-            width: 100px;
-          }
-        }
-
-        .main-input {
-          input {
-            width: 100%;
-            border-right: 0px;
-          }
-
-          svg {
-            left: 8px !important;
-          }
-        }
-      }
-    }
-
     &-end {
       .image-shapes {
         display: none;
@@ -998,30 +893,6 @@
   .banner-two {
     padding: 30px 0px;
     clip-path: none !important;
-
-    &-start {
-      .banner-input {
-        height: 60px;
-        width: 100% !important;
-        padding-left: 40px;
-
-        .search-button {
-          padding-right: 10px;
-          margin-left: auto;
-
-          .btn {
-            width: 100px;
-          }
-        }
-
-        .main-input {
-          input {
-            width: 100%;
-            border-right: 0px;
-          }
-        }
-      }
-    }
 
     &-end {
       .image-shapes {
