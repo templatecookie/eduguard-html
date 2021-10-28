@@ -75,16 +75,15 @@
 }
 
 .banner-input {
-  padding-left: 50px;
   display: flex;
-  align-items: center;
   width: 745px;
   height: 65px;
+  padding-left: 50px;
   position: relative;
-  // z-index: 555;
+  align-items: center;
+  border-radius: 9px;
   background: #ffffff;
   box-shadow: 0px 32px 60px rgba(2, 100, 237, 0.08);
-  border-radius: 9px;
 
   .main-input {
     svg {
@@ -231,13 +230,13 @@
       }
 
       .nav-link {
+        border: none;
+        font-size: 14px;
+        color: #666575;
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 24px;
-        border: none;
         background-color: transparent;
-        color: #666575;
-        font-size: 14px;
       }
     }
   }
@@ -308,12 +307,16 @@
     max-width: 430px;
 
     h4 {
-      font-size: 24px !important;
-      font-weight: 600 !important;
+      color: #202029;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 12px;
     }
 
     p {
-      font-size: 14px !important;
+      font-size: 14px;
+      line-height: 21px;
       color: #8f8fa3;
     }
   }
@@ -323,11 +326,6 @@
   h3 {
     color: #202029 !important;
   }
-
-  // .mentor__img img {
-  //   width: 270px;
-  //   height: 290px;
-  // }
   .ourinstructor__wrapper {
     .slider-arrows {
       .prev-arrow,
@@ -388,10 +386,10 @@
       content: '';
       width: 1px;
       height: 150px;
-      background-color: rgba($color: #8f8fa3, $alpha: 0.4);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      background-color: rgba($color: #8f8fa3, $alpha: 0.4);
     }
   }
 
@@ -411,24 +409,23 @@
 
 // Get Started Ends Here
 .green-btn {
-  text-transform: uppercase;
-  padding: 16px 24px;
-  background: #00af91;
-  border-radius: 3px;
   color: white;
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
+  padding: 16px 24px;
+  border-radius: 3px;
+  background: #00af91;
+  text-transform: uppercase;
   transition: 0.3s all linear;
 
   &:hover {
+    color: white;
     background: #0264ed;
     box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
-    color: white;
   }
 }
 
 // Responsive
-
 @media (max-width: 1200px) {
   // Homepage-01 Banner
   .banner-input {
@@ -783,8 +780,6 @@
   }
 
   .students-says {
-    // padding: 30px 0px;
-
     .testimonial__img {
       margin-bottom: 0;
       height: auto;
@@ -934,8 +929,6 @@
   }
 
   .students-says {
-    // padding: 30px 0px;
-
     .testimonial__img {
       height: auto;
       width: 100%;
@@ -1076,8 +1069,6 @@
   }
 
   .students-says {
-    // padding: 30px 0px;
-
     .testimonial__img {
       height: auto;
       width: 100%;
