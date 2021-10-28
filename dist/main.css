@@ -11227,14 +11227,6 @@ button:focus {
   .cardFeature:hover {
     -webkit-box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
             box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12); }
-    .cardFeature:hover .cardFeature__icon--bg-book {
-      background: #00af92; }
-    .cardFeature:hover .cardFeature__icon--bg-user {
-      background: #1089ff; }
-    .cardFeature:hover .cardFeature__icon--bg-clock {
-      background: #f15c4c; }
-    .cardFeature:hover .cardFeature__icon--bg-book svg, .cardFeature:hover .cardFeature__icon--bg-user svg, .cardFeature:hover .cardFeature__icon--bg-clock svg {
-      color: #fff; }
   .cardFeature__icon {
     width: 72px;
     height: 72px;
@@ -11280,6 +11272,14 @@ button:focus {
     line-height: 24px;
     color: #8f8fa3;
     font-weight: 400; }
+  .cardFeature--center {
+    text-align: center; }
+    .cardFeature--center .cardFeature__icon {
+      margin: auto;
+      margin-bottom: 32px; }
+      @media (max-width: 575px) {
+        .cardFeature--center .cardFeature__icon {
+          margin-bottom: 16px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .cardFeature {
@@ -15476,12 +15476,18 @@ header {
   padding: 0;
   position: relative;
   background-color: rgba(235, 235, 242, 0.6); }
+  @media (max-width: 1200px) {
+    .home-top-feature {
+      padding-bottom: 50px !important; } }
   .home-top-feature .shape {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
+    @media (max-width: 1200px) {
+      .home-top-feature .shape {
+        display: none; } }
 
 .banner-input {
   display: -webkit-box;

@@ -66,12 +66,18 @@
   padding: 0;
   position: relative;
   background-color: rgba(#ebebf2, 0.6);
+  @include max(1200px) {
+    padding-bottom: 50px !important;
+  }
   .shape {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    @include max(1200px) {
+      display: none;
+    }
   }
 }
 

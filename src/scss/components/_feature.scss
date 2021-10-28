@@ -9,26 +9,6 @@
   border: 1px solid #ebebf2;
   &:hover {
     box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
-
-    .cardFeature__icon {
-      &--bg-book {
-        background: rgba(0, 175, 146, 1);
-      }
-      &--bg-user {
-        background: rgba(16, 137, 255, 1);
-      }
-      &--bg-clock {
-        background: rgba(241, 92, 76, 1);
-      }
-
-      &--bg-book,
-      &--bg-user,
-      &--bg-clock {
-        svg {
-          color: #fff;
-        }
-      }
-    }
   }
   // card content
   &__icon {
@@ -77,6 +57,20 @@
     line-height: 24px;
     color: #8f8fa3;
     font-weight: 400;
+  }
+
+  &--center {
+    text-align: center;
+
+    .cardFeature {
+      &__icon {
+        margin: auto;
+        margin-bottom: 32px;
+        @include max(575px) {
+          margin-bottom: 16px;
+        }
+      }
+    }
   }
 }
 
