@@ -1,9 +1,13 @@
 .join {
   padding-top: 205px;
   padding-bottom: 195px;
+  @include max(767px) {
+    padding-top: 160px;
+    padding-bottom: 120px;
+  }
   &__overlay-img {
     position: absolute;
-    // pointer-events: none;
+    pointer-events: none;
     img {
       position: relative;
       z-index: 1;
@@ -114,11 +118,23 @@
       left: 136px;
     }
   }
-
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 16px;
+    @include max(767px) {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
   p {
     font-size: 18px;
     line-height: 27px;
     color: #666575;
+    @include max(991px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
