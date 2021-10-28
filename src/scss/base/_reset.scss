@@ -34,7 +34,6 @@ h6 {
 }
 
 body {
-  // font-family: $font;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   transition: 0.3s;
@@ -44,13 +43,14 @@ body {
 
 a {
   display: inline-block;
+  text-decoration: none;
 }
 
 a:focus,
 .button:focus {
-  text-decoration: none;
   outline: none;
   box-shadow: none !important;
+  text-decoration: none;
 }
 a {
   transition: 0.3s;
@@ -126,10 +126,6 @@ p {
 .mb-30 {
   margin-bottom: 30px;
 }
-
-// .footer--two {
-//   padding-top: 220px !important;
-// }
 
 .accordion-button:focus {
   border-color: transparent !important;

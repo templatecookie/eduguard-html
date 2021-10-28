@@ -80,7 +80,7 @@
       line-height: 24px;
       color: #42414b;
       font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+      font-weight: 500;
     }
 
     &-dropicon {
@@ -91,25 +91,25 @@
     }
     &-dropmenu {
       display: none;
-      background-color: #ecf6ff;
       padding: 15px 0;
       padding-left: 10px;
+      background-color: #ecf6ff;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       li {
         margin-bottom: 2px;
 
         a {
+          width: 100%;
           font-size: 16px;
           line-height: 24px;
           color: #42414b;
-          font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+          font-weight: 500;
           padding: 8px 0px;
           padding-left: 15px;
-          background-color: transparent !important;
           text-transform: capitalize;
-          width: 100%;
+          font-family: 'Poppins', sans-serif;
+          background-color: transparent !important;
           &:hover {
             background-color: rgba(16, 136, 255, 0.515) !important;
             color: #fff;
@@ -131,14 +131,14 @@
   position: fixed;
   top: 0;
   left: -420px;
-  background-color: #fff;
   width: 60px;
   height: 100vh;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  margin-bottom: auto;
   z-index: 999;
+  overflow-y: auto;
+  margin-bottom: auto;
+  scroll-behavior: smooth;
   transition: all 0.6s linear;
+  background-color: #fff;
   &.active {
     padding: 24px 15px;
     width: 400px;
@@ -147,13 +147,13 @@
 
   &__top {
     display: flex;
-    justify-content: flex-end;
     margin-bottom: 30px;
+    justify-content: flex-end;
     button {
+      border: 0;
       width: 30px;
       height: 30px;
       background: #ebebf2;
-      border: 0;
       svg {
         color: #202029;
       }
@@ -167,7 +167,7 @@
   .event-search-wizard-header h6,
   .event-search-wizard-header .h6 {
     font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+    font-weight: 600;
   }
   .price-range-block__inputWrapper input {
     width: 100px !important;

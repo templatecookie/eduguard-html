@@ -9,9 +9,9 @@
   text-align: center;
   text-transform: capitalize;
   font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+  font-weight: 500;
   transition: all 0.2s linear;
-
+  text-decoration: none;
   @media (max-width: 767px) {
     font-size: 14px;
     line-height: 24px;
@@ -23,7 +23,7 @@
     text-transform: uppercase;
     letter-spacing: 0.04em;
     font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+    font-weight: 600;
   }
   // medium buttons
   &-md {
@@ -125,7 +125,6 @@
   &--text {
     color: #202029;
     &:hover {
-      text-decoration: underline;
       color: #1089ff;
     }
   }
