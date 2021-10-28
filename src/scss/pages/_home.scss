@@ -9,6 +9,7 @@
     margin-right: -50px;
   }
 }
+
 // Homepage => Browse categories
 .browse-categories {
   position: relative;
@@ -23,46 +24,6 @@
     align-items: center;
     justify-content: center;
   }
-
-  // .default-item-one {
-  //   transition: 0.3s all linear;
-
-  //   &:hover {
-  //     border-color: rgba($color: #f15c4c, $alpha: 0.3) !important;
-  //   }
-  // }
-
-  // .default-item-two {
-  //   transition: 0.3s all linear;
-
-  //   &:hover {
-  //     border-color: rgba($color: #1089ff, $alpha: 0.3) !important;
-  //   }
-  // }
-
-  // .default-item-three {
-  //   transition: 0.3s all linear;
-
-  //   &:hover {
-  //     border-color: rgba($color: #ffc91b, $alpha: 0.3) !important;
-  //   }
-  // }
-
-  // .default-item-four {
-  //   transition: 0.3s all linear;
-
-  //   &:hover {
-  //     border-color: rgba($color: #00af91, $alpha: 0.3) !important;
-  //   }
-  // }
-
-  // .default-item-five {
-  //   transition: 0.3s all linear;
-
-  //   &:hover {
-  //     border-color: rgba($color: #ff7a1a, $alpha: 0.3) !important;
-  //   }
-  // }
 
   &-item {
     display: flex;
@@ -200,25 +161,56 @@
 
 // Learning Rules Starts Here
 .learning-rules {
+  &__wrapper {
+    margin-bottom: 40px;
+  }
   &-item {
-    margin-bottom: 8px;
     display: flex;
     flex-basis: 65px;
     align-items: center;
-
+    margin-bottom: 20px;
     .item-number {
-      flex-basis: 100px;
+      flex-shrink: 0;
+      width: 72px;
+      height: 72px;
+      margin-right: 16px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #1089ff14;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include max(480px) {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+      }
 
       span {
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 120px;
-        color: rgba($color: #00af91, $alpha: 0.1);
+        font-size: 22px;
+        line-height: 20px;
+        color: #1089ff;
+        font-weight: 600;
+        @include max(480px) {
+          font-size: 16px;
+          line-height: normal;
+        }
       }
     }
 
     .item-text {
+      h6 {
+        color: #202029;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-bottom: 6px;
+      }
+
       p {
+        font-size: 14px;
+        line-height: 21px;
+        color: #8f8fa3;
         max-width: 376px;
       }
     }
@@ -243,7 +235,7 @@
     &-circle {
       img {
         position: absolute;
-        left: 250px;
+        left: 220px;
         top: -48px;
       }
     }
@@ -255,14 +247,9 @@
       }
 
       .shape-1 {
-        top: 355px;
-        right: 40%;
+        top: 250px;
+        right: 20%;
         transform: translateX(-60%);
-      }
-
-      .shape-2 {
-        top: -110px;
-        right: -70px;
       }
     }
   }
@@ -276,11 +263,6 @@
     .shape-01 {
       top: 200px;
       left: 185px;
-    }
-
-    .shape-02 {
-      bottom: 55px;
-      left: 40px;
     }
   }
 }
@@ -506,14 +488,6 @@
     top: 0px;
     left: 0px;
   }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    top: -110px;
-    right: -15px;
-  }
-  .learning-rules-ends-circle img {
-    left: 130px;
-    top: -44px;
-  }
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
     top: 220px;
     right: 65%;
@@ -562,15 +536,7 @@
   .about-services__wrapper .slider-arrows .next-arrow {
     display: none !important;
   }
-  // Learning Rules section
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    height: 100%;
-  }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    top: 50%;
-    right: -20px;
-    transform: translateY(-50%);
-  }
+
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
     top: auto;
     right: auto;
@@ -602,11 +568,6 @@
       height: 450px;
     }
   }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    height: 450px;
-    top: 0px;
-    right: 30px;
-  }
 
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
     top: auto;
@@ -628,40 +589,15 @@
     right: 150px;
   }
 
-  .learning-rules-ends-circle img {
-    left: 50px;
-  }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    display: none;
-  }
-
-  .learning-rules-ends-circle img {
-    left: auto;
-    right: 0px;
-    transform: rotate(45deg);
-  }
-  .learning-rules-ends-circle img {
-    left: auto;
-    right: 45px;
-    transform: rotate(45deg);
-  }
-
   .learning-rules-starts h2,
   .learning-rules-starts .h2 {
     text-align: left;
   }
-  .learning-rules-item .item-number span {
-    font-size: 58px;
-    line-height: 68px;
-  }
-
   .learning-rules-ends {
     padding-left: 0px;
     margin-right: 0px;
   }
-  .learning-rules-item .item-number {
-    flex-basis: 65px;
-  }
+
   .learning-rules {
     overflow: hidden;
   }
@@ -929,43 +865,6 @@
     }
   }
 
-  .learning-rules {
-    &-item {
-      flex-direction: column;
-
-      .item-number {
-        margin-right: 0;
-      }
-
-      .item-text {
-        text-align: center;
-      }
-    }
-
-    &-shape {
-      display: none;
-    }
-
-    &-starts {
-      text-align: center;
-
-      .btn-primary {
-        margin-top: 20px;
-      }
-    }
-
-    &-ends {
-      margin-right: 0;
-      padding-left: 0;
-      margin-top: 30px;
-
-      .learning-rules-ends-circle,
-      .earning-rules-ends-shape {
-        display: none;
-      }
-    }
-  }
-
   .about-services {
     h3 {
       margin-bottom: 20px;
@@ -1158,20 +1057,6 @@
 
   .main-events-featured .event {
     margin-bottom: 15px;
-  }
-  // Learning rules
-  .learning-rules {
-    &-item {
-      align-items: flex-start;
-      .item-number {
-        flex-basis: 85px;
-      }
-    }
-  }
-
-  .learning-rules-ends-circle img,
-  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    display: none;
   }
   .learning-rules-ends > img {
     height: auto;

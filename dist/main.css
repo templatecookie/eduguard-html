@@ -14853,8 +14853,10 @@ header {
   top: 0px;
   right: 0px; }
 
+.learning-rules__wrapper {
+  margin-bottom: 40px; }
+
 .learning-rules-item {
-  margin-bottom: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14865,17 +14867,54 @@ header {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 20px; }
   .learning-rules-item .item-number {
-    -webkit-flex-basis: 100px;
-        -ms-flex-preferred-size: 100px;
-            flex-basis: 100px; }
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    margin-right: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #1089ff14;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (max-width: 480px) {
+      .learning-rules-item .item-number {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px; } }
     .learning-rules-item .item-number span {
-      font-weight: 700;
-      font-size: 96px;
-      line-height: 120px;
-      color: rgba(0, 175, 145, 0.1); }
+      font-size: 22px;
+      line-height: 20px;
+      color: #1089ff;
+      font-weight: 600; }
+      @media (max-width: 480px) {
+        .learning-rules-item .item-number span {
+          font-size: 16px;
+          line-height: normal; } }
+  .learning-rules-item .item-text h6, .learning-rules-item .item-text .h6 {
+    color: #202029;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 6px; }
   .learning-rules-item .item-text p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #8f8fa3;
     max-width: 376px; }
 
 .learning-rules-starts h2, .learning-rules-starts .h2 {
@@ -14892,19 +14931,16 @@ header {
   z-index: 2; }
   .learning-rules-ends-circle img {
     position: absolute;
-    left: 250px;
+    left: 220px;
     top: -48px; }
   .learning-rules-ends .earning-rules-ends-shape img {
     position: absolute;
     z-index: -2; }
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    top: 355px;
-    right: 40%;
+    top: 250px;
+    right: 20%;
     -webkit-transform: translateX(-60%);
             transform: translateX(-60%); }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    top: -110px;
-    right: -70px; }
 
 .learning-rules-shape img {
   position: absolute;
@@ -14913,10 +14949,6 @@ header {
 .learning-rules-shape .shape-01 {
   top: 200px;
   left: 185px; }
-
-.learning-rules-shape .shape-02 {
-  bottom: 55px;
-  left: 40px; }
 
 .about-services {
   background: rgba(235, 235, 242, 0.6);
@@ -15056,12 +15088,6 @@ header {
   .learning-rules-shape .shape-01 {
     top: 0px;
     left: 0px; }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    top: -110px;
-    right: -15px; }
-  .learning-rules-ends-circle img {
-    left: 130px;
-    top: -44px; }
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
     top: 220px;
     right: 65%; }
@@ -15092,13 +15118,6 @@ header {
   .about-services__wrapper .slider-arrows .prev-arrow,
   .about-services__wrapper .slider-arrows .next-arrow {
     display: none !important; }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    height: 100%; }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    top: 50%;
-    right: -20px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
     top: auto;
     right: auto;
@@ -15124,10 +15143,6 @@ header {
     margin-bottom: 30px; }
     .learning-rules-ends > img {
       height: 450px; }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    height: 450px;
-    top: 0px;
-    right: 30px; }
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
     top: auto;
     bottom: 0px;
@@ -15144,33 +15159,12 @@ header {
   .learning-rules-ends .earning-rules-ends-shape .shape-1 {
     left: auto;
     right: 150px; }
-  .learning-rules-ends-circle img {
-    left: 50px; }
-  .learning-rules-ends .earning-rules-ends-shape .shape-2 {
-    display: none; }
-  .learning-rules-ends-circle img {
-    left: auto;
-    right: 0px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
-  .learning-rules-ends-circle img {
-    left: auto;
-    right: 45px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
   .learning-rules-starts h2, .learning-rules-starts .h2,
   .learning-rules-starts .h2 {
     text-align: left; }
-  .learning-rules-item .item-number span {
-    font-size: 58px;
-    line-height: 68px; }
   .learning-rules-ends {
     padding-left: 0px;
     margin-right: 0px; }
-  .learning-rules-item .item-number {
-    -webkit-flex-basis: 65px;
-        -ms-flex-preferred-size: 65px;
-            flex-basis: 65px; }
   .learning-rules {
     overflow: hidden; }
   .learning-rules-shape .shape-02 {
@@ -15331,29 +15325,6 @@ header {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .learning-rules-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .learning-rules-item .item-number {
-      margin-right: 0; }
-    .learning-rules-item .item-text {
-      text-align: center; }
-  .learning-rules-shape {
-    display: none; }
-  .learning-rules-starts {
-    text-align: center; }
-    .learning-rules-starts .btn-primary {
-      margin-top: 20px; }
-  .learning-rules-ends {
-    margin-right: 0;
-    padding-left: 0;
-    margin-top: 30px; }
-    .learning-rules-ends .learning-rules-ends-circle,
-    .learning-rules-ends .earning-rules-ends-shape {
-      display: none; }
   .about-services h3, .about-services .h3 {
     margin-bottom: 20px; }
   .about-services-area {
@@ -15472,18 +15443,6 @@ header {
     padding: 24px 15px; }
   .main-events-featured .event {
     margin-bottom: 15px; }
-  .learning-rules-item {
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    .learning-rules-item .item-number {
-      -webkit-flex-basis: 85px;
-          -ms-flex-preferred-size: 85px;
-              flex-basis: 85px; }
-  .learning-rules-ends-circle img,
-  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    display: none; }
   .learning-rules-ends > img {
     height: auto; } }
 
