@@ -18,7 +18,6 @@
   }
 }
 
-// Homepage => Browse categories
 .browse-categories {
   position: relative;
 
@@ -153,6 +152,15 @@
     .shape-02 {
       right: 0px;
       bottom: 100px;
+    }
+  }
+}
+
+// Features
+.feature {
+  .cardFeature {
+    @include max(991px) {
+      margin-bottom: 16px;
     }
   }
 }

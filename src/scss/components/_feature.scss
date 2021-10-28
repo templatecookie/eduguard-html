@@ -1,13 +1,12 @@
 .cardFeature {
-  box-sizing: border-box;
-  position: relative;
+  padding: 32px;
   overflow: hidden;
-  background-color: #fff;
-  border: 1px solid #ebebf2;
-  padding: 30px 20px;
+  position: relative;
   border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
   transition: all 0.2s linear;
-  text-align: center;
+  border: 1px solid #ebebf2;
   &:hover {
     box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
 
@@ -35,14 +34,15 @@
   &__icon {
     width: 72px;
     height: 72px;
-    border-radius: 5px;
-    margin: auto;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    margin-bottom: 32px;
     justify-content: center;
     transition: all 0.2s linear;
-
+    @include max(575px) {
+      margin-bottom: 16px;
+    }
     &--bg-book {
       background: rgba(0, 175, 146, 0.1);
       svg {
@@ -66,11 +66,17 @@
   }
   // Fonts
   h5.font-title--xs {
-    margin-bottom: 4px;
+    color: #202029;
+    margin-bottom: 12px;
+    @include max(575px) {
+      margin-bottom: 6px;
+    }
   }
   p {
-    font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3;
+    font-weight: 400;
   }
 }
 

@@ -11214,17 +11214,16 @@ button:focus {
             transform: translateY(-50%); }
 
 .cardFeature {
+  padding: 32px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
   background-color: #fff;
-  border: 1px solid #ebebf2;
-  padding: 30px 20px;
-  border-radius: 5px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  text-align: center; }
+  border: 1px solid #ebebf2; }
   .cardFeature:hover {
     -webkit-box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
             box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12); }
@@ -11239,9 +11238,6 @@ button:focus {
   .cardFeature__icon {
     width: 72px;
     height: 72px;
-    border-radius: 5px;
-    margin: auto;
-    margin-bottom: 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -11250,12 +11246,17 @@ button:focus {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    border-radius: 5px;
+    margin-bottom: 32px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear; }
+    @media (max-width: 575px) {
+      .cardFeature__icon {
+        margin-bottom: 16px; } }
     .cardFeature__icon--bg-book {
       background: rgba(0, 175, 146, 0.1); }
       .cardFeature__icon--bg-book svg {
@@ -11269,9 +11270,15 @@ button:focus {
       .cardFeature__icon--bg-clock svg {
         color: #f15c4c; }
   .cardFeature h5.font-title--xs, .cardFeature .font-title--xs.h5 {
-    margin-bottom: 4px; }
+    color: #202029;
+    margin-bottom: 12px; }
+    @media (max-width: 575px) {
+      .cardFeature h5.font-title--xs, .cardFeature .font-title--xs.h5 {
+        margin-bottom: 6px; } }
   .cardFeature p {
-    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3;
     font-weight: 400; }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -13354,13 +13361,6 @@ header {
   .banner-two-start p {
     text-align: left; } }
 
-.feature .cardFeature {
-  margin-bottom: 24px !important; }
-
-@media (max-width: 991px) {
-  .feature {
-    margin: 0px !important; } }
-
 .join {
   padding-top: 205px;
   padding-bottom: 195px; }
@@ -14839,6 +14839,10 @@ header {
   .browse-categories-shape .shape-02 {
     right: 0px;
     bottom: 100px; }
+
+@media (max-width: 991px) {
+  .feature .cardFeature {
+    margin-bottom: 16px; } }
 
 .featured-popular-courses-shape .dot-06 {
   top: 200px;
