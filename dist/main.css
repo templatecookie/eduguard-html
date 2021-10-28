@@ -19826,33 +19826,69 @@ body {
   /*for firefox*/
   /*width: -ms-calc(100% - XXpx)  */ }
 
-.modal-header h5, .modal-header .h5 {
-  color: #202029 !important;
-  font-size: 24px !important; }
+.modal--rating .modal-header {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0px; }
+  .modal--rating .modal-header h5, .modal--rating .modal-header .h5 {
+    font-size: 18px;
+    line-height: 27px;
+    color: #202029;
+    text-transform: capitalize;
+    font-weight: 600; }
+  .modal--rating .modal-header .btn-close {
+    position: absolute;
+    top: 0;
+    margin-top: 6px;
+    right: 8px;
+    margin-left: 0px;
+    color: #42414b;
+    padding: 17px; }
 
-.modal form textarea {
-  height: 110px;
-  border: 1.2px solid rgba(143, 143, 163, 0.4);
-  resize: none;
-  margin-bottom: 20px;
-  padding-top: 16px;
-  border-radius: 4px;
-  padding-left: 20px; }
+.modal--rating .modal-body-rating {
+  padding: 30px 0px;
+  padding-bottom: 0px; }
+  .modal--rating .modal-body-rating p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500; }
+    .modal--rating .modal-body-rating p span {
+      color: #8f8fa3;
+      font-weight: 400; }
 
-.modal form label {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  color: #202029;
-  margin-bottom: 6px; }
-
-.modal-body-rating p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 18px !important;
-  color: #42414b !important; }
-  .modal-body-rating p span {
-    color: #8f8fa3 !important; }
+.modal--rating .modal-footer {
+  padding: 0px 30px;
+  padding-bottom: 40px; }
+  @media (max-width: 480px) {
+    .modal--rating .modal-footer {
+      padding: 0px 16px;
+      padding-bottom: 16px; } }
+  .modal--rating .modal-footer form textarea {
+    height: 110px;
+    border: 1.2px solid rgba(143, 143, 163, 0.4);
+    resize: none;
+    margin-bottom: 20px;
+    padding-top: 16px;
+    border-radius: 4px;
+    padding-left: 20px; }
+  .modal--rating .modal-footer form label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #202029;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 4px; }
 
 .error-area {
   position: relative;
