@@ -10409,6 +10409,10 @@ a:hover,
 .footer -menu li a:hover {
   text-decoration: none; }
 
+input:active, input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -12774,7 +12778,7 @@ button:focus {
   width: 100%;
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 9;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.699);
