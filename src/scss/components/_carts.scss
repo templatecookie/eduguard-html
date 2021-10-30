@@ -4,7 +4,7 @@
   background: #fff;
   border-radius: 8px;
   padding: 30px;
-  
+
   // price-content
   &__price {
     display: flex;
@@ -83,7 +83,7 @@
         }
         .total-price {
           font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+          font-weight: 400;
         }
       }
     }
@@ -97,7 +97,7 @@
     h6 {
       color: #202029;
       font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+      font-weight: 500;
       margin-bottom: 6px;
     }
   }
@@ -147,9 +147,9 @@
     }
     .productContent {
       display: flex;
+      padding: 15px 0px;
       align-items: center;
       border-bottom: 1px solid #ebebf2;
-      padding: 15px 0px;
       &:nth-child(1) {
         padding-top: 0px;
         flex-grow: 1;
@@ -160,48 +160,51 @@
       }
 
       &-item {
-        &:nth-child(1) {
-          margin-right: 12px;
-          width: 30%;
-        }
-        &:nth-child(2) {
-          width: 70%;
-        }
-
         // left side
         &__img {
           width: 130px;
           height: 100px;
+          flex-shrink: 0;
+          overflow: hidden;
+          margin-right: 12px;
+          border-radius: 4px;
+          @include max(767px) {
+            width: 100%;
+            margin: 0px;
+            height: 260px;
+            margin-bottom: 16px;
+          }
           img {
-            border-radius: 4px;
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
         }
         // right side
-        h6 {
-          a {
-            color: #202029;
-          }
-        }
-        p {
-          font-size: 12px;
-          line-height: 15px;
-          color: #8585a3;
-        }
-        .price {
-          display: flex;
-          align-items: center;
-          margin-top: 14px;
+        &__info {
           h6 {
-            color: #202029;
-            margin-right: 2px;
+            a {
+              color: #202029;
+            }
           }
           p {
             font-size: 12px;
             line-height: 15px;
             color: #8585a3;
+          }
+          .price {
+            display: flex;
+            align-items: center;
+            margin-top: 14px;
+            h6 {
+              color: #202029;
+              margin-right: 2px;
+            }
+            p {
+              font-size: 12px;
+              line-height: 15px;
+              color: #8585a3;
+            }
           }
         }
       }
@@ -221,11 +224,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .cart__includes-info .productContent-item:nth-child(1) {
-    width: auto;
-    margin-right: 0px;
-    margin-bottom: 15px;
-  }
+
   .cart__includes-info .productContent-item:nth-child(2) {
     width: 100%;
   }
