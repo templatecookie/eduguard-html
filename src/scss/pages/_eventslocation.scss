@@ -51,12 +51,16 @@
           color: #8f8fa3;
           text-transform: uppercase;
           font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+          font-weight: 500;
         }
 
         h6 {
           &.font-para--lg {
             color: #202029;
+          }
+          &.font-para--lg,
+          &.font-title--card {
+            font-weight: 400;
           }
         }
       }

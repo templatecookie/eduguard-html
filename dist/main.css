@@ -689,9 +689,9 @@ img.mfp-img {
       line-height: 28px; } }
 
 .font-title--card {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
   color: #202029; }
   @media (max-width: 767px) {
     .font-title--card {
@@ -10959,7 +10959,8 @@ button:focus {
       color: #ff7a1a;
       text-transform: capitalize; }
   .cart__checkout-process {
-    margin: 24px 0px; }
+    margin: 24px 0px;
+    margin-top: 16px; }
     .cart__checkout-process .time-left {
       font-size: 12px;
       line-height: 15px;
@@ -10981,17 +10982,18 @@ button:focus {
             -ms-flex-align: center;
                 align-items: center;
         padding: 12px 0px;
-        border-bottom: 1px solid #8f8fa3; }
+        border-bottom: 1px solid #ebebf2; }
         .cart__checkout-process ul li:nth-last-child(1) {
           border-color: transparent; }
+        .cart__checkout-process ul li p:nth-child(1), .cart__checkout-process ul li p:nth-last-child(1) {
+          font-size: 14px;
+          line-height: 21px;
+          text-transform: capitalize; }
+        .cart__checkout-process ul li p:nth-child(1) {
+          color: #666575;
+          font-weight: 500; }
         .cart__checkout-process ul li p:nth-last-child(1) {
-          font-size: 16px;
-          line-height: 24px;
-          color: #8585a3; }
-        .cart__checkout-process ul li p:nth-last-child(2) {
-          font-size: 16px;
-          line-height: 24px;
-          color: #666575; }
+          color: #8f8fa3; }
         .cart__checkout-process ul li:nth-last-child(1) p:nth-last-child(2),
         .cart__checkout-process ul li .total-price {
           font-size: 20px !important;
@@ -11036,8 +11038,7 @@ button:focus {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column;
-      margin-top: 16px; }
+              flex-direction: column; }
       .cart__includes-info ul li {
         display: -webkit-box;
         display: -webkit-flex;
@@ -11046,8 +11047,7 @@ button:focus {
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
-                align-items: center;
-        margin-bottom: 12px; }
+                align-items: center; }
         .cart__includes-info ul li:nth-last-child(1) {
           margin-bottom: 0px; }
         .cart__includes-info ul li span {
@@ -18089,8 +18089,17 @@ header {
   padding-bottom: 100px;
   padding-top: 0px; }
   .event-info-main .image {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
     margin-top: 35px;
-    margin-bottom: 70px; }
+    border-radius: 8px;
+    margin-bottom: 50px; }
+    .event-info-main .image img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
   .event-info .courseCard--wrapper {
     margin-top: -110px; }
   .event-info .eventCard--wrapper {
@@ -18336,10 +18345,12 @@ header {
   .event-speaker-image {
     height: 175px;
     width: 175px;
+    overflow: hidden;
+    border-radius: 50%;
     margin-bottom: 12px; }
     .event-speaker-image img {
-      max-width: 100%;
-      border-radius: 50%;
+      width: 100%;
+      height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
   .event-speaker-info h6 a, .event-speaker-info .h6 a {
@@ -18437,6 +18448,8 @@ header {
       font-weight: 500; }
     .events-location-text .text-item-end h6.font-para--lg, .events-location-text .text-item-end .font-para--lg.h6 {
       color: #202029; }
+    .events-location-text .text-item-end h6.font-para--lg, .events-location-text .text-item-end .font-para--lg.h6, .events-location-text .text-item-end h6.font-title--card, .events-location-text .text-item-end .font-title--card.h6 {
+      font-weight: 400; }
 
 @media (max-width: 420px) {
   .events-location-map iframe {

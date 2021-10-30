@@ -34,10 +34,11 @@
       }
     }
   }
+
   // checkout process
   &__checkout-process {
     margin: 24px 0px;
-
+    margin-top: 16px;
     .time-left {
       font-size: 12px;
       line-height: 15px;
@@ -52,22 +53,25 @@
         justify-content: space-between;
         align-items: center;
         padding: 12px 0px;
-        border-bottom: 1px solid #8f8fa3;
+        border-bottom: 1px solid #ebebf2;
 
         &:nth-last-child(1) {
           border-color: transparent;
         }
 
         p {
+          &:nth-child(1),
           &:nth-last-child(1) {
-            font-size: 16px;
-            line-height: 24px;
-            color: #8585a3;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: capitalize;
           }
-          &:nth-last-child(2) {
-            font-size: 16px;
-            line-height: 24px;
+          &:nth-child(1) {
             color: #666575;
+            font-weight: 500;
+          }
+          &:nth-last-child(1) {
+            color: #8f8fa3;
           }
         }
 
@@ -101,6 +105,7 @@
       margin-bottom: 6px;
     }
   }
+
   // includes contents
   &__includes-info {
     padding: 24px 0px;
@@ -125,11 +130,9 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 16px;
       li {
         display: flex;
         align-items: center;
-        margin-bottom: 12px;
         &:nth-last-child(1) {
           margin-bottom: 0px;
         }
@@ -210,6 +213,7 @@
       }
     }
   }
+
   &__share-content {
     padding-top: 24px;
     h6 {
