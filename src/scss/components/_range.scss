@@ -17,6 +17,9 @@
 .ui-widget-header {
   background: linear-gradient(90deg, #1089ff -41.03%, #0264ed 371.15%);
 }
+.price-range-block__inputWrapper {
+  justify-content: space-between;
+}
 
 .price-range-search {
   width: 40.5%;
@@ -100,11 +103,6 @@
 }
 
 @media (max-width: 1199px) {
-  .event-search-wizard-item {
-    &.price-range {
-      justify-content: center;
-    }
-  }
   .price-range-block__inputWrapper {
     input {
       width: 80px !important;

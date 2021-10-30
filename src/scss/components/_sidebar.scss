@@ -160,15 +160,15 @@
     }
   }
 
-  .event-search-wizard {
-    background-color: #ebebf2;
-    margin-bottom: 15px !important;
+  &__wrapper {
+    .accordion {
+      &-item {
+        padding: 0px !important;
+        margin-bottom: 10px !important;
+      }
+    }
   }
-  .event-search-wizard-header h6,
-  .event-search-wizard-header .h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-  }
+
   .price-range-block__inputWrapper input {
     width: 100px !important;
   }
