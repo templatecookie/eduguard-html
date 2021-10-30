@@ -28,14 +28,14 @@
         margin-right: 12px;
 
         a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
           height: 50px;
           width: 50px;
-          border-radius: 50%;
-          background-color: white;
+          display: flex;
           color: #202029;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
         }
       }
 
@@ -72,10 +72,9 @@
 
   &-end {
     .rating-link {
-      color: #202029;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 500;
       font-size: 16px;
+      color: #202029;
+      font-weight: 500;
       margin-right: 35px;
     }
   }
@@ -750,10 +749,6 @@
 }
 
 @media (max-width: 574px) {
-  .course-instructor {
-    padding: 0px !important;
-  }
-
   .coursedescription-header-start .topic-info {
     margin-left: 0px;
   }
