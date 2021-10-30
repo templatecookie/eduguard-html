@@ -16869,9 +16869,32 @@ header {
   border-radius: 6px; }
   @media (max-width: 575px) {
     .students-info-intro {
-      padding-bottom: 0px;
-      padding-left: 0px;
-      padding-right: 0px; } }
+      padding-bottom: 0px; } }
+  .students-info-intro__profile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 991px) {
+      .students-info-intro__profile {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .students-info-intro__profile > div {
+      width: 50%; }
+      @media (max-width: 991px) {
+        .students-info-intro__profile > div {
+          width: 100%; } }
   .students-info-intro-start {
     display: -webkit-box;
     display: -webkit-flex;
@@ -16884,6 +16907,7 @@ header {
     position: relative; }
     @media (max-width: 991px) {
       .students-info-intro-start {
+        margin-bottom: 30px;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
@@ -16953,13 +16977,31 @@ header {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
+      .students-info-intro-end {
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; } }
+    @media (max-width: 380px) {
       .students-info-intro-end {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
                 flex-direction: column; } }
+    @media (max-width: 480px) {
+      .students-info-intro-end .enrolled-courses,
+      .students-info-intro-end .completed-courses {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 50%; } }
+    @media (max-width: 380px) {
+      .students-info-intro-end .enrolled-courses,
+      .students-info-intro-end .completed-courses {
+        margin-bottom: 16px; } }
     .students-info-intro-end .enrolled-courses-icon,
     .students-info-intro-end .completed-courses-icon {
       height: 64px;
@@ -16985,18 +17027,14 @@ header {
           -ms-flex-pack: center;
               justify-content: center;
       background-color: rgba(16, 137, 255, 0.1); }
-      @media (max-width: 575px) {
+      @media (max-width: 480px) {
         .students-info-intro-end .enrolled-courses-icon,
         .students-info-intro-end .completed-courses-icon {
-          margin-right: 0px; } }
-    @media (max-width: 575px) {
-      .students-info-intro-end .enrolled-courses,
-      .students-info-intro-end .completed-courses {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
+          margin-right: 0px;
+          margin-bottom: 16px; } }
+    @media (max-width: 480px) {
+      .students-info-intro-end .enrolled-courses-text,
+      .students-info-intro-end .completed-courses-text {
         text-align: center; } }
     .students-info-intro-end .enrolled-courses {
       display: -webkit-box;
@@ -17012,9 +17050,6 @@ header {
       @media (max-width: 767px) {
         .students-info-intro-end .enrolled-courses {
           padding-right: 0px; } }
-      @media (max-width: 575px) {
-        .students-info-intro-end .enrolled-courses {
-          margin-bottom: 16px; } }
       .students-info-intro-end .enrolled-courses-text h5, .students-info-intro-end .enrolled-courses-text .h5 {
         line-height: 36px; }
       .students-info-intro-end .enrolled-courses-text p {
@@ -17193,17 +17228,6 @@ header {
     right: -50px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .students-info-intro-start {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .students-info-intro-start .image {
-      margin-right: 0;
-      margin-bottom: 20px; }
-    .students-info-intro-start .text p {
-      text-align: center; }
   .students-info-intro-end {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -17252,8 +17276,6 @@ header {
 @media (max-width: 767px) {
   .students-info-intro {
     margin-top: 0px; }
-  .students-info-intro-start {
-    padding-bottom: 30px; }
   .change-image-wizard .image {
     width: 120px !important;
     height: 120px !important; }
@@ -17314,39 +17336,6 @@ header {
 @media (max-width: 420px) {
   .students-info {
     padding-bottom: 30px; }
-  .students-info-intro-end {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0; }
-    .students-info-intro-end .enrolled-courses {
-      padding: 0;
-      border-right: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .enrolled-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .enrolled-courses-text {
-        margin-top: 10px;
-        text-align: center; }
-    .students-info-intro-end .completed-courses {
-      margin-top: 15px;
-      padding: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .students-info-intro-end .completed-courses-icon {
-        margin-right: 0; }
-      .students-info-intro-end .completed-courses-text {
-        margin-top: 10px;
-        text-align: center; }
   .students-info-main .nav-tabs {
     padding: 0; }
     .students-info-main .nav-tabs .nav-link {

@@ -8,14 +8,29 @@
     border-radius: 6px;
     @include max(575px) {
       padding-bottom: 0px;
-      padding-left: 0px;
-      padding-right: 0px;
     }
+
+    &__profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include max(991px) {
+        flex-direction: column;
+      }
+      & > div {
+        width: 50%;
+        @include max(991px) {
+          width: 100%;
+        }
+      }
+    }
+
     &-start {
       display: flex;
       align-items: center;
       position: relative;
       @include max(991px) {
+        margin-bottom: 30px;
         justify-content: center;
       }
 
@@ -80,13 +95,24 @@
         padding-left: 0px;
         justify-content: center;
       }
+      @include max(767px) {
+        justify-content: space-around;
+      }
 
-      @include max(575px) {
+      @include max(380px) {
         flex-direction: column;
       }
 
       .enrolled-courses,
       .completed-courses {
+        @include max(480px) {
+          flex-direction: column;
+          width: 50%;
+        }
+        @include max(380px) {
+          margin-bottom: 16px;
+        }
+
         &-icon {
           height: 64px;
           width: 64px;
@@ -101,14 +127,16 @@
           justify-content: center;
           background-color: rgba($color: #1089ff, $alpha: 0.1);
 
-          @include max(575px) {
+          @include max(480px) {
             margin-right: 0px;
+            margin-bottom: 16px;
           }
         }
 
-        @include max(575px) {
-          flex-direction: column;
-          text-align: center;
+        &-text {
+          @include max(480px) {
+            text-align: center;
+          }
         }
       }
 
@@ -119,9 +147,6 @@
         padding-right: 30px;
         @include max(767px) {
           padding-right: 0px;
-        }
-        @include max(575px) {
-          margin-bottom: 16px;
         }
         &-text {
           h5 {
@@ -310,7 +335,6 @@
 }
 
 // Responsive
-
 @media (max-width: 1200px) {
   .students-info {
     padding-top: 0px;
@@ -343,21 +367,6 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .students-info-intro-start {
-    flex-direction: column;
-
-    .image {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-
-    .text {
-      p {
-        text-align: center;
-      }
-    }
-  }
-
   .students-info-intro-end {
     justify-content: space-around;
     padding: 0;
@@ -428,9 +437,6 @@
 @media (max-width: 767px) {
   .students-info-intro {
     margin-top: 0px;
-  }
-  .students-info-intro-start {
-    padding-bottom: 30px;
   }
   .change-image-wizard .image {
     width: 120px !important;
@@ -513,41 +519,6 @@
 @media (max-width: 420px) {
   .students-info {
     padding-bottom: 30px;
-  }
-
-  .students-info-intro-end {
-    flex-direction: column;
-    padding: 0;
-
-    .enrolled-courses {
-      padding: 0;
-      border-right: 0;
-      flex-direction: column;
-
-      &-icon {
-        margin-right: 0;
-      }
-
-      &-text {
-        margin-top: 10px;
-        text-align: center;
-      }
-    }
-
-    .completed-courses {
-      margin-top: 15px;
-      padding: 0;
-      flex-direction: column;
-
-      &-icon {
-        margin-right: 0;
-      }
-
-      &-text {
-        margin-top: 10px;
-        text-align: center;
-      }
-    }
   }
 
   .students-info-main .nav-tabs {
