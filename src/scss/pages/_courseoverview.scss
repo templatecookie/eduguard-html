@@ -17,8 +17,8 @@
 
     h6 {
       font-size: 18px;
-      font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+
+      font-weight: 600;
       a {
         color: #42414b !important;
         display: block;
@@ -48,18 +48,19 @@
 // Course-Overview Starts Here
 .course-overview {
   &-image {
-    overflow: hidden;
-    padding-top: 35px;
-    margin-bottom: 70px;
     width: 750px;
     height: 450px;
+    overflow: hidden;
+    padding-top: 35px;
+    border-radius: 8px;
     position: relative;
     border-radius: 8px;
+    margin-bottom: 50px;
 
     img {
-      max-width: 100%;
+      width: inherit;
+      height: inherit;
       object-fit: cover;
-      border-radius: 8px;
     }
 
     .play-button {
@@ -81,22 +82,22 @@
         position: relative;
         &::after {
           content: '';
-          position: absolute;
-          bottom: -1px;
           left: 0;
-          background-color: #0264ed;
           width: 100%;
+          bottom: -1px;
           height: 3px;
+          position: absolute;
+          background-color: #0264ed;
         }
       }
 
       .nav-link {
         color: #666575;
         border: none;
-        background-color: transparent;
         padding-left: 0;
         padding-right: 0;
         margin-right: 30px;
+        background-color: transparent;
       }
     }
   }
@@ -108,11 +109,9 @@
       h6 {
         color: #42414b;
         margin-bottom: 16px;
-        font-family: 'Poppins', sans-serif;
         font-weight: 600;
       }
       p {
-        font-family: 'Poppins', sans-serif;
         font-weight: 400;
         color: #8f8fa3;
       }
@@ -297,9 +296,6 @@
 }
 
 @media (max-width: 1200px) {
-  .course-overview-image {
-    padding-top: 0px;
-  }
   .event-info .courseCard--wrapper {
     margin-top: 0px;
   }

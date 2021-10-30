@@ -1,5 +1,5 @@
 .event-sub-section {
-  padding-top: 25px;
+  padding-top: 50px;
   padding-bottom: 35px;
   background-color: rgba($color: #ffffff, $alpha: 0.4);
 
@@ -8,7 +8,7 @@
   }
 
   &-main {
-    margin-top: 60px;
+    margin-top: 20px;
 
     h5 {
       margin-bottom: 24px;
@@ -27,7 +27,7 @@
 
         h6 {
           color: #42414b !important;
-          font-family: 'Poppins', sans-serif;
+
           font-weight: 500;
           font-size: 24px !important;
         }
@@ -115,22 +115,21 @@
       }
 
       .nav-link.active {
-        border-bottom: 3px solid #0264ed;
         z-index: 5;
         color: #202029;
+        border-bottom: 3px solid #0264ed;
       }
 
       .nav-link {
-        font-size: 16px;
-        line-height: 24px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        color: #666575;
         border: 0;
         padding: 0;
-        background-color: transparent;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #666575;
         padding-bottom: 12px;
         margin-right: 25px;
+        background-color: transparent;
       }
     }
   }
@@ -140,7 +139,6 @@
 
     #nav-overview {
       h6 {
-        font-family: 'Poppins', sans-serif;
         font-weight: 600;
       }
 
@@ -174,10 +172,6 @@
 // Responsive
 
 @media (max-width: 420px) {
-  .event-sub-section-main {
-    margin-top: 30px;
-  }
-
   .event-sub-section-main .event-time-item {
     height: 60px;
     width: 60px;
@@ -222,10 +216,6 @@
 
 // Small devices 420px - 574px
 @media (min-width: 420px) and (max-width: 574px) {
-  .event-sub-section-main {
-    margin-top: 30px;
-  }
-
   .event-sub-section-main .event-time-item {
     height: 60px;
     width: 60px;
@@ -284,10 +274,6 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-  .event-sub-section-main {
-    margin-top: 30px;
-  }
-
   .event-time {
     margin-bottom: 20px;
   }
@@ -360,10 +346,6 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .event-sub-section-main {
-    margin-top: 50px;
-  }
-
   .event-time {
     margin-bottom: 20px;
   }
