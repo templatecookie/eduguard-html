@@ -17658,11 +17658,9 @@ header {
     font-size: 14px;
     line-height: 24px; } }
 
-.eventsearch-sub-section {
-  padding-bottom: 90px !important; }
-
 .event-search {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  padding-top: 0px; }
   .event-search-wizard {
     margin-bottom: 30px;
     border-radius: 5px;
@@ -17878,8 +17876,6 @@ header {
     width: 55px; }
   .event-search-wizard-item-start .price-inputs-two {
     width: 100px; }
-  .eventsearch-sub-section {
-    padding-bottom: 60px !important; }
   .event-search-results-heading {
     margin-bottom: 10px;
     margin-top: 10px; }
@@ -17898,8 +17894,6 @@ header {
 @media (min-width: 420px) and (max-width: 574px) {
   .event-search {
     padding-bottom: 30px; }
-  .eventsearch-sub-section {
-    padding-bottom: 60px !important; }
   .event-search-results-heading {
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -17916,8 +17910,6 @@ header {
 @media (min-width: 575px) and (max-width: 767px) {
   .event-search {
     padding-bottom: 30px; }
-  .eventsearch-sub-section {
-    padding-bottom: 60px !important; }
   .event-search-results-heading {
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -17934,8 +17926,6 @@ header {
 @media (min-width: 768px) and (max-width: 991px) {
   .event-search {
     padding-bottom: 30px; }
-  .eventsearch-sub-section {
-    padding-bottom: 60px !important; }
   .event-search-results-heading {
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -17952,8 +17942,6 @@ header {
 @media (min-width: 992px) and (max-width: 1200px) {
   .event-search {
     padding-bottom: 50px; }
-  .eventsearch-sub-section {
-    padding-bottom: 70px !important; }
   .event-search-pagination {
     margin-top: 50px; }
   .event-search-wizard-item-start .price-inputs-one {
@@ -17964,10 +17952,6 @@ header {
 @media (max-width: 991px) {
   .pagination {
     margin: 30px 0px; } }
-
-@media (max-width: 767px) {
-  .event-sub-section {
-    padding-bottom: 30px !important; } }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .eventCount {
@@ -18000,8 +17984,10 @@ header {
 
 .event-sub-section {
   padding-top: 25px;
-  padding-bottom: 35px !important;
+  padding-bottom: 35px;
   background-color: rgba(255, 255, 255, 0.4); }
+  .event-sub-section--spaceY {
+    padding-bottom: 70px; }
   .event-sub-section-main {
     margin-top: 60px; }
     .event-sub-section-main h5, .event-sub-section-main .h5 {
@@ -18128,8 +18114,6 @@ header {
     margin-bottom: 10px; }
     .event-sub-section-main .icon-with-date-start {
       margin-bottom: 5px; }
-  .event-sub-section {
-    padding-bottom: 25px; }
   .event-info-main .image {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -18158,8 +18142,6 @@ header {
     margin-bottom: 10px; }
     .event-sub-section-main .icon-with-date-start {
       margin-bottom: 5px; }
-  .event-sub-section {
-    padding-bottom: 25px; }
   .event-info-main .image {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -18184,8 +18166,6 @@ header {
     margin-top: 30px; }
   .event-time {
     margin-bottom: 20px; }
-  .event-sub-section {
-    padding-bottom: 25px; }
   .event-info-main .image {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -18209,8 +18189,6 @@ header {
     margin-top: 30px; }
   .event-time {
     margin-bottom: 20px; }
-  .event-sub-section {
-    padding-bottom: 25px; }
   .event-info-main .image {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -18234,8 +18212,6 @@ header {
     margin-top: 50px; }
   .event-time {
     margin-bottom: 20px; }
-  .event-sub-section {
-    padding-bottom: 25px; }
   .event-info-main .image {
     margin-top: 30px;
     margin-bottom: 30px; }
