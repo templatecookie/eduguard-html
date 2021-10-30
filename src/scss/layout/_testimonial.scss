@@ -48,7 +48,8 @@
   // Homepage-03
   &--two {
     .testimonial__item {
-      border: 2px solid #ebebf2;
+      padding: 22px;
+      border: 1px solid #ebebf2;
       &-star {
         margin-bottom: 11px;
       }
@@ -182,18 +183,18 @@
       }
     }
 
-    &--two {
-      .testimonial {
-        &__item-star {
-          justify-content: center;
-        }
-        &__item {
-          p {
-            text-align: center;
-          }
-        }
-      }
-    }
+    // &--two {
+    //   .testimonial {
+    //     // &__item-star {
+    //     //   justify-content: center;
+    //     // }
+    //     &__item {
+    //       p {
+    //         text-align: center;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 

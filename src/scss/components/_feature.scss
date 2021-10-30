@@ -9,6 +9,37 @@
   border: 1px solid #ebebf2;
   &:hover {
     box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
+
+    .cardFeature__icon {
+      &--bg-g,
+      &--bg-b,
+      &--bg-r {
+        svg {
+          color: #fff !important;
+        }
+      }
+
+      &--bg-g {
+        background: rgba(0, 175, 146, 1);
+        svg {
+          color: #fff;
+        }
+      }
+
+      &--bg-b {
+        background: rgba(16, 137, 255, 1);
+        svg {
+          color: #1089ff;
+        }
+      }
+
+      &--bg-r {
+        background: rgba(241, 92, 76, 1);
+        svg {
+          color: #f15c4c;
+        }
+      }
+    }
   }
   // card content
   &__icon {
@@ -23,21 +54,21 @@
     @include max(575px) {
       margin-bottom: 16px;
     }
-    &--bg-book {
+    &--bg-g {
       background: rgba(0, 175, 146, 0.1);
       svg {
         color: #00af91;
       }
     }
 
-    &--bg-user {
+    &--bg-b {
       background: rgba(16, 137, 255, 0.1);
       svg {
         color: #1089ff;
       }
     }
 
-    &--bg-clock {
+    &--bg-r {
       background: rgba(241, 92, 76, 0.1);
       svg {
         color: #f15c4c;
