@@ -20829,7 +20829,6 @@ body {
         font-size: 18px;
         line-height: 27px;
         color: #42414b;
-        font-family: 'Poppins', sans-serif;
         font-weight: 500; }
       .instructor-course-info-rating .text p {
         font-size: 12px;
@@ -20859,7 +20858,6 @@ body {
       margin-top: 10px; }
       .instructor-course-info-students .text h6, .instructor-course-info-students .text .h6 {
         color: #42414b !important;
-        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 18px; }
       .instructor-course-info-students .text p {
@@ -20889,7 +20887,6 @@ body {
       margin-top: 10px; }
       .instructor-course-info-courses .text h6, .instructor-course-info-courses .text .h6 {
         color: #42414b !important;
-        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 18px; }
       .instructor-course-info-courses .text p {
@@ -20945,7 +20942,6 @@ body {
     .instructor-qualification .qualification-info-title h6, .instructor-qualification .qualification-info-title .h6 {
       margin-bottom: 0 !important;
       color: rgba(66, 65, 75, 0.9) !important;
-      font-family: 'Poppins', sans-serif;
       font-weight: 500;
       font-size: 14px !important; }
     .instructor-qualification .qualification-info-title p {
@@ -20956,7 +20952,6 @@ body {
   border-bottom: 1px solid #ffffff; }
   .instructor-tabs-pills .nav-item .active {
     color: #202029 !important;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
     position: relative; }
@@ -20972,7 +20967,6 @@ body {
   .instructor-tabs-pills .nav-item .nav-link {
     background-color: transparent !important;
     color: #666575;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
     border: none !important;
@@ -21010,7 +21004,6 @@ body {
   .rating-number h2, .rating-number .h2 {
     font-size: 56px;
     line-height: 70px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #42414b; }
   .rating-number h6, .rating-number .h6 {
@@ -21087,11 +21080,9 @@ body {
     margin-bottom: 15px; }
     .students-feedback-heading h5, .students-feedback-heading .h5 {
       color: #42414b;
-      font-family: 'Poppins', sans-serif;
       font-weight: 600; }
       .students-feedback-heading h5 span, .students-feedback-heading .h5 span {
         color: #8f8fa3;
-        font-family: 'Poppins', sans-serif;
         font-weight: 400; }
     .students-feedback-heading .right {
       display: -webkit-box;
@@ -21104,7 +21095,6 @@ body {
               align-items: center; }
       .students-feedback-heading .right h6, .students-feedback-heading .right .h6 {
         color: #42414b;
-        font-family: 'Poppins', sans-serif;
         font-weight: 500; }
       .students-feedback-heading .right .dropdown .btn {
         font-size: 14px !important;
@@ -21136,18 +21126,22 @@ body {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; }
+        @media (max-width: 575px) {
+          .students-feedback-item .feedback-rating-start {
+            margin-bottom: 16px; } }
         .students-feedback-item .feedback-rating-start .image {
           height: 50px;
-          width: 50px; }
+          width: 50px;
+          border-radius: 50%;
+          overflow: hidden; }
           .students-feedback-item .feedback-rating-start .image img {
-            border-radius: 50%;
-            max-width: 100%;
+            width: inherit;
+            height: inherit;
             -o-object-fit: cover;
                object-fit: cover; }
         .students-feedback-item .feedback-rating-start .text {
           margin-left: 12px; }
           .students-feedback-item .feedback-rating-start .text h6, .students-feedback-item .feedback-rating-start .text .h6 {
-            font-family: 'Poppins', sans-serif;
             font-weight: 600; }
             .students-feedback-item .feedback-rating-start .text h6 a, .students-feedback-item .feedback-rating-start .text .h6 a {
               color: #42414b; }
@@ -21171,13 +21165,11 @@ body {
   background-color: white;
   padding: 30px; }
   .feedback-comment h6, .feedback-comment .h6 {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-bottom: 12px; }
   .feedback-comment span {
     font-size: 14px;
     line-height: 21px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #42414b;
     margin-bottom: 6px; }
@@ -21188,7 +21180,6 @@ body {
       line-height: 21px;
       color: #42414b;
       margin-bottom: 5px;
-      font-family: 'Poppins', sans-serif;
       font-weight: 500; }
     .feedback-comment form textarea {
       margin-bottom: 20px;
