@@ -18995,8 +18995,11 @@ header {
   .course-overview-content {
     padding-bottom: 10px; } }
 
+.course-description .nav {
+  padding: 0px 30px; }
+
 .coursedescription-header {
-  padding: 20px 50px;
+  padding: 30px 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19130,11 +19133,12 @@ header {
   .course-description-start {
     padding-right: 5px; }
     .course-description-start-content {
-      padding: 18px 30px 26px 30px;
       background: #ffffff;
+      padding: 18px 0px 26px 0px;
       border-radius: 0px 0px 8px 8px; }
-      .course-description-start-content h5, .course-description-start-content .h5 {
+      .course-description-start-content h5.font-title--sm, .course-description-start-content .font-title--sm.h5 {
         color: #202029;
+        padding: 0px 30px;
         margin-bottom: 20px; }
       .course-description-start-content-tab .active {
         color: #202029 !important;
@@ -19159,7 +19163,8 @@ header {
         font-weight: 500;
         font-size: 16px; }
       .course-description-start-content-tabitem {
-        margin-top: 20px; }
+        margin-top: 30px;
+        padding: 0px 30px; }
         .course-description-start-content-tabitem .lesson-description {
           max-width: 800px; }
           .course-description-start-content-tabitem .lesson-description p {
