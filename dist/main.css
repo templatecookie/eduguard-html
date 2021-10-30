@@ -11520,7 +11520,6 @@ button:focus {
         -ms-flex-order: 3;
             order: 3;
     width: 100%;
-    text-align: center;
     margin-top: 30px !important; }
   .event-search-results-heading #filter {
     font-size: 0px;
