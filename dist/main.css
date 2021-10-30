@@ -10527,6 +10527,9 @@ button:focus {
     background: rgba(255, 255, 255, 0.3); }
   .section .font-title--md {
     margin-bottom: 50px; }
+    @media (max-width: 767px) {
+      .section .font-title--md {
+        margin-bottom: 25px; } }
 
 .m--240 {
   margin-top: -240px; }

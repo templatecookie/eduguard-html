@@ -42,6 +42,9 @@
   // Section title spacing
   .font-title--md {
     margin-bottom: 50px;
+    @include max(767px) {
+      margin-bottom: 25px;
+    }
   }
 }
 
