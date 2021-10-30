@@ -1,34 +1,36 @@
 .cart-area {
-  h6.font-title--card {
-    font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-  }
-  .cart-wizard-area {
+  padding-top: 50px;
+  &__label {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
     margin-bottom: 30px;
+    text-transform: capitalize;
+  }
 
+  .cart-wizard-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
     .image {
-      a {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+      width: 200px;
+      height: 175px;
+      flex-shrink: 0;
+      overflow: hidden;
+
       img {
-        width: 200px;
-        height: 100%;
+        width: inherit;
+        height: inherit;
         object-fit: cover;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
       }
     }
 
     .text {
-      background-color: #ffffff;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      padding: 20px;
-      padding-bottom: 0 !important;
+      padding: 0px 20px;
       h6 {
-        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 20px;
 
@@ -52,8 +54,8 @@
       .bottom-wizard {
         p {
           color: #202029 !important;
-          font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+
+          font-weight: 500;
           font-size: 18px !important;
 
           span {
@@ -79,7 +81,7 @@
 
       h6 {
         color: #666575 !important;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 500;
         font-size: 16px !important;
       }
@@ -88,7 +90,7 @@
     form {
       label {
         color: #202029;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 500;
         font-size: 14px;
         margin-bottom: 5px;
@@ -132,8 +134,7 @@
   margin-bottom: 30px !important;
 
   p.font-title--card {
-    font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+    font-weight: 400;
   }
 }
 
