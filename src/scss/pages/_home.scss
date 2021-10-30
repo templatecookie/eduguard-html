@@ -629,11 +629,6 @@
 
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
   .main-banner {
     &-end {
       margin-right: 0;
@@ -731,18 +726,7 @@
   .learning-rules-ends > img {
     height: 350px;
   }
-  .mentor {
-    &__img {
-      width: 100%;
-      height: 290px;
-      margin: auto;
-      img {
-        width: inherit;
-        height: inherit;
-        object-fit: cover;
-      }
-    }
-  }
+
   .browse-categories__wrapper .slick-dots {
     margin-top: 0px;
   }
@@ -841,11 +825,6 @@
 
 // Small devices 420px - 574px
 @media (min-width: 420px) and (max-width: 574px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
   .browse-categories {
     h3 {
       margin-bottom: 20px;
@@ -940,11 +919,6 @@
 
 // extra Small devices 420px
 @media (max-width: 420px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
   .browse-categories {
     h3 {
       margin-bottom: 20px;

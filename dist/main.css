@@ -12295,12 +12295,17 @@ button:focus {
 
 .mentor__img {
   position: relative;
+  width: 100%;
+  height: 270px;
   overflow: hidden;
   border-radius: 5px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; }
   .mentor__img img {
-    max-width: 100%; }
+    width: inherit;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .mentor__title {
   padding: 20px;
@@ -15275,9 +15280,6 @@ header {
     text-align: left; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important; }
   .main-banner-end {
     margin-right: 0; }
   .browse-categories h3, .browse-categories .h3 {
@@ -15335,15 +15337,6 @@ header {
 @media (max-width: 767px) {
   .learning-rules-ends > img {
     height: 350px; }
-  .mentor__img {
-    width: 100%;
-    height: 290px;
-    margin: auto; }
-    .mentor__img img {
-      width: inherit;
-      height: inherit;
-      -o-object-fit: cover;
-         object-fit: cover; }
   .browse-categories__wrapper .slick-dots {
     margin-top: 0px; } }
 
@@ -15401,9 +15394,6 @@ header {
         font-size: 12px; } }
 
 @media (min-width: 420px) and (max-width: 574px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important; }
   .browse-categories h3, .browse-categories .h3 {
     margin-bottom: 20px; }
   .browse-categories .btn-primary {
@@ -15462,9 +15452,6 @@ header {
         font-size: 12px; } }
 
 @media (max-width: 420px) {
-  .best-instructor-featured .mentor__img img {
-    width: 100% !important;
-    height: auto !important; }
   .browse-categories h3, .browse-categories .h3 {
     margin-bottom: 20px; }
   .browse-categories .btn-primary {
