@@ -11529,7 +11529,7 @@ button:focus {
             order: 2; } }
 
 .form-element {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   position: relative; }
   .form-element label {
     font-size: 14px;
@@ -15798,9 +15798,6 @@ header {
     .latest-events-featured .latest-events-shape img.shape-02 {
       bottom: 30px;
       right: 0px; }
-  .latest-events-featured .slick-arrow {
-    border-color: transparent;
-    background: rgba(235, 235, 242, 0.5); }
 
 .get-started {
   background: rgba(235, 235, 242, 0.6); }
@@ -19908,9 +19905,14 @@ body {
   .error-area-start p {
     font-size: 16px;
     line-height: 24px;
-    color: #666575 !important;
     margin-top: 15px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-weight: 400;
+    max-width: 400px;
+    color: #666575 !important; }
+    @media (max-width: 767px) {
+      .error-area-start p {
+        max-width: 100%; } }
   .error-area .image {
     margin-right: -80px; }
   .error-area-shape img {
@@ -22118,6 +22120,8 @@ body {
       color: #8f8fa3; }
     .signup-area .verification input::placeholder {
       color: #8f8fa3; }
+  .signup-area-textwrapper h2, .signup-area-textwrapper .h2 {
+    margin-bottom: 12px !important; }
   .signup-area-textwrapper p {
     color: #666575; }
     .signup-area-textwrapper p a {

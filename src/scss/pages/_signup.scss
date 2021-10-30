@@ -3,7 +3,7 @@
   form {
     label {
       font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+      font-weight: 500;
     }
   }
 }
@@ -37,6 +37,9 @@
   }
 
   &-textwrapper {
+    h2 {
+      margin-bottom: 12px !important;
+    }
     p {
       color: #666575;
       a {
@@ -215,7 +218,7 @@
 }
 
 // Small devices 420px - 574px
-@media  (min-width: 420px) and (max-width: 574px) {
+@media (min-width: 420px) and (max-width: 574px) {
   .signup-area {
     background: #fff;
 

@@ -1,5 +1,5 @@
 .form-element {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   position: relative;
 
   label {
@@ -9,7 +9,7 @@
     color: #202029;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+    font-weight: 500;
   }
 
   input {
@@ -20,7 +20,7 @@
     border: 1px solid rgba($black50, 0.4);
     transition: all 0.2s linear;
     &:focus {
-        border-color: $primary;
+      border-color: $primary;
     }
   }
   .form-alert {
@@ -82,23 +82,20 @@
   }
 }
 
-
 .checkout-area {
-
-  
   // Responsive
   @media (max-width: 1200px) {
     .checkout-area {
       padding-top: 0px;
     }
   }
-  
+
   @media (max-width: 991px) {
     .checkout-area {
       padding-top: 30px;
     }
   }
-  
+
   // Medium devices 768px - 991px
   @media (min-width: 768px) and (max-width: 991px) {
     form input {
@@ -124,5 +121,3 @@
     }
   }
 }
-  
-  

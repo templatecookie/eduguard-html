@@ -13,9 +13,14 @@
     p {
       font-size: 16px;
       line-height: 24px;
-      color: #666575 !important;
       margin-top: 15px;
       margin-bottom: 30px;
+      font-weight: 400;
+      max-width: 400px;
+      color: #666575 !important;
+      @include max(767px) {
+        max-width: 100%;
+      }
     }
   }
 
