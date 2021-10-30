@@ -20502,15 +20502,16 @@ body {
 .sucessfullInstructor h2, .sucessfullInstructor .h2 {
   width: 50%; }
 
-.sucessfullInstructor .feature .cardFeature {
-  margin-bottom: 0px; }
-
 .sucessfullInstructor .section__overlay span {
-  z-index: 1; }
+  z-index: -1; }
 
 .sucessfullInstructor .section__overlay--shape-01 {
   top: 30%;
   right: 10%; }
+
+@media (max-width: 1200px) {
+  .sucessfullInstructor .cardFeature {
+    margin-bottom: 16px; } }
 
 @-webkit-keyframes circle {
   0% {
