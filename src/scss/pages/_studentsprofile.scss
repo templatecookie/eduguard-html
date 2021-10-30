@@ -233,6 +233,31 @@
     .tab-content {
       padding-top: 30px;
 
+      &__profile {
+        display: flex;
+        align-items: center;
+        @include max(991px) {
+          flex-direction: column;
+        }
+        &-content {
+          width: 50%;
+          margin-right: 30px;
+          @include max(991px) {
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 16px;
+          }
+          &:nth-last-child(1) {
+            margin: 0px;
+          }
+
+          .about-student,
+          .info-student {
+            height: 100% !important;
+          }
+        }
+      }
+
       .info-student,
       .about-student {
         padding: 24px;
@@ -347,10 +372,6 @@
       margin-left: 0 !important;
     }
   }
-
-  .info-student {
-    padding-bottom: 20px !important;
-  }
 }
 
 @media (max-width: 991px) {
@@ -398,9 +419,6 @@
   }
 
   .info-student {
-    margin-top: 30px;
-    padding-bottom: 10px !important;
-
     dl {
       margin-bottom: 10px !important;
     }

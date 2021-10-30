@@ -17109,6 +17109,35 @@ header {
 
 .students-info-main .tab-content {
   padding-top: 30px; }
+  .students-info-main .tab-content__profile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 991px) {
+      .students-info-main .tab-content__profile {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .students-info-main .tab-content__profile-content {
+      width: 50%;
+      margin-right: 30px; }
+      @media (max-width: 991px) {
+        .students-info-main .tab-content__profile-content {
+          width: 100%;
+          margin: 0px;
+          margin-bottom: 16px; } }
+      .students-info-main .tab-content__profile-content:nth-last-child(1) {
+        margin: 0px; }
+      .students-info-main .tab-content__profile-content .about-student,
+      .students-info-main .tab-content__profile-content .info-student {
+        height: 100% !important; }
   .students-info-main .tab-content .info-student,
   .students-info-main .tab-content .about-student {
     padding: 24px;
@@ -17186,9 +17215,7 @@ header {
     .students-info-main .nav-tabs .nav-link {
       margin-bottom: 10px;
       padding-top: 0;
-      margin-left: 0 !important; }
-  .info-student {
-    padding-bottom: 20px !important; } }
+      margin-left: 0 !important; } }
 
 @media (max-width: 991px) {
   .students-info {
@@ -17219,11 +17246,8 @@ header {
   .students-info-intro {
     margin-top: 30px;
     margin-bottom: 30px; }
-  .info-student {
-    margin-top: 30px;
-    padding-bottom: 10px !important; }
-    .info-student dl {
-      margin-bottom: 10px !important; } }
+  .info-student dl {
+    margin-bottom: 10px !important; } }
 
 @media (max-width: 767px) {
   .students-info-intro {
