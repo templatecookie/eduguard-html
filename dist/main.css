@@ -11484,6 +11484,9 @@ button:focus {
       width: 30px;
       height: 30px;
       background: #ebebf2; }
+      @media (min-width: 768px) {
+        .filter-sidebar__top button {
+          display: none; } }
       .filter-sidebar__top button svg {
         color: #202029; }
   .filter-sidebar__wrapper .accordion-item {
