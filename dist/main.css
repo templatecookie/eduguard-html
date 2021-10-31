@@ -14580,9 +14580,28 @@ header {
   @media (max-width: 380px) {
     .newsletter-area {
       padding: 40px 24px; } }
-  .newsletter-area form input:focus {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+  .newsletter-area form input {
+    padding-left: 20px;
+    border-radius: 4px !important;
+    border: 1px solid rgba(143, 143, 163, 0.3); }
+    .newsletter-area form input::-webkit-input-placeholder {
+      color: #8f8fa3;
+      text-transform: capitalize; }
+    .newsletter-area form input::-moz-placeholder {
+      color: #8f8fa3;
+      text-transform: capitalize; }
+    .newsletter-area form input:-ms-input-placeholder {
+      color: #8f8fa3;
+      text-transform: capitalize; }
+    .newsletter-area form input::-ms-input-placeholder {
+      color: #8f8fa3;
+      text-transform: capitalize; }
+    .newsletter-area form input::placeholder {
+      color: #8f8fa3;
+      text-transform: capitalize; }
+    .newsletter-area form input:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
   .newsletter-area h4, .newsletter-area .h4 {
     font-size: 32px;
     line-height: 40px;
@@ -14599,18 +14618,23 @@ header {
     margin-bottom: 8px;
     text-transform: capitalize; }
   .newsletter-area-normal-end input {
-    border: 1px solid rgba(143, 143, 163, 0.3);
-    padding-left: 15px; }
+    padding-left: 15px;
+    border: 1px solid rgba(143, 143, 163, 0.3); }
     .newsletter-area-normal-end input::-webkit-input-placeholder {
-      color: #8f8fa3; }
+      color: #8f8fa3;
+      text-transform: capitalize; }
     .newsletter-area-normal-end input::-moz-placeholder {
-      color: #8f8fa3; }
+      color: #8f8fa3;
+      text-transform: capitalize; }
     .newsletter-area-normal-end input:-ms-input-placeholder {
-      color: #8f8fa3; }
+      color: #8f8fa3;
+      text-transform: capitalize; }
     .newsletter-area-normal-end input::-ms-input-placeholder {
-      color: #8f8fa3; }
+      color: #8f8fa3;
+      text-transform: capitalize; }
     .newsletter-area-normal-end input::placeholder {
-      color: #8f8fa3; }
+      color: #8f8fa3;
+      text-transform: capitalize; }
 
 .newsletter-area-normal-start h5, .newsletter-area-normal-start .h5 {
   margin-bottom: 8px; }

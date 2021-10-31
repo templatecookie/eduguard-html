@@ -9,6 +9,13 @@
   }
   form {
     input {
+      padding-left: 20px;
+      border-radius: 4px !important;
+      border: 1px solid rgba(143, 143, 163, 0.3);
+      &::placeholder {
+        color: #8f8fa3;
+        text-transform: capitalize;
+      }
       &:focus {
         box-shadow: none;
       }
@@ -38,10 +45,11 @@
     }
     &-end {
       input {
-        border: 1px solid rgba(143, 143, 163, 0.3);
         padding-left: 15px;
+        border: 1px solid rgba(143, 143, 163, 0.3);
         &::placeholder {
           color: #8f8fa3;
+          text-transform: capitalize;
         }
       }
     }
