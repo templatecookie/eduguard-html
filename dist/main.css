@@ -10832,7 +10832,8 @@ button:focus {
     -o-object-fit: cover;
        object-fit: cover; }
   .contentCard-bottom {
-    padding: 16px; }
+    padding: 16px;
+    padding-bottom: 0px; }
     .contentCard-bottom h5, .contentCard-bottom .h5 {
       margin-bottom: 16px; }
   .contentCard-user img {
@@ -10857,7 +10858,7 @@ button:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 8px;
+    padding: 16px 0px;
     position: relative;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -15239,10 +15240,18 @@ header {
     padding: 30px;
     padding-top: 0; }
     .main-become-instructor-item .main-image {
+      width: 270px;
+      height: 200px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 8px;
       margin-top: -100px;
       text-align: center; }
       .main-become-instructor-item .main-image img {
-        border-radius: 8px; }
+        width: inherit;
+        height: inherit;
+        -o-object-fit: cover;
+           object-fit: cover; }
     .main-become-instructor-item .main-text {
       text-align: center;
       margin-top: 30px; }

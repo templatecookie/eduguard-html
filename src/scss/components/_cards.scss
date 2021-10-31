@@ -31,6 +31,7 @@
   }
   &-bottom {
     padding: 16px;
+    padding-bottom: 0px;
     h5 {
       margin-bottom: 16px;
     }
@@ -64,8 +65,7 @@
   &-more {
     width: 100%;
     display: flex;
-    // flex-wrap: wrap;
-    padding-top: 8px;
+    padding: 16px 0px;
     position: relative;
     align-items: center;
     @include max(575px) {
