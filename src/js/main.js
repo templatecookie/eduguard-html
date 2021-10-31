@@ -91,7 +91,7 @@ function menuClick(current) {
         },
       },
       {
-        breakpoint: 575,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           arrows: false,

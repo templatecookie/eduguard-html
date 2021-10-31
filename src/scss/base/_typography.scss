@@ -63,14 +63,14 @@
   }
 
   &--card {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
     color: #202029;
-    @media (max-width: 767px) {
-      font-size: 16px;
-      line-height: 26px;
-    }
+    // @media (max-width: 767px) {
+    //   font-size: 16px;
+    //   line-height: 26px;
+    // }
   }
 }
 
