@@ -1,4 +1,5 @@
 .instructor-courses {
+  padding-top: 50px;
   &-instructor {
     background: #ffffff;
     border-radius: 6px;
@@ -86,7 +87,7 @@
         font-size: 18px;
         line-height: 27px;
         color: #42414b;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 500;
       }
 
@@ -116,7 +117,7 @@
 
       h6 {
         color: #42414b !important;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 500;
         font-size: 18px;
       }
@@ -146,7 +147,7 @@
 
       h6 {
         color: #42414b !important;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 500;
         font-size: 18px;
       }
@@ -211,7 +212,6 @@
       h6 {
         margin-bottom: 0 !important;
         color: rgba($color: #42414b, $alpha: 0.9) !important;
-        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 14px !important;
       }
@@ -231,7 +231,7 @@
 
       .active {
         color: #202029 !important;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 500;
         font-size: 16px;
         position: relative;
@@ -251,7 +251,7 @@
       .nav-link {
         background-color: transparent !important;
         color: #666575;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 500;
         font-size: 16px;
         border: none !important;
@@ -271,19 +271,19 @@
 // Rating-Number
 .rating-number {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 185px;
   height: 170px;
-  background-color: white;
   border-radius: 5px;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
   h2 {
     font-size: 56px;
     line-height: 70px;
-    font-family: 'Poppins', sans-serif;
-        font-weight: 700;
+
+    font-weight: 700;
     color: #42414b;
   }
 
@@ -310,22 +310,6 @@
 
 // Rating Range
 .rating-range {
-  .four-star {
-    
-  }
-
-  .three-star {
-    
-  }
-
-  .two-star {
-    
-  }
-
-  .one-star {
-    
-  }
-
   .fill-star {
     color: #8f8fa3;
     fill: transparent;
@@ -347,18 +331,18 @@
       margin: 0px 15px;
       width: 300px;
       height: 5px;
-      background-color: white;
       border-radius: 5px;
       position: relative;
       overflow: hidden;
+      background-color: white;
 
       .rating-width {
         position: absolute;
         top: 0;
         left: 0;
         height: 5px;
-        background: #1089ff;
         border-radius: 5px;
+        background: #1089ff;
       }
     }
 
@@ -396,16 +380,16 @@
   &-heading {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 15px;
+    justify-content: space-between;
 
     h5 {
       color: #42414b;
-      font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+
+      font-weight: 600;
       span {
         color: #8f8fa3;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 400;
       }
     }
@@ -416,7 +400,7 @@
 
       h6 {
         color: #42414b;
-        font-family: 'Poppins', sans-serif;
+
         font-weight: 500;
       }
 
@@ -443,14 +427,17 @@
       &-start {
         display: flex;
         align-items: center;
-
+        @include max(575px) {
+          margin-bottom: 16px;
+        }
         .image {
           height: 50px;
           width: 50px;
-
+          border-radius: 50%;
+          overflow: hidden;
           img {
-            border-radius: 50%;
-            max-width: 100%;
+            width: inherit;
+            height: inherit;
             object-fit: cover;
           }
         }
@@ -459,8 +446,7 @@
           margin-left: 12px;
 
           h6 {
-            font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+            font-weight: 600;
             a {
               color: #42414b;
             }
@@ -495,15 +481,14 @@
   background-color: white;
   padding: 30px;
   h6 {
-    font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+    font-weight: 600;
     margin-bottom: 12px;
   }
   span {
     font-size: 14px;
     line-height: 21px;
-    font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+
+    font-weight: 500;
     color: #42414b;
     margin-bottom: 6px;
   }
@@ -516,18 +501,18 @@
       line-height: 21px;
       color: #42414b;
       margin-bottom: 5px;
-      font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+
+      font-weight: 500;
     }
 
     textarea {
-      margin-bottom: 20px;
-      border: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
-      box-sizing: border-box;
-      border-radius: 4px;
       resize: none;
       height: 112px;
+      margin-bottom: 20px;
+      border-radius: 4px;
       padding: 16px 20px;
+      box-sizing: border-box;
+      border: 1px solid rgba($color: #8f8fa3, $alpha: 0.3);
       &::placeholder {
         font-size: 16px;
         line-height: 24px;

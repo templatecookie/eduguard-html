@@ -1,6 +1,28 @@
 .footer {
   background-color: #25252e;
   padding-top: 75px;
+
+  &--two {
+    padding-top: 220px;
+    @include max(575px) {
+      padding-top: 180px;
+    }
+  }
+
+  &--three {
+    padding: 0;
+    .footer__top {
+      padding-top: 100px;
+      padding-bottom: 70px;
+    }
+    .footer__wrapper {
+      margin-bottom: 0px;
+      &_social {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+
   &__wrapper {
     margin-bottom: 50px;
     &_logo {
@@ -13,7 +35,7 @@
       color: color(lowBlack);
     }
     &_social {
-      margin-top: 18px;
+      margin-top: 24px;
       ul {
         display: flex;
         align-items: center;
@@ -49,7 +71,7 @@
       line-height: 1.5;
       color: #fff !important;
       font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+      font-weight: 500;
       margin-bottom: 12px;
     }
     ul {
@@ -71,13 +93,24 @@
   &__bottom {
     border-top: 1px solid #4b4b57;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      @include max(480px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
     &_copyright {
       p {
         color: color(lowBlack);
         line-height: 1.5;
         font-size: 16px;
+        @include max(480px) {
+          margin-bottom: 16px;
+          text-align: center;
+        }
       }
     }
     &_topbutton {
@@ -117,7 +150,7 @@
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .footer {
-    &.footer-ex-p {
+    &.footer--two {
       padding-top: 120px !important;
     }
   }
@@ -137,7 +170,7 @@
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
   .footer {
-    &.footer-ex-p {
+    &.footer--two {
       padding-top: 200px !important;
     }
   }
@@ -149,7 +182,6 @@
 @media (min-width: 320px) and (max-width: 574px) {
   .footer {
     &__wrapper {
-      margin-bottom: 15px;
       &_logo {
         img {
           width: 220px;

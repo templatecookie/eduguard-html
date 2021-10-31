@@ -162,15 +162,18 @@
   h2 {
     width: 50%;
   }
-  .feature .cardFeature {
-    margin-bottom: 0px;
-  }
+
   .section__overlay span {
-    z-index: 1;
+    z-index: -1;
   }
   .section__overlay--shape-01 {
     top: 30%;
     right: 10%;
+  }
+  .cardFeature {
+    @include max(1200px) {
+      margin-bottom: 16px;
+    }
   }
 }
 

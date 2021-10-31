@@ -1,4 +1,13 @@
 .checkout-area {
+  padding-top: 50px;
+  &__label {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+  }
+
   &-checkout {
     .checkout-tab {
       background-color: white;
@@ -37,11 +46,11 @@
           .image {
             width: 130px;
             height: 100px;
-
+            border-radius: 3px;
             img {
-              max-width: 100%;
+              width: 100%;
+              height: 100%;
               object-fit: cover;
-              border-radius: 3px;
             }
           }
 
@@ -79,7 +88,7 @@
             color: #666575 !important;
             font-size: 13px !important;
             font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+            font-weight: 500;
           }
 
           p {
@@ -119,7 +128,6 @@
 
 // Small devices 575px - 767px
 @media (min-width: 575px) and (max-width: 767px) {
-
   .checkout-area-summery .summery-area-content-item .text h5,
   .checkout-area-summery .summery-area-content-item .text .h5 {
     font-size: 18px !important;

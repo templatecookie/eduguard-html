@@ -34,9 +34,8 @@ h6 {
 }
 
 body {
-  // font-family: $font;
   font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+  font-weight: 400;
   transition: 0.3s;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
@@ -44,13 +43,14 @@ body {
 
 a {
   display: inline-block;
+  text-decoration: none;
 }
 
 a:focus,
 .button:focus {
-  text-decoration: none;
   outline: none;
   box-shadow: none !important;
+  text-decoration: none;
 }
 a {
   transition: 0.3s;
@@ -64,6 +64,13 @@ a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
   text-decoration: none;
+}
+
+input {
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+  }
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -125,10 +132,6 @@ p {
 
 .mb-30 {
   margin-bottom: 30px;
-}
-
-.footer-ex-p {
-  padding-top: 220px !important;
 }
 
 .accordion-button:focus {

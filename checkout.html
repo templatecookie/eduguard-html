@@ -10,7 +10,6 @@
     </head>
 
     <body style="background-color: #ebebf2;" onload="loader()">
-
         <div class="loader">
             <span class="loader-spinner">Loading...</span>
         </div>
@@ -34,22 +33,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">
                                     Home
-                                    <span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-chevron-right"
-                                        >
-                                            <polyline points="9 18 15 12 9 6"></polyline>
-                                        </svg>
-                                    </span>
                                 </a>
                                 <div class="nav-item--dropdown">
                                     <ul>
@@ -62,22 +45,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">
                                     Course
-                                    <span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-chevron-right"
-                                        >
-                                            <polyline points="9 18 15 12 9 6"></polyline>
-                                        </svg>
-                                    </span>
                                 </a>
                                 <div class="nav-item--dropdown">
                                     <ul>
@@ -93,22 +60,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">
                                     Events
-                                    <span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-chevron-right"
-                                        >
-                                            <polyline points="9 18 15 12 9 6"></polyline>
-                                        </svg>
-                                    </span>
                                 </a>
                                 <div class="nav-item--dropdown">
                                     <ul>
@@ -120,44 +71,12 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">
                                     Pages
-                                    <span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-chevron-right"
-                                        >
-                                            <polyline points="9 18 15 12 9 6"></polyline>
-                                        </svg>
-                                    </span>
                                 </a>
                                 <div class="nav-item--dropdown">
                                     <ul>
-                                        <li class="submenu">
+                                        <li>
                                             <a href="#">
                                                 My Account
-                                                <span>
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="feather feather-chevron-right"
-                                                    >
-                                                        <polyline points="9 18 15 12 9 6"></polyline>
-                                                    </svg>
-                                                </span>
                                             </a>
                                             <div class="nav-item--subDropdown">
                                                 <ul>
@@ -491,7 +410,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 checkout-area-checkout">
-                        <h6 class="font-title--card mb-2">Checkout</h6>
+                        <h6 class="checkout-area__label">Checkout</h6>
                         <div class="checkout-tab">
                             <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
@@ -594,7 +513,7 @@
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0">
                         <div class="checkout-area-summery">
-                            <h6 class="font-title--card mb-2">Summery</h6>
+                            <h6 class="checkout-area__label">Summery</h6>
 
                             <div class="cart">
                                 <div class="cart__includes-info cart__includes-info--bordertop-0">
@@ -660,15 +579,17 @@
         <!-- Checkout Area Ends Here -->
 
         <!-- Footer Starts Here -->
-        <footer class="footer">
+        <footer class="footer footer--three">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12">
+                <div class="row footer__top">
+                    <div class="col-lg-6">
                         <div class="footer__wrapper">
                             <div class="footer__wrapper_logo">
                                 <img src="dist/images/logo/footerlogo.png" alt="logo" class="img-fluid" />
                             </div>
-                            <p>Duis posuere maximus arcu eu tincidunt. Nam rutrum, nibh vitae tempus venenatis, ex tortor ultricies magna.</p>
+                            <p>
+                                Duis posuere maximus arcu eu tincidunt. Nam rutrum, nibh vitae tempus venenatis, ex tortor ultricies magna.
+                            </p>
                             <div class="footer__wrapper_social d-none d-lg-block">
                                 <ul>
                                     <li>
@@ -759,7 +680,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-4">
+                    <div class="col-lg-2 col-sm-4 col-6">
                         <div class="footer__list">
                             <h6>Quick Links</h6>
                             <ul>
@@ -771,7 +692,7 @@
                         </div>
                     </div>
                     <div class="col-12 d-block d-lg-none">
-                        <div class="footer__wrapper_social d-flex justify-content-center my-4">
+                        <div class="footer__wrapper_social d-flex my-4">
                             <ul>
                                 <li>
                                     <a href="#">
@@ -839,28 +760,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="footer__bottom">
-                            <div class="footer__bottom_copyright">
-                                <p>© 2021 - Eduguard. All rights reserved</p>
-                            </div>
-                            <div class="footer__bottom_topbutton">
-                                <a href="#">
-                                    Go To Top
-                                    <div class="icon ms-2">
-                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9 5L5 1L1 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom-content">
+                        <div class="footer__bottom_copyright">
+                            <p>© 2021 - Eduguard. All rights reserved</p>
+                        </div>
+                        <div class="footer__bottom_topbutton">
+                            <a href="#">
+                                Go To Top
+                                <div class="icon ms-2">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5L5 1L1 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Footer Ends Here -->
 
         <script src="src/js/jquery.min.js"></script>
         <script src="src/js/bootstrap.bundle.min.js"></script>

@@ -16,9 +16,7 @@ crossSidebar.addEventListener('click', function () {
   menuicon.classList.remove('transformed');
 });
 
-var navMenu = [].slice.call(
-  document.querySelectorAll('.navbar-mobile__menu-item')
-);
+var navMenu = [].slice.call(document.querySelectorAll('.navbar-mobile__menu-item'));
 
 for (var y = 0; y < navMenu.length; y++) {
   navMenu[y].addEventListener('click', function () {
@@ -113,9 +111,9 @@ function menuClick(current) {
     arrows: true,
     autoplaySpeed: 2000,
     prevArrow:
-      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+      ' <span class="slick-arrow--left "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
     nextArrow:
-      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+      ' <span class="slick-arrow--right "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
       {
         breakpoint: 1441,
@@ -153,9 +151,9 @@ function menuClick(current) {
     arrows: true,
     autoplaySpeed: 2000,
     prevArrow:
-      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+      ' <span class="slick-arrow--left "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
     nextArrow:
-      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+      ' <span class="slick-arrow--right "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
       {
         breakpoint: 1441,
@@ -248,9 +246,9 @@ function menuClick(current) {
     arrows: true,
     dots: true,
     prevArrow:
-      ' <span class="slick-arrow--left slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
+      ' <span class="slick-arrow--left "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
     nextArrow:
-      ' <span class="slick-arrow--right slick-arrow--border-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+      ' <span class="slick-arrow--right "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
     responsive: [
       {
         breakpoint: 1441,
@@ -287,7 +285,7 @@ function menuClick(current) {
         breakpoint: 1441,
         settings: {
           arrows: false,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -295,7 +293,7 @@ function menuClick(current) {
         settings: {
           slidesToShow: 2,
           arrows: false,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -303,7 +301,7 @@ function menuClick(current) {
         settings: {
           slidesToShow: 1,
           arrows: false,
-          dots: false,
+          dots: true,
         },
       },
     ],
@@ -316,10 +314,21 @@ function menuClick(current) {
     autoplay: false,
     arrows: true,
     autoplaySpeed: 2000,
-    prevArrow:
-      ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',
-    nextArrow:
-      ' <span class="slick-arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>',
+    prevArrow: ` <span class="slick-arrow--left"> 
+      
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 13L1 7L7 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      </span>`,
+    nextArrow: ` <span class="slick-arrow--right">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 7L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 0.999999L19 7L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      </span>`,
     responsive: [
       {
         breakpoint: 1201,
@@ -439,6 +448,8 @@ function menuClick(current) {
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1600,
     responsive: [
       {
         breakpoint: 1024,
@@ -469,7 +480,7 @@ function menuClick(current) {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     prevArrow:
       ' <span class="slick-arrow--left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></span>',

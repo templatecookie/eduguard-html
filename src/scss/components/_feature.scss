@@ -1,32 +1,42 @@
 .cardFeature {
-  box-sizing: border-box;
-  position: relative;
+  padding: 32px;
   overflow: hidden;
-  background-color: #fff;
-  border: 1px solid #ebebf2;
-  padding: 30px 20px;
+  position: relative;
   border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
   transition: all 0.2s linear;
-  text-align: center;
+  border: 1px solid #ebebf2;
   &:hover {
     box-shadow: 0px 25px 80px rgba(10, 9, 86, 0.12);
 
     .cardFeature__icon {
-      &--bg-book {
-        background: rgba(0, 175, 146, 1);
-      }
-      &--bg-user {
-        background: rgba(16, 137, 255, 1);
-      }
-      &--bg-clock {
-        background: rgba(241, 92, 76, 1);
+      &--bg-g,
+      &--bg-b,
+      &--bg-r {
+        svg {
+          color: #fff !important;
+        }
       }
 
-      &--bg-book,
-      &--bg-user,
-      &--bg-clock {
+      &--bg-g {
+        background: rgba(0, 175, 146, 1);
         svg {
           color: #fff;
+        }
+      }
+
+      &--bg-b {
+        background: rgba(16, 137, 255, 1);
+        svg {
+          color: #1089ff;
+        }
+      }
+
+      &--bg-r {
+        background: rgba(241, 92, 76, 1);
+        svg {
+          color: #f15c4c;
         }
       }
     }
@@ -35,29 +45,30 @@
   &__icon {
     width: 72px;
     height: 72px;
-    border-radius: 5px;
-    margin: auto;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    margin-bottom: 32px;
     justify-content: center;
     transition: all 0.2s linear;
-
-    &--bg-book {
+    @include max(575px) {
+      margin-bottom: 16px;
+    }
+    &--bg-g {
       background: rgba(0, 175, 146, 0.1);
       svg {
         color: #00af91;
       }
     }
 
-    &--bg-user {
+    &--bg-b {
       background: rgba(16, 137, 255, 0.1);
       svg {
         color: #1089ff;
       }
     }
 
-    &--bg-clock {
+    &--bg-r {
       background: rgba(241, 92, 76, 0.1);
       svg {
         color: #f15c4c;
@@ -66,11 +77,31 @@
   }
   // Fonts
   h5.font-title--xs {
-    margin-bottom: 4px;
+    color: #202029;
+    margin-bottom: 12px;
+    @include max(575px) {
+      margin-bottom: 6px;
+    }
   }
   p {
-    font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f8fa3;
+    font-weight: 400;
+  }
+
+  &--center {
+    text-align: center;
+
+    .cardFeature {
+      &__icon {
+        margin: auto;
+        margin-bottom: 32px;
+        @include max(575px) {
+          margin-bottom: 16px;
+        }
+      }
+    }
   }
 }
 

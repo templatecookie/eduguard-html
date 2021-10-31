@@ -1,17 +1,16 @@
-
 .testimonial {
   &__item {
     position: relative;
-    padding: 24px;
+    padding: 32px;
     border-radius: 5px;
     background-color: #fff;
     overflow: hidden;
     margin: 0px 15px;
     p {
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 27px;
       color: #666575;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
     }
   }
 
@@ -24,11 +23,11 @@
 
   &__user-info {
     h6 {
-      font-size: 20px;
-      line-height: 30px;
-      color: #42414b;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 500;
+      color: #202029;
       font-family: 'Poppins', sans-serif;
-        font-weight: 500;
     }
   }
 
@@ -49,7 +48,8 @@
   // Homepage-03
   &--two {
     .testimonial__item {
-      border: 2px solid #ebebf2;
+      padding: 22px;
+      border: 1px solid #ebebf2;
       &-star {
         margin-bottom: 11px;
       }
@@ -72,9 +72,6 @@
       }
     }
   }
-}
-.testimonial__user {
-    // margin-top: 20px;
 }
 
 // Homepage-02
@@ -186,21 +183,23 @@
       }
     }
 
-    &--two {
-      .testimonial {
-        &__item-star {
-          justify-content: center;
-        }
-        &__item {
-          p {
-            text-align: center;
-          }
-        }
-      }
-    }
+    // &--two {
+    //   .testimonial {
+    //     // &__item-star {
+    //     //   justify-content: center;
+    //     // }
+    //     &__item {
+    //       p {
+    //         text-align: center;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 
-.testimonial__slider--one .slick-dots{
+.testimonial__slider--one .slick-dots {
+  @include min(1200px) {
     margin-top: 30px;
+  }
 }

@@ -1,6 +1,13 @@
 // Course Description Header Starts Here
+
+.course-description {
+  .nav {
+    padding: 0px 30px;
+  }
+}
+
 .coursedescription-header {
-  padding: 20px 50px;
+  padding: 30px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,21 +35,20 @@
         margin-right: 12px;
 
         a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
           height: 50px;
           width: 50px;
-          border-radius: 50%;
-          background-color: white;
+          display: flex;
           color: #202029;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
         }
       }
 
       &-text {
         h6 {
           a {
-            // display: block;
             color: #202029;
           }
         }
@@ -73,10 +79,9 @@
 
   &-end {
     .rating-link {
-      color: #202029;
-      font-family: 'Poppins', sans-serif;
-        font-weight: 500;
       font-size: 16px;
+      color: #202029;
+      font-weight: 500;
       margin-right: 35px;
     }
   }
@@ -111,8 +116,6 @@
 .video-js .vjs-picture-in-picture-control {
   display: none;
 }
-// Course Description Header Ends Here
-
 // Course Description Starts Here
 .course-description {
   padding: 0px 50px 60px 50px;
@@ -122,12 +125,13 @@
     padding-right: 5px;
 
     &-content {
-      padding: 18px 30px 26px 30px;
       background: #ffffff;
+      padding: 18px 0px 26px 0px;
       border-radius: 0px 0px 8px 8px;
 
-      h5 {
+      h5.font-title--sm {
         color: #202029;
+        padding: 0px 30px;
         margin-bottom: 20px;
       }
 
@@ -156,14 +160,14 @@
           border: none;
           color: #666575;
           font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+          font-weight: 500;
           font-size: 16px;
         }
       }
 
       &-tabitem {
-        margin-top: 20px;
-
+        margin-top: 30px;
+        padding: 0px 30px;
         .lesson-description {
           max-width: 800px;
 
@@ -247,8 +251,6 @@
       margin-bottom: 30px;
 
       &-content {
-        // padding: 18px 0px 26px 0px;
-
         h4 {
           margin-bottom: 10px;
         }
@@ -753,10 +755,6 @@
 }
 
 @media (max-width: 574px) {
-  .course-instructor {
-    padding: 0px !important;
-  }
-
   .coursedescription-header-start .topic-info {
     margin-left: 0px;
   }

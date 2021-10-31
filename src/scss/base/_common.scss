@@ -4,7 +4,7 @@
   padding: 100px 0px;
 
   @media (max-width: 767px) {
-    padding: 60px 0px;
+    padding: 50px 0px;
   }
   // section background colors
   &--bg-white {
@@ -29,11 +29,7 @@
     background: rgba(255, 255, 255, 0.3);
   }
   &--bg-offgradient {
-    background: linear-gradient(
-      180deg,
-      #ebebf2 0%,
-      rgba(235, 235, 242, 0.4) 100%
-    );
+    background: linear-gradient(180deg, #ebebf2 0%, rgba(235, 235, 242, 0.4) 100%);
   }
 
   &--white-one {
@@ -46,6 +42,9 @@
   // Section title spacing
   .font-title--md {
     margin-bottom: 50px;
+    @include max(767px) {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -65,23 +64,3 @@
   height: 24px;
   border: 2px solid color(lowBlack);
 }
-
-// overlay select issues fixed
-.main-instructor-featured-shape img,
-.banner-two-start h1,
-.browse-categories h3,
-.main-heading h3,
-.learning-rules-starts h3,
-.about-services-shape img,
-.featured-popular-courses-shape img,
-.about-services-shape img,
-.learning-rules-shape img,
-.main-events-featured-shape img,
-.testimonial__img img,
-.testimonial__img .dot img,
-.testimonial__img .rectangle img,
-.testimonial__wrapper_title h3 {
-//   user-select: none;
-}
-
-// Responsive

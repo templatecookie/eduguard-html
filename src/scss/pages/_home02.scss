@@ -1,4 +1,5 @@
 // Banner Starts Here
+
 .brand-area-image {
   display: flex !important;
   align-items: center;
@@ -29,11 +30,11 @@
     z-index: -1;
     .image {
       img {
-        border: 5px solid #ffffff;
-        filter: drop-shadow(0px 36px 70px rgba(10, 9, 86, 0.14));
-        border-radius: 10px;
         position: relative;
         z-index: 5;
+        border-radius: 10px;
+        border: 5px solid #ffffff;
+        filter: drop-shadow(0px 36px 70px rgba(10, 9, 86, 0.14));
       }
     }
 
@@ -62,66 +63,69 @@
 }
 
 .home-top-feature {
-    padding: 0;
-    position: relative;
-    background-color: rgba(#EBEBF2, 0.6);
-    .shape {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+  padding: 0;
+  position: relative;
+  background-color: rgba(#ebebf2, 0.6);
+  @include max(1200px) {
+    padding-bottom: 50px !important;
+  }
+  .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include max(1200px) {
+      display: none;
     }
+  }
 }
 
 .banner-input {
-  padding-left: 50px;
   display: flex;
-  align-items: center;
-  width: 745px;
+  width: 575px;
   height: 65px;
+  padding-left: 50px;
+  padding-right: 10px;
   position: relative;
-  // z-index: 555;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 9px;
   background: #ffffff;
   box-shadow: 0px 32px 60px rgba(2, 100, 237, 0.08);
-  border-radius: 9px;
-
+  @include max(767px) {
+    width: 100%;
+  }
+  @include max(575px) {
+    padding-left: 10px;
+  }
   .main-input {
+    width: 315px;
+    @include max(480px) {
+      width: 100%;
+    }
     svg {
       color: #42414b;
       position: absolute;
       top: 50%;
       left: 20px;
       transform: translateY(-50%);
+      @include max(575px) {
+        display: none;
+      }
     }
 
     input {
+      width: inherit;
+      border: none;
+      font-size: 16px;
+      line-height: 24px;
       padding-left: 5px;
       padding-right: 15px;
-      width: 400px;
-      border: none;
-      color: #8f8fa3;
-      border-right: 1px solid #ebebf2;
-    }
-  }
-
-  .select-button {
-    padding-left: 25px;
-
-    button {
-      background-color: transparent !important;
-      border: none !important;
-      outline: none !important;
-      color: #666575;
-
-      svg {
-        color: #202029;
+      &::placeholder {
+        color: #8f8fa3;
       }
     }
-  }
-
-  .search-button {
-    padding-left: 30px;
   }
 }
 // Intro Featured Starts Here
@@ -200,6 +204,7 @@
     margin-top: 50px;
   }
 }
+
 // Popular Courses Starts Here
 .featured-popular-courses {
   &-heading {
@@ -231,13 +236,13 @@
       }
 
       .nav-link {
+        border: none;
+        font-size: 14px;
+        color: #666575;
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 24px;
-        border: none;
         background-color: transparent;
-        color: #666575;
-        font-size: 14px;
       }
     }
   }
@@ -308,25 +313,25 @@
     max-width: 430px;
 
     h4 {
-      font-size: 24px !important;
-      font-weight: 600 !important;
+      color: #202029;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 12px;
     }
 
     p {
-      font-size: 14px !important;
+      font-size: 14px;
+      line-height: 21px;
       color: #8f8fa3;
     }
   }
 }
+
 // Instructor Featured Area Starts Here
 .best-instructor-featured {
   h3 {
     color: #202029 !important;
-  }
-
-  .mentor__img img {
-    width: 270px;
-    height: 290px;
   }
   .ourinstructor__wrapper {
     .slider-arrows {
@@ -337,6 +342,7 @@
     }
   }
 }
+
 // Latest Events Featured Starts Here
 .latest-events-featured {
   z-index: 1;
@@ -388,15 +394,14 @@
       content: '';
       width: 1px;
       height: 150px;
-      background-color: rgba($color: #8f8fa3, $alpha: 0.4);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      background-color: rgba($color: #8f8fa3, $alpha: 0.4);
     }
   }
 
   &-item {
-    text-align: center;
     max-width: 500px;
 
     h6 {
@@ -412,32 +417,25 @@
 
 // Get Started Ends Here
 .green-btn {
-  text-transform: uppercase;
-  padding: 16px 24px;
-  background: #00af91;
-  border-radius: 3px;
   color: white;
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
+  padding: 16px 24px;
+  border-radius: 3px;
+  background: #00af91;
+  text-transform: uppercase;
   transition: 0.3s all linear;
 
   &:hover {
+    color: white;
     background: #0264ed;
     box-shadow: 0px 10px 20px rgba(2, 100, 237, 0.25);
-    color: white;
   }
 }
 
 // Responsive
-
 @media (max-width: 1200px) {
   // Homepage-01 Banner
-  .banner-input {
-    width: 680px;
-  }
-  .banner-input .main-input input {
-    width: 320px;
-  }
 
   .latest-events-featured .latest-events-shape img.shape-02 {
     bottom: 0px;
@@ -482,10 +480,8 @@
     justify-content: center;
     img {
       height: 450px;
+      object-fit: cover;
     }
-  }
-  .banner-input .main-input input {
-    padding-left: 15px;
   }
   .latest-events-featured .latest-events-shape img.shape-02 {
     bottom: 30px;
@@ -513,16 +509,6 @@
   }
 }
 
-@media (min-width: 991.99px) {
-  .banner-input {
-    .search-button {
-      button {
-        padding: 15px 32px !important;
-      }
-    }
-  }
-}
-
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-two {
@@ -532,28 +518,6 @@
     &-start {
       p {
         font-size: 16px;
-      }
-
-      .banner-input {
-        height: 60px;
-        width: 100% !important;
-        padding-left: 40px;
-
-        .search-button {
-          padding-right: 10px;
-          margin-left: auto;
-
-          .btn {
-            width: 100px;
-          }
-        }
-
-        .main-input {
-          input {
-            width: 360px;
-            border-right: 0px;
-          }
-        }
       }
     }
 
@@ -659,22 +623,6 @@
 }
 
 @media (max-width: 767px) {
-  // Homepage -01
-  .main-banner {
-    padding: 60px 0px;
-  }
-  .banner-input .select-button {
-    padding-left: 0px;
-  }
-  .banner-two-start .banner-input .search-button .btn {
-    width: 100%;
-  }
-  .banner-two-start .banner-input .search-button {
-    padding-left: 0px;
-  }
-  .banner-input .main-input input::placeholder {
-    font-size: 12px;
-  }
   // Testimonial => Homepage 02
   .students-says .testimonial__img .play-video {
     right: 50%;
@@ -708,30 +656,6 @@
 @media (min-width: 575px) and (max-width: 767px) {
   .banner-two {
     clip-path: none !important;
-
-    &-start {
-      .banner-input {
-        height: 60px;
-        width: 100% !important;
-        padding-left: 40px;
-
-        .search-button {
-          padding-right: 10px;
-          margin-left: auto;
-
-          .btn {
-            width: 100px;
-          }
-        }
-
-        .main-input {
-          input {
-            width: 100%;
-            border-right: 0px;
-          }
-        }
-      }
-    }
 
     &-end {
       .image-shapes {
@@ -784,8 +708,6 @@
   }
 
   .students-says {
-    // padding: 30px 0px;
-
     .testimonial__img {
       margin-bottom: 0;
       height: auto;
@@ -857,33 +779,6 @@
     padding: 30px 0px;
     clip-path: none !important;
 
-    &-start {
-      .banner-input {
-        height: 60px;
-        width: 100% !important;
-        padding-left: 40px;
-
-        .search-button {
-          padding-right: 10px;
-
-          .btn {
-            width: 100px;
-          }
-        }
-
-        .main-input {
-          input {
-            width: 100%;
-            border-right: 0px;
-          }
-
-          svg {
-            left: 8px !important;
-          }
-        }
-      }
-    }
-
     &-end {
       .image-shapes {
         display: none;
@@ -935,8 +830,6 @@
   }
 
   .students-says {
-    // padding: 30px 0px;
-
     .testimonial__img {
       height: auto;
       width: 100%;
@@ -1002,30 +895,6 @@
     padding: 30px 0px;
     clip-path: none !important;
 
-    &-start {
-      .banner-input {
-        height: 60px;
-        width: 100% !important;
-        padding-left: 40px;
-
-        .search-button {
-          padding-right: 10px;
-          margin-left: auto;
-
-          .btn {
-            width: 100px;
-          }
-        }
-
-        .main-input {
-          input {
-            width: 100%;
-            border-right: 0px;
-          }
-        }
-      }
-    }
-
     &-end {
       .image-shapes {
         display: none;
@@ -1077,8 +946,6 @@
   }
 
   .students-says {
-    // padding: 30px 0px;
-
     .testimonial__img {
       height: auto;
       width: 100%;
