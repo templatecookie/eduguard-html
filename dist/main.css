@@ -15767,6 +15767,9 @@ header {
   bottom: 175px;
   right: 85px; }
 
+.featured-popular-courses .button {
+  margin-top: 30px; }
+
 .featured-popular-courses .contentCard {
   margin-bottom: 24px; }
 
