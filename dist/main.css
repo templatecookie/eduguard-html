@@ -14654,8 +14654,8 @@ header {
     line-height: 28px !important; } }
 
 .footer {
-  background-color: #25252e;
-  padding-top: 75px; }
+  padding-top: 75px;
+  background-color: #202020; }
   .footer--two {
     padding-top: 220px; }
     @media (max-width: 575px) {
