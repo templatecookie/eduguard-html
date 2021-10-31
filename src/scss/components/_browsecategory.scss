@@ -13,6 +13,14 @@
       user-select: none;
     }
   }
+
+  .button {
+    margin-top: -22px;
+    @include max(1200px) {
+      margin-top: 50px;
+    }
+  }
+
   .slick-dots {
     margin-top: 0px;
   }
@@ -20,7 +28,10 @@
 
 .browse-categories-item {
   padding: 30px 0px;
-  margin: 30px 0px;
+  margin: 60px 0px;
   margin-top: 40px;
+  @include max(1200px) {
+    margin: 20px 0px;
+  }
 }
 // Responsive

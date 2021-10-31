@@ -12765,13 +12765,22 @@ button:focus {
       -ms-user-select: none;
           user-select: none; }
 
+.browse-categories .button {
+  margin-top: -22px; }
+  @media (max-width: 1200px) {
+    .browse-categories .button {
+      margin-top: 50px; } }
+
 .browse-categories .slick-dots {
   margin-top: 0px; }
 
 .browse-categories-item {
   padding: 30px 0px;
-  margin: 30px 0px;
+  margin: 60px 0px;
   margin-top: 40px; }
+  @media (max-width: 1200px) {
+    .browse-categories-item {
+      margin: 20px 0px; } }
 
 .overlay {
   height: 100%;
