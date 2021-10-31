@@ -11903,7 +11903,8 @@ button:focus {
     background-color: #ffc91b; }
 
 .categories .category {
-  margin: 0px 15px; }
+  margin: 50px 15px;
+  margin-top: 0px; }
 
 .categoryitem {
   padding: 140px 0; }
