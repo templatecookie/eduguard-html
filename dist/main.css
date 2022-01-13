@@ -22551,3 +22551,102 @@ body {
 .text-button a {
   margin-bottom: 30px; }
 
+.templatecookie-btn {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999999999999999 !important; }
+  .templatecookie-btn .purchase-btn {
+    -webkit-box-shadow: 0px 0px 3px 0px white !important;
+            box-shadow: 0px 0px 3px 0px white !important;
+    background-color: #171717 !important;
+    color: white !important;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    font-weight: 600 !important;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    padding: 0px 20px !important;
+    height: 50px !important;
+    border-radius: 30px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    -webkit-animation-name: wave-animation !important;
+            animation-name: wave-animation !important;
+    -webkit-animation-duration: 3.5s !important;
+            animation-duration: 3.5s !important;
+    -webkit-animation-iteration-count: infinite !important;
+            animation-iteration-count: infinite !important;
+    -webkit-transform-origin: 70% 70% !important;
+            transform-origin: 70% 70% !important; }
+    .templatecookie-btn .purchase-btn span svg {
+      margin-left: 8px;
+      display: block;
+      width: 20px;
+      height: 18px; }
+      .templatecookie-btn .purchase-btn span svg path {
+        stroke: white; }
+    .templatecookie-btn .purchase-btn:hover {
+      -webkit-animation-name: unset !important;
+              animation-name: unset !important; }
+
+@-webkit-keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  10% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg); }
+  20% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg); }
+  30% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg); }
+  40% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg); }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  10% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg); }
+  20% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg); }
+  30% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg); }
+  40% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg); }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
