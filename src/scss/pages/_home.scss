@@ -78,8 +78,8 @@
       margin-bottom: 16px;
 
       .default-categories {
-        height: 78px;
-        width: 78px;
+        height: 88px;
+        width: 88px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -439,11 +439,17 @@
     padding-top: 0;
 
     .main-image {
+      width: 270px;
+      height: 200px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 8px;
       margin-top: -100px;
       text-align: center;
-
       img {
-        border-radius: 8px;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
       }
     }
 
