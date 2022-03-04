@@ -7,10 +7,6 @@
 }
 
 .banner-two {
-  padding-top: 150px;
-  padding-bottom: 200px;
-  background-color: rgba($color: #ebebf2, $alpha: 0.55);
-  z-index: 1;
   &-start {
     h1 {
       margin-bottom: 20px;
@@ -63,55 +59,61 @@
 }
 
 .home-top-feature {
-  padding: 0;
   position: relative;
-  background-color: rgba(#ebebf2, 0.6);
-  @include max(1200px) {
-    padding-bottom: 50px !important;
-  }
-  .shape {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    @include max(1200px) {
-      display: none;
-    }
+  margin-top: -150px;
+  @include max(991px) {
+    margin-top: 0px;
+    padding-top: 50px;
   }
 }
 
 .banner-input {
   display: flex;
   width: 575px;
-  height: 65px;
+  height: 75px;
   padding-left: 50px;
   padding-right: 10px;
   position: relative;
   align-items: center;
   justify-content: space-between;
-  border-radius: 9px;
+  border-radius: 6px;
   background: #ffffff;
   box-shadow: 0px 32px 60px rgba(2, 100, 237, 0.08);
   @include max(767px) {
     width: 100%;
   }
+
   @include max(575px) {
-    padding-left: 10px;
+    height: auto;
+    padding: 18px;
+    flex-direction: column;
   }
   .main-input {
+    margin-left: 13px;
     width: 315px;
+    @include max(575px) {
+      margin: 0px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
     @include max(480px) {
       width: 100%;
     }
     svg {
+      top: 50%;
+      left: 30px;
       color: #42414b;
       position: absolute;
-      top: 50%;
-      left: 20px;
       transform: translateY(-50%);
       @include max(575px) {
-        display: none;
+        position: static;
+        order: 1;
+        top: auto;
+        left: auto;
+        margin-right: 15px;
+        transform: translateY(0px);
       }
     }
 
@@ -125,6 +127,19 @@
       &::placeholder {
         color: #8f8fa3;
       }
+      @include max(575px) {
+        padding: 0px;
+        order: 2;
+      }
+    }
+  }
+
+  .search-button {
+    @include max(575px) {
+      width: 100%;
+    }
+    .button {
+      width: inherit;
     }
   }
 }
@@ -266,6 +281,10 @@
       bottom: 175px;
       right: 85px;
     }
+  }
+
+  .button {
+    margin-top: 30px;
   }
 
   .contentCard {
@@ -512,7 +531,6 @@
 // Medium devices 768px - 991px
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-two {
-    padding: 30px 0px;
     clip-path: none !important;
 
     &-start {
@@ -776,7 +794,6 @@
 // extra Small devices 420px
 @media (max-width: 420px) {
   .banner-two {
-    padding: 30px 0px;
     clip-path: none !important;
 
     &-end {
@@ -892,7 +909,6 @@
 // Small devices 420px - 574px
 @media (min-width: 420px) and (max-width: 574px) {
   .banner-two {
-    padding: 30px 0px;
     clip-path: none !important;
 
     &-end {

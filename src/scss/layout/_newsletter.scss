@@ -9,6 +9,13 @@
   }
   form {
     input {
+      padding-left: 20px;
+      border-radius: 4px !important;
+      border: 1px solid rgba(143, 143, 163, 0.3);
+      &::placeholder {
+        color: #8f8fa3;
+        text-transform: capitalize;
+      }
       &:focus {
         box-shadow: none;
       }
@@ -25,9 +32,31 @@
     line-height: 24px;
     color: #8f8fa3;
   }
+
+  &-normal {
+    &-start {
+      h5 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 8px;
+        text-transform: capitalize;
+      }
+    }
+    &-end {
+      input {
+        padding-left: 15px;
+        border: 1px solid rgba(143, 143, 163, 0.3);
+        &::placeholder {
+          color: #8f8fa3;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
 }
 
-.newsletterarea-normal-start {
+.newsletter-area-normal-start {
   h5 {
     margin-bottom: 8px;
   }
@@ -52,7 +81,7 @@
   .newsletter-area {
     margin-bottom: -60px;
   }
-  .newsletterarea-normal-start {
+  .newsletter-area-normal-start {
     text-align: center;
     margin-bottom: 30px;
   }

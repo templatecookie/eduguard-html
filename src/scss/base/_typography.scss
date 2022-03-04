@@ -8,7 +8,6 @@
   text-transform: capitalize;
 }
 
-.font-title--lg,
 .font-title--md,
 .font-title--xs {
   font-weight: 700;
@@ -18,13 +17,15 @@
 // Fonts  => Title/heading
 .font-title {
   &--lg {
-    font-size: 80px;
-    line-height: 100px;
-    @media (max-width: 1024px) {
-      font-size: 58px;
-      line-height: 68px;
+    font-size: 56px;
+    color: #202029;
+    font-weight: 600;
+    line-height: 70px;
+    @include max(767px) {
+      font-size: 48px;
+      line-height: 58px;
     }
-    @media (max-width: 767px) {
+    @include max(480px) {
       font-size: 32px;
       line-height: 42px;
     }
@@ -62,14 +63,14 @@
   }
 
   &--card {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
     color: #202029;
-    @media (max-width: 767px) {
-      font-size: 16px;
-      line-height: 26px;
-    }
+    // @media (max-width: 767px) {
+    //   font-size: 16px;
+    //   line-height: 26px;
+    // }
   }
 }
 
