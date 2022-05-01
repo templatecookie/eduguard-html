@@ -167,6 +167,16 @@
   border: 0;
   outline: 0;
   background-color: transparent;
+  height: 50px;
+  width: 60px;
+  border: 1px solid black;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  padding-left: 14px;
+  border-radius: 5px;
 }
 
 .menu-icon {
