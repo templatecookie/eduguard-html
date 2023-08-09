@@ -3,7 +3,7 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 # [Edugard elearning HTML Template](https://www.templatecookie.com/products)
 
-> Poco is a beautiful landing page template for agencies, It has many pages including, services, about, contact, portfolio, portfolio details, blog, blog details, and more.
+> Edugard elearning HTML Template for elearning, course management.
 
 Check the [Live Demo here](https://eduguard-html.netlify.app/).
 
