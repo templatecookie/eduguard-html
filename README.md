@@ -3,11 +3,27 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 # [Edugard elearning HTML Template](https://www.templatecookie.com/products)
 
-> Edugard elearning HTML Template for elearning, course management.
+> Edugard elearning HTML Template for e-learning, and course management.
 
 Check the [Live Demo here](https://eduguard-html.netlify.app/).
 
 ![](screenshot.png)
+
+## Pages List
+- 3 Unique Home (Landing Page)
+- Course List
+- Course Details
+- About
+- Contact
+- Become an Instructor
+- Authentication
+- and many more
+
+## Framework & Technologies
+- bootstrap
+- scss
+- jQuery
+- slick
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
